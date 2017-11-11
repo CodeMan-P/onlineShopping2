@@ -1,0 +1,8 @@
+2017-11-11 14:36:53  DEBUG 0ms|>- Hello this is an debug message
+ <com.tests.log4jExample.main(log4jExample.java:17)> 
+2017-11-11 14:36:53  INFO 5ms|>- Hello this is an info message
+ <com.tests.log4jExample.main(log4jExample.java:18)> 
+2017-11-11 14:36:53  WARN 6ms|>- wwwwwwwwwwwwww
+ <com.tests.log4jExample.main(log4jExample.java:19)> 
+2017-11-11 14:36:53  ERROR 7ms|>- asdsadasd
+ <com.tests.log4jExample.main(log4jExample.java:20)> 
