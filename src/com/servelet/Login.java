@@ -8,6 +8,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import org.apache.ibatis.datasource.DataSourceFactory;
+
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.mod.bean.Users;
 import com.service.UserService;
@@ -108,7 +110,6 @@ public class Login extends HttpServlet {
 	@Override
 	public void init() throws ServletException {
 		// Put your code here
-	
 	}
 
 }

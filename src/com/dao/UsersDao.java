@@ -6,12 +6,14 @@ import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
 import org.apache.ibatis.session.SqlSessionFactoryBuilder;
+import org.apache.log4j.Logger;
 import org.junit.Test;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.mod.bean.Users;
 import com.mod.mapper.UsersMapper;
+import com.tests.log4jExample;
 
 public class UsersDao {
     private static SqlSessionFactory sqlSessionFactory;  
@@ -53,7 +55,6 @@ public class UsersDao {
 			}
    	 }catch(Exception e){
    		 res=e.getLocalizedMessage();
-   		 
    	 }
    		 return res;
    	 

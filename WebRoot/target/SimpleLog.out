@@ -1,4 +1,111 @@
-11-11 14:36:53 Hello this is an debug message
-11-11 14:36:53 Hello this is an info message
-11-11 14:36:53 wwwwwwwwwwwwww
-11-11 14:36:53 asdsadasd
+11-11 17:17:59 Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+11-11 17:17:59 PooledDataSource forcefully closed/removed all connections.
+11-11 17:17:59 PooledDataSource forcefully closed/removed all connections.
+11-11 17:17:59 PooledDataSource forcefully closed/removed all connections.
+11-11 17:17:59 PooledDataSource forcefully closed/removed all connections.
+11-11 17:18:00 Opening JDBC Connection
+11-11 17:18:00 Created connection 2087266743.
+11-11 17:18:00 Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@7c6929b7]
+11-11 17:18:00 ==>  Preparing: select gid, gname, tid, price, descption, imgPath, filePath, stock from goods where gid = ? 
+11-11 17:18:00 ==> Parameters: 1(Integer)
+11-11 17:18:00 <==      Total: 1
+11-11 17:19:40 Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+11-11 17:19:40 PooledDataSource forcefully closed/removed all connections.
+11-11 17:19:40 PooledDataSource forcefully closed/removed all connections.
+11-11 17:19:40 PooledDataSource forcefully closed/removed all connections.
+11-11 17:19:40 PooledDataSource forcefully closed/removed all connections.
+11-11 17:19:41 Opening JDBC Connection
+11-11 17:19:41 Created connection 1902741306.
+11-11 17:19:41 Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@7169873a]
+11-11 17:19:41 ==>  Preparing: select gid, gname, tid, price, descption, imgPath, filePath, stock from goods where gid = ? 
+11-11 17:19:41 ==> Parameters: 1(Integer)
+11-11 17:19:41 <==      Total: 1
+11-11 17:22:28 Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+11-11 17:22:28 PooledDataSource forcefully closed/removed all connections.
+11-11 17:22:28 PooledDataSource forcefully closed/removed all connections.
+11-11 17:22:28 PooledDataSource forcefully closed/removed all connections.
+11-11 17:22:28 PooledDataSource forcefully closed/removed all connections.
+11-11 17:22:28 Opening JDBC Connection
+11-11 17:22:28 Created connection 655634001.
+11-11 17:22:28 Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@27142e51]
+11-11 17:22:28 ==>  Preparing: select gid, gname, tid, price, descption, imgPath, filePath, stock from goods where gid = ? 
+11-11 17:22:28 ==> Parameters: 1(Integer)
+11-11 17:22:28 <==      Total: 1
+11-11 17:23:00 Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+11-11 17:23:00 PooledDataSource forcefully closed/removed all connections.
+11-11 17:23:00 PooledDataSource forcefully closed/removed all connections.
+11-11 17:23:00 PooledDataSource forcefully closed/removed all connections.
+11-11 17:23:00 PooledDataSource forcefully closed/removed all connections.
+11-11 17:23:00 Opening JDBC Connection
+11-11 17:23:01 Created connection 1696062207.
+11-11 17:23:01 Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@6517daff]
+11-11 17:23:01 ==>  Preparing: select gid, gname, tid, price, descption, imgPath, filePath, stock from goods where gid = ? 
+11-11 17:23:01 ==> Parameters: 1(Integer)
+11-11 17:23:01 <==      Total: 1
+11-11 17:24:43 Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+11-11 17:24:43 PooledDataSource forcefully closed/removed all connections.
+11-11 17:24:43 PooledDataSource forcefully closed/removed all connections.
+11-11 17:24:43 PooledDataSource forcefully closed/removed all connections.
+11-11 17:24:43 PooledDataSource forcefully closed/removed all connections.
+11-11 17:24:43 Opening JDBC Connection
+11-11 17:24:43 Created connection 1938342689.
+11-11 17:24:43 Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@7388c321]
+11-11 17:24:43 ==>  Preparing: select gid, gname, tid, price, descption, imgPath, filePath, stock from goods where gid = ? 
+11-11 17:24:43 ==> Parameters: 1(Integer)
+11-11 17:24:43 <==      Total: 1
+11-11 17:26:14 Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+11-11 17:26:14 PooledDataSource forcefully closed/removed all connections.
+11-11 17:26:14 PooledDataSource forcefully closed/removed all connections.
+11-11 17:26:14 PooledDataSource forcefully closed/removed all connections.
+11-11 17:26:14 PooledDataSource forcefully closed/removed all connections.
+11-11 17:26:15 Opening JDBC Connection
+11-11 17:26:15 Created connection 983008937.
+11-11 17:26:15 Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@3a9786a9]
+11-11 17:26:15 ==>  Preparing: select gid, gname, tid, price, descption, imgPath, filePath, stock from goods where gid = ? 
+11-11 17:26:15 ==> Parameters: 1(Integer)
+11-11 17:26:15 <==      Total: 1
+11-11 17:40:44 Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+11-11 17:40:44 PooledDataSource forcefully closed/removed all connections.
+11-11 17:40:44 PooledDataSource forcefully closed/removed all connections.
+11-11 17:40:44 PooledDataSource forcefully closed/removed all connections.
+11-11 17:40:44 PooledDataSource forcefully closed/removed all connections.
+11-11 17:40:44 Opening JDBC Connection
+11-11 17:40:44 Created connection 460549149.
+11-11 17:40:44 Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@1b736c1d]
+11-11 17:40:44 ==>  Preparing: select gid, gname, tid, price, descption, imgPath, filePath, stock from goods where gid = ? 
+11-11 17:40:44 ==> Parameters: 1(Integer)
+11-11 17:40:44 <==      Total: 1
+11-11 17:47:55 Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+11-11 17:47:56 PooledDataSource forcefully closed/removed all connections.
+11-11 17:47:56 PooledDataSource forcefully closed/removed all connections.
+11-11 17:47:56 PooledDataSource forcefully closed/removed all connections.
+11-11 17:47:56 PooledDataSource forcefully closed/removed all connections.
+11-11 17:47:56 Opening JDBC Connection
+11-11 17:47:56 Created connection 182151009.
+11-11 17:47:56 Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@adb6761]
+11-11 17:47:56 ==>  Preparing: select gid, gname, tid, price, descption, imgPath, filePath, stock from goods where gid = ? 
+11-11 17:47:56 ==> Parameters: 1(Integer)
+11-11 17:47:56 <==      Total: 1
+11-11 18:52:08 Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+11-11 18:52:09 PooledDataSource forcefully closed/removed all connections.
+11-11 18:52:09 PooledDataSource forcefully closed/removed all connections.
+11-11 18:52:09 PooledDataSource forcefully closed/removed all connections.
+11-11 18:52:09 PooledDataSource forcefully closed/removed all connections.
+11-11 18:52:09 Opening JDBC Connection
+11-11 18:52:09 Created connection 942748741.
+11-11 18:52:09 Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@38313445]
+11-11 18:52:09 ==>  Preparing: SELECT * FROM users WHERE uname = ? and upwd = ? 
+11-11 18:52:09 ==> Parameters: xiaoming(String), 123(String)
+11-11 18:52:10 <==    Columns: uid, uname, upwd, phone, city, regDate, idCard, realName, age, email, sex, avatar
+11-11 18:52:10 <==        Row: 1, xiaoming, 123, 18899119292, 西安, 2017-11-11, null, 小明, 22, null, 男, <<BLOB>>
+11-11 18:52:10 <==      Total: 1
+11-11 18:52:12 PooledDataSource forcefully closed/removed all connections.
+11-11 18:52:12 PooledDataSource forcefully closed/removed all connections.
+11-11 18:52:12 PooledDataSource forcefully closed/removed all connections.
+11-11 18:52:12 PooledDataSource forcefully closed/removed all connections.
+11-11 18:52:12 Opening JDBC Connection
+11-11 18:52:12 Created connection 805367958.
+11-11 18:52:12 Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@3000f096]
+11-11 18:52:12 ==>  Preparing: select gid, gname, tid, price, descption, imgPath, filePath, stock from goods where gid = ? 
+11-11 18:52:12 ==> Parameters: 2(Integer)
+11-11 18:52:12 <==      Total: 1

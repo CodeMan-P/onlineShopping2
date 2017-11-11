@@ -14,6 +14,7 @@ import com.fasterxml.jackson.core.JsonEncoding;
 import com.fasterxml.jackson.core.JsonFactory;
 import com.fasterxml.jackson.core.JsonGenerator;
 import com.fasterxml.jackson.core.JsonParseException;
+import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.JsonMappingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -23,7 +24,25 @@ public class JacksonTest {
 	// @JsonTypeInfo(use=JsonTypeInfo.Id.CLASS,
 	// include=JsonTypeInfo.As.PROPERTY, property="@class")
 	// @JsonSubTypes({@Type(value=Lion.class,name="lion"),@Type(value=Elephant.class,name="elephant")})
-
+	static ObjectMapper mapper = new ObjectMapper();
+	@Test
+	public void testMethod2() {
+		HashMap<String,String> m = new HashMap<String, String>();
+		m.put("版本", "Mate 10,Mate 10 62G+128G,麦芒6,P10,畅享7");
+		m.put("网络类型","4G全网通");
+		m.put("机身颜色","钻雕金,钻雕蓝,草木绿,曜石黑,玫瑰金");
+		m.put("套餐类型","官方标配,套餐一,套餐二,套餐三,套餐四,套餐五");
+		m.put("存储容量","64GB,128GB");
+		m.put("购买方式","裸机");
+		LinkedList<HashMap<String, String>> list = new LinkedList<HashMap<String,String>>();
+		list.add(m);
+		try {
+			System.out.println(mapper.writerWithDefaultPrettyPrinter().writeValueAsString(list));
+		} catch (JsonProcessingException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
 	@Test
 	public void testMethod() {
 //		TreeMap tm = new TreeMap<>(new Comparator<Goods>() {
@@ -41,8 +60,8 @@ public class JacksonTest {
 //				return o1.name.compareTo(o2.name);
 //			}
 //		});
-		ObjectMapper mapper = new ObjectMapper();
-		String path = System.getProperty("user.dir") + File.separatorChar + "test" + File.separatorChar
+		
+		String path = System.getProperty("user.dir") + File.separatorChar + "tests" + File.separatorChar
 				+ "sort_content_data.json";
 		// sort_content_data scd = new sort_content_data();
 		File file = new File(path);

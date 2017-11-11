@@ -15,6 +15,16 @@ id="WebApp_ID" version="3.0">
     <servlet-name>Login</servlet-name>
     <url-pattern>/login</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <display-name>ProInfo</display-name>
+    <servlet-name>ProInfo</servlet-name>
+    <servlet-class>com.servelet.ProInfo</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ProInfo</servlet-name>
+    <url-pattern>/ProInfo</url-pattern>
+  </servlet-mapping>
+
  <servlet>
  <servlet-name>UserManagerSlt</servlet-name>
  <servlet-class>com.servelet.UserManagerSlt</servlet-class>

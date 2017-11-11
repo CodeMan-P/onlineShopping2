@@ -54,13 +54,12 @@ public class UserManagerSlt extends HttpServlet {
 		// TODO Auto-generated method stub
 		this.doPost(request, response);
 	}
+	Logger log = Logger.getLogger(log4jExample.class.getName());
 
 	/**
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse
 	 *      response)
 	 */
-	static Logger log = Logger.getLogger(log4jExample.class.getName());
-
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		// TODO Auto-generated method stub

@@ -1,17 +1,20 @@
 package com.servelet;
 
 import java.io.IOException;
-import java.io.PrintWriter;
-import java.util.LinkedList;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import com.mod.bean.Goods;
+import org.apache.log4j.Logger;
 
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.mod.bean.Goods;
+import com.service.GoodsService;
+import com.tests.log4jExample;
 public class ProInfo extends HttpServlet {
+	Logger log = Logger.getLogger(log4jExample.class.getName());
 
 	/**
 	 * Constructor of the object.
@@ -19,7 +22,6 @@ public class ProInfo extends HttpServlet {
 	public ProInfo() {
 		super();
 	}
-
 	/**
 	 * Destruction of the servlet. <br>
 	 */
@@ -42,7 +44,26 @@ public class ProInfo extends HttpServlet {
 	@Override
 	public void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-		this.doPost(request, response);
+		response.setCharacterEncoding("utf-8");
+		request.setCharacterEncoding("utf-8");
+		response.setContentType("text/html");
+		int gid = 0;
+		try{
+			gid = Integer.parseInt(request.getParameter("gid"));
+		}catch(NumberFormatException  e){
+			log.warn("不能转换为Int:"+request.getParameter("gid"));
+		}
+		Goods goods = null;
+		if(gid != 0){
+			 goods = GoodsService.getGoods(gid);
+		}
+		if(goods != null){
+			ObjectMapper mapper = new ObjectMapper();
+			String json = mapper.writerWithDefaultPrettyPrinter().writeValueAsString(goods);
+			request.setAttribute("json", json);
+			request.setAttribute("goods", goods);
+			request.getRequestDispatcher("jsp/goods.jsp").forward(request, response);
+		}
 	}
 
 	/**
@@ -58,22 +79,7 @@ public class ProInfo extends HttpServlet {
 	@Override
 	public void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-		response.setCharacterEncoding("utf-8");
-		request.setCharacterEncoding("utf-8");
-		response.setContentType("text/html");
-		@SuppressWarnings("unchecked")
-		LinkedList<Goods> list = (LinkedList<Goods>) request.getSession().getAttribute("list");
-		int id = -1;
-		try{
-			id = Integer.parseInt(request.getParameter("id"));			
-		}catch(Exception e){
-			System.out.println("不能转换为Int:"+request.getParameter("id"));
-		}
-		if(id != -1){
-			Goods p = list.get(id);	
-			request.getSession().setAttribute("pro", p);
-			request.getRequestDispatcher("productPage.jsp").forward(request, response);
-		}
+		this.doGet(request, response);
 	}
 
 	/**
