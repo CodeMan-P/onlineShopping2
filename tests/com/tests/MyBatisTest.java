@@ -2,6 +2,8 @@ package com.tests;
 
 import java.io.IOException;
 import java.io.Reader;
+import java.math.BigDecimal;
+import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Arrays;
 import java.util.Date;
@@ -54,7 +56,7 @@ public class MyBatisTest {
 		LinkedList<HashMap<String, Object>> list2 = (LinkedList<HashMap<String, Object>>) of.getOrderList(te, 1);
 		System.out.println(list2.size());
 
-		System.out.println(list2.getFirst().get("date").toString());
+		//System.out.println(list2.getFirst().get("date").toString());
 		ObjectMapper mapper = new ObjectMapper();
 		SerializerProvider sp = mapper.getSerializerProvider();
 		//sp.setAttribute(list2, te);
@@ -82,29 +84,37 @@ public class MyBatisTest {
 		System.out.println("============我是分割线================================");
 		
 		//提取公共属性到最外层
-		m.put("date",list2.get(0).remove("date"));
 		m.put("address",list2.get(0).remove("address"));
 		m.put("oid",list2.get(0).remove("oid"));
 		m.put("uid",list2.get(0).remove("uid"));
 		m.put("state",list2.get(0).remove("state"));
+		m.put("sum",list2.get(0).remove("sum"));
+		list2.get(1).remove("sum");
 		list2.get(1).remove("state");
 		list2.get(1).remove("uid");
-		list2.get(1).remove("oid");
-		list2.get(1).remove("date");
+		
 		list2.get(1).remove("address");
-		m.put("order_1_1", list2.get(0));
-		m.put("order_1_2", list2.get(1));
-		// mapper.setDateFormat(null);
+		Date d= null;
+		try {
+			String s = (String) list2.get(1).remove("oid");
+			sf = new SimpleDateFormat("yyyyMMddHHmmss");
+			d = sf.parse(s.toString());
+		} catch (ParseException e1) {
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
+		}
+		m.put("date", d);
+		m.put("goods_1", list2.get(0));
+		m.put("goods_2", list2.get(1));
+		
 		SimpleModule module = new SimpleModule(); 
 		
 		try {
 			
 			System.out.println(mapper.writerWithDefaultPrettyPrinter().writeValueAsString(m));
 		} catch (JsonProcessingException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 
@@ -123,10 +133,8 @@ public class MyBatisTest {
 			String json = mapper.writeValueAsString(em);
 			em2 = mapper.readValue(json, Goods.class);
 		} catch (JsonProcessingException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		if (em != null) {

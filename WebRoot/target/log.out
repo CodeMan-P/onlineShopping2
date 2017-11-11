@@ -389,3 +389,300 @@ Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@3
 ==>  Preparing: select * from view_order_goods where oid = ? and uid = ?; 
 ==> Parameters: 20171110164436(Long), 1(Integer)
 <==      Total: 2
+Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+PooledDataSource forcefully closed/removed all connections.
+PooledDataSource forcefully closed/removed all connections.
+PooledDataSource forcefully closed/removed all connections.
+PooledDataSource forcefully closed/removed all connections.
+Opening JDBC Connection
+Created connection 988458918.
+Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@3aeaafa6]
+==>  Preparing: select * from view_order_goods where oid = ? and uid = ?; 
+==> Parameters: 20171110164436(Long), 1(Integer)
+<==      Total: 2
+Retrieving column information for table "goods"
+Found column "gid", data type 4, in table "shop..goods"
+Found column "gname", data type 12, in table "shop..goods"
+Found column "tid", data type 4, in table "shop..goods"
+Found column "price", data type 8, in table "shop..goods"
+Found column "descption", data type -1, in table "shop..goods"
+Found column "imgPath", data type -1, in table "shop..goods"
+Found column "filePath", data type -1, in table "shop..goods"
+Found column "stock", data type 4, in table "shop..goods"
+Found override for column "descption" in table "shop..goods"
+Found override for column "imgPath" in table "shop..goods"
+Found override for column "filePath" in table "shop..goods"
+Retrieving column information for table "address"
+Found column "adressId", data type 4, in table "shop..address"
+Found column "uid", data type 4, in table "shop..address"
+Found column "address", data type -1, in table "shop..address"
+Found column "def", data type -7, in table "shop..address"
+Retrieving column information for table "goodstype"
+Found column "tid", data type 4, in table "shop..goodstype"
+Found column "tname", data type 12, in table "shop..goodstype"
+Retrieving column information for table "orderform"
+Found column "oid", data type 3, in table "shop..orderform"
+Found column "gid", data type 4, in table "shop..orderform"
+Found column "gnum", data type 4, in table "shop..orderform"
+Found column "SubTotal", data type 8, in table "shop..orderform"
+Retrieving column information for table "orders"
+Found column "oid", data type 3, in table "shop..orders"
+Found column "uid", data type 4, in table "shop..orders"
+Found column "state", data type 12, in table "shop..orders"
+Found column "address", data type -1, in table "shop..orders"
+Found column "sum", data type 8, in table "shop..orders"
+Retrieving column information for table "shoppingcar"
+Found column "cid", data type 4, in table "shop..shoppingcar"
+Found column "addGoodsTime", data type 93, in table "shop..shoppingcar"
+Found column "uid", data type 4, in table "shop..shoppingcar"
+Found column "gid", data type 4, in table "shop..shoppingcar"
+Found column "gnum", data type 4, in table "shop..shoppingcar"
+Retrieving column information for table "users"
+Found column "uid", data type 4, in table "shop..users"
+Found column "uname", data type 12, in table "shop..users"
+Found column "upwd", data type 12, in table "shop..users"
+Found column "phone", data type 3, in table "shop..users"
+Found column "city", data type 12, in table "shop..users"
+Found column "regDate", data type 91, in table "shop..users"
+Found column "idCard", data type 12, in table "shop..users"
+Found column "realName", data type 12, in table "shop..users"
+Found column "age", data type 4, in table "shop..users"
+Found column "email", data type 12, in table "shop..users"
+Found column "sex", data type 12, in table "shop..users"
+Found column "avatar", data type -1, in table "shop..users"
+Retrieving column information for table "goods"
+Found column "gid", data type 4, in table "shop..goods"
+Found column "gname", data type 12, in table "shop..goods"
+Found column "tid", data type 4, in table "shop..goods"
+Found column "price", data type 8, in table "shop..goods"
+Found column "descption", data type -1, in table "shop..goods"
+Found column "imgPath", data type -1, in table "shop..goods"
+Found column "filePath", data type -1, in table "shop..goods"
+Found column "stock", data type 4, in table "shop..goods"
+Found override for column "descption" in table "shop..goods"
+Found override for column "imgPath" in table "shop..goods"
+Found override for column "filePath" in table "shop..goods"
+Retrieving column information for table "address"
+Found column "adressId", data type 4, in table "shop..address"
+Found column "uid", data type 4, in table "shop..address"
+Found column "address", data type -1, in table "shop..address"
+Found column "def", data type -7, in table "shop..address"
+Retrieving column information for table "goodstype"
+Found column "tid", data type 4, in table "shop..goodstype"
+Found column "tname", data type 12, in table "shop..goodstype"
+Retrieving column information for table "orderform"
+Found column "oid", data type 3, in table "shop..orderform"
+Found column "gid", data type 4, in table "shop..orderform"
+Found column "gnum", data type 4, in table "shop..orderform"
+Found column "SubTotal", data type 8, in table "shop..orderform"
+Retrieving column information for table "orders"
+Found column "oid", data type 3, in table "shop..orders"
+Found column "uid", data type 4, in table "shop..orders"
+Found column "state", data type 12, in table "shop..orders"
+Found column "address", data type -1, in table "shop..orders"
+Found column "sum", data type 8, in table "shop..orders"
+Retrieving column information for table "shoppingcar"
+Found column "cid", data type 4, in table "shop..shoppingcar"
+Found column "addGoodsTime", data type 93, in table "shop..shoppingcar"
+Found column "uid", data type 4, in table "shop..shoppingcar"
+Found column "gid", data type 4, in table "shop..shoppingcar"
+Found column "gnum", data type 4, in table "shop..shoppingcar"
+Found override for column "addGoodsTime" in table "shop..shoppingcar"
+Retrieving column information for table "users"
+Found column "uid", data type 4, in table "shop..users"
+Found column "uname", data type 12, in table "shop..users"
+Found column "upwd", data type 12, in table "shop..users"
+Found column "phone", data type 3, in table "shop..users"
+Found column "city", data type 12, in table "shop..users"
+Found column "regDate", data type 91, in table "shop..users"
+Found column "idCard", data type 12, in table "shop..users"
+Found column "realName", data type 12, in table "shop..users"
+Found column "age", data type 4, in table "shop..users"
+Found column "email", data type 12, in table "shop..users"
+Found column "sex", data type 12, in table "shop..users"
+Found column "avatar", data type -1, in table "shop..users"
+Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+PooledDataSource forcefully closed/removed all connections.
+PooledDataSource forcefully closed/removed all connections.
+PooledDataSource forcefully closed/removed all connections.
+PooledDataSource forcefully closed/removed all connections.
+Opening JDBC Connection
+Created connection 2012846597.
+Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@77f99a05]
+==>  Preparing: select * from view_order_goods where oid = ? and uid = ?; 
+==> Parameters: 20171110164436(Long), 1(Integer)
+<==      Total: 2
+Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+PooledDataSource forcefully closed/removed all connections.
+PooledDataSource forcefully closed/removed all connections.
+PooledDataSource forcefully closed/removed all connections.
+PooledDataSource forcefully closed/removed all connections.
+Opening JDBC Connection
+Created connection 2012846597.
+Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@77f99a05]
+==>  Preparing: select * from view_order_goods where oid = ? and uid = ?; 
+==> Parameters: 20171110164436(Long), 1(Integer)
+<==      Total: 2
+Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+PooledDataSource forcefully closed/removed all connections.
+PooledDataSource forcefully closed/removed all connections.
+PooledDataSource forcefully closed/removed all connections.
+PooledDataSource forcefully closed/removed all connections.
+Opening JDBC Connection
+Created connection 2012846597.
+Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@77f99a05]
+==>  Preparing: select * from view_order_goods where oid = ? and uid = ?; 
+==> Parameters: 20171110164436(Long), 1(Integer)
+<==      Total: 2
+Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+PooledDataSource forcefully closed/removed all connections.
+PooledDataSource forcefully closed/removed all connections.
+PooledDataSource forcefully closed/removed all connections.
+PooledDataSource forcefully closed/removed all connections.
+Opening JDBC Connection
+Created connection 2012846597.
+Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@77f99a05]
+==>  Preparing: select * from view_order_goods where oid = ? and uid = ?; 
+==> Parameters: 20171110164436(Long), 1(Integer)
+<==      Total: 2
+Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+PooledDataSource forcefully closed/removed all connections.
+PooledDataSource forcefully closed/removed all connections.
+PooledDataSource forcefully closed/removed all connections.
+PooledDataSource forcefully closed/removed all connections.
+Opening JDBC Connection
+Created connection 2012846597.
+Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@77f99a05]
+==>  Preparing: select * from view_order_goods where oid = ? and uid = ?; 
+==> Parameters: 20171110164436(Long), 1(Integer)
+<==      Total: 2
+Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+PooledDataSource forcefully closed/removed all connections.
+PooledDataSource forcefully closed/removed all connections.
+PooledDataSource forcefully closed/removed all connections.
+PooledDataSource forcefully closed/removed all connections.
+Opening JDBC Connection
+Created connection 2012846597.
+Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@77f99a05]
+==>  Preparing: select * from view_order_goods where oid = ? and uid = ?; 
+==> Parameters: 20171110164436(Long), 1(Integer)
+<==      Total: 2
+Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+PooledDataSource forcefully closed/removed all connections.
+PooledDataSource forcefully closed/removed all connections.
+PooledDataSource forcefully closed/removed all connections.
+PooledDataSource forcefully closed/removed all connections.
+Opening JDBC Connection
+Created connection 2012846597.
+Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@77f99a05]
+==>  Preparing: select * from view_order_goods where oid = ? and uid = ?; 
+==> Parameters: 20171110164436(Long), 1(Integer)
+<==      Total: 2
+Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+PooledDataSource forcefully closed/removed all connections.
+PooledDataSource forcefully closed/removed all connections.
+PooledDataSource forcefully closed/removed all connections.
+PooledDataSource forcefully closed/removed all connections.
+Opening JDBC Connection
+Created connection 2012846597.
+Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@77f99a05]
+==>  Preparing: select * from view_order_goods where oid = ? and uid = ?; 
+==> Parameters: 20171110164436(Long), 1(Integer)
+<==      Total: 2
+Retrieving column information for table "goods"
+Found column "gid", data type 4, in table "shop..goods"
+Found column "gname", data type 12, in table "shop..goods"
+Found column "tid", data type 4, in table "shop..goods"
+Found column "price", data type 8, in table "shop..goods"
+Found column "descption", data type -1, in table "shop..goods"
+Found column "imgPath", data type -1, in table "shop..goods"
+Found column "filePath", data type -1, in table "shop..goods"
+Found column "stock", data type 4, in table "shop..goods"
+Found override for column "descption" in table "shop..goods"
+Found override for column "imgPath" in table "shop..goods"
+Found override for column "filePath" in table "shop..goods"
+Retrieving column information for table "address"
+Found column "adressId", data type 4, in table "shop..address"
+Found column "uid", data type 4, in table "shop..address"
+Found column "address", data type -1, in table "shop..address"
+Found column "def", data type -7, in table "shop..address"
+Retrieving column information for table "goodstype"
+Found column "tid", data type 4, in table "shop..goodstype"
+Found column "tname", data type 12, in table "shop..goodstype"
+Retrieving column information for table "orderform"
+Found column "oid", data type 3, in table "shop..orderform"
+Found column "gid", data type 4, in table "shop..orderform"
+Found column "gnum", data type 4, in table "shop..orderform"
+Found column "SubTotal", data type 8, in table "shop..orderform"
+Found override for column "oid" in table "shop..orderform"
+Retrieving column information for table "orders"
+Found column "oid", data type 3, in table "shop..orders"
+Found column "uid", data type 4, in table "shop..orders"
+Found column "state", data type 12, in table "shop..orders"
+Found column "address", data type -1, in table "shop..orders"
+Found column "sum", data type 8, in table "shop..orders"
+Found override for column "oid" in table "shop..orders"
+Retrieving column information for table "shoppingcar"
+Found column "cid", data type 4, in table "shop..shoppingcar"
+Found column "addGoodsTime", data type 93, in table "shop..shoppingcar"
+Found column "uid", data type 4, in table "shop..shoppingcar"
+Found column "gid", data type 4, in table "shop..shoppingcar"
+Found column "gnum", data type 4, in table "shop..shoppingcar"
+Found override for column "addGoodsTime" in table "shop..shoppingcar"
+Retrieving column information for table "users"
+Found column "uid", data type 4, in table "shop..users"
+Found column "uname", data type 12, in table "shop..users"
+Found column "upwd", data type 12, in table "shop..users"
+Found column "phone", data type 3, in table "shop..users"
+Found column "city", data type 12, in table "shop..users"
+Found column "regDate", data type 91, in table "shop..users"
+Found column "idCard", data type 12, in table "shop..users"
+Found column "realName", data type 12, in table "shop..users"
+Found column "age", data type 4, in table "shop..users"
+Found column "email", data type 12, in table "shop..users"
+Found column "sex", data type 12, in table "shop..users"
+Found column "avatar", data type -1, in table "shop..users"
+Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+PooledDataSource forcefully closed/removed all connections.
+PooledDataSource forcefully closed/removed all connections.
+PooledDataSource forcefully closed/removed all connections.
+PooledDataSource forcefully closed/removed all connections.
+Opening JDBC Connection
+Created connection 2012846597.
+Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@77f99a05]
+==>  Preparing: select * from view_order_goods where oid = ? and uid = ?; 
+==> Parameters: 20171110164436(Long), 1(Integer)
+<==      Total: 2
+Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+PooledDataSource forcefully closed/removed all connections.
+PooledDataSource forcefully closed/removed all connections.
+PooledDataSource forcefully closed/removed all connections.
+PooledDataSource forcefully closed/removed all connections.
+Opening JDBC Connection
+Created connection 2012846597.
+Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@77f99a05]
+==>  Preparing: select * from view_order_goods where oid = ? and uid = ?; 
+==> Parameters: 20171110164436(Long), 1(Integer)
+<==      Total: 2
+Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+PooledDataSource forcefully closed/removed all connections.
+PooledDataSource forcefully closed/removed all connections.
+PooledDataSource forcefully closed/removed all connections.
+PooledDataSource forcefully closed/removed all connections.
+Opening JDBC Connection
+Created connection 2012846597.
+Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@77f99a05]
+==>  Preparing: select * from view_order_goods where oid = ? and uid = ?; 
+==> Parameters: 20171110164436(Long), 1(Integer)
+<==      Total: 2
+Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+PooledDataSource forcefully closed/removed all connections.
+PooledDataSource forcefully closed/removed all connections.
+PooledDataSource forcefully closed/removed all connections.
+PooledDataSource forcefully closed/removed all connections.
+Opening JDBC Connection
+Created connection 2012846597.
+Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@77f99a05]
+==>  Preparing: select * from view_order_goods where oid = ? and uid = ?; 
+==> Parameters: 20171110164436(Long), 1(Integer)
+<==      Total: 2

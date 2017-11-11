@@ -389,3 +389,300 @@
 2017-11-10 23:25:51,155 DEBUG [com.mod.mapper.OrderFormMapper.getOrderList] - ==>  Preparing: select * from view_order_goods where oid = ? and uid = ?; 
 2017-11-10 23:25:51,186 DEBUG [com.mod.mapper.OrderFormMapper.getOrderList] - ==> Parameters: 20171110164436(Long), 1(Integer)
 2017-11-10 23:25:51,219 DEBUG [com.mod.mapper.OrderFormMapper.getOrderList] - <==      Total: 2
+2017-11-11 10:55:41,474 DEBUG [org.apache.ibatis.logging.LogFactory] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2017-11-11 10:55:41,592 DEBUG [org.apache.ibatis.datasource.pooled.PooledDataSource] - PooledDataSource forcefully closed/removed all connections.
+2017-11-11 10:55:41,592 DEBUG [org.apache.ibatis.datasource.pooled.PooledDataSource] - PooledDataSource forcefully closed/removed all connections.
+2017-11-11 10:55:41,592 DEBUG [org.apache.ibatis.datasource.pooled.PooledDataSource] - PooledDataSource forcefully closed/removed all connections.
+2017-11-11 10:55:41,592 DEBUG [org.apache.ibatis.datasource.pooled.PooledDataSource] - PooledDataSource forcefully closed/removed all connections.
+2017-11-11 10:55:41,812 DEBUG [org.apache.ibatis.transaction.jdbc.JdbcTransaction] - Opening JDBC Connection
+2017-11-11 10:55:42,044 DEBUG [org.apache.ibatis.datasource.pooled.PooledDataSource] - Created connection 988458918.
+2017-11-11 10:55:42,044 DEBUG [org.apache.ibatis.transaction.jdbc.JdbcTransaction] - Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@3aeaafa6]
+2017-11-11 10:55:42,059 DEBUG [com.mod.mapper.OrderFormMapper.getOrderList] - ==>  Preparing: select * from view_order_goods where oid = ? and uid = ?; 
+2017-11-11 10:55:42,079 DEBUG [com.mod.mapper.OrderFormMapper.getOrderList] - ==> Parameters: 20171110164436(Long), 1(Integer)
+2017-11-11 10:55:42,128 DEBUG [com.mod.mapper.OrderFormMapper.getOrderList] - <==      Total: 2
+2017-11-11 11:37:00,082 DEBUG [org.mybatis.generator.internal.db.DatabaseIntrospector] - Retrieving column information for table "goods"
+2017-11-11 11:37:00,098 DEBUG [org.mybatis.generator.internal.db.DatabaseIntrospector] - Found column "gid", data type 4, in table "shop..goods"
+2017-11-11 11:37:00,098 DEBUG [org.mybatis.generator.internal.db.DatabaseIntrospector] - Found column "gname", data type 12, in table "shop..goods"
+2017-11-11 11:37:00,098 DEBUG [org.mybatis.generator.internal.db.DatabaseIntrospector] - Found column "tid", data type 4, in table "shop..goods"
+2017-11-11 11:37:00,098 DEBUG [org.mybatis.generator.internal.db.DatabaseIntrospector] - Found column "price", data type 8, in table "shop..goods"
+2017-11-11 11:37:00,098 DEBUG [org.mybatis.generator.internal.db.DatabaseIntrospector] - Found column "descption", data type -1, in table "shop..goods"
+2017-11-11 11:37:00,098 DEBUG [org.mybatis.generator.internal.db.DatabaseIntrospector] - Found column "imgPath", data type -1, in table "shop..goods"
+2017-11-11 11:37:00,098 DEBUG [org.mybatis.generator.internal.db.DatabaseIntrospector] - Found column "filePath", data type -1, in table "shop..goods"
+2017-11-11 11:37:00,098 DEBUG [org.mybatis.generator.internal.db.DatabaseIntrospector] - Found column "stock", data type 4, in table "shop..goods"
+2017-11-11 11:37:00,098 DEBUG [org.mybatis.generator.internal.db.DatabaseIntrospector] - Found override for column "descption" in table "shop..goods"
+2017-11-11 11:37:00,098 DEBUG [org.mybatis.generator.internal.db.DatabaseIntrospector] - Found override for column "imgPath" in table "shop..goods"
+2017-11-11 11:37:00,098 DEBUG [org.mybatis.generator.internal.db.DatabaseIntrospector] - Found override for column "filePath" in table "shop..goods"
+2017-11-11 11:37:00,098 DEBUG [org.mybatis.generator.internal.db.DatabaseIntrospector] - Retrieving column information for table "address"
+2017-11-11 11:37:00,098 DEBUG [org.mybatis.generator.internal.db.DatabaseIntrospector] - Found column "adressId", data type 4, in table "shop..address"
+2017-11-11 11:37:00,098 DEBUG [org.mybatis.generator.internal.db.DatabaseIntrospector] - Found column "uid", data type 4, in table "shop..address"
+2017-11-11 11:37:00,113 DEBUG [org.mybatis.generator.internal.db.DatabaseIntrospector] - Found column "address", data type -1, in table "shop..address"
+2017-11-11 11:37:00,113 DEBUG [org.mybatis.generator.internal.db.DatabaseIntrospector] - Found column "def", data type -7, in table "shop..address"
+2017-11-11 11:37:00,113 DEBUG [org.mybatis.generator.internal.db.DatabaseIntrospector] - Retrieving column information for table "goodstype"
+2017-11-11 11:37:00,113 DEBUG [org.mybatis.generator.internal.db.DatabaseIntrospector] - Found column "tid", data type 4, in table "shop..goodstype"
+2017-11-11 11:37:00,113 DEBUG [org.mybatis.generator.internal.db.DatabaseIntrospector] - Found column "tname", data type 12, in table "shop..goodstype"
+2017-11-11 11:37:00,113 DEBUG [org.mybatis.generator.internal.db.DatabaseIntrospector] - Retrieving column information for table "orderform"
+2017-11-11 11:37:00,113 DEBUG [org.mybatis.generator.internal.db.DatabaseIntrospector] - Found column "oid", data type 3, in table "shop..orderform"
+2017-11-11 11:37:00,113 DEBUG [org.mybatis.generator.internal.db.DatabaseIntrospector] - Found column "gid", data type 4, in table "shop..orderform"
+2017-11-11 11:37:00,113 DEBUG [org.mybatis.generator.internal.db.DatabaseIntrospector] - Found column "gnum", data type 4, in table "shop..orderform"
+2017-11-11 11:37:00,113 DEBUG [org.mybatis.generator.internal.db.DatabaseIntrospector] - Found column "SubTotal", data type 8, in table "shop..orderform"
+2017-11-11 11:37:00,129 DEBUG [org.mybatis.generator.internal.db.DatabaseIntrospector] - Retrieving column information for table "orders"
+2017-11-11 11:37:00,129 DEBUG [org.mybatis.generator.internal.db.DatabaseIntrospector] - Found column "oid", data type 3, in table "shop..orders"
+2017-11-11 11:37:00,129 DEBUG [org.mybatis.generator.internal.db.DatabaseIntrospector] - Found column "uid", data type 4, in table "shop..orders"
+2017-11-11 11:37:00,129 DEBUG [org.mybatis.generator.internal.db.DatabaseIntrospector] - Found column "state", data type 12, in table "shop..orders"
+2017-11-11 11:37:00,129 DEBUG [org.mybatis.generator.internal.db.DatabaseIntrospector] - Found column "address", data type -1, in table "shop..orders"
+2017-11-11 11:37:00,129 DEBUG [org.mybatis.generator.internal.db.DatabaseIntrospector] - Found column "sum", data type 8, in table "shop..orders"
+2017-11-11 11:37:00,129 DEBUG [org.mybatis.generator.internal.db.DatabaseIntrospector] - Retrieving column information for table "shoppingcar"
+2017-11-11 11:37:00,129 DEBUG [org.mybatis.generator.internal.db.DatabaseIntrospector] - Found column "cid", data type 4, in table "shop..shoppingcar"
+2017-11-11 11:37:00,129 DEBUG [org.mybatis.generator.internal.db.DatabaseIntrospector] - Found column "addGoodsTime", data type 93, in table "shop..shoppingcar"
+2017-11-11 11:37:00,129 DEBUG [org.mybatis.generator.internal.db.DatabaseIntrospector] - Found column "uid", data type 4, in table "shop..shoppingcar"
+2017-11-11 11:37:00,129 DEBUG [org.mybatis.generator.internal.db.DatabaseIntrospector] - Found column "gid", data type 4, in table "shop..shoppingcar"
+2017-11-11 11:37:00,129 DEBUG [org.mybatis.generator.internal.db.DatabaseIntrospector] - Found column "gnum", data type 4, in table "shop..shoppingcar"
+2017-11-11 11:37:00,129 DEBUG [org.mybatis.generator.internal.db.DatabaseIntrospector] - Retrieving column information for table "users"
+2017-11-11 11:37:00,144 DEBUG [org.mybatis.generator.internal.db.DatabaseIntrospector] - Found column "uid", data type 4, in table "shop..users"
+2017-11-11 11:37:00,144 DEBUG [org.mybatis.generator.internal.db.DatabaseIntrospector] - Found column "uname", data type 12, in table "shop..users"
+2017-11-11 11:37:00,144 DEBUG [org.mybatis.generator.internal.db.DatabaseIntrospector] - Found column "upwd", data type 12, in table "shop..users"
+2017-11-11 11:37:00,144 DEBUG [org.mybatis.generator.internal.db.DatabaseIntrospector] - Found column "phone", data type 3, in table "shop..users"
+2017-11-11 11:37:00,144 DEBUG [org.mybatis.generator.internal.db.DatabaseIntrospector] - Found column "city", data type 12, in table "shop..users"
+2017-11-11 11:37:00,144 DEBUG [org.mybatis.generator.internal.db.DatabaseIntrospector] - Found column "regDate", data type 91, in table "shop..users"
+2017-11-11 11:37:00,144 DEBUG [org.mybatis.generator.internal.db.DatabaseIntrospector] - Found column "idCard", data type 12, in table "shop..users"
+2017-11-11 11:37:00,144 DEBUG [org.mybatis.generator.internal.db.DatabaseIntrospector] - Found column "realName", data type 12, in table "shop..users"
+2017-11-11 11:37:00,144 DEBUG [org.mybatis.generator.internal.db.DatabaseIntrospector] - Found column "age", data type 4, in table "shop..users"
+2017-11-11 11:37:00,144 DEBUG [org.mybatis.generator.internal.db.DatabaseIntrospector] - Found column "email", data type 12, in table "shop..users"
+2017-11-11 11:37:00,144 DEBUG [org.mybatis.generator.internal.db.DatabaseIntrospector] - Found column "sex", data type 12, in table "shop..users"
+2017-11-11 11:37:00,144 DEBUG [org.mybatis.generator.internal.db.DatabaseIntrospector] - Found column "avatar", data type -1, in table "shop..users"
+2017-11-11 11:37:50,228 DEBUG [org.mybatis.generator.internal.db.DatabaseIntrospector] - Retrieving column information for table "goods"
+2017-11-11 11:37:50,228 DEBUG [org.mybatis.generator.internal.db.DatabaseIntrospector] - Found column "gid", data type 4, in table "shop..goods"
+2017-11-11 11:37:50,228 DEBUG [org.mybatis.generator.internal.db.DatabaseIntrospector] - Found column "gname", data type 12, in table "shop..goods"
+2017-11-11 11:37:50,228 DEBUG [org.mybatis.generator.internal.db.DatabaseIntrospector] - Found column "tid", data type 4, in table "shop..goods"
+2017-11-11 11:37:50,228 DEBUG [org.mybatis.generator.internal.db.DatabaseIntrospector] - Found column "price", data type 8, in table "shop..goods"
+2017-11-11 11:37:50,228 DEBUG [org.mybatis.generator.internal.db.DatabaseIntrospector] - Found column "descption", data type -1, in table "shop..goods"
+2017-11-11 11:37:50,228 DEBUG [org.mybatis.generator.internal.db.DatabaseIntrospector] - Found column "imgPath", data type -1, in table "shop..goods"
+2017-11-11 11:37:50,243 DEBUG [org.mybatis.generator.internal.db.DatabaseIntrospector] - Found column "filePath", data type -1, in table "shop..goods"
+2017-11-11 11:37:50,243 DEBUG [org.mybatis.generator.internal.db.DatabaseIntrospector] - Found column "stock", data type 4, in table "shop..goods"
+2017-11-11 11:37:50,243 DEBUG [org.mybatis.generator.internal.db.DatabaseIntrospector] - Found override for column "descption" in table "shop..goods"
+2017-11-11 11:37:50,243 DEBUG [org.mybatis.generator.internal.db.DatabaseIntrospector] - Found override for column "imgPath" in table "shop..goods"
+2017-11-11 11:37:50,243 DEBUG [org.mybatis.generator.internal.db.DatabaseIntrospector] - Found override for column "filePath" in table "shop..goods"
+2017-11-11 11:37:50,243 DEBUG [org.mybatis.generator.internal.db.DatabaseIntrospector] - Retrieving column information for table "address"
+2017-11-11 11:37:50,243 DEBUG [org.mybatis.generator.internal.db.DatabaseIntrospector] - Found column "adressId", data type 4, in table "shop..address"
+2017-11-11 11:37:50,243 DEBUG [org.mybatis.generator.internal.db.DatabaseIntrospector] - Found column "uid", data type 4, in table "shop..address"
+2017-11-11 11:37:50,243 DEBUG [org.mybatis.generator.internal.db.DatabaseIntrospector] - Found column "address", data type -1, in table "shop..address"
+2017-11-11 11:37:50,243 DEBUG [org.mybatis.generator.internal.db.DatabaseIntrospector] - Found column "def", data type -7, in table "shop..address"
+2017-11-11 11:37:50,243 DEBUG [org.mybatis.generator.internal.db.DatabaseIntrospector] - Retrieving column information for table "goodstype"
+2017-11-11 11:37:50,260 DEBUG [org.mybatis.generator.internal.db.DatabaseIntrospector] - Found column "tid", data type 4, in table "shop..goodstype"
+2017-11-11 11:37:50,261 DEBUG [org.mybatis.generator.internal.db.DatabaseIntrospector] - Found column "tname", data type 12, in table "shop..goodstype"
+2017-11-11 11:37:50,264 DEBUG [org.mybatis.generator.internal.db.DatabaseIntrospector] - Retrieving column information for table "orderform"
+2017-11-11 11:37:50,267 DEBUG [org.mybatis.generator.internal.db.DatabaseIntrospector] - Found column "oid", data type 3, in table "shop..orderform"
+2017-11-11 11:37:50,268 DEBUG [org.mybatis.generator.internal.db.DatabaseIntrospector] - Found column "gid", data type 4, in table "shop..orderform"
+2017-11-11 11:37:50,268 DEBUG [org.mybatis.generator.internal.db.DatabaseIntrospector] - Found column "gnum", data type 4, in table "shop..orderform"
+2017-11-11 11:37:50,268 DEBUG [org.mybatis.generator.internal.db.DatabaseIntrospector] - Found column "SubTotal", data type 8, in table "shop..orderform"
+2017-11-11 11:37:50,272 DEBUG [org.mybatis.generator.internal.db.DatabaseIntrospector] - Retrieving column information for table "orders"
+2017-11-11 11:37:50,275 DEBUG [org.mybatis.generator.internal.db.DatabaseIntrospector] - Found column "oid", data type 3, in table "shop..orders"
+2017-11-11 11:37:50,276 DEBUG [org.mybatis.generator.internal.db.DatabaseIntrospector] - Found column "uid", data type 4, in table "shop..orders"
+2017-11-11 11:37:50,276 DEBUG [org.mybatis.generator.internal.db.DatabaseIntrospector] - Found column "state", data type 12, in table "shop..orders"
+2017-11-11 11:37:50,276 DEBUG [org.mybatis.generator.internal.db.DatabaseIntrospector] - Found column "address", data type -1, in table "shop..orders"
+2017-11-11 11:37:50,277 DEBUG [org.mybatis.generator.internal.db.DatabaseIntrospector] - Found column "sum", data type 8, in table "shop..orders"
+2017-11-11 11:37:50,279 DEBUG [org.mybatis.generator.internal.db.DatabaseIntrospector] - Retrieving column information for table "shoppingcar"
+2017-11-11 11:37:50,282 DEBUG [org.mybatis.generator.internal.db.DatabaseIntrospector] - Found column "cid", data type 4, in table "shop..shoppingcar"
+2017-11-11 11:37:50,282 DEBUG [org.mybatis.generator.internal.db.DatabaseIntrospector] - Found column "addGoodsTime", data type 93, in table "shop..shoppingcar"
+2017-11-11 11:37:50,282 DEBUG [org.mybatis.generator.internal.db.DatabaseIntrospector] - Found column "uid", data type 4, in table "shop..shoppingcar"
+2017-11-11 11:37:50,283 DEBUG [org.mybatis.generator.internal.db.DatabaseIntrospector] - Found column "gid", data type 4, in table "shop..shoppingcar"
+2017-11-11 11:37:50,283 DEBUG [org.mybatis.generator.internal.db.DatabaseIntrospector] - Found column "gnum", data type 4, in table "shop..shoppingcar"
+2017-11-11 11:37:50,283 DEBUG [org.mybatis.generator.internal.db.DatabaseIntrospector] - Found override for column "addGoodsTime" in table "shop..shoppingcar"
+2017-11-11 11:37:50,285 DEBUG [org.mybatis.generator.internal.db.DatabaseIntrospector] - Retrieving column information for table "users"
+2017-11-11 11:37:50,290 DEBUG [org.mybatis.generator.internal.db.DatabaseIntrospector] - Found column "uid", data type 4, in table "shop..users"
+2017-11-11 11:37:50,290 DEBUG [org.mybatis.generator.internal.db.DatabaseIntrospector] - Found column "uname", data type 12, in table "shop..users"
+2017-11-11 11:37:50,291 DEBUG [org.mybatis.generator.internal.db.DatabaseIntrospector] - Found column "upwd", data type 12, in table "shop..users"
+2017-11-11 11:37:50,291 DEBUG [org.mybatis.generator.internal.db.DatabaseIntrospector] - Found column "phone", data type 3, in table "shop..users"
+2017-11-11 11:37:50,291 DEBUG [org.mybatis.generator.internal.db.DatabaseIntrospector] - Found column "city", data type 12, in table "shop..users"
+2017-11-11 11:37:50,291 DEBUG [org.mybatis.generator.internal.db.DatabaseIntrospector] - Found column "regDate", data type 91, in table "shop..users"
+2017-11-11 11:37:50,292 DEBUG [org.mybatis.generator.internal.db.DatabaseIntrospector] - Found column "idCard", data type 12, in table "shop..users"
+2017-11-11 11:37:50,292 DEBUG [org.mybatis.generator.internal.db.DatabaseIntrospector] - Found column "realName", data type 12, in table "shop..users"
+2017-11-11 11:37:50,292 DEBUG [org.mybatis.generator.internal.db.DatabaseIntrospector] - Found column "age", data type 4, in table "shop..users"
+2017-11-11 11:37:50,292 DEBUG [org.mybatis.generator.internal.db.DatabaseIntrospector] - Found column "email", data type 12, in table "shop..users"
+2017-11-11 11:37:50,292 DEBUG [org.mybatis.generator.internal.db.DatabaseIntrospector] - Found column "sex", data type 12, in table "shop..users"
+2017-11-11 11:37:50,293 DEBUG [org.mybatis.generator.internal.db.DatabaseIntrospector] - Found column "avatar", data type -1, in table "shop..users"
+2017-11-11 11:39:02,180 DEBUG [org.apache.ibatis.logging.LogFactory] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2017-11-11 11:39:02,312 DEBUG [org.apache.ibatis.datasource.pooled.PooledDataSource] - PooledDataSource forcefully closed/removed all connections.
+2017-11-11 11:39:02,312 DEBUG [org.apache.ibatis.datasource.pooled.PooledDataSource] - PooledDataSource forcefully closed/removed all connections.
+2017-11-11 11:39:02,312 DEBUG [org.apache.ibatis.datasource.pooled.PooledDataSource] - PooledDataSource forcefully closed/removed all connections.
+2017-11-11 11:39:02,312 DEBUG [org.apache.ibatis.datasource.pooled.PooledDataSource] - PooledDataSource forcefully closed/removed all connections.
+2017-11-11 11:39:02,565 DEBUG [org.apache.ibatis.transaction.jdbc.JdbcTransaction] - Opening JDBC Connection
+2017-11-11 11:39:02,797 DEBUG [org.apache.ibatis.datasource.pooled.PooledDataSource] - Created connection 2012846597.
+2017-11-11 11:39:02,797 DEBUG [org.apache.ibatis.transaction.jdbc.JdbcTransaction] - Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@77f99a05]
+2017-11-11 11:39:02,802 DEBUG [com.mod.mapper.OrderFormMapper.getOrderList] - ==>  Preparing: select * from view_order_goods where oid = ? and uid = ?; 
+2017-11-11 11:39:02,833 DEBUG [com.mod.mapper.OrderFormMapper.getOrderList] - ==> Parameters: 20171110164436(Long), 1(Integer)
+2017-11-11 11:39:02,866 DEBUG [com.mod.mapper.OrderFormMapper.getOrderList] - <==      Total: 2
+2017-11-11 11:39:24,247 DEBUG [org.apache.ibatis.logging.LogFactory] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2017-11-11 11:39:24,384 DEBUG [org.apache.ibatis.datasource.pooled.PooledDataSource] - PooledDataSource forcefully closed/removed all connections.
+2017-11-11 11:39:24,384 DEBUG [org.apache.ibatis.datasource.pooled.PooledDataSource] - PooledDataSource forcefully closed/removed all connections.
+2017-11-11 11:39:24,384 DEBUG [org.apache.ibatis.datasource.pooled.PooledDataSource] - PooledDataSource forcefully closed/removed all connections.
+2017-11-11 11:39:24,384 DEBUG [org.apache.ibatis.datasource.pooled.PooledDataSource] - PooledDataSource forcefully closed/removed all connections.
+2017-11-11 11:39:24,600 DEBUG [org.apache.ibatis.transaction.jdbc.JdbcTransaction] - Opening JDBC Connection
+2017-11-11 11:39:24,832 DEBUG [org.apache.ibatis.datasource.pooled.PooledDataSource] - Created connection 2012846597.
+2017-11-11 11:39:24,832 DEBUG [org.apache.ibatis.transaction.jdbc.JdbcTransaction] - Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@77f99a05]
+2017-11-11 11:39:24,832 DEBUG [com.mod.mapper.OrderFormMapper.getOrderList] - ==>  Preparing: select * from view_order_goods where oid = ? and uid = ?; 
+2017-11-11 11:39:24,870 DEBUG [com.mod.mapper.OrderFormMapper.getOrderList] - ==> Parameters: 20171110164436(Long), 1(Integer)
+2017-11-11 11:39:24,901 DEBUG [com.mod.mapper.OrderFormMapper.getOrderList] - <==      Total: 2
+2017-11-11 11:40:38,933 DEBUG [org.apache.ibatis.logging.LogFactory] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2017-11-11 11:40:39,049 DEBUG [org.apache.ibatis.datasource.pooled.PooledDataSource] - PooledDataSource forcefully closed/removed all connections.
+2017-11-11 11:40:39,049 DEBUG [org.apache.ibatis.datasource.pooled.PooledDataSource] - PooledDataSource forcefully closed/removed all connections.
+2017-11-11 11:40:39,049 DEBUG [org.apache.ibatis.datasource.pooled.PooledDataSource] - PooledDataSource forcefully closed/removed all connections.
+2017-11-11 11:40:39,049 DEBUG [org.apache.ibatis.datasource.pooled.PooledDataSource] - PooledDataSource forcefully closed/removed all connections.
+2017-11-11 11:40:39,296 DEBUG [org.apache.ibatis.transaction.jdbc.JdbcTransaction] - Opening JDBC Connection
+2017-11-11 11:40:39,512 DEBUG [org.apache.ibatis.datasource.pooled.PooledDataSource] - Created connection 2012846597.
+2017-11-11 11:40:39,512 DEBUG [org.apache.ibatis.transaction.jdbc.JdbcTransaction] - Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@77f99a05]
+2017-11-11 11:40:39,529 DEBUG [com.mod.mapper.OrderFormMapper.getOrderList] - ==>  Preparing: select * from view_order_goods where oid = ? and uid = ?; 
+2017-11-11 11:40:39,550 DEBUG [com.mod.mapper.OrderFormMapper.getOrderList] - ==> Parameters: 20171110164436(Long), 1(Integer)
+2017-11-11 11:40:39,597 DEBUG [com.mod.mapper.OrderFormMapper.getOrderList] - <==      Total: 2
+2017-11-11 11:44:43,481 DEBUG [org.apache.ibatis.logging.LogFactory] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2017-11-11 11:44:43,597 DEBUG [org.apache.ibatis.datasource.pooled.PooledDataSource] - PooledDataSource forcefully closed/removed all connections.
+2017-11-11 11:44:43,597 DEBUG [org.apache.ibatis.datasource.pooled.PooledDataSource] - PooledDataSource forcefully closed/removed all connections.
+2017-11-11 11:44:43,597 DEBUG [org.apache.ibatis.datasource.pooled.PooledDataSource] - PooledDataSource forcefully closed/removed all connections.
+2017-11-11 11:44:43,597 DEBUG [org.apache.ibatis.datasource.pooled.PooledDataSource] - PooledDataSource forcefully closed/removed all connections.
+2017-11-11 11:44:43,851 DEBUG [org.apache.ibatis.transaction.jdbc.JdbcTransaction] - Opening JDBC Connection
+2017-11-11 11:44:44,083 DEBUG [org.apache.ibatis.datasource.pooled.PooledDataSource] - Created connection 2012846597.
+2017-11-11 11:44:44,083 DEBUG [org.apache.ibatis.transaction.jdbc.JdbcTransaction] - Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@77f99a05]
+2017-11-11 11:44:44,092 DEBUG [com.mod.mapper.OrderFormMapper.getOrderList] - ==>  Preparing: select * from view_order_goods where oid = ? and uid = ?; 
+2017-11-11 11:44:44,125 DEBUG [com.mod.mapper.OrderFormMapper.getOrderList] - ==> Parameters: 20171110164436(Long), 1(Integer)
+2017-11-11 11:44:44,183 DEBUG [com.mod.mapper.OrderFormMapper.getOrderList] - <==      Total: 2
+2017-11-11 11:45:34,815 DEBUG [org.apache.ibatis.logging.LogFactory] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2017-11-11 11:45:34,951 DEBUG [org.apache.ibatis.datasource.pooled.PooledDataSource] - PooledDataSource forcefully closed/removed all connections.
+2017-11-11 11:45:34,951 DEBUG [org.apache.ibatis.datasource.pooled.PooledDataSource] - PooledDataSource forcefully closed/removed all connections.
+2017-11-11 11:45:34,952 DEBUG [org.apache.ibatis.datasource.pooled.PooledDataSource] - PooledDataSource forcefully closed/removed all connections.
+2017-11-11 11:45:34,952 DEBUG [org.apache.ibatis.datasource.pooled.PooledDataSource] - PooledDataSource forcefully closed/removed all connections.
+2017-11-11 11:45:35,169 DEBUG [org.apache.ibatis.transaction.jdbc.JdbcTransaction] - Opening JDBC Connection
+2017-11-11 11:45:35,385 DEBUG [org.apache.ibatis.datasource.pooled.PooledDataSource] - Created connection 2012846597.
+2017-11-11 11:45:35,385 DEBUG [org.apache.ibatis.transaction.jdbc.JdbcTransaction] - Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@77f99a05]
+2017-11-11 11:45:35,401 DEBUG [com.mod.mapper.OrderFormMapper.getOrderList] - ==>  Preparing: select * from view_order_goods where oid = ? and uid = ?; 
+2017-11-11 11:45:35,432 DEBUG [com.mod.mapper.OrderFormMapper.getOrderList] - ==> Parameters: 20171110164436(Long), 1(Integer)
+2017-11-11 11:45:35,470 DEBUG [com.mod.mapper.OrderFormMapper.getOrderList] - <==      Total: 2
+2017-11-11 11:46:23,431 DEBUG [org.apache.ibatis.logging.LogFactory] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2017-11-11 11:46:23,553 DEBUG [org.apache.ibatis.datasource.pooled.PooledDataSource] - PooledDataSource forcefully closed/removed all connections.
+2017-11-11 11:46:23,553 DEBUG [org.apache.ibatis.datasource.pooled.PooledDataSource] - PooledDataSource forcefully closed/removed all connections.
+2017-11-11 11:46:23,553 DEBUG [org.apache.ibatis.datasource.pooled.PooledDataSource] - PooledDataSource forcefully closed/removed all connections.
+2017-11-11 11:46:23,553 DEBUG [org.apache.ibatis.datasource.pooled.PooledDataSource] - PooledDataSource forcefully closed/removed all connections.
+2017-11-11 11:46:23,895 DEBUG [org.apache.ibatis.transaction.jdbc.JdbcTransaction] - Opening JDBC Connection
+2017-11-11 11:46:24,121 DEBUG [org.apache.ibatis.datasource.pooled.PooledDataSource] - Created connection 2012846597.
+2017-11-11 11:46:24,121 DEBUG [org.apache.ibatis.transaction.jdbc.JdbcTransaction] - Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@77f99a05]
+2017-11-11 11:46:24,139 DEBUG [com.mod.mapper.OrderFormMapper.getOrderList] - ==>  Preparing: select * from view_order_goods where oid = ? and uid = ?; 
+2017-11-11 11:46:24,174 DEBUG [com.mod.mapper.OrderFormMapper.getOrderList] - ==> Parameters: 20171110164436(Long), 1(Integer)
+2017-11-11 11:46:24,206 DEBUG [com.mod.mapper.OrderFormMapper.getOrderList] - <==      Total: 2
+2017-11-11 11:47:40,427 DEBUG [org.apache.ibatis.logging.LogFactory] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2017-11-11 11:47:40,543 DEBUG [org.apache.ibatis.datasource.pooled.PooledDataSource] - PooledDataSource forcefully closed/removed all connections.
+2017-11-11 11:47:40,543 DEBUG [org.apache.ibatis.datasource.pooled.PooledDataSource] - PooledDataSource forcefully closed/removed all connections.
+2017-11-11 11:47:40,543 DEBUG [org.apache.ibatis.datasource.pooled.PooledDataSource] - PooledDataSource forcefully closed/removed all connections.
+2017-11-11 11:47:40,543 DEBUG [org.apache.ibatis.datasource.pooled.PooledDataSource] - PooledDataSource forcefully closed/removed all connections.
+2017-11-11 11:47:40,759 DEBUG [org.apache.ibatis.transaction.jdbc.JdbcTransaction] - Opening JDBC Connection
+2017-11-11 11:47:40,991 DEBUG [org.apache.ibatis.datasource.pooled.PooledDataSource] - Created connection 2012846597.
+2017-11-11 11:47:40,991 DEBUG [org.apache.ibatis.transaction.jdbc.JdbcTransaction] - Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@77f99a05]
+2017-11-11 11:47:40,997 DEBUG [com.mod.mapper.OrderFormMapper.getOrderList] - ==>  Preparing: select * from view_order_goods where oid = ? and uid = ?; 
+2017-11-11 11:47:41,028 DEBUG [com.mod.mapper.OrderFormMapper.getOrderList] - ==> Parameters: 20171110164436(Long), 1(Integer)
+2017-11-11 11:47:41,059 DEBUG [com.mod.mapper.OrderFormMapper.getOrderList] - <==      Total: 2
+2017-11-11 11:48:18,513 DEBUG [org.apache.ibatis.logging.LogFactory] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2017-11-11 11:48:18,645 DEBUG [org.apache.ibatis.datasource.pooled.PooledDataSource] - PooledDataSource forcefully closed/removed all connections.
+2017-11-11 11:48:18,645 DEBUG [org.apache.ibatis.datasource.pooled.PooledDataSource] - PooledDataSource forcefully closed/removed all connections.
+2017-11-11 11:48:18,645 DEBUG [org.apache.ibatis.datasource.pooled.PooledDataSource] - PooledDataSource forcefully closed/removed all connections.
+2017-11-11 11:48:18,645 DEBUG [org.apache.ibatis.datasource.pooled.PooledDataSource] - PooledDataSource forcefully closed/removed all connections.
+2017-11-11 11:48:18,894 DEBUG [org.apache.ibatis.transaction.jdbc.JdbcTransaction] - Opening JDBC Connection
+2017-11-11 11:48:19,114 DEBUG [org.apache.ibatis.datasource.pooled.PooledDataSource] - Created connection 2012846597.
+2017-11-11 11:48:19,114 DEBUG [org.apache.ibatis.transaction.jdbc.JdbcTransaction] - Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@77f99a05]
+2017-11-11 11:48:19,118 DEBUG [com.mod.mapper.OrderFormMapper.getOrderList] - ==>  Preparing: select * from view_order_goods where oid = ? and uid = ?; 
+2017-11-11 11:48:19,150 DEBUG [com.mod.mapper.OrderFormMapper.getOrderList] - ==> Parameters: 20171110164436(Long), 1(Integer)
+2017-11-11 11:48:19,197 DEBUG [com.mod.mapper.OrderFormMapper.getOrderList] - <==      Total: 2
+2017-11-11 11:52:21,673 DEBUG [org.mybatis.generator.internal.db.DatabaseIntrospector] - Retrieving column information for table "goods"
+2017-11-11 11:52:21,673 DEBUG [org.mybatis.generator.internal.db.DatabaseIntrospector] - Found column "gid", data type 4, in table "shop..goods"
+2017-11-11 11:52:21,673 DEBUG [org.mybatis.generator.internal.db.DatabaseIntrospector] - Found column "gname", data type 12, in table "shop..goods"
+2017-11-11 11:52:21,673 DEBUG [org.mybatis.generator.internal.db.DatabaseIntrospector] - Found column "tid", data type 4, in table "shop..goods"
+2017-11-11 11:52:21,673 DEBUG [org.mybatis.generator.internal.db.DatabaseIntrospector] - Found column "price", data type 8, in table "shop..goods"
+2017-11-11 11:52:21,673 DEBUG [org.mybatis.generator.internal.db.DatabaseIntrospector] - Found column "descption", data type -1, in table "shop..goods"
+2017-11-11 11:52:21,673 DEBUG [org.mybatis.generator.internal.db.DatabaseIntrospector] - Found column "imgPath", data type -1, in table "shop..goods"
+2017-11-11 11:52:21,673 DEBUG [org.mybatis.generator.internal.db.DatabaseIntrospector] - Found column "filePath", data type -1, in table "shop..goods"
+2017-11-11 11:52:21,673 DEBUG [org.mybatis.generator.internal.db.DatabaseIntrospector] - Found column "stock", data type 4, in table "shop..goods"
+2017-11-11 11:52:21,673 DEBUG [org.mybatis.generator.internal.db.DatabaseIntrospector] - Found override for column "descption" in table "shop..goods"
+2017-11-11 11:52:21,673 DEBUG [org.mybatis.generator.internal.db.DatabaseIntrospector] - Found override for column "imgPath" in table "shop..goods"
+2017-11-11 11:52:21,673 DEBUG [org.mybatis.generator.internal.db.DatabaseIntrospector] - Found override for column "filePath" in table "shop..goods"
+2017-11-11 11:52:21,689 DEBUG [org.mybatis.generator.internal.db.DatabaseIntrospector] - Retrieving column information for table "address"
+2017-11-11 11:52:21,689 DEBUG [org.mybatis.generator.internal.db.DatabaseIntrospector] - Found column "adressId", data type 4, in table "shop..address"
+2017-11-11 11:52:21,689 DEBUG [org.mybatis.generator.internal.db.DatabaseIntrospector] - Found column "uid", data type 4, in table "shop..address"
+2017-11-11 11:52:21,689 DEBUG [org.mybatis.generator.internal.db.DatabaseIntrospector] - Found column "address", data type -1, in table "shop..address"
+2017-11-11 11:52:21,689 DEBUG [org.mybatis.generator.internal.db.DatabaseIntrospector] - Found column "def", data type -7, in table "shop..address"
+2017-11-11 11:52:21,704 DEBUG [org.mybatis.generator.internal.db.DatabaseIntrospector] - Retrieving column information for table "goodstype"
+2017-11-11 11:52:21,704 DEBUG [org.mybatis.generator.internal.db.DatabaseIntrospector] - Found column "tid", data type 4, in table "shop..goodstype"
+2017-11-11 11:52:21,704 DEBUG [org.mybatis.generator.internal.db.DatabaseIntrospector] - Found column "tname", data type 12, in table "shop..goodstype"
+2017-11-11 11:52:21,704 DEBUG [org.mybatis.generator.internal.db.DatabaseIntrospector] - Retrieving column information for table "orderform"
+2017-11-11 11:52:21,704 DEBUG [org.mybatis.generator.internal.db.DatabaseIntrospector] - Found column "oid", data type 3, in table "shop..orderform"
+2017-11-11 11:52:21,704 DEBUG [org.mybatis.generator.internal.db.DatabaseIntrospector] - Found column "gid", data type 4, in table "shop..orderform"
+2017-11-11 11:52:21,704 DEBUG [org.mybatis.generator.internal.db.DatabaseIntrospector] - Found column "gnum", data type 4, in table "shop..orderform"
+2017-11-11 11:52:21,704 DEBUG [org.mybatis.generator.internal.db.DatabaseIntrospector] - Found column "SubTotal", data type 8, in table "shop..orderform"
+2017-11-11 11:52:21,704 DEBUG [org.mybatis.generator.internal.db.DatabaseIntrospector] - Found override for column "oid" in table "shop..orderform"
+2017-11-11 11:52:21,720 DEBUG [org.mybatis.generator.internal.db.DatabaseIntrospector] - Retrieving column information for table "orders"
+2017-11-11 11:52:21,723 DEBUG [org.mybatis.generator.internal.db.DatabaseIntrospector] - Found column "oid", data type 3, in table "shop..orders"
+2017-11-11 11:52:21,724 DEBUG [org.mybatis.generator.internal.db.DatabaseIntrospector] - Found column "uid", data type 4, in table "shop..orders"
+2017-11-11 11:52:21,724 DEBUG [org.mybatis.generator.internal.db.DatabaseIntrospector] - Found column "state", data type 12, in table "shop..orders"
+2017-11-11 11:52:21,724 DEBUG [org.mybatis.generator.internal.db.DatabaseIntrospector] - Found column "address", data type -1, in table "shop..orders"
+2017-11-11 11:52:21,724 DEBUG [org.mybatis.generator.internal.db.DatabaseIntrospector] - Found column "sum", data type 8, in table "shop..orders"
+2017-11-11 11:52:21,725 DEBUG [org.mybatis.generator.internal.db.DatabaseIntrospector] - Found override for column "oid" in table "shop..orders"
+2017-11-11 11:52:21,727 DEBUG [org.mybatis.generator.internal.db.DatabaseIntrospector] - Retrieving column information for table "shoppingcar"
+2017-11-11 11:52:21,727 DEBUG [org.mybatis.generator.internal.db.DatabaseIntrospector] - Found column "cid", data type 4, in table "shop..shoppingcar"
+2017-11-11 11:52:21,727 DEBUG [org.mybatis.generator.internal.db.DatabaseIntrospector] - Found column "addGoodsTime", data type 93, in table "shop..shoppingcar"
+2017-11-11 11:52:21,727 DEBUG [org.mybatis.generator.internal.db.DatabaseIntrospector] - Found column "uid", data type 4, in table "shop..shoppingcar"
+2017-11-11 11:52:21,727 DEBUG [org.mybatis.generator.internal.db.DatabaseIntrospector] - Found column "gid", data type 4, in table "shop..shoppingcar"
+2017-11-11 11:52:21,727 DEBUG [org.mybatis.generator.internal.db.DatabaseIntrospector] - Found column "gnum", data type 4, in table "shop..shoppingcar"
+2017-11-11 11:52:21,727 DEBUG [org.mybatis.generator.internal.db.DatabaseIntrospector] - Found override for column "addGoodsTime" in table "shop..shoppingcar"
+2017-11-11 11:52:21,727 DEBUG [org.mybatis.generator.internal.db.DatabaseIntrospector] - Retrieving column information for table "users"
+2017-11-11 11:52:21,727 DEBUG [org.mybatis.generator.internal.db.DatabaseIntrospector] - Found column "uid", data type 4, in table "shop..users"
+2017-11-11 11:52:21,727 DEBUG [org.mybatis.generator.internal.db.DatabaseIntrospector] - Found column "uname", data type 12, in table "shop..users"
+2017-11-11 11:52:21,727 DEBUG [org.mybatis.generator.internal.db.DatabaseIntrospector] - Found column "upwd", data type 12, in table "shop..users"
+2017-11-11 11:52:21,727 DEBUG [org.mybatis.generator.internal.db.DatabaseIntrospector] - Found column "phone", data type 3, in table "shop..users"
+2017-11-11 11:52:21,727 DEBUG [org.mybatis.generator.internal.db.DatabaseIntrospector] - Found column "city", data type 12, in table "shop..users"
+2017-11-11 11:52:21,727 DEBUG [org.mybatis.generator.internal.db.DatabaseIntrospector] - Found column "regDate", data type 91, in table "shop..users"
+2017-11-11 11:52:21,727 DEBUG [org.mybatis.generator.internal.db.DatabaseIntrospector] - Found column "idCard", data type 12, in table "shop..users"
+2017-11-11 11:52:21,727 DEBUG [org.mybatis.generator.internal.db.DatabaseIntrospector] - Found column "realName", data type 12, in table "shop..users"
+2017-11-11 11:52:21,727 DEBUG [org.mybatis.generator.internal.db.DatabaseIntrospector] - Found column "age", data type 4, in table "shop..users"
+2017-11-11 11:52:21,727 DEBUG [org.mybatis.generator.internal.db.DatabaseIntrospector] - Found column "email", data type 12, in table "shop..users"
+2017-11-11 11:52:21,727 DEBUG [org.mybatis.generator.internal.db.DatabaseIntrospector] - Found column "sex", data type 12, in table "shop..users"
+2017-11-11 11:52:21,727 DEBUG [org.mybatis.generator.internal.db.DatabaseIntrospector] - Found column "avatar", data type -1, in table "shop..users"
+2017-11-11 11:53:37,346 DEBUG [org.apache.ibatis.logging.LogFactory] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2017-11-11 11:53:37,466 DEBUG [org.apache.ibatis.datasource.pooled.PooledDataSource] - PooledDataSource forcefully closed/removed all connections.
+2017-11-11 11:53:37,466 DEBUG [org.apache.ibatis.datasource.pooled.PooledDataSource] - PooledDataSource forcefully closed/removed all connections.
+2017-11-11 11:53:37,466 DEBUG [org.apache.ibatis.datasource.pooled.PooledDataSource] - PooledDataSource forcefully closed/removed all connections.
+2017-11-11 11:53:37,466 DEBUG [org.apache.ibatis.datasource.pooled.PooledDataSource] - PooledDataSource forcefully closed/removed all connections.
+2017-11-11 11:53:37,713 DEBUG [org.apache.ibatis.transaction.jdbc.JdbcTransaction] - Opening JDBC Connection
+2017-11-11 11:53:37,930 DEBUG [org.apache.ibatis.datasource.pooled.PooledDataSource] - Created connection 2012846597.
+2017-11-11 11:53:37,942 DEBUG [org.apache.ibatis.transaction.jdbc.JdbcTransaction] - Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@77f99a05]
+2017-11-11 11:53:37,945 DEBUG [com.mod.mapper.OrderFormMapper.getOrderList] - ==>  Preparing: select * from view_order_goods where oid = ? and uid = ?; 
+2017-11-11 11:53:37,967 DEBUG [com.mod.mapper.OrderFormMapper.getOrderList] - ==> Parameters: 20171110164436(Long), 1(Integer)
+2017-11-11 11:53:38,014 DEBUG [com.mod.mapper.OrderFormMapper.getOrderList] - <==      Total: 2
+2017-11-11 11:54:03,307 DEBUG [org.apache.ibatis.logging.LogFactory] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2017-11-11 11:54:03,426 DEBUG [org.apache.ibatis.datasource.pooled.PooledDataSource] - PooledDataSource forcefully closed/removed all connections.
+2017-11-11 11:54:03,426 DEBUG [org.apache.ibatis.datasource.pooled.PooledDataSource] - PooledDataSource forcefully closed/removed all connections.
+2017-11-11 11:54:03,426 DEBUG [org.apache.ibatis.datasource.pooled.PooledDataSource] - PooledDataSource forcefully closed/removed all connections.
+2017-11-11 11:54:03,426 DEBUG [org.apache.ibatis.datasource.pooled.PooledDataSource] - PooledDataSource forcefully closed/removed all connections.
+2017-11-11 11:54:03,712 DEBUG [org.apache.ibatis.transaction.jdbc.JdbcTransaction] - Opening JDBC Connection
+2017-11-11 11:54:03,978 DEBUG [org.apache.ibatis.datasource.pooled.PooledDataSource] - Created connection 2012846597.
+2017-11-11 11:54:03,986 DEBUG [org.apache.ibatis.transaction.jdbc.JdbcTransaction] - Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@77f99a05]
+2017-11-11 11:54:03,989 DEBUG [com.mod.mapper.OrderFormMapper.getOrderList] - ==>  Preparing: select * from view_order_goods where oid = ? and uid = ?; 
+2017-11-11 11:54:04,025 DEBUG [com.mod.mapper.OrderFormMapper.getOrderList] - ==> Parameters: 20171110164436(Long), 1(Integer)
+2017-11-11 11:54:04,047 DEBUG [com.mod.mapper.OrderFormMapper.getOrderList] - <==      Total: 2
+2017-11-11 11:55:54,260 DEBUG [org.apache.ibatis.logging.LogFactory] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2017-11-11 11:55:54,375 DEBUG [org.apache.ibatis.datasource.pooled.PooledDataSource] - PooledDataSource forcefully closed/removed all connections.
+2017-11-11 11:55:54,391 DEBUG [org.apache.ibatis.datasource.pooled.PooledDataSource] - PooledDataSource forcefully closed/removed all connections.
+2017-11-11 11:55:54,391 DEBUG [org.apache.ibatis.datasource.pooled.PooledDataSource] - PooledDataSource forcefully closed/removed all connections.
+2017-11-11 11:55:54,391 DEBUG [org.apache.ibatis.datasource.pooled.PooledDataSource] - PooledDataSource forcefully closed/removed all connections.
+2017-11-11 11:55:54,614 DEBUG [org.apache.ibatis.transaction.jdbc.JdbcTransaction] - Opening JDBC Connection
+2017-11-11 11:55:54,830 DEBUG [org.apache.ibatis.datasource.pooled.PooledDataSource] - Created connection 2012846597.
+2017-11-11 11:55:54,830 DEBUG [org.apache.ibatis.transaction.jdbc.JdbcTransaction] - Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@77f99a05]
+2017-11-11 11:55:54,847 DEBUG [com.mod.mapper.OrderFormMapper.getOrderList] - ==>  Preparing: select * from view_order_goods where oid = ? and uid = ?; 
+2017-11-11 11:55:54,879 DEBUG [com.mod.mapper.OrderFormMapper.getOrderList] - ==> Parameters: 20171110164436(Long), 1(Integer)
+2017-11-11 11:55:54,914 DEBUG [com.mod.mapper.OrderFormMapper.getOrderList] - <==      Total: 2
+2017-11-11 11:56:31,464 DEBUG [org.apache.ibatis.logging.LogFactory] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2017-11-11 11:56:31,567 DEBUG [org.apache.ibatis.datasource.pooled.PooledDataSource] - PooledDataSource forcefully closed/removed all connections.
+2017-11-11 11:56:31,567 DEBUG [org.apache.ibatis.datasource.pooled.PooledDataSource] - PooledDataSource forcefully closed/removed all connections.
+2017-11-11 11:56:31,567 DEBUG [org.apache.ibatis.datasource.pooled.PooledDataSource] - PooledDataSource forcefully closed/removed all connections.
+2017-11-11 11:56:31,567 DEBUG [org.apache.ibatis.datasource.pooled.PooledDataSource] - PooledDataSource forcefully closed/removed all connections.
+2017-11-11 11:56:31,799 DEBUG [org.apache.ibatis.transaction.jdbc.JdbcTransaction] - Opening JDBC Connection
+2017-11-11 11:56:32,031 DEBUG [org.apache.ibatis.datasource.pooled.PooledDataSource] - Created connection 2012846597.
+2017-11-11 11:56:32,031 DEBUG [org.apache.ibatis.transaction.jdbc.JdbcTransaction] - Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@77f99a05]
+2017-11-11 11:56:32,031 DEBUG [com.mod.mapper.OrderFormMapper.getOrderList] - ==>  Preparing: select * from view_order_goods where oid = ? and uid = ?; 
+2017-11-11 11:56:32,069 DEBUG [com.mod.mapper.OrderFormMapper.getOrderList] - ==> Parameters: 20171110164436(Long), 1(Integer)
+2017-11-11 11:56:32,109 DEBUG [com.mod.mapper.OrderFormMapper.getOrderList] - <==      Total: 2

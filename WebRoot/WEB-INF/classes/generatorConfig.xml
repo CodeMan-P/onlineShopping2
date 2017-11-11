@@ -28,12 +28,22 @@
 	 enableCountByExample="false" enableSelectByExample="false"
             enableUpdateByExample="false" enableDeleteByExample="false"
 	>
-	<columnOverride column="date" jdbcType="TIMESTAMP" javaType="java.sql.Timestamp" />
+	<columnOverride column="oid" jdbcType="DECIMAL" javaType="java.long.String" />
 	</table>
+	
+		<table tableName="orders" domainObjectName="Orders"
+	 enableCountByExample="false" enableSelectByExample="false"
+            enableUpdateByExample="false" enableDeleteByExample="false"
+	>
+	<columnOverride column="oid" jdbcType="DECIMAL" javaType="java.long.String" />
+	</table>
+	
 	<table tableName="shoppingcar" domainObjectName="ShoppingCar"
 	 enableCountByExample="false" enableSelectByExample="false"
             enableUpdateByExample="false" enableDeleteByExample="false"
-	></table>
+	>
+	<columnOverride column="addgoodstime" jdbcType="TIMESTAMP" javaType="java.sql.Timestamp" />
+	</table>
 	<table tableName="users" domainObjectName="Users"
 	 enableCountByExample="false" enableSelectByExample="false"
             enableUpdateByExample="false" enableDeleteByExample="false"
