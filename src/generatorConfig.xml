@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN" "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+<generatorConfiguration>
+<classPathEntry  location="D:\MyEclipse\Workspaces\onlineShopping2\WebRoot\WEB-INF\lib\mysql-connector-java-5.1.6.jar"/>   
+  <context id="context1">
+    <jdbcConnection connectionURL="jdbc:mysql://localhost:3306/shop?characterEncoding=UTF-8" driverClass="com.mysql.jdbc.Driver" password="mysql" userId="root" />
+    <javaModelGenerator targetPackage="com.mod.bean" targetProject="onlineShopping2" />
+    <sqlMapGenerator targetPackage="com.mod.mapper" targetProject="onlineShopping2" />
+    <javaClientGenerator targetPackage="com.mod.mapper" targetProject="onlineShopping2" type="XMLMAPPER" />
+	
+	<table tableName="goods" domainObjectName="Goods"
+	 enableCountByExample="false" enableSelectByExample="false"
+            enableUpdateByExample="false" enableDeleteByExample="false"
+	>
+	<columnOverride column="descption" javaType="java.lang.String" jdbcType="VARCHAR" />
+	<columnOverride column="imgpath" javaType="java.lang.String" jdbcType="VARCHAR" />
+	<columnOverride column="filepath" javaType="java.lang.String" jdbcType="VARCHAR" /> 
+	</table>
+	<table tableName="address" domainObjectName="Address"
+	 enableCountByExample="false" enableSelectByExample="false"
+            enableUpdateByExample="false" enableDeleteByExample="false"
+	></table>
+	<table tableName="goodstype" domainObjectName="GoodsType"
+	 enableCountByExample="false" enableSelectByExample="false"
+            enableUpdateByExample="false" enableDeleteByExample="false"
+	></table>
+	<table tableName="orderform" domainObjectName="OrderForm"
+	 enableCountByExample="false" enableSelectByExample="false"
+            enableUpdateByExample="false" enableDeleteByExample="false"
+	>
+	<columnOverride column="date" jdbcType="TIMESTAMP" javaType="java.sql.Timestamp" />
+	</table>
+	<table tableName="shoppingcar" domainObjectName="ShoppingCar"
+	 enableCountByExample="false" enableSelectByExample="false"
+            enableUpdateByExample="false" enableDeleteByExample="false"
+	></table>
+	<table tableName="users" domainObjectName="Users"
+	 enableCountByExample="false" enableSelectByExample="false"
+            enableUpdateByExample="false" enableDeleteByExample="false"
+	></table>
+	
+  </context>
+</generatorConfiguration>

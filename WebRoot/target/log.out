@@ -1,0 +1,391 @@
+2017111014540766
+接收：getAvatar
+保存为：---->getAvatar_date_2017111014540775.jpg
+Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+PooledDataSource forcefully closed/removed all connections.
+PooledDataSource forcefully closed/removed all connections.
+PooledDataSource forcefully closed/removed all connections.
+PooledDataSource forcefully closed/removed all connections.
+Opening JDBC Connection
+Created connection 500663500.
+Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@1dd784cc]
+==>  Preparing: insert into users (uid, uname, upwd, phone, city, regDate, idCard, realName, age, email, sex, avatar ) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ? ) 
+==> Parameters: null, xiaoli(String), 123(String), 134341234(Long), 西安(String), 2017-11-10(Date), 1231231231231231x(String), null, 22(Integer), null, 男(String), java.io.StringReader@10be2b29(StringReader)
+
+### Error updating database.  Cause: com.mysql.jdbc.MysqlDataTruncation: Data truncation: Data too long for column 'idCard' at row 1
+### The error may involve com.mod.mapper.UsersMapper.insert-Inline
+### The error occurred while setting parameters
+### SQL: insert into users (uid, uname, upwd,        phone, city, regDate,        idCard, realName, age,        email, sex, avatar       )     values (?, ?, ?,        ?, ?, ?,        ?, ?, ?,        ?, ?, ?       )
+### Cause: com.mysql.jdbc.MysqlDataTruncation: Data truncation: Data too long for column 'idCard' at row 1
+2017111014553779
+接收：getAvatar
+保存为：---->getAvatar_date_2017111014553791.jpg
+==>  Preparing: insert into users (uid, uname, upwd, phone, city, regDate, idCard, realName, age, email, sex, avatar ) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ? ) 
+==> Parameters: null, xiaoli(String), 123(String), 12312312(Long), 西安(String), 2017-11-10(Date), 12312312(String), null, 22(Integer), null, 男(String), java.io.StringReader@5f5593ff(StringReader)
+<==    Updates: 1
+20171110145828632
+接收：T1tzyoXnd3XXb1upjX
+保存为：---->T1tzyoXnd3XXb1upjX_date_20171110145828646.jpg
+Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+PooledDataSource forcefully closed/removed all connections.
+PooledDataSource forcefully closed/removed all connections.
+PooledDataSource forcefully closed/removed all connections.
+PooledDataSource forcefully closed/removed all connections.
+Opening JDBC Connection
+Created connection 1710266000.
+Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@65f09690]
+==>  Preparing: insert into users (uid, uname, upwd, phone, city, regDate, idCard, realName, age, email, sex, avatar ) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ? ) 
+==> Parameters: null, xiaohong(String), 123(String), 124124(Long), 咸阳(String), 2017-11-10(Date), 12412421xx(String), null, 22(Integer), null, 女(String), java.io.StringReader@60268d93(StringReader)
+<==    Updates: 1
+==>  Preparing: insert into users (uid, uname, upwd, phone, city, regDate, idCard, realName, age, email, sex, avatar ) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ? ) 
+==> Parameters: null, (String), (String), null, (String), 2017-11-10(Date), (String), null, null, null, 男(String), java.io.StringReader@34371cbc(StringReader)
+
+### Error updating database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry '' for key 'uk_users_uname'
+### The error may involve com.mod.mapper.UsersMapper.insert-Inline
+### The error occurred while setting parameters
+### SQL: insert into users (uid, uname, upwd,        phone, city, regDate,        idCard, realName, age,        email, sex, avatar       )     values (?, ?, ?,        ?, ?, ?,        ?, ?, ?,        ?, ?, ?       )
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry '' for key 'uk_users_uname'
+==>  Preparing: insert into users (uid, uname, upwd, phone, city, regDate, idCard, realName, age, email, sex, avatar ) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ? ) 
+==> Parameters: null, qwe(String), 123(String), null, (String), 2017-11-10(Date), (String), null, null, null, 男(String), java.io.StringReader@7ac033d6(StringReader)
+<==    Updates: 1
+20171110151304863
+接收：TB1HC6wNFXXXXaCXXXXwu0bFXXX
+保存为：---->TB1HC6wNFXXXXaCXXXXwu0bFXXX_date_20171110151304864.png
+==>  Preparing: insert into users (uid, uname, upwd, phone, city, regDate, idCard, realName, age, email, sex, avatar ) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ? ) 
+==> Parameters: null, qwe(String), 123(String), 123123(Long), asdas(String), 2017-11-10(Date), 123123123(String), asdasd(String), 22(Integer), null, 男(String), java.io.StringReader@2342f4ff(StringReader)
+<==    Updates: 1
+==>  Preparing: SELECT * FROM users WHERE uname = ? and upwd = ? 
+==> Parameters: xiaoming(String), 123(String)
+<==    Columns: uid, uname, upwd, phone, city, regDate, idCard, realName, age, email, sex, avatar
+<==        Row: 1, xiaoming, 123, 18899119292, 西安, 2017-11-11, null, 小明, 22, null, 男, <<BLOB>>
+<==      Total: 1
+Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+PooledDataSource forcefully closed/removed all connections.
+PooledDataSource forcefully closed/removed all connections.
+PooledDataSource forcefully closed/removed all connections.
+PooledDataSource forcefully closed/removed all connections.
+Opening JDBC Connection
+Created connection 2074500730.
+Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@7ba65e7a]
+==>  Preparing: SELECT * FROM users WHERE uname = ? and upwd = ? 
+==> Parameters: xiaoming(String), 123(String)
+<==    Columns: uid, uname, upwd, phone, city, regDate, idCard, realName, age, email, sex, avatar
+<==        Row: 1, xiaoming, 123, 18899119292, 西安, 2017-11-11, null, 小明, 22, null, 男, <<BLOB>>
+<==      Total: 1
+Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+PooledDataSource forcefully closed/removed all connections.
+PooledDataSource forcefully closed/removed all connections.
+PooledDataSource forcefully closed/removed all connections.
+PooledDataSource forcefully closed/removed all connections.
+Opening JDBC Connection
+Created connection 1134919781.
+Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@43a58065]
+==>  Preparing: insert into users (uid, uname, upwd, phone, city, regDate, idCard, realName, age, email, sex, avatar ) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ? ) 
+==> Parameters: null, 123(String), 123(String), null, (String), 2017-11-10(Date), (String), (String), null, (String), 男(String), java.io.StringReader@339d3168(StringReader)
+<==    Updates: 1
+Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+PooledDataSource forcefully closed/removed all connections.
+PooledDataSource forcefully closed/removed all connections.
+PooledDataSource forcefully closed/removed all connections.
+PooledDataSource forcefully closed/removed all connections.
+Opening JDBC Connection
+Created connection 618494615.
+Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@24dd7a97]
+==>  Preparing: SELECT * FROM users WHERE uname = ? and upwd = ? 
+==> Parameters: xiaoming(String), 123(String)
+<==    Columns: uid, uname, upwd, phone, city, regDate, idCard, realName, age, email, sex, avatar
+<==        Row: 1, xiaoming, 123, 18899119292, 西安, 2017-11-11, null, 小明, 22, null, 男, <<BLOB>>
+<==      Total: 1
+Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+PooledDataSource forcefully closed/removed all connections.
+PooledDataSource forcefully closed/removed all connections.
+PooledDataSource forcefully closed/removed all connections.
+PooledDataSource forcefully closed/removed all connections.
+Opening JDBC Connection
+Created connection 1395911629.
+Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@5333ebcd]
+==>  Preparing: SELECT * FROM users WHERE uname = ? and upwd = ? 
+==> Parameters: xiaoming(String), 123(String)
+<==    Columns: uid, uname, upwd, phone, city, regDate, idCard, realName, age, email, sex, avatar
+<==        Row: 1, xiaoming, 123, 18899119292, 西安, 2017-11-11, null, 小明, 22, null, 男, <<BLOB>>
+<==      Total: 1
+Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+PooledDataSource forcefully closed/removed all connections.
+PooledDataSource forcefully closed/removed all connections.
+PooledDataSource forcefully closed/removed all connections.
+PooledDataSource forcefully closed/removed all connections.
+Opening JDBC Connection
+Created connection 1728790703.
+Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@670b40af]
+==>  Preparing: select * from view_order_goods where oid = ? and uid = ?; 
+==> Parameters: 20171109223512(Long), 1(Integer)
+<==      Total: 0
+Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+PooledDataSource forcefully closed/removed all connections.
+PooledDataSource forcefully closed/removed all connections.
+PooledDataSource forcefully closed/removed all connections.
+PooledDataSource forcefully closed/removed all connections.
+Opening JDBC Connection
+Created connection 1728790703.
+Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@670b40af]
+==>  Preparing: select * from view_order_goods where oid = ? and uid = ?; 
+==> Parameters: 20171109223512(Long), 1(Integer)
+<==      Total: 0
+Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+PooledDataSource forcefully closed/removed all connections.
+PooledDataSource forcefully closed/removed all connections.
+PooledDataSource forcefully closed/removed all connections.
+PooledDataSource forcefully closed/removed all connections.
+Opening JDBC Connection
+Created connection 1728790703.
+Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@670b40af]
+==>  Preparing: select * from view_order_goods where oid = ? and uid = ?; 
+==> Parameters: 20171109223512(Long), 1(Integer)
+<==      Total: 0
+Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+PooledDataSource forcefully closed/removed all connections.
+PooledDataSource forcefully closed/removed all connections.
+PooledDataSource forcefully closed/removed all connections.
+PooledDataSource forcefully closed/removed all connections.
+Opening JDBC Connection
+Created connection 1728790703.
+Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@670b40af]
+==>  Preparing: select * from view_order_goods where oid = ? and uid = ?; 
+==> Parameters: 20171110164436(Long), 1(Integer)
+<==      Total: 2
+Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+PooledDataSource forcefully closed/removed all connections.
+PooledDataSource forcefully closed/removed all connections.
+PooledDataSource forcefully closed/removed all connections.
+PooledDataSource forcefully closed/removed all connections.
+Opening JDBC Connection
+Created connection 1728790703.
+Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@670b40af]
+==>  Preparing: select * from view_order_goods where oid = ? and uid = ?; 
+==> Parameters: 20171110164436(Long), 1(Integer)
+<==      Total: 2
+Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+PooledDataSource forcefully closed/removed all connections.
+PooledDataSource forcefully closed/removed all connections.
+PooledDataSource forcefully closed/removed all connections.
+PooledDataSource forcefully closed/removed all connections.
+Opening JDBC Connection
+Created connection 99451533.
+Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@5ed828d]
+==>  Preparing: select * from view_order_goods where oid = ? and uid = ?; 
+==> Parameters: 20171110164436(Long), 1(Integer)
+<==      Total: 2
+Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+PooledDataSource forcefully closed/removed all connections.
+PooledDataSource forcefully closed/removed all connections.
+PooledDataSource forcefully closed/removed all connections.
+PooledDataSource forcefully closed/removed all connections.
+Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+PooledDataSource forcefully closed/removed all connections.
+PooledDataSource forcefully closed/removed all connections.
+PooledDataSource forcefully closed/removed all connections.
+PooledDataSource forcefully closed/removed all connections.
+Opening JDBC Connection
+Created connection 99451533.
+Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@5ed828d]
+==>  Preparing: select * from view_order_goods where oid = ? and uid = ?; 
+==> Parameters: 20171110164436(Long), 1(Integer)
+<==      Total: 2
+Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+PooledDataSource forcefully closed/removed all connections.
+PooledDataSource forcefully closed/removed all connections.
+PooledDataSource forcefully closed/removed all connections.
+PooledDataSource forcefully closed/removed all connections.
+Opening JDBC Connection
+Created connection 988458918.
+Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@3aeaafa6]
+==>  Preparing: select * from view_order_goods where oid = ? and uid = ?; 
+==> Parameters: 20171110164436(Long), 1(Integer)
+<==      Total: 2
+Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+PooledDataSource forcefully closed/removed all connections.
+PooledDataSource forcefully closed/removed all connections.
+PooledDataSource forcefully closed/removed all connections.
+PooledDataSource forcefully closed/removed all connections.
+Opening JDBC Connection
+Created connection 988458918.
+Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@3aeaafa6]
+==>  Preparing: select * from view_order_goods where oid = ? and uid = ?; 
+==> Parameters: 20171110164436(Long), 1(Integer)
+<==      Total: 2
+Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+PooledDataSource forcefully closed/removed all connections.
+PooledDataSource forcefully closed/removed all connections.
+PooledDataSource forcefully closed/removed all connections.
+PooledDataSource forcefully closed/removed all connections.
+Opening JDBC Connection
+Created connection 988458918.
+Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@3aeaafa6]
+==>  Preparing: select * from view_order_goods where oid = ? and uid = ?; 
+==> Parameters: 20171110164436(Long), 1(Integer)
+<==      Total: 2
+Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+PooledDataSource forcefully closed/removed all connections.
+PooledDataSource forcefully closed/removed all connections.
+PooledDataSource forcefully closed/removed all connections.
+PooledDataSource forcefully closed/removed all connections.
+Opening JDBC Connection
+Created connection 988458918.
+Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@3aeaafa6]
+==>  Preparing: select * from view_order_goods where oid = ? and uid = ?; 
+==> Parameters: 20171110164436(Long), 1(Integer)
+<==      Total: 2
+Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+PooledDataSource forcefully closed/removed all connections.
+PooledDataSource forcefully closed/removed all connections.
+PooledDataSource forcefully closed/removed all connections.
+PooledDataSource forcefully closed/removed all connections.
+Opening JDBC Connection
+Created connection 988458918.
+Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@3aeaafa6]
+==>  Preparing: select * from view_order_goods where oid = ? and uid = ?; 
+==> Parameters: 20171110164436(Long), 1(Integer)
+<==      Total: 2
+Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+PooledDataSource forcefully closed/removed all connections.
+PooledDataSource forcefully closed/removed all connections.
+PooledDataSource forcefully closed/removed all connections.
+PooledDataSource forcefully closed/removed all connections.
+Opening JDBC Connection
+Created connection 988458918.
+Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@3aeaafa6]
+==>  Preparing: select * from view_order_goods where oid = ? and uid = ?; 
+==> Parameters: 20171110164436(Long), 1(Integer)
+<==      Total: 2
+Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+PooledDataSource forcefully closed/removed all connections.
+PooledDataSource forcefully closed/removed all connections.
+PooledDataSource forcefully closed/removed all connections.
+PooledDataSource forcefully closed/removed all connections.
+Opening JDBC Connection
+Created connection 988458918.
+Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@3aeaafa6]
+==>  Preparing: select * from view_order_goods where oid = ? and uid = ?; 
+==> Parameters: 20171110164436(Long), 1(Integer)
+<==      Total: 2
+Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+PooledDataSource forcefully closed/removed all connections.
+PooledDataSource forcefully closed/removed all connections.
+PooledDataSource forcefully closed/removed all connections.
+PooledDataSource forcefully closed/removed all connections.
+Opening JDBC Connection
+Created connection 988458918.
+Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@3aeaafa6]
+==>  Preparing: select * from view_order_goods where oid = ? and uid = ?; 
+==> Parameters: 20171110164436(Long), 1(Integer)
+<==      Total: 2
+Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+PooledDataSource forcefully closed/removed all connections.
+PooledDataSource forcefully closed/removed all connections.
+PooledDataSource forcefully closed/removed all connections.
+PooledDataSource forcefully closed/removed all connections.
+Opening JDBC Connection
+Created connection 988458918.
+Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@3aeaafa6]
+==>  Preparing: select * from view_order_goods where oid = ? and uid = ?; 
+==> Parameters: 20171110164436(Long), 1(Integer)
+<==      Total: 2
+Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+PooledDataSource forcefully closed/removed all connections.
+PooledDataSource forcefully closed/removed all connections.
+PooledDataSource forcefully closed/removed all connections.
+PooledDataSource forcefully closed/removed all connections.
+Opening JDBC Connection
+Created connection 988458918.
+Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@3aeaafa6]
+==>  Preparing: select * from view_order_goods where oid = ? and uid = ?; 
+==> Parameters: 20171110164436(Long), 1(Integer)
+<==      Total: 2
+Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+PooledDataSource forcefully closed/removed all connections.
+PooledDataSource forcefully closed/removed all connections.
+PooledDataSource forcefully closed/removed all connections.
+PooledDataSource forcefully closed/removed all connections.
+Opening JDBC Connection
+Created connection 988458918.
+Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@3aeaafa6]
+==>  Preparing: select * from view_order_goods where oid = ? and uid = ?; 
+==> Parameters: 20171110164436(Long), 1(Integer)
+<==      Total: 2
+Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+PooledDataSource forcefully closed/removed all connections.
+PooledDataSource forcefully closed/removed all connections.
+PooledDataSource forcefully closed/removed all connections.
+PooledDataSource forcefully closed/removed all connections.
+Opening JDBC Connection
+Created connection 988458918.
+Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@3aeaafa6]
+==>  Preparing: select * from view_order_goods where oid = ? and uid = ?; 
+==> Parameters: 20171110164436(Long), 1(Integer)
+<==      Total: 2
+Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+PooledDataSource forcefully closed/removed all connections.
+PooledDataSource forcefully closed/removed all connections.
+PooledDataSource forcefully closed/removed all connections.
+PooledDataSource forcefully closed/removed all connections.
+Opening JDBC Connection
+Created connection 988458918.
+Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@3aeaafa6]
+==>  Preparing: select * from view_order_goods where oid = ? and uid = ?; 
+==> Parameters: 20171110164436(Long), 1(Integer)
+<==      Total: 2
+Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+PooledDataSource forcefully closed/removed all connections.
+PooledDataSource forcefully closed/removed all connections.
+PooledDataSource forcefully closed/removed all connections.
+PooledDataSource forcefully closed/removed all connections.
+Opening JDBC Connection
+Created connection 988458918.
+Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@3aeaafa6]
+==>  Preparing: select * from view_order_goods where oid = ? and uid = ?; 
+==> Parameters: 20171110164436(Long), 1(Integer)
+<==      Total: 2
+Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+PooledDataSource forcefully closed/removed all connections.
+PooledDataSource forcefully closed/removed all connections.
+PooledDataSource forcefully closed/removed all connections.
+PooledDataSource forcefully closed/removed all connections.
+Opening JDBC Connection
+Created connection 988458918.
+Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@3aeaafa6]
+==>  Preparing: select * from view_order_goods where oid = ? and uid = ?; 
+==> Parameters: 20171110164436(Long), 1(Integer)
+<==      Total: 2
+Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+PooledDataSource forcefully closed/removed all connections.
+PooledDataSource forcefully closed/removed all connections.
+PooledDataSource forcefully closed/removed all connections.
+PooledDataSource forcefully closed/removed all connections.
+Opening JDBC Connection
+Created connection 988458918.
+Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@3aeaafa6]
+==>  Preparing: select * from view_order_goods where oid = ? and uid = ?; 
+==> Parameters: 20171110164436(Long), 1(Integer)
+<==      Total: 2
+Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+PooledDataSource forcefully closed/removed all connections.
+PooledDataSource forcefully closed/removed all connections.
+PooledDataSource forcefully closed/removed all connections.
+PooledDataSource forcefully closed/removed all connections.
+Opening JDBC Connection
+Created connection 988458918.
+Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@3aeaafa6]
+==>  Preparing: select * from view_order_goods where oid = ? and uid = ?; 
+==> Parameters: 20171110164436(Long), 1(Integer)
+<==      Total: 2
+Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+PooledDataSource forcefully closed/removed all connections.
+PooledDataSource forcefully closed/removed all connections.
+PooledDataSource forcefully closed/removed all connections.
+PooledDataSource forcefully closed/removed all connections.
+Opening JDBC Connection
+Created connection 988458918.
+Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@3aeaafa6]
+==>  Preparing: select * from view_order_goods where oid = ? and uid = ?; 
+==> Parameters: 20171110164436(Long), 1(Integer)
+<==      Total: 2
