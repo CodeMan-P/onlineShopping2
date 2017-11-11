@@ -11,23 +11,20 @@ import org.apache.log4j.Logger;
 import com.mod.bean.Goods;
 import com.mod.mapper.GoodsMapper;
 import com.tests.log4jExample;
+import com.util.DbConn;
 
 public class GoodsDao {
-	   private static SqlSessionFactory sqlSessionFactory;  
-	    private static Reader reader;  
 	    private static GoodsMapper gm;
 	    private static SqlSession session = null;
 	    static {  
 	        try {  
-	            reader = Resources.getResourceAsReader("mybatis-config.xml");  
-	            sqlSessionFactory = new SqlSessionFactoryBuilder().build(reader);  
-	            session = sqlSessionFactory.openSession(); 
+	            session = DbConn.getFactory().openSession(); 
 	            gm = session.getMapper(GoodsMapper.class);
 	        } catch (Exception e) {  
 	            e.printStackTrace();  
 	        }  
 	    }
-	    static Logger log = Logger.getLogger(log4jExample.class.getName());
+	    static Logger log = Logger.getLogger(GoodsDao.class.getName());
 	    public static Goods getGoods(int gid){
 	    	Goods g = null;
 	    	

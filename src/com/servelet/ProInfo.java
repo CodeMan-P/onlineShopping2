@@ -14,7 +14,7 @@ import com.mod.bean.Goods;
 import com.service.GoodsService;
 import com.tests.log4jExample;
 public class ProInfo extends HttpServlet {
-	Logger log = Logger.getLogger(log4jExample.class.getName());
+	Logger log = Logger.getLogger(ProInfo.class.getName());
 
 	/**
 	 * Constructor of the object.

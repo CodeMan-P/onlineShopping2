@@ -1,33 +1,26 @@
 package com.dao;
 
-import java.io.Reader;
 
-import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;
-import org.apache.ibatis.session.SqlSessionFactory;
-import org.apache.ibatis.session.SqlSessionFactoryBuilder;
 import org.apache.log4j.Logger;
 import org.junit.Test;
-
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.mod.bean.Users;
 import com.mod.mapper.UsersMapper;
-import com.tests.log4jExample;
+import com.util.DbConn;
 
 public class UsersDao {
-    private static SqlSessionFactory sqlSessionFactory;  
-    private static Reader reader;  
+    static Logger log = Logger.getLogger(UsersDao.class.getName());
     private static UsersMapper um;
     private static SqlSession session = null;
     static {  
         try {  
-            reader = Resources.getResourceAsReader("mybatis-config.xml");  
-            sqlSessionFactory = new SqlSessionFactoryBuilder().build(reader);  
-            session = sqlSessionFactory.openSession(); 
+            session = DbConn.getFactory().openSession(); 
             um = session.getMapper(UsersMapper.class);
         } catch (Exception e) {  
-            e.printStackTrace();  
+        	e.printStackTrace();
+        	log.warn(e.getLocalizedMessage());
         }  
     }
     @Test

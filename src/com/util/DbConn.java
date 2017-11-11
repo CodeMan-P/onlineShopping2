@@ -1,10 +1,34 @@
 package com.util;
 
+import java.io.Reader;
 import java.sql.Connection;
 import java.sql.SQLException;
 import org.apache.commons.dbcp.BasicDataSource;
+import org.apache.ibatis.io.Resources;
+import org.apache.ibatis.session.SqlSession;
+import org.apache.ibatis.session.SqlSessionFactory;
+import org.apache.ibatis.session.SqlSessionFactoryBuilder;
+import org.apache.log4j.Logger;
+
+import com.mod.mapper.GoodsMapper;
+import com.tests.log4jExample;
 
 public class DbConn {
+	private static SqlSessionFactory sqlSessionFactory = null;  
+	private static Reader reader;  
+	
+	static Logger log = Logger.getLogger(DbConn.class.getName());
+	public static SqlSessionFactory getFactory(){
+		if(sqlSessionFactory == null){
+			try {  
+	            reader = Resources.getResourceAsReader("mybatis-config.xml");  
+	            sqlSessionFactory = new SqlSessionFactoryBuilder().build(reader);  
+	        } catch (Exception e) {  
+	            log.warn(e.getLocalizedMessage());
+	        }  
+		}
+		return sqlSessionFactory;
+	}
 	public static BasicDataSource bds;
 	//jdbc:mysql://localhost:3306/mydb
 	//jdbc:oracle:thin:@localhost:1521:orcl

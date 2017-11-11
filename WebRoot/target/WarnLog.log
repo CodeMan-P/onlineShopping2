@@ -1,0 +1,24 @@
+2017-11-11 21:32:34  WARN 273705ms|>- java.lang.Integer cannot be cast to java.lang.String
+ <com.servelet.ShoppingCarSlt.doPost(ShoppingCarSlt.java:99)> 
+2017-11-11 21:34:52  WARN 6762ms|>- java.lang.Integer cannot be cast to java.lang.String
+ <com.servelet.ShoppingCarSlt.doPost(ShoppingCarSlt.java:100)> 
+2017-11-11 21:53:19  WARN 5616ms|>- 
+ <com.servelet.ShoppingCarSlt.doPost(ShoppingCarSlt.java:94)> 
+2017-11-11 21:57:24  WARN 0ms|>- 
+ <com.servelet.ShoppingCarSlt.doPost(ShoppingCarSlt.java:94)> 
+2017-11-11 22:01:43  WARN 560ms|>- Invalid bound statement (not found): com.mod.mapper.ShoppingCarMapper.update
+ <com.dao.SpCarDao.addGoods(SpCarDao.java:43)> 
+2017-11-11 22:32:17  WARN 389132ms|>- 
+ <com.servelet.ShoppingCarSlt.doPost(ShoppingCarSlt.java:94)> 
+2017-11-11 22:34:22  WARN 513418ms|>- 
+ <com.servelet.ShoppingCarSlt.doPost(ShoppingCarSlt.java:94)> 
+2017-11-11 23:33:03  WARN 174189ms|>- 
+ <com.servelet.ShoppingCarSlt.doPost(ShoppingCarSlt.java:96)> 
+2017-11-11 23:46:10  WARN 248499ms|>- 
+ <com.servelet.ShoppingCarSlt.doPost(ShoppingCarSlt.java:99)> 
+2017-11-11 23:46:15  WARN 253431ms|>- 
+ <com.servelet.ShoppingCarSlt.doPost(ShoppingCarSlt.java:99)> 
+2017-11-11 23:48:12  WARN 2823ms|>- 
+ <com.servelet.ShoppingCarSlt.doPost(ShoppingCarSlt.java:99)> 
+2017-11-11 23:48:30  WARN 20729ms|>- 
+ <com.servelet.ShoppingCarSlt.doPost(ShoppingCarSlt.java:99)> 

@@ -1,6 +1,10 @@
 package com.servelet;
 
 import java.io.IOException;
+import java.io.PrintWriter;
+import java.sql.Timestamp;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.LinkedList;
 
 import javax.servlet.ServletException;
@@ -8,9 +12,15 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import com.mod.bean.Goods;
+import org.apache.log4j.Logger;
 
-public class Shop extends HttpServlet {
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.mod.bean.Goods;
+import com.mod.bean.ShoppingCar;
+import com.service.SpCarService;
+import com.tests.log4jExample;
+
+public class ShoppingCarSlt extends HttpServlet {
 
 	/**
 	 * 
@@ -20,7 +30,7 @@ public class Shop extends HttpServlet {
 	/**
 	 * Constructor of the object.
 	 */
-	public Shop() {
+	public ShoppingCarSlt() {
 		super();
 	}
 
@@ -66,14 +76,37 @@ public class Shop extends HttpServlet {
 		request.setCharacterEncoding("utf-8");
 		response.setCharacterEncoding("utf-8");
 		response.setContentType("text/html");
-		LinkedList<Goods> list = null;
+		PrintWriter out = response.getWriter();
+		try{
+			int uid = (int) request.getSession().getAttribute("uid");
+			int gid = Integer.parseInt(request.getParameter("gid"));
+			int gnum = Integer.parseInt(request.getParameter("gnum"));
+			Timestamp tm = new Timestamp(new Date().getTime());
+			ShoppingCar sc = new ShoppingCar(tm, uid, gid, gnum);
+	
+			if(SpCarService.addGoods(sc)){
+				request.getSession().removeAttribute("carnum");
+				int num = SpCarService.getCarNum(uid);
+				request.getSession().setAttribute("carnum",num);
+				
+				out.write("{\"message\":\"添加成功！\",\"num\":"+num+"}");
+			
+			}else{
+				out.write("{\"message\":\"添加失败！\"}");
+			}
+			
+		}catch(Exception e){
+			log.warn(e.getLocalizedMessage());
+			out.write("{\"message\":\"添加失败！\"}");
+		}finally{
+			out.flush();
+			out.close();
+		}
 
-		
-		request.getSession().setAttribute("list", list);
 		//request.setAttribute("list", ProductService.getList());
-		request.getRequestDispatcher("/jsp/shopping.jsp").forward(request, response);
+//		request.getRequestDispatcher("/jsp/shopping.jsp").forward(request, response);
 	}
-
+	Logger log = Logger.getLogger(ShoppingCarSlt.class.getName());
 	/**
 	 * Initialization of the servlet. <br>
 	 *

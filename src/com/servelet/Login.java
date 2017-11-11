@@ -12,6 +12,7 @@ import org.apache.ibatis.datasource.DataSourceFactory;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.mod.bean.Users;
+import com.service.SpCarService;
 import com.service.UserService;
 import com.util.DbConn;
 
@@ -67,18 +68,29 @@ public class Login extends HttpServlet {
 		request.setCharacterEncoding("utf-8");
 		response.setContentType("text/html");
 		response.setCharacterEncoding("utf-8");
+		PrintWriter out = response.getWriter();
 		String name = request.getParameter("name");
+		if(name.equalsIgnoreCase("@quit")){
+			request.getSession().invalidate();
+			out.write("注销成功！");
+			out.flush();
+			out.close();
+			return;
+		}
 		String pwd = request.getParameter("pwd");
 		Users users = new Users(name,pwd);
 		users = UserService.findUser(users);
 		if(users == null){
 			response.sendRedirect("index.jsp");
 		}else{
+			Integer uid = users.getUid();
 			request.getSession().setAttribute("name", name);
-			request.getSession().setAttribute("uid", users.getUid());
+			request.getSession().setAttribute("uid", uid);
 			request.getSession().setAttribute("avatar",users.getAvatar());
 			request.getSession().setAttribute("city",users.getCity());
-			PrintWriter out = response.getWriter();
+			int num = SpCarService.getCarNum(uid);
+			request.getSession().setAttribute("carnum",num);
+			
 			ObjectMapper mapper=new ObjectMapper();	
 			users.setUpwd("hide");
 			String json = mapper.writerWithDefaultPrettyPrinter().writeValueAsString(users);
@@ -110,6 +122,7 @@ public class Login extends HttpServlet {
 	@Override
 	public void init() throws ServletException {
 		// Put your code here
+		DbConn.getFactory();
 	}
 
 }
