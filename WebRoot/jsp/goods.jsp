@@ -1,5 +1,5 @@
 <%@ page language="java" import="java.util.*"  import="com.mod.bean.Goods" pageEncoding="UTF-8"%>
-<%@ page import="java.util.HashMap"%>
+<%@ page import="java.util.HashMap" import="java.io.File"%>
 <%@page import="com.fasterxml.jackson.databind.ObjectMapper"%>
 <%
 String path = request.getContextPath();
@@ -95,8 +95,10 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     	<%=s%><-----:-----><%=h.get(s)%><br/>
     		
    <% }%><br/><hr/>
-    商品图片:<img alt="数据库炸了？？？" src="<%=g.getImgpath()%>" style="width: 300px;height:auto"/><br/><hr/>
-    购买数量：
+    <img alt="数据库炸了？？？" src="<%=g.getImgpath()%>" style="position:relative; left:-200px;width: 300px;height:auto"/><br/><hr/>
+
+ <div style="width:300px;height:auto; position:relative; left:200px;top:-200px;border:double 5px #DFD184">
+ 购买数量：
 <form action="" id="fm">
     <input type="text" name="gnum" id="num"/>
     <input id="gid" name="gid" value="<%=g.getGid()%>" type="hidden"/>
@@ -107,6 +109,26 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	<a href="OrderCar.html" target="_blank" style="z-index:9;">
 			购物车<span id="sp1" style="font-size:18px; color:#F00">${sessionScope.carnum}</span>
 	</a>
+ 
+ </div>  
+     <%
+     String fpath = "jsp/"+g.getFilepath();
+     fpath = application.getRealPath(fpath);
+     File file = new File(fpath);
+     	if(file.listFiles()!=null){
+     		
+     	
+		for(File f :file.listFiles()){
+			String ipath = fpath+f.getName();
+			int index =ipath.lastIndexOf("goods");
+			ipath = ipath.substring(index);
+			%>	
+	<img alt="数据库炸了？？？" src="<%=ipath%>" style="width: 800px;height:auto"/><br/><hr/>
+
+			<%
+			
+		}}
+     %>
     </div>
     </center>
   </body>

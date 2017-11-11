@@ -743,3 +743,31 @@
 11-11 23:48:55 ==>  Preparing: SELECT COUNT(1) FROM shoppingcar WHERE uid = ?; 
 11-11 23:48:55 ==> Parameters: 1(Integer)
 11-11 23:48:55 <==      Total: 1
+11-12 00:23:20 Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+11-12 00:23:21 PooledDataSource forcefully closed/removed all connections.
+11-12 00:23:21 PooledDataSource forcefully closed/removed all connections.
+11-12 00:23:21 PooledDataSource forcefully closed/removed all connections.
+11-12 00:23:21 PooledDataSource forcefully closed/removed all connections.
+11-12 00:23:21 Opening JDBC Connection
+11-12 00:23:22 Created connection 1954629332.
+11-12 00:23:22 Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@748146d4]
+11-12 00:23:22 ==>  Preparing: select gid, gname, tid, price, descption, imgPath, filePath, stock from goods where gid = ? 
+11-12 00:23:22 ==> Parameters: 1(Integer)
+11-12 00:23:22 <==      Total: 1
+11-12 00:38:36 ==>  Preparing: select gid, gname, tid, price, descption, imgPath, filePath, stock from goods where gid = ? 
+11-12 00:38:36 ==> Parameters: 2(Integer)
+11-12 00:38:36 <==      Total: 1
+11-12 00:41:36 Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+11-12 00:41:36 PooledDataSource forcefully closed/removed all connections.
+11-12 00:41:36 PooledDataSource forcefully closed/removed all connections.
+11-12 00:41:36 PooledDataSource forcefully closed/removed all connections.
+11-12 00:41:36 PooledDataSource forcefully closed/removed all connections.
+11-12 00:41:36 Opening JDBC Connection
+11-12 00:41:36 Created connection 1713080244.
+11-12 00:41:36 Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@661b87b4]
+11-12 00:41:36 ==>  Preparing: select gid, gname, tid, price, descption, imgPath, filePath, stock from goods where gid = ? 
+11-12 00:41:36 ==> Parameters: 2(Integer)
+11-12 00:41:36 <==      Total: 1
+11-12 00:42:56 ==>  Preparing: select gid, gname, tid, price, descption, imgPath, filePath, stock from goods where gid = ? 
+11-12 00:42:56 ==> Parameters: 1(Integer)
+11-12 00:42:56 <==      Total: 1
