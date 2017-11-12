@@ -44,10 +44,13 @@
 					//						$("body").remove("#userInfo");
 					$("#user").hide();
 					//	$("body").remove("#user");
-					$("#spc").empty();
-					$("#spc").text(<%=request.getSession().getAttribute("carnum")%>);
+					$("#userInfo #spc").empty();
+					//借密码变量 存储 购物车数量
+					$("#userInfo #spc").text(data.upwd);
+					$("#userInfo #sp1").empty();
 					$("#userInfo #sp1").text(data.uname);
 					$("#userInfo img").attr("src", "jsp/" + data.avatar);
+					$("#userInfo #sp2").empty();
 					$("#userInfo #sp2").text(data.city);
 					$("#userInfo").show();
 				//temp.show();
@@ -77,6 +80,7 @@
 				success : function(data) {
 					if(data.match('.+?成功.+')){
 					$("#user").show();
+					$("#userInfo #spc").text("-");
 					$("#userInfo #sp1").text("-");
 					$("#userInfo img").attr("src", "#");
 					$("#userInfo #sp2").text("-");
@@ -115,7 +119,7 @@
 			<hr />
 			当前城市：<span id="sp2" style="font-size: 20px;color: #03C">${sessionScope.city}</span> <br />
 			<hr />
-			<a href="OrderCar.html" target="_blank" style="z-index:9;">
+			<a href="Spcar?flag=view" target="_blank" style="z-index:9;">
 			购物车<span id="spc" style="font-size:18px; color:#F00">${sessionScope.carnum}</span>
 			</a> <br />
 			<hr />

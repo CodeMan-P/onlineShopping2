@@ -3,22 +3,22 @@ package com.servelet;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.sql.Timestamp;
-import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.HashMap;
 import java.util.LinkedList;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-
 import org.apache.log4j.Logger;
 
+import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.mod.bean.Goods;
+import com.mod.bean.Address;
 import com.mod.bean.ShoppingCar;
 import com.service.SpCarService;
-import com.tests.log4jExample;
+import com.service.UserService;
 
 public class ShoppingCarSlt extends HttpServlet {
 
@@ -76,6 +76,32 @@ public class ShoppingCarSlt extends HttpServlet {
 		request.setCharacterEncoding("utf-8");
 		response.setCharacterEncoding("utf-8");
 		response.setContentType("text/html");
+		String flag = request.getParameter("flag");
+		if(flag.equalsIgnoreCase("add")){
+			addGoods(request, response);
+		}else if(flag.equalsIgnoreCase("view")){
+			int uid = (int) request.getSession().getAttribute("uid");
+			LinkedList<Address> adresList=UserService.getAdress(uid);
+			ObjectMapper mapper = new ObjectMapper();
+			String adresJson = mapper.writerWithDefaultPrettyPrinter().writeValueAsString(adresList);
+			//LinkedList<ShoppingCar> list = SpCarService.getCarListByUid(uid);
+			//request.getSession().setAttribute("carlist", list);
+			LinkedList<HashMap<String,Object>> view = SpCarService.getCarView(uid);
+			request.getSession().setAttribute("view", view);
+			request.getSession().setAttribute("adresJson", adresJson);
+			request.getRequestDispatcher("jsp/shoppingcar.jsp").forward(request, response);
+		}
+
+		//request.setAttribute("list", ProductService.getList());
+//		request.getRequestDispatcher("/jsp/shopping.jsp").forward(request, response);
+	}
+
+	/**
+	 * @param request
+	 * @param response
+	 * @throws IOException
+	 */
+	private void addGoods(HttpServletRequest request, HttpServletResponse response) throws IOException {
 		PrintWriter out = response.getWriter();
 		try{
 			int uid = (int) request.getSession().getAttribute("uid");
@@ -102,9 +128,6 @@ public class ShoppingCarSlt extends HttpServlet {
 			out.flush();
 			out.close();
 		}
-
-		//request.setAttribute("list", ProductService.getList());
-//		request.getRequestDispatcher("/jsp/shopping.jsp").forward(request, response);
 	}
 	Logger log = Logger.getLogger(ShoppingCarSlt.class.getName());
 	/**

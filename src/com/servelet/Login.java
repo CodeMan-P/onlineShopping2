@@ -91,8 +91,9 @@ public class Login extends HttpServlet {
 			int num = SpCarService.getCarNum(uid);
 			request.getSession().setAttribute("carnum",num);
 			
-			ObjectMapper mapper=new ObjectMapper();	
-			users.setUpwd("hide");
+			ObjectMapper mapper=new ObjectMapper();
+			//借密码变量 存储 购物车数量
+			users.setUpwd(num+"");
 			String json = mapper.writerWithDefaultPrettyPrinter().writeValueAsString(users);
 			out.write(json);
 			out.flush();

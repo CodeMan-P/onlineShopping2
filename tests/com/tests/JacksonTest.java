@@ -10,6 +10,7 @@ import java.util.LinkedList;
 
 import org.junit.Test;
 
+import com.fasterxml.jackson.annotation.JsonInclude.Include;
 import com.fasterxml.jackson.core.JsonEncoding;
 import com.fasterxml.jackson.core.JsonFactory;
 import com.fasterxml.jackson.core.JsonGenerator;
@@ -27,6 +28,7 @@ public class JacksonTest {
 	static ObjectMapper mapper = new ObjectMapper();
 	@Test
 	public void testMethod2() {
+		mapper.setSerializationInclusion(Include.NON_NULL);  
 		HashMap<String,String> m = new HashMap<String, String>();
 		m.put("版本", "Mate 10,Mate 10 62G+128G,麦芒6,P10,畅享7");
 		m.put("网络类型","4G全网通");

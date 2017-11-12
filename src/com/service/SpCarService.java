@@ -1,5 +1,8 @@
 package com.service;
 
+import java.util.HashMap;
+import java.util.LinkedList;
+
 import com.dao.SpCarDao;
 import com.mod.bean.ShoppingCar;
 
@@ -9,5 +12,12 @@ public class SpCarService {
 	}
 	public static int getCarNum(Integer uid){
 		return SpCarDao.getCarNum(uid);
+	}
+	
+	public static LinkedList<ShoppingCar> getCarListByUid(Integer uid){
+		return SpCarDao.getCarListByUid(uid);
+	}
+	public static LinkedList<HashMap<String,Object>> getCarView(Integer uid){
+		return SpCarDao.getCarView(uid);
 	}
 }

@@ -19,7 +19,9 @@
 	<table tableName="address" domainObjectName="Address"
 	 enableCountByExample="false" enableSelectByExample="false"
             enableUpdateByExample="false" enableDeleteByExample="false"
-	></table>
+	>
+	<columnOverride column="aphone" jdbcType="DECIMAL" javaType="java.long.String" />
+	</table>
 	<table tableName="goodstype" domainObjectName="GoodsType"
 	 enableCountByExample="false" enableSelectByExample="false"
             enableUpdateByExample="false" enableDeleteByExample="false"
@@ -43,11 +45,14 @@
             enableUpdateByExample="false" enableDeleteByExample="false"
 	>
 	<columnOverride column="addgoodstime" jdbcType="TIMESTAMP" javaType="java.sql.Timestamp" />
+	<columnOverride column="descption" javaType="java.lang.String" jdbcType="VARCHAR" />
 	</table>
 	<table tableName="users" domainObjectName="Users"
 	 enableCountByExample="false" enableSelectByExample="false"
             enableUpdateByExample="false" enableDeleteByExample="false"
-	></table>
+	>
+	<columnOverride column="phone" jdbcType="DECIMAL" javaType="java.long.String" />
+	</table>
 	
   </context>
 </generatorConfiguration>

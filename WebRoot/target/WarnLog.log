@@ -22,3 +22,11 @@
  <com.servelet.ShoppingCarSlt.doPost(ShoppingCarSlt.java:99)> 
 2017-11-11 23:48:30  WARN 20729ms|>- 
  <com.servelet.ShoppingCarSlt.doPost(ShoppingCarSlt.java:99)> 
+2017-11-12 11:19:59  WARN 1066ms|>- 
+### Error building SqlSession.
+### The error may exist in com/mod/mapper/ShoppingCarMapper.xml
+### The error occurred while processing mapper_resultMap[OrderMap]
+### Cause: org.apache.ibatis.builder.BuilderException: Error parsing SQL Mapper Configuration. Cause: org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 162; columnNumber: 94; 必须声明元素类型 "columnOverride"。
+ <com.util.DbConn.getFactory(DbConn.java:27)> 
+2017-11-12 11:19:59  WARN 1086ms|>- 
+ <com.dao.SpCarDao.getCarView(SpCarDao.java:48)> 

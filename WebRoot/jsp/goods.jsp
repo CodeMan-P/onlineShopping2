@@ -34,8 +34,8 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     		$("a[name='buy']").attr("href",src);
     		}
     		});	
-     
-    });
+    });  
+
   	
     function addGoods(){
     	if($("#num").val() == null||$("#num").val() <=0){
@@ -48,6 +48,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 				   url: '../Spcar',                 //默认是form的action， 如果申明，则会覆盖    
 				   type: 'post',               //默认是form的method（get or post），如果申明，则会覆盖    
 				   dataType: 'json',           //html(默认), xml, script, json...接受服务端返回的类型    
+				   data:{"flag":"add"},
 				   clearForm: true,          //成功提交后，清除所有表单元素的值    
 				   resetForm: true,          //成功提交后，重置所有表单元素的值    
 				   timeout: 3000,               //限制请求的时间，当请求大于3秒后，跳出请求   
@@ -72,8 +73,8 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 		};
 		
 		$("#fm").ajaxSubmit(ajax_option);  
-    }
-    
+    };
+
   </script>
   </head>
   
@@ -106,7 +107,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     
     <a  href="#" name="buy">购买</a>
 	<input type="button" value="加入购物车" onclick="addGoods()" />
-	<a href="OrderCar.html" target="_blank" style="z-index:9;">
+	<a href="../Spcar?flag=view" target="_blank" style="z-index:9;">
 			购物车<span id="sp1" style="font-size:18px; color:#F00">${sessionScope.carnum}</span>
 	</a>
  
