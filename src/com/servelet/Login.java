@@ -72,7 +72,14 @@ public class Login extends HttpServlet {
 		String name = request.getParameter("name");
 		String flag = request.getParameter("flag");
 		if(flag!=null&&flag.equalsIgnoreCase("flush")){
-			int uid = (int) request.getSession().getAttribute("uid");
+			int uid;
+			try{
+				uid = (int) request.getSession().getAttribute("uid");
+			}catch(Exception e){
+				e.printStackTrace();
+				out.close();
+				return;
+			}
 			int num = SpCarService.getCarNum(uid);
 			request.getSession().setAttribute("carnum",num);
 			out.write("{\"message\":\"刷新成功！\",\"cnum\":"+num+"}");

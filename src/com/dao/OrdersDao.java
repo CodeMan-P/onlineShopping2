@@ -41,15 +41,15 @@ public class OrdersDao {
 	}
 	@Test
 	public void testMethod(){
-		LinkedList<HashMap<String, Object>> list=null;
-		list = getOrderList(20171110164436L,1);
-		ObjectMapper mapper = new ObjectMapper();
-		try {
-			System.out.println(mapper.writerWithDefaultPrettyPrinter().writeValueAsString(list));
-		} catch (JsonProcessingException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+		//LinkedList<HashMap<String, Object>> list=null;
+		updateByOUid(20171112233536L,1);
+		//ObjectMapper mapper = new ObjectMapper();
+//		try {
+//			//System.out.println(mapper.writerWithDefaultPrettyPrinter().writeValueAsString(list));
+//		} catch (JsonProcessingException e) {
+//			// TODO Auto-generated catch block
+//			e.printStackTrace();
+//		}
 	}
 	public static LinkedList<HashMap<String, Object>> getOrderList(Long oid,Integer uid){
 		LinkedList<HashMap<String, Object>> list=null;
@@ -60,8 +60,58 @@ public class OrdersDao {
 		LinkedList<HashMap<String, Object>> list=null;
 		list=ofm.getOrderList(oid, uid);
 		return list;
-	}	
+	}
+	public static boolean updateByOUid(String oid,Integer uid){
+		
+		int i = om.updateByOUid(oid, uid);
+		if (i > 0) {
+			session.commit();
+			return true;
+		}
+		return false;
+	}
+	public static boolean updateByOUid(Long oid,Integer uid){
+		int i = om.updateByOUid(oid, uid);
+		if (i > 0) {
+			session.commit();
+			return true;
+		}
+		return false;
+	}
 	static Logger log = Logger.getLogger(OrdersDao.class.getName());
+	public static boolean addOrders(Orders orders,OrderForm orderform) {
+		int i = 0;
+		try {
+			i = om.insertSelective(orders);
+			if (i > 0) {
+					i = ofm.insertSelective(orderform);
+					if (i <= 0) {
+						session.rollback();
+						return false;
+					}
+			}
+		} catch (Exception e) {
+			session.rollback();
+			e.printStackTrace();
+			log.warn(e.getLocalizedMessage());
+			return false;
+		}
+		// 正常插入完成，提交事务
+		if (i > 0) {
+			try {
+				session.commit();
+			} catch (Exception e) {
+				session.rollback();
+				e.printStackTrace();
+				log.warn(e.getLocalizedMessage());
+				return false;
+			}
+			orderLog(orders, orderform);
+			return true;
+		}
+
+		return false;	
+	}
 	public static boolean addOrders(Orders orders, LinkedList<OrderForm> orderlist,LinkedList<Integer> buyCids) {
 		int i = 0;
 		try {
@@ -103,7 +153,16 @@ public class OrdersDao {
 		}
 		return false;
 	}
-	
+	private static void orderLog(Orders orders, OrderForm orderform){
+		ObjectMapper mapper = new ObjectMapper();
+		try {
+			log.info("添加新订单("+orders.getOid()+")："+mapper.writerWithDefaultPrettyPrinter().writeValueAsString(orders));
+			log.info("订单详情("+orders.getOid()+")："+mapper.writerWithDefaultPrettyPrinter().writeValueAsString(orderform));
+		} catch (JsonProcessingException e) {
+			e.printStackTrace();
+		}
+		
+	}
 	private static void orderLog(Orders orders, LinkedList<OrderForm> orderlist){
 		ObjectMapper mapper = new ObjectMapper();
 		SerializerProvider sp = mapper.getSerializerProvider();

@@ -93,12 +93,12 @@ public class ShoppingCarSlt extends HttpServlet {
 			out.flush();
 			out.close();
 		}else if(flag.equalsIgnoreCase("view")){
-			
-			LinkedList<Address> adresList=UserService.getAdress(uid);
-			ObjectMapper mapper = new ObjectMapper();
-			String adresJson = mapper.writerWithDefaultPrettyPrinter().writeValueAsString(adresList);
 			//LinkedList<ShoppingCar> list = SpCarService.getCarListByUid(uid);
 			//request.getSession().setAttribute("carlist", list);
+			
+			ObjectMapper mapper = new ObjectMapper();
+			LinkedList<Address> adresList=UserService.getAdress(uid);
+			String adresJson = mapper.writerWithDefaultPrettyPrinter().writeValueAsString(adresList);
 			LinkedList<HashMap<String,Object>> view = SpCarService.getCarView(uid);
 			request.getSession().setAttribute("view", view);
 			request.getSession().setAttribute("adresJson", adresJson);

@@ -42,6 +42,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     		alert("输入购物数量？>0！");
     		return false;
     	}
+    	//参数应选择获取······
     	var desc = '[{"网络类型" : "4G全网通","机身颜色" : "钻雕金","套餐类型" : "官方标配","存储容量" : "128GB","购买方式" : "裸机","版本" : "小米6"}]';
     	var ajax_option={  
 				   //target: '#output',          //把服务器返回的内容放入id为output的元素中        
@@ -78,6 +79,37 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 		$("#fm").ajaxSubmit(ajax_option);  
     };
 
+    function buyGoods(){
+    	if($("#num").val() == null||$("#num").val() <=0){
+    		alert("输入购物数量？>0！");
+    		return false;
+    	}
+    	//参数应选择获取······
+    	var desc = '[{"网络类型" : "4G全网通","机身颜色" : "钻雕金","套餐类型" : "官方标配","存储容量" : "128GB","购买方式" : "裸机","版本" : "小米6"}]';
+    	var ajax_option={  
+				   url: '../Order',                 //默认是form的action， 如果申明，则会覆盖    
+				   type: 'post',               //默认是form的method（get or post），如果申明，则会覆盖    
+				   data:{"flag":"single",
+				   "desc":desc},
+				  	dataType:'text',
+				   clearForm: true,          //成功提交后，清除所有表单元素的值    
+				   resetForm: true,          //成功提交后，重置所有表单元素的值    
+				   timeout: 3000,               //限制请求的时间，当请求大于3秒后，跳出请求   
+				   success: function(data){
+					   window.location.href=data;
+					
+				   },      //提交后的回调函数
+				   error:function(XMLHttpRequest, textStatus, errorThrown){
+					   alert(XMLHttpRequest.status);
+					   alert(XMLHttpRequest.readyState);
+					   alert(textStatus);
+				   },   
+				   complete: function(XMLHttpRequest, textStatus) {
+				   }
+		};
+		
+		$("#fm").ajaxSubmit(ajax_option);  
+    };
   </script>
   </head>
   
@@ -108,7 +140,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     <input id="gid" name="gid" value="<%=g.getGid()%>" type="hidden"/>
 	</form>    
     
-    <a  href="#" name="buy">购买</a>
+    <input type="button" id="btbuy" value="立即购买" onclick="buyGoods()" />
 	<input type="button" value="加入购物车" onclick="addGoods()" />
 	<a href="../Spcar?flag=view" target="_blank" style="z-index:9;">
 			购物车<span id="sp1" style="font-size:18px; color:#F00">${sessionScope.carnum}</span>

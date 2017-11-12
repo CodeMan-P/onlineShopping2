@@ -8,4 +8,5 @@ public class GoodsService {
     	
     	return GoodsDao.getGoods(gid);
     }
+	
 }

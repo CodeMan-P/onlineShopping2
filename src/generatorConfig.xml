@@ -31,6 +31,7 @@
             enableUpdateByExample="false" enableDeleteByExample="false"
 	>
 	<columnOverride column="oid" jdbcType="DECIMAL" javaType="java.long.String" />
+	<columnOverride column="descption" javaType="java.lang.String" jdbcType="VARCHAR" />
 	</table>
 	
 		<table tableName="orders" domainObjectName="Orders"

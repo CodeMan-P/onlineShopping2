@@ -1,9 +1,10 @@
-<%@page import="java.text.SimpleDateFormat"%>
+
 <%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
 <%
 String path = request.getContextPath();
 String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/jsp/";
 %>
+<%@page import="java.text.SimpleDateFormat"%>
 <%@page import="com.fasterxml.jackson.databind.ObjectMapper"
 	import="com.mod.bean.ShoppingCar"
 	import="com.fasterxml.jackson.annotation.JsonInclude.Include"%>
@@ -39,34 +40,13 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
                 	buyCids.push($(this).val());  
                 });  
                 var adresId = $("input[type=radio]:checked").val();
-                 $.ajax({
-                    type:'post',  
-                    traditional :true,//阻止深度序列化  
-                    url:'../Order',  
-                    data:{
-                    	"flag":"multi",
-                    	"buyCids":buyCids,
-                    	"adresId":adresId},
-                    dataType:'json',
-                    success:function(data){  
-    					if(data.message.match('.+?成功.+')){
-	                    	alert("提交完成！"); 
-	                        //MARK**转付款界面
-	                        //alert(data.oid);
-   							location.href="./order.jsp";	
-    						}else{
-    							alert("添加失败");
-    						}
-                    },
-                    error:function(XMLHttpRequest, textStatus, errorThrown){
- 					   alert(XMLHttpRequest.status);
- 					   alert(XMLHttpRequest.readyState);
- 					   alert(textStatus);
- 				   }
-           
-                });  
+             
+                $("input[name='buyCids']").val(buyCids.toString());
+                $("input[name='adresId']").val(adresId+"");
+                $("#frm").submit();
+             
             }
-            return false;  
+            
         });  
     	
     });
@@ -108,6 +88,11 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 </head>
 
 <body>
+<form action="../Order" id="frm">
+<input type="hidden" name="flag" value="multi"> 
+<input type="hidden" name="buyCids"> 
+<input type="hidden" name="adresId"> 
+</form>
 	<% 
  //@SuppressWarnings("unchecked")
  //LinkedList<ShoppingCar> list = (LinkedList<ShoppingCar>)request.getSession().getAttribute("carlist");

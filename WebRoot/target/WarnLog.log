@@ -32,3 +32,31 @@
  <com.dao.SpCarDao.getCarView(SpCarDao.java:48)> 
 2017-11-12 15:58:49  WARN 227281ms|>- 
  <com.dao.OrdersDao.addOrders(OrdersDao.java:55)> 
+2017-11-12 21:15:52  WARN 928ms|>- 
+### Error querying database.  Cause: java.lang.ClassCastException: org.apache.ibatis.executor.ExecutionPlaceholder cannot be cast to java.util.List
+### The error may exist in com/mod/mapper/ShoppingCarMapper.xml
+### The error may involve com.mod.mapper.ShoppingCarMapper.getCarView
+### The error occurred while executing a query
+### Cause: java.lang.ClassCastException: org.apache.ibatis.executor.ExecutionPlaceholder cannot be cast to java.util.List
+ <com.dao.SpCarDao.getCarView(SpCarDao.java:61)> 
+2017-11-13 00:01:25  WARN 13342ms|>- 
+### Error updating database.  Cause: java.sql.SQLException: Field 'address' doesn't have a default value
+### The error may involve com.mod.mapper.OrdersMapper.insertSelective-Inline
+### The error occurred while setting parameters
+### SQL: insert into orders      ( oid,                       uid,                       state,                       sum )       values ( ?,                       ?,                       ?,                       ? )
+### Cause: java.sql.SQLException: Field 'address' doesn't have a default value
+ <com.dao.OrdersDao.addOrders(OrdersDao.java:96)> 
+2017-11-13 00:02:48  WARN 10045ms|>- 
+### Error updating database.  Cause: java.sql.SQLException: Field 'address' doesn't have a default value
+### The error may involve com.mod.mapper.OrdersMapper.insertSelective-Inline
+### The error occurred while setting parameters
+### SQL: insert into orders      ( oid,                       uid,                       state,                       sum )       values ( ?,                       ?,                       ?,                       ? )
+### Cause: java.sql.SQLException: Field 'address' doesn't have a default value
+ <com.dao.OrdersDao.addOrders(OrdersDao.java:96)> 
+2017-11-13 00:08:33  WARN 354205ms|>- 
+### Error updating database.  Cause: java.sql.SQLException: Field 'address' doesn't have a default value
+### The error may involve com.mod.mapper.OrdersMapper.insertSelective-Inline
+### The error occurred while setting parameters
+### SQL: insert into orders      ( oid,                       uid,                       state,                       sum )       values ( ?,                       ?,                       ?,                       ? )
+### Cause: java.sql.SQLException: Field 'address' doesn't have a default value
+ <com.dao.OrdersDao.addOrders(OrdersDao.java:96)> 
