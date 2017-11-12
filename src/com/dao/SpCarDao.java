@@ -39,6 +39,19 @@ public class SpCarDao {
 			e.printStackTrace();
 		}
 	}
+	public static boolean deleGoods(Integer cid){
+		int i = 0;
+		
+		try {
+			i=scm.deleteByPrimaryKey(cid);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		if(i>0){
+			return true;
+		}
+		return false;
+	}
 	public static LinkedList<HashMap<String,Object>> getCarView(Integer uid){
 		LinkedList<HashMap<String,Object>> list = null;
 		try {

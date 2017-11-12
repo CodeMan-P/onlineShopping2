@@ -77,10 +77,23 @@ public class ShoppingCarSlt extends HttpServlet {
 		response.setCharacterEncoding("utf-8");
 		response.setContentType("text/html");
 		String flag = request.getParameter("flag");
+		PrintWriter out = response.getWriter();
+		int uid = (int) request.getSession().getAttribute("uid");
 		if(flag.equalsIgnoreCase("add")){
 			addGoods(request, response);
+		}else if(flag.equalsIgnoreCase("dele")){
+			int cid = Integer.parseInt(request.getParameter("cid"));
+			if(SpCarService.deleGoods(cid)){		
+				out.write("{\"message\":\"删除成功！\",\"num\":"+0+"}");
+				int num = SpCarService.getCarNum(uid);
+				request.getSession().setAttribute("carnum",num);
+			}else{
+				out.write("{\"message\":\"删除失败！\"}");
+			}
+			out.flush();
+			out.close();
 		}else if(flag.equalsIgnoreCase("view")){
-			int uid = (int) request.getSession().getAttribute("uid");
+			
 			LinkedList<Address> adresList=UserService.getAdress(uid);
 			ObjectMapper mapper = new ObjectMapper();
 			String adresJson = mapper.writerWithDefaultPrettyPrinter().writeValueAsString(adresList);
@@ -107,9 +120,11 @@ public class ShoppingCarSlt extends HttpServlet {
 			int uid = (int) request.getSession().getAttribute("uid");
 			int gid = Integer.parseInt(request.getParameter("gid"));
 			int gnum = Integer.parseInt(request.getParameter("gnum"));
+			String desc = request.getParameter("desc");
 			Timestamp tm = new Timestamp(new Date().getTime());
-			ShoppingCar sc = new ShoppingCar(tm, uid, gid, gnum);
-	
+			ShoppingCar sc = new ShoppingCar(tm, uid, gid, gnum,desc);
+			//ObjectMapper mapper = new ObjectMapper();
+			//System.out.println(mapper.writerWithDefaultPrettyPrinter().writeValueAsString(sc));
 			if(SpCarService.addGoods(sc)){
 				request.getSession().removeAttribute("carnum");
 				int num = SpCarService.getCarNum(uid);

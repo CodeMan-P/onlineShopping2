@@ -25,6 +25,23 @@
 
 <script type="text/javascript">
 	$(document).ready(function() {
+		if($("#userInfo #spc").text()!=null){
+			$.ajax({
+				async:false,
+				data:{"flag":"flush"},
+				url : './login',  
+				type : 'post',
+				dataType:'json',
+				success:function(data){
+					if(data.message.match('.+?成功.+')){
+						$("#userInfo #spc").empty;
+					$("#userInfo #spc").text(data.cnum);
+					}
+				}
+			
+			});
+
+		};
 		$("#bt").on("click", function() {
 
 			var ajax_option = {
@@ -80,7 +97,8 @@
 				success : function(data) {
 					if(data.match('.+?成功.+')){
 					$("#user").show();
-					$("#userInfo #spc").text("-");
+					$("#userInfo #spc").text("");
+					$("#userInfo #spc").empty();
 					$("#userInfo #sp1").text("-");
 					$("#userInfo img").attr("src", "#");
 					$("#userInfo #sp2").text("-");
@@ -105,6 +123,9 @@
 			};
 			$(this).ajaxSubmit(ajax_option2);
 		});
+		
+		
+		
 	});
 </script>
 </head>
@@ -120,7 +141,7 @@
 			当前城市：<span id="sp2" style="font-size: 20px;color: #03C">${sessionScope.city}</span> <br />
 			<hr />
 			<a href="Spcar?flag=view" target="_blank" style="z-index:9;">
-			购物车<span id="spc" style="font-size:18px; color:#F00">${sessionScope.carnum}</span>
+			购物车<span id="spc" style="font-size:18px; color:#F00"></span>
 			</a> <br />
 			<hr />
 			<input type="button" value="注销" id="bt2"/>
@@ -163,6 +184,5 @@
 
 
 	<jsp:include page="index.html"></jsp:include>
-
 </body>
 </html>

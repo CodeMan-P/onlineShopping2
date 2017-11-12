@@ -2356,3 +2356,1552 @@
 11-12 14:22:48 ==>  Preparing: select * from view_car_goods where uid = ?; 
 11-12 14:22:48 ==> Parameters: 1(Integer)
 11-12 14:22:48 <==      Total: 2
+11-12 14:49:52 Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+11-12 14:49:52 PooledDataSource forcefully closed/removed all connections.
+11-12 14:49:52 PooledDataSource forcefully closed/removed all connections.
+11-12 14:49:52 PooledDataSource forcefully closed/removed all connections.
+11-12 14:49:52 PooledDataSource forcefully closed/removed all connections.
+11-12 14:49:53 Opening JDBC Connection
+11-12 14:49:53 Created connection 159447995.
+11-12 14:49:53 Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@980fbbb]
+11-12 14:49:53 ==>  Preparing: SELECT * FROM users WHERE uname = ? and upwd = ? 
+11-12 14:49:53 ==> Parameters: xiaoming(String), 123(String)
+11-12 14:49:53 <==    Columns: uid, uname, upwd, phone, city, regDate, idCard, realName, age, email, sex, avatar
+11-12 14:49:53 <==        Row: 1, xiaoming, 123, 18899119292, 西安, 2017-11-11, null, 小明, 22, null, 男, <<BLOB>>
+11-12 14:49:53 <==      Total: 1
+11-12 14:49:53 Opening JDBC Connection
+11-12 14:49:53 Created connection 1485541838.
+11-12 14:49:53 Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@588b91ce]
+11-12 14:49:53 ==>  Preparing: SELECT COUNT(1) FROM shoppingcar WHERE uid = ?; 
+11-12 14:49:53 ==> Parameters: 1(Integer)
+11-12 14:49:53 <==      Total: 1
+11-12 14:50:03 Opening JDBC Connection
+11-12 14:50:03 Created connection 902320949.
+11-12 14:50:03 Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@35c85335]
+11-12 14:50:03 ==>  Preparing: select gid, gname, tid, price, descption, imgPath, filePath, stock from goods where gid = ? 
+11-12 14:50:03 ==> Parameters: 1(Integer)
+11-12 14:50:03 <==      Total: 1
+11-12 14:50:11 ==>  Preparing: select cid, addGoodsTime, uid, gid, gnum, descption from shoppingcar where uid = ? and gid = ? 
+11-12 14:50:11 ==> Parameters: 1(Integer), 1(Integer)
+11-12 14:50:11 <==      Total: 1
+11-12 14:50:11 ==>  Preparing: update shoppingcar set addGoodsTime = ?, uid = ?, gid = ?, gnum = ?, descption = ? where cid = ? 
+11-12 14:50:11 ==> Parameters: 2017-11-12 14:50:11.987(Timestamp), 1(Integer), 1(Integer), 15(Integer), null, 8(Integer)
+11-12 14:50:11 <==    Updates: 1
+11-12 14:50:11 ==>  Preparing: SELECT COUNT(1) FROM shoppingcar WHERE uid = ?; 
+11-12 14:50:11 ==> Parameters: 1(Integer)
+11-12 14:50:11 <==      Total: 1
+11-12 14:58:17 Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+11-12 14:58:17 PooledDataSource forcefully closed/removed all connections.
+11-12 14:58:17 PooledDataSource forcefully closed/removed all connections.
+11-12 14:58:17 PooledDataSource forcefully closed/removed all connections.
+11-12 14:58:17 PooledDataSource forcefully closed/removed all connections.
+11-12 14:58:22 Opening JDBC Connection
+11-12 14:58:22 Created connection 1405482452.
+11-12 14:58:22 Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@53c5f5d4]
+11-12 14:58:22 ==>  Preparing: SELECT * FROM users WHERE uname = ? and upwd = ? 
+11-12 14:58:22 ==> Parameters: xiaoming(String), 123(String)
+11-12 14:58:22 <==    Columns: uid, uname, upwd, phone, city, regDate, idCard, realName, age, email, sex, avatar
+11-12 14:58:22 <==        Row: 1, xiaoming, 123, 18899119292, 西安, 2017-11-11, null, 小明, 22, null, 男, <<BLOB>>
+11-12 14:58:22 <==      Total: 1
+11-12 14:58:22 Opening JDBC Connection
+11-12 14:58:22 Created connection 1698421187.
+11-12 14:58:22 Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@653bd9c3]
+11-12 14:58:22 ==>  Preparing: SELECT COUNT(1) FROM shoppingcar WHERE uid = ?; 
+11-12 14:58:22 ==> Parameters: 1(Integer)
+11-12 14:58:22 <==      Total: 1
+11-12 14:58:25 Opening JDBC Connection
+11-12 14:58:25 Created connection 1730521944.
+11-12 14:58:25 Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@6725ab58]
+11-12 14:58:25 ==>  Preparing: select gid, gname, tid, price, descption, imgPath, filePath, stock from goods where gid = ? 
+11-12 14:58:25 ==> Parameters: 1(Integer)
+11-12 14:58:25 <==      Total: 1
+11-12 14:58:29 ==>  Preparing: select cid, addGoodsTime, uid, gid, gnum, descption from shoppingcar where uid = ? and gid = ? 
+11-12 14:58:29 ==> Parameters: 1(Integer), 1(Integer)
+11-12 14:58:29 <==      Total: 0
+11-12 14:58:29 ==>  Preparing: insert into shoppingcar ( addGoodsTime, uid, gid, gnum ) values ( ?, ?, ?, ? ) 
+11-12 14:58:29 ==> Parameters: 2017-11-12 14:58:29.742(Timestamp), 1(Integer), 1(Integer), 11(Integer)
+11-12 14:58:29 <==    Updates: 1
+11-12 14:58:29 ==>  Preparing: SELECT COUNT(1) FROM shoppingcar WHERE uid = ?; 
+11-12 14:58:29 ==> Parameters: 1(Integer)
+11-12 14:58:29 <==      Total: 1
+11-12 15:00:28 Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+11-12 15:00:28 PooledDataSource forcefully closed/removed all connections.
+11-12 15:00:28 PooledDataSource forcefully closed/removed all connections.
+11-12 15:00:28 PooledDataSource forcefully closed/removed all connections.
+11-12 15:00:28 PooledDataSource forcefully closed/removed all connections.
+11-12 15:00:28 Opening JDBC Connection
+11-12 15:00:28 Created connection 1132156841.
+11-12 15:00:28 Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@437b57a9]
+11-12 15:00:28 ==>  Preparing: select gid, gname, tid, price, descption, imgPath, filePath, stock from goods where gid = ? 
+11-12 15:00:28 ==> Parameters: 1(Integer)
+11-12 15:00:28 <==      Total: 1
+11-12 15:00:32 Opening JDBC Connection
+11-12 15:00:32 Created connection 1928670290.
+11-12 15:00:32 Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@72f52c52]
+11-12 15:00:32 ==>  Preparing: select cid, addGoodsTime, uid, gid, gnum, descption from shoppingcar where uid = ? and gid = ? 
+11-12 15:00:32 ==> Parameters: 1(Integer), 1(Integer)
+11-12 15:00:32 <==      Total: 1
+11-12 15:00:32 ==>  Preparing: update shoppingcar set addGoodsTime = ?, uid = ?, gid = ?, gnum = ?, descption = ? where cid = ? 
+11-12 15:00:32 ==> Parameters: 2017-11-12 15:00:32.316(Timestamp), 1(Integer), 1(Integer), 22(Integer), null, 10(Integer)
+11-12 15:00:32 <==    Updates: 1
+11-12 15:00:32 ==>  Preparing: SELECT COUNT(1) FROM shoppingcar WHERE uid = ?; 
+11-12 15:00:32 ==> Parameters: 1(Integer)
+11-12 15:00:32 <==      Total: 1
+11-12 15:03:03 Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+11-12 15:03:04 PooledDataSource forcefully closed/removed all connections.
+11-12 15:03:04 PooledDataSource forcefully closed/removed all connections.
+11-12 15:03:04 PooledDataSource forcefully closed/removed all connections.
+11-12 15:03:04 PooledDataSource forcefully closed/removed all connections.
+11-12 15:03:04 Opening JDBC Connection
+11-12 15:03:04 Created connection 1033839436.
+11-12 15:03:04 Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@3d9f234c]
+11-12 15:03:04 ==>  Preparing: select gid, gname, tid, price, descption, imgPath, filePath, stock from goods where gid = ? 
+11-12 15:03:04 ==> Parameters: 1(Integer)
+11-12 15:03:04 <==      Total: 1
+11-12 15:03:10 Opening JDBC Connection
+11-12 15:03:10 Created connection 805609845.
+11-12 15:03:10 Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@3004a175]
+11-12 15:03:10 ==>  Preparing: select cid, addGoodsTime, uid, gid, gnum, descption from shoppingcar where uid = ? and gid = ? 
+11-12 15:03:10 ==> Parameters: 1(Integer), 1(Integer)
+11-12 15:03:10 <==      Total: 1
+11-12 15:03:10 ==>  Preparing: update shoppingcar set addGoodsTime = ?, uid = ?, gid = ?, gnum = ?, descption = ? where cid = ? 
+11-12 15:03:10 ==> Parameters: 2017-11-12 15:03:10.48(Timestamp), 1(Integer), 1(Integer), 33(Integer), null, 10(Integer)
+11-12 15:03:10 <==    Updates: 1
+11-12 15:03:10 ==>  Preparing: SELECT COUNT(1) FROM shoppingcar WHERE uid = ?; 
+11-12 15:03:10 ==> Parameters: 1(Integer)
+11-12 15:03:10 <==      Total: 1
+11-12 15:04:01 ==>  Preparing: select cid, addGoodsTime, uid, gid, gnum, descption from shoppingcar where uid = ? and gid = ? 
+11-12 15:04:01 ==> Parameters: 1(Integer), 1(Integer)
+11-12 15:04:01 <==      Total: 1
+11-12 15:04:01 ==>  Preparing: update shoppingcar set addGoodsTime = ?, uid = ?, gid = ?, gnum = ?, descption = ? where cid = ? 
+11-12 15:04:01 ==> Parameters: 2017-11-12 15:04:01.05(Timestamp), 1(Integer), 1(Integer), 44(Integer), [object Object](String), 10(Integer)
+11-12 15:04:01 <==    Updates: 1
+11-12 15:04:01 ==>  Preparing: SELECT COUNT(1) FROM shoppingcar WHERE uid = ?; 
+11-12 15:04:01 ==> Parameters: 1(Integer)
+11-12 15:04:01 <==      Total: 1
+11-12 15:04:34 ==>  Preparing: select cid, addGoodsTime, uid, gid, gnum, descption from shoppingcar where uid = ? and gid = ? 
+11-12 15:04:34 ==> Parameters: 1(Integer), 1(Integer)
+11-12 15:04:34 <==      Total: 1
+11-12 15:04:34 ==>  Preparing: update shoppingcar set addGoodsTime = ?, uid = ?, gid = ?, gnum = ?, descption = ? where cid = ? 
+11-12 15:04:34 ==> Parameters: 2017-11-12 15:04:34.108(Timestamp), 1(Integer), 1(Integer), 55(Integer), [object Object](String), 10(Integer)
+11-12 15:04:34 <==    Updates: 1
+11-12 15:04:34 ==>  Preparing: SELECT COUNT(1) FROM shoppingcar WHERE uid = ?; 
+11-12 15:04:34 ==> Parameters: 1(Integer)
+11-12 15:04:34 <==      Total: 1
+11-12 15:09:05 ==>  Preparing: select cid, addGoodsTime, uid, gid, gnum, descption from shoppingcar where uid = ? and gid = ? 
+11-12 15:09:05 ==> Parameters: 1(Integer), 1(Integer)
+11-12 15:09:05 <==      Total: 1
+11-12 15:09:05 ==>  Preparing: update shoppingcar set addGoodsTime = ?, uid = ?, gid = ?, gnum = ?, descption = ? where cid = ? 
+11-12 15:09:05 ==> Parameters: 2017-11-12 15:09:05.65(Timestamp), 1(Integer), 1(Integer), 66(Integer), [object Object](String), 10(Integer)
+11-12 15:09:05 <==    Updates: 1
+11-12 15:09:05 ==>  Preparing: SELECT COUNT(1) FROM shoppingcar WHERE uid = ?; 
+11-12 15:09:05 ==> Parameters: 1(Integer)
+11-12 15:09:05 <==      Total: 1
+11-12 15:09:55 ==>  Preparing: select cid, addGoodsTime, uid, gid, gnum, descption from shoppingcar where uid = ? and gid = ? 
+11-12 15:09:55 ==> Parameters: 1(Integer), 1(Integer)
+11-12 15:09:55 <==      Total: 1
+11-12 15:09:55 ==>  Preparing: update shoppingcar set addGoodsTime = ?, uid = ?, gid = ?, gnum = ?, descption = ? where cid = ? 
+11-12 15:09:55 ==> Parameters: 2017-11-12 15:09:55.675(Timestamp), 1(Integer), 1(Integer), 77(Integer), null, 10(Integer)
+11-12 15:09:55 <==    Updates: 1
+11-12 15:09:55 ==>  Preparing: SELECT COUNT(1) FROM shoppingcar WHERE uid = ?; 
+11-12 15:09:55 ==> Parameters: 1(Integer)
+11-12 15:09:55 <==      Total: 1
+11-12 15:10:37 ==>  Preparing: select cid, addGoodsTime, uid, gid, gnum, descption from shoppingcar where uid = ? and gid = ? 
+11-12 15:10:37 ==> Parameters: 1(Integer), 1(Integer)
+11-12 15:10:37 <==      Total: 1
+11-12 15:10:37 ==>  Preparing: update shoppingcar set addGoodsTime = ?, uid = ?, gid = ?, gnum = ?, descption = ? where cid = ? 
+11-12 15:10:37 ==> Parameters: 2017-11-12 15:10:37.052(Timestamp), 1(Integer), 1(Integer), 88(Integer), {"网络类型" : "4G全网通","机身颜色" : "钻雕金","套餐类型" : "官方标配","存储容量" : "128GB","购买方式" : "裸机","版本" : "小米6"}(String), 10(Integer)
+11-12 15:10:37 <==    Updates: 1
+11-12 15:10:37 ==>  Preparing: SELECT COUNT(1) FROM shoppingcar WHERE uid = ?; 
+11-12 15:10:37 ==> Parameters: 1(Integer)
+11-12 15:10:37 <==      Total: 1
+11-12 15:11:20 ==>  Preparing: select cid, addGoodsTime, uid, gid, gnum, descption from shoppingcar where uid = ? and gid = ? 
+11-12 15:11:20 ==> Parameters: 1(Integer), 1(Integer)
+11-12 15:11:20 <==      Total: 1
+11-12 15:11:20 ==>  Preparing: update shoppingcar set addGoodsTime = ?, uid = ?, gid = ?, gnum = ?, descption = ? where cid = ? 
+11-12 15:11:20 ==> Parameters: 2017-11-12 15:11:20.796(Timestamp), 1(Integer), 1(Integer), 99(Integer), [{"网络类型" : "4G全网通","机身颜色" : "钻雕金","套餐类型" : "官方标配","存储容量" : "128GB","购买方式" : "裸机","版本" : "小米6"}](String), 10(Integer)
+11-12 15:11:20 <==    Updates: 1
+11-12 15:11:20 ==>  Preparing: SELECT COUNT(1) FROM shoppingcar WHERE uid = ?; 
+11-12 15:11:20 ==> Parameters: 1(Integer)
+11-12 15:11:20 <==      Total: 1
+11-12 15:11:37 ==>  Preparing: select cid, addGoodsTime, uid, gid, gnum, descption from shoppingcar where uid = ? and gid = ? 
+11-12 15:11:37 ==> Parameters: 1(Integer), 1(Integer)
+11-12 15:11:37 <==      Total: 0
+11-12 15:11:37 ==>  Preparing: insert into shoppingcar ( addGoodsTime, uid, gid, gnum, descption ) values ( ?, ?, ?, ?, ? ) 
+11-12 15:11:37 ==> Parameters: 2017-11-12 15:11:37.612(Timestamp), 1(Integer), 1(Integer), 11(Integer), [{"网络类型" : "4G全网通","机身颜色" : "钻雕金","套餐类型" : "官方标配","存储容量" : "128GB","购买方式" : "裸机","版本" : "小米6"}](String)
+11-12 15:11:37 <==    Updates: 1
+11-12 15:11:37 ==>  Preparing: SELECT COUNT(1) FROM shoppingcar WHERE uid = ?; 
+11-12 15:11:37 ==> Parameters: 1(Integer)
+11-12 15:11:37 <==      Total: 1
+11-12 15:11:59 Opening JDBC Connection
+11-12 15:11:59 Created connection 940062303.
+11-12 15:11:59 Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@3808365f]
+11-12 15:11:59 ==>  Preparing: select * from address where uid = ? 
+11-12 15:11:59 ==> Parameters: 1(Integer)
+11-12 15:11:59 <==      Total: 2
+11-12 15:11:59 ==>  Preparing: select * from view_car_goods where uid = ?; 
+11-12 15:11:59 ==> Parameters: 1(Integer)
+11-12 15:11:59 <==      Total: 2
+11-12 15:12:14 ==>  Preparing: select * from view_car_goods where uid = ?; 
+11-12 15:12:14 ==> Parameters: 1(Integer)
+11-12 15:12:14 <==      Total: 2
+11-12 15:13:11 ==>  Preparing: select * from address where uid = ? 
+11-12 15:13:11 ==> Parameters: 1(Integer)
+11-12 15:13:11 <==      Total: 2
+11-12 15:13:11 ==>  Preparing: select * from view_car_goods where uid = ?; 
+11-12 15:13:11 ==> Parameters: 1(Integer)
+11-12 15:13:11 <==      Total: 2
+11-12 15:13:15 ==>  Preparing: select * from view_car_goods where uid = ?; 
+11-12 15:13:15 ==> Parameters: 1(Integer)
+11-12 15:13:15 <==      Total: 2
+11-12 15:17:20 Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+11-12 15:17:20 PooledDataSource forcefully closed/removed all connections.
+11-12 15:17:20 PooledDataSource forcefully closed/removed all connections.
+11-12 15:17:20 PooledDataSource forcefully closed/removed all connections.
+11-12 15:17:20 PooledDataSource forcefully closed/removed all connections.
+11-12 15:17:20 Opening JDBC Connection
+11-12 15:17:20 Created connection 323871170.
+11-12 15:17:20 Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@134de1c2]
+11-12 15:17:20 ==>  Preparing: select * from address where uid = ? 
+11-12 15:17:20 ==> Parameters: 1(Integer)
+11-12 15:17:20 <==      Total: 2
+11-12 15:17:20 Opening JDBC Connection
+11-12 15:17:20 Created connection 1996746896.
+11-12 15:17:20 Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@7703f090]
+11-12 15:17:20 ==>  Preparing: select * from view_car_goods where uid = ?; 
+11-12 15:17:20 ==> Parameters: 1(Integer)
+11-12 15:17:20 <==      Total: 2
+11-12 15:17:23 ==>  Preparing: select * from view_car_goods where uid = ?; 
+11-12 15:17:23 ==> Parameters: 1(Integer)
+11-12 15:17:23 <==      Total: 2
+11-12 15:19:12 Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+11-12 15:19:12 PooledDataSource forcefully closed/removed all connections.
+11-12 15:19:12 PooledDataSource forcefully closed/removed all connections.
+11-12 15:19:12 PooledDataSource forcefully closed/removed all connections.
+11-12 15:19:12 PooledDataSource forcefully closed/removed all connections.
+11-12 15:19:12 Opening JDBC Connection
+11-12 15:19:12 Created connection 7325140.
+11-12 15:19:12 Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@6fc5d4]
+11-12 15:19:12 ==>  Preparing: select * from address where uid = ? 
+11-12 15:19:12 ==> Parameters: 1(Integer)
+11-12 15:19:12 <==      Total: 2
+11-12 15:19:13 Opening JDBC Connection
+11-12 15:19:13 Created connection 1716350699.
+11-12 15:19:13 Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@664d6eeb]
+11-12 15:19:13 ==>  Preparing: select * from view_car_goods where uid = ?; 
+11-12 15:19:13 ==> Parameters: 1(Integer)
+11-12 15:19:13 <==      Total: 2
+11-12 15:19:18 ==>  Preparing: select * from view_car_goods where uid = ?; 
+11-12 15:19:18 ==> Parameters: 1(Integer)
+11-12 15:19:18 <==      Total: 2
+11-12 15:19:37 ==>  Preparing: select * from view_car_goods where uid = ?; 
+11-12 15:19:37 ==> Parameters: 1(Integer)
+11-12 15:19:37 <==      Total: 2
+11-12 15:19:53 ==>  Preparing: select * from view_car_goods where uid = ?; 
+11-12 15:19:53 ==> Parameters: 1(Integer)
+11-12 15:19:53 <==      Total: 2
+11-12 15:53:45 Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+11-12 15:53:46 PooledDataSource forcefully closed/removed all connections.
+11-12 15:53:46 PooledDataSource forcefully closed/removed all connections.
+11-12 15:53:46 PooledDataSource forcefully closed/removed all connections.
+11-12 15:53:46 PooledDataSource forcefully closed/removed all connections.
+11-12 15:53:46 Opening JDBC Connection
+11-12 15:53:46 Created connection 1414025946.
+11-12 15:53:46 Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@544852da]
+11-12 15:53:46 ==>  Preparing: SELECT * FROM users WHERE uname = ? and upwd = ? 
+11-12 15:53:46 ==> Parameters: xiaoming(String), 123(String)
+11-12 15:53:46 <==    Columns: uid, uname, upwd, phone, city, regDate, idCard, realName, age, email, sex, avatar
+11-12 15:53:46 <==        Row: 1, xiaoming, 123, 18899119292, 西安, 2017-11-11, null, 小明, 22, null, 男, <<BLOB>>
+11-12 15:53:46 <==      Total: 1
+11-12 15:53:46 Opening JDBC Connection
+11-12 15:53:46 Created connection 24132.
+11-12 15:53:46 Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@5e44]
+11-12 15:53:46 ==>  Preparing: SELECT COUNT(1) FROM shoppingcar WHERE uid = ?; 
+11-12 15:53:46 ==> Parameters: 1(Integer)
+11-12 15:53:46 <==      Total: 1
+11-12 15:53:51 Opening JDBC Connection
+11-12 15:53:51 Created connection 1771378322.
+11-12 15:53:51 Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@69951692]
+11-12 15:53:51 ==>  Preparing: select gid, gname, tid, price, descption, imgPath, filePath, stock from goods where gid = ? 
+11-12 15:53:51 ==> Parameters: 1(Integer)
+11-12 15:53:51 <==      Total: 1
+11-12 15:53:53 ==>  Preparing: select cid, addGoodsTime, uid, gid, gnum, descption from shoppingcar where uid = ? and gid = ? 
+11-12 15:53:53 ==> Parameters: 1(Integer), 1(Integer)
+11-12 15:53:53 <==      Total: 1
+11-12 15:53:53 ==>  Preparing: update shoppingcar set addGoodsTime = ?, uid = ?, gid = ?, gnum = ?, descption = ? where cid = ? 
+11-12 15:53:53 ==> Parameters: 2017-11-12 15:53:53.704(Timestamp), 1(Integer), 1(Integer), 12(Integer), [{"网络类型" : "4G全网通","机身颜色" : "钻雕金","套餐类型" : "官方标配","存储容量" : "128GB","购买方式" : "裸机","版本" : "小米6"}](String), 11(Integer)
+11-12 15:53:53 <==    Updates: 1
+11-12 15:53:53 ==>  Preparing: SELECT COUNT(1) FROM shoppingcar WHERE uid = ?; 
+11-12 15:53:53 ==> Parameters: 1(Integer)
+11-12 15:53:53 <==      Total: 1
+11-12 15:55:01 Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+11-12 15:55:01 PooledDataSource forcefully closed/removed all connections.
+11-12 15:55:01 PooledDataSource forcefully closed/removed all connections.
+11-12 15:55:01 PooledDataSource forcefully closed/removed all connections.
+11-12 15:55:01 PooledDataSource forcefully closed/removed all connections.
+11-12 15:55:06 Opening JDBC Connection
+11-12 15:55:06 Created connection 1039550951.
+11-12 15:55:06 Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@3df649e7]
+11-12 15:55:06 ==>  Preparing: SELECT * FROM users WHERE uname = ? and upwd = ? 
+11-12 15:55:06 ==> Parameters: xiaoming(String), 123(String)
+11-12 15:55:06 <==    Columns: uid, uname, upwd, phone, city, regDate, idCard, realName, age, email, sex, avatar
+11-12 15:55:06 <==        Row: 1, xiaoming, 123, 18899119292, 西安, 2017-11-11, null, 小明, 22, null, 男, <<BLOB>>
+11-12 15:55:06 <==      Total: 1
+11-12 15:55:06 Opening JDBC Connection
+11-12 15:55:06 Created connection 2090146145.
+11-12 15:55:06 Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@7c951961]
+11-12 15:55:06 ==>  Preparing: SELECT COUNT(1) FROM shoppingcar WHERE uid = ?; 
+11-12 15:55:06 ==> Parameters: 1(Integer)
+11-12 15:55:06 <==      Total: 1
+11-12 15:55:08 ==>  Preparing: select * from address where uid = ? 
+11-12 15:55:08 ==> Parameters: 1(Integer)
+11-12 15:55:08 <==      Total: 2
+11-12 15:55:08 ==>  Preparing: select * from view_car_goods where uid = ?; 
+11-12 15:55:08 ==> Parameters: 1(Integer)
+11-12 15:55:08 <==      Total: 1
+11-12 15:55:12 Opening JDBC Connection
+11-12 15:55:12 Created connection 1055570109.
+11-12 15:55:12 Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@3eeab8bd]
+11-12 15:55:12 ==>  Preparing: select gid, gname, tid, price, descption, imgPath, filePath, stock from goods where gid = ? 
+11-12 15:55:12 ==> Parameters: 1(Integer)
+11-12 15:55:12 <==      Total: 1
+11-12 15:55:15 ==>  Preparing: select cid, addGoodsTime, uid, gid, gnum, descption from shoppingcar where uid = ? and gid = ? 
+11-12 15:55:15 ==> Parameters: 1(Integer), 1(Integer)
+11-12 15:55:15 <==      Total: 0
+11-12 15:55:15 ==>  Preparing: insert into shoppingcar ( addGoodsTime, uid, gid, gnum, descption ) values ( ?, ?, ?, ?, ? ) 
+11-12 15:55:15 ==> Parameters: 2017-11-12 15:55:15.484(Timestamp), 1(Integer), 1(Integer), 1(Integer), [{"网络类型" : "4G全网通","机身颜色" : "钻雕金","套餐类型" : "官方标配","存储容量" : "128GB","购买方式" : "裸机","版本" : "小米6"}](String)
+11-12 15:55:15 <==    Updates: 1
+11-12 15:55:15 ==>  Preparing: SELECT COUNT(1) FROM shoppingcar WHERE uid = ?; 
+11-12 15:55:15 ==> Parameters: 1(Integer)
+11-12 15:55:15 <==      Total: 1
+11-12 15:55:18 ==>  Preparing: select * from address where uid = ? 
+11-12 15:55:18 ==> Parameters: 1(Integer)
+11-12 15:55:18 <==      Total: 2
+11-12 15:55:18 ==>  Preparing: select * from view_car_goods where uid = ?; 
+11-12 15:55:18 ==> Parameters: 1(Integer)
+11-12 15:55:18 <==      Total: 2
+11-12 15:56:52 ==>  Preparing: select * from address where uid = ? 
+11-12 15:56:52 ==> Parameters: 1(Integer)
+11-12 15:56:52 <==      Total: 2
+11-12 15:56:52 ==>  Preparing: select * from view_car_goods where uid = ?; 
+11-12 15:56:52 ==> Parameters: 1(Integer)
+11-12 15:56:52 <==      Total: 2
+11-12 15:57:01 ==>  Preparing: select * from address where uid = ? 
+11-12 15:57:01 ==> Parameters: 1(Integer)
+11-12 15:57:01 <==      Total: 2
+11-12 15:57:01 ==>  Preparing: select * from view_car_goods where uid = ?; 
+11-12 15:57:01 ==> Parameters: 1(Integer)
+11-12 15:57:01 <==      Total: 2
+11-12 15:58:30 ==>  Preparing: select * from address where uid = ? 
+11-12 15:58:30 ==> Parameters: 1(Integer)
+11-12 15:58:30 <==      Total: 2
+11-12 15:58:30 ==>  Preparing: select * from view_car_goods where uid = ?; 
+11-12 15:58:30 ==> Parameters: 1(Integer)
+11-12 15:58:30 <==      Total: 2
+11-12 15:58:33 ==>  Preparing: select * from address where uid = ? 
+11-12 15:58:33 ==> Parameters: 1(Integer)
+11-12 15:58:33 <==      Total: 2
+11-12 15:58:33 ==>  Preparing: select * from view_car_goods where uid = ?; 
+11-12 15:58:33 ==> Parameters: 1(Integer)
+11-12 15:58:33 <==      Total: 2
+11-12 15:58:35 ==>  Preparing: select * from address where uid = ? 
+11-12 15:58:35 ==> Parameters: 1(Integer)
+11-12 15:58:35 <==      Total: 2
+11-12 15:58:35 ==>  Preparing: select * from view_car_goods where uid = ?; 
+11-12 15:58:35 ==> Parameters: 1(Integer)
+11-12 15:58:35 <==      Total: 2
+11-12 15:58:41 ==>  Preparing: select * from address where uid = ? 
+11-12 15:58:41 ==> Parameters: 1(Integer)
+11-12 15:58:41 <==      Total: 2
+11-12 15:58:41 ==>  Preparing: select * from view_car_goods where uid = ?; 
+11-12 15:58:41 ==> Parameters: 1(Integer)
+11-12 15:58:41 <==      Total: 2
+11-12 15:58:49 ==>  Preparing: select * from view_car_goods where uid = ?; 
+11-12 15:58:49 ==> Parameters: 1(Integer)
+11-12 15:58:49 <==      Total: 2
+11-12 15:58:49 
+11-12 16:02:28 Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+11-12 16:02:28 PooledDataSource forcefully closed/removed all connections.
+11-12 16:02:28 PooledDataSource forcefully closed/removed all connections.
+11-12 16:02:28 PooledDataSource forcefully closed/removed all connections.
+11-12 16:02:28 PooledDataSource forcefully closed/removed all connections.
+11-12 16:02:28 Opening JDBC Connection
+11-12 16:02:28 Created connection 1224112642.
+11-12 16:02:28 Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@48f67a02]
+11-12 16:02:28 ==>  Preparing: select * from address where uid = ? 
+11-12 16:02:29 ==> Parameters: 1(Integer)
+11-12 16:02:29 <==      Total: 2
+11-12 16:02:29 Opening JDBC Connection
+11-12 16:02:29 Created connection 1118363813.
+11-12 16:02:29 Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@42a8e0a5]
+11-12 16:02:29 ==>  Preparing: select * from view_car_goods where uid = ?; 
+11-12 16:02:29 ==> Parameters: 1(Integer)
+11-12 16:02:29 <==      Total: 2
+11-12 16:02:38 ==>  Preparing: select * from view_car_goods where uid = ?; 
+11-12 16:02:38 ==> Parameters: 1(Integer)
+11-12 16:02:38 <==      Total: 2
+11-12 16:02:38 Opening JDBC Connection
+11-12 16:02:38 Created connection 1296795445.
+11-12 16:02:38 Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@4d4b8735]
+11-12 16:02:38 ==>  Preparing: insert into orders ( oid, uid, sum, address ) values ( ?, ?, ?, ? ) 
+11-12 16:02:38 ==> Parameters: 20171112160238(String), 1(Integer), 4488.0(Double), java.io.StringReader@18976ec2(StringReader)
+11-12 16:02:38 <==    Updates: 1
+11-12 16:02:38 ==>  Preparing: insert into orderform ( oid, gid, gnum, SubTotal ) values ( ?, ?, ?, ? ) 
+11-12 16:02:38 ==> Parameters: 20171112160238(String), 2(Integer), 1(Integer), 1000.0(Double)
+11-12 16:02:38 <==    Updates: 1
+11-12 16:02:38 ==>  Preparing: insert into orderform ( oid, gid, gnum, SubTotal ) values ( ?, ?, ?, ? ) 
+11-12 16:02:38 ==> Parameters: 20171112160238(String), 1(Integer), 1(Integer), 3488.0(Double)
+11-12 16:02:38 <==    Updates: 1
+11-12 16:02:38 Committing JDBC Connection [com.mysql.jdbc.JDBC4Connection@4d4b8735]
+11-12 16:02:38 {
+  "oid" : "20171112160238",
+  "uid" : 1,
+  "state" : "待付款",
+  "sum" : 4488.0,
+  "address" : "西安市长里村"
+}
+11-12 16:02:38 [ {
+  "oid" : "20171112160238",
+  "gid" : 2,
+  "gnum" : 1,
+  "subtotal" : 1000.0
+}, {
+  "oid" : "20171112160238",
+  "gid" : 1,
+  "gnum" : 1,
+  "subtotal" : 3488.0
+} ]
+11-12 16:04:55 Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+11-12 16:04:56 PooledDataSource forcefully closed/removed all connections.
+11-12 16:04:56 PooledDataSource forcefully closed/removed all connections.
+11-12 16:04:56 PooledDataSource forcefully closed/removed all connections.
+11-12 16:04:56 PooledDataSource forcefully closed/removed all connections.
+11-12 16:04:56 Opening JDBC Connection
+11-12 16:04:56 Created connection 837831649.
+11-12 16:04:56 Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@31f04be1]
+11-12 16:04:56 ==>  Preparing: select * from address where uid = ? 
+11-12 16:04:56 ==> Parameters: 1(Integer)
+11-12 16:04:56 <==      Total: 2
+11-12 16:04:57 Opening JDBC Connection
+11-12 16:04:57 Created connection 295701788.
+11-12 16:04:57 Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@11a00d1c]
+11-12 16:04:57 ==>  Preparing: select * from view_car_goods where uid = ?; 
+11-12 16:04:57 ==> Parameters: 1(Integer)
+11-12 16:04:57 <==      Total: 2
+11-12 16:05:07 ==>  Preparing: select * from view_car_goods where uid = ?; 
+11-12 16:05:07 ==> Parameters: 1(Integer)
+11-12 16:05:07 <==      Total: 2
+11-12 16:05:07 Opening JDBC Connection
+11-12 16:05:07 Created connection 1588399321.
+11-12 16:05:07 Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@5ead0cd9]
+11-12 16:05:07 ==>  Preparing: insert into orders ( oid, uid, sum, address ) values ( ?, ?, ?, ? ) 
+11-12 16:05:07 ==> Parameters: 20171112160507(String), 1(Integer), 4488.0(Double), java.io.StringReader@62e67c92(StringReader)
+11-12 16:05:07 <==    Updates: 1
+11-12 16:05:07 ==>  Preparing: insert into orderform ( oid, gid, gnum, SubTotal ) values ( ?, ?, ?, ? ) 
+11-12 16:05:07 ==> Parameters: 20171112160507(String), 2(Integer), 1(Integer), 1000.0(Double)
+11-12 16:05:07 <==    Updates: 1
+11-12 16:05:07 ==>  Preparing: insert into orderform ( oid, gid, gnum, SubTotal ) values ( ?, ?, ?, ? ) 
+11-12 16:05:07 ==> Parameters: 20171112160507(String), 1(Integer), 1(Integer), 3488.0(Double)
+11-12 16:05:07 <==    Updates: 1
+11-12 16:05:07 Committing JDBC Connection [com.mysql.jdbc.JDBC4Connection@5ead0cd9]
+11-12 16:05:07 添加新订单(20171112160507)：{
+  "oid" : "20171112160507",
+  "uid" : 1,
+  "state" : "待付款",
+  "sum" : 4488.0,
+  "address" : "西安市外包学院"
+}
+11-12 16:05:07 订单详情(20171112160507)：[ {
+  "oid" : "20171112160507",
+  "gid" : 2,
+  "gnum" : 1,
+  "subtotal" : 1000.0
+}, {
+  "oid" : "20171112160507",
+  "gid" : 1,
+  "gnum" : 1,
+  "subtotal" : 3488.0
+} ]
+11-12 16:37:22 Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+11-12 16:37:23 PooledDataSource forcefully closed/removed all connections.
+11-12 16:37:23 PooledDataSource forcefully closed/removed all connections.
+11-12 16:37:23 PooledDataSource forcefully closed/removed all connections.
+11-12 16:37:23 PooledDataSource forcefully closed/removed all connections.
+11-12 16:37:23 Opening JDBC Connection
+11-12 16:37:23 Created connection 1592473140.
+11-12 16:37:23 Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@5eeb3634]
+11-12 16:37:23 ==>  Preparing: SELECT * FROM users WHERE uname = ? and upwd = ? 
+11-12 16:37:23 ==> Parameters: xiaoming(String), 123(String)
+11-12 16:37:23 <==    Columns: uid, uname, upwd, phone, city, regDate, idCard, realName, age, email, sex, avatar
+11-12 16:37:23 <==        Row: 1, xiaoming, 123, 18899119292, 西安, 2017-11-11, null, 小明, 22, null, 男, <<BLOB>>
+11-12 16:37:23 <==      Total: 1
+11-12 16:37:23 Opening JDBC Connection
+11-12 16:37:23 Created connection 65216879.
+11-12 16:37:23 Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@3e3216f]
+11-12 16:37:23 ==>  Preparing: SELECT COUNT(1) FROM shoppingcar WHERE uid = ?; 
+11-12 16:37:23 ==> Parameters: 1(Integer)
+11-12 16:37:23 <==      Total: 1
+11-12 16:37:25 ==>  Preparing: select * from address where uid = ? 
+11-12 16:37:25 ==> Parameters: 1(Integer)
+11-12 16:37:25 <==      Total: 2
+11-12 16:37:25 ==>  Preparing: select * from view_car_goods where uid = ?; 
+11-12 16:37:25 ==> Parameters: 1(Integer)
+11-12 16:37:25 <==      Total: 2
+11-12 16:37:44 ==>  Preparing: delete from shoppingcar where cid = ? 
+11-12 16:37:44 ==> Parameters: 9(Integer)
+11-12 16:37:44 <==    Updates: 1
+11-12 16:39:43 ==>  Preparing: select * from address where uid = ? 
+11-12 16:39:43 ==> Parameters: 1(Integer)
+11-12 16:39:43 <==      Total: 2
+11-12 16:39:43 ==>  Preparing: select * from view_car_goods where uid = ?; 
+11-12 16:39:43 ==> Parameters: 1(Integer)
+11-12 16:39:43 <==      Total: 1
+11-12 16:39:47 ==>  Preparing: delete from shoppingcar where cid = ? 
+11-12 16:39:47 ==> Parameters: 12(Integer)
+11-12 16:39:47 <==    Updates: 1
+11-12 16:41:01 Opening JDBC Connection
+11-12 16:41:01 Created connection 1846437116.
+11-12 16:41:01 Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@6e0e64fc]
+11-12 16:41:01 ==>  Preparing: select gid, gname, tid, price, descption, imgPath, filePath, stock from goods where gid = ? 
+11-12 16:41:01 ==> Parameters: 1(Integer)
+11-12 16:41:01 <==      Total: 1
+11-12 16:41:04 ==>  Preparing: select cid, addGoodsTime, uid, gid, gnum, descption from shoppingcar where uid = ? and gid = ? 
+11-12 16:41:04 ==> Parameters: 1(Integer), 1(Integer)
+11-12 16:41:04 <==      Total: 0
+11-12 16:41:04 ==>  Preparing: insert into shoppingcar ( addGoodsTime, uid, gid, gnum, descption ) values ( ?, ?, ?, ?, ? ) 
+11-12 16:41:04 ==> Parameters: 2017-11-12 16:41:04.678(Timestamp), 1(Integer), 1(Integer), 11(Integer), [{"网络类型" : "4G全网通","机身颜色" : "钻雕金","套餐类型" : "官方标配","存储容量" : "128GB","购买方式" : "裸机","版本" : "小米6"}](String)
+11-12 16:41:04 <==    Updates: 1
+11-12 16:41:04 ==>  Preparing: SELECT COUNT(1) FROM shoppingcar WHERE uid = ?; 
+11-12 16:41:04 ==> Parameters: 1(Integer)
+11-12 16:41:04 <==      Total: 1
+11-12 16:41:09 ==>  Preparing: select * from address where uid = ? 
+11-12 16:41:09 ==> Parameters: 1(Integer)
+11-12 16:41:09 <==      Total: 2
+11-12 16:41:09 ==>  Preparing: select * from view_car_goods where uid = ?; 
+11-12 16:41:09 ==> Parameters: 1(Integer)
+11-12 16:41:09 <==      Total: 1
+11-12 16:41:20 ==>  Preparing: delete from shoppingcar where cid = ? 
+11-12 16:41:20 ==> Parameters: 13(Integer)
+11-12 16:41:20 <==    Updates: 1
+11-12 16:43:23 Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+11-12 16:43:23 PooledDataSource forcefully closed/removed all connections.
+11-12 16:43:23 PooledDataSource forcefully closed/removed all connections.
+11-12 16:43:23 PooledDataSource forcefully closed/removed all connections.
+11-12 16:43:23 PooledDataSource forcefully closed/removed all connections.
+11-12 16:43:24 Opening JDBC Connection
+11-12 16:43:24 Created connection 1059065079.
+11-12 16:43:24 Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@3f200cf7]
+11-12 16:43:24 ==>  Preparing: select * from address where uid = ? 
+11-12 16:43:24 ==> Parameters: 1(Integer)
+11-12 16:43:24 <==      Total: 2
+11-12 16:43:24 Opening JDBC Connection
+11-12 16:43:24 Created connection 1442554385.
+11-12 16:43:24 Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@55fba211]
+11-12 16:43:24 ==>  Preparing: select * from view_car_goods where uid = ?; 
+11-12 16:43:24 ==> Parameters: 1(Integer)
+11-12 16:43:24 <==      Total: 0
+11-12 16:43:32 ==>  Preparing: select cid, addGoodsTime, uid, gid, gnum, descption from shoppingcar where uid = ? and gid = ? 
+11-12 16:43:32 ==> Parameters: 1(Integer), 1(Integer)
+11-12 16:43:32 <==      Total: 0
+11-12 16:43:32 ==>  Preparing: insert into shoppingcar ( addGoodsTime, uid, gid, gnum, descption ) values ( ?, ?, ?, ?, ? ) 
+11-12 16:43:32 ==> Parameters: 2017-11-12 16:43:32.226(Timestamp), 1(Integer), 1(Integer), 11(Integer), [{"网络类型" : "4G全网通","机身颜色" : "钻雕金","套餐类型" : "官方标配","存储容量" : "128GB","购买方式" : "裸机","版本" : "小米6"}](String)
+11-12 16:43:32 <==    Updates: 1
+11-12 16:43:32 ==>  Preparing: SELECT COUNT(1) FROM shoppingcar WHERE uid = ?; 
+11-12 16:43:32 ==> Parameters: 1(Integer)
+11-12 16:43:32 <==      Total: 1
+11-12 16:43:37 ==>  Preparing: select * from address where uid = ? 
+11-12 16:43:37 ==> Parameters: 1(Integer)
+11-12 16:43:37 <==      Total: 2
+11-12 16:43:37 ==>  Preparing: select * from view_car_goods where uid = ?; 
+11-12 16:43:37 ==> Parameters: 1(Integer)
+11-12 16:43:37 <==      Total: 1
+11-12 16:43:40 ==>  Preparing: delete from shoppingcar where cid = ? 
+11-12 16:43:40 ==> Parameters: 14(Integer)
+11-12 16:43:40 <==    Updates: 1
+11-12 16:43:40 ==>  Preparing: SELECT COUNT(1) FROM shoppingcar WHERE uid = ?; 
+11-12 16:43:40 ==> Parameters: 1(Integer)
+11-12 16:43:40 <==      Total: 1
+11-12 16:45:43 Opening JDBC Connection
+11-12 16:45:43 Created connection 359791211.
+11-12 16:45:43 Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@1571fa6b]
+11-12 16:45:43 ==>  Preparing: select gid, gname, tid, price, descption, imgPath, filePath, stock from goods where gid = ? 
+11-12 16:45:43 ==> Parameters: 1(Integer)
+11-12 16:45:43 <==      Total: 1
+11-12 16:45:45 ==>  Preparing: select cid, addGoodsTime, uid, gid, gnum, descption from shoppingcar where uid = ? and gid = ? 
+11-12 16:45:45 ==> Parameters: 1(Integer), 1(Integer)
+11-12 16:45:45 <==      Total: 0
+11-12 16:45:45 ==>  Preparing: insert into shoppingcar ( addGoodsTime, uid, gid, gnum, descption ) values ( ?, ?, ?, ?, ? ) 
+11-12 16:45:45 ==> Parameters: 2017-11-12 16:45:45.67(Timestamp), 1(Integer), 1(Integer), 11(Integer), [{"网络类型" : "4G全网通","机身颜色" : "钻雕金","套餐类型" : "官方标配","存储容量" : "128GB","购买方式" : "裸机","版本" : "小米6"}](String)
+11-12 16:45:45 <==    Updates: 1
+11-12 16:45:45 ==>  Preparing: SELECT COUNT(1) FROM shoppingcar WHERE uid = ?; 
+11-12 16:45:45 ==> Parameters: 1(Integer)
+11-12 16:45:45 <==      Total: 1
+11-12 16:45:51 ==>  Preparing: select * from address where uid = ? 
+11-12 16:45:51 ==> Parameters: 1(Integer)
+11-12 16:45:51 <==      Total: 2
+11-12 16:45:51 ==>  Preparing: select * from view_car_goods where uid = ?; 
+11-12 16:45:51 ==> Parameters: 1(Integer)
+11-12 16:45:51 <==      Total: 1
+11-12 16:45:53 ==>  Preparing: delete from shoppingcar where cid = ? 
+11-12 16:45:53 ==> Parameters: 15(Integer)
+11-12 16:45:53 <==    Updates: 1
+11-12 16:45:53 ==>  Preparing: SELECT COUNT(1) FROM shoppingcar WHERE uid = ?; 
+11-12 16:45:53 ==> Parameters: 1(Integer)
+11-12 16:45:53 <==      Total: 1
+11-12 16:46:07 ==>  Preparing: select cid, addGoodsTime, uid, gid, gnum, descption from shoppingcar where uid = ? and gid = ? 
+11-12 16:46:07 ==> Parameters: 1(Integer), 1(Integer)
+11-12 16:46:07 <==      Total: 0
+11-12 16:46:07 ==>  Preparing: insert into shoppingcar ( addGoodsTime, uid, gid, gnum, descption ) values ( ?, ?, ?, ?, ? ) 
+11-12 16:46:07 ==> Parameters: 2017-11-12 16:46:07.623(Timestamp), 1(Integer), 1(Integer), 11(Integer), [{"网络类型" : "4G全网通","机身颜色" : "钻雕金","套餐类型" : "官方标配","存储容量" : "128GB","购买方式" : "裸机","版本" : "小米6"}](String)
+11-12 16:46:07 <==    Updates: 1
+11-12 16:46:07 ==>  Preparing: SELECT COUNT(1) FROM shoppingcar WHERE uid = ?; 
+11-12 16:46:07 ==> Parameters: 1(Integer)
+11-12 16:46:07 <==      Total: 1
+11-12 16:46:09 ==>  Preparing: select * from address where uid = ? 
+11-12 16:46:09 ==> Parameters: 1(Integer)
+11-12 16:46:09 <==      Total: 2
+11-12 16:46:09 ==>  Preparing: select * from view_car_goods where uid = ?; 
+11-12 16:46:09 ==> Parameters: 1(Integer)
+11-12 16:46:09 <==      Total: 1
+11-12 16:46:42 ==>  Preparing: select * from address where uid = ? 
+11-12 16:46:42 ==> Parameters: 1(Integer)
+11-12 16:46:42 <==      Total: 2
+11-12 16:46:42 ==>  Preparing: select * from view_car_goods where uid = ?; 
+11-12 16:46:42 ==> Parameters: 1(Integer)
+11-12 16:46:42 <==      Total: 1
+11-12 16:47:43 ==>  Preparing: select * from address where uid = ? 
+11-12 16:47:43 ==> Parameters: 1(Integer)
+11-12 16:47:43 <==      Total: 2
+11-12 16:47:43 ==>  Preparing: select * from view_car_goods where uid = ?; 
+11-12 16:47:43 ==> Parameters: 1(Integer)
+11-12 16:47:43 <==      Total: 1
+11-12 16:47:44 ==>  Preparing: select * from address where uid = ? 
+11-12 16:47:44 ==> Parameters: 1(Integer)
+11-12 16:47:44 <==      Total: 2
+11-12 16:47:44 ==>  Preparing: select * from view_car_goods where uid = ?; 
+11-12 16:47:44 ==> Parameters: 1(Integer)
+11-12 16:47:44 <==      Total: 1
+11-12 16:48:16 ==>  Preparing: select * from address where uid = ? 
+11-12 16:48:16 ==> Parameters: 1(Integer)
+11-12 16:48:16 <==      Total: 2
+11-12 16:48:16 ==>  Preparing: select * from view_car_goods where uid = ?; 
+11-12 16:48:16 ==> Parameters: 1(Integer)
+11-12 16:48:16 <==      Total: 1
+11-12 16:48:17 ==>  Preparing: select * from address where uid = ? 
+11-12 16:48:17 ==> Parameters: 1(Integer)
+11-12 16:48:17 <==      Total: 2
+11-12 16:48:17 ==>  Preparing: select * from view_car_goods where uid = ?; 
+11-12 16:48:17 ==> Parameters: 1(Integer)
+11-12 16:48:17 <==      Total: 1
+11-12 16:48:34 ==>  Preparing: select * from address where uid = ? 
+11-12 16:48:34 ==> Parameters: 1(Integer)
+11-12 16:48:34 <==      Total: 2
+11-12 16:48:34 ==>  Preparing: select * from view_car_goods where uid = ?; 
+11-12 16:48:34 ==> Parameters: 1(Integer)
+11-12 16:48:34 <==      Total: 1
+11-12 16:48:59 ==>  Preparing: select * from address where uid = ? 
+11-12 16:48:59 ==> Parameters: 1(Integer)
+11-12 16:48:59 <==      Total: 2
+11-12 16:48:59 ==>  Preparing: select * from view_car_goods where uid = ?; 
+11-12 16:48:59 ==> Parameters: 1(Integer)
+11-12 16:48:59 <==      Total: 1
+11-12 16:49:00 ==>  Preparing: select * from address where uid = ? 
+11-12 16:49:00 ==> Parameters: 1(Integer)
+11-12 16:49:00 <==      Total: 2
+11-12 16:49:00 ==>  Preparing: select * from view_car_goods where uid = ?; 
+11-12 16:49:00 ==> Parameters: 1(Integer)
+11-12 16:49:00 <==      Total: 1
+11-12 16:50:12 ==>  Preparing: select * from address where uid = ? 
+11-12 16:50:12 ==> Parameters: 1(Integer)
+11-12 16:50:12 <==      Total: 2
+11-12 16:50:12 ==>  Preparing: select * from view_car_goods where uid = ?; 
+11-12 16:50:12 ==> Parameters: 1(Integer)
+11-12 16:50:12 <==      Total: 1
+11-12 16:52:02 ==>  Preparing: select * from address where uid = ? 
+11-12 16:52:02 ==> Parameters: 1(Integer)
+11-12 16:52:02 <==      Total: 2
+11-12 16:52:02 ==>  Preparing: select * from view_car_goods where uid = ?; 
+11-12 16:52:02 ==> Parameters: 1(Integer)
+11-12 16:52:02 <==      Total: 1
+11-12 16:52:03 ==>  Preparing: select * from address where uid = ? 
+11-12 16:52:03 ==> Parameters: 1(Integer)
+11-12 16:52:03 <==      Total: 2
+11-12 16:52:03 ==>  Preparing: select * from view_car_goods where uid = ?; 
+11-12 16:52:03 ==> Parameters: 1(Integer)
+11-12 16:52:03 <==      Total: 1
+11-12 16:52:52 ==>  Preparing: select * from address where uid = ? 
+11-12 16:52:52 ==> Parameters: 1(Integer)
+11-12 16:52:52 <==      Total: 2
+11-12 16:52:52 ==>  Preparing: select * from view_car_goods where uid = ?; 
+11-12 16:52:52 ==> Parameters: 1(Integer)
+11-12 16:52:52 <==      Total: 1
+11-12 16:53:29 ==>  Preparing: select * from address where uid = ? 
+11-12 16:53:29 ==> Parameters: 1(Integer)
+11-12 16:53:29 <==      Total: 2
+11-12 16:53:29 ==>  Preparing: select * from view_car_goods where uid = ?; 
+11-12 16:53:29 ==> Parameters: 1(Integer)
+11-12 16:53:29 <==      Total: 1
+11-12 16:54:55 ==>  Preparing: select * from address where uid = ? 
+11-12 16:54:55 ==> Parameters: 1(Integer)
+11-12 16:54:55 <==      Total: 2
+11-12 16:54:55 ==>  Preparing: select * from view_car_goods where uid = ?; 
+11-12 16:54:55 ==> Parameters: 1(Integer)
+11-12 16:54:55 <==      Total: 1
+11-12 16:55:04 ==>  Preparing: select gid, gname, tid, price, descption, imgPath, filePath, stock from goods where gid = ? 
+11-12 16:55:04 ==> Parameters: 2(Integer)
+11-12 16:55:04 <==      Total: 1
+11-12 16:55:06 ==>  Preparing: select cid, addGoodsTime, uid, gid, gnum, descption from shoppingcar where uid = ? and gid = ? 
+11-12 16:55:06 ==> Parameters: 1(Integer), 2(Integer)
+11-12 16:55:06 <==      Total: 0
+11-12 16:55:06 ==>  Preparing: insert into shoppingcar ( addGoodsTime, uid, gid, gnum, descption ) values ( ?, ?, ?, ?, ? ) 
+11-12 16:55:06 ==> Parameters: 2017-11-12 16:55:06.272(Timestamp), 1(Integer), 2(Integer), 12(Integer), [{"网络类型" : "4G全网通","机身颜色" : "钻雕金","套餐类型" : "官方标配","存储容量" : "128GB","购买方式" : "裸机","版本" : "小米6"}](String)
+11-12 16:55:06 <==    Updates: 1
+11-12 16:55:06 ==>  Preparing: SELECT COUNT(1) FROM shoppingcar WHERE uid = ?; 
+11-12 16:55:06 ==> Parameters: 1(Integer)
+11-12 16:55:06 <==      Total: 1
+11-12 16:55:08 ==>  Preparing: select * from address where uid = ? 
+11-12 16:55:08 ==> Parameters: 1(Integer)
+11-12 16:55:08 <==      Total: 2
+11-12 16:55:08 ==>  Preparing: select * from view_car_goods where uid = ?; 
+11-12 16:55:08 ==> Parameters: 1(Integer)
+11-12 16:55:08 <==      Total: 2
+11-12 16:55:23 ==>  Preparing: delete from shoppingcar where cid = ? 
+11-12 16:55:23 ==> Parameters: 17(Integer)
+11-12 16:55:23 <==    Updates: 1
+11-12 16:55:23 ==>  Preparing: SELECT COUNT(1) FROM shoppingcar WHERE uid = ?; 
+11-12 16:55:23 ==> Parameters: 1(Integer)
+11-12 16:55:23 <==      Total: 1
+11-12 16:55:28 ==>  Preparing: select * from view_car_goods where uid = ?; 
+11-12 16:55:28 ==> Parameters: 1(Integer)
+11-12 16:55:28 <==      Total: 1
+11-12 16:55:28 Opening JDBC Connection
+11-12 16:55:28 Created connection 621672807.
+11-12 16:55:28 Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@250df967]
+11-12 16:55:28 ==>  Preparing: insert into orders ( oid, uid, sum, address ) values ( ?, ?, ?, ? ) 
+11-12 16:55:28 ==> Parameters: 20171112165528(String), 1(Integer), 38368.0(Double), java.io.StringReader@694624f2(StringReader)
+11-12 16:55:28 <==    Updates: 1
+11-12 16:55:28 ==>  Preparing: insert into orderform ( oid, gid, gnum, SubTotal ) values ( ?, ?, ?, ? ) 
+11-12 16:55:28 ==> Parameters: 20171112165528(String), 1(Integer), 11(Integer), 38368.0(Double)
+11-12 16:55:28 <==    Updates: 1
+11-12 16:55:28 ==>  Preparing: delete from shoppingcar where cid = ? 
+11-12 16:55:28 ==> Parameters: 16(Integer)
+11-12 16:55:28 <==    Updates: 1
+11-12 16:55:28 Committing JDBC Connection [com.mysql.jdbc.JDBC4Connection@250df967]
+11-12 16:55:28 添加新订单(20171112165528)：{
+  "oid" : "20171112165528",
+  "uid" : 1,
+  "state" : "待付款",
+  "sum" : 38368.0,
+  "address" : "西安市外包学院"
+}
+11-12 16:55:28 订单详情(20171112165528)：[ {
+  "oid" : "20171112165528",
+  "gid" : 1,
+  "gnum" : 11,
+  "subtotal" : 38368.0
+} ]
+11-12 17:05:50 Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+11-12 17:05:50 PooledDataSource forcefully closed/removed all connections.
+11-12 17:05:50 PooledDataSource forcefully closed/removed all connections.
+11-12 17:05:50 PooledDataSource forcefully closed/removed all connections.
+11-12 17:05:50 PooledDataSource forcefully closed/removed all connections.
+11-12 17:05:50 Opening JDBC Connection
+11-12 17:05:51 Created connection 45346394.
+11-12 17:05:51 Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@2b3ee5a]
+11-12 17:05:51 ==>  Preparing: select gid, gname, tid, price, descption, imgPath, filePath, stock from goods where gid = ? 
+11-12 17:05:51 ==> Parameters: 1(Integer)
+11-12 17:05:51 <==      Total: 1
+11-12 17:05:54 Opening JDBC Connection
+11-12 17:05:54 Created connection 1127214782.
+11-12 17:05:54 Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@432feebe]
+11-12 17:05:54 ==>  Preparing: select cid, addGoodsTime, uid, gid, gnum, descption from shoppingcar where uid = ? and gid = ? 
+11-12 17:05:54 ==> Parameters: 1(Integer), 1(Integer)
+11-12 17:05:54 <==      Total: 0
+11-12 17:05:54 ==>  Preparing: insert into shoppingcar ( addGoodsTime, uid, gid, gnum, descption ) values ( ?, ?, ?, ?, ? ) 
+11-12 17:05:55 ==> Parameters: 2017-11-12 17:05:54.938(Timestamp), 1(Integer), 1(Integer), 11(Integer), [{"网络类型" : "4G全网通","机身颜色" : "钻雕金","套餐类型" : "官方标配","存储容量" : "128GB","购买方式" : "裸机","版本" : "小米6"}](String)
+11-12 17:05:55 <==    Updates: 1
+11-12 17:05:55 ==>  Preparing: SELECT COUNT(1) FROM shoppingcar WHERE uid = ?; 
+11-12 17:05:55 ==> Parameters: 1(Integer)
+11-12 17:05:55 <==      Total: 1
+11-12 17:05:57 Opening JDBC Connection
+11-12 17:05:57 Created connection 721091575.
+11-12 17:05:57 Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@2afafbf7]
+11-12 17:05:57 ==>  Preparing: select * from address where uid = ? 
+11-12 17:05:57 ==> Parameters: 1(Integer)
+11-12 17:05:57 <==      Total: 2
+11-12 17:05:57 ==>  Preparing: select * from view_car_goods where uid = ?; 
+11-12 17:05:57 ==> Parameters: 1(Integer)
+11-12 17:05:57 <==      Total: 1
+11-12 17:06:02 ==>  Preparing: select * from view_car_goods where uid = ?; 
+11-12 17:06:02 ==> Parameters: 1(Integer)
+11-12 17:06:02 <==      Total: 1
+11-12 17:06:02 Opening JDBC Connection
+11-12 17:06:02 Created connection 1451245448.
+11-12 17:06:02 Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@56803f88]
+11-12 17:06:02 ==>  Preparing: insert into orders ( oid, uid, sum, address ) values ( ?, ?, ?, ? ) 
+11-12 17:06:02 ==> Parameters: 20171112170602(String), 1(Integer), 38368.0(Double), java.io.StringReader@12a918eb(StringReader)
+11-12 17:06:02 <==    Updates: 1
+11-12 17:06:02 ==>  Preparing: insert into orderform ( oid, gid, gnum, SubTotal ) values ( ?, ?, ?, ? ) 
+11-12 17:06:02 ==> Parameters: 20171112170602(String), 1(Integer), 11(Integer), 38368.0(Double)
+11-12 17:06:02 <==    Updates: 1
+11-12 17:06:02 ==>  Preparing: delete from shoppingcar where cid = ? 
+11-12 17:06:02 ==> Parameters: 18(Integer)
+11-12 17:06:02 <==    Updates: 1
+11-12 17:06:02 Committing JDBC Connection [com.mysql.jdbc.JDBC4Connection@56803f88]
+11-12 17:06:02 添加新订单(20171112170602)：{
+  "oid" : "20171112170602",
+  "uid" : 1,
+  "state" : "待付款",
+  "sum" : 38368.0,
+  "address" : "西安市外包学院"
+}
+11-12 17:06:02 订单详情(20171112170602)：[ {
+  "oid" : "20171112170602",
+  "gid" : 1,
+  "gnum" : 11,
+  "subtotal" : 38368.0
+} ]
+11-12 17:06:51 ==>  Preparing: select * from address where uid = ? 
+11-12 17:06:51 ==> Parameters: 1(Integer)
+11-12 17:06:51 <==      Total: 2
+11-12 17:06:51 ==>  Preparing: select * from view_car_goods where uid = ?; 
+11-12 17:06:51 ==> Parameters: 1(Integer)
+11-12 17:06:51 <==      Total: 0
+11-12 17:07:24 ==>  Preparing: select cid, addGoodsTime, uid, gid, gnum, descption from shoppingcar where uid = ? and gid = ? 
+11-12 17:07:24 ==> Parameters: 1(Integer), 1(Integer)
+11-12 17:07:24 <==      Total: 0
+11-12 17:07:24 ==>  Preparing: insert into shoppingcar ( addGoodsTime, uid, gid, gnum, descption ) values ( ?, ?, ?, ?, ? ) 
+11-12 17:07:24 ==> Parameters: 2017-11-12 17:07:24.519(Timestamp), 1(Integer), 1(Integer), 11(Integer), [{"网络类型" : "4G全网通","机身颜色" : "钻雕金","套餐类型" : "官方标配","存储容量" : "128GB","购买方式" : "裸机","版本" : "小米6"}](String)
+11-12 17:07:24 <==    Updates: 1
+11-12 17:07:24 ==>  Preparing: SELECT COUNT(1) FROM shoppingcar WHERE uid = ?; 
+11-12 17:07:24 ==> Parameters: 1(Integer)
+11-12 17:07:24 <==      Total: 1
+11-12 17:07:27 Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+11-12 17:07:27 PooledDataSource forcefully closed/removed all connections.
+11-12 17:07:27 PooledDataSource forcefully closed/removed all connections.
+11-12 17:07:27 PooledDataSource forcefully closed/removed all connections.
+11-12 17:07:27 PooledDataSource forcefully closed/removed all connections.
+11-12 17:07:27 Opening JDBC Connection
+11-12 17:07:28 Created connection 703498247.
+11-12 17:07:28 Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@29ee8807]
+11-12 17:07:28 ==>  Preparing: select * from address where uid = ? 
+11-12 17:07:28 ==> Parameters: 1(Integer)
+11-12 17:07:28 <==      Total: 2
+11-12 17:07:28 Opening JDBC Connection
+11-12 17:07:28 Created connection 1972655157.
+11-12 17:07:28 Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@75945435]
+11-12 17:07:28 ==>  Preparing: select * from view_car_goods where uid = ?; 
+11-12 17:07:28 ==> Parameters: 1(Integer)
+11-12 17:07:28 <==      Total: 1
+11-12 17:07:37 ==>  Preparing: select * from view_car_goods where uid = ?; 
+11-12 17:07:37 ==> Parameters: 1(Integer)
+11-12 17:07:37 <==      Total: 1
+11-12 17:07:37 Opening JDBC Connection
+11-12 17:07:37 Created connection 765432881.
+11-12 17:07:37 Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@2d9f9431]
+11-12 17:07:37 ==>  Preparing: insert into orders ( oid, uid, sum, address ) values ( ?, ?, ?, ? ) 
+11-12 17:07:37 ==> Parameters: 20171112170737(String), 1(Integer), 38368.0(Double), java.io.StringReader@1a04a185(StringReader)
+11-12 17:07:37 <==    Updates: 1
+11-12 17:07:37 ==>  Preparing: insert into orderform ( oid, gid, gnum, SubTotal ) values ( ?, ?, ?, ? ) 
+11-12 17:07:37 ==> Parameters: 20171112170737(String), 1(Integer), 11(Integer), 38368.0(Double)
+11-12 17:07:37 <==    Updates: 1
+11-12 17:07:37 ==>  Preparing: delete from shoppingcar where cid = ? 
+11-12 17:07:37 ==> Parameters: 19(Integer)
+11-12 17:07:37 <==    Updates: 1
+11-12 17:07:37 Committing JDBC Connection [com.mysql.jdbc.JDBC4Connection@2d9f9431]
+11-12 17:07:37 添加新订单(20171112170737)：{
+  "oid" : "20171112170737",
+  "uid" : 1,
+  "state" : "待付款",
+  "sum" : 38368.0,
+  "address" : "西安市外包学院"
+}
+11-12 17:07:37 订单详情(20171112170737)：[ {
+  "oid" : "20171112170737",
+  "gid" : 1,
+  "gnum" : 11,
+  "subtotal" : 38368.0
+} ]
+11-12 17:17:31 Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+11-12 17:17:31 PooledDataSource forcefully closed/removed all connections.
+11-12 17:17:31 PooledDataSource forcefully closed/removed all connections.
+11-12 17:17:31 PooledDataSource forcefully closed/removed all connections.
+11-12 17:17:31 PooledDataSource forcefully closed/removed all connections.
+11-12 17:17:32 Opening JDBC Connection
+11-12 17:17:33 Created connection 1660794022.
+11-12 17:17:33 Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@62fdb4a6]
+11-12 17:17:33 ==>  Preparing: select * from view_order_goods where oid = ? and uid = ?; 
+11-12 17:17:33 ==> Parameters: 20171110164436(Long), 1(Integer)
+11-12 17:17:33 <==      Total: 2
+11-12 17:19:48 Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+11-12 17:19:48 PooledDataSource forcefully closed/removed all connections.
+11-12 17:19:48 PooledDataSource forcefully closed/removed all connections.
+11-12 17:19:48 PooledDataSource forcefully closed/removed all connections.
+11-12 17:19:48 PooledDataSource forcefully closed/removed all connections.
+11-12 17:19:49 Opening JDBC Connection
+11-12 17:19:49 Created connection 1660794022.
+11-12 17:19:49 Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@62fdb4a6]
+11-12 17:19:49 ==>  Preparing: select * from view_order_goods where oid = ? and uid = ?; 
+11-12 17:19:49 ==> Parameters: 20171110164436(String), 1(Integer)
+11-12 17:19:49 <==      Total: 2
+11-12 17:20:04 Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+11-12 17:20:04 PooledDataSource forcefully closed/removed all connections.
+11-12 17:20:04 PooledDataSource forcefully closed/removed all connections.
+11-12 17:20:04 PooledDataSource forcefully closed/removed all connections.
+11-12 17:20:04 PooledDataSource forcefully closed/removed all connections.
+11-12 17:20:05 Opening JDBC Connection
+11-12 17:20:05 Created connection 1660794022.
+11-12 17:20:05 Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@62fdb4a6]
+11-12 17:20:05 ==>  Preparing: select * from view_order_goods where oid = ? and uid = ?; 
+11-12 17:20:05 ==> Parameters: 20171110164436(Long), 1(Integer)
+11-12 17:20:05 <==      Total: 2
+11-12 17:49:29 Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+11-12 17:49:29 PooledDataSource forcefully closed/removed all connections.
+11-12 17:49:29 PooledDataSource forcefully closed/removed all connections.
+11-12 17:49:29 PooledDataSource forcefully closed/removed all connections.
+11-12 17:49:29 PooledDataSource forcefully closed/removed all connections.
+11-12 17:49:30 Opening JDBC Connection
+11-12 17:49:30 Created connection 948852715.
+11-12 17:49:30 Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@388e57eb]
+11-12 17:49:30 ==>  Preparing: SELECT * FROM users WHERE uname = ? and upwd = ? 
+11-12 17:49:30 ==> Parameters: xiaoming(String), 123(String)
+11-12 17:49:30 <==    Columns: uid, uname, upwd, phone, city, regDate, idCard, realName, age, email, sex, avatar
+11-12 17:49:30 <==        Row: 1, xiaoming, 123, 18899119292, 西安, 2017-11-11, null, 小明, 22, null, 男, <<BLOB>>
+11-12 17:49:30 <==      Total: 1
+11-12 17:49:30 Opening JDBC Connection
+11-12 17:49:30 Created connection 861431897.
+11-12 17:49:30 Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@33586859]
+11-12 17:49:30 ==>  Preparing: SELECT COUNT(1) FROM shoppingcar WHERE uid = ?; 
+11-12 17:49:30 ==> Parameters: 1(Integer)
+11-12 17:49:30 <==      Total: 1
+11-12 17:49:32 Opening JDBC Connection
+11-12 17:49:32 Created connection 1896287505.
+11-12 17:49:32 Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@71070d11]
+11-12 17:49:32 ==>  Preparing: select gid, gname, tid, price, descption, imgPath, filePath, stock from goods where gid = ? 
+11-12 17:49:32 ==> Parameters: 1(Integer)
+11-12 17:49:32 <==      Total: 1
+11-12 17:49:35 ==>  Preparing: select cid, addGoodsTime, uid, gid, gnum, descption from shoppingcar where uid = ? and gid = ? 
+11-12 17:49:35 ==> Parameters: 1(Integer), 1(Integer)
+11-12 17:49:35 <==      Total: 0
+11-12 17:49:35 ==>  Preparing: insert into shoppingcar ( addGoodsTime, uid, gid, gnum, descption ) values ( ?, ?, ?, ?, ? ) 
+11-12 17:49:35 ==> Parameters: 2017-11-12 17:49:35.518(Timestamp), 1(Integer), 1(Integer), 12(Integer), [{"网络类型" : "4G全网通","机身颜色" : "钻雕金","套餐类型" : "官方标配","存储容量" : "128GB","购买方式" : "裸机","版本" : "小米6"}](String)
+11-12 17:49:35 <==    Updates: 1
+11-12 17:49:35 ==>  Preparing: SELECT COUNT(1) FROM shoppingcar WHERE uid = ?; 
+11-12 17:49:35 ==> Parameters: 1(Integer)
+11-12 17:49:35 <==      Total: 1
+11-12 17:49:41 ==>  Preparing: select gid, gname, tid, price, descption, imgPath, filePath, stock from goods where gid = ? 
+11-12 17:49:41 ==> Parameters: 2(Integer)
+11-12 17:49:41 <==      Total: 1
+11-12 17:49:44 ==>  Preparing: select cid, addGoodsTime, uid, gid, gnum, descption from shoppingcar where uid = ? and gid = ? 
+11-12 17:49:44 ==> Parameters: 1(Integer), 2(Integer)
+11-12 17:49:44 <==      Total: 0
+11-12 17:49:44 ==>  Preparing: insert into shoppingcar ( addGoodsTime, uid, gid, gnum, descption ) values ( ?, ?, ?, ?, ? ) 
+11-12 17:49:44 ==> Parameters: 2017-11-12 17:49:44.892(Timestamp), 1(Integer), 2(Integer), 1(Integer), [{"网络类型" : "4G全网通","机身颜色" : "钻雕金","套餐类型" : "官方标配","存储容量" : "128GB","购买方式" : "裸机","版本" : "小米6"}](String)
+11-12 17:49:44 <==    Updates: 1
+11-12 17:49:44 ==>  Preparing: SELECT COUNT(1) FROM shoppingcar WHERE uid = ?; 
+11-12 17:49:44 ==> Parameters: 1(Integer)
+11-12 17:49:44 <==      Total: 1
+11-12 17:49:47 ==>  Preparing: select * from address where uid = ? 
+11-12 17:49:47 ==> Parameters: 1(Integer)
+11-12 17:49:47 <==      Total: 2
+11-12 17:49:47 ==>  Preparing: select * from view_car_goods where uid = ?; 
+11-12 17:49:47 ==> Parameters: 1(Integer)
+11-12 17:49:47 <==      Total: 2
+11-12 17:49:56 ==>  Preparing: select * from view_car_goods where uid = ?; 
+11-12 17:49:56 ==> Parameters: 1(Integer)
+11-12 17:49:56 <==      Total: 2
+11-12 17:49:56 Opening JDBC Connection
+11-12 17:49:56 Created connection 292914556.
+11-12 17:49:56 Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@1175857c]
+11-12 17:49:56 ==>  Preparing: insert into orders ( oid, uid, sum, address ) values ( ?, ?, ?, ? ) 
+11-12 17:49:56 ==> Parameters: 20171112174956(String), 1(Integer), 42856.0(Double), java.io.StringReader@60cc52ea(StringReader)
+11-12 17:49:56 <==    Updates: 1
+11-12 17:49:56 ==>  Preparing: insert into orderform ( oid, gid, gnum, SubTotal ) values ( ?, ?, ?, ? ) 
+11-12 17:49:56 ==> Parameters: 20171112174956(String), 1(Integer), 12(Integer), 41856.0(Double)
+11-12 17:49:56 <==    Updates: 1
+11-12 17:49:56 ==>  Preparing: insert into orderform ( oid, gid, gnum, SubTotal ) values ( ?, ?, ?, ? ) 
+11-12 17:49:56 ==> Parameters: 20171112174956(String), 2(Integer), 1(Integer), 1000.0(Double)
+11-12 17:49:56 <==    Updates: 1
+11-12 17:49:56 ==>  Preparing: delete from shoppingcar where cid = ? 
+11-12 17:49:56 ==> Parameters: 20(Integer)
+11-12 17:49:56 <==    Updates: 1
+11-12 17:49:56 ==>  Preparing: delete from shoppingcar where cid = ? 
+11-12 17:49:56 ==> Parameters: 21(Integer)
+11-12 17:49:56 <==    Updates: 1
+11-12 17:49:56 Committing JDBC Connection [com.mysql.jdbc.JDBC4Connection@1175857c]
+11-12 17:49:56 添加新订单(20171112174956)：{
+  "oid" : "20171112174956",
+  "uid" : 1,
+  "state" : "待付款",
+  "sum" : 42856.0,
+  "address" : "西安市外包学院"
+}
+11-12 17:49:56 订单详情(20171112174956)：[ {
+  "oid" : "20171112174956",
+  "gid" : 1,
+  "gnum" : 12,
+  "subtotal" : 41856.0
+}, {
+  "oid" : "20171112174956",
+  "gid" : 2,
+  "gnum" : 1,
+  "subtotal" : 1000.0
+} ]
+11-12 17:49:56 ==>  Preparing: select * from view_order_goods where oid = ? and uid = ?; 
+11-12 17:49:56 ==> Parameters: 20171112174956(String), 1(Integer)
+11-12 17:49:56 <==      Total: 2
+11-12 17:52:17 Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+11-12 17:52:17 PooledDataSource forcefully closed/removed all connections.
+11-12 17:52:17 PooledDataSource forcefully closed/removed all connections.
+11-12 17:52:17 PooledDataSource forcefully closed/removed all connections.
+11-12 17:52:17 PooledDataSource forcefully closed/removed all connections.
+11-12 17:52:17 Opening JDBC Connection
+11-12 17:52:17 Created connection 1390512799.
+11-12 17:52:17 Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@52e18a9f]
+11-12 17:52:17 ==>  Preparing: select * from address where uid = ? 
+11-12 17:52:17 ==> Parameters: 1(Integer)
+11-12 17:52:17 <==      Total: 2
+11-12 17:52:18 Opening JDBC Connection
+11-12 17:52:18 Created connection 864331673.
+11-12 17:52:18 Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@3384a799]
+11-12 17:52:18 ==>  Preparing: select * from view_car_goods where uid = ?; 
+11-12 17:52:18 ==> Parameters: 1(Integer)
+11-12 17:52:18 <==      Total: 0
+11-12 17:52:26 ==>  Preparing: select * from address where uid = ? 
+11-12 17:52:26 ==> Parameters: 1(Integer)
+11-12 17:52:26 <==      Total: 2
+11-12 17:52:26 ==>  Preparing: select * from view_car_goods where uid = ?; 
+11-12 17:52:26 ==> Parameters: 1(Integer)
+11-12 17:52:26 <==      Total: 0
+11-12 17:52:32 Opening JDBC Connection
+11-12 17:52:32 Created connection 1179035599.
+11-12 17:52:32 Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@4646a7cf]
+11-12 17:52:32 ==>  Preparing: select gid, gname, tid, price, descption, imgPath, filePath, stock from goods where gid = ? 
+11-12 17:52:32 ==> Parameters: 1(Integer)
+11-12 17:52:32 <==      Total: 1
+11-12 17:52:34 ==>  Preparing: select cid, addGoodsTime, uid, gid, gnum, descption from shoppingcar where uid = ? and gid = ? 
+11-12 17:52:34 ==> Parameters: 1(Integer), 1(Integer)
+11-12 17:52:34 <==      Total: 0
+11-12 17:52:34 ==>  Preparing: insert into shoppingcar ( addGoodsTime, uid, gid, gnum, descption ) values ( ?, ?, ?, ?, ? ) 
+11-12 17:52:34 ==> Parameters: 2017-11-12 17:52:34.885(Timestamp), 1(Integer), 1(Integer), 11(Integer), [{"网络类型" : "4G全网通","机身颜色" : "钻雕金","套餐类型" : "官方标配","存储容量" : "128GB","购买方式" : "裸机","版本" : "小米6"}](String)
+11-12 17:52:34 <==    Updates: 1
+11-12 17:52:34 ==>  Preparing: SELECT COUNT(1) FROM shoppingcar WHERE uid = ?; 
+11-12 17:52:34 ==> Parameters: 1(Integer)
+11-12 17:52:34 <==      Total: 1
+11-12 17:52:52 ==>  Preparing: select gid, gname, tid, price, descption, imgPath, filePath, stock from goods where gid = ? 
+11-12 17:52:52 ==> Parameters: 2(Integer)
+11-12 17:52:52 <==      Total: 1
+11-12 17:52:54 ==>  Preparing: select cid, addGoodsTime, uid, gid, gnum, descption from shoppingcar where uid = ? and gid = ? 
+11-12 17:52:54 ==> Parameters: 1(Integer), 2(Integer)
+11-12 17:52:54 <==      Total: 0
+11-12 17:52:54 ==>  Preparing: insert into shoppingcar ( addGoodsTime, uid, gid, gnum, descption ) values ( ?, ?, ?, ?, ? ) 
+11-12 17:52:54 ==> Parameters: 2017-11-12 17:52:54.988(Timestamp), 1(Integer), 2(Integer), 11(Integer), [{"网络类型" : "4G全网通","机身颜色" : "钻雕金","套餐类型" : "官方标配","存储容量" : "128GB","购买方式" : "裸机","版本" : "小米6"}](String)
+11-12 17:52:54 <==    Updates: 1
+11-12 17:52:54 ==>  Preparing: SELECT COUNT(1) FROM shoppingcar WHERE uid = ?; 
+11-12 17:52:54 ==> Parameters: 1(Integer)
+11-12 17:52:54 <==      Total: 1
+11-12 17:52:57 ==>  Preparing: select * from address where uid = ? 
+11-12 17:52:57 ==> Parameters: 1(Integer)
+11-12 17:52:57 <==      Total: 2
+11-12 17:52:57 ==>  Preparing: select * from view_car_goods where uid = ?; 
+11-12 17:52:57 ==> Parameters: 1(Integer)
+11-12 17:52:57 <==      Total: 2
+11-12 17:53:08 ==>  Preparing: select * from view_car_goods where uid = ?; 
+11-12 17:53:08 ==> Parameters: 1(Integer)
+11-12 17:53:08 <==      Total: 2
+11-12 17:53:09 Opening JDBC Connection
+11-12 17:53:09 Created connection 962583690.
+11-12 17:53:09 Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@395fdc8a]
+11-12 17:53:09 ==>  Preparing: insert into orders ( oid, uid, sum, address ) values ( ?, ?, ?, ? ) 
+11-12 17:53:09 ==> Parameters: 20171112175308(String), 1(Integer), 49368.0(Double), java.io.StringReader@7a6db93f(StringReader)
+11-12 17:53:09 <==    Updates: 1
+11-12 17:53:09 ==>  Preparing: insert into orderform ( oid, gid, gnum, SubTotal ) values ( ?, ?, ?, ? ) 
+11-12 17:53:09 ==> Parameters: 20171112175308(String), 2(Integer), 11(Integer), 11000.0(Double)
+11-12 17:53:09 <==    Updates: 1
+11-12 17:53:09 ==>  Preparing: insert into orderform ( oid, gid, gnum, SubTotal ) values ( ?, ?, ?, ? ) 
+11-12 17:53:09 ==> Parameters: 20171112175308(String), 1(Integer), 11(Integer), 38368.0(Double)
+11-12 17:53:09 <==    Updates: 1
+11-12 17:53:09 ==>  Preparing: delete from shoppingcar where cid = ? 
+11-12 17:53:09 ==> Parameters: 23(Integer)
+11-12 17:53:09 <==    Updates: 1
+11-12 17:53:09 ==>  Preparing: delete from shoppingcar where cid = ? 
+11-12 17:53:09 ==> Parameters: 22(Integer)
+11-12 17:53:09 <==    Updates: 1
+11-12 17:53:09 Committing JDBC Connection [com.mysql.jdbc.JDBC4Connection@395fdc8a]
+11-12 17:53:09 添加新订单(20171112175308)：{
+  "oid" : "20171112175308",
+  "uid" : 1,
+  "state" : "待付款",
+  "sum" : 49368.0,
+  "address" : "西安市外包学院"
+}
+11-12 17:53:09 订单详情(20171112175308)：[ {
+  "oid" : "20171112175308",
+  "gid" : 2,
+  "gnum" : 11,
+  "subtotal" : 11000.0
+}, {
+  "oid" : "20171112175308",
+  "gid" : 1,
+  "gnum" : 11,
+  "subtotal" : 38368.0
+} ]
+11-12 17:53:09 ==>  Preparing: select * from view_order_goods where oid = ? and uid = ?; 
+11-12 17:53:09 ==> Parameters: 20171112175308(String), 1(Integer)
+11-12 17:53:09 <==      Total: 2
+11-12 17:54:32 Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+11-12 17:54:33 PooledDataSource forcefully closed/removed all connections.
+11-12 17:54:33 PooledDataSource forcefully closed/removed all connections.
+11-12 17:54:33 PooledDataSource forcefully closed/removed all connections.
+11-12 17:54:33 PooledDataSource forcefully closed/removed all connections.
+11-12 17:54:33 Opening JDBC Connection
+11-12 17:54:33 Created connection 318851863.
+11-12 17:54:33 Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@13014b17]
+11-12 17:54:33 ==>  Preparing: select * from address where uid = ? 
+11-12 17:54:33 ==> Parameters: 1(Integer)
+11-12 17:54:33 <==      Total: 2
+11-12 17:54:34 Opening JDBC Connection
+11-12 17:54:34 Created connection 202329475.
+11-12 17:54:34 Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@c0f4d83]
+11-12 17:54:34 ==>  Preparing: select * from view_car_goods where uid = ?; 
+11-12 17:54:34 ==> Parameters: 1(Integer)
+11-12 17:54:34 <==      Total: 0
+11-12 17:54:38 ==>  Preparing: select cid, addGoodsTime, uid, gid, gnum, descption from shoppingcar where uid = ? and gid = ? 
+11-12 17:54:38 ==> Parameters: 1(Integer), 2(Integer)
+11-12 17:54:38 <==      Total: 0
+11-12 17:54:38 ==>  Preparing: insert into shoppingcar ( addGoodsTime, uid, gid, gnum, descption ) values ( ?, ?, ?, ?, ? ) 
+11-12 17:54:38 ==> Parameters: 2017-11-12 17:54:38.911(Timestamp), 1(Integer), 2(Integer), 1(Integer), [{"网络类型" : "4G全网通","机身颜色" : "钻雕金","套餐类型" : "官方标配","存储容量" : "128GB","购买方式" : "裸机","版本" : "小米6"}](String)
+11-12 17:54:38 <==    Updates: 1
+11-12 17:54:38 ==>  Preparing: SELECT COUNT(1) FROM shoppingcar WHERE uid = ?; 
+11-12 17:54:38 ==> Parameters: 1(Integer)
+11-12 17:54:38 <==      Total: 1
+11-12 17:54:43 ==>  Preparing: select cid, addGoodsTime, uid, gid, gnum, descption from shoppingcar where uid = ? and gid = ? 
+11-12 17:54:43 ==> Parameters: 1(Integer), 1(Integer)
+11-12 17:54:43 <==      Total: 0
+11-12 17:54:43 ==>  Preparing: insert into shoppingcar ( addGoodsTime, uid, gid, gnum, descption ) values ( ?, ?, ?, ?, ? ) 
+11-12 17:54:43 ==> Parameters: 2017-11-12 17:54:43.686(Timestamp), 1(Integer), 1(Integer), 1(Integer), [{"网络类型" : "4G全网通","机身颜色" : "钻雕金","套餐类型" : "官方标配","存储容量" : "128GB","购买方式" : "裸机","版本" : "小米6"}](String)
+11-12 17:54:43 <==    Updates: 1
+11-12 17:54:43 ==>  Preparing: SELECT COUNT(1) FROM shoppingcar WHERE uid = ?; 
+11-12 17:54:43 ==> Parameters: 1(Integer)
+11-12 17:54:43 <==      Total: 1
+11-12 17:54:47 ==>  Preparing: select * from address where uid = ? 
+11-12 17:54:47 ==> Parameters: 1(Integer)
+11-12 17:54:47 <==      Total: 2
+11-12 17:54:47 ==>  Preparing: select * from view_car_goods where uid = ?; 
+11-12 17:54:47 ==> Parameters: 1(Integer)
+11-12 17:54:47 <==      Total: 2
+11-12 17:54:53 ==>  Preparing: select * from view_car_goods where uid = ?; 
+11-12 17:54:53 ==> Parameters: 1(Integer)
+11-12 17:54:53 <==      Total: 2
+11-12 17:54:53 Opening JDBC Connection
+11-12 17:54:53 Created connection 1791452264.
+11-12 17:54:53 Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@6ac76468]
+11-12 17:54:53 ==>  Preparing: insert into orders ( oid, uid, sum, address ) values ( ?, ?, ?, ? ) 
+11-12 17:54:53 ==> Parameters: 20171112175453(String), 1(Integer), 4488.0(Double), java.io.StringReader@356e3d60(StringReader)
+11-12 17:54:53 <==    Updates: 1
+11-12 17:54:53 ==>  Preparing: insert into orderform ( oid, gid, gnum, SubTotal ) values ( ?, ?, ?, ? ) 
+11-12 17:54:53 ==> Parameters: 20171112175453(String), 1(Integer), 1(Integer), 3488.0(Double)
+11-12 17:54:53 <==    Updates: 1
+11-12 17:54:53 ==>  Preparing: insert into orderform ( oid, gid, gnum, SubTotal ) values ( ?, ?, ?, ? ) 
+11-12 17:54:53 ==> Parameters: 20171112175453(String), 2(Integer), 1(Integer), 1000.0(Double)
+11-12 17:54:53 <==    Updates: 1
+11-12 17:54:53 ==>  Preparing: delete from shoppingcar where cid = ? 
+11-12 17:54:53 ==> Parameters: 25(Integer)
+11-12 17:54:53 <==    Updates: 1
+11-12 17:54:53 ==>  Preparing: delete from shoppingcar where cid = ? 
+11-12 17:54:53 ==> Parameters: 24(Integer)
+11-12 17:54:53 <==    Updates: 1
+11-12 17:54:53 Committing JDBC Connection [com.mysql.jdbc.JDBC4Connection@6ac76468]
+11-12 17:54:53 添加新订单(20171112175453)：{
+  "oid" : "20171112175453",
+  "uid" : 1,
+  "state" : "待付款",
+  "sum" : 4488.0,
+  "address" : "西安市外包学院"
+}
+11-12 17:54:53 订单详情(20171112175453)：[ {
+  "oid" : "20171112175453",
+  "gid" : 1,
+  "gnum" : 1,
+  "subtotal" : 3488.0
+}, {
+  "oid" : "20171112175453",
+  "gid" : 2,
+  "gnum" : 1,
+  "subtotal" : 1000.0
+} ]
+11-12 17:54:53 ==>  Preparing: select * from view_order_goods where oid = ? and uid = ?; 
+11-12 17:54:53 ==> Parameters: 20171112175453(String), 1(Integer)
+11-12 17:54:53 <==      Total: 2
+11-12 17:57:15 Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+11-12 17:57:15 PooledDataSource forcefully closed/removed all connections.
+11-12 17:57:15 PooledDataSource forcefully closed/removed all connections.
+11-12 17:57:15 PooledDataSource forcefully closed/removed all connections.
+11-12 17:57:15 PooledDataSource forcefully closed/removed all connections.
+11-12 17:57:15 Opening JDBC Connection
+11-12 17:57:16 Created connection 565014170.
+11-12 17:57:16 Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@21ad6e9a]
+11-12 17:57:16 ==>  Preparing: select cid, addGoodsTime, uid, gid, gnum, descption from shoppingcar where uid = ? and gid = ? 
+11-12 17:57:16 ==> Parameters: 1(Integer), 1(Integer)
+11-12 17:57:16 <==      Total: 0
+11-12 17:57:16 ==>  Preparing: insert into shoppingcar ( addGoodsTime, uid, gid, gnum, descption ) values ( ?, ?, ?, ?, ? ) 
+11-12 17:57:16 ==> Parameters: 2017-11-12 17:57:15.422(Timestamp), 1(Integer), 1(Integer), 1(Integer), [{"网络类型" : "4G全网通","机身颜色" : "钻雕金","套餐类型" : "官方标配","存储容量" : "128GB","购买方式" : "裸机","版本" : "小米6"}](String)
+11-12 17:57:16 <==    Updates: 1
+11-12 17:57:16 ==>  Preparing: SELECT COUNT(1) FROM shoppingcar WHERE uid = ?; 
+11-12 17:57:16 ==> Parameters: 1(Integer)
+11-12 17:57:16 <==      Total: 1
+11-12 17:57:19 Opening JDBC Connection
+11-12 17:57:19 Created connection 1732093191.
+11-12 17:57:19 Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@673da507]
+11-12 17:57:19 ==>  Preparing: select * from address where uid = ? 
+11-12 17:57:19 ==> Parameters: 1(Integer)
+11-12 17:57:19 <==      Total: 2
+11-12 17:57:19 ==>  Preparing: select * from view_car_goods where uid = ?; 
+11-12 17:57:19 ==> Parameters: 1(Integer)
+11-12 17:57:19 <==      Total: 1
+11-12 17:57:22 ==>  Preparing: select * from view_car_goods where uid = ?; 
+11-12 17:57:22 ==> Parameters: 1(Integer)
+11-12 17:57:22 <==      Total: 1
+11-12 17:57:23 Opening JDBC Connection
+11-12 17:57:23 Created connection 1904754542.
+11-12 17:57:23 Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@71883f6e]
+11-12 17:57:23 ==>  Preparing: insert into orders ( oid, uid, sum, address ) values ( ?, ?, ?, ? ) 
+11-12 17:57:23 ==> Parameters: 20171112175722(String), 1(Integer), 3488.0(Double), java.io.StringReader@493e5320(StringReader)
+11-12 17:57:23 <==    Updates: 1
+11-12 17:57:23 ==>  Preparing: insert into orderform ( oid, gid, gnum, SubTotal ) values ( ?, ?, ?, ? ) 
+11-12 17:57:23 ==> Parameters: 20171112175722(String), 1(Integer), 1(Integer), 3488.0(Double)
+11-12 17:57:23 <==    Updates: 1
+11-12 17:57:23 ==>  Preparing: delete from shoppingcar where cid = ? 
+11-12 17:57:23 ==> Parameters: 26(Integer)
+11-12 17:57:23 <==    Updates: 1
+11-12 17:57:23 Committing JDBC Connection [com.mysql.jdbc.JDBC4Connection@71883f6e]
+11-12 17:57:23 添加新订单(20171112175722)：{
+  "oid" : "20171112175722",
+  "uid" : 1,
+  "state" : "待付款",
+  "sum" : 3488.0,
+  "address" : "西安市外包学院"
+}
+11-12 17:57:23 订单详情(20171112175722)：[ {
+  "oid" : "20171112175722",
+  "gid" : 1,
+  "gnum" : 1,
+  "subtotal" : 3488.0
+} ]
+11-12 17:57:23 ==>  Preparing: select * from view_order_goods where oid = ? and uid = ?; 
+11-12 17:57:23 ==> Parameters: 20171112175722(String), 1(Integer)
+11-12 17:57:23 <==      Total: 1
+11-12 17:57:42 ==>  Preparing: select cid, addGoodsTime, uid, gid, gnum, descption from shoppingcar where uid = ? and gid = ? 
+11-12 17:57:42 ==> Parameters: 1(Integer), 2(Integer)
+11-12 17:57:42 <==      Total: 0
+11-12 17:57:42 ==>  Preparing: insert into shoppingcar ( addGoodsTime, uid, gid, gnum, descption ) values ( ?, ?, ?, ?, ? ) 
+11-12 17:57:42 ==> Parameters: 2017-11-12 17:57:42.157(Timestamp), 1(Integer), 2(Integer), 1(Integer), [{"网络类型" : "4G全网通","机身颜色" : "钻雕金","套餐类型" : "官方标配","存储容量" : "128GB","购买方式" : "裸机","版本" : "小米6"}](String)
+11-12 17:57:42 <==    Updates: 1
+11-12 17:57:42 ==>  Preparing: SELECT COUNT(1) FROM shoppingcar WHERE uid = ?; 
+11-12 17:57:42 ==> Parameters: 1(Integer)
+11-12 17:57:42 <==      Total: 1
+11-12 17:57:47 Opening JDBC Connection
+11-12 17:57:47 Created connection 1516555453.
+11-12 17:57:47 Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@5a64ccbd]
+11-12 17:57:47 ==>  Preparing: select gid, gname, tid, price, descption, imgPath, filePath, stock from goods where gid = ? 
+11-12 17:57:47 ==> Parameters: 1(Integer)
+11-12 17:57:47 <==      Total: 1
+11-12 17:57:51 ==>  Preparing: select cid, addGoodsTime, uid, gid, gnum, descption from shoppingcar where uid = ? and gid = ? 
+11-12 17:57:51 ==> Parameters: 1(Integer), 1(Integer)
+11-12 17:57:51 <==      Total: 0
+11-12 17:57:51 ==>  Preparing: insert into shoppingcar ( addGoodsTime, uid, gid, gnum, descption ) values ( ?, ?, ?, ?, ? ) 
+11-12 17:57:51 ==> Parameters: 2017-11-12 17:57:51.637(Timestamp), 1(Integer), 1(Integer), 1(Integer), [{"网络类型" : "4G全网通","机身颜色" : "钻雕金","套餐类型" : "官方标配","存储容量" : "128GB","购买方式" : "裸机","版本" : "小米6"}](String)
+11-12 17:57:51 <==    Updates: 1
+11-12 17:57:51 ==>  Preparing: SELECT COUNT(1) FROM shoppingcar WHERE uid = ?; 
+11-12 17:57:51 ==> Parameters: 1(Integer)
+11-12 17:57:51 <==      Total: 1
+11-12 17:57:54 ==>  Preparing: select * from address where uid = ? 
+11-12 17:57:54 ==> Parameters: 1(Integer)
+11-12 17:57:54 <==      Total: 2
+11-12 17:57:54 ==>  Preparing: select * from view_car_goods where uid = ?; 
+11-12 17:57:54 ==> Parameters: 1(Integer)
+11-12 17:57:54 <==      Total: 2
+11-12 17:57:58 ==>  Preparing: select * from view_car_goods where uid = ?; 
+11-12 17:57:58 ==> Parameters: 1(Integer)
+11-12 17:57:58 <==      Total: 2
+11-12 17:57:58 ==>  Preparing: insert into orders ( oid, uid, sum, address ) values ( ?, ?, ?, ? ) 
+11-12 17:57:58 ==> Parameters: 20171112175758(String), 1(Integer), 4488.0(Double), java.io.StringReader@41df910b(StringReader)
+11-12 17:57:58 <==    Updates: 1
+11-12 17:57:58 ==>  Preparing: insert into orderform ( oid, gid, gnum, SubTotal ) values ( ?, ?, ?, ? ) 
+11-12 17:57:58 ==> Parameters: 20171112175758(String), 1(Integer), 1(Integer), 3488.0(Double)
+11-12 17:57:58 <==    Updates: 1
+11-12 17:57:58 ==>  Preparing: insert into orderform ( oid, gid, gnum, SubTotal ) values ( ?, ?, ?, ? ) 
+11-12 17:57:58 ==> Parameters: 20171112175758(String), 2(Integer), 1(Integer), 1000.0(Double)
+11-12 17:57:58 <==    Updates: 1
+11-12 17:57:58 ==>  Preparing: delete from shoppingcar where cid = ? 
+11-12 17:57:58 ==> Parameters: 28(Integer)
+11-12 17:57:58 <==    Updates: 1
+11-12 17:57:58 ==>  Preparing: delete from shoppingcar where cid = ? 
+11-12 17:57:58 ==> Parameters: 27(Integer)
+11-12 17:57:58 <==    Updates: 1
+11-12 17:57:58 Committing JDBC Connection [com.mysql.jdbc.JDBC4Connection@71883f6e]
+11-12 17:57:58 添加新订单(20171112175758)：{
+  "oid" : "20171112175758",
+  "uid" : 1,
+  "state" : "待付款",
+  "sum" : 4488.0,
+  "address" : "西安市外包学院"
+}
+11-12 17:57:58 订单详情(20171112175758)：[ {
+  "oid" : "20171112175758",
+  "gid" : 1,
+  "gnum" : 1,
+  "subtotal" : 3488.0
+}, {
+  "oid" : "20171112175758",
+  "gid" : 2,
+  "gnum" : 1,
+  "subtotal" : 1000.0
+} ]
+11-12 17:57:58 ==>  Preparing: select * from view_order_goods where oid = ? and uid = ?; 
+11-12 17:57:58 ==> Parameters: 20171112175758(String), 1(Integer)
+11-12 17:57:58 <==      Total: 2
+11-12 18:16:01 Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+11-12 18:16:02 PooledDataSource forcefully closed/removed all connections.
+11-12 18:16:02 PooledDataSource forcefully closed/removed all connections.
+11-12 18:16:02 PooledDataSource forcefully closed/removed all connections.
+11-12 18:16:02 PooledDataSource forcefully closed/removed all connections.
+11-12 18:16:36 Opening JDBC Connection
+11-12 18:16:37 Created connection 851433032.
+11-12 18:16:37 Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@32bfd648]
+11-12 18:16:37 ==>  Preparing: SELECT * FROM users WHERE uname = ? and upwd = ? 
+11-12 18:16:37 ==> Parameters: xiaoming(String), 123(String)
+11-12 18:16:37 <==    Columns: uid, uname, upwd, phone, city, regDate, idCard, realName, age, email, sex, avatar
+11-12 18:16:37 <==        Row: 1, xiaoming, 123, 18899119292, 西安, 2017-11-11, null, 小明, 22, null, 男, <<BLOB>>
+11-12 18:16:37 <==      Total: 1
+11-12 18:16:37 Opening JDBC Connection
+11-12 18:16:37 Created connection 1926663032.
+11-12 18:16:37 Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@72d68b78]
+11-12 18:16:37 ==>  Preparing: SELECT COUNT(1) FROM shoppingcar WHERE uid = ?; 
+11-12 18:16:37 ==> Parameters: 1(Integer)
+11-12 18:16:37 <==      Total: 1
+11-12 18:16:40 Opening JDBC Connection
+11-12 18:16:40 Created connection 785145266.
+11-12 18:16:40 Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@2ecc5db2]
+11-12 18:16:40 ==>  Preparing: select gid, gname, tid, price, descption, imgPath, filePath, stock from goods where gid = ? 
+11-12 18:16:40 ==> Parameters: 1(Integer)
+11-12 18:16:40 <==      Total: 1
+11-12 18:16:42 ==>  Preparing: select cid, addGoodsTime, uid, gid, gnum, descption from shoppingcar where uid = ? and gid = ? 
+11-12 18:16:42 ==> Parameters: 1(Integer), 1(Integer)
+11-12 18:16:42 <==      Total: 0
+11-12 18:16:42 ==>  Preparing: insert into shoppingcar ( addGoodsTime, uid, gid, gnum, descption ) values ( ?, ?, ?, ?, ? ) 
+11-12 18:16:42 ==> Parameters: 2017-11-12 18:16:42.351(Timestamp), 1(Integer), 1(Integer), 1(Integer), [{"网络类型" : "4G全网通","机身颜色" : "钻雕金","套餐类型" : "官方标配","存储容量" : "128GB","购买方式" : "裸机","版本" : "小米6"}](String)
+11-12 18:16:42 <==    Updates: 1
+11-12 18:16:42 ==>  Preparing: SELECT COUNT(1) FROM shoppingcar WHERE uid = ?; 
+11-12 18:16:42 ==> Parameters: 1(Integer)
+11-12 18:16:42 <==      Total: 1
+11-12 18:16:46 ==>  Preparing: SELECT COUNT(1) FROM shoppingcar WHERE uid = ?; 
+11-12 18:16:46 ==> Parameters: 1(Integer)
+11-12 18:16:46 <==      Total: 1
+11-12 18:16:49 ==>  Preparing: SELECT COUNT(1) FROM shoppingcar WHERE uid = ?; 
+11-12 18:16:49 ==> Parameters: 1(Integer)
+11-12 18:16:49 <==      Total: 1
+11-12 18:17:27 ==>  Preparing: SELECT COUNT(1) FROM shoppingcar WHERE uid = ?; 
+11-12 18:17:27 ==> Parameters: 1(Integer)
+11-12 18:17:27 <==      Total: 1
+11-12 18:17:30 ==>  Preparing: SELECT COUNT(1) FROM shoppingcar WHERE uid = ?; 
+11-12 18:17:30 ==> Parameters: 1(Integer)
+11-12 18:17:30 <==      Total: 1
+11-12 18:17:46 ==>  Preparing: SELECT COUNT(1) FROM shoppingcar WHERE uid = ?; 
+11-12 18:17:46 ==> Parameters: 1(Integer)
+11-12 18:17:46 <==      Total: 1
+11-12 18:17:48 ==>  Preparing: SELECT COUNT(1) FROM shoppingcar WHERE uid = ?; 
+11-12 18:17:48 ==> Parameters: 1(Integer)
+11-12 18:17:48 <==      Total: 1
+11-12 18:18:33 ==>  Preparing: SELECT COUNT(1) FROM shoppingcar WHERE uid = ?; 
+11-12 18:18:33 ==> Parameters: 1(Integer)
+11-12 18:18:33 <==      Total: 1
+11-12 18:18:43 ==>  Preparing: SELECT COUNT(1) FROM shoppingcar WHERE uid = ?; 
+11-12 18:18:43 ==> Parameters: 1(Integer)
+11-12 18:18:43 <==      Total: 1
+11-12 18:19:18 ==>  Preparing: SELECT COUNT(1) FROM shoppingcar WHERE uid = ?; 
+11-12 18:19:18 ==> Parameters: 1(Integer)
+11-12 18:19:18 <==      Total: 1
+11-12 18:19:20 ==>  Preparing: SELECT COUNT(1) FROM shoppingcar WHERE uid = ?; 
+11-12 18:19:20 ==> Parameters: 1(Integer)
+11-12 18:19:20 <==      Total: 1
+11-12 18:21:04 ==>  Preparing: SELECT COUNT(1) FROM shoppingcar WHERE uid = ?; 
+11-12 18:21:04 ==> Parameters: 1(Integer)
+11-12 18:21:04 <==      Total: 1
+11-12 18:22:02 ==>  Preparing: SELECT COUNT(1) FROM shoppingcar WHERE uid = ?; 
+11-12 18:22:02 ==> Parameters: 1(Integer)
+11-12 18:22:02 <==      Total: 1
+11-12 18:22:06 ==>  Preparing: SELECT COUNT(1) FROM shoppingcar WHERE uid = ?; 
+11-12 18:22:06 ==> Parameters: 1(Integer)
+11-12 18:22:06 <==      Total: 1
+11-12 18:23:00 ==>  Preparing: SELECT COUNT(1) FROM shoppingcar WHERE uid = ?; 
+11-12 18:23:00 ==> Parameters: 1(Integer)
+11-12 18:23:00 <==      Total: 1
+11-12 18:23:12 ==>  Preparing: SELECT COUNT(1) FROM shoppingcar WHERE uid = ?; 
+11-12 18:23:12 ==> Parameters: 1(Integer)
+11-12 18:23:12 <==      Total: 1
+11-12 18:23:14 ==>  Preparing: SELECT COUNT(1) FROM shoppingcar WHERE uid = ?; 
+11-12 18:23:14 ==> Parameters: 1(Integer)
+11-12 18:23:14 <==      Total: 1
+11-12 18:23:15 ==>  Preparing: SELECT COUNT(1) FROM shoppingcar WHERE uid = ?; 
+11-12 18:23:15 ==> Parameters: 1(Integer)
+11-12 18:23:15 <==      Total: 1
+11-12 18:23:22 ==>  Preparing: SELECT COUNT(1) FROM shoppingcar WHERE uid = ?; 
+11-12 18:23:22 ==> Parameters: 1(Integer)
+11-12 18:23:22 <==      Total: 1
+11-12 18:23:24 ==>  Preparing: SELECT COUNT(1) FROM shoppingcar WHERE uid = ?; 
+11-12 18:23:24 ==> Parameters: 1(Integer)
+11-12 18:23:24 <==      Total: 1
+11-12 18:23:25 ==>  Preparing: SELECT COUNT(1) FROM shoppingcar WHERE uid = ?; 
+11-12 18:23:25 ==> Parameters: 1(Integer)
+11-12 18:23:25 <==      Total: 1
+11-12 18:23:25 ==>  Preparing: SELECT COUNT(1) FROM shoppingcar WHERE uid = ?; 
+11-12 18:23:25 ==> Parameters: 1(Integer)
+11-12 18:23:25 <==      Total: 1
+11-12 18:24:17 ==>  Preparing: SELECT COUNT(1) FROM shoppingcar WHERE uid = ?; 
+11-12 18:24:17 ==> Parameters: 1(Integer)
+11-12 18:24:17 <==      Total: 1
+11-12 18:24:18 ==>  Preparing: SELECT COUNT(1) FROM shoppingcar WHERE uid = ?; 
+11-12 18:24:18 ==> Parameters: 1(Integer)
+11-12 18:24:18 <==      Total: 1
+11-12 18:24:18 ==>  Preparing: SELECT COUNT(1) FROM shoppingcar WHERE uid = ?; 
+11-12 18:24:18 ==> Parameters: 1(Integer)
+11-12 18:24:18 <==      Total: 1
+11-12 18:25:05 ==>  Preparing: SELECT COUNT(1) FROM shoppingcar WHERE uid = ?; 
+11-12 18:25:05 ==> Parameters: 1(Integer)
+11-12 18:25:05 <==      Total: 1
+11-12 18:25:06 ==>  Preparing: SELECT COUNT(1) FROM shoppingcar WHERE uid = ?; 
+11-12 18:25:06 ==> Parameters: 1(Integer)
+11-12 18:25:06 <==      Total: 1
+11-12 18:26:05 ==>  Preparing: SELECT COUNT(1) FROM shoppingcar WHERE uid = ?; 
+11-12 18:26:05 ==> Parameters: 1(Integer)
+11-12 18:26:05 <==      Total: 1
+11-12 18:26:06 ==>  Preparing: SELECT COUNT(1) FROM shoppingcar WHERE uid = ?; 
+11-12 18:26:06 ==> Parameters: 1(Integer)
+11-12 18:26:06 <==      Total: 1
+11-12 18:26:08 ==>  Preparing: SELECT COUNT(1) FROM shoppingcar WHERE uid = ?; 
+11-12 18:26:08 ==> Parameters: 1(Integer)
+11-12 18:26:08 <==      Total: 1
+11-12 18:26:34 ==>  Preparing: SELECT COUNT(1) FROM shoppingcar WHERE uid = ?; 
+11-12 18:26:34 ==> Parameters: 1(Integer)
+11-12 18:26:34 <==      Total: 1
+11-12 18:26:53 Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+11-12 18:26:53 PooledDataSource forcefully closed/removed all connections.
+11-12 18:26:53 PooledDataSource forcefully closed/removed all connections.
+11-12 18:26:53 PooledDataSource forcefully closed/removed all connections.
+11-12 18:26:53 PooledDataSource forcefully closed/removed all connections.
+11-12 18:26:53 Opening JDBC Connection
+11-12 18:26:54 Created connection 1472550510.
+11-12 18:26:54 Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@57c5566e]
+11-12 18:26:54 ==>  Preparing: SELECT COUNT(1) FROM shoppingcar WHERE uid = ?; 
+11-12 18:26:54 ==> Parameters: 1(Integer)
+11-12 18:26:54 <==      Total: 1
+11-12 18:27:11 ==>  Preparing: SELECT COUNT(1) FROM shoppingcar WHERE uid = ?; 
+11-12 18:27:11 ==> Parameters: 1(Integer)
+11-12 18:27:11 <==      Total: 1
+11-12 18:27:12 ==>  Preparing: SELECT COUNT(1) FROM shoppingcar WHERE uid = ?; 
+11-12 18:27:12 ==> Parameters: 1(Integer)
+11-12 18:27:12 <==      Total: 1
+11-12 18:28:45 ==>  Preparing: SELECT COUNT(1) FROM shoppingcar WHERE uid = ?; 
+11-12 18:28:45 ==> Parameters: 1(Integer)
+11-12 18:28:45 <==      Total: 1
+11-12 18:29:05 ==>  Preparing: SELECT COUNT(1) FROM shoppingcar WHERE uid = ?; 
+11-12 18:29:05 ==> Parameters: 1(Integer)
+11-12 18:29:05 <==      Total: 1
+11-12 18:29:09 ==>  Preparing: SELECT COUNT(1) FROM shoppingcar WHERE uid = ?; 
+11-12 18:29:09 ==> Parameters: 1(Integer)
+11-12 18:29:09 <==      Total: 1
+11-12 18:29:19 ==>  Preparing: SELECT COUNT(1) FROM shoppingcar WHERE uid = ?; 
+11-12 18:29:19 ==> Parameters: 1(Integer)
+11-12 18:29:19 <==      Total: 1
+11-12 18:30:27 ==>  Preparing: SELECT COUNT(1) FROM shoppingcar WHERE uid = ?; 
+11-12 18:30:27 ==> Parameters: 1(Integer)
+11-12 18:30:27 <==      Total: 1
+11-12 18:30:34 Opening JDBC Connection
+11-12 18:30:34 Created connection 1038405359.
+11-12 18:30:34 Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@3de4ceef]
+11-12 18:30:34 ==>  Preparing: select gid, gname, tid, price, descption, imgPath, filePath, stock from goods where gid = ? 
+11-12 18:30:34 ==> Parameters: 1(Integer)
+11-12 18:30:34 <==      Total: 1
+11-12 18:30:36 ==>  Preparing: select cid, addGoodsTime, uid, gid, gnum, descption from shoppingcar where uid = ? and gid = ? 
+11-12 18:30:36 ==> Parameters: 1(Integer), 1(Integer)
+11-12 18:30:36 <==      Total: 1
+11-12 18:30:36 ==>  Preparing: update shoppingcar set addGoodsTime = ?, uid = ?, gid = ?, gnum = ?, descption = ? where cid = ? 
+11-12 18:30:36 ==> Parameters: 2017-11-12 18:30:36.948(Timestamp), 1(Integer), 1(Integer), 2(Integer), [{"网络类型" : "4G全网通","机身颜色" : "钻雕金","套餐类型" : "官方标配","存储容量" : "128GB","购买方式" : "裸机","版本" : "小米6"}](String), 29(Integer)
+11-12 18:30:36 <==    Updates: 1
+11-12 18:30:36 ==>  Preparing: SELECT COUNT(1) FROM shoppingcar WHERE uid = ?; 
+11-12 18:30:36 ==> Parameters: 1(Integer)
+11-12 18:30:36 <==      Total: 1
+11-12 18:30:41 ==>  Preparing: select gid, gname, tid, price, descption, imgPath, filePath, stock from goods where gid = ? 
+11-12 18:30:41 ==> Parameters: 2(Integer)
+11-12 18:30:41 <==      Total: 1
+11-12 18:30:43 ==>  Preparing: select cid, addGoodsTime, uid, gid, gnum, descption from shoppingcar where uid = ? and gid = ? 
+11-12 18:30:43 ==> Parameters: 1(Integer), 2(Integer)
+11-12 18:30:43 <==      Total: 0
+11-12 18:30:43 ==>  Preparing: insert into shoppingcar ( addGoodsTime, uid, gid, gnum, descption ) values ( ?, ?, ?, ?, ? ) 
+11-12 18:30:43 ==> Parameters: 2017-11-12 18:30:43.63(Timestamp), 1(Integer), 2(Integer), 1(Integer), [{"网络类型" : "4G全网通","机身颜色" : "钻雕金","套餐类型" : "官方标配","存储容量" : "128GB","购买方式" : "裸机","版本" : "小米6"}](String)
+11-12 18:30:43 <==    Updates: 1
+11-12 18:30:43 ==>  Preparing: SELECT COUNT(1) FROM shoppingcar WHERE uid = ?; 
+11-12 18:30:43 ==> Parameters: 1(Integer)
+11-12 18:30:43 <==      Total: 1
+11-12 18:30:48 ==>  Preparing: SELECT COUNT(1) FROM shoppingcar WHERE uid = ?; 
+11-12 18:30:48 ==> Parameters: 1(Integer)
+11-12 18:30:48 <==      Total: 1
+11-12 18:30:59 Opening JDBC Connection
+11-12 18:30:59 Created connection 555935443.
+11-12 18:30:59 Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@2122e6d3]
+11-12 18:30:59 ==>  Preparing: SELECT * FROM users WHERE uname = ? and upwd = ? 
+11-12 18:30:59 ==> Parameters: xiaoming(String), 123(String)
+11-12 18:30:59 <==    Columns: uid, uname, upwd, phone, city, regDate, idCard, realName, age, email, sex, avatar
+11-12 18:30:59 <==        Row: 1, xiaoming, 123, 18899119292, 西安, 2017-11-11, null, 小明, 22, null, 男, <<BLOB>>
+11-12 18:30:59 <==      Total: 1
+11-12 18:30:59 ==>  Preparing: SELECT COUNT(1) FROM shoppingcar WHERE uid = ?; 
+11-12 18:30:59 ==> Parameters: 1(Integer)
+11-12 18:30:59 <==      Total: 1
+11-12 18:31:01 ==>  Preparing: SELECT COUNT(1) FROM shoppingcar WHERE uid = ?; 
+11-12 18:31:01 ==> Parameters: 1(Integer)
+11-12 18:31:01 <==      Total: 1
+11-12 18:31:04 ==>  Preparing: select * from address where uid = ? 
+11-12 18:31:04 ==> Parameters: 1(Integer)
+11-12 18:31:04 <==      Total: 2
+11-12 18:31:04 ==>  Preparing: select * from view_car_goods where uid = ?; 
+11-12 18:31:04 ==> Parameters: 1(Integer)
+11-12 18:31:04 <==      Total: 2
+11-12 18:31:14 ==>  Preparing: delete from shoppingcar where cid = ? 
+11-12 18:31:14 ==> Parameters: 29(Integer)
+11-12 18:31:14 <==    Updates: 1
+11-12 18:31:14 ==>  Preparing: SELECT COUNT(1) FROM shoppingcar WHERE uid = ?; 
+11-12 18:31:14 ==> Parameters: 1(Integer)
+11-12 18:31:14 <==      Total: 1
+11-12 18:31:19 ==>  Preparing: select * from view_car_goods where uid = ?; 
+11-12 18:31:19 ==> Parameters: 1(Integer)
+11-12 18:31:19 <==      Total: 1
+11-12 18:31:19 Opening JDBC Connection
+11-12 18:31:19 Created connection 1991245379.
+11-12 18:31:19 Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@76affe43]
+11-12 18:31:19 ==>  Preparing: insert into orders ( oid, uid, sum, address ) values ( ?, ?, ?, ? ) 
+11-12 18:31:19 ==> Parameters: 20171112183119(String), 1(Integer), 1000.0(Double), java.io.StringReader@29ef7046(StringReader)
+11-12 18:31:19 <==    Updates: 1
+11-12 18:31:19 ==>  Preparing: insert into orderform ( oid, gid, gnum, SubTotal ) values ( ?, ?, ?, ? ) 
+11-12 18:31:19 ==> Parameters: 20171112183119(String), 2(Integer), 1(Integer), 1000.0(Double)
+11-12 18:31:19 <==    Updates: 1
+11-12 18:31:19 ==>  Preparing: delete from shoppingcar where cid = ? 
+11-12 18:31:19 ==> Parameters: 30(Integer)
+11-12 18:31:19 <==    Updates: 1
+11-12 18:31:19 Committing JDBC Connection [com.mysql.jdbc.JDBC4Connection@76affe43]
+11-12 18:31:19 添加新订单(20171112183119)：{
+  "oid" : "20171112183119",
+  "uid" : 1,
+  "state" : "待付款",
+  "sum" : 1000.0,
+  "address" : "西安市长里村"
+}
+11-12 18:31:19 订单详情(20171112183119)：[ {
+  "oid" : "20171112183119",
+  "gid" : 2,
+  "gnum" : 1,
+  "subtotal" : 1000.0
+} ]
+11-12 18:31:19 ==>  Preparing: select * from view_order_goods where oid = ? and uid = ?; 
+11-12 18:31:19 ==> Parameters: 20171112183119(String), 1(Integer)
+11-12 18:31:19 <==      Total: 1

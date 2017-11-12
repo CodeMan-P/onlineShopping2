@@ -29,6 +29,7 @@ PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
         <mapper resource="com/mod/mapper/AddressMapper.xml" />
         <mapper resource="com/mod/mapper/GoodsMapper.xml" />
         <mapper resource="com/mod/mapper/GoodsTypeMapper.xml" />
+        <mapper resource="com/mod/mapper/OrdersMapper.xml" />
         <mapper resource="com/mod/mapper/OrderFormMapper.xml" />
         <mapper resource="com/mod/mapper/ShoppingCarMapper.xml"/>
         <mapper resource="com/mod/mapper/UsersMapper.xml"/>

@@ -70,6 +70,16 @@ public class Login extends HttpServlet {
 		response.setCharacterEncoding("utf-8");
 		PrintWriter out = response.getWriter();
 		String name = request.getParameter("name");
+		String flag = request.getParameter("flag");
+		if(flag!=null&&flag.equalsIgnoreCase("flush")){
+			int uid = (int) request.getSession().getAttribute("uid");
+			int num = SpCarService.getCarNum(uid);
+			request.getSession().setAttribute("carnum",num);
+			out.write("{\"message\":\"刷新成功！\",\"cnum\":"+num+"}");
+			out.flush();
+			out.close();
+			return;
+		}
 		if(name.equalsIgnoreCase("@quit")){
 			request.getSession().invalidate();
 			out.write("注销成功！");

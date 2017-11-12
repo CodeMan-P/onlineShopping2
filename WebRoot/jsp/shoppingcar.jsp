@@ -46,10 +46,17 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
                     data:{
                     	"flag":"multi",
                     	"buyCids":buyCids,
-                    	"adresId":adresId},  
+                    	"adresId":adresId},
+                    dataType:'json',
                     success:function(data){  
-                        alert("提交完成！"); 
-                        //MARK**转付款界面
+    					if(data.message.match('.+?成功.+')){
+	                    	alert("提交完成！"); 
+	                        //MARK**转付款界面
+	                        //alert(data.oid);
+   							location.href="./order.jsp";	
+    						}else{
+    							alert("添加失败");
+    						}
                     },
                     error:function(XMLHttpRequest, textStatus, errorThrown){
  					   alert(XMLHttpRequest.status);
@@ -64,8 +71,39 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     	
     });
     function changeBox(){
-		$('input[type=checkbox][id!=check_all_box]').attr('checked',$('input[id=check_all_box]').is(':checked'));
-	}
+    	//$("input[type=checkbox][id!=check_all_box]").removeAttr("checked");
+		$("input[type=checkbox][id!=check_all_box]").prop("checked",$('input[id=check_all_box]').is(':checked'));
+    };
+    function deleGoods(cid){
+    	flag = false;
+        $.ajax({
+            type:'post',  
+            traditional :true,//阻止深度序列化  
+            url:'../Spcar',  
+            data:{
+            	"flag":"dele",
+            	"cid":cid},
+            dataType:'json',
+            async: false,
+            success:function(data){  
+				if(data.message.match('.+?成功.+')){
+                	alert("成功删除！"); 
+                    //MARK**转付款界面
+					//location.href="../index.jsp";	
+                	flag =true; 
+				}else{
+						alert("删除失败");
+					}
+            },
+            error:function(XMLHttpRequest, textStatus, errorThrown){
+				   alert(XMLHttpRequest.status);
+				   alert(XMLHttpRequest.readyState);
+				   alert(textStatus);
+			   }
+        });  
+    return flag;  
+    };
+    
     </script>
 </head>
 
@@ -80,13 +118,13 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	ObjectMapper mapper = new ObjectMapper();
 	@SuppressWarnings("unchecked")
 	LinkedList<HashMap<String,Object>> adlist = mapper.readValue(adresJson, LinkedList.class);
- %>
+	 %>
  <center>
  <div style="width:1200px;height:250px;border: double 5px #AA33CC;">
    <% 
   for(HashMap<String,Object> item : adlist){
 	  %><div style="float:left;width:300px;height:auto; margin: 10px;bottom: 10px;border: double 5px #0033FF;">
-	     <input type="radio" name="radio" id="radio<%=item.get("adressid")%>" value="<%=item.get("adressid")%>"><%=item.get("adressid") %><br/><hr/>
+	     <input type="radio" name="radio" id="radio<%=item.get("adressid")%>" value="<%=item.get("address")%>"><%=item.get("adressid") %><br/><hr/>
 	     <% 
 	     item.remove("uid");
 	     for (String s:item.keySet()){
@@ -177,7 +215,10 @@ HashMap<String,String> h2 = mapper.readValue(descJson, HashMap.class);
    <% }}%>
 
 </td>
-	<td style="border-color: 	#F4A460"><a style="font-size: 18px;color:#0000CC" href="Spcar?flag=dele&&cid=<%=item.get("cid")%>">删除</a></td>
+	<td style="border-color: 	#F4A460">
+	<input type="button" id="dele" 
+	onclick="javascript:if(deleGoods(<%=h.get("cid")%>)){$(this.parentNode.parentNode).remove();}" value="删除"/>
+	</td>
 					
 			
 			

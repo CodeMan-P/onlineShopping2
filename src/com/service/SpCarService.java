@@ -13,7 +13,9 @@ public class SpCarService {
 	public static int getCarNum(Integer uid){
 		return SpCarDao.getCarNum(uid);
 	}
-	
+	public static boolean deleGoods(Integer cid){
+		return SpCarDao.deleGoods(cid);
+	}
 	public static LinkedList<ShoppingCar> getCarListByUid(Integer uid){
 		return SpCarDao.getCarListByUid(uid);
 	}

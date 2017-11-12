@@ -24,4 +24,5 @@ public interface OrderFormMapper {
 	int insertSelective(OrderForm record);
 
 	LinkedList<HashMap<String, Object>> getOrderList(@Param("oid")Long oid,@Param("uid")Integer uid);
+	LinkedList<HashMap<String, Object>> getOrderList(@Param("oid")String oid,@Param("uid")Integer uid);
 }

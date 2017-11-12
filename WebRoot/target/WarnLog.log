@@ -30,3 +30,5 @@
  <com.util.DbConn.getFactory(DbConn.java:27)> 
 2017-11-12 11:19:59  WARN 1086ms|>- 
  <com.dao.SpCarDao.getCarView(SpCarDao.java:48)> 
+2017-11-12 15:58:49  WARN 227281ms|>- 
+ <com.dao.OrdersDao.addOrders(OrdersDao.java:55)> 

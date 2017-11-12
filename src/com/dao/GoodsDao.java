@@ -1,16 +1,10 @@
 package com.dao;
 
-import java.io.Reader;
-
-import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;
-import org.apache.ibatis.session.SqlSessionFactory;
-import org.apache.ibatis.session.SqlSessionFactoryBuilder;
 import org.apache.log4j.Logger;
 
 import com.mod.bean.Goods;
 import com.mod.mapper.GoodsMapper;
-import com.tests.log4jExample;
 import com.util.DbConn;
 
 public class GoodsDao {
