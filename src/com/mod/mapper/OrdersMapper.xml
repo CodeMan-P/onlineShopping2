@@ -81,9 +81,15 @@
       </if>
     </trim>
   </insert>
-    <update id="updateByOUid" parameterType="com.mod.bean.Orders">
+    <update id="updateByOUid" flushCache="true">
     update orders
     set state = "已付款"
     where oid = #{oid,jdbcType=DECIMAL} and uid = #{uid,jdbcType=INTEGER}
   </update>
+  
+    <delete id="deleByOUid" flushCache="true">
+    
+    delete from orders
+    where oid = #{oid,jdbcType=DECIMAL} and uid = #{uid,jdbcType=INTEGER}
+  </delete>
 </mapper>

@@ -5,6 +5,7 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
 
+import org.apache.ibatis.annotations.Delete;
 import org.apache.ibatis.annotations.MapKey;
 import org.apache.ibatis.annotations.Param;
 
@@ -23,4 +24,7 @@ public interface OrderFormMapper {
 	int insertSelective(OrderForm record);
 	LinkedList<HashMap<String, Object>> getOrderList(@Param("oid")Long oid,@Param("uid")Integer uid);
 	LinkedList<HashMap<String, Object>> getOrderList(@Param("oid")String oid,@Param("uid")Integer uid);
+	
+	@Delete(" delete from orderform where oid = #{oid,jdbcType=DECIMAL} and uid = #{uid,jdbcType=INTEGER}")
+	int deleByOUid(@Param("oid")Long oid,@Param("uid")Integer uid);
 }

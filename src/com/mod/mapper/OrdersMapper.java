@@ -18,4 +18,6 @@ public interface OrdersMapper {
 	int insertSelective(Orders record);
 	int updateByOUid(@Param("oid")String oid,@Param("uid")Integer uid);
 	int updateByOUid(@Param("oid")Long oid,@Param("uid")Integer uid);
+	
+	int deleByOUid(@Param("oid")Long oid,@Param("uid")Integer uid);
 }
