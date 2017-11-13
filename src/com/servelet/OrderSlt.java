@@ -170,6 +170,7 @@ public class OrderSlt extends HttpServlet {
 		of.setGnum(gnum);
 		of.setOid(oid);
 		of.setSubtotal(SubTotal);
+		of.setUid(uid);
 		String ofJson = null;
 		String oJson = null;
 		
@@ -269,6 +270,7 @@ public class OrderSlt extends HttpServlet {
 				}
 				tempOrder = new OrderForm();
 				tempOrder.setOid(oid);
+				tempOrder.setUid(uid);
 				tempOrder.setGid((Integer) temp.get("gid"));
 				int gnum = (int) temp.get("gnum");
 				double price = (double) temp.get("price");

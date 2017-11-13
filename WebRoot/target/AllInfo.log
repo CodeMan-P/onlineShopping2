@@ -11283,3 +11283,404 @@
  <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
 2017-11-13 00:09:12  DEBUG 393921ms|>- <==      Total: 1
  <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-13 08:33:01  DEBUG 0ms|>- Retrieving column information for table "goods"
+ <org.mybatis.generator.logging.Log4jImpl.debug(Log4jImpl.java:46)> 
+2017-11-13 08:33:01  DEBUG 52ms|>- Found column "gid", data type 4, in table "shop..goods"
+ <org.mybatis.generator.logging.Log4jImpl.debug(Log4jImpl.java:46)> 
+2017-11-13 08:33:01  DEBUG 68ms|>- Found column "gname", data type 12, in table "shop..goods"
+ <org.mybatis.generator.logging.Log4jImpl.debug(Log4jImpl.java:46)> 
+2017-11-13 08:33:01  DEBUG 68ms|>- Found column "tid", data type 4, in table "shop..goods"
+ <org.mybatis.generator.logging.Log4jImpl.debug(Log4jImpl.java:46)> 
+2017-11-13 08:33:01  DEBUG 68ms|>- Found column "price", data type 8, in table "shop..goods"
+ <org.mybatis.generator.logging.Log4jImpl.debug(Log4jImpl.java:46)> 
+2017-11-13 08:33:01  DEBUG 68ms|>- Found column "descption", data type -1, in table "shop..goods"
+ <org.mybatis.generator.logging.Log4jImpl.debug(Log4jImpl.java:46)> 
+2017-11-13 08:33:01  DEBUG 68ms|>- Found column "imgPath", data type -1, in table "shop..goods"
+ <org.mybatis.generator.logging.Log4jImpl.debug(Log4jImpl.java:46)> 
+2017-11-13 08:33:01  DEBUG 68ms|>- Found column "filePath", data type -1, in table "shop..goods"
+ <org.mybatis.generator.logging.Log4jImpl.debug(Log4jImpl.java:46)> 
+2017-11-13 08:33:01  DEBUG 68ms|>- Found column "stock", data type 4, in table "shop..goods"
+ <org.mybatis.generator.logging.Log4jImpl.debug(Log4jImpl.java:46)> 
+2017-11-13 08:33:01  DEBUG 68ms|>- Found override for column "descption" in table "shop..goods"
+ <org.mybatis.generator.logging.Log4jImpl.debug(Log4jImpl.java:46)> 
+2017-11-13 08:33:01  DEBUG 68ms|>- Found override for column "imgPath" in table "shop..goods"
+ <org.mybatis.generator.logging.Log4jImpl.debug(Log4jImpl.java:46)> 
+2017-11-13 08:33:01  DEBUG 68ms|>- Found override for column "filePath" in table "shop..goods"
+ <org.mybatis.generator.logging.Log4jImpl.debug(Log4jImpl.java:46)> 
+2017-11-13 08:33:01  DEBUG 84ms|>- Retrieving column information for table "address"
+ <org.mybatis.generator.logging.Log4jImpl.debug(Log4jImpl.java:46)> 
+2017-11-13 08:33:01  DEBUG 84ms|>- Found column "adressId", data type 4, in table "shop..address"
+ <org.mybatis.generator.logging.Log4jImpl.debug(Log4jImpl.java:46)> 
+2017-11-13 08:33:01  DEBUG 84ms|>- Found column "uid", data type 4, in table "shop..address"
+ <org.mybatis.generator.logging.Log4jImpl.debug(Log4jImpl.java:46)> 
+2017-11-13 08:33:01  DEBUG 84ms|>- Found column "address", data type -1, in table "shop..address"
+ <org.mybatis.generator.logging.Log4jImpl.debug(Log4jImpl.java:46)> 
+2017-11-13 08:33:01  DEBUG 84ms|>- Found column "def", data type -7, in table "shop..address"
+ <org.mybatis.generator.logging.Log4jImpl.debug(Log4jImpl.java:46)> 
+2017-11-13 08:33:01  DEBUG 84ms|>- Found column "aphone", data type 3, in table "shop..address"
+ <org.mybatis.generator.logging.Log4jImpl.debug(Log4jImpl.java:46)> 
+2017-11-13 08:33:01  DEBUG 84ms|>- Found column "aname", data type 12, in table "shop..address"
+ <org.mybatis.generator.logging.Log4jImpl.debug(Log4jImpl.java:46)> 
+2017-11-13 08:33:01  DEBUG 84ms|>- Found override for column "aphone" in table "shop..address"
+ <org.mybatis.generator.logging.Log4jImpl.debug(Log4jImpl.java:46)> 
+2017-11-13 08:33:01  DEBUG 84ms|>- Retrieving column information for table "goodstype"
+ <org.mybatis.generator.logging.Log4jImpl.debug(Log4jImpl.java:46)> 
+2017-11-13 08:33:01  DEBUG 99ms|>- Found column "tid", data type 4, in table "shop..goodstype"
+ <org.mybatis.generator.logging.Log4jImpl.debug(Log4jImpl.java:46)> 
+2017-11-13 08:33:01  DEBUG 99ms|>- Found column "tname", data type 12, in table "shop..goodstype"
+ <org.mybatis.generator.logging.Log4jImpl.debug(Log4jImpl.java:46)> 
+2017-11-13 08:33:01  DEBUG 99ms|>- Retrieving column information for table "orderform"
+ <org.mybatis.generator.logging.Log4jImpl.debug(Log4jImpl.java:46)> 
+2017-11-13 08:33:01  DEBUG 99ms|>- Found column "oid", data type 3, in table "shop..orderform"
+ <org.mybatis.generator.logging.Log4jImpl.debug(Log4jImpl.java:46)> 
+2017-11-13 08:33:01  DEBUG 99ms|>- Found column "gid", data type 4, in table "shop..orderform"
+ <org.mybatis.generator.logging.Log4jImpl.debug(Log4jImpl.java:46)> 
+2017-11-13 08:33:01  DEBUG 99ms|>- Found column "gnum", data type 4, in table "shop..orderform"
+ <org.mybatis.generator.logging.Log4jImpl.debug(Log4jImpl.java:46)> 
+2017-11-13 08:33:01  DEBUG 99ms|>- Found column "SubTotal", data type 8, in table "shop..orderform"
+ <org.mybatis.generator.logging.Log4jImpl.debug(Log4jImpl.java:46)> 
+2017-11-13 08:33:01  DEBUG 99ms|>- Found column "descption", data type -1, in table "shop..orderform"
+ <org.mybatis.generator.logging.Log4jImpl.debug(Log4jImpl.java:46)> 
+2017-11-13 08:33:01  DEBUG 99ms|>- Found column "uid", data type 4, in table "shop..orderform"
+ <org.mybatis.generator.logging.Log4jImpl.debug(Log4jImpl.java:46)> 
+2017-11-13 08:33:01  DEBUG 99ms|>- Found override for column "oid" in table "shop..orderform"
+ <org.mybatis.generator.logging.Log4jImpl.debug(Log4jImpl.java:46)> 
+2017-11-13 08:33:01  DEBUG 99ms|>- Found override for column "descption" in table "shop..orderform"
+ <org.mybatis.generator.logging.Log4jImpl.debug(Log4jImpl.java:46)> 
+2017-11-13 08:33:01  DEBUG 99ms|>- Retrieving column information for table "orders"
+ <org.mybatis.generator.logging.Log4jImpl.debug(Log4jImpl.java:46)> 
+2017-11-13 08:33:01  DEBUG 115ms|>- Found column "oid", data type 3, in table "shop..orders"
+ <org.mybatis.generator.logging.Log4jImpl.debug(Log4jImpl.java:46)> 
+2017-11-13 08:33:01  DEBUG 116ms|>- Found column "uid", data type 4, in table "shop..orders"
+ <org.mybatis.generator.logging.Log4jImpl.debug(Log4jImpl.java:46)> 
+2017-11-13 08:33:01  DEBUG 117ms|>- Found column "state", data type 12, in table "shop..orders"
+ <org.mybatis.generator.logging.Log4jImpl.debug(Log4jImpl.java:46)> 
+2017-11-13 08:33:01  DEBUG 117ms|>- Found column "address", data type -1, in table "shop..orders"
+ <org.mybatis.generator.logging.Log4jImpl.debug(Log4jImpl.java:46)> 
+2017-11-13 08:33:01  DEBUG 118ms|>- Found column "sum", data type 8, in table "shop..orders"
+ <org.mybatis.generator.logging.Log4jImpl.debug(Log4jImpl.java:46)> 
+2017-11-13 08:33:01  DEBUG 118ms|>- Found override for column "oid" in table "shop..orders"
+ <org.mybatis.generator.logging.Log4jImpl.debug(Log4jImpl.java:46)> 
+2017-11-13 08:33:01  DEBUG 120ms|>- Retrieving column information for table "shoppingcar"
+ <org.mybatis.generator.logging.Log4jImpl.debug(Log4jImpl.java:46)> 
+2017-11-13 08:33:01  DEBUG 121ms|>- Found column "cid", data type 4, in table "shop..shoppingcar"
+ <org.mybatis.generator.logging.Log4jImpl.debug(Log4jImpl.java:46)> 
+2017-11-13 08:33:01  DEBUG 121ms|>- Found column "addGoodsTime", data type 93, in table "shop..shoppingcar"
+ <org.mybatis.generator.logging.Log4jImpl.debug(Log4jImpl.java:46)> 
+2017-11-13 08:33:01  DEBUG 121ms|>- Found column "uid", data type 4, in table "shop..shoppingcar"
+ <org.mybatis.generator.logging.Log4jImpl.debug(Log4jImpl.java:46)> 
+2017-11-13 08:33:01  DEBUG 121ms|>- Found column "gid", data type 4, in table "shop..shoppingcar"
+ <org.mybatis.generator.logging.Log4jImpl.debug(Log4jImpl.java:46)> 
+2017-11-13 08:33:01  DEBUG 121ms|>- Found column "gnum", data type 4, in table "shop..shoppingcar"
+ <org.mybatis.generator.logging.Log4jImpl.debug(Log4jImpl.java:46)> 
+2017-11-13 08:33:01  DEBUG 121ms|>- Found column "descption", data type -1, in table "shop..shoppingcar"
+ <org.mybatis.generator.logging.Log4jImpl.debug(Log4jImpl.java:46)> 
+2017-11-13 08:33:01  DEBUG 121ms|>- Found override for column "addGoodsTime" in table "shop..shoppingcar"
+ <org.mybatis.generator.logging.Log4jImpl.debug(Log4jImpl.java:46)> 
+2017-11-13 08:33:01  DEBUG 121ms|>- Found override for column "descption" in table "shop..shoppingcar"
+ <org.mybatis.generator.logging.Log4jImpl.debug(Log4jImpl.java:46)> 
+2017-11-13 08:33:01  DEBUG 121ms|>- Retrieving column information for table "users"
+ <org.mybatis.generator.logging.Log4jImpl.debug(Log4jImpl.java:46)> 
+2017-11-13 08:33:01  DEBUG 121ms|>- Found column "uid", data type 4, in table "shop..users"
+ <org.mybatis.generator.logging.Log4jImpl.debug(Log4jImpl.java:46)> 
+2017-11-13 08:33:01  DEBUG 121ms|>- Found column "uname", data type 12, in table "shop..users"
+ <org.mybatis.generator.logging.Log4jImpl.debug(Log4jImpl.java:46)> 
+2017-11-13 08:33:01  DEBUG 121ms|>- Found column "upwd", data type 12, in table "shop..users"
+ <org.mybatis.generator.logging.Log4jImpl.debug(Log4jImpl.java:46)> 
+2017-11-13 08:33:01  DEBUG 121ms|>- Found column "phone", data type 3, in table "shop..users"
+ <org.mybatis.generator.logging.Log4jImpl.debug(Log4jImpl.java:46)> 
+2017-11-13 08:33:01  DEBUG 121ms|>- Found column "city", data type 12, in table "shop..users"
+ <org.mybatis.generator.logging.Log4jImpl.debug(Log4jImpl.java:46)> 
+2017-11-13 08:33:01  DEBUG 121ms|>- Found column "regDate", data type 91, in table "shop..users"
+ <org.mybatis.generator.logging.Log4jImpl.debug(Log4jImpl.java:46)> 
+2017-11-13 08:33:01  DEBUG 121ms|>- Found column "idCard", data type 12, in table "shop..users"
+ <org.mybatis.generator.logging.Log4jImpl.debug(Log4jImpl.java:46)> 
+2017-11-13 08:33:01  DEBUG 121ms|>- Found column "realName", data type 12, in table "shop..users"
+ <org.mybatis.generator.logging.Log4jImpl.debug(Log4jImpl.java:46)> 
+2017-11-13 08:33:01  DEBUG 121ms|>- Found column "age", data type 4, in table "shop..users"
+ <org.mybatis.generator.logging.Log4jImpl.debug(Log4jImpl.java:46)> 
+2017-11-13 08:33:01  DEBUG 121ms|>- Found column "email", data type 12, in table "shop..users"
+ <org.mybatis.generator.logging.Log4jImpl.debug(Log4jImpl.java:46)> 
+2017-11-13 08:33:01  DEBUG 137ms|>- Found column "sex", data type 12, in table "shop..users"
+ <org.mybatis.generator.logging.Log4jImpl.debug(Log4jImpl.java:46)> 
+2017-11-13 08:33:01  DEBUG 137ms|>- Found column "avatar", data type -1, in table "shop..users"
+ <org.mybatis.generator.logging.Log4jImpl.debug(Log4jImpl.java:46)> 
+2017-11-13 08:33:01  DEBUG 137ms|>- Found override for column "phone" in table "shop..users"
+ <org.mybatis.generator.logging.Log4jImpl.debug(Log4jImpl.java:46)> 
+2017-11-13 08:34:39  DEBUG 0ms|>- Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+ <org.apache.ibatis.logging.LogFactory.setImplementation(LogFactory.java:135)> 
+2017-11-13 08:34:39  DEBUG 261ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-13 08:34:39  DEBUG 261ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-13 08:34:39  DEBUG 261ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-13 08:34:39  DEBUG 261ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-13 08:34:56  DEBUG 16600ms|>- Opening JDBC Connection
+ <org.apache.ibatis.transaction.jdbc.JdbcTransaction.openConnection(JdbcTransaction.java:137)> 
+2017-11-13 08:34:56  DEBUG 16831ms|>- Created connection 1708617619.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.popConnection(PooledDataSource.java:406)> 
+2017-11-13 08:34:56  DEBUG 16831ms|>- Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@65d76f93]
+ <org.apache.ibatis.transaction.jdbc.JdbcTransaction.setDesiredAutoCommit(JdbcTransaction.java:101)> 
+2017-11-13 08:34:56  DEBUG 16831ms|>- ==>  Preparing: SELECT * FROM users WHERE uname = ? and upwd = ? 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-13 08:34:56  DEBUG 16878ms|>- ==> Parameters: xiaoming(String), 123(String)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-13 08:34:56  TRACE 16900ms|>- <==    Columns: uid, uname, upwd, phone, city, regDate, idCard, realName, age, email, sex, avatar
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.trace(BaseJdbcLogger.java:165)> 
+2017-11-13 08:34:56  TRACE 16916ms|>- <==        Row: 1, xiaoming, 123, 18899119292, 西安, 2017-11-11, null, 小明, 22, null, 男, <<BLOB>>
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.trace(BaseJdbcLogger.java:165)> 
+2017-11-13 08:34:56  DEBUG 16916ms|>- <==      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-13 08:34:56  DEBUG 16931ms|>- Opening JDBC Connection
+ <org.apache.ibatis.transaction.jdbc.JdbcTransaction.openConnection(JdbcTransaction.java:137)> 
+2017-11-13 08:34:56  DEBUG 16947ms|>- Created connection 1652538465.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.popConnection(PooledDataSource.java:406)> 
+2017-11-13 08:34:56  DEBUG 16947ms|>- Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@627fbc61]
+ <org.apache.ibatis.transaction.jdbc.JdbcTransaction.setDesiredAutoCommit(JdbcTransaction.java:101)> 
+2017-11-13 08:34:56  DEBUG 16947ms|>- ==>  Preparing: SELECT COUNT(1) FROM shoppingcar WHERE uid = ?; 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-13 08:34:56  DEBUG 16947ms|>- ==> Parameters: 1(Integer)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-13 08:34:56  DEBUG 16947ms|>- <==      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-13 08:34:58  DEBUG 19431ms|>- Opening JDBC Connection
+ <org.apache.ibatis.transaction.jdbc.JdbcTransaction.openConnection(JdbcTransaction.java:137)> 
+2017-11-13 08:34:58  DEBUG 19448ms|>- Created connection 1660193249.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.popConnection(PooledDataSource.java:406)> 
+2017-11-13 08:34:58  DEBUG 19448ms|>- Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@62f489e1]
+ <org.apache.ibatis.transaction.jdbc.JdbcTransaction.setDesiredAutoCommit(JdbcTransaction.java:101)> 
+2017-11-13 08:34:58  DEBUG 19448ms|>- ==>  Preparing: select gid, gname, tid, price, descption, imgPath, filePath, stock from goods where gid = ? 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-13 08:34:58  DEBUG 19448ms|>- ==> Parameters: 1(Integer)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-13 08:34:58  DEBUG 19464ms|>- <==      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-13 08:35:02  DEBUG 23264ms|>- ==>  Preparing: select * from address where uid = ? 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-13 08:35:02  DEBUG 23274ms|>- ==> Parameters: 1(Integer)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-13 08:35:02  DEBUG 23276ms|>- <==      Total: 2
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-13 08:35:08  DEBUG 29292ms|>- Opening JDBC Connection
+ <org.apache.ibatis.transaction.jdbc.JdbcTransaction.openConnection(JdbcTransaction.java:137)> 
+2017-11-13 08:35:08  DEBUG 29308ms|>- Created connection 771297318.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.popConnection(PooledDataSource.java:406)> 
+2017-11-13 08:35:08  DEBUG 29308ms|>- Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@2df91026]
+ <org.apache.ibatis.transaction.jdbc.JdbcTransaction.setDesiredAutoCommit(JdbcTransaction.java:101)> 
+2017-11-13 08:35:08  DEBUG 29308ms|>- ==>  Preparing: insert into orders ( oid, uid, state, sum, address ) values ( ?, ?, ?, ?, ? ) 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-13 08:35:08  DEBUG 29308ms|>- ==> Parameters: 20171113083502(String), 1(Integer), 已付款(String), 3488.0(Double), java.io.StringReader@1cc5b058(StringReader)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-13 08:35:08  DEBUG 29308ms|>- <==    Updates: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-13 08:35:08  DEBUG 29308ms|>- ==>  Preparing: insert into orderform ( oid, gid, gnum, SubTotal, descption, uid ) values ( ?, ?, ?, ?, ?, ? ) 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-13 08:35:08  DEBUG 29308ms|>- ==> Parameters: 20171113083502(String), 1(Integer), 1(Integer), 3488.0(Double), [{"网络类型" : "4G全网通","机身颜色" : "钻雕金","套餐类型" : "官方标配","存储容量" : "128GB","购买方式" : "裸机","版本" : "小米6"}](String), 1(Integer)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-13 08:35:08  DEBUG 29308ms|>- <==    Updates: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-13 08:35:08  DEBUG 29308ms|>- Committing JDBC Connection [com.mysql.jdbc.JDBC4Connection@2df91026]
+ <org.apache.ibatis.transaction.jdbc.JdbcTransaction.commit(JdbcTransaction.java:70)> 
+2017-11-13 08:35:08  INFO 29324ms|>- 添加新订单(20171113083502)：{
+  "oid" : "20171113083502",
+  "uid" : 1,
+  "state" : "已付款",
+  "sum" : 3488.0,
+  "address" : "西安市外包学院"
+}
+ <com.dao.OrdersDao.orderLog(OrdersDao.java:159)> 
+2017-11-13 08:35:08  INFO 29324ms|>- 订单详情(20171113083502)：{
+  "oid" : "20171113083502",
+  "gid" : 1,
+  "gnum" : 1,
+  "subtotal" : 3488.0,
+  "descption" : "[{\"网络类型\" : \"4G全网通\",\"机身颜色\" : \"钻雕金\",\"套餐类型\" : \"官方标配\",\"存储容量\" : \"128GB\",\"购买方式\" : \"裸机\",\"版本\" : \"小米6\"}]",
+  "uid" : 1
+}
+ <com.dao.OrdersDao.orderLog(OrdersDao.java:160)> 
+2017-11-13 08:35:09  DEBUG 30362ms|>- ==>  Preparing: SELECT COUNT(1) FROM shoppingcar WHERE uid = ?; 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-13 08:35:09  DEBUG 30364ms|>- ==> Parameters: 1(Integer)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-13 08:35:09  DEBUG 30365ms|>- <==      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-13 08:35:18  DEBUG 38627ms|>- ==>  Preparing: select cid, addGoodsTime, uid, gid, gnum, descption from shoppingcar where uid = ? and gid = ? 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-13 08:35:18  DEBUG 38637ms|>- ==> Parameters: 1(Integer), 1(Integer)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-13 08:35:18  DEBUG 38638ms|>- <==      Total: 0
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-13 08:35:18  DEBUG 38638ms|>- ==>  Preparing: insert into shoppingcar ( addGoodsTime, uid, gid, gnum, descption ) values ( ?, ?, ?, ?, ? ) 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-13 08:35:18  DEBUG 38638ms|>- ==> Parameters: 2017-11-13 08:35:18.124(Timestamp), 1(Integer), 1(Integer), 1(Integer), [{"网络类型" : "4G全网通","机身颜色" : "钻雕金","套餐类型" : "官方标配","存储容量" : "128GB","购买方式" : "裸机","版本" : "小米6"}](String)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-13 08:35:18  DEBUG 38638ms|>- <==    Updates: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-13 08:35:18  DEBUG 38638ms|>- ==>  Preparing: SELECT COUNT(1) FROM shoppingcar WHERE uid = ?; 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-13 08:35:18  DEBUG 38638ms|>- ==> Parameters: 1(Integer)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-13 08:35:18  DEBUG 38638ms|>- <==      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-13 08:35:21  DEBUG 41942ms|>- ==>  Preparing: select gid, gname, tid, price, descption, imgPath, filePath, stock from goods where gid = ? 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-13 08:35:21  DEBUG 41945ms|>- ==> Parameters: 2(Integer)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-13 08:35:21  DEBUG 41946ms|>- <==      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-13 08:35:23  DEBUG 44043ms|>- ==>  Preparing: select cid, addGoodsTime, uid, gid, gnum, descption from shoppingcar where uid = ? and gid = ? 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-13 08:35:23  DEBUG 44056ms|>- ==> Parameters: 1(Integer), 2(Integer)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-13 08:35:23  DEBUG 44056ms|>- <==      Total: 0
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-13 08:35:23  DEBUG 44056ms|>- ==>  Preparing: insert into shoppingcar ( addGoodsTime, uid, gid, gnum, descption ) values ( ?, ?, ?, ?, ? ) 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-13 08:35:23  DEBUG 44056ms|>- ==> Parameters: 2017-11-13 08:35:23.54(Timestamp), 1(Integer), 2(Integer), 1(Integer), [{"网络类型" : "4G全网通","机身颜色" : "钻雕金","套餐类型" : "官方标配","存储容量" : "128GB","购买方式" : "裸机","版本" : "小米6"}](String)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-13 08:35:23  DEBUG 44056ms|>- <==    Updates: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-13 08:35:23  DEBUG 44056ms|>- ==>  Preparing: SELECT COUNT(1) FROM shoppingcar WHERE uid = ?; 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-13 08:35:23  DEBUG 44056ms|>- ==> Parameters: 1(Integer)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-13 08:35:23  DEBUG 44056ms|>- <==      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-13 08:35:25  DEBUG 46242ms|>- ==>  Preparing: select * from address where uid = ? 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-13 08:35:25  DEBUG 46255ms|>- ==> Parameters: 1(Integer)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-13 08:35:25  DEBUG 46258ms|>- <==      Total: 2
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-13 08:35:25  DEBUG 46258ms|>- ==>  Preparing: select * from view_car_goods where uid = ?; 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-13 08:35:25  DEBUG 46258ms|>- ==> Parameters: 1(Integer)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-13 08:35:25  DEBUG 46258ms|>- <==      Total: 2
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-13 08:35:33  DEBUG 53825ms|>- ==>  Preparing: delete from shoppingcar where cid = ? 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-13 08:35:33  DEBUG 53827ms|>- ==> Parameters: 55(Integer)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-13 08:35:33  DEBUG 53828ms|>- <==    Updates: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-13 08:35:33  DEBUG 53828ms|>- ==>  Preparing: SELECT COUNT(1) FROM shoppingcar WHERE uid = ?; 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-13 08:35:33  DEBUG 53828ms|>- ==> Parameters: 1(Integer)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-13 08:35:33  DEBUG 53829ms|>- <==      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-13 08:35:39  DEBUG 60010ms|>- ==>  Preparing: select cid, addGoodsTime, uid, gid, gnum, descption from shoppingcar where uid = ? and gid = ? 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-13 08:35:39  DEBUG 60024ms|>- ==> Parameters: 1(Integer), 1(Integer)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-13 08:35:39  DEBUG 60025ms|>- <==      Total: 0
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-13 08:35:39  DEBUG 60025ms|>- ==>  Preparing: insert into shoppingcar ( addGoodsTime, uid, gid, gnum, descption ) values ( ?, ?, ?, ?, ? ) 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-13 08:35:39  DEBUG 60025ms|>- ==> Parameters: 2017-11-13 08:35:39.507(Timestamp), 1(Integer), 1(Integer), 1(Integer), [{"网络类型" : "4G全网通","机身颜色" : "钻雕金","套餐类型" : "官方标配","存储容量" : "128GB","购买方式" : "裸机","版本" : "小米6"}](String)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-13 08:35:39  DEBUG 60025ms|>- <==    Updates: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-13 08:35:39  DEBUG 60025ms|>- ==>  Preparing: SELECT COUNT(1) FROM shoppingcar WHERE uid = ?; 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-13 08:35:39  DEBUG 60025ms|>- ==> Parameters: 1(Integer)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-13 08:35:39  DEBUG 60025ms|>- <==      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-13 08:35:43  DEBUG 63543ms|>- ==>  Preparing: select * from address where uid = ? 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-13 08:35:43  DEBUG 63549ms|>- ==> Parameters: 1(Integer)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-13 08:35:43  DEBUG 63551ms|>- <==      Total: 2
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-13 08:35:43  DEBUG 63551ms|>- ==>  Preparing: select * from view_car_goods where uid = ?; 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-13 08:35:43  DEBUG 63551ms|>- ==> Parameters: 1(Integer)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-13 08:35:43  DEBUG 63551ms|>- <==      Total: 2
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-13 08:35:46  DEBUG 66996ms|>- ==>  Preparing: select * from view_car_goods where uid = ?; 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-13 08:35:46  DEBUG 67011ms|>- ==> Parameters: 1(Integer)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-13 08:35:46  DEBUG 67012ms|>- <==      Total: 2
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-13 08:35:46  DEBUG 67012ms|>- ==>  Preparing: insert into orders ( oid, uid, sum, address ) values ( ?, ?, ?, ? ) 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-13 08:35:46  DEBUG 67012ms|>- ==> Parameters: 20171113083546(String), 1(Integer), 4488.0(Double), java.io.StringReader@22bd5a59(StringReader)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-13 08:35:46  DEBUG 67012ms|>- <==    Updates: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-13 08:35:46  DEBUG 67012ms|>- ==>  Preparing: insert into orderform ( oid, gid, gnum, SubTotal, descption, uid ) values ( ?, ?, ?, ?, ?, ? ) 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-13 08:35:46  DEBUG 67012ms|>- ==> Parameters: 20171113083546(String), 2(Integer), 1(Integer), 1000.0(Double), [{"网络类型" : "4G全网通","机身颜色" : "钻雕金","套餐类型" : "官方标配","存储容量" : "128GB","购买方式" : "裸机","版本" : "小米6"}](String), 1(Integer)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-13 08:35:46  DEBUG 67012ms|>- <==    Updates: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-13 08:35:46  DEBUG 67012ms|>- ==>  Preparing: insert into orderform ( oid, gid, gnum, SubTotal, descption, uid ) values ( ?, ?, ?, ?, ?, ? ) 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-13 08:35:46  DEBUG 67012ms|>- ==> Parameters: 20171113083546(String), 1(Integer), 1(Integer), 3488.0(Double), [{"网络类型" : "4G全网通","机身颜色" : "钻雕金","套餐类型" : "官方标配","存储容量" : "128GB","购买方式" : "裸机","版本" : "小米6"}](String), 1(Integer)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-13 08:35:46  DEBUG 67012ms|>- <==    Updates: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-13 08:35:46  DEBUG 67012ms|>- ==>  Preparing: delete from shoppingcar where cid = ? 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-13 08:35:46  DEBUG 67012ms|>- ==> Parameters: 56(Integer)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-13 08:35:46  DEBUG 67012ms|>- <==    Updates: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-13 08:35:46  DEBUG 67012ms|>- ==>  Preparing: delete from shoppingcar where cid = ? 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-13 08:35:46  DEBUG 67012ms|>- ==> Parameters: 57(Integer)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-13 08:35:46  DEBUG 67012ms|>- <==    Updates: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-13 08:35:46  DEBUG 67012ms|>- Committing JDBC Connection [com.mysql.jdbc.JDBC4Connection@2df91026]
+ <org.apache.ibatis.transaction.jdbc.JdbcTransaction.commit(JdbcTransaction.java:70)> 
+2017-11-13 08:35:46  INFO 67012ms|>- 添加新订单(20171113083546)：{
+  "oid" : "20171113083546",
+  "uid" : 1,
+  "state" : "待付款",
+  "sum" : 4488.0,
+  "address" : "西安市外包学院"
+}
+ <com.dao.OrdersDao.orderLog(OrdersDao.java:179)> 
+2017-11-13 08:35:46  INFO 67028ms|>- 订单详情(20171113083546)：[ {
+  "oid" : "20171113083546",
+  "gid" : 2,
+  "gnum" : 1,
+  "subtotal" : 1000.0,
+  "descption" : "[{\"网络类型\" : \"4G全网通\",\"机身颜色\" : \"钻雕金\",\"套餐类型\" : \"官方标配\",\"存储容量\" : \"128GB\",\"购买方式\" : \"裸机\",\"版本\" : \"小米6\"}]",
+  "uid" : 1
+}, {
+  "oid" : "20171113083546",
+  "gid" : 1,
+  "gnum" : 1,
+  "subtotal" : 3488.0,
+  "descption" : "[{\"网络类型\" : \"4G全网通\",\"机身颜色\" : \"钻雕金\",\"套餐类型\" : \"官方标配\",\"存储容量\" : \"128GB\",\"购买方式\" : \"裸机\",\"版本\" : \"小米6\"}]",
+  "uid" : 1
+} ]
+ <com.dao.OrdersDao.orderLog(OrdersDao.java:180)> 
+2017-11-13 08:35:46  DEBUG 67028ms|>- ==>  Preparing: select * from view_order_goods where oid = ? and uid = ?; 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-13 08:35:46  DEBUG 67028ms|>- ==> Parameters: 20171113083546(String), 1(Integer)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-13 08:35:46  DEBUG 67028ms|>- <==      Total: 2
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-13 08:35:52  DEBUG 73309ms|>- ==>  Preparing: update orders set state = "已付款" where oid = ? and uid = ? 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-13 08:35:52  DEBUG 73310ms|>- ==> Parameters: 20171113083546(String), 1(Integer)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-13 08:35:52  DEBUG 73310ms|>- <==    Updates: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-13 08:35:52  DEBUG 73310ms|>- Committing JDBC Connection [com.mysql.jdbc.JDBC4Connection@2df91026]
+ <org.apache.ibatis.transaction.jdbc.JdbcTransaction.commit(JdbcTransaction.java:70)> 
+2017-11-13 08:35:55  DEBUG 75694ms|>- ==>  Preparing: SELECT COUNT(1) FROM shoppingcar WHERE uid = ?; 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-13 08:35:55  DEBUG 75694ms|>- ==> Parameters: 1(Integer)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-13 08:35:55  DEBUG 75694ms|>- <==      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
