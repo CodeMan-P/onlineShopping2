@@ -1,5 +1,9 @@
 package com.mod.mapper;
 
+import java.util.HashMap;
+import java.util.LinkedHashMap;
+import java.util.LinkedList;
+
 import org.apache.ibatis.annotations.Param;
 
 import com.mod.bean.Orders;
@@ -20,4 +24,7 @@ public interface OrdersMapper {
 	int updateByOUid(@Param("oid")Long oid,@Param("uid")Integer uid);
 	
 	int deleByOUid(@Param("oid")Long oid,@Param("uid")Integer uid);
+	LinkedList<LinkedHashMap<String,Object>> getOGViewGoupByOid(@Param("uid")Integer uid);
+	//LinkedList<HashMap<String,Object>> getOGViewGoupByOid(@Param("uid")Integer uid);
+	//LinkedHashMap<String, Object> getOGViewGoupByOid(@Param("uid")Integer uid);
 }

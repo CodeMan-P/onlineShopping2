@@ -60,3 +60,123 @@
 ### SQL: insert into orders      ( oid,                       uid,                       state,                       sum )       values ( ?,                       ?,                       ?,                       ? )
 ### Cause: java.sql.SQLException: Field 'address' doesn't have a default value
  <com.dao.OrdersDao.addOrders(OrdersDao.java:96)> 
+2017-11-13 15:54:08  WARN 306ms|>- 
+### Error building SqlSession.
+### The error may exist in com/mod/mapper/OrdersMapper.xml
+### The error occurred while processing mapper_resultMap[ogViewGoupByOid]_collection[goods]
+### Cause: org.apache.ibatis.builder.BuilderException: Error parsing SQL Mapper Configuration. Cause: org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'ogViewGoupByOid'.  Cause: java.lang.ClassNotFoundException: Cannot find class: ogViewGoupByOid
+ <com.util.DbConn.getFactory(DbConn.java:27)> 
+2017-11-13 15:55:18  WARN 285ms|>- 
+### Error building SqlSession.
+### The error may exist in com/mod/mapper/OrdersMapper.xml
+### The error occurred while processing mapper_resultMap[BaseResultMap]
+### Cause: org.apache.ibatis.builder.BuilderException: Error parsing SQL Mapper Configuration. Cause: org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 88; columnNumber: 63; 必须声明元素类型 "resultType"。
+ <com.util.DbConn.getFactory(DbConn.java:27)> 
+2017-11-13 16:01:05  WARN 316ms|>- 
+### Error building SqlSession.
+### The error may exist in com/mod/mapper/OrdersMapper.xml
+### The error occurred while processing mapper_resultMap[ogViewGoupByOid]_collection[goods]
+### Cause: org.apache.ibatis.builder.BuilderException: Error parsing SQL Mapper Configuration. Cause: org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'ogViewGoupByOid'.  Cause: java.lang.ClassNotFoundException: Cannot find class: ogViewGoupByOid
+ <com.util.DbConn.getFactory(DbConn.java:27)> 
+2017-11-13 16:47:26  WARN 278ms|>- 
+### Error building SqlSession.
+### The error may exist in com/mod/mapper/OrdersMapper.xml
+### The error occurred while processing mapper_resultMap[ogViewGoupByOid]
+### Cause: org.apache.ibatis.builder.BuilderException: Error parsing SQL Mapper Configuration. Cause: org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'ohm'.  Cause: java.lang.ClassNotFoundException: Cannot find class: ohm
+ <com.util.DbConn.getFactory(DbConn.java:27)> 
+2017-11-13 16:49:00  WARN 300ms|>- 
+### Error building SqlSession.
+### The error may exist in com/mod/mapper/OrdersMapper.xml
+### The error occurred while processing mapper_resultMap[BaseResultMap]
+### Cause: org.apache.ibatis.builder.BuilderException: Error parsing SQL Mapper Configuration. Cause: org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 112; columnNumber: 50; 需要属性 "type", 并且必须为元素类型 "resultMap" 指定该属性。
+ <com.util.DbConn.getFactory(DbConn.java:27)> 
+2017-11-13 16:51:46  WARN 256ms|>- 
+### Error building SqlSession.
+### The error may exist in com/mod/mapper/OrdersMapper.xml
+### The error occurred while processing mapper_resultMap[BaseResultMap]
+### Cause: org.apache.ibatis.builder.BuilderException: Error parsing SQL Mapper Configuration. Cause: org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 88; columnNumber: 64; 需要属性 "type", 并且必须为元素类型 "resultMap" 指定该属性。
+ <com.util.DbConn.getFactory(DbConn.java:27)> 
+2017-11-13 17:04:45  WARN 263ms|>- 
+### Error building SqlSession.
+### The error may exist in com/mod/mapper/OrdersMapper.xml
+### The error occurred while processing mapper_resultMap[BaseResultMap]
+### Cause: org.apache.ibatis.builder.BuilderException: Error parsing SQL Mapper Configuration. Cause: org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 96; columnNumber: 55; 需要属性 "property", 并且必须为元素类型 "collection" 指定该属性。
+ <com.util.DbConn.getFactory(DbConn.java:27)> 
+2017-11-13 17:10:28  WARN 575ms|>- 
+### Error building SqlSession.
+### The error may exist in com/mod/mapper/OrdersMapper.xml
+### The error occurred while processing mapper_resultMap[BaseResultMap]
+### Cause: org.apache.ibatis.builder.BuilderException: Error parsing SQL Mapper Configuration. Cause: org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 97; columnNumber: 37; 与元素类型 "collection" 相关联的属性 "property" 应有左引号。
+ <com.util.DbConn.getFactory(DbConn.java:27)> 
+2017-11-13 17:11:45  WARN 636ms|>- 
+### Error building SqlSession.
+### The error may exist in com/mod/mapper/OrdersMapper.xml
+### The error occurred while processing mapper_resultMap[BaseResultMap]
+### Cause: org.apache.ibatis.builder.BuilderException: Error parsing SQL Mapper Configuration. Cause: org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 110; columnNumber: 14; 元素类型为 "resultMap" 的内容必须匹配 "(constructor?,id*,result*,association*,collection*,discriminator?)"。
+ <com.util.DbConn.getFactory(DbConn.java:27)> 
+2017-11-13 17:13:52  WARN 348ms|>- 
+### Error building SqlSession.
+### The error may exist in com/mod/mapper/OrdersMapper.xml
+### The error occurred while processing mapper_resultMap[BaseResultMap]
+### Cause: org.apache.ibatis.builder.BuilderException: Error parsing SQL Mapper Configuration. Cause: org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 110; columnNumber: 14; 元素类型为 "resultMap" 的内容必须匹配 "(constructor?,id*,result*,association*,collection*,discriminator?)"。
+ <com.util.DbConn.getFactory(DbConn.java:27)> 
+2017-11-13 17:37:00  WARN 506ms|>- 
+### Error building SqlSession.
+### The error may exist in com/mod/mapper/OrdersMapper.xml
+### The error occurred while processing mapper_resultMap[BaseResultMap]
+### Cause: org.apache.ibatis.builder.BuilderException: Error parsing SQL Mapper Configuration. Cause: org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 96; columnNumber: 42; 元素类型 "collection" 必须后跟属性规范 ">" 或 "/>"。
+ <com.util.DbConn.getFactory(DbConn.java:27)> 
+2017-11-13 17:37:35  WARN 316ms|>- 
+### Error building SqlSession.
+### The error may exist in com/mod/mapper/OrdersMapper.xml
+### The error occurred while processing mapper_resultMap[BaseResultMap]
+### Cause: org.apache.ibatis.builder.BuilderException: Error parsing SQL Mapper Configuration. Cause: org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 96; columnNumber: 42; 元素类型 "collection" 必须后跟属性规范 ">" 或 "/>"。
+ <com.util.DbConn.getFactory(DbConn.java:27)> 
+2017-11-13 17:43:02  WARN 366ms|>- 
+### Error building SqlSession.
+### The error may exist in com/mod/mapper/OrdersMapper.xml
+### The error occurred while processing mapper_resultMap[BaseResultMap]
+### Cause: org.apache.ibatis.builder.BuilderException: Error parsing SQL Mapper Configuration. Cause: org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 99; columnNumber: 55; 需要属性 "property", 并且必须为元素类型 "collection" 指定该属性。
+ <com.util.DbConn.getFactory(DbConn.java:27)> 
+2017-11-13 17:44:51  WARN 298ms|>- 
+### Error building SqlSession.
+### The error may exist in com/mod/mapper/OrdersMapper.xml
+### The error occurred while processing mapper_resultMap[BaseResultMap]
+### Cause: org.apache.ibatis.builder.BuilderException: Error parsing SQL Mapper Configuration. Cause: org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 99; columnNumber: 37; 与元素类型 "collection" 相关联的属性 "property" 应有左引号。
+ <com.util.DbConn.getFactory(DbConn.java:27)> 
+2017-11-13 17:45:29  WARN 300ms|>- 
+### Error building SqlSession.
+### The error may exist in com/mod/mapper/OrdersMapper.xml
+### The error occurred while processing mapper_resultMap[BaseResultMap]
+### Cause: org.apache.ibatis.builder.BuilderException: Error parsing SQL Mapper Configuration. Cause: org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 112; columnNumber: 14; 元素类型为 "resultMap" 的内容必须匹配 "(constructor?,id*,result*,association*,collection*,discriminator?)"。
+ <com.util.DbConn.getFactory(DbConn.java:27)> 
+2017-11-13 17:46:37  WARN 339ms|>- 
+### Error building SqlSession.
+### The error may exist in com/mod/mapper/OrdersMapper.xml
+### The error occurred while processing mapper_resultMap[BaseResultMap]
+### Cause: org.apache.ibatis.builder.BuilderException: Error parsing SQL Mapper Configuration. Cause: org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 110; columnNumber: 14; 元素类型为 "resultMap" 的内容必须匹配 "(constructor?,id*,result*,association*,collection*,discriminator?)"。
+ <com.util.DbConn.getFactory(DbConn.java:27)> 
+2017-11-13 17:47:20  WARN 645ms|>- 
+### Error building SqlSession.
+### The error may exist in com/mod/mapper/OrdersMapper.xml
+### The error occurred while processing mapper_resultMap[BaseResultMap]
+### Cause: org.apache.ibatis.builder.BuilderException: Error parsing SQL Mapper Configuration. Cause: org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 110; columnNumber: 14; 元素类型为 "resultMap" 的内容必须匹配 "(constructor?,id*,result*,association*,collection*,discriminator?)"。
+ <com.util.DbConn.getFactory(DbConn.java:27)> 
+2017-11-13 19:01:06  WARN 312ms|>- 
+### Error building SqlSession.
+### The error may exist in com/mod/mapper/OrdersMapper.xml
+### The error occurred while processing mapper_resultMap[BaseResultMap]
+### Cause: org.apache.ibatis.builder.BuilderException: Error parsing SQL Mapper Configuration. Cause: org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 96; columnNumber: 43; 需要属性 "property", 并且必须为元素类型 "collection" 指定该属性。
+ <com.util.DbConn.getFactory(DbConn.java:27)> 
+2017-11-13 19:03:19  WARN 525ms|>- 
+### Error building SqlSession.
+### The error may exist in com/mod/mapper/OrdersMapper.xml
+### The error occurred while processing mapper_resultMap[BaseResultMap]
+### Cause: org.apache.ibatis.builder.BuilderException: Error parsing SQL Mapper Configuration. Cause: org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 109; columnNumber: 33; 需要属性 "property", 并且必须为元素类型 "collection" 指定该属性。
+ <com.util.DbConn.getFactory(DbConn.java:27)> 
+2017-11-13 19:10:08  WARN 304ms|>- 
+### Error building SqlSession.
+### The error may exist in com/mod/mapper/OrdersMapper.xml
+### The error occurred while processing mapper_resultMap[BaseResultMap]
+### Cause: org.apache.ibatis.builder.BuilderException: Error parsing SQL Mapper Configuration. Cause: org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 108; columnNumber: 24; 与元素类型 "collection" 相关联的属性 "property" 应有左引号。
+ <com.util.DbConn.getFactory(DbConn.java:27)> 

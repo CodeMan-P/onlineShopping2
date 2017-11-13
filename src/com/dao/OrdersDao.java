@@ -3,6 +3,7 @@ package com.dao;
 import java.io.IOException;
 import java.util.HashMap;
 import java.util.Iterator;
+import java.util.LinkedHashMap;
 import java.util.LinkedList;
 
 import org.apache.ibatis.annotations.Param;
@@ -48,7 +49,63 @@ public class OrdersDao {
 	public void testMethod(){
 		//LinkedList<HashMap<String, Object>> list=null;
 		//updateByOUid(20171112233536L,1);
-		deleOrders("20171113000907", 1);
+		//deleOrders("20171113000907", 1);
+		
+		ObjectMapper mapper = new ObjectMapper();
+
+		LinkedList<LinkedHashMap<String,Object>> list =null;
+		list=getOGViewGoupByOid(1);
+		try {
+			System.out.println(mapper.writerWithDefaultPrettyPrinter().writeValueAsString(list));
+		} catch (JsonProcessingException e) {
+			e.printStackTrace();
+		}
+		
+//		try {
+//			String json = mapper.writeValueAsString(list.get("goods"));
+//			HashMap<String, Object> hm = mapper.readValue(json, HashMap.class);
+//			System.out.println("===============================");
+//			System.out.println(mapper.writerWithDefaultPrettyPrinter().writeValueAsString(hm));
+//		} catch (JsonProcessingException e1) {
+//			// TODO Auto-generated catch block
+//			e1.printStackTrace();
+//		} catch (IOException e) {
+//			// TODO Auto-generated catch block
+//			e.printStackTrace();
+//		}
+	
+		
+	}
+//	LinkedHashMap<String, Object> getOGViewGoupByOid(Integer uid){
+//		
+//		LinkedList<HashMap<String,Object>> list =null;
+//		list= om.getOGViewGoupByOid(uid);
+//		LinkedHashMap<String, Object> lhm = new LinkedHashMap<String, Object>();
+//		Iterator<HashMap<String,Object>> it = list.iterator();
+//		HashMap<String,Object> gm = null;
+//		int index = 1;
+//		HashMap<String,Object> gm2 = new HashMap<String, Object>();
+//		while(it.hasNext()){
+//		gm = it.next();
+//		if(index == 1){
+//			for(String s:gm.keySet()){
+//				if(!s.equals("goods")){
+//					lhm.put(s, gm.get(s));
+//				}
+//			}
+//		}
+//		gm2.put((index++)+"_goods",gm.get("goods"));
+//		//lhm.put((index++)+"_goods",gm.get("goods"));
+//		}
+//		lhm.put("goods", gm2);
+//		return lhm;
+//	}
+	LinkedList<LinkedHashMap<String,Object>> getOGViewGoupByOid(Integer uid){
+		
+		LinkedList<LinkedHashMap<String,Object>> list =null;
+		list= om.getOGViewGoupByOid(uid);
+		
+		return list;
 	}
 	public static LinkedList<HashMap<String, Object>> getOrderList(Long oid,Integer uid){
 		LinkedList<HashMap<String, Object>> list=null;
