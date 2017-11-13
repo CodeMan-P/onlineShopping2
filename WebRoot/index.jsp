@@ -144,6 +144,8 @@
 			购物车<span id="spc" style="font-size:18px; color:#F00"></span>
 			</a> <br />
 			<hr />
+			<a href="Order?flag=allorder">我的订单</a><br />
+			<hr />
 			<input type="button" value="注销" id="bt2"/>
 		</center>
 	</div>
@@ -159,6 +161,7 @@
 						<br />
 					</form>
 					<input type="button" id="bt" value="登录" /> <a href="jsp/regist.jsp">新用户注册</a>
+					
 				</center>
 			</div>
 	<c:choose>

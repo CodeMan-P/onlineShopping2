@@ -5,8 +5,8 @@ import java.io.PrintWriter;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.LinkedList;
-import java.util.Map;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -20,7 +20,6 @@ import com.mod.bean.Address;
 import com.mod.bean.Goods;
 import com.mod.bean.OrderForm;
 import com.mod.bean.Orders;
-import com.mod.bean.ShoppingCar;
 import com.service.GoodsService;
 import com.service.OrdersService;
 import com.service.SpCarService;
@@ -126,7 +125,11 @@ public class OrderSlt extends HttpServlet {
 				OrdersService.addOrders(orders, orderform);
 			}
 		} else if (flag.equals("allorder")) {
-
+			
+			ObjectMapper mapper = new ObjectMapper();
+			LinkedList<LinkedHashMap<String, Object>> ogview = OrdersService.getOGViewGoupByOid(uid);
+			String json = mapper.writeValueAsString(ogview);
+			request.getSession().setAttribute("ogJson", json);
 			response.sendRedirect("jsp/allorders.jsp");
 		}
 		out.close();
