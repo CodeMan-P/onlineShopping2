@@ -64,7 +64,7 @@ public class OrderSlt extends HttpServlet {
 		response.setCharacterEncoding("utf-8");
 		response.setContentType("text/html");
 		String flag = request.getParameter("flag");
-		if(flag == null){
+		if (flag == null) {
 			System.out.println("空FALG");
 			return;
 		}
@@ -81,38 +81,39 @@ public class OrderSlt extends HttpServlet {
 				ObjectMapper mapper = new ObjectMapper();
 				String hmJson = mapper.writeValueAsString(hm);
 				request.getSession().setAttribute("hm", hmJson);
-				//request.getRequestDispatcher("jsp/order.jsp").forward(request, response);
+				// request.getRequestDispatcher("jsp/order.jsp").forward(request,
+				// response);
 				response.sendRedirect("jsp/order.jsp");
 				return;
 			} else {
 				out.write("添加失败！");
 			}
 			out.flush();
-		} else if (flag.equalsIgnoreCase("single")){
-			
-			//商品界面直接购买
+		} else if (flag.equalsIgnoreCase("single")) {
+
+			// 商品界面直接购买
 			creatFakeView(request);
 
 			out.write("order.jsp");
 			out.flush();
-			//response.sendRedirect("jsp/order.jsp");
-		} else if(flag.endsWith("pay")){
+			// response.sendRedirect("jsp/order.jsp");
+		} else if (flag.endsWith("pay")) {
 			System.out.println("支付");
 			String payPwd = request.getParameter("payPwd");
 			String oid = request.getParameter("oid");
-			if(payPwd.equalsIgnoreCase("123456")){
-				out.write("{\"message\":\"支付成功！\",\"num\":"+0+"}");
-			}else{
+			if (payPwd.equalsIgnoreCase("123456")) {
+				out.write("{\"message\":\"支付成功！\",\"num\":" + 0 + "}");
+			} else {
 				out.write("{\"message\":\"支付失败！\"}");
 				out.flush();
 				out.close();
 				return;
 			}
-			if (flag.equalsIgnoreCase("mpay")){
+			if (flag.equalsIgnoreCase("mpay")) {
 				System.out.println(oid);
 				OrdersService.updateByOUid(oid, uid);
-			} else if (flag.equalsIgnoreCase("spay")){
-				String address= request.getParameter("addr");
+			} else if (flag.equalsIgnoreCase("spay")) {
+				String address = request.getParameter("addr");
 				String ofJson = (String) request.getSession().getAttribute("ofJson");
 				String oJson = (String) request.getSession().getAttribute("oJson");
 				System.out.println(ofJson);
@@ -124,28 +125,31 @@ public class OrderSlt extends HttpServlet {
 				orders.setAddress(address);
 				OrdersService.addOrders(orders, orderform);
 			}
+		} else if (flag.equals("allorder")) {
+
+			response.sendRedirect("jsp/allorders.jsp");
 		}
 		out.close();
 	}
-	
-	public  void creatFakeView(HttpServletRequest request){
+
+	public void creatFakeView(HttpServletRequest request) {
 		HashMap<String, Object> hm = new HashMap<String, Object>();
-		HashMap<String, Object> goodsMap= new HashMap<String, Object>();
+		HashMap<String, Object> goodsMap = new HashMap<String, Object>();
 		SimpleDateFormat smf = new SimpleDateFormat("yyyyMMddHHmmss");
 		String oid = smf.format(new Date());
-		//uid
+		// uid
 		int gid = Integer.parseInt(request.getParameter("gid"));
 		Goods goods = GoodsService.getGoods(gid);
 		String gname = goods.getGname();
 		int gnum = Integer.parseInt(request.getParameter("gnum"));
 		double price = goods.getPrice();
-		double SubTotal = price*gnum;
+		double SubTotal = price * gnum;
 		double sum = SubTotal;
 		String imgPath = goods.getImgpath();
 		int stock = goods.getStock();
 		int tid = goods.getTid();
 		String address = null;
-		String descption= request.getParameter("desc");
+		String descption = request.getParameter("desc");
 		ObjectMapper mapper = new ObjectMapper();
 		String hmJson = null;
 		int uid = (int) request.getSession().getAttribute("uid");
@@ -173,7 +177,7 @@ public class OrderSlt extends HttpServlet {
 		of.setUid(uid);
 		String ofJson = null;
 		String oJson = null;
-		
+
 		try {
 			hmJson = mapper.writeValueAsString(hm);
 			ofJson = mapper.writeValueAsString(of);
@@ -184,7 +188,7 @@ public class OrderSlt extends HttpServlet {
 		request.getSession().setAttribute("hm", hmJson);
 		request.getSession().setAttribute("ofJson", ofJson);
 		request.getSession().setAttribute("oJson", oJson);
-		LinkedList<Address> adresList=UserService.getAdress(uid);
+		LinkedList<Address> adresList = UserService.getAdress(uid);
 		String adresJson = null;
 		try {
 			adresJson = mapper.writerWithDefaultPrettyPrinter().writeValueAsString(adresList);
@@ -193,6 +197,7 @@ public class OrderSlt extends HttpServlet {
 		}
 		request.getSession().setAttribute("adresJson", adresJson);
 	}
+
 	@SuppressWarnings("unchecked")
 	public HashMap<String, Object> jsonFactory(LinkedList<HashMap<String, Object>> orderslist) {
 		// 提取公共字段
@@ -249,7 +254,7 @@ public class OrderSlt extends HttpServlet {
 			for (String temp : indexs) {
 				buyCids.add(Integer.parseInt(temp));
 			}
-			
+
 			String address = request.getParameter("adresId");
 			LinkedList<Integer> tempcids = new LinkedList<Integer>();
 			tempcids.addAll(buyCids);
@@ -277,7 +282,7 @@ public class OrderSlt extends HttpServlet {
 				tempOrder.setGnum(gnum);
 				double subtotal = gnum * price;
 				tempOrder.setSubtotal(subtotal);
-				tempOrder.setDescption((String)temp.get("descption"));
+				tempOrder.setDescption((String) temp.get("descption"));
 				orderlist.add(tempOrder);
 				sum += subtotal;
 			}

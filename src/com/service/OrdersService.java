@@ -1,6 +1,7 @@
 package com.service;
 
 import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.LinkedList;
 
 import com.dao.OrdersDao;
@@ -30,5 +31,10 @@ public class OrdersService {
 
 	public static boolean addOrders(Orders orders, OrderForm orderform) {
 		return OrdersDao.addOrders(orders, orderform);
+	}
+
+	public static LinkedList<LinkedHashMap<String, Object>> getOGViewGoupByOid(Integer uid) {
+
+		return OrdersDao.getOGViewGoupByOid(uid);
 	}
 }

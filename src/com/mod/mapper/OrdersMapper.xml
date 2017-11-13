@@ -111,7 +111,8 @@
 		<result property="state" column="state" jdbcType="VARCHAR"
 			javaType="java.lang.String" />
 		<result column="sum" jdbcType="DOUBLE" property="sum" />
-		<collection property="goods" ofType="java.util.LinkedList" select="getOGViewSub"
+		
+		<collection  property="goods" ofType="java.util.LinkedList" select="getOGViewSub"
 			column="{oid1 = oid,uid1 = uid}">
 
 		</collection>

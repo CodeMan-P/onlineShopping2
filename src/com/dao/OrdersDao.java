@@ -45,79 +45,59 @@ public class OrdersDao {
 			e.printStackTrace();
 		}
 	}
+
 	@Test
-	public void testMethod(){
-		//LinkedList<HashMap<String, Object>> list=null;
-		//updateByOUid(20171112233536L,1);
-		//deleOrders("20171113000907", 1);
+	public void testMethod() {
+		// LinkedList<HashMap<String, Object>> list=null;
+		// updateByOUid(20171112233536L,1);
+		// deleOrders("20171113000907", 1);
 		
 		ObjectMapper mapper = new ObjectMapper();
 
-		LinkedList<LinkedHashMap<String,Object>> list =null;
-		list=getOGViewGoupByOid(1);
+		LinkedList<LinkedHashMap<String, Object>> list = null;
+		list = getOGViewGoupByOid(1);
 		try {
 			System.out.println(mapper.writerWithDefaultPrettyPrinter().writeValueAsString(list));
 		} catch (JsonProcessingException e) {
 			e.printStackTrace();
 		}
-		
-//		try {
-//			String json = mapper.writeValueAsString(list.get("goods"));
-//			HashMap<String, Object> hm = mapper.readValue(json, HashMap.class);
-//			System.out.println("===============================");
-//			System.out.println(mapper.writerWithDefaultPrettyPrinter().writeValueAsString(hm));
-//		} catch (JsonProcessingException e1) {
-//			// TODO Auto-generated catch block
-//			e1.printStackTrace();
-//		} catch (IOException e) {
-//			// TODO Auto-generated catch block
-//			e.printStackTrace();
-//		}
-	
-		
+
+		// try {
+		// String json = mapper.writeValueAsString(list.get("goods"));
+		// HashMap<String, Object> hm = mapper.readValue(json, HashMap.class);
+		// System.out.println("===============================");
+		// System.out.println(mapper.writerWithDefaultPrettyPrinter().writeValueAsString(hm));
+		// } catch (JsonProcessingException e1) {
+		// // TODO Auto-generated catch block
+		// e1.printStackTrace();
+		// } catch (IOException e) {
+		// // TODO Auto-generated catch block
+		// e.printStackTrace();
+		// }
+
 	}
-//	LinkedHashMap<String, Object> getOGViewGoupByOid(Integer uid){
-//		
-//		LinkedList<HashMap<String,Object>> list =null;
-//		list= om.getOGViewGoupByOid(uid);
-//		LinkedHashMap<String, Object> lhm = new LinkedHashMap<String, Object>();
-//		Iterator<HashMap<String,Object>> it = list.iterator();
-//		HashMap<String,Object> gm = null;
-//		int index = 1;
-//		HashMap<String,Object> gm2 = new HashMap<String, Object>();
-//		while(it.hasNext()){
-//		gm = it.next();
-//		if(index == 1){
-//			for(String s:gm.keySet()){
-//				if(!s.equals("goods")){
-//					lhm.put(s, gm.get(s));
-//				}
-//			}
-//		}
-//		gm2.put((index++)+"_goods",gm.get("goods"));
-//		//lhm.put((index++)+"_goods",gm.get("goods"));
-//		}
-//		lhm.put("goods", gm2);
-//		return lhm;
-//	}
-	LinkedList<LinkedHashMap<String,Object>> getOGViewGoupByOid(Integer uid){
-		
-		LinkedList<LinkedHashMap<String,Object>> list =null;
-		list= om.getOGViewGoupByOid(uid);
-		
+
+	public static LinkedList<LinkedHashMap<String, Object>> getOGViewGoupByOid(Integer uid) {
+
+		LinkedList<LinkedHashMap<String, Object>> list = null;
+		list = om.getOGViewGoupByOid(uid);
+
 		return list;
 	}
-	public static LinkedList<HashMap<String, Object>> getOrderList(Long oid,Integer uid){
-		LinkedList<HashMap<String, Object>> list=null;
-		list=ofm.getOrderList(oid, uid);
+
+	public static LinkedList<HashMap<String, Object>> getOrderList(Long oid, Integer uid) {
+		LinkedList<HashMap<String, Object>> list = null;
+		list = ofm.getOrderList(oid, uid);
 		return list;
 	}
-	public static LinkedList<HashMap<String, Object>> getOrderList(String oid,Integer uid){
-		LinkedList<HashMap<String, Object>> list=null;
-		list=ofm.getOrderList(oid, uid);
+
+	public static LinkedList<HashMap<String, Object>> getOrderList(String oid, Integer uid) {
+		LinkedList<HashMap<String, Object>> list = null;
+		list = ofm.getOrderList(oid, uid);
 		return list;
 	}
-	public static boolean updateByOUid(String oid,Integer uid){
+
+	public static boolean updateByOUid(String oid, Integer uid) {
 		Long oidTemp = 0L;
 		try {
 			oidTemp = Long.parseLong(oid);
@@ -127,7 +107,8 @@ public class OrdersDao {
 		}
 		return updateByOUid(oidTemp, uid);
 	}
-	public static boolean updateByOUid(Long oid,Integer uid){
+
+	public static boolean updateByOUid(Long oid, Integer uid) {
 		int i = om.updateByOUid(oid, uid);
 		if (i > 0) {
 			session.commit();
@@ -135,27 +116,29 @@ public class OrdersDao {
 		}
 		return false;
 	}
+
 	static Logger log = Logger.getLogger(OrdersDao.class.getName());
-	public static boolean addOrders(Orders orders,OrderForm orderform){
+
+	public static boolean addOrders(Orders orders, OrderForm orderform) {
 		int i = 0;
 		try {
-			i = om.insertSelective(orders);//添加orders表
+			i = om.insertSelective(orders);// 添加orders表
 			if (i > 0) {
-					i = ofm.insertSelective(orderform);//添加orderForm表
-					if (i <= 0) {
-						session.rollback();
-						return false;
-					}
-					int gid = orderform.getGid();
-					Goods goods = GoodsDao.getGoods(gid);
-					int gnum = orderform.getGnum();
-					int stock = goods.getStock()-gnum;
-					goods.setStock(stock);
-					i=gm.updateByPrimaryKeySelective(goods);
-					if (i <= 0) {
-						session.rollback();
-						return false;
-					}
+				i = ofm.insertSelective(orderform);// 添加orderForm表
+				if (i <= 0) {
+					session.rollback();
+					return false;
+				}
+				int gid = orderform.getGid();
+				Goods goods = GoodsDao.getGoods(gid);
+				int gnum = orderform.getGnum();
+				int stock = goods.getStock() - gnum;
+				goods.setStock(stock);
+				i = gm.updateByPrimaryKeySelective(goods);
+				if (i <= 0) {
+					session.rollback();
+					return false;
+				}
 			}
 		} catch (Exception e) {
 			session.rollback();
@@ -177,33 +160,34 @@ public class OrdersDao {
 			return true;
 		}
 
-		return false;	
+		return false;
 	}
-	public static boolean deleOrders(Long oid,Integer uid){
+
+	public static boolean deleOrders(Long oid, Integer uid) {
 		LinkedList<HashMap<String, Object>> list = ofm.getOrderList(oid, uid);
 		Iterator<HashMap<String, Object>> it = list.iterator();
 		int i = 0;
 		Goods goods = null;
-		int gid,gnum,stock;
-		while(it.hasNext()){
+		int gid, gnum, stock;
+		while (it.hasNext()) {
 			HashMap<String, Object> temp = it.next();
 			gid = (int) temp.get("gid");
 			stock = (int) temp.get("stock");
-			gnum =  (int) temp.get("gnum");
+			gnum = (int) temp.get("gnum");
 			stock = stock + gnum;
 			goods = new Goods();
 			goods.setGid(gid);
 			goods.setStock(stock);
 			i = gm.updateByPrimaryKeySelective(goods);
-			if(i<=0){
+			if (i <= 0) {
 				session.rollback();
 				return false;
 			}
 		}
-		
+
 		try {
 			i = om.deleByOUid(oid, uid);
-			if(i>0){
+			if (i > 0) {
 				i = ofm.deleByOUid(oid, uid);
 			}
 		} catch (Exception e) {
@@ -211,12 +195,13 @@ public class OrdersDao {
 			session.rollback();
 			return false;
 		}
-		if(i>0){
+		if (i > 0) {
 			return true;
 		}
 		return false;
-	}	
-	public static boolean deleOrders(String oid,Integer uid){
+	}
+
+	public static boolean deleOrders(String oid, Integer uid) {
 		Long oidTemp = 0L;
 		try {
 			oidTemp = Long.parseLong(oid);
@@ -226,7 +211,8 @@ public class OrdersDao {
 		}
 		return deleOrders(oidTemp, uid);
 	}
-	public static boolean addOrders(Orders orders, LinkedList<OrderForm> orderlist,LinkedList<Integer> buyCids) {
+
+	public static boolean addOrders(Orders orders, LinkedList<OrderForm> orderlist, LinkedList<Integer> buyCids) {
 		int i = 0;
 		try {
 			i = om.insertSelective(orders);
@@ -237,19 +223,19 @@ public class OrdersDao {
 						session.rollback();
 						return false;
 					}
-					//删减数据库对应商品
+					// 删减数据库对应商品
 					int gid = orderform.getGid();
 					Goods goods = GoodsDao.getGoods(gid);
 					int gnum = orderform.getGnum();
-					int stock = goods.getStock()-gnum;
+					int stock = goods.getStock() - gnum;
 					goods.setStock(stock);
-					i=gm.updateByPrimaryKeySelective(goods);
+					i = gm.updateByPrimaryKeySelective(goods);
 					if (i <= 0) {
 						session.rollback();
 						return false;
 					}
 				}
-				for(Integer cid:buyCids){
+				for (Integer cid : buyCids) {
 					i = sc.deleteByPrimaryKey(cid);
 					if (i <= 0) {
 						session.rollback();
@@ -278,21 +264,25 @@ public class OrdersDao {
 		}
 		return false;
 	}
-	private static void orderLog(Orders orders, OrderForm orderform){
+
+	private static void orderLog(Orders orders, OrderForm orderform) {
 		ObjectMapper mapper = new ObjectMapper();
 		try {
-			log.info("添加新订单("+orders.getOid()+")："+mapper.writerWithDefaultPrettyPrinter().writeValueAsString(orders));
-			log.info("订单详情("+orders.getOid()+")："+mapper.writerWithDefaultPrettyPrinter().writeValueAsString(orderform));
+			log.info("添加新订单(" + orders.getOid() + ")："
+					+ mapper.writerWithDefaultPrettyPrinter().writeValueAsString(orders));
+			log.info("订单详情(" + orders.getOid() + ")："
+					+ mapper.writerWithDefaultPrettyPrinter().writeValueAsString(orderform));
 		} catch (JsonProcessingException e) {
 			e.printStackTrace();
 		}
-		
+
 	}
-	private static void orderLog(Orders orders, LinkedList<OrderForm> orderlist){
+
+	private static void orderLog(Orders orders, LinkedList<OrderForm> orderlist) {
 		ObjectMapper mapper = new ObjectMapper();
 		SerializerProvider sp = mapper.getSerializerProvider();
-		//sp.setAttribute(list2, te);
-		
+		// sp.setAttribute(list2, te);
+
 		sp.setNullValueSerializer(new JsonSerializer<Object>() {
 			@Override
 			public void serialize(Object arg0, JsonGenerator arg1, SerializerProvider arg2)
@@ -301,11 +291,13 @@ public class OrdersDao {
 			}
 		});
 		try {
-			log.info("添加新订单("+orders.getOid()+")："+mapper.writerWithDefaultPrettyPrinter().writeValueAsString(orders));
-			log.info("订单详情("+orders.getOid()+")："+mapper.writerWithDefaultPrettyPrinter().writeValueAsString(orderlist));
+			log.info("添加新订单(" + orders.getOid() + ")："
+					+ mapper.writerWithDefaultPrettyPrinter().writeValueAsString(orders));
+			log.info("订单详情(" + orders.getOid() + ")："
+					+ mapper.writerWithDefaultPrettyPrinter().writeValueAsString(orderlist));
 		} catch (JsonProcessingException e) {
 			e.printStackTrace();
 		}
-		
+
 	}
 }
