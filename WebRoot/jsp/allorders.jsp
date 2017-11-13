@@ -54,7 +54,7 @@ for(LinkedHashMap<String, Object> temp : list){
     订单号：<%=oid%><br/><hr/>
 下单日期：<%=sdf2.format(sdf.parse(oid))%><br><hr>
 收件地址：<%=temp.get("address")%><br><hr>
-订单状态：<font style="color:orange;"><%=state %></font><input type="button" id="<%=oid%>" value="<%=state.equals("已付款")?"删除":"付款"%>">
+订单状态：<font style="color:<%=state.equals("已付款")?"blue":"red"%>;"><%=state %></font><input type="button" id="<%=oid%>" value="<%=state.equals("已付款")?"删除":"付款"%>">
 <br><hr>
 
 订单金额：<font style="color:red;">￥<%=temp.get("sum") %></font><br><hr>
