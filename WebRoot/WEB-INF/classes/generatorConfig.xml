@@ -21,6 +21,7 @@
             enableUpdateByExample="false" enableDeleteByExample="false"
 	>
 	<columnOverride column="aphone" jdbcType="DECIMAL" javaType="java.long.String" />
+	<columnOverride column="address" javaType="java.lang.String" jdbcType="VARCHAR" />
 	</table>
 	<table tableName="goodstype" domainObjectName="GoodsType"
 	 enableCountByExample="false" enableSelectByExample="false"

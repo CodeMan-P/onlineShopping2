@@ -39,6 +39,51 @@ public class UsersDao {
 			e.printStackTrace();
 		}
     }
+    public static boolean addAddress(Address address){
+    	int i = 0;
+    	
+    	try {
+			i=am.insertSelective(address);
+		} catch (Exception e) {
+			log.warn(e.getLocalizedMessage());
+			e.printStackTrace();
+			return false;
+		}
+    	if(i>0){
+    		return true;
+    	}
+    	return false;
+    }
+    public static boolean editAddress(Address address){
+    	int i = 0;
+    	
+    	try {
+			i=am.updateByPrimaryKeySelective(address);
+		} catch (Exception e) {
+			log.warn(e.getLocalizedMessage());
+			e.printStackTrace();
+			return false;
+		}
+    	if(i>0){
+    		return true;
+    	}
+    	return false;
+    }
+    public static boolean deleAddress(Integer addressId){
+    	int i = 0;
+    	
+    	try {
+			i=am.deleteByPrimaryKey(addressId);
+		} catch (Exception e) {
+			log.warn(e.getLocalizedMessage());
+			e.printStackTrace();
+			return false;
+		}
+    	if(i>0){
+    		return true;
+    	}
+    	return false;
+    }
     public static LinkedList<Address> getAdress(Integer uid){
     	LinkedList<Address> list = am.getAdrsListByUid(uid);
     	return list;

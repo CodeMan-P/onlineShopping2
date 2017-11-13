@@ -68,15 +68,14 @@ public class Login extends HttpServlet {
 		request.setCharacterEncoding("utf-8");
 		response.setContentType("text/html");
 		response.setCharacterEncoding("utf-8");
-		PrintWriter out = response.getWriter();
 		String name = request.getParameter("name");
+		PrintWriter out = response.getWriter();
 		String flag = request.getParameter("flag");
 		if(flag!=null&&flag.equalsIgnoreCase("flush")){
 			int uid;
 			try{
 				uid = (int) request.getSession().getAttribute("uid");
 			}catch(Exception e){
-				e.printStackTrace();
 				out.close();
 				return;
 			}
