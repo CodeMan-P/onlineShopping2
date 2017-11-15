@@ -9125,3 +9125,159 @@
 11-15 09:39:52 ====> Parameters: 
 11-15 09:39:52 <====      Total: 1
 11-15 09:39:52 <==      Total: 3
+11-15 11:52:38 Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+11-15 11:52:38 PooledDataSource forcefully closed/removed all connections.
+11-15 11:52:38 PooledDataSource forcefully closed/removed all connections.
+11-15 11:52:38 PooledDataSource forcefully closed/removed all connections.
+11-15 11:52:38 PooledDataSource forcefully closed/removed all connections.
+11-15 11:52:43 Opening JDBC Connection
+11-15 11:52:43 Created connection 423668490.
+11-15 11:52:43 Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@1940ab0a]
+11-15 11:52:43 ==>  Preparing: SELECT * FROM users WHERE uname = ? and upwd = ? 
+11-15 11:52:43 ==> Parameters: xiaoming(String), 123(String)
+11-15 11:52:43 <==    Columns: uid, uname, upwd, phone, city, regDate, idCard, realName, age, email, sex, avatar
+11-15 11:52:43 <==        Row: 1, xiaoming, 123, 18899119292, 西安, 2017-11-11, null, 小明, 22, null, 男, <<BLOB>>
+11-15 11:52:43 <==      Total: 1
+11-15 11:52:43 Opening JDBC Connection
+11-15 11:52:43 Created connection 163781353.
+11-15 11:52:43 Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@9c31ae9]
+11-15 11:52:43 ==>  Preparing: SELECT COUNT(1) FROM shoppingcar WHERE uid = ?; 
+11-15 11:52:43 ==> Parameters: 1(Integer)
+11-15 11:52:43 <==      Total: 1
+11-15 11:52:45 Opening JDBC Connection
+11-15 11:52:45 Created connection 2098985995.
+11-15 11:52:45 Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@7d1bfc0b]
+11-15 11:52:45 ==>  Preparing: select gid, gname, tid, price, descption, imgPath, filePath, stock from goods where gid = ? 
+11-15 11:52:45 ==> Parameters: 1(Integer)
+11-15 11:52:45 <==      Total: 1
+11-15 11:52:48 ==>  Preparing: select cid, addGoodsTime, uid, gid, gnum, descption from shoppingcar where uid = ? and gid = ? 
+11-15 11:52:48 ==> Parameters: 1(Integer), 1(Integer)
+11-15 11:52:48 <==      Total: 0
+11-15 11:52:48 ==>  Preparing: insert into shoppingcar ( addGoodsTime, uid, gid, gnum, descption ) values ( ?, ?, ?, ?, ? ) 
+11-15 11:52:48 ==> Parameters: 2017-11-15 11:52:48.256(Timestamp), 1(Integer), 1(Integer), 1(Integer), [{"网络类型" : "4G全网通","机身颜色" : "钻雕金","套餐类型" : "官方标配","存储容量" : "128GB","购买方式" : "裸机","版本" : "小米6"}](String)
+11-15 11:52:48 <==    Updates: 1
+11-15 11:52:48 ==>  Preparing: SELECT COUNT(1) FROM shoppingcar WHERE uid = ?; 
+11-15 11:52:48 ==> Parameters: 1(Integer)
+11-15 11:52:48 <==      Total: 1
+11-15 11:52:50 ==>  Preparing: select * from address where uid = ? 
+11-15 11:52:50 ==> Parameters: 1(Integer)
+11-15 11:52:50 <==      Total: 2
+11-15 11:52:50 ==>  Preparing: select * from view_car_goods where uid = ?; 
+11-15 11:52:50 ==> Parameters: 1(Integer)
+11-15 11:52:50 <==      Total: 1
+11-15 11:52:55 ==>  Preparing: select * from view_car_goods where uid = ?; 
+11-15 11:52:55 ==> Parameters: 1(Integer)
+11-15 11:52:55 <==      Total: 1
+11-15 11:52:55 Opening JDBC Connection
+11-15 11:52:55 Created connection 986937664.
+11-15 11:52:55 Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@3ad37940]
+11-15 11:52:55 ==>  Preparing: insert into orders ( oid, uid, sum, address ) values ( ?, ?, ?, ? ) 
+11-15 11:52:55 ==> Parameters: 20171115115255(String), 1(Integer), 3488.0(Double), java.io.StringReader@52de9ec6(StringReader)
+11-15 11:52:55 <==    Updates: 1
+11-15 11:52:55 ==>  Preparing: insert into orderform ( oid, gid, gnum, SubTotal, descption, uid ) values ( ?, ?, ?, ?, ?, ? ) 
+11-15 11:52:55 ==> Parameters: 20171115115255(String), 1(Integer), 1(Integer), 3488.0(Double), [{"网络类型" : "4G全网通","机身颜色" : "钻雕金","套餐类型" : "官方标配","存储容量" : "128GB","购买方式" : "裸机","版本" : "小米6"}](String), 1(Integer)
+11-15 11:52:55 <==    Updates: 1
+11-15 11:52:55 ==>  Preparing: update goods SET gname = ?, tid = ?, price = ?, descption = ?, imgPath = ?, filePath = ?, stock = ? where gid = ? 
+11-15 11:52:55 ==> Parameters: Huawei/华为 P10全网通手机(String), 2(Integer), 3488.0(Double), [ {
+  "网络类型" : "4G全网通",
+  "机身颜色" : "钻雕金,钻雕蓝,草木绿,曜石黑,玫瑰金",
+  "套餐类型" : "官方标配,套餐一,套餐二,套餐三,套餐四,套餐五",
+  "存储容量" : "64GB,128GB",
+  "购买方式" : "裸机",
+  "版本" : "Mate 10,Mate 10 62G+128G,麦芒6,P10,畅享7"
+} ](String), goods/huawei_1/P10.jpg(String), goods/huawei_1/img/(String), 9950(Integer), 1(Integer)
+11-15 11:52:55 <==    Updates: 1
+11-15 11:52:55 ==>  Preparing: delete from shoppingcar where cid = ? 
+11-15 11:52:55 ==> Parameters: 68(Integer)
+11-15 11:52:55 <==    Updates: 1
+11-15 11:52:55 Committing JDBC Connection [com.mysql.jdbc.JDBC4Connection@3ad37940]
+11-15 11:52:55 添加新订单(20171115115255)：{
+  "oid" : "20171115115255",
+  "uid" : 1,
+  "state" : "待付款",
+  "sum" : 3488.0,
+  "address" : "西安市长里村"
+}
+11-15 11:52:55 订单详情(20171115115255)：[ {
+  "oid" : "20171115115255",
+  "gid" : 1,
+  "gnum" : 1,
+  "subtotal" : 3488.0,
+  "descption" : "[{\"网络类型\" : \"4G全网通\",\"机身颜色\" : \"钻雕金\",\"套餐类型\" : \"官方标配\",\"存储容量\" : \"128GB\",\"购买方式\" : \"裸机\",\"版本\" : \"小米6\"}]",
+  "uid" : 1
+} ]
+11-15 11:52:55 ==>  Preparing: select * from view_order_goods where oid = ? and uid = ?; 
+11-15 11:52:55 ==> Parameters: 20171115115255(String), 1(Integer)
+11-15 11:52:55 <==      Total: 1
+11-15 11:52:59 20171115115255--订单付款！
+11-15 11:52:59 ==>  Preparing: update orders set state = "已付款" where oid = ? and uid = ? 
+11-15 11:52:59 ==> Parameters: 20171115115255(Long), 1(Integer)
+11-15 11:52:59 <==    Updates: 1
+11-15 11:52:59 Committing JDBC Connection [com.mysql.jdbc.JDBC4Connection@3ad37940]
+11-15 11:53:00 ==>  Preparing: SELECT COUNT(1) FROM shoppingcar WHERE uid = ?; 
+11-15 11:53:00 ==> Parameters: 1(Integer)
+11-15 11:53:00 <==      Total: 1
+11-15 11:53:02 ==>  Preparing: select oid,state,address,sum,uid from view_order_goods where uid = ? group by oid 
+11-15 11:53:02 ==> Parameters: 1(Integer)
+11-15 11:53:02 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171114000359 and uid = 1 
+11-15 11:53:02 ====> Parameters: 
+11-15 11:53:02 <====      Total: 2
+11-15 11:53:02 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171114000839 and uid = 1 
+11-15 11:53:02 ====> Parameters: 
+11-15 11:53:02 <====      Total: 1
+11-15 11:53:02 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171114150342 and uid = 1 
+11-15 11:53:02 ====> Parameters: 
+11-15 11:53:02 <====      Total: 1
+11-15 11:53:02 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171115115255 and uid = 1 
+11-15 11:53:02 ====> Parameters: 
+11-15 11:53:02 <====      Total: 1
+11-15 11:53:02 <==      Total: 4
+11-15 11:53:06 ==>  Preparing: select * from view_order_goods where oid = ? and uid = ?; 
+11-15 11:53:06 ==> Parameters: 20171114000359(String), 1(Integer)
+11-15 11:53:06 <==      Total: 2
+11-15 11:53:11 20171114000359--订单付款！
+11-15 11:53:11 ==>  Preparing: update orders set state = "已付款" where oid = ? and uid = ? 
+11-15 11:53:11 ==> Parameters: 20171114000359(Long), 1(Integer)
+11-15 11:53:11 <==    Updates: 1
+11-15 11:53:11 Committing JDBC Connection [com.mysql.jdbc.JDBC4Connection@3ad37940]
+11-15 11:53:12 ==>  Preparing: SELECT COUNT(1) FROM shoppingcar WHERE uid = ?; 
+11-15 11:53:12 ==> Parameters: 1(Integer)
+11-15 11:53:12 <==      Total: 1
+11-15 11:53:16 ==>  Preparing: select * from address where uid = ? 
+11-15 11:53:17 ==> Parameters: 1(Integer)
+11-15 11:53:17 <==      Total: 2
+11-15 11:53:22 ==>  Preparing: insert into orders ( oid, uid, state, sum, address ) values ( ?, ?, ?, ?, ? ) 
+11-15 11:53:22 ==> Parameters: 20171115115316(String), 1(Integer), 已付款(String), 3488.0(Double), java.io.StringReader@3261f544(StringReader)
+11-15 11:53:22 <==    Updates: 1
+11-15 11:53:22 ==>  Preparing: insert into orderform ( oid, gid, gnum, SubTotal, descption, uid ) values ( ?, ?, ?, ?, ?, ? ) 
+11-15 11:53:22 ==> Parameters: 20171115115316(String), 1(Integer), 1(Integer), 3488.0(Double), [{"网络类型" : "4G全网通","机身颜色" : "钻雕金","套餐类型" : "官方标配","存储容量" : "128GB","购买方式" : "裸机","版本" : "小米6"}](String), 1(Integer)
+11-15 11:53:22 <==    Updates: 1
+11-15 11:53:22 ==>  Preparing: update goods SET gname = ?, tid = ?, price = ?, descption = ?, imgPath = ?, filePath = ?, stock = ? where gid = ? 
+11-15 11:53:22 ==> Parameters: Huawei/华为 P10全网通手机(String), 2(Integer), 3488.0(Double), [ {
+  "网络类型" : "4G全网通",
+  "机身颜色" : "钻雕金,钻雕蓝,草木绿,曜石黑,玫瑰金",
+  "套餐类型" : "官方标配,套餐一,套餐二,套餐三,套餐四,套餐五",
+  "存储容量" : "64GB,128GB",
+  "购买方式" : "裸机",
+  "版本" : "Mate 10,Mate 10 62G+128G,麦芒6,P10,畅享7"
+} ](String), goods/huawei_1/P10.jpg(String), goods/huawei_1/img/(String), 9949(Integer), 1(Integer)
+11-15 11:53:22 <==    Updates: 1
+11-15 11:53:22 Committing JDBC Connection [com.mysql.jdbc.JDBC4Connection@3ad37940]
+11-15 11:53:22 添加新订单(20171115115316)：{
+  "oid" : "20171115115316",
+  "uid" : 1,
+  "state" : "已付款",
+  "sum" : 3488.0,
+  "address" : "西安市外包学院"
+}
+11-15 11:53:22 订单详情(20171115115316)：{
+  "oid" : "20171115115316",
+  "gid" : 1,
+  "gnum" : 1,
+  "subtotal" : 3488.0,
+  "descption" : "[{\"网络类型\" : \"4G全网通\",\"机身颜色\" : \"钻雕金\",\"套餐类型\" : \"官方标配\",\"存储容量\" : \"128GB\",\"购买方式\" : \"裸机\",\"版本\" : \"小米6\"}]",
+  "uid" : 1
+}
+11-15 11:53:23 ==>  Preparing: SELECT COUNT(1) FROM shoppingcar WHERE uid = ?; 
+11-15 11:53:23 ==> Parameters: 1(Integer)
+11-15 11:53:23 <==      Total: 1

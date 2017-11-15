@@ -32,7 +32,6 @@ $(document).ready(function(){
 		}
 		var oid = $(this).attr("id");
 		$("input[name=oid]").val(oid);
-		alert($("input[name=oid]").val());
 		$("#frm").submit();
 	});
 	$("input[type=button][value=删除]").hide();
