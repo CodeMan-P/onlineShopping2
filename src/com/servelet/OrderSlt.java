@@ -14,6 +14,9 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import org.apache.log4j.Logger;
+
+import com.dao.GoodsDao;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.mod.bean.Address;
@@ -51,7 +54,7 @@ public class OrderSlt extends HttpServlet {
 		// ").append(request.getContextPath());
 		this.doPost(request, response);
 	}
-
+	static Logger log = Logger.getLogger(OrderSlt.class.getName());
 	/**
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse
 	 *      response)
@@ -69,20 +72,33 @@ public class OrderSlt extends HttpServlet {
 		}
 		PrintWriter out = response.getWriter();
 		int uid = (int) request.getSession().getAttribute("uid");
-		if (flag.equalsIgnoreCase("multi")) {
+		if(flag.equalsIgnoreCase("payOrder")){//支付已存在订单
+			String  oid = (String) request.getParameter("oid");
+			LinkedList<HashMap<String, Object>> orderslist = OrdersService.getOrderList(oid, uid);
+			HashMap<String, Object> hm = OrdersService.jsonFactory(orderslist);
+			ObjectMapper mapper = new ObjectMapper();
+			String hmJson = mapper.writeValueAsString(hm);
+			request.getSession().setAttribute("hm", hmJson);
+			// request.getRequestDispatcher("jsp/order.jsp").forward(request,
+			// response);
+			response.sendRedirect("jsp/order.jsp");
+			out.close();
+			return;
+		}else if (flag.equalsIgnoreCase("multi")) {
 			// 下单购买一堆
 			SimpleDateFormat sf = new SimpleDateFormat("yyyyMMddHHmmss");
 			String oid = sf.format(new Date());
 			if (addOrders(request, response, oid)) {
 				// 获取当前订单视图
 				LinkedList<HashMap<String, Object>> orderslist = OrdersService.getOrderList(oid, uid);
-				HashMap<String, Object> hm = jsonFactory(orderslist);
+				HashMap<String, Object> hm = OrdersService.jsonFactory(orderslist);
 				ObjectMapper mapper = new ObjectMapper();
 				String hmJson = mapper.writeValueAsString(hm);
 				request.getSession().setAttribute("hm", hmJson);
 				// request.getRequestDispatcher("jsp/order.jsp").forward(request,
 				// response);
 				response.sendRedirect("jsp/order.jsp");
+				out.close();
 				return;
 			} else {
 				out.write("添加失败！");
@@ -97,7 +113,6 @@ public class OrderSlt extends HttpServlet {
 			out.flush();
 			// response.sendRedirect("jsp/order.jsp");
 		} else if (flag.endsWith("pay")) {
-			System.out.println("支付");
 			String payPwd = request.getParameter("payPwd");
 			String oid = request.getParameter("oid");
 			if (payPwd.equalsIgnoreCase("123456")) {
@@ -109,7 +124,7 @@ public class OrderSlt extends HttpServlet {
 				return;
 			}
 			if (flag.equalsIgnoreCase("mpay")) {
-				System.out.println(oid);
+				log.info(oid+"--订单付款！");
 				OrdersService.updateByOUid(oid, uid);
 			} else if (flag.equalsIgnoreCase("spay")) {
 				String address = request.getParameter("addr");
@@ -201,50 +216,7 @@ public class OrderSlt extends HttpServlet {
 		request.getSession().setAttribute("adresJson", adresJson);
 	}
 
-	@SuppressWarnings("unchecked")
-	public HashMap<String, Object> jsonFactory(LinkedList<HashMap<String, Object>> orderslist) {
-		// 提取公共字段
-		HashMap<String, Object> m = new HashMap<String, Object>();
-		LinkedList<String> fileds = new LinkedList<String>();
-		fileds.add("address");
-		fileds.add("sum");
-		fileds.add("oid");
-		fileds.add("uid");
-		fileds.add("state");
-
-		HashMap<String, Object> hm = null;
-		HashMap<String, Object> tempm = null;
-		// 移除公共字段存入 m
-		for (int i = 0; i < orderslist.size(); i++) {
-			hm = orderslist.get(i);
-			tempm = (HashMap<String, Object>) orderslist.get(i).clone();
-			if (i == 0) {
-				for (String s : tempm.keySet()) {
-					if (fileds.contains(s)) {
-						m.put(s, hm.remove(s));
-					}
-				}
-			} else {
-				for (String s : tempm.keySet()) {
-					if (fileds.contains(s)) {
-						hm.remove(s);
-					}
-				}
-			}
-			// 商品依次加入m
-			m.put((i + 1) + "_goods", hm);
-		}
-		;
-		// ObjectMapper mapper = new ObjectMapper();
-		// try {
-		// System.out.println(mapper.writerWithDefaultPrettyPrinter().writeValueAsString(m));
-		// } catch (JsonProcessingException e) {
-		// // TODO Auto-generated catch block
-		// e.printStackTrace();
-		// }
-
-		return m;
-	}
+	
 
 	private Boolean addOrders(HttpServletRequest request, HttpServletResponse response, String oid) {
 		LinkedList<OrderForm> orderlist = null;

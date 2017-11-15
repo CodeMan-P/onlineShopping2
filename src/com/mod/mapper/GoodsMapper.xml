@@ -35,6 +35,14 @@
     from goods
     where gid = #{gid,jdbcType=INTEGER}
   </select>
+  
+    <select id="getGoddsByTid" parameterType="java.lang.Integer" resultType="java.util.LinkedHashMap">
+    select 
+   	*
+    from goods
+    where tid = #{tid,jdbcType=INTEGER}
+  </select>
+  
   <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
     <!--
       WARNING - @mbggenerated

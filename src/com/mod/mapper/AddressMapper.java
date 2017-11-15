@@ -44,6 +44,5 @@ public interface AddressMapper {
 	 * @mbggenerated  Mon Nov 13 11:22:15 CST 2017
 	 */
 	int updateByPrimaryKey(Address record);
-
 	LinkedList<Address> getAdrsListByUid(@Param("uid")Integer uid);
 }

@@ -1,5 +1,11 @@
 package com.mod.mapper;
 
+import java.util.LinkedHashMap;
+import java.util.LinkedList;
+
+import org.apache.ibatis.annotations.Param;
+import org.apache.ibatis.annotations.Select;
+
 import com.mod.bean.Goods;
 
 public interface GoodsMapper {
@@ -39,4 +45,8 @@ public interface GoodsMapper {
 	 * @mbggenerated  Mon Nov 13 11:22:15 CST 2017
 	 */
 	int updateByPrimaryKey(Goods record);
+	
+	LinkedList<LinkedHashMap<String,Object>> getGoddsByTid(@Param("tid")Integer tid);
+	@Select("select * from goods where gname like '%${s}%'")
+	LinkedList<LinkedHashMap<String,Object>> getGoddsByRegExp(@Param("s")String s);
 }

@@ -8664,3 +8664,464 @@
 11-14 00:10:57 ====> Parameters: 
 11-14 00:10:57 <====      Total: 1
 11-14 00:10:57 <==      Total: 2
+11-14 09:10:12 Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+11-14 09:10:12 PooledDataSource forcefully closed/removed all connections.
+11-14 09:10:12 PooledDataSource forcefully closed/removed all connections.
+11-14 09:10:12 PooledDataSource forcefully closed/removed all connections.
+11-14 09:10:12 PooledDataSource forcefully closed/removed all connections.
+11-14 09:10:18 Opening JDBC Connection
+11-14 09:10:18 Created connection 302700555.
+11-14 09:10:18 Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@120ad80b]
+11-14 09:10:18 ==>  Preparing: SELECT * FROM users WHERE uname = ? and upwd = ? 
+11-14 09:10:18 ==> Parameters: xiaoming(String), 123(String)
+11-14 09:10:18 <==    Columns: uid, uname, upwd, phone, city, regDate, idCard, realName, age, email, sex, avatar
+11-14 09:10:18 <==        Row: 1, xiaoming, 123, 18899119292, 西安, 2017-11-11, null, 小明, 22, null, 男, <<BLOB>>
+11-14 09:10:18 <==      Total: 1
+11-14 09:10:18 Opening JDBC Connection
+11-14 09:10:18 Created connection 1077580524.
+11-14 09:10:18 Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@403a92ec]
+11-14 09:10:18 ==>  Preparing: SELECT COUNT(1) FROM shoppingcar WHERE uid = ?; 
+11-14 09:10:18 ==> Parameters: 1(Integer)
+11-14 09:10:18 <==      Total: 1
+11-14 09:10:22 Opening JDBC Connection
+11-14 09:10:22 Created connection 848498007.
+11-14 09:10:22 Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@32930d57]
+11-14 09:10:22 ==>  Preparing: select gid, gname, tid, price, descption, imgPath, filePath, stock from goods where gid = ? 
+11-14 09:10:22 ==> Parameters: 1(Integer)
+11-14 09:10:22 <==      Total: 1
+11-14 09:10:49 ==>  Preparing: select * from address where uid = ? 
+11-14 09:10:49 ==> Parameters: 1(Integer)
+11-14 09:10:49 <==      Total: 2
+11-14 09:10:49 ==>  Preparing: select * from view_car_goods where uid = ?; 
+11-14 09:10:49 ==> Parameters: 1(Integer)
+11-14 09:10:49 <==      Total: 0
+11-14 09:10:54 ==>  Preparing: select cid, addGoodsTime, uid, gid, gnum, descption from shoppingcar where uid = ? and gid = ? 
+11-14 09:10:54 ==> Parameters: 1(Integer), 1(Integer)
+11-14 09:10:54 <==      Total: 0
+11-14 09:10:54 ==>  Preparing: insert into shoppingcar ( addGoodsTime, uid, gid, gnum, descption ) values ( ?, ?, ?, ?, ? ) 
+11-14 09:10:54 ==> Parameters: 2017-11-14 09:10:54.753(Timestamp), 1(Integer), 1(Integer), 1(Integer), [{"网络类型" : "4G全网通","机身颜色" : "钻雕金","套餐类型" : "官方标配","存储容量" : "128GB","购买方式" : "裸机","版本" : "小米6"}](String)
+11-14 09:10:54 <==    Updates: 1
+11-14 09:10:54 ==>  Preparing: SELECT COUNT(1) FROM shoppingcar WHERE uid = ?; 
+11-14 09:10:54 ==> Parameters: 1(Integer)
+11-14 09:10:54 <==      Total: 1
+11-14 09:10:56 ==>  Preparing: select * from address where uid = ? 
+11-14 09:10:56 ==> Parameters: 1(Integer)
+11-14 09:10:56 <==      Total: 2
+11-14 09:10:56 ==>  Preparing: select * from view_car_goods where uid = ?; 
+11-14 09:10:56 ==> Parameters: 1(Integer)
+11-14 09:10:56 <==      Total: 1
+11-14 11:08:11 Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+11-14 11:08:11 PooledDataSource forcefully closed/removed all connections.
+11-14 11:08:11 PooledDataSource forcefully closed/removed all connections.
+11-14 11:08:11 PooledDataSource forcefully closed/removed all connections.
+11-14 11:08:11 PooledDataSource forcefully closed/removed all connections.
+11-14 11:08:40 Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+11-14 11:08:40 PooledDataSource forcefully closed/removed all connections.
+11-14 11:08:40 PooledDataSource forcefully closed/removed all connections.
+11-14 11:08:40 PooledDataSource forcefully closed/removed all connections.
+11-14 11:08:40 PooledDataSource forcefully closed/removed all connections.
+11-14 11:09:13 Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+11-14 11:09:13 PooledDataSource forcefully closed/removed all connections.
+11-14 11:09:13 PooledDataSource forcefully closed/removed all connections.
+11-14 11:09:13 PooledDataSource forcefully closed/removed all connections.
+11-14 11:09:13 PooledDataSource forcefully closed/removed all connections.
+11-14 11:09:14 Opening JDBC Connection
+11-14 11:09:14 Created connection 849373393.
+11-14 11:09:14 Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@32a068d1]
+11-14 11:09:14 ==>  Preparing: select * from goods where tid = ? 
+11-14 11:09:14 ==> Parameters: 2(Integer)
+11-14 11:09:14 <==      Total: 5
+11-14 11:11:25 Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+11-14 11:11:25 PooledDataSource forcefully closed/removed all connections.
+11-14 11:11:25 PooledDataSource forcefully closed/removed all connections.
+11-14 11:11:25 PooledDataSource forcefully closed/removed all connections.
+11-14 11:11:25 PooledDataSource forcefully closed/removed all connections.
+11-14 11:11:26 Opening JDBC Connection
+11-14 11:11:26 Created connection 849373393.
+11-14 11:11:26 Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@32a068d1]
+11-14 11:11:26 ==>  Preparing: select * from goods where tid = ? 
+11-14 11:11:26 ==> Parameters: 1(Integer)
+11-14 11:11:26 <==      Total: 0
+11-14 11:54:30 Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+11-14 11:54:30 PooledDataSource forcefully closed/removed all connections.
+11-14 11:54:30 PooledDataSource forcefully closed/removed all connections.
+11-14 11:54:30 PooledDataSource forcefully closed/removed all connections.
+11-14 11:54:30 PooledDataSource forcefully closed/removed all connections.
+11-14 11:54:31 Opening JDBC Connection
+11-14 11:54:31 Created connection 912011468.
+11-14 11:54:31 Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@365c30cc]
+11-14 11:54:31 ==>  Preparing: select * from goods where gname like '%||?||%' 
+11-14 11:55:49 Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+11-14 11:55:49 PooledDataSource forcefully closed/removed all connections.
+11-14 11:55:49 PooledDataSource forcefully closed/removed all connections.
+11-14 11:55:49 PooledDataSource forcefully closed/removed all connections.
+11-14 11:55:49 PooledDataSource forcefully closed/removed all connections.
+11-14 11:55:50 Opening JDBC Connection
+11-14 11:55:50 Created connection 849373393.
+11-14 11:55:50 Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@32a068d1]
+11-14 11:55:50 ==>  Preparing: select * from goods where gname like '%||?||%' 
+11-14 11:56:20 Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+11-14 11:56:20 PooledDataSource forcefully closed/removed all connections.
+11-14 11:56:20 PooledDataSource forcefully closed/removed all connections.
+11-14 11:56:20 PooledDataSource forcefully closed/removed all connections.
+11-14 11:56:20 PooledDataSource forcefully closed/removed all connections.
+11-14 11:56:20 Opening JDBC Connection
+11-14 11:56:20 Created connection 849373393.
+11-14 11:56:20 Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@32a068d1]
+11-14 11:56:20 ==>  Preparing: select * from goods where gname like '%'||?||'%' 
+11-14 11:56:21 ==> Parameters: 米(String)
+11-14 11:56:21 <==      Total: 5
+11-14 11:57:14 Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+11-14 11:57:14 PooledDataSource forcefully closed/removed all connections.
+11-14 11:57:14 PooledDataSource forcefully closed/removed all connections.
+11-14 11:57:14 PooledDataSource forcefully closed/removed all connections.
+11-14 11:57:14 PooledDataSource forcefully closed/removed all connections.
+11-14 11:57:15 Opening JDBC Connection
+11-14 11:57:15 Created connection 849373393.
+11-14 11:57:15 Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@32a068d1]
+11-14 11:57:15 ==>  Preparing: select * from goods where gname like '%'||?||'%' 
+11-14 11:57:15 ==> Parameters: 米(String)
+11-14 11:57:15 <==      Total: 5
+11-14 11:59:36 Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+11-14 11:59:37 PooledDataSource forcefully closed/removed all connections.
+11-14 11:59:37 PooledDataSource forcefully closed/removed all connections.
+11-14 11:59:37 PooledDataSource forcefully closed/removed all connections.
+11-14 11:59:37 PooledDataSource forcefully closed/removed all connections.
+11-14 11:59:37 Opening JDBC Connection
+11-14 11:59:37 Created connection 849373393.
+11-14 11:59:37 Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@32a068d1]
+11-14 11:59:37 ==>  Preparing: select * from goods where gname like '%'|| ? ||'%' 
+11-14 11:59:37 ==> Parameters: 米(String)
+11-14 11:59:37 <==      Total: 5
+11-14 11:59:57 Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+11-14 11:59:57 PooledDataSource forcefully closed/removed all connections.
+11-14 11:59:57 PooledDataSource forcefully closed/removed all connections.
+11-14 11:59:57 PooledDataSource forcefully closed/removed all connections.
+11-14 11:59:57 PooledDataSource forcefully closed/removed all connections.
+11-14 11:59:58 Opening JDBC Connection
+11-14 11:59:58 Created connection 849373393.
+11-14 11:59:58 Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@32a068d1]
+11-14 11:59:58 ==>  Preparing: select * from goods where gname like '%'|| %{s} ||'%' 
+11-14 11:59:58 ==> Parameters: 
+11-14 12:00:14 Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+11-14 12:00:14 PooledDataSource forcefully closed/removed all connections.
+11-14 12:00:14 PooledDataSource forcefully closed/removed all connections.
+11-14 12:00:14 PooledDataSource forcefully closed/removed all connections.
+11-14 12:00:14 PooledDataSource forcefully closed/removed all connections.
+11-14 12:00:15 Opening JDBC Connection
+11-14 12:00:15 Created connection 433874882.
+11-14 12:00:15 Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@19dc67c2]
+11-14 12:00:15 ==>  Preparing: select * from goods where gname like '%'|| 米 ||'%' 
+11-14 12:00:15 ==> Parameters: 
+11-14 12:00:39 Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+11-14 12:00:39 PooledDataSource forcefully closed/removed all connections.
+11-14 12:00:39 PooledDataSource forcefully closed/removed all connections.
+11-14 12:00:39 PooledDataSource forcefully closed/removed all connections.
+11-14 12:00:39 PooledDataSource forcefully closed/removed all connections.
+11-14 12:00:39 Opening JDBC Connection
+11-14 12:00:40 Created connection 433874882.
+11-14 12:00:40 Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@19dc67c2]
+11-14 12:00:40 ==>  Preparing: select * from goods where gname like '%'|| '米' ||'%' 
+11-14 12:00:40 ==> Parameters: 
+11-14 12:00:40 <==      Total: 5
+11-14 12:01:43 Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+11-14 12:01:43 PooledDataSource forcefully closed/removed all connections.
+11-14 12:01:43 PooledDataSource forcefully closed/removed all connections.
+11-14 12:01:43 PooledDataSource forcefully closed/removed all connections.
+11-14 12:01:43 PooledDataSource forcefully closed/removed all connections.
+11-14 12:01:43 Opening JDBC Connection
+11-14 12:01:43 Created connection 433874882.
+11-14 12:01:43 Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@19dc67c2]
+11-14 12:01:43 ==>  Preparing: select * from goods where gname like '%米%' 
+11-14 12:01:43 ==> Parameters: 
+11-14 12:01:43 <==      Total: 4
+11-14 12:02:22 Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+11-14 12:02:22 PooledDataSource forcefully closed/removed all connections.
+11-14 12:02:22 PooledDataSource forcefully closed/removed all connections.
+11-14 12:02:22 PooledDataSource forcefully closed/removed all connections.
+11-14 12:02:22 PooledDataSource forcefully closed/removed all connections.
+11-14 12:02:22 Opening JDBC Connection
+11-14 12:02:23 Created connection 2023938592.
+11-14 12:02:23 Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@78a2da20]
+11-14 12:02:23 ==>  Preparing: select * from goods where gname like '%为%' 
+11-14 12:02:23 ==> Parameters: 
+11-14 12:02:23 <==      Total: 1
+11-14 13:19:38 Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+11-14 13:19:38 PooledDataSource forcefully closed/removed all connections.
+11-14 13:19:38 PooledDataSource forcefully closed/removed all connections.
+11-14 13:19:38 PooledDataSource forcefully closed/removed all connections.
+11-14 13:19:38 PooledDataSource forcefully closed/removed all connections.
+11-14 13:19:38 Opening JDBC Connection
+11-14 13:19:38 Created connection 2023938592.
+11-14 13:19:38 Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@78a2da20]
+11-14 13:19:38 ==>  Preparing: select * from goods where gname like '%为%' 
+11-14 13:19:38 ==> Parameters: 
+11-14 13:19:38 <==      Total: 1
+11-14 15:03:19 Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+11-14 15:03:20 PooledDataSource forcefully closed/removed all connections.
+11-14 15:03:20 PooledDataSource forcefully closed/removed all connections.
+11-14 15:03:20 PooledDataSource forcefully closed/removed all connections.
+11-14 15:03:20 PooledDataSource forcefully closed/removed all connections.
+11-14 15:03:29 Opening JDBC Connection
+11-14 15:03:29 Created connection 1426262788.
+11-14 15:03:29 Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@55030b04]
+11-14 15:03:29 ==>  Preparing: SELECT * FROM users WHERE uname = ? and upwd = ? 
+11-14 15:03:29 ==> Parameters: xiaoming(String), 123(String)
+11-14 15:03:29 <==    Columns: uid, uname, upwd, phone, city, regDate, idCard, realName, age, email, sex, avatar
+11-14 15:03:29 <==        Row: 1, xiaoming, 123, 18899119292, 西安, 2017-11-11, null, 小明, 22, null, 男, <<BLOB>>
+11-14 15:03:29 <==      Total: 1
+11-14 15:03:29 Opening JDBC Connection
+11-14 15:03:29 Created connection 1114148727.
+11-14 15:03:29 Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@42688f77]
+11-14 15:03:29 ==>  Preparing: SELECT COUNT(1) FROM shoppingcar WHERE uid = ?; 
+11-14 15:03:29 ==> Parameters: 1(Integer)
+11-14 15:03:29 <==      Total: 1
+11-14 15:03:32 Opening JDBC Connection
+11-14 15:03:32 Created connection 969310887.
+11-14 15:03:32 Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@39c682a7]
+11-14 15:03:32 ==>  Preparing: select gid, gname, tid, price, descption, imgPath, filePath, stock from goods where gid = ? 
+11-14 15:03:32 ==> Parameters: 1(Integer)
+11-14 15:03:32 <==      Total: 1
+11-14 15:03:37 ==>  Preparing: select * from address where uid = ? 
+11-14 15:03:37 ==> Parameters: 1(Integer)
+11-14 15:03:37 <==      Total: 2
+11-14 15:03:37 ==>  Preparing: select * from view_car_goods where uid = ?; 
+11-14 15:03:37 ==> Parameters: 1(Integer)
+11-14 15:03:37 <==      Total: 1
+11-14 15:03:42 ==>  Preparing: select * from view_car_goods where uid = ?; 
+11-14 15:03:42 ==> Parameters: 1(Integer)
+11-14 15:03:42 <==      Total: 1
+11-14 15:03:42 Opening JDBC Connection
+11-14 15:03:42 Created connection 1585905034.
+11-14 15:03:42 Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@5e86fd8a]
+11-14 15:03:42 ==>  Preparing: insert into orders ( oid, uid, sum, address ) values ( ?, ?, ?, ? ) 
+11-14 15:03:42 ==> Parameters: 20171114150342(String), 1(Integer), 3488.0(Double), java.io.StringReader@4b464e06(StringReader)
+11-14 15:03:42 <==    Updates: 1
+11-14 15:03:42 ==>  Preparing: insert into orderform ( oid, gid, gnum, SubTotal, descption, uid ) values ( ?, ?, ?, ?, ?, ? ) 
+11-14 15:03:42 ==> Parameters: 20171114150342(String), 1(Integer), 1(Integer), 3488.0(Double), [{"网络类型" : "4G全网通","机身颜色" : "钻雕金","套餐类型" : "官方标配","存储容量" : "128GB","购买方式" : "裸机","版本" : "小米6"}](String), 1(Integer)
+11-14 15:03:42 <==    Updates: 1
+11-14 15:03:42 ==>  Preparing: update goods SET gname = ?, tid = ?, price = ?, descption = ?, imgPath = ?, filePath = ?, stock = ? where gid = ? 
+11-14 15:03:42 ==> Parameters: Huawei/华为 P10全网通手机(String), 2(Integer), 3488.0(Double), [ {
+  "网络类型" : "4G全网通",
+  "机身颜色" : "钻雕金,钻雕蓝,草木绿,曜石黑,玫瑰金",
+  "套餐类型" : "官方标配,套餐一,套餐二,套餐三,套餐四,套餐五",
+  "存储容量" : "64GB,128GB",
+  "购买方式" : "裸机",
+  "版本" : "Mate 10,Mate 10 62G+128G,麦芒6,P10,畅享7"
+} ](String), goods/huawei_1/P10.jpg(String), goods/huawei_1/img/(String), 9951(Integer), 1(Integer)
+11-14 15:03:42 <==    Updates: 1
+11-14 15:03:42 ==>  Preparing: delete from shoppingcar where cid = ? 
+11-14 15:03:42 ==> Parameters: 67(Integer)
+11-14 15:03:42 <==    Updates: 1
+11-14 15:03:42 Committing JDBC Connection [com.mysql.jdbc.JDBC4Connection@5e86fd8a]
+11-14 15:03:42 添加新订单(20171114150342)：{
+  "oid" : "20171114150342",
+  "uid" : 1,
+  "state" : "待付款",
+  "sum" : 3488.0,
+  "address" : "西安市外包学院"
+}
+11-14 15:03:42 订单详情(20171114150342)：[ {
+  "oid" : "20171114150342",
+  "gid" : 1,
+  "gnum" : 1,
+  "subtotal" : 3488.0,
+  "descption" : "[{\"网络类型\" : \"4G全网通\",\"机身颜色\" : \"钻雕金\",\"套餐类型\" : \"官方标配\",\"存储容量\" : \"128GB\",\"购买方式\" : \"裸机\",\"版本\" : \"小米6\"}]",
+  "uid" : 1
+} ]
+11-14 15:03:43 ==>  Preparing: select * from view_order_goods where oid = ? and uid = ?; 
+11-14 15:03:43 ==> Parameters: 20171114150342(String), 1(Integer)
+11-14 15:03:43 <==      Total: 1
+11-14 15:03:46 ==>  Preparing: select oid,state,address,sum,uid from view_order_goods where uid = ? group by oid 
+11-14 15:03:46 ==> Parameters: 1(Integer)
+11-14 15:03:46 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171114000359 and uid = 1 
+11-14 15:03:46 ====> Parameters: 
+11-14 15:03:46 <====      Total: 2
+11-14 15:03:46 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171114000839 and uid = 1 
+11-14 15:03:46 ====> Parameters: 
+11-14 15:03:46 <====      Total: 1
+11-14 15:03:46 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171114150342 and uid = 1 
+11-14 15:03:46 ====> Parameters: 
+11-14 15:03:46 <====      Total: 1
+11-14 15:03:46 <==      Total: 3
+11-14 16:25:54 Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+11-14 16:25:54 PooledDataSource forcefully closed/removed all connections.
+11-14 16:25:54 PooledDataSource forcefully closed/removed all connections.
+11-14 16:25:54 PooledDataSource forcefully closed/removed all connections.
+11-14 16:25:54 PooledDataSource forcefully closed/removed all connections.
+11-14 16:25:54 Opening JDBC Connection
+11-14 16:25:55 Created connection 236152410.
+11-14 16:25:55 Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@e13665a]
+11-14 16:25:55 ==>  Preparing: select gid, gname, tid, price, descption, imgPath, filePath, stock from goods where gid = ? 
+11-14 16:25:55 ==> Parameters: 1(Integer)
+11-14 16:25:55 <==      Total: 1
+11-15 09:14:05 Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+11-15 09:14:06 PooledDataSource forcefully closed/removed all connections.
+11-15 09:14:06 PooledDataSource forcefully closed/removed all connections.
+11-15 09:14:06 PooledDataSource forcefully closed/removed all connections.
+11-15 09:14:06 PooledDataSource forcefully closed/removed all connections.
+11-15 09:14:10 Opening JDBC Connection
+11-15 09:14:10 Created connection 1855777580.
+11-15 09:14:10 Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@6e9ceb2c]
+11-15 09:14:10 ==>  Preparing: SELECT * FROM users WHERE uname = ? and upwd = ? 
+11-15 09:14:10 ==> Parameters: xiaoming(String), 123(String)
+11-15 09:14:10 <==    Columns: uid, uname, upwd, phone, city, regDate, idCard, realName, age, email, sex, avatar
+11-15 09:14:10 <==        Row: 1, xiaoming, 123, 18899119292, 西安, 2017-11-11, null, 小明, 22, null, 男, <<BLOB>>
+11-15 09:14:10 <==      Total: 1
+11-15 09:14:10 Opening JDBC Connection
+11-15 09:14:10 Created connection 1015574081.
+11-15 09:14:10 Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@3c886e41]
+11-15 09:14:10 ==>  Preparing: SELECT COUNT(1) FROM shoppingcar WHERE uid = ?; 
+11-15 09:14:10 ==> Parameters: 1(Integer)
+11-15 09:14:10 <==      Total: 1
+11-15 09:14:12 Opening JDBC Connection
+11-15 09:14:12 Created connection 270899105.
+11-15 09:14:12 Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@102597a1]
+11-15 09:14:12 ==>  Preparing: select oid,state,address,sum,uid from view_order_goods where uid = ? group by oid 
+11-15 09:14:12 ==> Parameters: 1(Integer)
+11-15 09:14:12 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171114000359 and uid = 1 
+11-15 09:14:12 ====> Parameters: 
+11-15 09:14:12 <====      Total: 2
+11-15 09:14:12 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171114000839 and uid = 1 
+11-15 09:14:12 ====> Parameters: 
+11-15 09:14:12 <====      Total: 1
+11-15 09:14:12 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171114150342 and uid = 1 
+11-15 09:14:12 ====> Parameters: 
+11-15 09:14:12 <====      Total: 1
+11-15 09:14:12 <==      Total: 3
+11-15 09:26:55 Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+11-15 09:26:55 PooledDataSource forcefully closed/removed all connections.
+11-15 09:26:55 PooledDataSource forcefully closed/removed all connections.
+11-15 09:26:55 PooledDataSource forcefully closed/removed all connections.
+11-15 09:26:55 PooledDataSource forcefully closed/removed all connections.
+11-15 09:26:56 Opening JDBC Connection
+11-15 09:26:56 Created connection 101369139.
+11-15 09:26:56 Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@60ac533]
+11-15 09:26:56 ==>  Preparing: select * from view_order_goods where oid = ? and uid = ?; 
+11-15 09:26:56 ==> Parameters: null, 1(Integer)
+11-15 09:26:56 <==      Total: 0
+11-15 09:29:14 Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+11-15 09:29:14 PooledDataSource forcefully closed/removed all connections.
+11-15 09:29:14 PooledDataSource forcefully closed/removed all connections.
+11-15 09:29:14 PooledDataSource forcefully closed/removed all connections.
+11-15 09:29:14 PooledDataSource forcefully closed/removed all connections.
+11-15 09:29:14 Opening JDBC Connection
+11-15 09:29:14 Created connection 486807914.
+11-15 09:29:14 Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@1d04196a]
+11-15 09:29:14 ==>  Preparing: select * from view_order_goods where oid = ? and uid = ?; 
+11-15 09:29:14 ==> Parameters: null, 1(Integer)
+11-15 09:29:14 <==      Total: 0
+11-15 09:30:24 Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+11-15 09:30:24 PooledDataSource forcefully closed/removed all connections.
+11-15 09:30:24 PooledDataSource forcefully closed/removed all connections.
+11-15 09:30:24 PooledDataSource forcefully closed/removed all connections.
+11-15 09:30:24 PooledDataSource forcefully closed/removed all connections.
+11-15 09:30:24 Opening JDBC Connection
+11-15 09:30:24 Created connection 572162809.
+11-15 09:30:24 Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@221a82f9]
+11-15 09:30:24 ==>  Preparing: select * from view_order_goods where oid = ? and uid = ?; 
+11-15 09:30:24 ==> Parameters: null, 1(Integer)
+11-15 09:30:24 <==      Total: 0
+11-15 09:31:03 Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+11-15 09:31:03 PooledDataSource forcefully closed/removed all connections.
+11-15 09:31:03 PooledDataSource forcefully closed/removed all connections.
+11-15 09:31:03 PooledDataSource forcefully closed/removed all connections.
+11-15 09:31:03 PooledDataSource forcefully closed/removed all connections.
+11-15 09:31:03 Opening JDBC Connection
+11-15 09:31:03 Created connection 300989507.
+11-15 09:31:03 Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@11f0bc43]
+11-15 09:31:03 ==>  Preparing: select * from view_order_goods where oid = ? and uid = ?; 
+11-15 09:31:03 ==> Parameters: 20171114000359(String), 1(Integer)
+11-15 09:31:03 <==      Total: 2
+11-15 09:31:14 20171114000359--订单付款！
+11-15 09:31:14 ==>  Preparing: update orders set state = "已付款" where oid = ? and uid = ? 
+11-15 09:31:14 ==> Parameters: 20171114000359(Long), 1(Integer)
+11-15 09:31:14 <==    Updates: 1
+11-15 09:31:14 Committing JDBC Connection [com.mysql.jdbc.JDBC4Connection@11f0bc43]
+11-15 09:31:15 Opening JDBC Connection
+11-15 09:31:15 Created connection 1131921233.
+11-15 09:31:15 Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@4377bf51]
+11-15 09:31:15 ==>  Preparing: SELECT COUNT(1) FROM shoppingcar WHERE uid = ?; 
+11-15 09:31:15 ==> Parameters: 1(Integer)
+11-15 09:31:15 <==      Total: 1
+11-15 09:33:06 ==>  Preparing: SELECT COUNT(1) FROM shoppingcar WHERE uid = ?; 
+11-15 09:33:06 ==> Parameters: 1(Integer)
+11-15 09:33:06 <==      Total: 1
+11-15 09:33:08 ==>  Preparing: SELECT COUNT(1) FROM shoppingcar WHERE uid = ?; 
+11-15 09:33:08 ==> Parameters: 1(Integer)
+11-15 09:33:08 <==      Total: 1
+11-15 09:33:11 Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+11-15 09:33:11 PooledDataSource forcefully closed/removed all connections.
+11-15 09:33:11 PooledDataSource forcefully closed/removed all connections.
+11-15 09:33:11 PooledDataSource forcefully closed/removed all connections.
+11-15 09:33:11 PooledDataSource forcefully closed/removed all connections.
+11-15 09:33:11 Opening JDBC Connection
+11-15 09:33:12 Created connection 1210969628.
+11-15 09:33:12 Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@482dee1c]
+11-15 09:33:12 ==>  Preparing: select oid,state,address,sum,uid from view_order_goods where uid = ? group by oid 
+11-15 09:33:12 ==> Parameters: 1(Integer)
+11-15 09:33:12 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171114000359 and uid = 1 
+11-15 09:33:12 ====> Parameters: 
+11-15 09:33:12 <====      Total: 2
+11-15 09:33:12 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171114000839 and uid = 1 
+11-15 09:33:12 ====> Parameters: 
+11-15 09:33:12 <====      Total: 1
+11-15 09:33:12 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171114150342 and uid = 1 
+11-15 09:33:12 ====> Parameters: 
+11-15 09:33:12 <====      Total: 1
+11-15 09:33:12 <==      Total: 3
+11-15 09:33:17 ==>  Preparing: select * from view_order_goods where oid = ? and uid = ?; 
+11-15 09:33:17 ==> Parameters: 20171114150342(String), 1(Integer)
+11-15 09:33:17 <==      Total: 1
+11-15 09:33:23 20171114150342--订单付款！
+11-15 09:33:23 ==>  Preparing: update orders set state = "已付款" where oid = ? and uid = ? 
+11-15 09:33:23 ==> Parameters: 20171114150342(Long), 1(Integer)
+11-15 09:33:23 <==    Updates: 1
+11-15 09:33:23 Committing JDBC Connection [com.mysql.jdbc.JDBC4Connection@482dee1c]
+11-15 09:33:24 Opening JDBC Connection
+11-15 09:33:24 Created connection 1876579206.
+11-15 09:33:24 Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@6fda5386]
+11-15 09:33:24 ==>  Preparing: SELECT COUNT(1) FROM shoppingcar WHERE uid = ?; 
+11-15 09:33:24 ==> Parameters: 1(Integer)
+11-15 09:33:24 <==      Total: 1
+11-15 09:35:39 Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+11-15 09:35:39 PooledDataSource forcefully closed/removed all connections.
+11-15 09:35:39 PooledDataSource forcefully closed/removed all connections.
+11-15 09:35:39 PooledDataSource forcefully closed/removed all connections.
+11-15 09:35:39 PooledDataSource forcefully closed/removed all connections.
+11-15 09:35:40 Opening JDBC Connection
+11-15 09:35:40 Created connection 1819038862.
+11-15 09:35:40 Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@6c6c548e]
+11-15 09:35:40 ==>  Preparing: select oid,state,address,sum,uid from view_order_goods where uid = ? group by oid 
+11-15 09:35:40 ==> Parameters: 1(Integer)
+11-15 09:35:40 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171114000359 and uid = 1 
+11-15 09:35:40 ====> Parameters: 
+11-15 09:35:40 <====      Total: 2
+11-15 09:35:40 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171114000839 and uid = 1 
+11-15 09:35:40 ====> Parameters: 
+11-15 09:35:40 <====      Total: 1
+11-15 09:35:40 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171114150342 and uid = 1 
+11-15 09:35:40 ====> Parameters: 
+11-15 09:35:40 <====      Total: 1
+11-15 09:35:40 <==      Total: 3
+11-15 09:39:50 Opening JDBC Connection
+11-15 09:39:51 Created connection 1100204080.
+11-15 09:39:51 Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@4193c830]
+11-15 09:39:51 ==>  Preparing: SELECT COUNT(1) FROM shoppingcar WHERE uid = ?; 
+11-15 09:39:51 ==> Parameters: 1(Integer)
+11-15 09:39:51 <==      Total: 1
+11-15 09:39:51 ==>  Preparing: SELECT COUNT(1) FROM shoppingcar WHERE uid = ?; 
+11-15 09:39:51 ==> Parameters: 1(Integer)
+11-15 09:39:51 <==      Total: 1
+11-15 09:39:52 ==>  Preparing: select oid,state,address,sum,uid from view_order_goods where uid = ? group by oid 
+11-15 09:39:52 ==> Parameters: 1(Integer)
+11-15 09:39:52 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171114000359 and uid = 1 
+11-15 09:39:52 ====> Parameters: 
+11-15 09:39:52 <====      Total: 2
+11-15 09:39:52 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171114000839 and uid = 1 
+11-15 09:39:52 ====> Parameters: 
+11-15 09:39:52 <====      Total: 1
+11-15 09:39:52 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171114150342 and uid = 1 
+11-15 09:39:52 ====> Parameters: 
+11-15 09:39:52 <====      Total: 1
+11-15 09:39:52 <==      Total: 3

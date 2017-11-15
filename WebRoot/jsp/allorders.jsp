@@ -7,15 +7,11 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 <%@page import="com.fasterxml.jackson.databind.ObjectMapper"
 	import="com.mod.bean.ShoppingCar"
 	import="com.fasterxml.jackson.annotation.JsonInclude.Include"%>
-
-
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
   <head>
     <base href="<%=basePath%>">
-    
-    <title>My JSP 'allorders.jsp' starting page</title>
-    
+    <title>全部订单页面</title>
 	<meta http-equiv="pragma" content="no-cache">
 	<meta http-equiv="cache-control" content="no-cache">
 	<meta http-equiv="expires" content="0">    
@@ -24,13 +20,30 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	<!--
 	<link rel="stylesheet" type="text/css" href="styles.css">
 	-->
-<script type="text/javascript" src="js/jquery-2.1.0.js"></script>
-<script type="text/javascript" src="js/jquery.form.js"></script>
-<script type="text/javascript" src="js/ajaxfileupload.js"></script>
-
+<script type="text/javascript" src="../js/jquery-2.1.0.js"></script>
+<script type="text/javascript" src="../js/jquery.form.js"></script>
+<script type="text/javascript" src="../js/ajaxfileupload.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	$("input[type=button]").click(function(){
+		var str = $(this).val();
+		if(str !== "付款"){
+			return;
+		}
+		var oid = $(this).attr("id");
+		$("input[name=oid]").val(oid);
+		alert($("input[name=oid]").val());
+		$("#frm").submit();
+	});
+	$("input[type=button][value=删除]").hide();
+});
+</script>
   </head>
-  
   <body>
+  <form action="../Order" id="frm">
+<input type="hidden" name="flag" value="payOrder"> 
+<input type="hidden" name="oid"> 
+</form>
 <%
 String json = (String)request.getSession().getAttribute("ogJson"); 
 %>
@@ -54,7 +67,7 @@ for(LinkedHashMap<String, Object> temp : list){
     订单号：<%=oid%><br/><hr/>
 下单日期：<%=sdf2.format(sdf.parse(oid))%><br><hr>
 收件地址：<%=temp.get("address")%><br><hr>
-订单状态：<font style="color:<%=state.equals("已付款")?"blue":"red"%>;"><%=state %></font><input type="button" id="<%=oid%>" value="<%=state.equals("已付款")?"删除":"付款"%>">
+订单状态：<font style="color:<%=state.equals("已付款")?"blue":"red"%>;"><%=state %></font><input type="button" id="<%=oid%>" onclick="" value="<%=state.equals("已付款")?"删除":"付款"%>">
 <br><hr>
 
 订单金额：<font style="color:red;">￥<%=temp.get("sum") %></font><br><hr>
@@ -84,7 +97,6 @@ for(LinkedHashMap<String, Object> temp : list){
 				<%=key+":" %><%=m.get(key)%>___
 				<%
 				}
-				
 			}
 			%>
 			<br><hr>
