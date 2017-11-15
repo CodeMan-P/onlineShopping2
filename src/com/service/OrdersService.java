@@ -37,6 +37,7 @@ public class OrdersService {
 
 		return OrdersDao.getOGViewGoupByOid(uid);
 	}
+
 	@SuppressWarnings("unchecked")
 	public static HashMap<String, Object> jsonFactory(LinkedList<HashMap<String, Object>> orderslist) {
 		// 提取公共字段

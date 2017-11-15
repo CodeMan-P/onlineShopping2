@@ -2,13 +2,14 @@ package com.tests;
 
 import java.util.LinkedList;
 
-import com.fasterxml.jackson.annotation.JsonProperty;
+public class Data {
+	public Data() {
+	}
 
-public class Data{
-	public Data(){}
 	int id;
 	String section;
 	LinkedList<Goods> goods;
+
 	public int getId() {
 		return id;
 	}
@@ -16,8 +17,6 @@ public class Data{
 	public void setId(int id) {
 		this.id = id;
 	}
-
-
 
 	public String getSection() {
 		return section;
@@ -34,7 +33,5 @@ public class Data{
 	public void setGoods(LinkedList<Goods> goods) {
 		this.goods = goods;
 	}
-
-
 
 }

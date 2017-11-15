@@ -27,10 +27,11 @@ public class SpCarDao {
 	}
 
 	static Logger log = Logger.getLogger(SpCarDao.class.getName());
+
 	@Test
-	public void testMethhod(){
-		LinkedList<HashMap<String,Object>> list = getCarView(1);
-		//LinkedList<ShoppingCar> list = getCarListByUid(1);
+	public void testMethhod() {
+		LinkedList<HashMap<String, Object>> list = getCarView(1);
+		// LinkedList<ShoppingCar> list = getCarListByUid(1);
 		System.out.println(list.size());
 		ObjectMapper mapper = new ObjectMapper();
 		try {
@@ -39,21 +40,23 @@ public class SpCarDao {
 			e.printStackTrace();
 		}
 	}
-	public static boolean deleGoods(Integer cid){
+
+	public static boolean deleGoods(Integer cid) {
 		int i = 0;
-		
+
 		try {
-			i=scm.deleteByPrimaryKey(cid);
+			i = scm.deleteByPrimaryKey(cid);
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-		if(i>0){
+		if (i > 0) {
 			return true;
 		}
 		return false;
 	}
-	public static LinkedList<HashMap<String,Object>> getCarView(Integer uid){
-		LinkedList<HashMap<String,Object>> list = null;
+
+	public static LinkedList<HashMap<String, Object>> getCarView(Integer uid) {
+		LinkedList<HashMap<String, Object>> list = null;
 		try {
 			list = scm.getCarView(uid);
 		} catch (Exception e) {
@@ -62,7 +65,8 @@ public class SpCarDao {
 		}
 		return list;
 	}
-	public static LinkedList<ShoppingCar> getCarListByUid(Integer uid){
+
+	public static LinkedList<ShoppingCar> getCarListByUid(Integer uid) {
 		LinkedList<ShoppingCar> list = null;
 		try {
 			list = scm.getCarListByUid(uid);
@@ -72,6 +76,7 @@ public class SpCarDao {
 		}
 		return list;
 	}
+
 	public static int getCarNum(Integer uid) {
 		int i = 0;
 		try {

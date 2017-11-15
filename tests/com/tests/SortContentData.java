@@ -41,8 +41,8 @@ public class SortContentData {
 			scd2 = mapper.readValue(file2, SortContentData.class);
 			scd3.add(scd);
 			scd3.add(scd2);
-		//	file3.createNewFile();
-		//	mapper.writerWithDefaultPrettyPrinter().writeValue(file3, scd3);
+			// file3.createNewFile();
+			// mapper.writerWithDefaultPrettyPrinter().writeValue(file3, scd3);
 		} catch (JsonParseException e) {
 			e.printStackTrace();
 		} catch (JsonMappingException e) {
@@ -115,7 +115,7 @@ public class SortContentData {
 		}
 
 	}
-	
+
 	public static class Goods {
 		public Goods() {
 		}

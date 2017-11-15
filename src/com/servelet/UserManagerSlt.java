@@ -19,12 +19,16 @@ import com.jspsmart.upload.Files;
 import com.jspsmart.upload.SmartUpload;
 import com.mod.bean.Users;
 import com.service.UserService;
-import com.tests.log4jExample;
 
 /**
  * Servlet implementation class UserManagerSlt
  */
 public class UserManagerSlt extends HttpServlet {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1469930882421413690L;
+
 	/**
 	 * @see HttpServlet#HttpServlet()
 	 */
@@ -54,6 +58,7 @@ public class UserManagerSlt extends HttpServlet {
 		// TODO Auto-generated method stub
 		this.doPost(request, response);
 	}
+
 	Logger log = Logger.getLogger(UserManagerSlt.class.getName());
 
 	/**
@@ -69,33 +74,33 @@ public class UserManagerSlt extends HttpServlet {
 		PrintWriter out = response.getWriter();
 		String flag = request.getParameter("flag");
 		ObjectMapper mapper = new ObjectMapper();
-		String json="";
-		Users user=null;
-		if(flag!=null){
-			switch(flag){
+		String json = "";
+		Users user = null;
+		if (flag != null) {
+			switch (flag) {
 			case "regist":
 				json = mapper.writeValueAsString(request.getParameterMap());
-				//ajaxSubmit 提交时每个参数以数组传递，需要删除[]
+				// ajaxSubmit 提交时每个参数以数组传递，需要删除[]
 				json = json.replace("[", "");
 				json = json.replace("]", "");
 				System.out.println(json);
-				try{
+				try {
 					user = mapper.readValue(json, Users.class);
 					String message = UserService.addUser(user);
-					if(message.contains("成功")){
+					if (message.contains("成功")) {
 						request.getSession().setAttribute("name", user.getUname());
 						request.getSession().setAttribute("uid", user.getUid());
-						request.getSession().setAttribute("avatar",user.getAvatar());
-						request.getSession().setAttribute("city",user.getCity());
+						request.getSession().setAttribute("avatar", user.getAvatar());
+						request.getSession().setAttribute("city", user.getCity());
 						out.write("注册成功！");
-					}else if(message.contains("Duplicate")){
+					} else if (message.contains("Duplicate")) {
 						out.write("用户名已存在！注册失败！");
 						log.warn(message);
-					}else{
+					} else {
 						log.warn(message);
 						out.write("注册失败！");
 					}
-				}catch(Exception e){
+				} catch (Exception e) {
 					e.printStackTrace();
 					out.write("请输入正确的注册信息！");
 					out.flush();
@@ -105,10 +110,9 @@ public class UserManagerSlt extends HttpServlet {
 				out.flush();
 				out.close();
 				return;
-				}
 			}
-		
-		
+		}
+
 		// 上传请求
 		SmartUpload su = new SmartUpload();
 		su.initialize(this, request, response);
@@ -123,11 +127,11 @@ public class UserManagerSlt extends HttpServlet {
 			com.jspsmart.upload.File file;
 			String name1, name2, type;
 			int index;
-			
+
 			file = files.getFile(0);
 			// 判断是否为空上传项
-			if (file.isMissing()){
-				log.info(sdf.format(new Date())+":file missing!!!");
+			if (file.isMissing()) {
+				log.info(sdf.format(new Date()) + ":file missing!!!");
 				out.write("#");
 				out.flush();
 				out.close();

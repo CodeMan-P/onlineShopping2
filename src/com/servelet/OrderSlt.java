@@ -16,7 +16,6 @@ import javax.servlet.http.HttpServletResponse;
 
 import org.apache.log4j.Logger;
 
-import com.dao.GoodsDao;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.mod.bean.Address;
@@ -54,7 +53,9 @@ public class OrderSlt extends HttpServlet {
 		// ").append(request.getContextPath());
 		this.doPost(request, response);
 	}
+
 	static Logger log = Logger.getLogger(OrderSlt.class.getName());
+
 	/**
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse
 	 *      response)
@@ -72,8 +73,8 @@ public class OrderSlt extends HttpServlet {
 		}
 		PrintWriter out = response.getWriter();
 		int uid = (int) request.getSession().getAttribute("uid");
-		if(flag.equalsIgnoreCase("payOrder")){//支付已存在订单
-			String  oid = (String) request.getParameter("oid");
+		if (flag.equalsIgnoreCase("payOrder")) {// 支付已存在订单
+			String oid = (String) request.getParameter("oid");
 			LinkedList<HashMap<String, Object>> orderslist = OrdersService.getOrderList(oid, uid);
 			HashMap<String, Object> hm = OrdersService.jsonFactory(orderslist);
 			ObjectMapper mapper = new ObjectMapper();
@@ -84,7 +85,7 @@ public class OrderSlt extends HttpServlet {
 			response.sendRedirect("jsp/order.jsp");
 			out.close();
 			return;
-		}else if (flag.equalsIgnoreCase("multi")) {
+		} else if (flag.equalsIgnoreCase("multi")) {
 			// 下单购买一堆
 			SimpleDateFormat sf = new SimpleDateFormat("yyyyMMddHHmmss");
 			String oid = sf.format(new Date());
@@ -124,7 +125,7 @@ public class OrderSlt extends HttpServlet {
 				return;
 			}
 			if (flag.equalsIgnoreCase("mpay")) {
-				log.info(oid+"--订单付款！");
+				log.info(oid + "--订单付款！");
 				OrdersService.updateByOUid(oid, uid);
 			} else if (flag.equalsIgnoreCase("spay")) {
 				String address = request.getParameter("addr");
@@ -140,7 +141,7 @@ public class OrderSlt extends HttpServlet {
 				OrdersService.addOrders(orders, orderform);
 			}
 		} else if (flag.equals("allorder")) {
-			
+
 			ObjectMapper mapper = new ObjectMapper();
 			LinkedList<LinkedHashMap<String, Object>> ogview = OrdersService.getOGViewGoupByOid(uid);
 			String json = mapper.writeValueAsString(ogview);
@@ -215,8 +216,6 @@ public class OrderSlt extends HttpServlet {
 		}
 		request.getSession().setAttribute("adresJson", adresJson);
 	}
-
-	
 
 	private Boolean addOrders(HttpServletRequest request, HttpServletResponse response, String oid) {
 		LinkedList<OrderForm> orderlist = null;

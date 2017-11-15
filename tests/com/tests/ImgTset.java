@@ -12,25 +12,26 @@ import javax.imageio.ImageIO;
 
 public class ImgTset {
 
-	private static final int IMG_HEIGHT= 80;
-	private static final int IMG_WIDTH= 200;
-	private static final int CODE_LEN= 4;
+	private static final int IMG_HEIGHT = 80;
+	private static final int IMG_WIDTH = 200;
+	private static final int CODE_LEN = 4;
+
 	public static void main(String[] args) {
 
 		BufferedImage bi = new BufferedImage(IMG_WIDTH, IMG_HEIGHT, BufferedImage.TYPE_4BYTE_ABGR);
 		Graphics graphics = bi.getGraphics();
-		graphics.setColor(new Color(100,230,200));
+		graphics.setColor(new Color(100, 230, 200));
 		graphics.fillRect(0, 0, 300, 100);
-		char[] codeChar="ABCDEFGHIJKLMNOPQRSTUVWXYZ".toCharArray();
-		
+		char[] codeChar = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".toCharArray();
+
 		graphics.setFont(new Font("Times New Roman", Font.BOLD, 58));
 		Random rand = new Random();
-		for(int i = 0;i<CODE_LEN;i++){
+		for (int i = 0; i < CODE_LEN; i++) {
 			int index = rand.nextInt(codeChar.length);
-			graphics.setColor(new Color(rand.nextInt(150),rand.nextInt(150),rand.nextInt(150)));
-			graphics.drawString(codeChar[index]+"", (i*40)+20, 59);
+			graphics.setColor(new Color(rand.nextInt(150), rand.nextInt(150), rand.nextInt(150)));
+			graphics.drawString(codeChar[index] + "", (i * 40) + 20, 59);
 		}
-		String path = System.getProperty("user.dir")+File.separatorChar+"123.jpg";
+		String path = System.getProperty("user.dir") + File.separatorChar + "123.jpg";
 		File file = new File(path);
 		try {
 			file.createNewFile();

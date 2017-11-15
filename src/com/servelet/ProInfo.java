@@ -12,8 +12,12 @@ import org.apache.log4j.Logger;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.mod.bean.Goods;
 import com.service.GoodsService;
-import com.tests.log4jExample;
+
 public class ProInfo extends HttpServlet {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -7173722269864724052L;
 	Logger log = Logger.getLogger(ProInfo.class.getName());
 
 	/**
@@ -22,6 +26,7 @@ public class ProInfo extends HttpServlet {
 	public ProInfo() {
 		super();
 	}
+
 	/**
 	 * Destruction of the servlet. <br>
 	 */
@@ -36,28 +41,31 @@ public class ProInfo extends HttpServlet {
 	 *
 	 * This method is called when a form has its tag value method equals to get.
 	 * 
-	 * @param request the request send by the client to the server
-	 * @param response the response send by the server to the client
-	 * @throws ServletException if an error occurred
-	 * @throws IOException if an error occurred
+	 * @param request
+	 *            the request send by the client to the server
+	 * @param response
+	 *            the response send by the server to the client
+	 * @throws ServletException
+	 *             if an error occurred
+	 * @throws IOException
+	 *             if an error occurred
 	 */
 	@Override
-	public void doGet(HttpServletRequest request, HttpServletResponse response)
-			throws ServletException, IOException {
+	public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		response.setCharacterEncoding("utf-8");
 		request.setCharacterEncoding("utf-8");
 		response.setContentType("text/html");
 		int gid = 0;
-		try{
+		try {
 			gid = Integer.parseInt(request.getParameter("gid"));
-		}catch(NumberFormatException  e){
-			log.warn("不能转换为Int:"+request.getParameter("gid"));
+		} catch (NumberFormatException e) {
+			log.warn("不能转换为Int:" + request.getParameter("gid"));
 		}
 		Goods goods = null;
-		if(gid != 0){
-			 goods = GoodsService.getGoods(gid);
+		if (gid != 0) {
+			goods = GoodsService.getGoods(gid);
 		}
-		if(goods != null){
+		if (goods != null) {
 			ObjectMapper mapper = new ObjectMapper();
 			String json = mapper.writerWithDefaultPrettyPrinter().writeValueAsString(goods);
 			request.setAttribute("json", json);
@@ -69,23 +77,28 @@ public class ProInfo extends HttpServlet {
 	/**
 	 * The doPost method of the servlet. <br>
 	 *
-	 * This method is called when a form has its tag value method equals to post.
+	 * This method is called when a form has its tag value method equals to
+	 * post.
 	 * 
-	 * @param request the request send by the client to the server
-	 * @param response the response send by the server to the client
-	 * @throws ServletException if an error occurred
-	 * @throws IOException if an error occurred
+	 * @param request
+	 *            the request send by the client to the server
+	 * @param response
+	 *            the response send by the server to the client
+	 * @throws ServletException
+	 *             if an error occurred
+	 * @throws IOException
+	 *             if an error occurred
 	 */
 	@Override
-	public void doPost(HttpServletRequest request, HttpServletResponse response)
-			throws ServletException, IOException {
+	public void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		this.doGet(request, response);
 	}
 
 	/**
 	 * Initialization of the servlet. <br>
 	 *
-	 * @throws ServletException if an error occurs
+	 * @throws ServletException
+	 *             if an error occurs
 	 */
 	@Override
 	public void init() throws ServletException {

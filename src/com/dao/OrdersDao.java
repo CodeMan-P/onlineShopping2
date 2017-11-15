@@ -6,7 +6,6 @@ import java.util.Iterator;
 import java.util.LinkedHashMap;
 import java.util.LinkedList;
 
-import org.apache.ibatis.annotations.Param;
 import org.apache.ibatis.session.SqlSession;
 import org.apache.log4j.Logger;
 import org.junit.Test;
@@ -51,7 +50,7 @@ public class OrdersDao {
 		// LinkedList<HashMap<String, Object>> list=null;
 		// updateByOUid(20171112233536L,1);
 		// deleOrders("20171113000907", 1);
-		
+
 		ObjectMapper mapper = new ObjectMapper();
 
 		LinkedList<LinkedHashMap<String, Object>> list = null;

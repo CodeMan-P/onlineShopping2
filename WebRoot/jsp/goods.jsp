@@ -121,6 +121,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     String temp = g.getDescption();
     temp = temp.replaceAll("\\]", "");
    	temp = temp.replaceAll("\\[", "");
+   	@SuppressWarnings("unchecked")
     HashMap<String,String> h = mapper.readValue(temp, HashMap.class);
     %>
     商品名称：<%=g.getGname() %><br/><hr/>
@@ -128,7 +129,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     库存：<%=g.getStock() %><br/><hr/>
     <% for (String s:h.keySet()){
     	%>
-    	<%=s%><-----:-----><%=h.get(s)%><br/>
+    	<%=s%>__:__<%=h.get(s)%><br/>
     		
    <% }%><br/><hr/>
     <img alt="数据库炸了？？？" src="<%=g.getImgpath()%>" style="position:relative; left:-200px;width: 300px;height:auto"/><br/><hr/>
