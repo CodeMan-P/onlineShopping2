@@ -11,6 +11,13 @@ PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
   <!--解决，查询返回结果含null没有对应字段值问题-->  
   <setting name="callSettersOnNulls" value="true"/>  
   </settings> 
+     
+       <!-- 配置分页插件 -->
+    <plugins>
+        <plugin interceptor="com.github.pagehelper.PageInterceptor">
+         
+        </plugin>
+    </plugins>
     <!-- 配置数据源相关的信息  -->  
     <environments default="development">  
         <environment id="development">  
@@ -23,6 +30,7 @@ PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
             </dataSource>  
         </environment>  
     </environments>  
+
     <!-- 列出映射文件 -->  
     <mappers>  
       

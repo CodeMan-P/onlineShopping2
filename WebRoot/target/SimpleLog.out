@@ -9281,3 +9281,253 @@
 11-15 11:53:23 ==>  Preparing: SELECT COUNT(1) FROM shoppingcar WHERE uid = ?; 
 11-15 11:53:23 ==> Parameters: 1(Integer)
 11-15 11:53:23 <==      Total: 1
+11-15 14:15:18 Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+11-15 14:15:18 
+### Error building SqlSession.
+### The error may exist in SQL Mapper Configuration
+### Cause: org.apache.ibatis.builder.BuilderException: Error parsing SQL Mapper Configuration. Cause: java.lang.ClassCastException: com.github.pagehelper.PageHelper cannot be cast to org.apache.ibatis.plugin.Interceptor
+11-15 14:15:18 
+### Error building SqlSession.
+### The error may exist in SQL Mapper Configuration
+### Cause: org.apache.ibatis.builder.BuilderException: Error parsing SQL Mapper Configuration. Cause: java.lang.ClassCastException: com.github.pagehelper.PageHelper cannot be cast to org.apache.ibatis.plugin.Interceptor
+11-15 14:15:18 
+11-15 14:16:04 Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+11-15 14:16:04 
+### Error building SqlSession.
+### The error may exist in SQL Mapper Configuration
+### Cause: org.apache.ibatis.builder.BuilderException: Error parsing SQL Mapper Configuration. Cause: java.lang.ClassCastException: com.github.pagehelper.PageHelper cannot be cast to org.apache.ibatis.plugin.Interceptor
+11-15 14:16:04 
+### Error building SqlSession.
+### The error may exist in SQL Mapper Configuration
+### Cause: org.apache.ibatis.builder.BuilderException: Error parsing SQL Mapper Configuration. Cause: java.lang.ClassCastException: com.github.pagehelper.PageHelper cannot be cast to org.apache.ibatis.plugin.Interceptor
+11-15 14:16:04 
+11-15 14:18:37 Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+11-15 14:18:37 
+### Error building SqlSession.
+### The error may exist in SQL Mapper Configuration
+### Cause: org.apache.ibatis.builder.BuilderException: Error parsing SQL Mapper Configuration. Cause: java.lang.ClassCastException: com.github.pagehelper.PageHelper cannot be cast to org.apache.ibatis.plugin.Interceptor
+11-15 14:18:37 
+### Error building SqlSession.
+### The error may exist in SQL Mapper Configuration
+### Cause: org.apache.ibatis.builder.BuilderException: Error parsing SQL Mapper Configuration. Cause: java.lang.ClassCastException: com.github.pagehelper.PageHelper cannot be cast to org.apache.ibatis.plugin.Interceptor
+11-15 14:18:37 
+11-15 14:19:17 Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+11-15 14:19:17 
+### Error building SqlSession.
+### The error may exist in SQL Mapper Configuration
+### Cause: org.apache.ibatis.builder.BuilderException: Error parsing SQL Mapper Configuration. Cause: java.lang.ClassCastException: com.github.pagehelper.PageHelper cannot be cast to org.apache.ibatis.plugin.Interceptor
+11-15 14:19:17 
+### Error building SqlSession.
+### The error may exist in SQL Mapper Configuration
+### Cause: org.apache.ibatis.builder.BuilderException: Error parsing SQL Mapper Configuration. Cause: java.lang.ClassCastException: com.github.pagehelper.PageHelper cannot be cast to org.apache.ibatis.plugin.Interceptor
+11-15 14:19:17 
+11-15 14:25:04 Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+11-15 14:25:04 
+### Error building SqlSession.
+### The error may exist in SQL Mapper Configuration
+### Cause: org.apache.ibatis.builder.BuilderException: Error parsing SQL Mapper Configuration. Cause: com.github.pagehelper.PageException: java.lang.ClassNotFoundException: mysql
+11-15 14:25:04 
+### Error building SqlSession.
+### The error may exist in SQL Mapper Configuration
+### Cause: org.apache.ibatis.builder.BuilderException: Error parsing SQL Mapper Configuration. Cause: com.github.pagehelper.PageException: java.lang.ClassNotFoundException: mysql
+11-15 14:25:04 
+11-15 14:28:03 Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+11-15 14:28:03 PooledDataSource forcefully closed/removed all connections.
+11-15 14:28:03 PooledDataSource forcefully closed/removed all connections.
+11-15 14:28:03 PooledDataSource forcefully closed/removed all connections.
+11-15 14:28:03 PooledDataSource forcefully closed/removed all connections.
+11-15 14:28:04 Opening JDBC Connection
+11-15 14:28:04 Created connection 789219251.
+11-15 14:28:04 Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@2f0a87b3]
+11-15 14:28:04 ==>  Preparing: select * from goods where tid = ? 
+11-15 14:28:04 ==> Parameters: 1(Integer)
+11-15 14:28:04 <==      Total: 0
+11-15 14:29:19 Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+11-15 14:29:19 PooledDataSource forcefully closed/removed all connections.
+11-15 14:29:19 PooledDataSource forcefully closed/removed all connections.
+11-15 14:29:19 PooledDataSource forcefully closed/removed all connections.
+11-15 14:29:19 PooledDataSource forcefully closed/removed all connections.
+11-15 14:29:20 Opening JDBC Connection
+11-15 14:29:20 Created connection 789219251.
+11-15 14:29:20 Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@2f0a87b3]
+11-15 14:29:20 ==>  Preparing: select * from goods where tid = ? 
+11-15 14:29:20 ==> Parameters: 2(Integer)
+11-15 14:29:20 <==      Total: 5
+11-15 14:29:51 Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+11-15 14:29:51 PooledDataSource forcefully closed/removed all connections.
+11-15 14:29:51 PooledDataSource forcefully closed/removed all connections.
+11-15 14:29:51 PooledDataSource forcefully closed/removed all connections.
+11-15 14:29:51 PooledDataSource forcefully closed/removed all connections.
+11-15 14:29:52 Created connection 1739876329.
+11-15 14:29:52 Returned connection 1739876329 to pool.
+11-15 14:29:52 Cache Hit Ratio [SQL_CACHE]: 0.0
+11-15 14:29:52 Opening JDBC Connection
+11-15 14:29:52 Checked out connection 1739876329 from pool.
+11-15 14:29:52 Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@67b467e9]
+11-15 14:29:52 ==>  Preparing: SELECT count(0) FROM goods WHERE tid = ? 
+11-15 14:29:52 ==> Parameters: 2(Integer)
+11-15 14:29:52 <==      Total: 1
+11-15 14:29:52 ==>  Preparing: select * from goods where tid = ? LIMIT 2 
+11-15 14:29:52 ==> Parameters: 2(Integer)
+11-15 14:29:52 <==      Total: 2
+11-15 14:33:49 Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+11-15 14:33:49 PooledDataSource forcefully closed/removed all connections.
+11-15 14:33:49 PooledDataSource forcefully closed/removed all connections.
+11-15 14:33:49 PooledDataSource forcefully closed/removed all connections.
+11-15 14:33:49 PooledDataSource forcefully closed/removed all connections.
+11-15 14:33:49 Created connection 1739876329.
+11-15 14:33:49 Returned connection 1739876329 to pool.
+11-15 14:33:49 Cache Hit Ratio [SQL_CACHE]: 0.0
+11-15 14:33:49 Opening JDBC Connection
+11-15 14:33:49 Checked out connection 1739876329 from pool.
+11-15 14:33:49 Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@67b467e9]
+11-15 14:33:49 ==>  Preparing: SELECT count(0) FROM goods WHERE tid = ? 
+11-15 14:33:49 ==> Parameters: 2(Integer)
+11-15 14:33:49 <==      Total: 1
+11-15 14:33:49 ==>  Preparing: select * from goods where tid = ? LIMIT 2 
+11-15 14:33:49 ==> Parameters: 2(Integer)
+11-15 14:33:49 <==      Total: 2
+11-15 14:34:32 Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+11-15 14:34:32 PooledDataSource forcefully closed/removed all connections.
+11-15 14:34:32 PooledDataSource forcefully closed/removed all connections.
+11-15 14:34:32 PooledDataSource forcefully closed/removed all connections.
+11-15 14:34:32 PooledDataSource forcefully closed/removed all connections.
+11-15 14:34:33 Created connection 487694075.
+11-15 14:34:33 Returned connection 487694075 to pool.
+11-15 14:34:33 Cache Hit Ratio [SQL_CACHE]: 0.0
+11-15 14:34:33 Opening JDBC Connection
+11-15 14:34:33 Checked out connection 487694075 from pool.
+11-15 14:34:33 Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@1d119efb]
+11-15 14:34:33 ==>  Preparing: SELECT count(0) FROM goods WHERE tid = ? 
+11-15 14:34:33 ==> Parameters: 2(Integer)
+11-15 14:34:33 <==      Total: 1
+11-15 14:34:33 ==>  Preparing: select * from goods where tid = ? LIMIT 2 
+11-15 14:34:33 ==> Parameters: 2(Integer)
+11-15 14:34:33 <==      Total: 2
+11-15 14:35:01 Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+11-15 14:35:01 PooledDataSource forcefully closed/removed all connections.
+11-15 14:35:01 PooledDataSource forcefully closed/removed all connections.
+11-15 14:35:01 PooledDataSource forcefully closed/removed all connections.
+11-15 14:35:01 PooledDataSource forcefully closed/removed all connections.
+11-15 14:35:01 Opening JDBC Connection
+11-15 14:35:02 Created connection 1007880005.
+11-15 14:35:02 Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@3c130745]
+11-15 14:35:02 ==>  Preparing: select * from goods where tid = ? 
+11-15 14:35:02 ==> Parameters: 2(Integer)
+11-15 14:35:02 <==      Total: 5
+11-15 14:37:53 Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+11-15 14:37:54 PooledDataSource forcefully closed/removed all connections.
+11-15 14:37:54 PooledDataSource forcefully closed/removed all connections.
+11-15 14:37:54 PooledDataSource forcefully closed/removed all connections.
+11-15 14:37:54 PooledDataSource forcefully closed/removed all connections.
+11-15 14:37:54 Opening JDBC Connection
+11-15 14:37:54 Created connection 1007880005.
+11-15 14:37:54 Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@3c130745]
+11-15 14:37:54 ==>  Preparing: select * from goods where tid = ? 
+11-15 14:37:54 ==> Parameters: 2(Integer)
+11-15 14:37:55 <==      Total: 5
+11-15 14:38:12 Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+11-15 14:38:12 PooledDataSource forcefully closed/removed all connections.
+11-15 14:38:12 PooledDataSource forcefully closed/removed all connections.
+11-15 14:38:12 PooledDataSource forcefully closed/removed all connections.
+11-15 14:38:12 PooledDataSource forcefully closed/removed all connections.
+11-15 14:38:13 Created connection 487694075.
+11-15 14:38:13 Returned connection 487694075 to pool.
+11-15 14:38:13 Cache Hit Ratio [SQL_CACHE]: 0.0
+11-15 14:38:13 Opening JDBC Connection
+11-15 14:38:13 Checked out connection 487694075 from pool.
+11-15 14:38:13 Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@1d119efb]
+11-15 14:38:13 ==>  Preparing: SELECT count(0) FROM goods WHERE tid = ? 
+11-15 14:38:13 ==> Parameters: 2(Integer)
+11-15 14:38:13 <==      Total: 1
+11-15 14:38:13 ==>  Preparing: select * from goods where tid = ? LIMIT 2 
+11-15 14:38:13 ==> Parameters: 2(Integer)
+11-15 14:38:13 <==      Total: 2
+11-15 14:38:45 Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+11-15 14:38:46 PooledDataSource forcefully closed/removed all connections.
+11-15 14:38:46 PooledDataSource forcefully closed/removed all connections.
+11-15 14:38:46 PooledDataSource forcefully closed/removed all connections.
+11-15 14:38:46 PooledDataSource forcefully closed/removed all connections.
+11-15 14:38:46 Created connection 487694075.
+11-15 14:38:46 Returned connection 487694075 to pool.
+11-15 14:38:46 Cache Hit Ratio [SQL_CACHE]: 0.0
+11-15 14:38:46 Opening JDBC Connection
+11-15 14:38:46 Checked out connection 487694075 from pool.
+11-15 14:38:46 Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@1d119efb]
+11-15 14:38:46 ==>  Preparing: SELECT count(0) FROM goods WHERE tid = ? 
+11-15 14:38:46 ==> Parameters: 2(Integer)
+11-15 14:38:46 <==      Total: 1
+11-15 14:38:46 ==>  Preparing: select * from goods where tid = ? LIMIT 2 
+11-15 14:38:46 ==> Parameters: 2(Integer)
+11-15 14:38:46 <==      Total: 2
+11-15 14:38:47 ==>  Preparing: select * from goods where tid = ? 
+11-15 14:38:47 ==> Parameters: 2(Integer)
+11-15 14:38:47 <==      Total: 5
+11-15 14:40:41 Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+11-15 14:40:41 PooledDataSource forcefully closed/removed all connections.
+11-15 14:40:41 PooledDataSource forcefully closed/removed all connections.
+11-15 14:40:41 PooledDataSource forcefully closed/removed all connections.
+11-15 14:40:41 PooledDataSource forcefully closed/removed all connections.
+11-15 14:40:42 Created connection 487694075.
+11-15 14:40:42 Returned connection 487694075 to pool.
+11-15 14:40:42 Cache Hit Ratio [SQL_CACHE]: 0.0
+11-15 14:40:42 Opening JDBC Connection
+11-15 14:40:42 Checked out connection 487694075 from pool.
+11-15 14:40:42 Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@1d119efb]
+11-15 14:40:42 ==>  Preparing: SELECT count(0) FROM goods WHERE tid = ? 
+11-15 14:40:42 ==> Parameters: 2(Integer)
+11-15 14:40:42 <==      Total: 1
+11-15 14:40:42 ==>  Preparing: select * from goods where tid = ? LIMIT 2 
+11-15 14:40:42 ==> Parameters: 2(Integer)
+11-15 14:40:42 <==      Total: 2
+11-15 14:41:11 Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+11-15 14:41:11 PooledDataSource forcefully closed/removed all connections.
+11-15 14:41:11 PooledDataSource forcefully closed/removed all connections.
+11-15 14:41:11 PooledDataSource forcefully closed/removed all connections.
+11-15 14:41:11 PooledDataSource forcefully closed/removed all connections.
+11-15 14:41:12 Created connection 487694075.
+11-15 14:41:12 Returned connection 487694075 to pool.
+11-15 14:41:12 Cache Hit Ratio [SQL_CACHE]: 0.0
+11-15 14:41:12 Opening JDBC Connection
+11-15 14:41:12 Checked out connection 487694075 from pool.
+11-15 14:41:12 Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@1d119efb]
+11-15 14:41:12 ==>  Preparing: SELECT count(0) FROM goods WHERE tid = ? 
+11-15 14:41:12 ==> Parameters: 2(Integer)
+11-15 14:41:12 <==      Total: 1
+11-15 14:41:12 ==>  Preparing: select * from goods where tid = ? LIMIT 2 
+11-15 14:41:12 ==> Parameters: 2(Integer)
+11-15 14:41:12 <==      Total: 2
+11-15 14:45:32 Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+11-15 14:45:32 PooledDataSource forcefully closed/removed all connections.
+11-15 14:45:32 PooledDataSource forcefully closed/removed all connections.
+11-15 14:45:32 PooledDataSource forcefully closed/removed all connections.
+11-15 14:45:32 PooledDataSource forcefully closed/removed all connections.
+11-15 14:45:33 Created connection 487694075.
+11-15 14:45:33 Returned connection 487694075 to pool.
+11-15 14:45:33 Cache Hit Ratio [SQL_CACHE]: 0.0
+11-15 14:45:33 Opening JDBC Connection
+11-15 14:45:33 Checked out connection 487694075 from pool.
+11-15 14:45:33 Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@1d119efb]
+11-15 14:45:33 ==>  Preparing: SELECT count(0) FROM goods WHERE tid = ? 
+11-15 14:45:33 ==> Parameters: 2(Integer)
+11-15 14:45:33 <==      Total: 1
+11-15 14:45:33 ==>  Preparing: select * from goods where tid = ? LIMIT 2,2 
+11-15 14:45:33 ==> Parameters: 2(Integer)
+11-15 14:45:33 <==      Total: 2
+11-15 14:45:45 Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+11-15 14:45:45 PooledDataSource forcefully closed/removed all connections.
+11-15 14:45:45 PooledDataSource forcefully closed/removed all connections.
+11-15 14:45:45 PooledDataSource forcefully closed/removed all connections.
+11-15 14:45:45 PooledDataSource forcefully closed/removed all connections.
+11-15 14:45:46 Created connection 487694075.
+11-15 14:45:46 Returned connection 487694075 to pool.
+11-15 14:45:46 Cache Hit Ratio [SQL_CACHE]: 0.0
+11-15 14:45:46 Opening JDBC Connection
+11-15 14:45:46 Checked out connection 487694075 from pool.
+11-15 14:45:46 Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@1d119efb]
+11-15 14:45:46 ==>  Preparing: SELECT count(0) FROM goods WHERE tid = ? 
+11-15 14:45:46 ==> Parameters: 2(Integer)
+11-15 14:45:46 <==      Total: 1
+11-15 14:45:46 ==>  Preparing: select * from goods where tid = ? LIMIT 2 
+11-15 14:45:46 ==> Parameters: 2(Integer)
+11-15 14:45:46 <==      Total: 2

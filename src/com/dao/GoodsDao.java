@@ -48,7 +48,7 @@ public class GoodsDao {
 		LinkedList<LinkedHashMap<String, Object>> list = null;
 
 		try {
-			list = gm.getGoddsByTid(1);
+			list = gm.getGoddsByTid(tid);
 		} catch (Exception e) {
 			log.warn(e.getLocalizedMessage());
 			e.printStackTrace();

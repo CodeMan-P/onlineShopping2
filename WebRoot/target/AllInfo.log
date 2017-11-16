@@ -17660,3 +17660,473 @@
  <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
 2017-11-15 11:53:23  DEBUG 45746ms|>- <==      Total: 1
  <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-15 14:15:18  DEBUG 0ms|>- Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+ <org.apache.ibatis.logging.LogFactory.setImplementation(LogFactory.java:135)> 
+2017-11-15 14:15:18  WARN 331ms|>- 
+### Error building SqlSession.
+### The error may exist in SQL Mapper Configuration
+### Cause: org.apache.ibatis.builder.BuilderException: Error parsing SQL Mapper Configuration. Cause: java.lang.ClassCastException: com.github.pagehelper.PageHelper cannot be cast to org.apache.ibatis.plugin.Interceptor
+ <com.util.DbConn.getFactory(DbConn.java:25)> 
+2017-11-15 14:15:18  WARN 367ms|>- 
+### Error building SqlSession.
+### The error may exist in SQL Mapper Configuration
+### Cause: org.apache.ibatis.builder.BuilderException: Error parsing SQL Mapper Configuration. Cause: java.lang.ClassCastException: com.github.pagehelper.PageHelper cannot be cast to org.apache.ibatis.plugin.Interceptor
+ <com.util.DbConn.getFactory(DbConn.java:25)> 
+2017-11-15 14:15:18  WARN 369ms|>- 
+ <com.dao.GoodsDao.getGoddsByTid(GoodsDao.java:53)> 
+2017-11-15 14:16:04  DEBUG 0ms|>- Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+ <org.apache.ibatis.logging.LogFactory.setImplementation(LogFactory.java:135)> 
+2017-11-15 14:16:04  WARN 100ms|>- 
+### Error building SqlSession.
+### The error may exist in SQL Mapper Configuration
+### Cause: org.apache.ibatis.builder.BuilderException: Error parsing SQL Mapper Configuration. Cause: java.lang.ClassCastException: com.github.pagehelper.PageHelper cannot be cast to org.apache.ibatis.plugin.Interceptor
+ <com.util.DbConn.getFactory(DbConn.java:25)> 
+2017-11-15 14:16:04  WARN 122ms|>- 
+### Error building SqlSession.
+### The error may exist in SQL Mapper Configuration
+### Cause: org.apache.ibatis.builder.BuilderException: Error parsing SQL Mapper Configuration. Cause: java.lang.ClassCastException: com.github.pagehelper.PageHelper cannot be cast to org.apache.ibatis.plugin.Interceptor
+ <com.util.DbConn.getFactory(DbConn.java:25)> 
+2017-11-15 14:16:04  WARN 122ms|>- 
+ <com.dao.GoodsDao.getGoddsByTid(GoodsDao.java:53)> 
+2017-11-15 14:18:37  DEBUG 0ms|>- Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+ <org.apache.ibatis.logging.LogFactory.setImplementation(LogFactory.java:135)> 
+2017-11-15 14:18:37  WARN 127ms|>- 
+### Error building SqlSession.
+### The error may exist in SQL Mapper Configuration
+### Cause: org.apache.ibatis.builder.BuilderException: Error parsing SQL Mapper Configuration. Cause: java.lang.ClassCastException: com.github.pagehelper.PageHelper cannot be cast to org.apache.ibatis.plugin.Interceptor
+ <com.util.DbConn.getFactory(DbConn.java:25)> 
+2017-11-15 14:18:37  WARN 144ms|>- 
+### Error building SqlSession.
+### The error may exist in SQL Mapper Configuration
+### Cause: org.apache.ibatis.builder.BuilderException: Error parsing SQL Mapper Configuration. Cause: java.lang.ClassCastException: com.github.pagehelper.PageHelper cannot be cast to org.apache.ibatis.plugin.Interceptor
+ <com.util.DbConn.getFactory(DbConn.java:25)> 
+2017-11-15 14:18:37  WARN 146ms|>- 
+ <com.dao.GoodsDao.getGoddsByTid(GoodsDao.java:53)> 
+2017-11-15 14:19:17  DEBUG 0ms|>- Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+ <org.apache.ibatis.logging.LogFactory.setImplementation(LogFactory.java:135)> 
+2017-11-15 14:19:17  WARN 100ms|>- 
+### Error building SqlSession.
+### The error may exist in SQL Mapper Configuration
+### Cause: org.apache.ibatis.builder.BuilderException: Error parsing SQL Mapper Configuration. Cause: java.lang.ClassCastException: com.github.pagehelper.PageHelper cannot be cast to org.apache.ibatis.plugin.Interceptor
+ <com.util.DbConn.getFactory(DbConn.java:25)> 
+2017-11-15 14:19:17  WARN 116ms|>- 
+### Error building SqlSession.
+### The error may exist in SQL Mapper Configuration
+### Cause: org.apache.ibatis.builder.BuilderException: Error parsing SQL Mapper Configuration. Cause: java.lang.ClassCastException: com.github.pagehelper.PageHelper cannot be cast to org.apache.ibatis.plugin.Interceptor
+ <com.util.DbConn.getFactory(DbConn.java:25)> 
+2017-11-15 14:19:17  WARN 116ms|>- 
+ <com.dao.GoodsDao.getGoddsByTid(GoodsDao.java:53)> 
+2017-11-15 14:25:04  DEBUG 0ms|>- Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+ <org.apache.ibatis.logging.LogFactory.setImplementation(LogFactory.java:135)> 
+2017-11-15 14:25:04  WARN 184ms|>- 
+### Error building SqlSession.
+### The error may exist in SQL Mapper Configuration
+### Cause: org.apache.ibatis.builder.BuilderException: Error parsing SQL Mapper Configuration. Cause: com.github.pagehelper.PageException: java.lang.ClassNotFoundException: mysql
+ <com.util.DbConn.getFactory(DbConn.java:25)> 
+2017-11-15 14:25:04  WARN 200ms|>- 
+### Error building SqlSession.
+### The error may exist in SQL Mapper Configuration
+### Cause: org.apache.ibatis.builder.BuilderException: Error parsing SQL Mapper Configuration. Cause: com.github.pagehelper.PageException: java.lang.ClassNotFoundException: mysql
+ <com.util.DbConn.getFactory(DbConn.java:25)> 
+2017-11-15 14:25:04  WARN 200ms|>- 
+ <com.dao.GoodsDao.getGoddsByTid(GoodsDao.java:53)> 
+2017-11-15 14:28:03  DEBUG 0ms|>- Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+ <org.apache.ibatis.logging.LogFactory.setImplementation(LogFactory.java:135)> 
+2017-11-15 14:28:03  DEBUG 216ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-15 14:28:03  DEBUG 216ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-15 14:28:03  DEBUG 216ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-15 14:28:03  DEBUG 216ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-15 14:28:04  DEBUG 639ms|>- Opening JDBC Connection
+ <org.apache.ibatis.transaction.jdbc.JdbcTransaction.openConnection(JdbcTransaction.java:137)> 
+2017-11-15 14:28:04  DEBUG 1118ms|>- Created connection 789219251.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.popConnection(PooledDataSource.java:406)> 
+2017-11-15 14:28:04  DEBUG 1118ms|>- Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@2f0a87b3]
+ <org.apache.ibatis.transaction.jdbc.JdbcTransaction.setDesiredAutoCommit(JdbcTransaction.java:101)> 
+2017-11-15 14:28:04  DEBUG 1140ms|>- ==>  Preparing: select * from goods where tid = ? 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-15 14:28:04  DEBUG 1186ms|>- ==> Parameters: 1(Integer)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-15 14:28:04  DEBUG 1302ms|>- <==      Total: 0
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-15 14:29:19  DEBUG 0ms|>- Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+ <org.apache.ibatis.logging.LogFactory.setImplementation(LogFactory.java:135)> 
+2017-11-15 14:29:19  DEBUG 218ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-15 14:29:19  DEBUG 222ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-15 14:29:19  DEBUG 223ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-15 14:29:19  DEBUG 225ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-15 14:29:20  DEBUG 855ms|>- Opening JDBC Connection
+ <org.apache.ibatis.transaction.jdbc.JdbcTransaction.openConnection(JdbcTransaction.java:137)> 
+2017-11-15 14:29:20  DEBUG 1138ms|>- Created connection 789219251.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.popConnection(PooledDataSource.java:406)> 
+2017-11-15 14:29:20  DEBUG 1139ms|>- Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@2f0a87b3]
+ <org.apache.ibatis.transaction.jdbc.JdbcTransaction.setDesiredAutoCommit(JdbcTransaction.java:101)> 
+2017-11-15 14:29:20  DEBUG 1145ms|>- ==>  Preparing: select * from goods where tid = ? 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-15 14:29:20  DEBUG 1193ms|>- ==> Parameters: 2(Integer)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-15 14:29:20  DEBUG 1230ms|>- <==      Total: 5
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-15 14:29:51  DEBUG 0ms|>- Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+ <org.apache.ibatis.logging.LogFactory.setImplementation(LogFactory.java:135)> 
+2017-11-15 14:29:51  DEBUG 150ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-15 14:29:51  DEBUG 152ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-15 14:29:51  DEBUG 152ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-15 14:29:51  DEBUG 153ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-15 14:29:52  DEBUG 702ms|>- Created connection 1739876329.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.popConnection(PooledDataSource.java:406)> 
+2017-11-15 14:29:52  DEBUG 707ms|>- Returned connection 1739876329 to pool.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.pushConnection(PooledDataSource.java:363)> 
+2017-11-15 14:29:52  DEBUG 745ms|>- Cache Hit Ratio [SQL_CACHE]: 0.0
+ <org.apache.ibatis.cache.decorators.LoggingCache.getObject(LoggingCache.java:62)> 
+2017-11-15 14:29:52  DEBUG 786ms|>- Opening JDBC Connection
+ <org.apache.ibatis.transaction.jdbc.JdbcTransaction.openConnection(JdbcTransaction.java:137)> 
+2017-11-15 14:29:52  DEBUG 786ms|>- Checked out connection 1739876329 from pool.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.popConnection(PooledDataSource.java:398)> 
+2017-11-15 14:29:52  DEBUG 786ms|>- Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@67b467e9]
+ <org.apache.ibatis.transaction.jdbc.JdbcTransaction.setDesiredAutoCommit(JdbcTransaction.java:101)> 
+2017-11-15 14:29:52  DEBUG 786ms|>- ==>  Preparing: SELECT count(0) FROM goods WHERE tid = ? 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-15 14:29:52  DEBUG 818ms|>- ==> Parameters: 2(Integer)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-15 14:29:52  DEBUG 918ms|>- <==      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-15 14:29:52  DEBUG 918ms|>- ==>  Preparing: select * from goods where tid = ? LIMIT 2 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-15 14:29:52  DEBUG 918ms|>- ==> Parameters: 2(Integer)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-15 14:29:52  DEBUG 934ms|>- <==      Total: 2
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-15 14:33:49  DEBUG 0ms|>- Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+ <org.apache.ibatis.logging.LogFactory.setImplementation(LogFactory.java:135)> 
+2017-11-15 14:33:49  DEBUG 121ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-15 14:33:49  DEBUG 138ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-15 14:33:49  DEBUG 139ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-15 14:33:49  DEBUG 139ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-15 14:33:49  DEBUG 676ms|>- Created connection 1739876329.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.popConnection(PooledDataSource.java:406)> 
+2017-11-15 14:33:49  DEBUG 689ms|>- Returned connection 1739876329 to pool.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.pushConnection(PooledDataSource.java:363)> 
+2017-11-15 14:33:49  DEBUG 691ms|>- Cache Hit Ratio [SQL_CACHE]: 0.0
+ <org.apache.ibatis.cache.decorators.LoggingCache.getObject(LoggingCache.java:62)> 
+2017-11-15 14:33:49  DEBUG 722ms|>- Opening JDBC Connection
+ <org.apache.ibatis.transaction.jdbc.JdbcTransaction.openConnection(JdbcTransaction.java:137)> 
+2017-11-15 14:33:49  DEBUG 722ms|>- Checked out connection 1739876329 from pool.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.popConnection(PooledDataSource.java:398)> 
+2017-11-15 14:33:49  DEBUG 722ms|>- Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@67b467e9]
+ <org.apache.ibatis.transaction.jdbc.JdbcTransaction.setDesiredAutoCommit(JdbcTransaction.java:101)> 
+2017-11-15 14:33:49  DEBUG 722ms|>- ==>  Preparing: SELECT count(0) FROM goods WHERE tid = ? 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-15 14:33:49  DEBUG 760ms|>- ==> Parameters: 2(Integer)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-15 14:33:49  DEBUG 791ms|>- <==      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-15 14:33:49  DEBUG 791ms|>- ==>  Preparing: select * from goods where tid = ? LIMIT 2 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-15 14:33:49  DEBUG 791ms|>- ==> Parameters: 2(Integer)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-15 14:33:49  DEBUG 807ms|>- <==      Total: 2
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-15 14:34:32  DEBUG 0ms|>- Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+ <org.apache.ibatis.logging.LogFactory.setImplementation(LogFactory.java:135)> 
+2017-11-15 14:34:32  DEBUG 122ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-15 14:34:32  DEBUG 138ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-15 14:34:32  DEBUG 138ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-15 14:34:32  DEBUG 138ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-15 14:34:33  DEBUG 755ms|>- Created connection 487694075.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.popConnection(PooledDataSource.java:406)> 
+2017-11-15 14:34:33  DEBUG 771ms|>- Returned connection 487694075 to pool.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.pushConnection(PooledDataSource.java:363)> 
+2017-11-15 14:34:33  DEBUG 772ms|>- Cache Hit Ratio [SQL_CACHE]: 0.0
+ <org.apache.ibatis.cache.decorators.LoggingCache.getObject(LoggingCache.java:62)> 
+2017-11-15 14:34:33  DEBUG 804ms|>- Opening JDBC Connection
+ <org.apache.ibatis.transaction.jdbc.JdbcTransaction.openConnection(JdbcTransaction.java:137)> 
+2017-11-15 14:34:33  DEBUG 804ms|>- Checked out connection 487694075 from pool.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.popConnection(PooledDataSource.java:398)> 
+2017-11-15 14:34:33  DEBUG 804ms|>- Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@1d119efb]
+ <org.apache.ibatis.transaction.jdbc.JdbcTransaction.setDesiredAutoCommit(JdbcTransaction.java:101)> 
+2017-11-15 14:34:33  DEBUG 804ms|>- ==>  Preparing: SELECT count(0) FROM goods WHERE tid = ? 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-15 14:34:33  DEBUG 839ms|>- ==> Parameters: 2(Integer)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-15 14:34:33  DEBUG 871ms|>- <==      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-15 14:34:33  DEBUG 871ms|>- ==>  Preparing: select * from goods where tid = ? LIMIT 2 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-15 14:34:33  DEBUG 871ms|>- ==> Parameters: 2(Integer)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-15 14:34:33  DEBUG 871ms|>- <==      Total: 2
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-15 14:35:01  DEBUG 0ms|>- Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+ <org.apache.ibatis.logging.LogFactory.setImplementation(LogFactory.java:135)> 
+2017-11-15 14:35:01  DEBUG 138ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-15 14:35:01  DEBUG 138ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-15 14:35:01  DEBUG 138ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-15 14:35:01  DEBUG 138ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-15 14:35:01  DEBUG 570ms|>- Opening JDBC Connection
+ <org.apache.ibatis.transaction.jdbc.JdbcTransaction.openConnection(JdbcTransaction.java:137)> 
+2017-11-15 14:35:02  DEBUG 786ms|>- Created connection 1007880005.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.popConnection(PooledDataSource.java:406)> 
+2017-11-15 14:35:02  DEBUG 786ms|>- Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@3c130745]
+ <org.apache.ibatis.transaction.jdbc.JdbcTransaction.setDesiredAutoCommit(JdbcTransaction.java:101)> 
+2017-11-15 14:35:02  DEBUG 802ms|>- ==>  Preparing: select * from goods where tid = ? 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-15 14:35:02  DEBUG 839ms|>- ==> Parameters: 2(Integer)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-15 14:35:02  DEBUG 871ms|>- <==      Total: 5
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-15 14:37:53  DEBUG 0ms|>- Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+ <org.apache.ibatis.logging.LogFactory.setImplementation(LogFactory.java:135)> 
+2017-11-15 14:37:54  DEBUG 182ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-15 14:37:54  DEBUG 185ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-15 14:37:54  DEBUG 186ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-15 14:37:54  DEBUG 186ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-15 14:37:54  DEBUG 917ms|>- Opening JDBC Connection
+ <org.apache.ibatis.transaction.jdbc.JdbcTransaction.openConnection(JdbcTransaction.java:137)> 
+2017-11-15 14:37:54  DEBUG 1136ms|>- Created connection 1007880005.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.popConnection(PooledDataSource.java:406)> 
+2017-11-15 14:37:54  DEBUG 1136ms|>- Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@3c130745]
+ <org.apache.ibatis.transaction.jdbc.JdbcTransaction.setDesiredAutoCommit(JdbcTransaction.java:101)> 
+2017-11-15 14:37:54  DEBUG 1139ms|>- ==>  Preparing: select * from goods where tid = ? 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-15 14:37:54  DEBUG 1155ms|>- ==> Parameters: 2(Integer)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-15 14:37:55  DEBUG 1186ms|>- <==      Total: 5
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-15 14:38:12  DEBUG 0ms|>- Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+ <org.apache.ibatis.logging.LogFactory.setImplementation(LogFactory.java:135)> 
+2017-11-15 14:38:12  DEBUG 285ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-15 14:38:12  DEBUG 285ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-15 14:38:12  DEBUG 285ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-15 14:38:12  DEBUG 285ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-15 14:38:13  DEBUG 1052ms|>- Created connection 487694075.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.popConnection(PooledDataSource.java:406)> 
+2017-11-15 14:38:13  DEBUG 1052ms|>- Returned connection 487694075 to pool.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.pushConnection(PooledDataSource.java:363)> 
+2017-11-15 14:38:13  DEBUG 1063ms|>- Cache Hit Ratio [SQL_CACHE]: 0.0
+ <org.apache.ibatis.cache.decorators.LoggingCache.getObject(LoggingCache.java:62)> 
+2017-11-15 14:38:13  DEBUG 1094ms|>- Opening JDBC Connection
+ <org.apache.ibatis.transaction.jdbc.JdbcTransaction.openConnection(JdbcTransaction.java:137)> 
+2017-11-15 14:38:13  DEBUG 1094ms|>- Checked out connection 487694075 from pool.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.popConnection(PooledDataSource.java:398)> 
+2017-11-15 14:38:13  DEBUG 1094ms|>- Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@1d119efb]
+ <org.apache.ibatis.transaction.jdbc.JdbcTransaction.setDesiredAutoCommit(JdbcTransaction.java:101)> 
+2017-11-15 14:38:13  DEBUG 1094ms|>- ==>  Preparing: SELECT count(0) FROM goods WHERE tid = ? 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-15 14:38:13  DEBUG 1137ms|>- ==> Parameters: 2(Integer)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-15 14:38:13  DEBUG 1168ms|>- <==      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-15 14:38:13  DEBUG 1168ms|>- ==>  Preparing: select * from goods where tid = ? LIMIT 2 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-15 14:38:13  DEBUG 1168ms|>- ==> Parameters: 2(Integer)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-15 14:38:13  DEBUG 1184ms|>- <==      Total: 2
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-15 14:38:45  DEBUG 0ms|>- Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+ <org.apache.ibatis.logging.LogFactory.setImplementation(LogFactory.java:135)> 
+2017-11-15 14:38:46  DEBUG 138ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-15 14:38:46  DEBUG 138ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-15 14:38:46  DEBUG 138ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-15 14:38:46  DEBUG 138ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-15 14:38:46  DEBUG 871ms|>- Created connection 487694075.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.popConnection(PooledDataSource.java:406)> 
+2017-11-15 14:38:46  DEBUG 877ms|>- Returned connection 487694075 to pool.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.pushConnection(PooledDataSource.java:363)> 
+2017-11-15 14:38:46  DEBUG 878ms|>- Cache Hit Ratio [SQL_CACHE]: 0.0
+ <org.apache.ibatis.cache.decorators.LoggingCache.getObject(LoggingCache.java:62)> 
+2017-11-15 14:38:46  DEBUG 939ms|>- Opening JDBC Connection
+ <org.apache.ibatis.transaction.jdbc.JdbcTransaction.openConnection(JdbcTransaction.java:137)> 
+2017-11-15 14:38:46  DEBUG 939ms|>- Checked out connection 487694075 from pool.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.popConnection(PooledDataSource.java:398)> 
+2017-11-15 14:38:46  DEBUG 940ms|>- Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@1d119efb]
+ <org.apache.ibatis.transaction.jdbc.JdbcTransaction.setDesiredAutoCommit(JdbcTransaction.java:101)> 
+2017-11-15 14:38:46  DEBUG 940ms|>- ==>  Preparing: SELECT count(0) FROM goods WHERE tid = ? 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-15 14:38:46  DEBUG 987ms|>- ==> Parameters: 2(Integer)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-15 14:38:46  DEBUG 1018ms|>- <==      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-15 14:38:46  DEBUG 1018ms|>- ==>  Preparing: select * from goods where tid = ? LIMIT 2 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-15 14:38:46  DEBUG 1018ms|>- ==> Parameters: 2(Integer)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-15 14:38:46  DEBUG 1035ms|>- <==      Total: 2
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-15 14:38:47  DEBUG 1102ms|>- ==>  Preparing: select * from goods where tid = ? 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-15 14:38:47  DEBUG 1102ms|>- ==> Parameters: 2(Integer)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-15 14:38:47  DEBUG 1102ms|>- <==      Total: 5
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-15 14:40:41  DEBUG 0ms|>- Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+ <org.apache.ibatis.logging.LogFactory.setImplementation(LogFactory.java:135)> 
+2017-11-15 14:40:41  DEBUG 138ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-15 14:40:41  DEBUG 138ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-15 14:40:41  DEBUG 138ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-15 14:40:41  DEBUG 138ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-15 14:40:42  DEBUG 1036ms|>- Created connection 487694075.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.popConnection(PooledDataSource.java:406)> 
+2017-11-15 14:40:42  DEBUG 1036ms|>- Returned connection 487694075 to pool.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.pushConnection(PooledDataSource.java:363)> 
+2017-11-15 14:40:42  DEBUG 1040ms|>- Cache Hit Ratio [SQL_CACHE]: 0.0
+ <org.apache.ibatis.cache.decorators.LoggingCache.getObject(LoggingCache.java:62)> 
+2017-11-15 14:40:42  DEBUG 1074ms|>- Opening JDBC Connection
+ <org.apache.ibatis.transaction.jdbc.JdbcTransaction.openConnection(JdbcTransaction.java:137)> 
+2017-11-15 14:40:42  DEBUG 1074ms|>- Checked out connection 487694075 from pool.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.popConnection(PooledDataSource.java:398)> 
+2017-11-15 14:40:42  DEBUG 1074ms|>- Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@1d119efb]
+ <org.apache.ibatis.transaction.jdbc.JdbcTransaction.setDesiredAutoCommit(JdbcTransaction.java:101)> 
+2017-11-15 14:40:42  DEBUG 1074ms|>- ==>  Preparing: SELECT count(0) FROM goods WHERE tid = ? 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-15 14:40:42  DEBUG 1121ms|>- ==> Parameters: 2(Integer)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-15 14:40:42  DEBUG 1137ms|>- <==      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-15 14:40:42  DEBUG 1137ms|>- ==>  Preparing: select * from goods where tid = ? LIMIT 2 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-15 14:40:42  DEBUG 1137ms|>- ==> Parameters: 2(Integer)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-15 14:40:42  DEBUG 1152ms|>- <==      Total: 2
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-15 14:41:11  DEBUG 0ms|>- Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+ <org.apache.ibatis.logging.LogFactory.setImplementation(LogFactory.java:135)> 
+2017-11-15 14:41:11  DEBUG 189ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-15 14:41:11  DEBUG 191ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-15 14:41:11  DEBUG 192ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-15 14:41:11  DEBUG 192ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-15 14:41:12  DEBUG 909ms|>- Created connection 487694075.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.popConnection(PooledDataSource.java:406)> 
+2017-11-15 14:41:12  DEBUG 916ms|>- Returned connection 487694075 to pool.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.pushConnection(PooledDataSource.java:363)> 
+2017-11-15 14:41:12  DEBUG 921ms|>- Cache Hit Ratio [SQL_CACHE]: 0.0
+ <org.apache.ibatis.cache.decorators.LoggingCache.getObject(LoggingCache.java:62)> 
+2017-11-15 14:41:12  DEBUG 947ms|>- Opening JDBC Connection
+ <org.apache.ibatis.transaction.jdbc.JdbcTransaction.openConnection(JdbcTransaction.java:137)> 
+2017-11-15 14:41:12  DEBUG 947ms|>- Checked out connection 487694075 from pool.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.popConnection(PooledDataSource.java:398)> 
+2017-11-15 14:41:12  DEBUG 947ms|>- Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@1d119efb]
+ <org.apache.ibatis.transaction.jdbc.JdbcTransaction.setDesiredAutoCommit(JdbcTransaction.java:101)> 
+2017-11-15 14:41:12  DEBUG 947ms|>- ==>  Preparing: SELECT count(0) FROM goods WHERE tid = ? 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-15 14:41:12  DEBUG 993ms|>- ==> Parameters: 2(Integer)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-15 14:41:12  DEBUG 1009ms|>- <==      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-15 14:41:12  DEBUG 1009ms|>- ==>  Preparing: select * from goods where tid = ? LIMIT 2 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-15 14:41:12  DEBUG 1009ms|>- ==> Parameters: 2(Integer)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-15 14:41:12  DEBUG 1026ms|>- <==      Total: 2
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-15 14:45:32  DEBUG 0ms|>- Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+ <org.apache.ibatis.logging.LogFactory.setImplementation(LogFactory.java:135)> 
+2017-11-15 14:45:32  DEBUG 177ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-15 14:45:32  DEBUG 177ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-15 14:45:32  DEBUG 177ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-15 14:45:32  DEBUG 177ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-15 14:45:33  DEBUG 847ms|>- Created connection 487694075.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.popConnection(PooledDataSource.java:406)> 
+2017-11-15 14:45:33  DEBUG 847ms|>- Returned connection 487694075 to pool.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.pushConnection(PooledDataSource.java:363)> 
+2017-11-15 14:45:33  DEBUG 850ms|>- Cache Hit Ratio [SQL_CACHE]: 0.0
+ <org.apache.ibatis.cache.decorators.LoggingCache.getObject(LoggingCache.java:62)> 
+2017-11-15 14:45:33  DEBUG 882ms|>- Opening JDBC Connection
+ <org.apache.ibatis.transaction.jdbc.JdbcTransaction.openConnection(JdbcTransaction.java:137)> 
+2017-11-15 14:45:33  DEBUG 882ms|>- Checked out connection 487694075 from pool.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.popConnection(PooledDataSource.java:398)> 
+2017-11-15 14:45:33  DEBUG 882ms|>- Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@1d119efb]
+ <org.apache.ibatis.transaction.jdbc.JdbcTransaction.setDesiredAutoCommit(JdbcTransaction.java:101)> 
+2017-11-15 14:45:33  DEBUG 882ms|>- ==>  Preparing: SELECT count(0) FROM goods WHERE tid = ? 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-15 14:45:33  DEBUG 913ms|>- ==> Parameters: 2(Integer)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-15 14:45:33  DEBUG 947ms|>- <==      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-15 14:45:33  DEBUG 947ms|>- ==>  Preparing: select * from goods where tid = ? LIMIT 2,2 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-15 14:45:33  DEBUG 947ms|>- ==> Parameters: 2(Integer)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-15 14:45:33  DEBUG 947ms|>- <==      Total: 2
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-15 14:45:45  DEBUG 0ms|>- Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+ <org.apache.ibatis.logging.LogFactory.setImplementation(LogFactory.java:135)> 
+2017-11-15 14:45:45  DEBUG 131ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-15 14:45:45  DEBUG 131ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-15 14:45:45  DEBUG 131ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-15 14:45:45  DEBUG 131ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-15 14:45:46  DEBUG 801ms|>- Created connection 487694075.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.popConnection(PooledDataSource.java:406)> 
+2017-11-15 14:45:46  DEBUG 803ms|>- Returned connection 487694075 to pool.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.pushConnection(PooledDataSource.java:363)> 
+2017-11-15 14:45:46  DEBUG 810ms|>- Cache Hit Ratio [SQL_CACHE]: 0.0
+ <org.apache.ibatis.cache.decorators.LoggingCache.getObject(LoggingCache.java:62)> 
+2017-11-15 14:45:46  DEBUG 846ms|>- Opening JDBC Connection
+ <org.apache.ibatis.transaction.jdbc.JdbcTransaction.openConnection(JdbcTransaction.java:137)> 
+2017-11-15 14:45:46  DEBUG 846ms|>- Checked out connection 487694075 from pool.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.popConnection(PooledDataSource.java:398)> 
+2017-11-15 14:45:46  DEBUG 846ms|>- Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@1d119efb]
+ <org.apache.ibatis.transaction.jdbc.JdbcTransaction.setDesiredAutoCommit(JdbcTransaction.java:101)> 
+2017-11-15 14:45:46  DEBUG 846ms|>- ==>  Preparing: SELECT count(0) FROM goods WHERE tid = ? 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-15 14:45:46  DEBUG 886ms|>- ==> Parameters: 2(Integer)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-15 14:45:46  DEBUG 902ms|>- <==      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-15 14:45:46  DEBUG 918ms|>- ==>  Preparing: select * from goods where tid = ? LIMIT 2 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-15 14:45:46  DEBUG 918ms|>- ==> Parameters: 2(Integer)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-15 14:45:46  DEBUG 918ms|>- <==      Total: 2
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
