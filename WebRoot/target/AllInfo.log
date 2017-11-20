@@ -18130,3 +18130,1179 @@
  <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
 2017-11-15 14:45:46  DEBUG 918ms|>- <==      Total: 2
  <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-16 13:32:39  DEBUG 0ms|>- Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+ <org.apache.ibatis.logging.LogFactory.setImplementation(LogFactory.java:135)> 
+2017-11-16 13:32:40  DEBUG 320ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-16 13:32:40  DEBUG 320ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-16 13:32:40  DEBUG 320ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-16 13:32:40  DEBUG 320ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-16 13:32:49  DEBUG 9802ms|>- Opening JDBC Connection
+ <org.apache.ibatis.transaction.jdbc.JdbcTransaction.openConnection(JdbcTransaction.java:137)> 
+2017-11-16 13:33:46  DEBUG 66856ms|>- Opening JDBC Connection
+ <org.apache.ibatis.transaction.jdbc.JdbcTransaction.openConnection(JdbcTransaction.java:137)> 
+2017-11-16 13:33:47  DEBUG 67105ms|>- Created connection 1820438290.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.popConnection(PooledDataSource.java:406)> 
+2017-11-16 13:33:47  DEBUG 67106ms|>- Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@6c81af12]
+ <org.apache.ibatis.transaction.jdbc.JdbcTransaction.setDesiredAutoCommit(JdbcTransaction.java:101)> 
+2017-11-16 13:33:47  DEBUG 67110ms|>- ==>  Preparing: SELECT * FROM users WHERE uname = ? and upwd = ? 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-16 13:33:47  DEBUG 67126ms|>- ==> Parameters: xiaoming(String), 123(String)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-16 13:33:47  TRACE 67183ms|>- <==    Columns: uid, uname, upwd, phone, city, regDate, idCard, realName, age, email, sex, avatar
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.trace(BaseJdbcLogger.java:165)> 
+2017-11-16 13:33:47  TRACE 67204ms|>- <==        Row: 1, xiaoming, 123, 18899119292, 西安, 2017-11-11, null, 小明, 22, null, 男, <<BLOB>>
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.trace(BaseJdbcLogger.java:165)> 
+2017-11-16 13:33:47  DEBUG 67209ms|>- <==      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-16 13:33:47  DEBUG 67210ms|>- Opening JDBC Connection
+ <org.apache.ibatis.transaction.jdbc.JdbcTransaction.openConnection(JdbcTransaction.java:137)> 
+2017-11-16 13:33:47  DEBUG 67210ms|>- Created connection 2003295406.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.popConnection(PooledDataSource.java:406)> 
+2017-11-16 13:33:47  DEBUG 67210ms|>- Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@7767dcae]
+ <org.apache.ibatis.transaction.jdbc.JdbcTransaction.setDesiredAutoCommit(JdbcTransaction.java:101)> 
+2017-11-16 13:33:47  DEBUG 67225ms|>- ==>  Preparing: SELECT COUNT(1) FROM shoppingcar WHERE uid = ?; 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-16 13:33:47  DEBUG 67225ms|>- ==> Parameters: 1(Integer)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-16 13:33:47  DEBUG 67272ms|>- <==      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-16 13:38:42  DEBUG 362119ms|>- ==>  Preparing: SELECT * FROM users WHERE uname = ? and upwd = ? 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-16 13:38:42  DEBUG 362133ms|>- ==> Parameters: (String), (String)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-16 13:38:42  DEBUG 362134ms|>- <==      Total: 0
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-16 13:41:51  DEBUG 551438ms|>- ==>  Preparing: SELECT COUNT(1) FROM shoppingcar WHERE uid = ?; 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-16 13:41:51  DEBUG 551447ms|>- ==> Parameters: 1(Integer)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-16 13:41:51  DEBUG 551448ms|>- <==      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-16 14:15:25  DEBUG 2566034ms|>- ==>  Preparing: SELECT COUNT(1) FROM shoppingcar WHERE uid = ?; 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-16 14:15:26  DEBUG 2566050ms|>- ==> Parameters: 1(Integer)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-16 14:15:26  DEBUG 2566051ms|>- <==      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-16 14:16:49  DEBUG 2649722ms|>- ==>  Preparing: SELECT COUNT(1) FROM shoppingcar WHERE uid = ?; 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-16 14:16:49  DEBUG 2649722ms|>- ==> Parameters: 1(Integer)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-16 14:16:49  DEBUG 2649722ms|>- <==      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-16 14:16:57  DEBUG 2657771ms|>- ==>  Preparing: SELECT COUNT(1) FROM shoppingcar WHERE uid = ?; 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-16 14:16:57  DEBUG 2657783ms|>- ==> Parameters: 1(Integer)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-16 14:16:57  DEBUG 2657785ms|>- <==      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-16 14:17:06  DEBUG 2666520ms|>- ==>  Preparing: SELECT COUNT(1) FROM shoppingcar WHERE uid = ?; 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-16 14:17:06  DEBUG 2666531ms|>- ==> Parameters: 1(Integer)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-16 14:17:06  DEBUG 2666532ms|>- <==      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-16 14:20:48  DEBUG 2888443ms|>- ==>  Preparing: SELECT COUNT(1) FROM shoppingcar WHERE uid = ?; 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-16 14:20:48  DEBUG 2888443ms|>- ==> Parameters: 1(Integer)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-16 14:20:48  DEBUG 2888454ms|>- <==      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-16 14:25:04  DEBUG 3144737ms|>- ==>  Preparing: SELECT COUNT(1) FROM shoppingcar WHERE uid = ?; 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-16 14:25:04  DEBUG 3144737ms|>- ==> Parameters: 1(Integer)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-16 14:25:04  DEBUG 3144737ms|>- <==      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-16 14:25:12  DEBUG 3152187ms|>- ==>  Preparing: SELECT COUNT(1) FROM shoppingcar WHERE uid = ?; 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-16 14:25:12  DEBUG 3152194ms|>- ==> Parameters: 1(Integer)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-16 14:25:12  DEBUG 3152196ms|>- <==      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-16 14:28:09  DEBUG 3329598ms|>- ==>  Preparing: SELECT COUNT(1) FROM shoppingcar WHERE uid = ?; 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-16 14:28:09  DEBUG 3329608ms|>- ==> Parameters: 1(Integer)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-16 14:28:09  DEBUG 3329609ms|>- <==      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-16 14:30:57  DEBUG 3497928ms|>- ==>  Preparing: SELECT COUNT(1) FROM shoppingcar WHERE uid = ?; 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-16 14:30:57  DEBUG 3497931ms|>- ==> Parameters: 1(Integer)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-16 14:30:57  DEBUG 3497932ms|>- <==      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-16 15:40:33  DEBUG 0ms|>- Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+ <org.apache.ibatis.logging.LogFactory.setImplementation(LogFactory.java:135)> 
+2017-11-16 15:40:33  DEBUG 298ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-16 15:40:33  DEBUG 298ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-16 15:40:33  DEBUG 299ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-16 15:40:33  DEBUG 299ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-16 15:44:29  DEBUG 0ms|>- Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+ <org.apache.ibatis.logging.LogFactory.setImplementation(LogFactory.java:135)> 
+2017-11-16 15:44:29  DEBUG 175ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-16 15:44:29  DEBUG 175ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-16 15:44:29  DEBUG 176ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-16 15:44:29  DEBUG 176ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-16 15:50:13  DEBUG 580886ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-16 15:50:13  DEBUG 344714ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-16 15:50:14  DEBUG 0ms|>- Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+ <org.apache.ibatis.logging.LogFactory.setImplementation(LogFactory.java:135)> 
+2017-11-16 15:50:14  DEBUG 132ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-16 15:50:14  DEBUG 133ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-16 15:50:14  DEBUG 133ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-16 15:50:14  DEBUG 134ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-16 15:52:57  DEBUG 0ms|>- Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+ <org.apache.ibatis.logging.LogFactory.setImplementation(LogFactory.java:135)> 
+2017-11-16 15:52:57  DEBUG 118ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-16 15:52:57  DEBUG 118ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-16 15:52:57  DEBUG 119ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-16 15:52:57  DEBUG 119ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-16 15:53:58  DEBUG 0ms|>- Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+ <org.apache.ibatis.logging.LogFactory.setImplementation(LogFactory.java:135)> 
+2017-11-16 15:53:58  DEBUG 187ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-16 15:53:58  DEBUG 188ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-16 15:53:58  DEBUG 188ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-16 15:53:58  DEBUG 188ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-16 16:04:06  DEBUG 0ms|>- Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+ <org.apache.ibatis.logging.LogFactory.setImplementation(LogFactory.java:135)> 
+2017-11-16 16:04:06  DEBUG 231ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-16 16:04:06  DEBUG 231ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-16 16:04:06  DEBUG 232ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-16 16:04:06  DEBUG 233ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-16 16:13:12  DEBUG 0ms|>- Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+ <org.apache.ibatis.logging.LogFactory.setImplementation(LogFactory.java:135)> 
+2017-11-16 16:13:12  DEBUG 281ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-16 16:13:12  DEBUG 281ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-16 16:13:12  DEBUG 282ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-16 16:13:12  DEBUG 282ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-16 16:25:11  DEBUG 0ms|>- Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+ <org.apache.ibatis.logging.LogFactory.setImplementation(LogFactory.java:135)> 
+2017-11-16 16:25:11  DEBUG 237ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-16 16:25:11  DEBUG 238ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-16 16:25:11  DEBUG 239ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-16 16:25:11  DEBUG 239ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-16 16:40:12  DEBUG 1619294ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-16 16:40:19  DEBUG 907855ms|>- Opening JDBC Connection
+ <org.apache.ibatis.transaction.jdbc.JdbcTransaction.openConnection(JdbcTransaction.java:137)> 
+2017-11-16 16:40:19  DEBUG 908103ms|>- Created connection 429879802.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.popConnection(PooledDataSource.java:406)> 
+2017-11-16 16:40:19  DEBUG 908103ms|>- Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@199f71fa]
+ <org.apache.ibatis.transaction.jdbc.JdbcTransaction.setDesiredAutoCommit(JdbcTransaction.java:101)> 
+2017-11-16 16:40:19  DEBUG 908103ms|>- ==>  Preparing: SELECT * FROM users WHERE uname = ? and upwd = ? 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-16 16:40:19  DEBUG 908140ms|>- ==> Parameters: xiaoming(String), 123(String)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-16 16:40:19  TRACE 908156ms|>- <==    Columns: uid, uname, upwd, phone, city, regDate, idCard, realName, age, email, sex, avatar
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.trace(BaseJdbcLogger.java:165)> 
+2017-11-16 16:40:19  TRACE 908172ms|>- <==        Row: 1, xiaoming, 123, 18899119292, 西安, 2017-11-11, null, 小明, 22, null, 男, <<BLOB>>
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.trace(BaseJdbcLogger.java:165)> 
+2017-11-16 16:40:19  DEBUG 908172ms|>- <==      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-16 16:40:19  DEBUG 908172ms|>- Opening JDBC Connection
+ <org.apache.ibatis.transaction.jdbc.JdbcTransaction.openConnection(JdbcTransaction.java:137)> 
+2017-11-16 16:40:19  DEBUG 908187ms|>- Created connection 1271427475.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.popConnection(PooledDataSource.java:406)> 
+2017-11-16 16:40:19  DEBUG 908187ms|>- Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@4bc87193]
+ <org.apache.ibatis.transaction.jdbc.JdbcTransaction.setDesiredAutoCommit(JdbcTransaction.java:101)> 
+2017-11-16 16:40:19  DEBUG 908187ms|>- ==>  Preparing: SELECT COUNT(1) FROM shoppingcar WHERE uid = ?; 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-16 16:40:19  DEBUG 908187ms|>- ==> Parameters: 1(Integer)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-16 16:40:19  DEBUG 908187ms|>- <==      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-16 16:47:15  DEBUG 0ms|>- Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+ <org.apache.ibatis.logging.LogFactory.setImplementation(LogFactory.java:135)> 
+2017-11-16 16:47:15  DEBUG 103ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-16 16:47:15  DEBUG 103ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-16 16:47:15  DEBUG 119ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-16 16:47:15  DEBUG 119ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-16 16:47:15  DEBUG 319ms|>- Opening JDBC Connection
+ <org.apache.ibatis.transaction.jdbc.JdbcTransaction.openConnection(JdbcTransaction.java:137)> 
+2017-11-16 16:47:15  DEBUG 535ms|>- Created connection 1109209173.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.popConnection(PooledDataSource.java:406)> 
+2017-11-16 16:47:15  DEBUG 535ms|>- Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@421d3055]
+ <org.apache.ibatis.transaction.jdbc.JdbcTransaction.setDesiredAutoCommit(JdbcTransaction.java:101)> 
+2017-11-16 16:47:15  DEBUG 551ms|>- ==>  Preparing: SELECT * FROM users WHERE uname = ? and upwd = ? 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-16 16:47:15  DEBUG 551ms|>- ==> Parameters: xiaoming(String), 123(String)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-16 16:47:15  TRACE 566ms|>- <==    Columns: uid, uname, upwd, phone, city, regDate, idCard, realName, age, email, sex, avatar
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.trace(BaseJdbcLogger.java:165)> 
+2017-11-16 16:47:15  TRACE 566ms|>- <==        Row: 1, xiaoming, 123, 18899119292, 西安, 2017-11-11, null, 小明, 22, null, 男, <<BLOB>>
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.trace(BaseJdbcLogger.java:165)> 
+2017-11-16 16:47:15  DEBUG 582ms|>- <==      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-16 16:47:15  DEBUG 582ms|>- Opening JDBC Connection
+ <org.apache.ibatis.transaction.jdbc.JdbcTransaction.openConnection(JdbcTransaction.java:137)> 
+2017-11-16 16:47:15  DEBUG 599ms|>- Created connection 600133809.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.popConnection(PooledDataSource.java:406)> 
+2017-11-16 16:47:15  DEBUG 600ms|>- Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@23c550b1]
+ <org.apache.ibatis.transaction.jdbc.JdbcTransaction.setDesiredAutoCommit(JdbcTransaction.java:101)> 
+2017-11-16 16:47:15  DEBUG 604ms|>- ==>  Preparing: SELECT COUNT(1) FROM shoppingcar WHERE uid = ?; 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-16 16:47:15  DEBUG 604ms|>- ==> Parameters: 1(Integer)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-16 16:47:15  DEBUG 604ms|>- <==      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-16 16:48:18  DEBUG 63528ms|>- ==>  Preparing: SELECT COUNT(1) FROM shoppingcar WHERE uid = ?; 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-16 16:48:18  DEBUG 63532ms|>- ==> Parameters: 1(Integer)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-16 16:48:18  DEBUG 63533ms|>- <==      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-16 17:00:17  DEBUG 0ms|>- Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+ <org.apache.ibatis.logging.LogFactory.setImplementation(LogFactory.java:135)> 
+2017-11-16 17:00:17  DEBUG 201ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-16 17:00:17  DEBUG 202ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-16 17:00:17  DEBUG 202ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-16 17:00:17  DEBUG 202ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-16 17:00:25  DEBUG 8034ms|>- Opening JDBC Connection
+ <org.apache.ibatis.transaction.jdbc.JdbcTransaction.openConnection(JdbcTransaction.java:137)> 
+2017-11-16 17:00:25  DEBUG 8229ms|>- Created connection 952403423.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.popConnection(PooledDataSource.java:406)> 
+2017-11-16 17:00:25  DEBUG 8229ms|>- Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@38c485df]
+ <org.apache.ibatis.transaction.jdbc.JdbcTransaction.setDesiredAutoCommit(JdbcTransaction.java:101)> 
+2017-11-16 17:00:25  DEBUG 8245ms|>- ==>  Preparing: SELECT * FROM users WHERE uname = ? and upwd = ? 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-16 17:00:25  DEBUG 8245ms|>- ==> Parameters: xiaoming(String), 123(String)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-16 17:00:25  TRACE 8260ms|>- <==    Columns: uid, uname, upwd, phone, city, regDate, idCard, realName, age, email, sex, avatar
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.trace(BaseJdbcLogger.java:165)> 
+2017-11-16 17:00:25  TRACE 8260ms|>- <==        Row: 1, xiaoming, 123, 18899119292, 西安, 2017-11-11, null, 小明, 22, null, 男, <<BLOB>>
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.trace(BaseJdbcLogger.java:165)> 
+2017-11-16 17:00:25  DEBUG 8260ms|>- <==      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-16 17:00:25  DEBUG 8260ms|>- Opening JDBC Connection
+ <org.apache.ibatis.transaction.jdbc.JdbcTransaction.openConnection(JdbcTransaction.java:137)> 
+2017-11-16 17:00:25  DEBUG 8276ms|>- Created connection 1621929082.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.popConnection(PooledDataSource.java:406)> 
+2017-11-16 17:00:25  DEBUG 8276ms|>- Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@60acac7a]
+ <org.apache.ibatis.transaction.jdbc.JdbcTransaction.setDesiredAutoCommit(JdbcTransaction.java:101)> 
+2017-11-16 17:00:25  DEBUG 8276ms|>- ==>  Preparing: SELECT COUNT(1) FROM shoppingcar WHERE uid = ?; 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-16 17:00:25  DEBUG 8276ms|>- ==> Parameters: 1(Integer)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-16 17:00:25  DEBUG 8276ms|>- <==      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-16 17:00:30  DEBUG 13419ms|>- ==>  Preparing: SELECT COUNT(1) FROM shoppingcar WHERE uid = ?; 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-16 17:00:30  DEBUG 13420ms|>- ==> Parameters: 1(Integer)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-16 17:00:30  DEBUG 13422ms|>- <==      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-16 17:00:31  DEBUG 14400ms|>- ==>  Preparing: SELECT COUNT(1) FROM shoppingcar WHERE uid = ?; 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-16 17:00:31  DEBUG 14401ms|>- ==> Parameters: 1(Integer)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-16 17:00:31  DEBUG 14402ms|>- <==      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-16 17:00:32  DEBUG 15438ms|>- ==>  Preparing: SELECT COUNT(1) FROM shoppingcar WHERE uid = ?; 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-16 17:00:32  DEBUG 15439ms|>- ==> Parameters: 1(Integer)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-16 17:00:32  DEBUG 15441ms|>- <==      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-17 11:11:43  DEBUG 0ms|>- Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+ <org.apache.ibatis.logging.LogFactory.setImplementation(LogFactory.java:135)> 
+2017-11-17 11:11:43  DEBUG 184ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-17 11:11:43  DEBUG 184ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-17 11:11:43  DEBUG 184ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-17 11:11:43  DEBUG 184ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-17 11:11:44  DEBUG 585ms|>- Opening JDBC Connection
+ <org.apache.ibatis.transaction.jdbc.JdbcTransaction.openConnection(JdbcTransaction.java:137)> 
+2017-11-17 11:12:28  DEBUG 44881ms|>- Opening JDBC Connection
+ <org.apache.ibatis.transaction.jdbc.JdbcTransaction.openConnection(JdbcTransaction.java:137)> 
+2017-11-17 11:12:28  DEBUG 44997ms|>- Created connection 1846448632.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.popConnection(PooledDataSource.java:406)> 
+2017-11-17 11:12:28  DEBUG 44997ms|>- Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@6e0e91f8]
+ <org.apache.ibatis.transaction.jdbc.JdbcTransaction.setDesiredAutoCommit(JdbcTransaction.java:101)> 
+2017-11-17 11:12:28  DEBUG 45014ms|>- ==>  Preparing: SELECT * FROM users WHERE uname = ? and upwd = ? 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-17 11:12:28  DEBUG 45035ms|>- ==> Parameters: xiaoming(String), 123(String)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-17 11:12:28  TRACE 45082ms|>- <==    Columns: uid, uname, upwd, phone, city, regDate, idCard, realName, age, email, sex, avatar
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.trace(BaseJdbcLogger.java:165)> 
+2017-11-17 11:12:28  TRACE 45082ms|>- <==        Row: 1, xiaoming, 123, 18899119292, 西安, 2017-11-11, null, 小明, 22, null, 男, <<BLOB>>
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.trace(BaseJdbcLogger.java:165)> 
+2017-11-17 11:12:28  DEBUG 45098ms|>- <==      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-17 11:12:28  DEBUG 45119ms|>- Opening JDBC Connection
+ <org.apache.ibatis.transaction.jdbc.JdbcTransaction.openConnection(JdbcTransaction.java:137)> 
+2017-11-17 11:12:28  DEBUG 45135ms|>- Created connection 216604478.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.popConnection(PooledDataSource.java:406)> 
+2017-11-17 11:12:28  DEBUG 45135ms|>- Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@ce91f3e]
+ <org.apache.ibatis.transaction.jdbc.JdbcTransaction.setDesiredAutoCommit(JdbcTransaction.java:101)> 
+2017-11-17 11:12:28  DEBUG 45135ms|>- ==>  Preparing: SELECT COUNT(1) FROM shoppingcar WHERE uid = ?; 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-17 11:12:28  DEBUG 45135ms|>- ==> Parameters: 1(Integer)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-17 11:12:28  DEBUG 45150ms|>- <==      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-17 11:14:29  DEBUG 165393ms|>- ==>  Preparing: SELECT COUNT(1) FROM shoppingcar WHERE uid = ?; 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-17 11:14:29  DEBUG 165394ms|>- ==> Parameters: 1(Integer)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-17 11:14:29  DEBUG 165395ms|>- <==      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-17 11:20:34  DEBUG 530933ms|>- ==>  Preparing: SELECT COUNT(1) FROM shoppingcar WHERE uid = ?; 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-17 11:20:34  DEBUG 530936ms|>- ==> Parameters: 1(Integer)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-17 11:20:34  DEBUG 530937ms|>- <==      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-17 11:22:33  DEBUG 649861ms|>- ==>  Preparing: SELECT COUNT(1) FROM shoppingcar WHERE uid = ?; 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-17 11:22:33  DEBUG 649876ms|>- ==> Parameters: 1(Integer)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-17 11:22:33  DEBUG 649878ms|>- <==      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-17 11:22:45  DEBUG 661990ms|>- ==>  Preparing: SELECT COUNT(1) FROM shoppingcar WHERE uid = ?; 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-17 11:22:45  DEBUG 661999ms|>- ==> Parameters: 1(Integer)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-17 11:22:45  DEBUG 662000ms|>- <==      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-17 11:24:53  DEBUG 790109ms|>- ==>  Preparing: SELECT COUNT(1) FROM shoppingcar WHERE uid = ?; 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-17 11:24:53  DEBUG 790110ms|>- ==> Parameters: 1(Integer)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-17 11:24:53  DEBUG 790111ms|>- <==      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-17 11:25:51  DEBUG 848261ms|>- ==>  Preparing: SELECT COUNT(1) FROM shoppingcar WHERE uid = ?; 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-17 11:25:51  DEBUG 848265ms|>- ==> Parameters: 1(Integer)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-17 11:25:51  DEBUG 848266ms|>- <==      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-17 11:55:25  DEBUG 0ms|>- Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+ <org.apache.ibatis.logging.LogFactory.setImplementation(LogFactory.java:135)> 
+2017-11-17 11:55:26  DEBUG 169ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-17 11:55:26  DEBUG 169ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-17 11:55:26  DEBUG 169ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-17 11:55:26  DEBUG 169ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-17 11:55:26  DEBUG 532ms|>- Opening JDBC Connection
+ <org.apache.ibatis.transaction.jdbc.JdbcTransaction.openConnection(JdbcTransaction.java:137)> 
+2017-11-17 11:55:26  DEBUG 876ms|>- Created connection 473523576.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.popConnection(PooledDataSource.java:406)> 
+2017-11-17 11:55:26  DEBUG 876ms|>- Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@1c396578]
+ <org.apache.ibatis.transaction.jdbc.JdbcTransaction.setDesiredAutoCommit(JdbcTransaction.java:101)> 
+2017-11-17 11:55:26  DEBUG 876ms|>- ==>  Preparing: SELECT * FROM users WHERE uname = ? and upwd = ? 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-17 11:55:26  DEBUG 923ms|>- ==> Parameters: xiaoming(String), 123(String)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-17 11:55:26  TRACE 1007ms|>- <==    Columns: uid, uname, upwd, phone, city, regDate, idCard, realName, age, email, sex, avatar
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.trace(BaseJdbcLogger.java:165)> 
+2017-11-17 11:55:26  TRACE 1007ms|>- <==        Row: 1, xiaoming, 123, 18899119292, 西安, 2017-11-11, null, 小明, 22, null, 男, <<BLOB>>
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.trace(BaseJdbcLogger.java:165)> 
+2017-11-17 11:55:26  DEBUG 1023ms|>- <==      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-17 11:55:26  DEBUG 1023ms|>- Opening JDBC Connection
+ <org.apache.ibatis.transaction.jdbc.JdbcTransaction.openConnection(JdbcTransaction.java:137)> 
+2017-11-17 11:55:26  DEBUG 1045ms|>- Created connection 1749172025.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.popConnection(PooledDataSource.java:406)> 
+2017-11-17 11:55:26  DEBUG 1045ms|>- Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@68423f39]
+ <org.apache.ibatis.transaction.jdbc.JdbcTransaction.setDesiredAutoCommit(JdbcTransaction.java:101)> 
+2017-11-17 11:55:26  DEBUG 1045ms|>- ==>  Preparing: SELECT COUNT(1) FROM shoppingcar WHERE uid = ?; 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-17 11:55:26  DEBUG 1045ms|>- ==> Parameters: 1(Integer)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-17 11:55:26  DEBUG 1045ms|>- <==      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-17 11:56:19  DEBUG 0ms|>- Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+ <org.apache.ibatis.logging.LogFactory.setImplementation(LogFactory.java:135)> 
+2017-11-17 11:56:19  DEBUG 119ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-17 11:56:19  DEBUG 120ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-17 11:56:19  DEBUG 120ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-17 11:56:19  DEBUG 120ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-17 11:56:42  DEBUG 22970ms|>- Opening JDBC Connection
+ <org.apache.ibatis.transaction.jdbc.JdbcTransaction.openConnection(JdbcTransaction.java:137)> 
+2017-11-17 11:56:42  DEBUG 23186ms|>- Created connection 1239116713.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.popConnection(PooledDataSource.java:406)> 
+2017-11-17 11:56:42  DEBUG 23186ms|>- Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@49db6ba9]
+ <org.apache.ibatis.transaction.jdbc.JdbcTransaction.setDesiredAutoCommit(JdbcTransaction.java:101)> 
+2017-11-17 11:56:42  DEBUG 23186ms|>- ==>  Preparing: SELECT * FROM users WHERE uname = ? and upwd = ? 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-17 11:56:42  DEBUG 23205ms|>- ==> Parameters: xiaoming(String), 123(String)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-17 11:56:42  TRACE 23208ms|>- <==    Columns: uid, uname, upwd, phone, city, regDate, idCard, realName, age, email, sex, avatar
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.trace(BaseJdbcLogger.java:165)> 
+2017-11-17 11:56:42  TRACE 23208ms|>- <==        Row: 1, xiaoming, 123, 18899119292, 西安, 2017-11-11, null, 小明, 22, null, 男, <<BLOB>>
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.trace(BaseJdbcLogger.java:165)> 
+2017-11-17 11:56:42  DEBUG 23208ms|>- <==      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-17 11:56:42  DEBUG 23224ms|>- Opening JDBC Connection
+ <org.apache.ibatis.transaction.jdbc.JdbcTransaction.openConnection(JdbcTransaction.java:137)> 
+2017-11-17 11:56:42  DEBUG 23224ms|>- Created connection 815765277.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.popConnection(PooledDataSource.java:406)> 
+2017-11-17 11:56:42  DEBUG 23224ms|>- Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@309f971d]
+ <org.apache.ibatis.transaction.jdbc.JdbcTransaction.setDesiredAutoCommit(JdbcTransaction.java:101)> 
+2017-11-17 11:56:42  DEBUG 23224ms|>- ==>  Preparing: SELECT COUNT(1) FROM shoppingcar WHERE uid = ?; 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-17 11:56:42  DEBUG 23224ms|>- ==> Parameters: 1(Integer)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-17 11:56:42  DEBUG 23224ms|>- <==      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-17 12:57:53  DEBUG 0ms|>- Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+ <org.apache.ibatis.logging.LogFactory.setImplementation(LogFactory.java:135)> 
+2017-11-17 12:57:53  DEBUG 216ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-17 12:57:53  DEBUG 216ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-17 12:57:53  DEBUG 216ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-17 12:57:53  DEBUG 216ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-17 12:57:53  DEBUG 486ms|>- Opening JDBC Connection
+ <org.apache.ibatis.transaction.jdbc.JdbcTransaction.openConnection(JdbcTransaction.java:137)> 
+2017-11-17 12:57:53  DEBUG 717ms|>- Created connection 1784687827.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.popConnection(PooledDataSource.java:406)> 
+2017-11-17 12:57:53  DEBUG 717ms|>- Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@6a602cd3]
+ <org.apache.ibatis.transaction.jdbc.JdbcTransaction.setDesiredAutoCommit(JdbcTransaction.java:101)> 
+2017-11-17 12:57:53  DEBUG 733ms|>- ==>  Preparing: SELECT * FROM users WHERE uname = ? and upwd = ? 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-17 12:57:53  DEBUG 755ms|>- ==> Parameters: xiaoming(String), 123(String)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-17 12:57:53  TRACE 786ms|>- <==    Columns: uid, uname, upwd, phone, city, regDate, idCard, realName, age, email, sex, avatar
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.trace(BaseJdbcLogger.java:165)> 
+2017-11-17 12:57:53  TRACE 786ms|>- <==        Row: 1, xiaoming, 123, 18899119292, 西安, 2017-11-11, null, 小明, 22, null, 男, <<BLOB>>
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.trace(BaseJdbcLogger.java:165)> 
+2017-11-17 12:57:53  DEBUG 802ms|>- <==      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-17 12:57:53  DEBUG 802ms|>- Opening JDBC Connection
+ <org.apache.ibatis.transaction.jdbc.JdbcTransaction.openConnection(JdbcTransaction.java:137)> 
+2017-11-17 12:57:54  DEBUG 818ms|>- Created connection 640525396.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.popConnection(PooledDataSource.java:406)> 
+2017-11-17 12:57:54  DEBUG 818ms|>- Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@262da454]
+ <org.apache.ibatis.transaction.jdbc.JdbcTransaction.setDesiredAutoCommit(JdbcTransaction.java:101)> 
+2017-11-17 12:57:54  DEBUG 818ms|>- ==>  Preparing: SELECT COUNT(1) FROM shoppingcar WHERE uid = ?; 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-17 12:57:54  DEBUG 818ms|>- ==> Parameters: 1(Integer)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-17 12:57:54  DEBUG 818ms|>- <==      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-17 12:58:53  DEBUG 60095ms|>- ==>  Preparing: SELECT COUNT(1) FROM shoppingcar WHERE uid = ?; 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-17 12:58:53  DEBUG 60106ms|>- ==> Parameters: 1(Integer)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-17 12:58:53  DEBUG 60107ms|>- <==      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-17 13:09:30  DEBUG 697573ms|>- ==>  Preparing: SELECT COUNT(1) FROM shoppingcar WHERE uid = ?; 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-17 13:09:30  DEBUG 697576ms|>- ==> Parameters: 1(Integer)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-17 13:09:30  DEBUG 697577ms|>- <==      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-17 13:13:20  DEBUG 927798ms|>- ==>  Preparing: SELECT COUNT(1) FROM shoppingcar WHERE uid = ?; 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-17 13:13:20  DEBUG 927799ms|>- ==> Parameters: 1(Integer)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-17 13:13:20  DEBUG 927800ms|>- <==      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-17 16:21:48  DEBUG 0ms|>- Retrieving column information for table "goods"
+ <org.mybatis.generator.logging.Log4jImpl.debug(Log4jImpl.java:46)> 
+2017-11-17 16:21:48  DEBUG 31ms|>- Found column "gid", data type 4, in table "shop..goods"
+ <org.mybatis.generator.logging.Log4jImpl.debug(Log4jImpl.java:46)> 
+2017-11-17 16:21:48  DEBUG 31ms|>- Found column "gname", data type 12, in table "shop..goods"
+ <org.mybatis.generator.logging.Log4jImpl.debug(Log4jImpl.java:46)> 
+2017-11-17 16:21:48  DEBUG 31ms|>- Found column "tid", data type 4, in table "shop..goods"
+ <org.mybatis.generator.logging.Log4jImpl.debug(Log4jImpl.java:46)> 
+2017-11-17 16:21:48  DEBUG 31ms|>- Found column "price", data type 8, in table "shop..goods"
+ <org.mybatis.generator.logging.Log4jImpl.debug(Log4jImpl.java:46)> 
+2017-11-17 16:21:48  DEBUG 31ms|>- Found column "descption", data type -1, in table "shop..goods"
+ <org.mybatis.generator.logging.Log4jImpl.debug(Log4jImpl.java:46)> 
+2017-11-17 16:21:48  DEBUG 31ms|>- Found column "imgPath", data type -1, in table "shop..goods"
+ <org.mybatis.generator.logging.Log4jImpl.debug(Log4jImpl.java:46)> 
+2017-11-17 16:21:48  DEBUG 31ms|>- Found column "filePath", data type -1, in table "shop..goods"
+ <org.mybatis.generator.logging.Log4jImpl.debug(Log4jImpl.java:46)> 
+2017-11-17 16:21:48  DEBUG 31ms|>- Found column "stock", data type 4, in table "shop..goods"
+ <org.mybatis.generator.logging.Log4jImpl.debug(Log4jImpl.java:46)> 
+2017-11-17 16:21:48  DEBUG 31ms|>- Found override for column "descption" in table "shop..goods"
+ <org.mybatis.generator.logging.Log4jImpl.debug(Log4jImpl.java:46)> 
+2017-11-17 16:21:48  DEBUG 31ms|>- Retrieving column information for table "goodsand"
+ <org.mybatis.generator.logging.Log4jImpl.debug(Log4jImpl.java:46)> 
+2017-11-17 16:21:48  DEBUG 47ms|>- Found column "goodsId", data type 4, in table "shop..goodsand"
+ <org.mybatis.generator.logging.Log4jImpl.debug(Log4jImpl.java:46)> 
+2017-11-17 16:21:48  DEBUG 47ms|>- Found column "text", data type 12, in table "shop..goodsand"
+ <org.mybatis.generator.logging.Log4jImpl.debug(Log4jImpl.java:46)> 
+2017-11-17 16:21:48  DEBUG 47ms|>- Found column "imageUrl", data type -1, in table "shop..goodsand"
+ <org.mybatis.generator.logging.Log4jImpl.debug(Log4jImpl.java:46)> 
+2017-11-17 16:21:48  DEBUG 47ms|>- Found column "spanSize", data type 4, in table "shop..goodsand"
+ <org.mybatis.generator.logging.Log4jImpl.debug(Log4jImpl.java:46)> 
+2017-11-17 16:21:48  DEBUG 47ms|>- Found column "banners", data type -1, in table "shop..goodsand"
+ <org.mybatis.generator.logging.Log4jImpl.debug(Log4jImpl.java:46)> 
+2017-11-17 16:21:48  DEBUG 47ms|>- Found column "descption", data type -1, in table "shop..goodsand"
+ <org.mybatis.generator.logging.Log4jImpl.debug(Log4jImpl.java:46)> 
+2017-11-17 16:21:48  DEBUG 47ms|>- Found override for column "descption" in table "shop..goodsand"
+ <org.mybatis.generator.logging.Log4jImpl.debug(Log4jImpl.java:46)> 
+2017-11-17 16:21:48  DEBUG 47ms|>- Retrieving column information for table "address"
+ <org.mybatis.generator.logging.Log4jImpl.debug(Log4jImpl.java:46)> 
+2017-11-17 16:21:48  DEBUG 47ms|>- Found column "adressId", data type 4, in table "shop..address"
+ <org.mybatis.generator.logging.Log4jImpl.debug(Log4jImpl.java:46)> 
+2017-11-17 16:21:48  DEBUG 47ms|>- Found column "uid", data type 4, in table "shop..address"
+ <org.mybatis.generator.logging.Log4jImpl.debug(Log4jImpl.java:46)> 
+2017-11-17 16:21:48  DEBUG 47ms|>- Found column "address", data type -1, in table "shop..address"
+ <org.mybatis.generator.logging.Log4jImpl.debug(Log4jImpl.java:46)> 
+2017-11-17 16:21:48  DEBUG 47ms|>- Found column "def", data type -7, in table "shop..address"
+ <org.mybatis.generator.logging.Log4jImpl.debug(Log4jImpl.java:46)> 
+2017-11-17 16:21:48  DEBUG 47ms|>- Found column "aphone", data type 3, in table "shop..address"
+ <org.mybatis.generator.logging.Log4jImpl.debug(Log4jImpl.java:46)> 
+2017-11-17 16:21:48  DEBUG 47ms|>- Found column "aname", data type 12, in table "shop..address"
+ <org.mybatis.generator.logging.Log4jImpl.debug(Log4jImpl.java:46)> 
+2017-11-17 16:21:48  DEBUG 47ms|>- Found override for column "address" in table "shop..address"
+ <org.mybatis.generator.logging.Log4jImpl.debug(Log4jImpl.java:46)> 
+2017-11-17 16:21:48  DEBUG 47ms|>- Found override for column "aphone" in table "shop..address"
+ <org.mybatis.generator.logging.Log4jImpl.debug(Log4jImpl.java:46)> 
+2017-11-17 16:21:49  DEBUG 63ms|>- Retrieving column information for table "goodstype"
+ <org.mybatis.generator.logging.Log4jImpl.debug(Log4jImpl.java:46)> 
+2017-11-17 16:21:49  DEBUG 66ms|>- Found column "tid", data type 4, in table "shop..goodstype"
+ <org.mybatis.generator.logging.Log4jImpl.debug(Log4jImpl.java:46)> 
+2017-11-17 16:21:49  DEBUG 66ms|>- Found column "tname", data type 12, in table "shop..goodstype"
+ <org.mybatis.generator.logging.Log4jImpl.debug(Log4jImpl.java:46)> 
+2017-11-17 16:21:49  DEBUG 68ms|>- Retrieving column information for table "orderform"
+ <org.mybatis.generator.logging.Log4jImpl.debug(Log4jImpl.java:46)> 
+2017-11-17 16:21:49  DEBUG 69ms|>- Found column "oid", data type 3, in table "shop..orderform"
+ <org.mybatis.generator.logging.Log4jImpl.debug(Log4jImpl.java:46)> 
+2017-11-17 16:21:49  DEBUG 69ms|>- Found column "gid", data type 4, in table "shop..orderform"
+ <org.mybatis.generator.logging.Log4jImpl.debug(Log4jImpl.java:46)> 
+2017-11-17 16:21:49  DEBUG 69ms|>- Found column "gnum", data type 4, in table "shop..orderform"
+ <org.mybatis.generator.logging.Log4jImpl.debug(Log4jImpl.java:46)> 
+2017-11-17 16:21:49  DEBUG 69ms|>- Found column "SubTotal", data type 8, in table "shop..orderform"
+ <org.mybatis.generator.logging.Log4jImpl.debug(Log4jImpl.java:46)> 
+2017-11-17 16:21:49  DEBUG 69ms|>- Found column "descption", data type -1, in table "shop..orderform"
+ <org.mybatis.generator.logging.Log4jImpl.debug(Log4jImpl.java:46)> 
+2017-11-17 16:21:49  DEBUG 69ms|>- Found column "uid", data type 4, in table "shop..orderform"
+ <org.mybatis.generator.logging.Log4jImpl.debug(Log4jImpl.java:46)> 
+2017-11-17 16:21:49  DEBUG 69ms|>- Found override for column "oid" in table "shop..orderform"
+ <org.mybatis.generator.logging.Log4jImpl.debug(Log4jImpl.java:46)> 
+2017-11-17 16:21:49  DEBUG 69ms|>- Found override for column "descption" in table "shop..orderform"
+ <org.mybatis.generator.logging.Log4jImpl.debug(Log4jImpl.java:46)> 
+2017-11-17 16:21:49  DEBUG 69ms|>- Retrieving column information for table "orders"
+ <org.mybatis.generator.logging.Log4jImpl.debug(Log4jImpl.java:46)> 
+2017-11-17 16:21:49  DEBUG 69ms|>- Found column "oid", data type 3, in table "shop..orders"
+ <org.mybatis.generator.logging.Log4jImpl.debug(Log4jImpl.java:46)> 
+2017-11-17 16:21:49  DEBUG 69ms|>- Found column "uid", data type 4, in table "shop..orders"
+ <org.mybatis.generator.logging.Log4jImpl.debug(Log4jImpl.java:46)> 
+2017-11-17 16:21:49  DEBUG 69ms|>- Found column "state", data type 12, in table "shop..orders"
+ <org.mybatis.generator.logging.Log4jImpl.debug(Log4jImpl.java:46)> 
+2017-11-17 16:21:49  DEBUG 69ms|>- Found column "address", data type -1, in table "shop..orders"
+ <org.mybatis.generator.logging.Log4jImpl.debug(Log4jImpl.java:46)> 
+2017-11-17 16:21:49  DEBUG 69ms|>- Found column "sum", data type 8, in table "shop..orders"
+ <org.mybatis.generator.logging.Log4jImpl.debug(Log4jImpl.java:46)> 
+2017-11-17 16:21:49  DEBUG 69ms|>- Found override for column "oid" in table "shop..orders"
+ <org.mybatis.generator.logging.Log4jImpl.debug(Log4jImpl.java:46)> 
+2017-11-17 16:21:49  DEBUG 69ms|>- Retrieving column information for table "shoppingcar"
+ <org.mybatis.generator.logging.Log4jImpl.debug(Log4jImpl.java:46)> 
+2017-11-17 16:21:49  DEBUG 84ms|>- Found column "cid", data type 4, in table "shop..shoppingcar"
+ <org.mybatis.generator.logging.Log4jImpl.debug(Log4jImpl.java:46)> 
+2017-11-17 16:21:49  DEBUG 84ms|>- Found column "addGoodsTime", data type 93, in table "shop..shoppingcar"
+ <org.mybatis.generator.logging.Log4jImpl.debug(Log4jImpl.java:46)> 
+2017-11-17 16:21:49  DEBUG 84ms|>- Found column "uid", data type 4, in table "shop..shoppingcar"
+ <org.mybatis.generator.logging.Log4jImpl.debug(Log4jImpl.java:46)> 
+2017-11-17 16:21:49  DEBUG 84ms|>- Found column "gid", data type 4, in table "shop..shoppingcar"
+ <org.mybatis.generator.logging.Log4jImpl.debug(Log4jImpl.java:46)> 
+2017-11-17 16:21:49  DEBUG 84ms|>- Found column "gnum", data type 4, in table "shop..shoppingcar"
+ <org.mybatis.generator.logging.Log4jImpl.debug(Log4jImpl.java:46)> 
+2017-11-17 16:21:49  DEBUG 84ms|>- Found column "descption", data type -1, in table "shop..shoppingcar"
+ <org.mybatis.generator.logging.Log4jImpl.debug(Log4jImpl.java:46)> 
+2017-11-17 16:21:49  DEBUG 84ms|>- Found override for column "addGoodsTime" in table "shop..shoppingcar"
+ <org.mybatis.generator.logging.Log4jImpl.debug(Log4jImpl.java:46)> 
+2017-11-17 16:21:49  DEBUG 84ms|>- Found override for column "descption" in table "shop..shoppingcar"
+ <org.mybatis.generator.logging.Log4jImpl.debug(Log4jImpl.java:46)> 
+2017-11-17 16:21:49  DEBUG 84ms|>- Retrieving column information for table "users"
+ <org.mybatis.generator.logging.Log4jImpl.debug(Log4jImpl.java:46)> 
+2017-11-17 16:21:49  DEBUG 84ms|>- Found column "uid", data type 4, in table "shop..users"
+ <org.mybatis.generator.logging.Log4jImpl.debug(Log4jImpl.java:46)> 
+2017-11-17 16:21:49  DEBUG 84ms|>- Found column "uname", data type 12, in table "shop..users"
+ <org.mybatis.generator.logging.Log4jImpl.debug(Log4jImpl.java:46)> 
+2017-11-17 16:21:49  DEBUG 84ms|>- Found column "upwd", data type 12, in table "shop..users"
+ <org.mybatis.generator.logging.Log4jImpl.debug(Log4jImpl.java:46)> 
+2017-11-17 16:21:49  DEBUG 84ms|>- Found column "phone", data type 3, in table "shop..users"
+ <org.mybatis.generator.logging.Log4jImpl.debug(Log4jImpl.java:46)> 
+2017-11-17 16:21:49  DEBUG 84ms|>- Found column "city", data type 12, in table "shop..users"
+ <org.mybatis.generator.logging.Log4jImpl.debug(Log4jImpl.java:46)> 
+2017-11-17 16:21:49  DEBUG 84ms|>- Found column "regDate", data type 91, in table "shop..users"
+ <org.mybatis.generator.logging.Log4jImpl.debug(Log4jImpl.java:46)> 
+2017-11-17 16:21:49  DEBUG 84ms|>- Found column "idCard", data type 12, in table "shop..users"
+ <org.mybatis.generator.logging.Log4jImpl.debug(Log4jImpl.java:46)> 
+2017-11-17 16:21:49  DEBUG 84ms|>- Found column "realName", data type 12, in table "shop..users"
+ <org.mybatis.generator.logging.Log4jImpl.debug(Log4jImpl.java:46)> 
+2017-11-17 16:21:49  DEBUG 84ms|>- Found column "age", data type 4, in table "shop..users"
+ <org.mybatis.generator.logging.Log4jImpl.debug(Log4jImpl.java:46)> 
+2017-11-17 16:21:49  DEBUG 84ms|>- Found column "email", data type 12, in table "shop..users"
+ <org.mybatis.generator.logging.Log4jImpl.debug(Log4jImpl.java:46)> 
+2017-11-17 16:21:49  DEBUG 84ms|>- Found column "sex", data type 12, in table "shop..users"
+ <org.mybatis.generator.logging.Log4jImpl.debug(Log4jImpl.java:46)> 
+2017-11-17 16:21:49  DEBUG 84ms|>- Found column "avatar", data type -1, in table "shop..users"
+ <org.mybatis.generator.logging.Log4jImpl.debug(Log4jImpl.java:46)> 
+2017-11-17 16:21:49  DEBUG 84ms|>- Found override for column "phone" in table "shop..users"
+ <org.mybatis.generator.logging.Log4jImpl.debug(Log4jImpl.java:46)> 
+2017-11-17 16:22:42  DEBUG 53386ms|>- Retrieving column information for table "goods"
+ <org.mybatis.generator.logging.Log4jImpl.debug(Log4jImpl.java:46)> 
+2017-11-17 16:22:42  DEBUG 53408ms|>- Found column "gid", data type 4, in table "shop..goods"
+ <org.mybatis.generator.logging.Log4jImpl.debug(Log4jImpl.java:46)> 
+2017-11-17 16:22:42  DEBUG 53408ms|>- Found column "gname", data type 12, in table "shop..goods"
+ <org.mybatis.generator.logging.Log4jImpl.debug(Log4jImpl.java:46)> 
+2017-11-17 16:22:42  DEBUG 53408ms|>- Found column "tid", data type 4, in table "shop..goods"
+ <org.mybatis.generator.logging.Log4jImpl.debug(Log4jImpl.java:46)> 
+2017-11-17 16:22:42  DEBUG 53408ms|>- Found column "price", data type 8, in table "shop..goods"
+ <org.mybatis.generator.logging.Log4jImpl.debug(Log4jImpl.java:46)> 
+2017-11-17 16:22:42  DEBUG 53408ms|>- Found column "descption", data type -1, in table "shop..goods"
+ <org.mybatis.generator.logging.Log4jImpl.debug(Log4jImpl.java:46)> 
+2017-11-17 16:22:42  DEBUG 53408ms|>- Found column "imgPath", data type -1, in table "shop..goods"
+ <org.mybatis.generator.logging.Log4jImpl.debug(Log4jImpl.java:46)> 
+2017-11-17 16:22:42  DEBUG 53408ms|>- Found column "filePath", data type -1, in table "shop..goods"
+ <org.mybatis.generator.logging.Log4jImpl.debug(Log4jImpl.java:46)> 
+2017-11-17 16:22:42  DEBUG 53408ms|>- Found column "stock", data type 4, in table "shop..goods"
+ <org.mybatis.generator.logging.Log4jImpl.debug(Log4jImpl.java:46)> 
+2017-11-17 16:22:42  DEBUG 53408ms|>- Found override for column "descption" in table "shop..goods"
+ <org.mybatis.generator.logging.Log4jImpl.debug(Log4jImpl.java:46)> 
+2017-11-17 16:22:42  DEBUG 53423ms|>- Found override for column "imgPath" in table "shop..goods"
+ <org.mybatis.generator.logging.Log4jImpl.debug(Log4jImpl.java:46)> 
+2017-11-17 16:22:42  DEBUG 53423ms|>- Found override for column "filePath" in table "shop..goods"
+ <org.mybatis.generator.logging.Log4jImpl.debug(Log4jImpl.java:46)> 
+2017-11-17 16:22:42  DEBUG 53423ms|>- Retrieving column information for table "goodsand"
+ <org.mybatis.generator.logging.Log4jImpl.debug(Log4jImpl.java:46)> 
+2017-11-17 16:22:42  DEBUG 53423ms|>- Found column "goodsId", data type 4, in table "shop..goodsand"
+ <org.mybatis.generator.logging.Log4jImpl.debug(Log4jImpl.java:46)> 
+2017-11-17 16:22:42  DEBUG 53423ms|>- Found column "text", data type 12, in table "shop..goodsand"
+ <org.mybatis.generator.logging.Log4jImpl.debug(Log4jImpl.java:46)> 
+2017-11-17 16:22:42  DEBUG 53423ms|>- Found column "imageUrl", data type -1, in table "shop..goodsand"
+ <org.mybatis.generator.logging.Log4jImpl.debug(Log4jImpl.java:46)> 
+2017-11-17 16:22:42  DEBUG 53423ms|>- Found column "spanSize", data type 4, in table "shop..goodsand"
+ <org.mybatis.generator.logging.Log4jImpl.debug(Log4jImpl.java:46)> 
+2017-11-17 16:22:42  DEBUG 53423ms|>- Found column "banners", data type -1, in table "shop..goodsand"
+ <org.mybatis.generator.logging.Log4jImpl.debug(Log4jImpl.java:46)> 
+2017-11-17 16:22:42  DEBUG 53423ms|>- Found column "descption", data type -1, in table "shop..goodsand"
+ <org.mybatis.generator.logging.Log4jImpl.debug(Log4jImpl.java:46)> 
+2017-11-17 16:22:42  DEBUG 53423ms|>- Found override for column "text" in table "shop..goodsand"
+ <org.mybatis.generator.logging.Log4jImpl.debug(Log4jImpl.java:46)> 
+2017-11-17 16:22:42  DEBUG 53423ms|>- Found override for column "imageUrl" in table "shop..goodsand"
+ <org.mybatis.generator.logging.Log4jImpl.debug(Log4jImpl.java:46)> 
+2017-11-17 16:22:42  DEBUG 53423ms|>- Found override for column "banners" in table "shop..goodsand"
+ <org.mybatis.generator.logging.Log4jImpl.debug(Log4jImpl.java:46)> 
+2017-11-17 16:22:42  DEBUG 53423ms|>- Found override for column "descption" in table "shop..goodsand"
+ <org.mybatis.generator.logging.Log4jImpl.debug(Log4jImpl.java:46)> 
+2017-11-17 16:22:42  DEBUG 53423ms|>- Retrieving column information for table "address"
+ <org.mybatis.generator.logging.Log4jImpl.debug(Log4jImpl.java:46)> 
+2017-11-17 16:22:42  DEBUG 53439ms|>- Found column "adressId", data type 4, in table "shop..address"
+ <org.mybatis.generator.logging.Log4jImpl.debug(Log4jImpl.java:46)> 
+2017-11-17 16:22:42  DEBUG 53439ms|>- Found column "uid", data type 4, in table "shop..address"
+ <org.mybatis.generator.logging.Log4jImpl.debug(Log4jImpl.java:46)> 
+2017-11-17 16:22:42  DEBUG 53439ms|>- Found column "address", data type -1, in table "shop..address"
+ <org.mybatis.generator.logging.Log4jImpl.debug(Log4jImpl.java:46)> 
+2017-11-17 16:22:42  DEBUG 53439ms|>- Found column "def", data type -7, in table "shop..address"
+ <org.mybatis.generator.logging.Log4jImpl.debug(Log4jImpl.java:46)> 
+2017-11-17 16:22:42  DEBUG 53439ms|>- Found column "aphone", data type 3, in table "shop..address"
+ <org.mybatis.generator.logging.Log4jImpl.debug(Log4jImpl.java:46)> 
+2017-11-17 16:22:42  DEBUG 53439ms|>- Found column "aname", data type 12, in table "shop..address"
+ <org.mybatis.generator.logging.Log4jImpl.debug(Log4jImpl.java:46)> 
+2017-11-17 16:22:42  DEBUG 53439ms|>- Found override for column "address" in table "shop..address"
+ <org.mybatis.generator.logging.Log4jImpl.debug(Log4jImpl.java:46)> 
+2017-11-17 16:22:42  DEBUG 53439ms|>- Found override for column "aphone" in table "shop..address"
+ <org.mybatis.generator.logging.Log4jImpl.debug(Log4jImpl.java:46)> 
+2017-11-17 16:22:42  DEBUG 53439ms|>- Retrieving column information for table "goodstype"
+ <org.mybatis.generator.logging.Log4jImpl.debug(Log4jImpl.java:46)> 
+2017-11-17 16:22:42  DEBUG 53439ms|>- Found column "tid", data type 4, in table "shop..goodstype"
+ <org.mybatis.generator.logging.Log4jImpl.debug(Log4jImpl.java:46)> 
+2017-11-17 16:22:42  DEBUG 53439ms|>- Found column "tname", data type 12, in table "shop..goodstype"
+ <org.mybatis.generator.logging.Log4jImpl.debug(Log4jImpl.java:46)> 
+2017-11-17 16:22:42  DEBUG 53439ms|>- Retrieving column information for table "orderform"
+ <org.mybatis.generator.logging.Log4jImpl.debug(Log4jImpl.java:46)> 
+2017-11-17 16:22:42  DEBUG 53455ms|>- Found column "oid", data type 3, in table "shop..orderform"
+ <org.mybatis.generator.logging.Log4jImpl.debug(Log4jImpl.java:46)> 
+2017-11-17 16:22:42  DEBUG 53455ms|>- Found column "gid", data type 4, in table "shop..orderform"
+ <org.mybatis.generator.logging.Log4jImpl.debug(Log4jImpl.java:46)> 
+2017-11-17 16:22:42  DEBUG 53455ms|>- Found column "gnum", data type 4, in table "shop..orderform"
+ <org.mybatis.generator.logging.Log4jImpl.debug(Log4jImpl.java:46)> 
+2017-11-17 16:22:42  DEBUG 53455ms|>- Found column "SubTotal", data type 8, in table "shop..orderform"
+ <org.mybatis.generator.logging.Log4jImpl.debug(Log4jImpl.java:46)> 
+2017-11-17 16:22:42  DEBUG 53455ms|>- Found column "descption", data type -1, in table "shop..orderform"
+ <org.mybatis.generator.logging.Log4jImpl.debug(Log4jImpl.java:46)> 
+2017-11-17 16:22:42  DEBUG 53455ms|>- Found column "uid", data type 4, in table "shop..orderform"
+ <org.mybatis.generator.logging.Log4jImpl.debug(Log4jImpl.java:46)> 
+2017-11-17 16:22:42  DEBUG 53455ms|>- Found override for column "oid" in table "shop..orderform"
+ <org.mybatis.generator.logging.Log4jImpl.debug(Log4jImpl.java:46)> 
+2017-11-17 16:22:42  DEBUG 53455ms|>- Found override for column "descption" in table "shop..orderform"
+ <org.mybatis.generator.logging.Log4jImpl.debug(Log4jImpl.java:46)> 
+2017-11-17 16:22:42  DEBUG 53455ms|>- Retrieving column information for table "orders"
+ <org.mybatis.generator.logging.Log4jImpl.debug(Log4jImpl.java:46)> 
+2017-11-17 16:22:42  DEBUG 53455ms|>- Found column "oid", data type 3, in table "shop..orders"
+ <org.mybatis.generator.logging.Log4jImpl.debug(Log4jImpl.java:46)> 
+2017-11-17 16:22:42  DEBUG 53455ms|>- Found column "uid", data type 4, in table "shop..orders"
+ <org.mybatis.generator.logging.Log4jImpl.debug(Log4jImpl.java:46)> 
+2017-11-17 16:22:42  DEBUG 53455ms|>- Found column "state", data type 12, in table "shop..orders"
+ <org.mybatis.generator.logging.Log4jImpl.debug(Log4jImpl.java:46)> 
+2017-11-17 16:22:42  DEBUG 53455ms|>- Found column "address", data type -1, in table "shop..orders"
+ <org.mybatis.generator.logging.Log4jImpl.debug(Log4jImpl.java:46)> 
+2017-11-17 16:22:42  DEBUG 53455ms|>- Found column "sum", data type 8, in table "shop..orders"
+ <org.mybatis.generator.logging.Log4jImpl.debug(Log4jImpl.java:46)> 
+2017-11-17 16:22:42  DEBUG 53455ms|>- Found override for column "oid" in table "shop..orders"
+ <org.mybatis.generator.logging.Log4jImpl.debug(Log4jImpl.java:46)> 
+2017-11-17 16:22:42  DEBUG 53470ms|>- Retrieving column information for table "shoppingcar"
+ <org.mybatis.generator.logging.Log4jImpl.debug(Log4jImpl.java:46)> 
+2017-11-17 16:22:42  DEBUG 53470ms|>- Found column "cid", data type 4, in table "shop..shoppingcar"
+ <org.mybatis.generator.logging.Log4jImpl.debug(Log4jImpl.java:46)> 
+2017-11-17 16:22:42  DEBUG 53470ms|>- Found column "addGoodsTime", data type 93, in table "shop..shoppingcar"
+ <org.mybatis.generator.logging.Log4jImpl.debug(Log4jImpl.java:46)> 
+2017-11-17 16:22:42  DEBUG 53470ms|>- Found column "uid", data type 4, in table "shop..shoppingcar"
+ <org.mybatis.generator.logging.Log4jImpl.debug(Log4jImpl.java:46)> 
+2017-11-17 16:22:42  DEBUG 53470ms|>- Found column "gid", data type 4, in table "shop..shoppingcar"
+ <org.mybatis.generator.logging.Log4jImpl.debug(Log4jImpl.java:46)> 
+2017-11-17 16:22:42  DEBUG 53470ms|>- Found column "gnum", data type 4, in table "shop..shoppingcar"
+ <org.mybatis.generator.logging.Log4jImpl.debug(Log4jImpl.java:46)> 
+2017-11-17 16:22:42  DEBUG 53470ms|>- Found column "descption", data type -1, in table "shop..shoppingcar"
+ <org.mybatis.generator.logging.Log4jImpl.debug(Log4jImpl.java:46)> 
+2017-11-17 16:22:42  DEBUG 53470ms|>- Found override for column "addGoodsTime" in table "shop..shoppingcar"
+ <org.mybatis.generator.logging.Log4jImpl.debug(Log4jImpl.java:46)> 
+2017-11-17 16:22:42  DEBUG 53470ms|>- Found override for column "descption" in table "shop..shoppingcar"
+ <org.mybatis.generator.logging.Log4jImpl.debug(Log4jImpl.java:46)> 
+2017-11-17 16:22:42  DEBUG 53470ms|>- Retrieving column information for table "users"
+ <org.mybatis.generator.logging.Log4jImpl.debug(Log4jImpl.java:46)> 
+2017-11-17 16:22:42  DEBUG 53470ms|>- Found column "uid", data type 4, in table "shop..users"
+ <org.mybatis.generator.logging.Log4jImpl.debug(Log4jImpl.java:46)> 
+2017-11-17 16:22:42  DEBUG 53470ms|>- Found column "uname", data type 12, in table "shop..users"
+ <org.mybatis.generator.logging.Log4jImpl.debug(Log4jImpl.java:46)> 
+2017-11-17 16:22:42  DEBUG 53470ms|>- Found column "upwd", data type 12, in table "shop..users"
+ <org.mybatis.generator.logging.Log4jImpl.debug(Log4jImpl.java:46)> 
+2017-11-17 16:22:42  DEBUG 53470ms|>- Found column "phone", data type 3, in table "shop..users"
+ <org.mybatis.generator.logging.Log4jImpl.debug(Log4jImpl.java:46)> 
+2017-11-17 16:22:42  DEBUG 53470ms|>- Found column "city", data type 12, in table "shop..users"
+ <org.mybatis.generator.logging.Log4jImpl.debug(Log4jImpl.java:46)> 
+2017-11-17 16:22:42  DEBUG 53470ms|>- Found column "regDate", data type 91, in table "shop..users"
+ <org.mybatis.generator.logging.Log4jImpl.debug(Log4jImpl.java:46)> 
+2017-11-17 16:22:42  DEBUG 53470ms|>- Found column "idCard", data type 12, in table "shop..users"
+ <org.mybatis.generator.logging.Log4jImpl.debug(Log4jImpl.java:46)> 
+2017-11-17 16:22:42  DEBUG 53470ms|>- Found column "realName", data type 12, in table "shop..users"
+ <org.mybatis.generator.logging.Log4jImpl.debug(Log4jImpl.java:46)> 
+2017-11-17 16:22:42  DEBUG 53470ms|>- Found column "age", data type 4, in table "shop..users"
+ <org.mybatis.generator.logging.Log4jImpl.debug(Log4jImpl.java:46)> 
+2017-11-17 16:22:42  DEBUG 53470ms|>- Found column "email", data type 12, in table "shop..users"
+ <org.mybatis.generator.logging.Log4jImpl.debug(Log4jImpl.java:46)> 
+2017-11-17 16:22:42  DEBUG 53470ms|>- Found column "sex", data type 12, in table "shop..users"
+ <org.mybatis.generator.logging.Log4jImpl.debug(Log4jImpl.java:46)> 
+2017-11-17 16:22:42  DEBUG 53470ms|>- Found column "avatar", data type -1, in table "shop..users"
+ <org.mybatis.generator.logging.Log4jImpl.debug(Log4jImpl.java:46)> 
+2017-11-17 16:22:42  DEBUG 53470ms|>- Found override for column "phone" in table "shop..users"
+ <org.mybatis.generator.logging.Log4jImpl.debug(Log4jImpl.java:46)> 
+2017-11-17 16:26:47  DEBUG 0ms|>- Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+ <org.apache.ibatis.logging.LogFactory.setImplementation(LogFactory.java:135)> 
+2017-11-17 16:26:48  DEBUG 300ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-17 16:26:48  DEBUG 300ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-17 16:26:48  DEBUG 300ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-17 16:26:48  DEBUG 300ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-17 16:28:36  DEBUG 0ms|>- Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+ <org.apache.ibatis.logging.LogFactory.setImplementation(LogFactory.java:135)> 
+2017-11-17 16:28:36  DEBUG 132ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-17 16:28:36  DEBUG 132ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-17 16:28:36  DEBUG 132ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-17 16:28:36  DEBUG 132ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-17 16:28:36  DEBUG 448ms|>- Opening JDBC Connection
+ <org.apache.ibatis.transaction.jdbc.JdbcTransaction.openConnection(JdbcTransaction.java:137)> 
+2017-11-17 16:28:36  DEBUG 686ms|>- Created connection 1226204845.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.popConnection(PooledDataSource.java:406)> 
+2017-11-17 16:28:36  DEBUG 686ms|>- Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@491666ad]
+ <org.apache.ibatis.transaction.jdbc.JdbcTransaction.setDesiredAutoCommit(JdbcTransaction.java:101)> 
+2017-11-17 16:28:36  DEBUG 699ms|>- ==>  Preparing: select * from goodsand 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-17 16:28:36  DEBUG 723ms|>- ==> Parameters: 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-17 16:28:37  DEBUG 781ms|>- <==      Total: 12
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-17 16:30:56  DEBUG 0ms|>- Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+ <org.apache.ibatis.logging.LogFactory.setImplementation(LogFactory.java:135)> 
+2017-11-17 16:30:56  DEBUG 147ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-17 16:30:56  DEBUG 147ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-17 16:30:56  DEBUG 147ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-17 16:30:56  DEBUG 147ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-17 16:30:57  DEBUG 448ms|>- Opening JDBC Connection
+ <org.apache.ibatis.transaction.jdbc.JdbcTransaction.openConnection(JdbcTransaction.java:137)> 
+2017-11-17 16:30:57  DEBUG 733ms|>- Created connection 1226204845.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.popConnection(PooledDataSource.java:406)> 
+2017-11-17 16:30:57  DEBUG 733ms|>- Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@491666ad]
+ <org.apache.ibatis.transaction.jdbc.JdbcTransaction.setDesiredAutoCommit(JdbcTransaction.java:101)> 
+2017-11-17 16:30:57  DEBUG 745ms|>- ==>  Preparing: select * from goodsand 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-17 16:30:57  DEBUG 771ms|>- ==> Parameters: 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-17 16:30:57  DEBUG 802ms|>- <==      Total: 12
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-17 16:38:01  DEBUG 0ms|>- Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+ <org.apache.ibatis.logging.LogFactory.setImplementation(LogFactory.java:135)> 
+2017-11-17 16:38:01  DEBUG 132ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-17 16:38:01  DEBUG 132ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-17 16:38:01  DEBUG 132ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-17 16:38:01  DEBUG 132ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-17 16:38:01  DEBUG 433ms|>- Opening JDBC Connection
+ <org.apache.ibatis.transaction.jdbc.JdbcTransaction.openConnection(JdbcTransaction.java:137)> 
+2017-11-17 16:38:01  DEBUG 780ms|>- Created connection 1226204845.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.popConnection(PooledDataSource.java:406)> 
+2017-11-17 16:38:01  DEBUG 780ms|>- Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@491666ad]
+ <org.apache.ibatis.transaction.jdbc.JdbcTransaction.setDesiredAutoCommit(JdbcTransaction.java:101)> 
+2017-11-17 16:38:01  DEBUG 780ms|>- ==>  Preparing: select * from goodsand 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-17 16:38:01  DEBUG 802ms|>- ==> Parameters: 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-17 16:38:01  DEBUG 833ms|>- <==      Total: 12
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-17 16:39:49  DEBUG 0ms|>- Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+ <org.apache.ibatis.logging.LogFactory.setImplementation(LogFactory.java:135)> 
+2017-11-17 16:39:49  DEBUG 147ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-17 16:39:49  DEBUG 147ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-17 16:39:49  DEBUG 147ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-17 16:39:49  DEBUG 147ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-17 16:39:49  DEBUG 417ms|>- Opening JDBC Connection
+ <org.apache.ibatis.transaction.jdbc.JdbcTransaction.openConnection(JdbcTransaction.java:137)> 
+2017-11-17 16:39:50  DEBUG 701ms|>- Created connection 1226204845.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.popConnection(PooledDataSource.java:406)> 
+2017-11-17 16:39:50  DEBUG 701ms|>- Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@491666ad]
+ <org.apache.ibatis.transaction.jdbc.JdbcTransaction.setDesiredAutoCommit(JdbcTransaction.java:101)> 
+2017-11-17 16:39:50  DEBUG 701ms|>- ==>  Preparing: select * from goodsand 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-17 16:39:50  DEBUG 770ms|>- ==> Parameters: 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-17 16:39:50  DEBUG 802ms|>- <==      Total: 12
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-17 16:56:26  DEBUG 0ms|>- Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+ <org.apache.ibatis.logging.LogFactory.setImplementation(LogFactory.java:135)> 
+2017-11-17 16:56:26  DEBUG 131ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-17 16:56:26  DEBUG 131ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-17 16:56:26  DEBUG 131ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-17 16:56:26  DEBUG 131ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-17 16:56:26  DEBUG 416ms|>- Opening JDBC Connection
+ <org.apache.ibatis.transaction.jdbc.JdbcTransaction.openConnection(JdbcTransaction.java:137)> 
+2017-11-17 16:56:27  DEBUG 824ms|>- Created connection 1226204845.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.popConnection(PooledDataSource.java:406)> 
+2017-11-17 16:56:27  DEBUG 824ms|>- Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@491666ad]
+ <org.apache.ibatis.transaction.jdbc.JdbcTransaction.setDesiredAutoCommit(JdbcTransaction.java:101)> 
+2017-11-17 16:56:27  DEBUG 824ms|>- ==>  Preparing: select * from goodsand 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-17 16:56:27  DEBUG 856ms|>- ==> Parameters: 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-17 16:56:27  DEBUG 887ms|>- <==      Total: 12
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-20 09:08:42  DEBUG 0ms|>- Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+ <org.apache.ibatis.logging.LogFactory.setImplementation(LogFactory.java:135)> 
+2017-11-20 09:08:42  DEBUG 347ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-20 09:08:42  DEBUG 347ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-20 09:08:42  DEBUG 347ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-20 09:08:42  DEBUG 347ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-20 09:08:43  DEBUG 664ms|>- Opening JDBC Connection
+ <org.apache.ibatis.transaction.jdbc.JdbcTransaction.openConnection(JdbcTransaction.java:137)> 
+2017-11-20 09:08:43  DEBUG 933ms|>- Created connection 1730405122.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.popConnection(PooledDataSource.java:406)> 
+2017-11-20 09:08:43  DEBUG 949ms|>- Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@6723e302]
+ <org.apache.ibatis.transaction.jdbc.JdbcTransaction.setDesiredAutoCommit(JdbcTransaction.java:101)> 
+2017-11-20 09:08:43  DEBUG 949ms|>- ==>  Preparing: SELECT * FROM users WHERE uname = ? and upwd = ? 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-20 09:08:43  DEBUG 983ms|>- ==> Parameters: xiaoming(String), 123(String)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-20 09:08:43  TRACE 1018ms|>- <==    Columns: uid, uname, upwd, phone, city, regDate, idCard, realName, age, email, sex, avatar
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.trace(BaseJdbcLogger.java:165)> 
+2017-11-20 09:08:43  TRACE 1021ms|>- <==        Row: 1, xiaoming, 123, 18899119292, 西安, 2017-11-11, null, 小明, 22, null, 男, <<BLOB>>
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.trace(BaseJdbcLogger.java:165)> 
+2017-11-20 09:08:43  DEBUG 1068ms|>- <==      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-20 09:08:43  DEBUG 1086ms|>- Opening JDBC Connection
+ <org.apache.ibatis.transaction.jdbc.JdbcTransaction.openConnection(JdbcTransaction.java:137)> 
+2017-11-20 09:08:43  DEBUG 1102ms|>- Created connection 2109104818.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.popConnection(PooledDataSource.java:406)> 
+2017-11-20 09:08:43  DEBUG 1102ms|>- Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@7db662b2]
+ <org.apache.ibatis.transaction.jdbc.JdbcTransaction.setDesiredAutoCommit(JdbcTransaction.java:101)> 
+2017-11-20 09:08:43  DEBUG 1102ms|>- ==>  Preparing: SELECT COUNT(1) FROM shoppingcar WHERE uid = ?; 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-20 09:08:43  DEBUG 1102ms|>- ==> Parameters: 1(Integer)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-20 09:08:43  DEBUG 1102ms|>- <==      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-20 09:16:54  DEBUG 492039ms|>- ==>  Preparing: SELECT COUNT(1) FROM shoppingcar WHERE uid = ?; 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-20 09:16:54  DEBUG 492045ms|>- ==> Parameters: 1(Integer)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-20 09:16:54  DEBUG 492045ms|>- <==      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-20 09:17:43  DEBUG 540868ms|>- ==>  Preparing: SELECT COUNT(1) FROM shoppingcar WHERE uid = ?; 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-20 09:17:43  DEBUG 540873ms|>- ==> Parameters: 1(Integer)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-20 09:17:43  DEBUG 540874ms|>- <==      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-20 09:21:37  DEBUG 0ms|>- Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+ <org.apache.ibatis.logging.LogFactory.setImplementation(LogFactory.java:135)> 
+2017-11-20 09:21:37  DEBUG 122ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-20 09:21:37  DEBUG 138ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-20 09:21:37  DEBUG 138ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-20 09:21:37  DEBUG 138ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-20 09:21:38  DEBUG 370ms|>- Opening JDBC Connection
+ <org.apache.ibatis.transaction.jdbc.JdbcTransaction.openConnection(JdbcTransaction.java:137)> 
+2017-11-20 09:21:38  DEBUG 570ms|>- Created connection 1069561270.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.popConnection(PooledDataSource.java:406)> 
+2017-11-20 09:21:38  DEBUG 570ms|>- Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@3fc035b6]
+ <org.apache.ibatis.transaction.jdbc.JdbcTransaction.setDesiredAutoCommit(JdbcTransaction.java:101)> 
+2017-11-20 09:21:38  DEBUG 586ms|>- ==>  Preparing: SELECT * FROM users WHERE uname = ? and upwd = ? 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-20 09:21:38  DEBUG 586ms|>- ==> Parameters: xiaoming(String), 123(String)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-20 09:21:38  TRACE 601ms|>- <==    Columns: uid, uname, upwd, phone, city, regDate, idCard, realName, age, email, sex, avatar
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.trace(BaseJdbcLogger.java:165)> 
+2017-11-20 09:21:38  TRACE 601ms|>- <==        Row: 1, xiaoming, 123, 18899119292, 西安, 2017-11-11, null, 小明, 22, null, 男, <<BLOB>>
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.trace(BaseJdbcLogger.java:165)> 
+2017-11-20 09:21:38  DEBUG 601ms|>- <==      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-20 09:21:38  DEBUG 601ms|>- Opening JDBC Connection
+ <org.apache.ibatis.transaction.jdbc.JdbcTransaction.openConnection(JdbcTransaction.java:137)> 
+2017-11-20 09:21:38  DEBUG 623ms|>- Created connection 1465331332.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.popConnection(PooledDataSource.java:406)> 
+2017-11-20 09:21:38  DEBUG 623ms|>- Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@57572e84]
+ <org.apache.ibatis.transaction.jdbc.JdbcTransaction.setDesiredAutoCommit(JdbcTransaction.java:101)> 
+2017-11-20 09:21:38  DEBUG 623ms|>- ==>  Preparing: SELECT COUNT(1) FROM shoppingcar WHERE uid = ?; 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-20 09:21:38  DEBUG 623ms|>- ==> Parameters: 1(Integer)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-20 09:21:38  DEBUG 623ms|>- <==      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-20 09:26:30  DEBUG 292442ms|>- ==>  Preparing: SELECT COUNT(1) FROM shoppingcar WHERE uid = ?; 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-20 09:26:30  DEBUG 292450ms|>- ==> Parameters: 1(Integer)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-20 09:26:30  DEBUG 292451ms|>- <==      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-20 09:34:50  DEBUG 792343ms|>- ==>  Preparing: SELECT COUNT(1) FROM shoppingcar WHERE uid = ?; 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-20 09:34:50  DEBUG 792354ms|>- ==> Parameters: 1(Integer)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-20 09:34:50  DEBUG 792356ms|>- <==      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-20 09:36:25  DEBUG 887259ms|>- ==>  Preparing: SELECT COUNT(1) FROM shoppingcar WHERE uid = ?; 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-20 09:36:25  DEBUG 887262ms|>- ==> Parameters: 1(Integer)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-20 09:36:25  DEBUG 887263ms|>- <==      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-20 09:51:01  DEBUG 1764009ms|>- ==>  Preparing: SELECT COUNT(1) FROM shoppingcar WHERE uid = ?; 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-20 09:51:01  DEBUG 1764022ms|>- ==> Parameters: 1(Integer)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-20 09:51:01  DEBUG 1764023ms|>- <==      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-20 10:10:24  DEBUG 0ms|>- Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+ <org.apache.ibatis.logging.LogFactory.setImplementation(LogFactory.java:135)> 
+2017-11-20 10:10:24  DEBUG 121ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-20 10:10:24  DEBUG 122ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-20 10:10:24  DEBUG 122ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-20 10:10:24  DEBUG 122ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-20 10:10:24  DEBUG 328ms|>- Opening JDBC Connection
+ <org.apache.ibatis.transaction.jdbc.JdbcTransaction.openConnection(JdbcTransaction.java:137)> 
+2017-11-20 10:10:24  DEBUG 544ms|>- Created connection 190193762.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.popConnection(PooledDataSource.java:406)> 
+2017-11-20 10:10:24  DEBUG 544ms|>- Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@b562062]
+ <org.apache.ibatis.transaction.jdbc.JdbcTransaction.setDesiredAutoCommit(JdbcTransaction.java:101)> 
+2017-11-20 10:10:24  DEBUG 544ms|>- ==>  Preparing: select gid, gname, tid, price, descption, imgPath, filePath, stock from goods where gid = ? 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-20 10:10:24  DEBUG 544ms|>- ==> Parameters: 1(Integer)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-20 10:10:24  DEBUG 566ms|>- <==      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-20 10:15:03  DEBUG 279739ms|>- ==>  Preparing: select gid, gname, tid, price, descption, imgPath, filePath, stock from goods where gid = ? 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-20 10:15:03  DEBUG 279742ms|>- ==> Parameters: 2(Integer)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-20 10:15:03  DEBUG 279742ms|>- <==      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-20 10:18:31  DEBUG 487551ms|>- Opening JDBC Connection
+ <org.apache.ibatis.transaction.jdbc.JdbcTransaction.openConnection(JdbcTransaction.java:137)> 
+2017-11-20 10:18:31  DEBUG 487563ms|>- Created connection 299111757.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.popConnection(PooledDataSource.java:406)> 
+2017-11-20 10:18:31  DEBUG 487564ms|>- Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@11d4154d]
+ <org.apache.ibatis.transaction.jdbc.JdbcTransaction.setDesiredAutoCommit(JdbcTransaction.java:101)> 
+2017-11-20 10:18:31  DEBUG 487565ms|>- ==>  Preparing: select * from address where uid = ? 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-20 10:18:31  DEBUG 487566ms|>- ==> Parameters: 1(Integer)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-20 10:18:31  DEBUG 487568ms|>- <==      Total: 2
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-20 10:18:31  DEBUG 487581ms|>- Opening JDBC Connection
+ <org.apache.ibatis.transaction.jdbc.JdbcTransaction.openConnection(JdbcTransaction.java:137)> 
+2017-11-20 10:18:31  DEBUG 487592ms|>- Created connection 696720664.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.popConnection(PooledDataSource.java:406)> 
+2017-11-20 10:18:31  DEBUG 487592ms|>- Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@29871d18]
+ <org.apache.ibatis.transaction.jdbc.JdbcTransaction.setDesiredAutoCommit(JdbcTransaction.java:101)> 
+2017-11-20 10:18:31  DEBUG 487593ms|>- ==>  Preparing: select * from view_car_goods where uid = ?; 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-20 10:18:31  DEBUG 487593ms|>- ==> Parameters: 1(Integer)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-20 10:18:31  DEBUG 487594ms|>- <==      Total: 0
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-20 10:19:09  DEBUG 525716ms|>- Opening JDBC Connection
+ <org.apache.ibatis.transaction.jdbc.JdbcTransaction.openConnection(JdbcTransaction.java:137)> 
+2017-11-20 10:19:09  DEBUG 525726ms|>- Created connection 1042366694.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.popConnection(PooledDataSource.java:406)> 
+2017-11-20 10:19:09  DEBUG 525727ms|>- Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@3e2140e6]
+ <org.apache.ibatis.transaction.jdbc.JdbcTransaction.setDesiredAutoCommit(JdbcTransaction.java:101)> 
+2017-11-20 10:19:09  DEBUG 525727ms|>- ==>  Preparing: select oid,state,address,sum,uid from view_order_goods where uid = ? group by oid 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-20 10:19:09  DEBUG 525728ms|>- ==> Parameters: 1(Integer)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-20 10:19:09  DEBUG 525807ms|>- ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171114000359 and uid = 1 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-20 10:19:09  DEBUG 525808ms|>- ====> Parameters: 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-20 10:19:09  DEBUG 525810ms|>- <====      Total: 2
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-20 10:19:09  DEBUG 525812ms|>- ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171114000839 and uid = 1 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-20 10:19:09  DEBUG 525812ms|>- ====> Parameters: 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-20 10:19:09  DEBUG 525815ms|>- <====      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-20 10:19:09  DEBUG 525817ms|>- ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171114150342 and uid = 1 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-20 10:19:09  DEBUG 525818ms|>- ====> Parameters: 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-20 10:19:09  DEBUG 525819ms|>- <====      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-20 10:19:09  DEBUG 525820ms|>- ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171115115255 and uid = 1 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-20 10:19:09  DEBUG 525821ms|>- ====> Parameters: 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-20 10:19:09  DEBUG 525824ms|>- <====      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-20 10:19:09  DEBUG 525825ms|>- ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171115115316 and uid = 1 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-20 10:19:09  DEBUG 525826ms|>- ====> Parameters: 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-20 10:19:09  DEBUG 525828ms|>- <====      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-20 10:19:09  DEBUG 525828ms|>- <==      Total: 5
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-20 10:19:17  DEBUG 533019ms|>- ==>  Preparing: select oid,state,address,sum,uid from view_order_goods where uid = ? group by oid 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-20 10:19:17  DEBUG 533035ms|>- ==> Parameters: 1(Integer)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-20 10:19:17  DEBUG 533036ms|>- ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171114000359 and uid = 1 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-20 10:19:17  DEBUG 533036ms|>- ====> Parameters: 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-20 10:19:17  DEBUG 533036ms|>- <====      Total: 2
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-20 10:19:17  DEBUG 533036ms|>- ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171114000839 and uid = 1 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-20 10:19:17  DEBUG 533036ms|>- ====> Parameters: 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-20 10:19:17  DEBUG 533036ms|>- <====      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-20 10:19:17  DEBUG 533036ms|>- ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171114150342 and uid = 1 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-20 10:19:17  DEBUG 533036ms|>- ====> Parameters: 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-20 10:19:17  DEBUG 533036ms|>- <====      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-20 10:19:17  DEBUG 533036ms|>- ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171115115255 and uid = 1 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-20 10:19:17  DEBUG 533036ms|>- ====> Parameters: 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-20 10:19:17  DEBUG 533036ms|>- <====      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-20 10:19:17  DEBUG 533036ms|>- ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171115115316 and uid = 1 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-20 10:19:17  DEBUG 533052ms|>- ====> Parameters: 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-20 10:19:17  DEBUG 533052ms|>- <====      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-20 10:19:17  DEBUG 533052ms|>- <==      Total: 5
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 

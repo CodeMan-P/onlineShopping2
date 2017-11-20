@@ -81,6 +81,14 @@ public class Login extends HttpServlet {
 		String name = request.getParameter("name");
 		PrintWriter out = response.getWriter();
 		String flag = request.getParameter("flag");
+		String code = request.getParameter("checkcode");
+		if(code!=null&&!code.equals(request.getSession().getAttribute("code"))){
+			System.out.println(request.getSession().getAttribute("code"));
+			System.out.println(code);
+			out.write("{\"message\":\"验证码错误\"}");
+			out.close();
+			return;
+		}
 		if (flag != null && flag.equalsIgnoreCase("flush")) {
 			int uid;
 			try {

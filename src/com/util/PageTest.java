@@ -27,6 +27,7 @@ public class PageTest {
 		} catch (JsonProcessingException e) {
 			e.printStackTrace();
 		}
+		String s;
 		
 		PageInfo<LinkedHashMap<String, Object>> pi = new PageInfo<LinkedHashMap<String, Object>>(list);
 		long sum = pi.getTotal();

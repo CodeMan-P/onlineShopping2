@@ -1,26 +1,34 @@
 package com.dao;
 
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.LinkedHashMap;
 import java.util.LinkedList;
+import java.util.WeakHashMap;
 
 import org.apache.ibatis.session.SqlSession;
 import org.apache.log4j.Logger;
 import org.junit.Test;
 
+import com.fasterxml.jackson.annotation.JsonInclude.Include;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.mod.bean.Goods;
+import com.mod.mapper.GoodsAndroidMapper;
 import com.mod.mapper.GoodsMapper;
+import com.service.GoodsService;
 import com.util.DbConn;
 
 public class GoodsDao {
 	private static GoodsMapper gm;
 	private static SqlSession session = null;
-
+	private static GoodsAndroidMapper gam;
 	static {
 		try {
 			session = DbConn.getFactory().openSession();
 			gm = session.getMapper(GoodsMapper.class);
+			gam = session.getMapper(GoodsAndroidMapper.class);
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
@@ -70,13 +78,55 @@ public class GoodsDao {
 
 	@Test
 	public void testMethod() {
-		LinkedList<LinkedHashMap<String, Object>> list = getGoddsByRegExp("为");
+		LinkedList<LinkedHashMap<String, Object>> list = GoodsService.getGoddsAnd();
+		LinkedHashMap<String, Object> result = new LinkedHashMap<String, Object>();
+		result.put("code", 0);
+		result.put("message", "OK");
+		result.put("total", 100);
+		result.put("page_size", 6);
+		result.put("data", list);
 		ObjectMapper mapper = new ObjectMapper();
+		mapper.setSerializationInclusion(Include.NON_NULL);
+		String json;
 		try {
-			System.out.println(mapper.writerWithDefaultPrettyPrinter().writeValueAsString(list));
-		} catch (JsonProcessingException e) {
+			String path = System.getProperty("user.dir")+File.separatorChar+"123.json";
+			File file = new File(path);
+			file.createNewFile();
+			json = mapper.writerWithDefaultPrettyPrinter().writeValueAsString(result);
+			FileWriter fw = new FileWriter(file);
+			fw.write(json.toCharArray());
+			fw.close();
+			WeakHashMap<String, Object> whm = mapper.readValue(json, WeakHashMap.class);
+			json = mapper.writeValueAsString(whm);
+			System.out.println(mapper.writerWithDefaultPrettyPrinter().writeValueAsString(result));
+		} catch (JsonProcessingException e1) {
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
+		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+//		LinkedList<LinkedHashMap<String, Object>> list = getGoddsAnd();
+//		ObjectMapper mapper = new ObjectMapper();
+//		mapper.setSerializationInclusion(Include.NON_NULL);
+//		try {
+//			System.out.println(mapper.writerWithDefaultPrettyPrinter().writeValueAsString(list));
+//		} catch (JsonProcessingException e) {
+//			// TODO Auto-generated catch block
+//			e.printStackTrace();
+//		}
+		//		LinkedList<LinkedHashMap<String, Object>> list = getGoddsByRegExp("为");
+//		ObjectMapper mapper = new ObjectMapper();
+//		try {
+//			System.out.println(mapper.writerWithDefaultPrettyPrinter().writeValueAsString(list));
+//		} catch (JsonProcessingException e) {
+//			// TODO Auto-generated catch block
+//			e.printStackTrace();
+//		}
 	}
+	
+	public static LinkedList<LinkedHashMap<String, Object>> getGoddsAnd(){
+		LinkedList<LinkedHashMap<String, Object>> list =gam.getGoddsAnd();
+		return list;
+	};
 }

@@ -41,5 +41,6 @@ PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
         <mapper resource="com/mod/mapper/OrderFormMapper.xml" />
         <mapper resource="com/mod/mapper/ShoppingCarMapper.xml"/>
         <mapper resource="com/mod/mapper/UsersMapper.xml"/>
+        <mapper resource="com/mod/mapper/GoodsAndroidMapper.xml"/>
     </mappers>  
 </configuration>  

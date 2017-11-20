@@ -7,8 +7,7 @@
     <javaModelGenerator targetPackage="com.mod.bean" targetProject="onlineShopping2" />
     <sqlMapGenerator targetPackage="com.mod.mapper" targetProject="onlineShopping2" />
     <javaClientGenerator targetPackage="com.mod.mapper" targetProject="onlineShopping2" type="XMLMAPPER" />
-	
-	<table tableName="goods" domainObjectName="Goods"
+		<table tableName="goods" domainObjectName="Goods"
 	 enableCountByExample="false" enableSelectByExample="false"
             enableUpdateByExample="false" enableDeleteByExample="false"
 	>
@@ -16,6 +15,18 @@
 	<columnOverride column="imgpath" javaType="java.lang.String" jdbcType="VARCHAR" />
 	<columnOverride column="filepath" javaType="java.lang.String" jdbcType="VARCHAR" /> 
 	</table>
+	<table tableName="goodsand" domainObjectName="GoodsAndroid"
+	 enableCountByExample="false" enableSelectByExample="false"
+            enableUpdateByExample="false" enableDeleteByExample="false"
+	>
+	<columnOverride column="descption" javaType="java.lang.String" jdbcType="VARCHAR" />
+	<columnOverride column="imageUrl" javaType="java.lang.String" jdbcType="VARCHAR" />
+	<columnOverride column="banners" javaType="java.lang.String" jdbcType="VARCHAR" />
+	<columnOverride column="text" javaType="java.lang.String" jdbcType="VARCHAR" /> 
+	</table>
+	
+
+	
 	<table tableName="address" domainObjectName="Address"
 	 enableCountByExample="false" enableSelectByExample="false"
             enableUpdateByExample="false" enableDeleteByExample="false"

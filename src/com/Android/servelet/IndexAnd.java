@@ -3,6 +3,8 @@ package com.Android.servelet;
 import java.io.File;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.util.LinkedHashMap;
+import java.util.LinkedList;
 import java.util.WeakHashMap;
 
 import javax.servlet.ServletException;
@@ -11,7 +13,9 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import com.fasterxml.jackson.annotation.JsonInclude.Include;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.service.GoodsService;
 
 /**
  * Servlet implementation class IndexAnd
@@ -38,17 +42,25 @@ public class IndexAnd extends HttpServlet {
 		request.setCharacterEncoding("utf-8");
 		response.setContentType("text/html");
 		response.setCharacterEncoding("utf-8");
+		LinkedList<LinkedHashMap<String, Object>> list = GoodsService.getGoddsAnd();
+		LinkedHashMap<String, Object> result = new LinkedHashMap<String, Object>();
+		result.put("code", 0);
+		result.put("message", "OK");
+		result.put("total", 100);
+		result.put("page_size", 6);
+		result.put("data", list);
 		ObjectMapper mapper = new ObjectMapper();
-		String path = request.getServletContext().getRealPath("json/index_data.json");
-		File file = new File(path);
+		mapper.setSerializationInclusion(Include.NON_NULL);
+		String json = mapper.writeValueAsString(result);
 		@SuppressWarnings("unchecked")
-		WeakHashMap<String, Object> whm = mapper.readValue(file, WeakHashMap.class);
-		String json = mapper.writeValueAsString(whm);
+		WeakHashMap<String, Object> whm = mapper.readValue(json, WeakHashMap.class);
+		json = mapper.writeValueAsString(whm);
 		PrintWriter out = response.getWriter();
 		out.write(json);
 		out.close();
-	}
 
+	}
+	
 	/**
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse
 	 *      response)
@@ -58,5 +70,4 @@ public class IndexAnd extends HttpServlet {
 		// TODO Auto-generated method stub
 		doGet(request, response);
 	}
-
 }
