@@ -45,7 +45,7 @@
                      <li><strong>密码：</strong><input class="ipt" type="password" name="pwd" value="" size="20" /></li>
                      <li >
                      <input type="hidden" name = "flag" id="flag" value="check">
-                     <input type="hidden" name = "uuid" value="<%=request.getParameter("UUID")%>">
+                    
                      <input class="btn btn-primary" style="left:60px" type="submit" id="b" value="登 录 "/></li>
                 </ol>
            </form>

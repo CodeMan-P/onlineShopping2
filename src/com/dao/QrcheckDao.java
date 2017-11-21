@@ -23,7 +23,15 @@ public class QrcheckDao {
 
 	static Logger log = Logger.getLogger(QrcheckDao.class.getName());
 	public static Qrcheck getQrcheck(String UUID){
-		Qrcheck qrc = qm.selectByUUID(UUID);
+		
+		Qrcheck qrc = null;
+		try {
+			qrc=qm.selectByUUID(UUID);
+		} catch (Exception e) {
+			e.printStackTrace();
+			log.warn(e.getLocalizedMessage());
+		}
+		
 		return qrc;
 	}
 	

@@ -22,6 +22,14 @@
 
 <link rel="stylesheet" href="css/lanrenzhijia.css" media="all">
 <link rel="stylesheet" href="css/style.css" />
+<style type="text/css">
+    .blur {      
+        -webkit-filter: blur(10px);  
+           -moz-filter: blur(10px);  
+            -ms-filter: blur(10px);      
+                filter: blur(10px);      
+    }
+</style>
 <script type="text/javascript" src="js/jquery-1.8.3.js"></script>
 <script type="text/javascript" src="js/js.js"></script>
 <script type="text/javascript" src="js/jquery.form.js"></script>
@@ -67,6 +75,8 @@
 		};
 		<!-- 弹出登录框-->
 		$('.theme-login').click(function(){
+			//刷新验证码
+			docheck();
 			$("div[name='QRcode']").hide();	
 			$('#QRshow').val("二维码登录");
 			$('.theme-popover-mask').fadeIn(100);
@@ -158,7 +168,7 @@
 					//$("#userInfo #sp2").text("-");
 					$("#quit").hide();
 					$("#h1name").text("Hi!你好!");
-					$("#labela").text("亲,请登录");
+					$("#logina").text("亲,请登录");
 					
 					$("#logina").attr("href","javascript:$('.theme-login').click();void(0);");
 					alert("注销成功");
@@ -185,7 +195,8 @@
 		});
 		
 		
-		
+		$("#QRimg").parent().append("<img id='blur' src='img/0009021160259732_b.jpg' style='z-index:9999; position:relative; width:20%; height:50%;left:-160px;top:-110px'/>");
+		$("#blur").hide();
 	});
 	var interval;
 	function verify(){
@@ -193,12 +204,15 @@
 			clearInterval(interval);
 			return;
 		}
+		var time = new Date();
+
 		$.ajax({
 			async:true,
 			url : 'QrCode',  
 			type : 'post',
 			data:{"flag":"verify",
-					"uuid":$("#UUID").val()},
+					"uuid":$("#UUID").val(),
+					"d":time},
 			dataType:'json',
 			timeout:1800,
 			success:function(data){
@@ -206,7 +220,14 @@
 			//	if(data!==null&&data.message !==null &&data.message.match('.+?失败.+')){
 				
 				//}else 
-				if(data.message === "验证失败！"){
+				
+				if(data.message === "已扫描"){
+					if($("#blur").is(":hidden")){
+					$("#QRimg").addClass("blur");
+					$("#blur").show();
+					
+					}
+				}else if(data.message === "验证失败！"){
 					
 				}else{
 					
@@ -224,10 +245,10 @@
 					$("#touxiang").attr("src",path);
 				}
 			},
-		
+			
 		});
 	}
-Date.prototype.Format = function (fmt) { //author: meizz 
+	Date.prototype.Format = function (fmt) { //author: meizz 
     var o = {
         "M+": this.getMonth() + 1, //月份 
         "d+": this.getDate(), //日 
@@ -248,11 +269,16 @@ Date.prototype.Format = function (fmt) { //author: meizz
 	};
 
 	function doQRcheck(){
+		
+		$("#QRimg").removeClass("blur");
+		$("#blur").hide();
+		
 		clearInterval(interval);
 		var df = new Date().Format("yyyyMMddhhmmssS");
-		
 		var time = new Date();
+		
 		var uuid = df + Math.uuid().replace(/-/g, '');
+	
 		$("#QRimg").attr("src","<%=request.getContextPath()%>/QrCode?d="+time+"&&UUID="+uuid);
 		//获得UUID，传递UUID
 		$("#UUID").val(uuid);
@@ -721,7 +747,7 @@ Date.prototype.Format = function (fmt) { //author: meizz
                 </ol>
            </form>
      </div>
-       <div class="theme-popbod dform" name="QRcode">
+       <div class="theme-popbod dform" id="qrdiv" name="QRcode">
 	<img src="#" onclick="doQRcheck()" alt="二维码生成失败！" id="QRimg" style=" position:relative; top:-50px"/>
       <input type="hidden" id="UUID">
       </div>

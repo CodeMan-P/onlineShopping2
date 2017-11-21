@@ -3,6 +3,8 @@ package com.qrCode;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
+import java.net.InetAddress;
+import java.net.UnknownHostException;
 import java.nio.file.FileSystems;
 import java.nio.file.Path;
 import java.text.SimpleDateFormat;
@@ -39,9 +41,16 @@ public class QrCodeTest {
 
 	public static void main(String[] args) {
 	//	creatQRQode();
-		testDecode();
-		System.out.println(getUUID());
-		System.out.println(getUUID());
+		try {
+			
+			System.out.println(InetAddress.getLoopbackAddress().getHostAddress());
+			System.out.println(InetAddress.getLocalHost().getHostAddress());
+		} catch (UnknownHostException e) {
+			e.printStackTrace();
+		}  
+//		testDecode();
+//		System.out.println(getUUID());
+//		System.out.println(getUUID());
 	}
 
 	/**

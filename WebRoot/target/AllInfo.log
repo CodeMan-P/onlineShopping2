@@ -21036,3 +21036,1257 @@
  <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
 2017-11-21 14:00:23  DEBUG 230805ms|>- <==    Updates: 1
  <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 15:27:29  DEBUG 0ms|>- Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+ <org.apache.ibatis.logging.LogFactory.setImplementation(LogFactory.java:135)> 
+2017-11-21 15:27:30  DEBUG 489ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-21 15:27:30  DEBUG 490ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-21 15:27:30  DEBUG 490ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-21 15:27:30  DEBUG 490ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-21 15:27:30  DEBUG 1224ms|>- Opening JDBC Connection
+ <org.apache.ibatis.transaction.jdbc.JdbcTransaction.openConnection(JdbcTransaction.java:137)> 
+2017-11-21 15:27:31  DEBUG 1572ms|>- Created connection 1405793471.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.popConnection(PooledDataSource.java:406)> 
+2017-11-21 15:27:31  DEBUG 1573ms|>- Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@53cab4bf]
+ <org.apache.ibatis.transaction.jdbc.JdbcTransaction.setDesiredAutoCommit(JdbcTransaction.java:101)> 
+2017-11-21 15:27:31  DEBUG 1580ms|>- ==>  Preparing: insert into qrcheck ( uuid, status ) values ( ?, ? ) 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 15:27:31  DEBUG 1613ms|>- ==> Parameters: 20171121152728543B2C975AF836442568745305983B32232(String), 0(Integer)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 15:27:31  DEBUG 1614ms|>- <==    Updates: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 15:27:31  DEBUG 1807ms|>- ==>  Preparing: select * from qrcheck where uuid = ? 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 15:27:31  DEBUG 1809ms|>- ==> Parameters: null
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 15:27:31  DEBUG 1823ms|>- <==      Total: 0
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 15:32:40  DEBUG 0ms|>- Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+ <org.apache.ibatis.logging.LogFactory.setImplementation(LogFactory.java:135)> 
+2017-11-21 15:32:40  DEBUG 198ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-21 15:32:40  DEBUG 199ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-21 15:32:40  DEBUG 200ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-21 15:32:40  DEBUG 200ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-21 15:32:40  DEBUG 573ms|>- Opening JDBC Connection
+ <org.apache.ibatis.transaction.jdbc.JdbcTransaction.openConnection(JdbcTransaction.java:137)> 
+2017-11-21 15:32:40  DEBUG 788ms|>- Created connection 1991971568.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.popConnection(PooledDataSource.java:406)> 
+2017-11-21 15:32:40  DEBUG 789ms|>- Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@76bb12f0]
+ <org.apache.ibatis.transaction.jdbc.JdbcTransaction.setDesiredAutoCommit(JdbcTransaction.java:101)> 
+2017-11-21 15:32:40  DEBUG 793ms|>- ==>  Preparing: insert into qrcheck ( uuid, status ) values ( ?, ? ) 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 15:32:40  DEBUG 804ms|>- ==> Parameters: 2017112115323957ED10C048B4544D1294E3E4B744AA12CC(String), 0(Integer)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 15:32:40  DEBUG 806ms|>- <==    Updates: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 15:32:41  DEBUG 1861ms|>- ==>  Preparing: select * from qrcheck where uuid = ? 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 15:32:41  DEBUG 1864ms|>- ==> Parameters: null
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 15:32:42  DEBUG 1875ms|>- <==      Total: 0
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 15:33:29  DEBUG 49720ms|>- ==>  Preparing: insert into qrcheck ( uuid, status ) values ( ?, ? ) 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 15:33:29  DEBUG 49721ms|>- ==> Parameters: 20171121153328704F2D9C265C5384DB7BED964595EC801DA(String), 0(Integer)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 15:33:29  DEBUG 49722ms|>- <==    Updates: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 15:33:31  DEBUG 51722ms|>- ==>  Preparing: select * from qrcheck where uuid = ? 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 15:33:31  DEBUG 51723ms|>- ==> Parameters: null
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 15:33:31  DEBUG 51724ms|>- <==      Total: 0
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 15:33:46  DEBUG 66528ms|>- ==>  Preparing: insert into qrcheck ( uuid, status ) values ( ?, ? ) 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 15:33:46  DEBUG 66528ms|>- ==> Parameters: 20171121153345688AFD2C2972DD7477DB9E6DD0BEE0D780C(String), 0(Integer)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 15:33:46  DEBUG 66529ms|>- <==    Updates: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 15:33:50  DEBUG 70390ms|>- ==>  Preparing: insert into qrcheck ( uuid, status ) values ( ?, ? ) 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 15:33:50  DEBUG 70391ms|>- ==> Parameters: 20171121153349579BB8BCAF7F0E14990813B7D08D61EC295(String), 0(Integer)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 15:33:50  DEBUG 70392ms|>- <==    Updates: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 15:33:55  DEBUG 74877ms|>- ==>  Preparing: insert into qrcheck ( uuid, status ) values ( ?, ? ) 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 15:33:55  DEBUG 74878ms|>- ==> Parameters: 20171121153354144838DBC3C4D584D96945EDA250763276D(String), 0(Integer)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 15:33:55  DEBUG 74879ms|>- <==    Updates: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 15:34:12  DEBUG 0ms|>- Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+ <org.apache.ibatis.logging.LogFactory.setImplementation(LogFactory.java:135)> 
+2017-11-21 15:34:13  DEBUG 174ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-21 15:34:13  DEBUG 174ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-21 15:34:13  DEBUG 174ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-21 15:34:13  DEBUG 175ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-21 15:34:13  DEBUG 648ms|>- Opening JDBC Connection
+ <org.apache.ibatis.transaction.jdbc.JdbcTransaction.openConnection(JdbcTransaction.java:137)> 
+2017-11-21 15:34:13  DEBUG 864ms|>- Created connection 1787175851.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.popConnection(PooledDataSource.java:406)> 
+2017-11-21 15:34:13  DEBUG 865ms|>- Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@6a8623ab]
+ <org.apache.ibatis.transaction.jdbc.JdbcTransaction.setDesiredAutoCommit(JdbcTransaction.java:101)> 
+2017-11-21 15:34:13  DEBUG 868ms|>- ==>  Preparing: insert into qrcheck ( uuid, status ) values ( ?, ? ) 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 15:34:13  DEBUG 877ms|>- ==> Parameters: 201711211534128384857144D76754EF2A9F1AC2378123498(String), 0(Integer)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 15:34:13  DEBUG 878ms|>- <==    Updates: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 15:34:14  DEBUG 1896ms|>- ==>  Preparing: select * from qrcheck where uuid = ? 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 15:34:14  DEBUG 1900ms|>- ==> Parameters: null
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 15:34:14  DEBUG 1910ms|>- <==      Total: 0
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 15:35:13  DEBUG 60509ms|>- ==>  Preparing: insert into qrcheck ( uuid, status ) values ( ?, ? ) 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 15:35:13  DEBUG 60526ms|>- ==> Parameters: 20171121153513505541F3AFB9E4C4BFD90C5281AA07EE45E(String), 0(Integer)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 15:35:13  DEBUG 60526ms|>- <==    Updates: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 15:35:15  DEBUG 62524ms|>- ==>  Preparing: select * from qrcheck where uuid = ? 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 15:35:15  DEBUG 62539ms|>- ==> Parameters: null
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 15:35:15  DEBUG 62539ms|>- <==      Total: 0
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 15:36:11  DEBUG 0ms|>- Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+ <org.apache.ibatis.logging.LogFactory.setImplementation(LogFactory.java:135)> 
+2017-11-21 15:36:12  DEBUG 131ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-21 15:36:12  DEBUG 131ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-21 15:36:12  DEBUG 131ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-21 15:36:12  DEBUG 131ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-21 15:36:12  DEBUG 347ms|>- Opening JDBC Connection
+ <org.apache.ibatis.transaction.jdbc.JdbcTransaction.openConnection(JdbcTransaction.java:137)> 
+2017-11-21 15:36:12  DEBUG 570ms|>- Created connection 208850812.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.popConnection(PooledDataSource.java:406)> 
+2017-11-21 15:36:12  DEBUG 570ms|>- Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@c72cf7c]
+ <org.apache.ibatis.transaction.jdbc.JdbcTransaction.setDesiredAutoCommit(JdbcTransaction.java:101)> 
+2017-11-21 15:36:12  DEBUG 570ms|>- ==>  Preparing: select * from qrcheck where uuid = ? 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 15:36:12  DEBUG 585ms|>- ==> Parameters: null
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 15:36:12  DEBUG 585ms|>- <==      Total: 0
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 15:36:24  DEBUG 12328ms|>- ==>  Preparing: insert into qrcheck ( uuid, status ) values ( ?, ? ) 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 15:36:24  DEBUG 12330ms|>- ==> Parameters: 201711211536242721A3CFFB23FE9437788AF926ED7C15D52(String), 0(Integer)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 15:36:24  DEBUG 12331ms|>- <==    Updates: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 15:36:26  DEBUG 14294ms|>- ==>  Preparing: select * from qrcheck where uuid = ? 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 15:36:26  DEBUG 14295ms|>- ==> Parameters: null
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 15:36:26  DEBUG 14297ms|>- <==      Total: 0
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 15:39:36  DEBUG 0ms|>- Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+ <org.apache.ibatis.logging.LogFactory.setImplementation(LogFactory.java:135)> 
+2017-11-21 15:39:38  DEBUG 1673ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-21 15:39:38  DEBUG 1674ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-21 15:39:38  DEBUG 1675ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-21 15:39:38  DEBUG 1676ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-21 15:39:38  DEBUG 2203ms|>- Opening JDBC Connection
+ <org.apache.ibatis.transaction.jdbc.JdbcTransaction.openConnection(JdbcTransaction.java:137)> 
+2017-11-21 15:39:38  DEBUG 2204ms|>- Opening JDBC Connection
+ <org.apache.ibatis.transaction.jdbc.JdbcTransaction.openConnection(JdbcTransaction.java:137)> 
+2017-11-21 15:39:38  DEBUG 2203ms|>- Opening JDBC Connection
+ <org.apache.ibatis.transaction.jdbc.JdbcTransaction.openConnection(JdbcTransaction.java:137)> 
+2017-11-21 15:39:39  DEBUG 2573ms|>- Created connection 1346833726.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.popConnection(PooledDataSource.java:406)> 
+2017-11-21 15:39:39  DEBUG 2574ms|>- Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@50470d3e]
+ <org.apache.ibatis.transaction.jdbc.JdbcTransaction.setDesiredAutoCommit(JdbcTransaction.java:101)> 
+2017-11-21 15:39:39  DEBUG 2579ms|>- ======>  Preparing: select * from qrcheck where uuid = ? 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 15:39:39  DEBUG 2615ms|>- ======> Parameters: null
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 15:39:39  DEBUG 2639ms|>- <======      Total: 0
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 15:39:39  DEBUG 2655ms|>- Created connection 896452905.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.popConnection(PooledDataSource.java:406)> 
+2017-11-21 15:39:39  DEBUG 2656ms|>- Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@356ec929]
+ <org.apache.ibatis.transaction.jdbc.JdbcTransaction.setDesiredAutoCommit(JdbcTransaction.java:101)> 
+2017-11-21 15:39:39  DEBUG 2657ms|>- ====>  Preparing: select * from qrcheck where uuid = ? 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 15:39:39  DEBUG 2659ms|>- ====> Parameters: null
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 15:39:39  DEBUG 2661ms|>- <====      Total: 0
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 15:39:39  DEBUG 2673ms|>- Created connection 1655288581.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.popConnection(PooledDataSource.java:406)> 
+2017-11-21 15:39:39  DEBUG 2673ms|>- Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@62a9b305]
+ <org.apache.ibatis.transaction.jdbc.JdbcTransaction.setDesiredAutoCommit(JdbcTransaction.java:101)> 
+2017-11-21 15:39:39  DEBUG 2674ms|>- ==>  Preparing: select * from qrcheck where uuid = ? 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 15:39:39  DEBUG 2675ms|>- ==> Parameters: null
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 15:39:39  DEBUG 2676ms|>- <==      Total: 0
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 15:39:52  DEBUG 15925ms|>- ==>  Preparing: insert into qrcheck ( uuid, status ) values ( ?, ? ) 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 15:39:52  DEBUG 15925ms|>- ==> Parameters: 20171121153952424E91DB79EA74F4A3DB827DCDDDDC95BE7(String), 0(Integer)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 15:39:52  DEBUG 15925ms|>- <==    Updates: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 15:39:54  DEBUG 17907ms|>- ==>  Preparing: select * from qrcheck where uuid = ? 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 15:39:54  DEBUG 17908ms|>- ==> Parameters: null
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 15:39:54  DEBUG 17909ms|>- <==      Total: 0
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 15:45:04  DEBUG 328275ms|>- ==>  Preparing: insert into qrcheck ( uuid, status ) values ( ?, ? ) 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 15:45:04  DEBUG 328276ms|>- ==> Parameters: 201711211545048214793724713CE482982AA2F7F9A7F5136(String), 0(Integer)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 15:45:04  DEBUG 328277ms|>- <==    Updates: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 15:45:06  DEBUG 330286ms|>- ==>  Preparing: select * from qrcheck where uuid = ? 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 15:45:06  DEBUG 330288ms|>- ==> Parameters: null
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 15:45:06  DEBUG 330290ms|>- <==      Total: 0
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 15:45:54  DEBUG 0ms|>- Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+ <org.apache.ibatis.logging.LogFactory.setImplementation(LogFactory.java:135)> 
+2017-11-21 15:45:55  DEBUG 1464ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-21 15:45:55  DEBUG 1481ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-21 15:45:55  DEBUG 1481ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-21 15:45:55  DEBUG 1482ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-21 15:45:56  DEBUG 1945ms|>- Opening JDBC Connection
+ <org.apache.ibatis.transaction.jdbc.JdbcTransaction.openConnection(JdbcTransaction.java:137)> 
+2017-11-21 15:45:56  DEBUG 1946ms|>- Opening JDBC Connection
+ <org.apache.ibatis.transaction.jdbc.JdbcTransaction.openConnection(JdbcTransaction.java:137)> 
+2017-11-21 15:45:56  DEBUG 1945ms|>- Opening JDBC Connection
+ <org.apache.ibatis.transaction.jdbc.JdbcTransaction.openConnection(JdbcTransaction.java:137)> 
+2017-11-21 15:45:56  DEBUG 1945ms|>- Opening JDBC Connection
+ <org.apache.ibatis.transaction.jdbc.JdbcTransaction.openConnection(JdbcTransaction.java:137)> 
+2017-11-21 15:45:56  DEBUG 2233ms|>- Created connection 1799287928.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.popConnection(PooledDataSource.java:406)> 
+2017-11-21 15:45:56  DEBUG 2233ms|>- Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@6b3ef478]
+ <org.apache.ibatis.transaction.jdbc.JdbcTransaction.setDesiredAutoCommit(JdbcTransaction.java:101)> 
+2017-11-21 15:45:56  DEBUG 2248ms|>- Created connection 856484809.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.popConnection(PooledDataSource.java:406)> 
+2017-11-21 15:45:56  DEBUG 2248ms|>- Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@330cebc9]
+ <org.apache.ibatis.transaction.jdbc.JdbcTransaction.setDesiredAutoCommit(JdbcTransaction.java:101)> 
+2017-11-21 15:45:56  DEBUG 2248ms|>- ========>  Preparing: select * from qrcheck where uuid = ? 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 15:45:56  DEBUG 2271ms|>- ========>  Preparing: select * from qrcheck where uuid = ? 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 15:45:56  DEBUG 2286ms|>- Created connection 16265435.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.popConnection(PooledDataSource.java:406)> 
+2017-11-21 15:45:56  DEBUG 2286ms|>- Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@f830db]
+ <org.apache.ibatis.transaction.jdbc.JdbcTransaction.setDesiredAutoCommit(JdbcTransaction.java:101)> 
+2017-11-21 15:45:56  DEBUG 2286ms|>- ========>  Preparing: select * from qrcheck where uuid = ? 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 15:45:56  DEBUG 2302ms|>- ========> Parameters: null
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 15:45:56  DEBUG 2333ms|>- ========> Parameters: null
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 15:45:56  DEBUG 2333ms|>- <========      Total: 0
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 15:45:56  DEBUG 2333ms|>- Created connection 6146494.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.popConnection(PooledDataSource.java:406)> 
+2017-11-21 15:45:56  DEBUG 2333ms|>- Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@5dc9be]
+ <org.apache.ibatis.transaction.jdbc.JdbcTransaction.setDesiredAutoCommit(JdbcTransaction.java:101)> 
+2017-11-21 15:45:56  DEBUG 2333ms|>- ========> Parameters: null
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 15:45:56  DEBUG 2333ms|>- ======>  Preparing: select * from qrcheck where uuid = ? 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 15:45:56  DEBUG 2349ms|>- ======> Parameters: null
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 15:45:56  DEBUG 2349ms|>- <========      Total: 0
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 15:45:56  DEBUG 2333ms|>- <========      Total: 0
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 15:45:56  DEBUG 2349ms|>- <======      Total: 0
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 15:46:33  DEBUG 38974ms|>- ==>  Preparing: insert into qrcheck ( uuid, status ) values ( ?, ? ) 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 15:46:33  DEBUG 38974ms|>- ==> Parameters: 20171121154633598728ED3A67EF4494BE5C75FA922AF479(String), 0(Integer)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 15:46:33  DEBUG 38974ms|>- <==    Updates: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 15:46:34  DEBUG 40128ms|>- ==>  Preparing: update qrcheck set status = ? where uuid = ? 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 15:46:34  DEBUG 40133ms|>- ==> Parameters: 2(Integer), null
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 15:46:34  DEBUG 40134ms|>- <==    Updates: 0
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 15:46:35  DEBUG 40945ms|>- ==>  Preparing: select * from qrcheck where uuid = ? 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 15:46:35  DEBUG 40945ms|>- ==> Parameters: null
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 15:46:35  DEBUG 40945ms|>- <==      Total: 0
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 15:51:45  DEBUG 0ms|>- Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+ <org.apache.ibatis.logging.LogFactory.setImplementation(LogFactory.java:135)> 
+2017-11-21 15:51:46  DEBUG 216ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-21 15:51:46  DEBUG 216ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-21 15:51:46  DEBUG 216ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-21 15:51:46  DEBUG 216ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-21 15:51:46  DEBUG 701ms|>- Opening JDBC Connection
+ <org.apache.ibatis.transaction.jdbc.JdbcTransaction.openConnection(JdbcTransaction.java:137)> 
+2017-11-21 15:51:46  DEBUG 917ms|>- Created connection 41432140.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.popConnection(PooledDataSource.java:406)> 
+2017-11-21 15:51:46  DEBUG 931ms|>- Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@278344c]
+ <org.apache.ibatis.transaction.jdbc.JdbcTransaction.setDesiredAutoCommit(JdbcTransaction.java:101)> 
+2017-11-21 15:51:46  DEBUG 934ms|>- ==>  Preparing: insert into qrcheck ( uuid, status ) values ( ?, ? ) 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 15:51:46  DEBUG 934ms|>- ==> Parameters: 20171121155145822A8185FB513C147A3894C000029756067(String), 0(Integer)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 15:51:46  DEBUG 934ms|>- <==    Updates: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 15:51:47  DEBUG 1887ms|>- ==>  Preparing: select * from qrcheck where uuid = ? 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 15:51:47  DEBUG 1887ms|>- ==> Parameters: null
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 15:51:47  DEBUG 1903ms|>- <==      Total: 0
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 15:51:49  DEBUG 3103ms|>- ==>  Preparing: update qrcheck set status = ? where uuid = ? 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 15:51:49  DEBUG 3116ms|>- ==> Parameters: 2(Integer), null
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 15:51:49  DEBUG 3116ms|>- <==    Updates: 0
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 15:51:49  DEBUG 3904ms|>- ==>  Preparing: select * from qrcheck where uuid = ? 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 15:51:49  DEBUG 3904ms|>- ==> Parameters: null
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 15:51:49  DEBUG 3904ms|>- <==      Total: 0
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 15:55:19  DEBUG 213715ms|>- Opening JDBC Connection
+ <org.apache.ibatis.transaction.jdbc.JdbcTransaction.openConnection(JdbcTransaction.java:137)> 
+2017-11-21 15:55:19  DEBUG 213745ms|>- Created connection 1933562331.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.popConnection(PooledDataSource.java:406)> 
+2017-11-21 15:55:19  DEBUG 213746ms|>- Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@733fd1db]
+ <org.apache.ibatis.transaction.jdbc.JdbcTransaction.setDesiredAutoCommit(JdbcTransaction.java:101)> 
+2017-11-21 15:55:19  DEBUG 213747ms|>- ==>  Preparing: SELECT * FROM users WHERE uname = ? and upwd = ? 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 15:55:19  DEBUG 213748ms|>- ==> Parameters: Xiaoming (String), 123(String)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 15:55:19  TRACE 213768ms|>- <==    Columns: uid, uname, upwd, phone, city, regDate, idCard, realName, age, email, sex, avatar
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.trace(BaseJdbcLogger.java:165)> 
+2017-11-21 15:55:19  TRACE 213774ms|>- <==        Row: 1, xiaoming, 123, 18899119292, 西安, 2017-11-11, null, 小明, 22, null, 男, <<BLOB>>
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.trace(BaseJdbcLogger.java:165)> 
+2017-11-21 15:55:19  DEBUG 213781ms|>- <==      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 15:55:19  DEBUG 213782ms|>- ==>  Preparing: update qrcheck set status = ?, name = ?,pwd = ? where uuid = ? 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 15:55:19  DEBUG 213782ms|>- ==> Parameters: 1(Integer), Xiaoming (String), 123(String), null
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 15:55:19  DEBUG 213783ms|>- <==    Updates: 0
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 15:55:21  DEBUG 215328ms|>- ==>  Preparing: select * from qrcheck where uuid = ? 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 15:55:21  DEBUG 215343ms|>- ==> Parameters: null
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 15:55:21  DEBUG 215346ms|>- <==      Total: 0
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 15:56:31  DEBUG 0ms|>- Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+ <org.apache.ibatis.logging.LogFactory.setImplementation(LogFactory.java:135)> 
+2017-11-21 15:56:32  DEBUG 815ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-21 15:56:32  DEBUG 815ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-21 15:56:32  DEBUG 816ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-21 15:56:32  DEBUG 816ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-21 15:56:33  DEBUG 1450ms|>- Opening JDBC Connection
+ <org.apache.ibatis.transaction.jdbc.JdbcTransaction.openConnection(JdbcTransaction.java:137)> 
+2017-11-21 15:56:33  DEBUG 1450ms|>- Opening JDBC Connection
+ <org.apache.ibatis.transaction.jdbc.JdbcTransaction.openConnection(JdbcTransaction.java:137)> 
+2017-11-21 15:56:33  DEBUG 1450ms|>- Opening JDBC Connection
+ <org.apache.ibatis.transaction.jdbc.JdbcTransaction.openConnection(JdbcTransaction.java:137)> 
+2017-11-21 15:56:33  DEBUG 1767ms|>- Created connection 127963877.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.popConnection(PooledDataSource.java:406)> 
+2017-11-21 15:56:33  DEBUG 1767ms|>- Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@7a092e5]
+ <org.apache.ibatis.transaction.jdbc.JdbcTransaction.setDesiredAutoCommit(JdbcTransaction.java:101)> 
+2017-11-21 15:56:33  DEBUG 1787ms|>- ====>  Preparing: select * from qrcheck where uuid = ? 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 15:56:33  DEBUG 1789ms|>- Created connection 1518936979.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.popConnection(PooledDataSource.java:406)> 
+2017-11-21 15:56:33  DEBUG 1789ms|>- Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@5a892393]
+ <org.apache.ibatis.transaction.jdbc.JdbcTransaction.setDesiredAutoCommit(JdbcTransaction.java:101)> 
+2017-11-21 15:56:33  DEBUG 1789ms|>- ====>  Preparing: select * from qrcheck where uuid = ? 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 15:56:33  DEBUG 1836ms|>- ====> Parameters: null
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 15:56:33  DEBUG 1836ms|>- Created connection 150559885.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.popConnection(PooledDataSource.java:406)> 
+2017-11-21 15:56:33  DEBUG 1836ms|>- Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@8f95c8d]
+ <org.apache.ibatis.transaction.jdbc.JdbcTransaction.setDesiredAutoCommit(JdbcTransaction.java:101)> 
+2017-11-21 15:56:33  DEBUG 1836ms|>- ====>  Preparing: select * from qrcheck where uuid = ? 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 15:56:33  DEBUG 1836ms|>- ====> Parameters: null
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 15:56:33  DEBUG 1887ms|>- <====      Total: 0
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 15:56:33  DEBUG 1900ms|>- <====      Total: 0
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 15:56:33  DEBUG 1836ms|>- ====> Parameters: null
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 15:56:33  DEBUG 1941ms|>- <====      Total: 0
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 15:56:41  DEBUG 9961ms|>- ==>  Preparing: select * from qrcheck where uuid = ? 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 15:56:41  DEBUG 9962ms|>- ==> Parameters: null
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 15:56:41  DEBUG 9963ms|>- <==      Total: 0
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 15:56:47  DEBUG 15986ms|>- ==>  Preparing: select * from qrcheck where uuid = ? 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 15:56:47  DEBUG 15997ms|>- ==> Parameters: null
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 15:56:47  DEBUG 15997ms|>- <==      Total: 0
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 15:56:56  DEBUG 24525ms|>- ==>  Preparing: select * from qrcheck where uuid = ? 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 15:56:56  DEBUG 24527ms|>- ==> Parameters: null
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 15:56:56  DEBUG 24530ms|>- <==      Total: 0
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 15:57:01  DEBUG 30065ms|>- ==>  Preparing: select * from qrcheck where uuid = ? 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 15:57:01  DEBUG 30075ms|>- ==> Parameters: null
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 15:57:01  DEBUG 30075ms|>- <==      Total: 0
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 15:58:09  DEBUG 0ms|>- Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+ <org.apache.ibatis.logging.LogFactory.setImplementation(LogFactory.java:135)> 
+2017-11-21 15:58:09  DEBUG 334ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-21 15:58:09  DEBUG 336ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-21 15:58:09  DEBUG 337ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-21 15:58:09  DEBUG 337ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-21 15:58:09  DEBUG 912ms|>- Opening JDBC Connection
+ <org.apache.ibatis.transaction.jdbc.JdbcTransaction.openConnection(JdbcTransaction.java:137)> 
+2017-11-21 15:58:10  DEBUG 1187ms|>- Created connection 1667645809.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.popConnection(PooledDataSource.java:406)> 
+2017-11-21 15:58:10  DEBUG 1188ms|>- Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@63664171]
+ <org.apache.ibatis.transaction.jdbc.JdbcTransaction.setDesiredAutoCommit(JdbcTransaction.java:101)> 
+2017-11-21 15:58:10  DEBUG 1192ms|>- ==>  Preparing: insert into qrcheck ( uuid, status ) values ( ?, ? ) 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 15:58:10  DEBUG 1318ms|>- ==> Parameters: 2017112115580877860596350F4024CB29887BB33759AB1DC(String), 0(Integer)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 15:58:10  DEBUG 1319ms|>- <==    Updates: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 15:58:10  DEBUG 1739ms|>- ==>  Preparing: select * from qrcheck where uuid = ? 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 15:58:10  DEBUG 1741ms|>- ==> Parameters: null
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 15:58:10  DEBUG 1759ms|>- <==      Total: 0
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 15:58:18  DEBUG 9328ms|>- ==>  Preparing: update qrcheck set status = ? where uuid = ? 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 15:58:18  DEBUG 9330ms|>- ==> Parameters: 2(Integer), null
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 15:58:18  DEBUG 9331ms|>- <==    Updates: 0
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 15:58:18  DEBUG 9794ms|>- ==>  Preparing: select * from qrcheck where uuid = ? 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 15:58:18  DEBUG 9794ms|>- ==> Parameters: null
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 15:58:18  DEBUG 9794ms|>- <==      Total: 0
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 15:58:34  DEBUG 25162ms|>- Opening JDBC Connection
+ <org.apache.ibatis.transaction.jdbc.JdbcTransaction.openConnection(JdbcTransaction.java:137)> 
+2017-11-21 15:58:34  DEBUG 25187ms|>- Created connection 940653982.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.popConnection(PooledDataSource.java:406)> 
+2017-11-21 15:58:34  DEBUG 25187ms|>- Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@38113d9e]
+ <org.apache.ibatis.transaction.jdbc.JdbcTransaction.setDesiredAutoCommit(JdbcTransaction.java:101)> 
+2017-11-21 15:58:34  DEBUG 25187ms|>- ==>  Preparing: SELECT * FROM users WHERE uname = ? and upwd = ? 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 15:58:34  DEBUG 25187ms|>- ==> Parameters: Xiaoming (String), 123(String)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 15:58:34  TRACE 25203ms|>- <==    Columns: uid, uname, upwd, phone, city, regDate, idCard, realName, age, email, sex, avatar
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.trace(BaseJdbcLogger.java:165)> 
+2017-11-21 15:58:34  TRACE 25219ms|>- <==        Row: 1, xiaoming, 123, 18899119292, 西安, 2017-11-11, null, 小明, 22, null, 男, <<BLOB>>
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.trace(BaseJdbcLogger.java:165)> 
+2017-11-21 15:58:34  DEBUG 25229ms|>- <==      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 15:58:34  DEBUG 25230ms|>- ==>  Preparing: update qrcheck set status = ?, name = ?,pwd = ? where uuid = ? 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 15:58:34  DEBUG 25231ms|>- ==> Parameters: 1(Integer), Xiaoming (String), 123(String), null
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 15:58:34  DEBUG 25231ms|>- <==    Updates: 0
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 15:58:34  DEBUG 25909ms|>- ==>  Preparing: select * from qrcheck where uuid = ? 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 15:58:34  DEBUG 25909ms|>- ==> Parameters: null
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 15:58:34  DEBUG 25909ms|>- <==      Total: 0
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 15:58:56  DEBUG 47062ms|>- ==>  Preparing: insert into qrcheck ( uuid, status ) values ( ?, ? ) 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 15:58:56  DEBUG 47063ms|>- ==> Parameters: 201711211558561139D8C17E8291E4F6FA72A0F4F4DFCECD3(String), 0(Integer)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 15:58:56  DEBUG 47063ms|>- <==    Updates: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 15:58:58  DEBUG 49072ms|>- ==>  Preparing: select * from qrcheck where uuid = ? 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 15:58:58  DEBUG 49079ms|>- ==> Parameters: null
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 15:58:58  DEBUG 49081ms|>- <==      Total: 0
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:00:05  DEBUG 116303ms|>- ==>  Preparing: insert into qrcheck ( uuid, status ) values ( ?, ? ) 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:00:05  DEBUG 116303ms|>- ==> Parameters: 201711211600053512B71808765CC402E84C6086C907A39C4(String), 0(Integer)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:00:05  DEBUG 116304ms|>- <==    Updates: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:00:07  DEBUG 118322ms|>- ==>  Preparing: select * from qrcheck where uuid = ? 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:00:07  DEBUG 118323ms|>- ==> Parameters: null
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:00:07  DEBUG 118326ms|>- <==      Total: 0
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:00:30  DEBUG 141709ms|>- ==>  Preparing: insert into qrcheck ( uuid, status ) values ( ?, ? ) 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:00:30  DEBUG 141710ms|>- ==> Parameters: 20171121160030759F135F6D593664567A5300EFE9FE958B7(String), 0(Integer)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:00:30  DEBUG 141710ms|>- <==    Updates: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:00:32  DEBUG 143714ms|>- ==>  Preparing: select * from qrcheck where uuid = ? 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:00:32  DEBUG 143717ms|>- ==> Parameters: null
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:00:32  DEBUG 143718ms|>- <==      Total: 0
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:01:42  DEBUG 213168ms|>- ==>  Preparing: insert into qrcheck ( uuid, status ) values ( ?, ? ) 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:01:42  DEBUG 213170ms|>- ==> Parameters: 20171121160142218B169730A2F07445A89BD039590E6BFF9(String), 0(Integer)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:01:42  DEBUG 213171ms|>- <==    Updates: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:01:44  DEBUG 215190ms|>- ==>  Preparing: select * from qrcheck where uuid = ? 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:01:44  DEBUG 215191ms|>- ==> Parameters: null
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:01:44  DEBUG 215193ms|>- <==      Total: 0
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:02:57  DEBUG 288046ms|>- ==>  Preparing: insert into qrcheck ( uuid, status ) values ( ?, ? ) 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:02:57  DEBUG 288048ms|>- ==> Parameters: 20171121160257978181F035FE3B45A3927885C180FE2B9E(String), 0(Integer)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:02:57  DEBUG 288050ms|>- <==    Updates: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:02:59  DEBUG 290053ms|>- ==>  Preparing: select * from qrcheck where uuid = ? 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:02:59  DEBUG 290054ms|>- ==> Parameters: null
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:02:59  DEBUG 290055ms|>- <==      Total: 0
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:03:27  DEBUG 318794ms|>- ==>  Preparing: insert into qrcheck ( uuid, status ) values ( ?, ? ) 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:03:27  DEBUG 318795ms|>- ==> Parameters: 2017112116032784463D1C2AACF7F4B42B4F489B02C561D9D(String), 0(Integer)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:03:27  DEBUG 318796ms|>- <==    Updates: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:03:29  DEBUG 320813ms|>- ==>  Preparing: select * from qrcheck where uuid = ? 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:03:29  DEBUG 320815ms|>- ==> Parameters: null
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:03:29  DEBUG 320819ms|>- <==      Total: 0
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:03:47  DEBUG 338135ms|>- ==>  Preparing: insert into qrcheck ( uuid, status ) values ( ?, ? ) 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:03:47  DEBUG 338135ms|>- ==> Parameters: 20171121160347185E903FBE51F5948958F16DF619220A535(String), 0(Integer)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:03:47  DEBUG 338136ms|>- <==    Updates: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:03:49  DEBUG 340158ms|>- ==>  Preparing: select * from qrcheck where uuid = ? 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:03:49  DEBUG 340161ms|>- ==> Parameters: null
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:03:49  DEBUG 340164ms|>- <==      Total: 0
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:05:03  DEBUG 0ms|>- Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+ <org.apache.ibatis.logging.LogFactory.setImplementation(LogFactory.java:135)> 
+2017-11-21 16:05:03  DEBUG 163ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-21 16:05:03  DEBUG 163ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-21 16:05:03  DEBUG 163ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-21 16:05:03  DEBUG 163ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-21 16:05:04  DEBUG 577ms|>- Opening JDBC Connection
+ <org.apache.ibatis.transaction.jdbc.JdbcTransaction.openConnection(JdbcTransaction.java:137)> 
+2017-11-21 16:05:04  DEBUG 797ms|>- Created connection 9546155.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.popConnection(PooledDataSource.java:406)> 
+2017-11-21 16:05:04  DEBUG 797ms|>- Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@91a9ab]
+ <org.apache.ibatis.transaction.jdbc.JdbcTransaction.setDesiredAutoCommit(JdbcTransaction.java:101)> 
+2017-11-21 16:05:04  DEBUG 797ms|>- ==>  Preparing: select * from qrcheck where uuid = ? 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:05:04  DEBUG 812ms|>- ==> Parameters: null
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:05:04  DEBUG 812ms|>- <==      Total: 0
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:07:03  DEBUG 0ms|>- Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+ <org.apache.ibatis.logging.LogFactory.setImplementation(LogFactory.java:135)> 
+2017-11-21 16:07:03  DEBUG 223ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-21 16:07:03  DEBUG 223ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-21 16:07:03  DEBUG 224ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-21 16:07:03  DEBUG 225ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-21 16:07:03  DEBUG 550ms|>- Opening JDBC Connection
+ <org.apache.ibatis.transaction.jdbc.JdbcTransaction.openConnection(JdbcTransaction.java:137)> 
+2017-11-21 16:07:04  DEBUG 762ms|>- Created connection 935379475.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.popConnection(PooledDataSource.java:406)> 
+2017-11-21 16:07:04  DEBUG 763ms|>- Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@37c0c213]
+ <org.apache.ibatis.transaction.jdbc.JdbcTransaction.setDesiredAutoCommit(JdbcTransaction.java:101)> 
+2017-11-21 16:07:04  DEBUG 766ms|>- ==>  Preparing: insert into qrcheck ( uuid, status ) values ( ?, ? ) 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:07:04  DEBUG 776ms|>- ==> Parameters: 201711211607031010940246BBB644D9C90B14C00693D8AE4(String), 0(Integer)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:07:04  DEBUG 777ms|>- <==    Updates: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:07:06  DEBUG 3585ms|>- ==>  Preparing: select * from qrcheck where uuid = ? 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:07:06  DEBUG 3590ms|>- ==> Parameters: 201711211607031010940246BBB644D9C90B14C00693D8AE4(String)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:07:06  DEBUG 3590ms|>- <==      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:07:44  DEBUG 41520ms|>- ==>  Preparing: insert into qrcheck ( uuid, status ) values ( ?, ? ) 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:07:44  DEBUG 41521ms|>- ==> Parameters: 2017112116074475484D0DFF6EB8D478D90352DC6AF6ABC5D(String), 0(Integer)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:07:44  DEBUG 41522ms|>- <==    Updates: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:07:47  DEBUG 43876ms|>- ==>  Preparing: update qrcheck set status = ? where uuid = ? 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:07:47  DEBUG 43877ms|>- ==> Parameters: 2(Integer), null
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:07:47  DEBUG 43879ms|>- <==    Updates: 0
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:07:48  DEBUG 44845ms|>- ==>  Preparing: select * from qrcheck where uuid = ? 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:07:48  DEBUG 44846ms|>- ==> Parameters: 2017112116074475484D0DFF6EB8D478D90352DC6AF6ABC5D(String)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:07:48  DEBUG 44848ms|>- <==      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:07:54  DEBUG 50952ms|>- ==>  Preparing: insert into qrcheck ( uuid, status ) values ( ?, ? ) 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:07:54  DEBUG 50952ms|>- ==> Parameters: 20171121160754186C50795899AE44F9BAD3A7D0F9526DDBB(String), 0(Integer)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:07:54  DEBUG 50953ms|>- <==    Updates: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:07:57  DEBUG 54165ms|>- ==>  Preparing: select * from qrcheck where uuid = ? 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:07:57  DEBUG 54166ms|>- ==> Parameters: 20171121160754186C50795899AE44F9BAD3A7D0F9526DDBB(String)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:07:57  DEBUG 54167ms|>- <==      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:08:16  DEBUG 73463ms|>- ==>  Preparing: insert into qrcheck ( uuid, status ) values ( ?, ? ) 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:08:16  DEBUG 73464ms|>- ==> Parameters: 20171121160816697421F679B58024F4A89278A8D4F4C9B26(String), 0(Integer)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:08:16  DEBUG 73465ms|>- <==    Updates: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:08:18  DEBUG 75485ms|>- ==>  Preparing: select * from qrcheck where uuid = ? 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:08:18  DEBUG 75486ms|>- ==> Parameters: 20171121160816697421F679B58024F4A89278A8D4F4C9B26(String)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:08:18  DEBUG 75494ms|>- <==      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:08:20  DEBUG 77317ms|>- ==>  Preparing: update qrcheck set status = ? where uuid = ? 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:08:20  DEBUG 77331ms|>- ==> Parameters: 2(Integer), null
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:08:20  DEBUG 77331ms|>- <==    Updates: 0
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:08:20  DEBUG 77470ms|>- ==>  Preparing: select * from qrcheck where uuid = ? 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:08:20  DEBUG 77470ms|>- ==> Parameters: 20171121160816697421F679B58024F4A89278A8D4F4C9B26(String)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:08:20  DEBUG 77470ms|>- <==      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:11:33  DEBUG 0ms|>- Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+ <org.apache.ibatis.logging.LogFactory.setImplementation(LogFactory.java:135)> 
+2017-11-21 16:11:33  DEBUG 195ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-21 16:11:33  DEBUG 195ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-21 16:11:33  DEBUG 195ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-21 16:11:33  DEBUG 196ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-21 16:11:33  DEBUG 478ms|>- Opening JDBC Connection
+ <org.apache.ibatis.transaction.jdbc.JdbcTransaction.openConnection(JdbcTransaction.java:137)> 
+2017-11-21 16:11:33  DEBUG 695ms|>- Created connection 1005392136.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.popConnection(PooledDataSource.java:406)> 
+2017-11-21 16:11:33  DEBUG 695ms|>- Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@3bed1108]
+ <org.apache.ibatis.transaction.jdbc.JdbcTransaction.setDesiredAutoCommit(JdbcTransaction.java:101)> 
+2017-11-21 16:11:33  DEBUG 695ms|>- ==>  Preparing: insert into qrcheck ( uuid, status ) values ( ?, ? ) 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:11:33  DEBUG 710ms|>- ==> Parameters: 20171121161133100B78BCD5BD81F4B04AD45BD2B8342197E(String), 0(Integer)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:11:33  DEBUG 710ms|>- <==    Updates: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:11:35  DEBUG 1894ms|>- ==>  Preparing: select * from qrcheck where uuid = ? 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:11:35  DEBUG 1905ms|>- ==> Parameters: 20171121161133100B78BCD5BD81F4B04AD45BD2B8342197E(String)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:11:35  DEBUG 1927ms|>- <==      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:11:36  DEBUG 3107ms|>- ==>  Preparing: update qrcheck set status = ? where uuid = ? 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:11:36  DEBUG 3109ms|>- ==> Parameters: 2(Integer), null
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:11:36  DEBUG 3109ms|>- <==    Updates: 0
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:11:37  DEBUG 3894ms|>- ==>  Preparing: select * from qrcheck where uuid = ? 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:11:37  DEBUG 3894ms|>- ==> Parameters: 20171121161133100B78BCD5BD81F4B04AD45BD2B8342197E(String)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:11:37  DEBUG 3894ms|>- <==      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:12:43  DEBUG 0ms|>- Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+ <org.apache.ibatis.logging.LogFactory.setImplementation(LogFactory.java:135)> 
+2017-11-21 16:12:45  DEBUG 1495ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-21 16:12:45  DEBUG 1496ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-21 16:12:45  DEBUG 1497ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-21 16:12:45  DEBUG 1498ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-21 16:12:46  DEBUG 2475ms|>- Opening JDBC Connection
+ <org.apache.ibatis.transaction.jdbc.JdbcTransaction.openConnection(JdbcTransaction.java:137)> 
+2017-11-21 16:12:46  DEBUG 2485ms|>- Opening JDBC Connection
+ <org.apache.ibatis.transaction.jdbc.JdbcTransaction.openConnection(JdbcTransaction.java:137)> 
+2017-11-21 16:12:46  DEBUG 2492ms|>- Opening JDBC Connection
+ <org.apache.ibatis.transaction.jdbc.JdbcTransaction.openConnection(JdbcTransaction.java:137)> 
+2017-11-21 16:12:46  DEBUG 3259ms|>- Created connection 858946122.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.popConnection(PooledDataSource.java:406)> 
+2017-11-21 16:12:46  DEBUG 3261ms|>- Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@33327a4a]
+ <org.apache.ibatis.transaction.jdbc.JdbcTransaction.setDesiredAutoCommit(JdbcTransaction.java:101)> 
+2017-11-21 16:12:46  DEBUG 3317ms|>- Created connection 1671589520.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.popConnection(PooledDataSource.java:406)> 
+2017-11-21 16:12:46  DEBUG 3318ms|>- Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@63a26e90]
+ <org.apache.ibatis.transaction.jdbc.JdbcTransaction.setDesiredAutoCommit(JdbcTransaction.java:101)> 
+2017-11-21 16:12:46  DEBUG 3342ms|>- Created connection 659210504.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.popConnection(PooledDataSource.java:406)> 
+2017-11-21 16:12:46  DEBUG 3343ms|>- Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@274ac108]
+ <org.apache.ibatis.transaction.jdbc.JdbcTransaction.setDesiredAutoCommit(JdbcTransaction.java:101)> 
+2017-11-21 16:12:47  DEBUG 3368ms|>- ======>  Preparing: select * from qrcheck where uuid = ? 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:12:47  DEBUG 3383ms|>- ======>  Preparing: select * from qrcheck where uuid = ? 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:12:47  DEBUG 3381ms|>- ======>  Preparing: select * from qrcheck where uuid = ? 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:12:47  DEBUG 3468ms|>- ======> Parameters: 20171121161133100B78BCD5BD81F4B04AD45BD2B8342197E(String)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:12:47  DEBUG 3468ms|>- ======> Parameters: 20171121161133100B78BCD5BD81F4B04AD45BD2B8342197E(String)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:12:47  DEBUG 3468ms|>- ======> Parameters: 20171121161133100B78BCD5BD81F4B04AD45BD2B8342197E(String)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:12:47  DEBUG 3502ms|>- <======      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:12:47  DEBUG 3502ms|>- <======      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:12:47  DEBUG 3502ms|>- <======      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:14:15  DEBUG 0ms|>- Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+ <org.apache.ibatis.logging.LogFactory.setImplementation(LogFactory.java:135)> 
+2017-11-21 16:14:16  DEBUG 356ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-21 16:14:16  DEBUG 356ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-21 16:14:16  DEBUG 356ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-21 16:14:16  DEBUG 356ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-21 16:14:16  DEBUG 804ms|>- Opening JDBC Connection
+ <org.apache.ibatis.transaction.jdbc.JdbcTransaction.openConnection(JdbcTransaction.java:137)> 
+2017-11-21 16:14:16  DEBUG 1058ms|>- Created connection 1065811985.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.popConnection(PooledDataSource.java:406)> 
+2017-11-21 16:14:16  DEBUG 1058ms|>- Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@3f870011]
+ <org.apache.ibatis.transaction.jdbc.JdbcTransaction.setDesiredAutoCommit(JdbcTransaction.java:101)> 
+2017-11-21 16:14:16  DEBUG 1073ms|>- ==>  Preparing: insert into qrcheck ( uuid, status ) values ( ?, ? ) 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:14:16  DEBUG 1174ms|>- ==> Parameters: 201711211614154649B36E9721E8E4E669E1770FD2B8232E5(String), 0(Integer)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:14:16  DEBUG 1174ms|>- <==    Updates: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:14:17  DEBUG 1874ms|>- ==>  Preparing: select * from qrcheck where uuid = ? 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:14:17  DEBUG 1890ms|>- ==> Parameters: 201711211614154649B36E9721E8E4E669E1770FD2B8232E5(String)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:14:17  DEBUG 1990ms|>- <==      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:14:22  DEBUG 7265ms|>- ==>  Preparing: update qrcheck set status = ? where uuid = ? 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:14:22  DEBUG 7267ms|>- ==> Parameters: 2(Integer), 201711211614154649B36E9721E8E4E669E1770FD2B8232E5(String)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:14:22  DEBUG 7267ms|>- <==    Updates: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:14:23  DEBUG 7890ms|>- ==>  Preparing: select * from qrcheck where uuid = ? 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:14:23  DEBUG 7890ms|>- ==> Parameters: 201711211614154649B36E9721E8E4E669E1770FD2B8232E5(String)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:14:23  DEBUG 7890ms|>- <==      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:14:31  DEBUG 15965ms|>- Opening JDBC Connection
+ <org.apache.ibatis.transaction.jdbc.JdbcTransaction.openConnection(JdbcTransaction.java:137)> 
+2017-11-21 16:14:31  DEBUG 15981ms|>- Created connection 436541810.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.popConnection(PooledDataSource.java:406)> 
+2017-11-21 16:14:31  DEBUG 15982ms|>- Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@1a051972]
+ <org.apache.ibatis.transaction.jdbc.JdbcTransaction.setDesiredAutoCommit(JdbcTransaction.java:101)> 
+2017-11-21 16:14:31  DEBUG 15982ms|>- ==>  Preparing: SELECT * FROM users WHERE uname = ? and upwd = ? 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:14:31  DEBUG 15983ms|>- ==> Parameters: Xiaoming (String), 123(String)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:14:31  TRACE 15984ms|>- <==    Columns: uid, uname, upwd, phone, city, regDate, idCard, realName, age, email, sex, avatar
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.trace(BaseJdbcLogger.java:165)> 
+2017-11-21 16:14:31  TRACE 15995ms|>- <==        Row: 1, xiaoming, 123, 18899119292, 西安, 2017-11-11, null, 小明, 22, null, 男, <<BLOB>>
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.trace(BaseJdbcLogger.java:165)> 
+2017-11-21 16:14:31  DEBUG 15998ms|>- <==      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:14:31  DEBUG 15999ms|>- ==>  Preparing: update qrcheck set status = ?, name = ?,pwd = ? where uuid = ? 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:14:31  DEBUG 16000ms|>- ==> Parameters: 1(Integer), Xiaoming (String), 123(String), 201711211614154649B36E9721E8E4E669E1770FD2B8232E5(String)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:14:31  DEBUG 16005ms|>- <==    Updates: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:14:33  DEBUG 17923ms|>- ==>  Preparing: select * from qrcheck where uuid = ? 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:14:33  DEBUG 17927ms|>- ==> Parameters: 201711211614154649B36E9721E8E4E669E1770FD2B8232E5(String)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:14:33  DEBUG 17931ms|>- <==      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:14:33  DEBUG 17940ms|>- Opening JDBC Connection
+ <org.apache.ibatis.transaction.jdbc.JdbcTransaction.openConnection(JdbcTransaction.java:137)> 
+2017-11-21 16:14:33  DEBUG 17957ms|>- Created connection 328226371.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.popConnection(PooledDataSource.java:406)> 
+2017-11-21 16:14:33  DEBUG 17958ms|>- Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@13905643]
+ <org.apache.ibatis.transaction.jdbc.JdbcTransaction.setDesiredAutoCommit(JdbcTransaction.java:101)> 
+2017-11-21 16:14:33  DEBUG 17959ms|>- ==>  Preparing: SELECT COUNT(1) FROM shoppingcar WHERE uid = ?; 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:14:33  DEBUG 17960ms|>- ==> Parameters: 1(Integer)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:14:33  DEBUG 17963ms|>- <==      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:14:33  DEBUG 18311ms|>- ==>  Preparing: delete from qrcheck where uuid = ? 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:14:33  DEBUG 18311ms|>- ==> Parameters: 201711211614154649B36E9721E8E4E669E1770FD2B8232E5(String)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:14:33  DEBUG 18326ms|>- <==    Updates: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:15:57  DEBUG 102227ms|>- ==>  Preparing: insert into qrcheck ( uuid, status ) values ( ?, ? ) 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:15:57  DEBUG 102228ms|>- ==> Parameters: 201711211615578770B0A93EA17B244F9BF2A4B24905DFD2E(String), 0(Integer)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:15:57  DEBUG 102229ms|>- <==    Updates: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:15:59  DEBUG 104243ms|>- ==>  Preparing: select * from qrcheck where uuid = ? 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:15:59  DEBUG 104246ms|>- ==> Parameters: 201711211615578770B0A93EA17B244F9BF2A4B24905DFD2E(String)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:15:59  DEBUG 104253ms|>- <==      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:16:01  DEBUG 105849ms|>- ==>  Preparing: update qrcheck set status = ? where uuid = ? 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:16:01  DEBUG 105850ms|>- ==> Parameters: 2(Integer), 201711211615578770B0A93EA17B244F9BF2A4B24905DFD2E(String)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:16:01  DEBUG 105850ms|>- <==    Updates: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:16:01  DEBUG 106255ms|>- ==>  Preparing: select * from qrcheck where uuid = ? 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:16:01  DEBUG 106255ms|>- ==> Parameters: 201711211615578770B0A93EA17B244F9BF2A4B24905DFD2E(String)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:16:01  DEBUG 106255ms|>- <==      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:16:11  DEBUG 115737ms|>- ==>  Preparing: update qrcheck set status = ?, name = ?,pwd = ? where uuid = ? 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:16:11  DEBUG 115740ms|>- ==> Parameters: 1(Integer), Xiaoming (String), 123(String), 201711211615578770B0A93EA17B244F9BF2A4B24905DFD2E(String)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:16:11  DEBUG 115740ms|>- <==    Updates: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:16:11  DEBUG 116341ms|>- ==>  Preparing: select * from qrcheck where uuid = ? 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:16:11  DEBUG 116341ms|>- ==> Parameters: 201711211615578770B0A93EA17B244F9BF2A4B24905DFD2E(String)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:16:11  DEBUG 116341ms|>- <==      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:16:11  DEBUG 116341ms|>- ==>  Preparing: SELECT COUNT(1) FROM shoppingcar WHERE uid = ?; 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:16:11  DEBUG 116341ms|>- ==> Parameters: 1(Integer)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:16:12  DEBUG 116356ms|>- <==      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:16:12  DEBUG 116356ms|>- ==>  Preparing: delete from qrcheck where uuid = ? 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:16:12  DEBUG 116356ms|>- ==> Parameters: 201711211615578770B0A93EA17B244F9BF2A4B24905DFD2E(String)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:16:12  DEBUG 116372ms|>- <==    Updates: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:17:01  DEBUG 0ms|>- Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+ <org.apache.ibatis.logging.LogFactory.setImplementation(LogFactory.java:135)> 
+2017-11-21 16:17:01  DEBUG 158ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-21 16:17:01  DEBUG 158ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-21 16:17:01  DEBUG 158ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-21 16:17:01  DEBUG 159ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-21 16:17:10  DEBUG 9596ms|>- Opening JDBC Connection
+ <org.apache.ibatis.transaction.jdbc.JdbcTransaction.openConnection(JdbcTransaction.java:137)> 
+2017-11-21 16:17:11  DEBUG 9895ms|>- Created connection 470275660.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.popConnection(PooledDataSource.java:406)> 
+2017-11-21 16:17:11  DEBUG 9896ms|>- Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@1c07d64c]
+ <org.apache.ibatis.transaction.jdbc.JdbcTransaction.setDesiredAutoCommit(JdbcTransaction.java:101)> 
+2017-11-21 16:17:11  DEBUG 9900ms|>- ==>  Preparing: insert into qrcheck ( uuid, status ) values ( ?, ? ) 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:17:11  DEBUG 9909ms|>- ==> Parameters: 20171121161710719C44E29A70BCC4B6D8DADF5C2DAE89018(String), 0(Integer)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:17:11  DEBUG 9911ms|>- <==    Updates: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:17:12  DEBUG 11528ms|>- ==>  Preparing: select * from qrcheck where uuid = ? 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:17:12  DEBUG 11530ms|>- ==> Parameters: 20171121161710719C44E29A70BCC4B6D8DADF5C2DAE89018(String)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:17:12  DEBUG 11554ms|>- <==      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:17:13  DEBUG 12000ms|>- ==>  Preparing: update qrcheck set status = ? where uuid = ? 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:17:13  DEBUG 12002ms|>- ==> Parameters: 2(Integer), 20171121161710719C44E29A70BCC4B6D8DADF5C2DAE89018(String)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:17:13  DEBUG 12005ms|>- <==    Updates: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:17:14  DEBUG 13514ms|>- ==>  Preparing: select * from qrcheck where uuid = ? 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:17:14  DEBUG 13515ms|>- ==> Parameters: 20171121161710719C44E29A70BCC4B6D8DADF5C2DAE89018(String)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:17:14  DEBUG 13518ms|>- <==      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:17:23  DEBUG 21921ms|>- Opening JDBC Connection
+ <org.apache.ibatis.transaction.jdbc.JdbcTransaction.openConnection(JdbcTransaction.java:137)> 
+2017-11-21 16:17:23  DEBUG 21945ms|>- Created connection 2012761695.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.popConnection(PooledDataSource.java:406)> 
+2017-11-21 16:17:23  DEBUG 21945ms|>- Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@77f84e5f]
+ <org.apache.ibatis.transaction.jdbc.JdbcTransaction.setDesiredAutoCommit(JdbcTransaction.java:101)> 
+2017-11-21 16:17:23  DEBUG 21946ms|>- ==>  Preparing: SELECT * FROM users WHERE uname = ? and upwd = ? 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:17:23  DEBUG 21947ms|>- ==> Parameters: Xiaoming (String), 123(String)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:17:23  TRACE 21949ms|>- <==    Columns: uid, uname, upwd, phone, city, regDate, idCard, realName, age, email, sex, avatar
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.trace(BaseJdbcLogger.java:165)> 
+2017-11-21 16:17:23  TRACE 21964ms|>- <==        Row: 1, xiaoming, 123, 18899119292, 西安, 2017-11-11, null, 小明, 22, null, 男, <<BLOB>>
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.trace(BaseJdbcLogger.java:165)> 
+2017-11-21 16:17:23  DEBUG 21965ms|>- <==      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:17:23  DEBUG 21965ms|>- ==>  Preparing: update qrcheck set status = ?, name = ?,pwd = ? where uuid = ? 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:17:23  DEBUG 21966ms|>- ==> Parameters: 1(Integer), Xiaoming (String), 123(String), 20171121161710719C44E29A70BCC4B6D8DADF5C2DAE89018(String)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:17:23  DEBUG 21967ms|>- <==    Updates: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:17:24  DEBUG 23515ms|>- ==>  Preparing: select * from qrcheck where uuid = ? 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:17:24  DEBUG 23516ms|>- ==> Parameters: 20171121161710719C44E29A70BCC4B6D8DADF5C2DAE89018(String)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:17:24  DEBUG 23520ms|>- <==      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:17:24  DEBUG 23531ms|>- Opening JDBC Connection
+ <org.apache.ibatis.transaction.jdbc.JdbcTransaction.openConnection(JdbcTransaction.java:137)> 
+2017-11-21 16:17:24  DEBUG 23554ms|>- Created connection 63769718.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.popConnection(PooledDataSource.java:406)> 
+2017-11-21 16:17:24  DEBUG 23554ms|>- Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@3cd0c76]
+ <org.apache.ibatis.transaction.jdbc.JdbcTransaction.setDesiredAutoCommit(JdbcTransaction.java:101)> 
+2017-11-21 16:17:24  DEBUG 23555ms|>- ==>  Preparing: SELECT COUNT(1) FROM shoppingcar WHERE uid = ?; 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:17:24  DEBUG 23555ms|>- ==> Parameters: 1(Integer)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:17:24  DEBUG 23559ms|>- <==      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:17:25  DEBUG 23919ms|>- ==>  Preparing: delete from qrcheck where uuid = ? 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:17:25  DEBUG 23919ms|>- ==> Parameters: 20171121161710719C44E29A70BCC4B6D8DADF5C2DAE89018(String)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:17:25  DEBUG 23920ms|>- <==    Updates: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:19:03  DEBUG 122417ms|>- ==>  Preparing: insert into qrcheck ( uuid, status ) values ( ?, ? ) 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:19:03  DEBUG 122421ms|>- ==> Parameters: 201711211619036434FB087803C48404782D7A13D1FCE0CC7(String), 0(Integer)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:19:03  DEBUG 122422ms|>- <==    Updates: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:19:05  DEBUG 124271ms|>- ==>  Preparing: update qrcheck set status = ? where uuid = ? 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:19:05  DEBUG 124288ms|>- ==> Parameters: 2(Integer), 201711211619036434FB087803C48404782D7A13D1FCE0CC7(String)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:19:05  DEBUG 124289ms|>- <==    Updates: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:19:05  DEBUG 124419ms|>- ==>  Preparing: select * from qrcheck where uuid = ? 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:19:05  DEBUG 124419ms|>- ==> Parameters: 201711211619036434FB087803C48404782D7A13D1FCE0CC7(String)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:19:05  DEBUG 124434ms|>- <==      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:20:37  DEBUG 216758ms|>- ==>  Preparing: insert into qrcheck ( uuid, status ) values ( ?, ? ) 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:20:37  DEBUG 216759ms|>- ==> Parameters: 201711211620379802EED4CA983F84695B71B4CA1AE09DD47(String), 0(Integer)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:20:37  DEBUG 216760ms|>- <==    Updates: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:24:24  DEBUG 442862ms|>- ==>  Preparing: insert into qrcheck ( uuid, status ) values ( ?, ? ) 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:24:24  DEBUG 442863ms|>- ==> Parameters: 20171121162424861695BC0FB5D444E295BA03733F57516A(String), 0(Integer)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:24:24  DEBUG 442865ms|>- <==    Updates: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:24:26  DEBUG 444883ms|>- ==>  Preparing: select * from qrcheck where uuid = ? 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:24:26  DEBUG 444884ms|>- ==> Parameters: 20171121162424861695BC0FB5D444E295BA03733F57516A(String)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:24:26  DEBUG 444890ms|>- <==      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:24:32  DEBUG 450900ms|>- ==>  Preparing: update qrcheck set status = ? where uuid = ? 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:24:32  DEBUG 450900ms|>- ==> Parameters: 2(Integer), 20171121162424861695BC0FB5D444E295BA03733F57516A(String)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:24:32  DEBUG 450909ms|>- <==    Updates: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:24:34  DEBUG 452914ms|>- ==>  Preparing: select * from qrcheck where uuid = ? 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:24:34  DEBUG 452926ms|>- ==> Parameters: 20171121162424861695BC0FB5D444E295BA03733F57516A(String)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:24:34  DEBUG 452927ms|>- <==      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:24:40  DEBUG 459733ms|>- ==>  Preparing: insert into qrcheck ( uuid, status ) values ( ?, ? ) 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:24:40  DEBUG 459734ms|>- ==> Parameters: 20171121162440957742FE6BAC8784D688641CD7CDABC8682(String), 0(Integer)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:24:40  DEBUG 459735ms|>- <==    Updates: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:24:42  DEBUG 461749ms|>- ==>  Preparing: select * from qrcheck where uuid = ? 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:24:42  DEBUG 461754ms|>- ==> Parameters: 20171121162440957742FE6BAC8784D688641CD7CDABC8682(String)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:24:42  DEBUG 461757ms|>- <==      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:24:49  DEBUG 468333ms|>- ==>  Preparing: update qrcheck set status = ? where uuid = ? 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:24:49  DEBUG 468342ms|>- ==> Parameters: 2(Integer), 20171121162440957742FE6BAC8784D688641CD7CDABC8682(String)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:24:49  DEBUG 468343ms|>- <==    Updates: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:24:51  DEBUG 469802ms|>- ==>  Preparing: select * from qrcheck where uuid = ? 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:24:51  DEBUG 469820ms|>- ==> Parameters: 20171121162440957742FE6BAC8784D688641CD7CDABC8682(String)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:24:51  DEBUG 469822ms|>- <==      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:24:58  DEBUG 477653ms|>- ==>  Preparing: insert into qrcheck ( uuid, status ) values ( ?, ? ) 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:24:58  DEBUG 477667ms|>- ==> Parameters: 20171121162458891BA048B97D6A140C492F824F5BD316BC6(String), 0(Integer)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:24:58  DEBUG 477668ms|>- <==    Updates: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:25:00  DEBUG 479671ms|>- ==>  Preparing: select * from qrcheck where uuid = ? 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:25:00  DEBUG 479681ms|>- ==> Parameters: 20171121162458891BA048B97D6A140C492F824F5BD316BC6(String)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:25:00  DEBUG 479681ms|>- <==      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:25:03  DEBUG 481940ms|>- ==>  Preparing: update qrcheck set status = ? where uuid = ? 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:25:03  DEBUG 481943ms|>- ==> Parameters: 2(Integer), 20171121162458891BA048B97D6A140C492F824F5BD316BC6(String)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:25:03  DEBUG 481945ms|>- <==    Updates: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:25:04  DEBUG 483708ms|>- ==>  Preparing: select * from qrcheck where uuid = ? 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:25:04  DEBUG 483720ms|>- ==> Parameters: 20171121162458891BA048B97D6A140C492F824F5BD316BC6(String)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:25:04  DEBUG 483720ms|>- <==      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:26:50  DEBUG 589018ms|>- ==>  Preparing: insert into qrcheck ( uuid, status ) values ( ?, ? ) 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:26:50  DEBUG 589019ms|>- ==> Parameters: 20171121162650241E9FA9A893E804995BB54B796394E8BB2(String), 0(Integer)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:26:50  DEBUG 589020ms|>- <==    Updates: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:26:52  DEBUG 591041ms|>- ==>  Preparing: select * from qrcheck where uuid = ? 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:26:52  DEBUG 591042ms|>- ==> Parameters: 20171121162650241E9FA9A893E804995BB54B796394E8BB2(String)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:26:52  DEBUG 591043ms|>- <==      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:26:53  DEBUG 592683ms|>- ==>  Preparing: update qrcheck set status = ? where uuid = ? 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:26:53  DEBUG 592687ms|>- ==> Parameters: 2(Integer), 20171121162650241E9FA9A893E804995BB54B796394E8BB2(String)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:26:53  DEBUG 592688ms|>- <==    Updates: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:26:54  DEBUG 593035ms|>- ==>  Preparing: select * from qrcheck where uuid = ? 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:26:54  DEBUG 593036ms|>- ==> Parameters: 20171121162650241E9FA9A893E804995BB54B796394E8BB2(String)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:26:54  DEBUG 593036ms|>- <==      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:26:56  DEBUG 595298ms|>- ==>  Preparing: insert into qrcheck ( uuid, status ) values ( ?, ? ) 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:26:56  DEBUG 595316ms|>- ==> Parameters: 201711211626565379A6979331FAF4A088F20279A9638FDBA(String), 0(Integer)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:26:56  DEBUG 595317ms|>- <==    Updates: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:26:58  DEBUG 597335ms|>- ==>  Preparing: select * from qrcheck where uuid = ? 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:26:58  DEBUG 597340ms|>- ==> Parameters: 201711211626565379A6979331FAF4A088F20279A9638FDBA(String)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:26:58  DEBUG 597340ms|>- <==      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:27:00  DEBUG 599271ms|>- ==>  Preparing: update qrcheck set status = ? where uuid = ? 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:27:00  DEBUG 599272ms|>- ==> Parameters: 2(Integer), 201711211626565379A6979331FAF4A088F20279A9638FDBA(String)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:27:00  DEBUG 599273ms|>- <==    Updates: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:27:00  DEBUG 599333ms|>- ==>  Preparing: select * from qrcheck where uuid = ? 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:27:00  DEBUG 599334ms|>- ==> Parameters: 201711211626565379A6979331FAF4A088F20279A9638FDBA(String)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:27:00  DEBUG 599336ms|>- <==      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:27:02  DEBUG 601576ms|>- ==>  Preparing: insert into qrcheck ( uuid, status ) values ( ?, ? ) 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:27:02  DEBUG 601577ms|>- ==> Parameters: 2017112116270280151A29E2C94114D0C9239F5B872E36BB1(String), 0(Integer)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:27:02  DEBUG 601578ms|>- <==    Updates: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:27:04  DEBUG 603587ms|>- ==>  Preparing: select * from qrcheck where uuid = ? 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:27:04  DEBUG 603605ms|>- ==> Parameters: 2017112116270280151A29E2C94114D0C9239F5B872E36BB1(String)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:27:04  DEBUG 603606ms|>- <==      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:27:08  DEBUG 607388ms|>- ==>  Preparing: update qrcheck set status = ? where uuid = ? 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:27:08  DEBUG 607396ms|>- ==> Parameters: 2(Integer), 2017112116270280151A29E2C94114D0C9239F5B872E36BB1(String)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:27:08  DEBUG 607398ms|>- <==    Updates: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:27:08  DEBUG 607619ms|>- ==>  Preparing: select * from qrcheck where uuid = ? 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:27:08  DEBUG 607635ms|>- ==> Parameters: 2017112116270280151A29E2C94114D0C9239F5B872E36BB1(String)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:27:08  DEBUG 607639ms|>- <==      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:27:16  DEBUG 614872ms|>- ==>  Preparing: update qrcheck set status = ?, name = ?,pwd = ? where uuid = ? 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:27:16  DEBUG 614886ms|>- ==> Parameters: 1(Integer), Xiaoming (String), 123(String), 2017112116270280151A29E2C94114D0C9239F5B872E36BB1(String)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:27:16  DEBUG 614886ms|>- <==    Updates: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:27:16  DEBUG 615687ms|>- ==>  Preparing: select * from qrcheck where uuid = ? 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:27:16  DEBUG 615687ms|>- ==> Parameters: 2017112116270280151A29E2C94114D0C9239F5B872E36BB1(String)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:27:16  DEBUG 615703ms|>- <==      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:27:16  DEBUG 615703ms|>- ==>  Preparing: SELECT COUNT(1) FROM shoppingcar WHERE uid = ?; 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:27:16  DEBUG 615703ms|>- ==> Parameters: 1(Integer)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:27:16  DEBUG 615703ms|>- <==      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:27:16  DEBUG 615735ms|>- ==>  Preparing: delete from qrcheck where uuid = ? 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:27:16  DEBUG 615737ms|>- ==> Parameters: 2017112116270280151A29E2C94114D0C9239F5B872E36BB1(String)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:27:16  DEBUG 615738ms|>- <==    Updates: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:31:34  DEBUG 873156ms|>- ==>  Preparing: SELECT * FROM users WHERE uname = ? and upwd = ? 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:31:34  DEBUG 873170ms|>- ==> Parameters: xiaoming(String), 123(String)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:31:34  TRACE 873172ms|>- <==    Columns: uid, uname, upwd, phone, city, regDate, idCard, realName, age, email, sex, avatar
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.trace(BaseJdbcLogger.java:165)> 
+2017-11-21 16:31:34  TRACE 873172ms|>- <==        Row: 1, xiaoming, 123, 18899119292, 西安, 2017-11-11, null, 小明, 22, null, 男, <<BLOB>>
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.trace(BaseJdbcLogger.java:165)> 
+2017-11-21 16:31:34  DEBUG 873172ms|>- <==      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:31:34  DEBUG 873172ms|>- ==>  Preparing: SELECT COUNT(1) FROM shoppingcar WHERE uid = ?; 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:31:34  DEBUG 873172ms|>- ==> Parameters: 1(Integer)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:31:34  DEBUG 873172ms|>- <==      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:40:02  DEBUG 1380956ms|>- ==>  Preparing: insert into qrcheck ( uuid, status ) values ( ?, ? ) 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:40:02  DEBUG 1380972ms|>- ==> Parameters: 20171121164002194628B926CD6B941858FDC0C1797CF5F41(String), 0(Integer)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:40:02  DEBUG 1380973ms|>- <==    Updates: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:40:04  DEBUG 1382978ms|>- ==>  Preparing: select * from qrcheck where uuid = ? 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:40:04  DEBUG 1382978ms|>- ==> Parameters: 20171121164002194628B926CD6B941858FDC0C1797CF5F41(String)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:40:04  DEBUG 1382979ms|>- <==      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:41:39  DEBUG 1477928ms|>- ==>  Preparing: SELECT COUNT(1) FROM shoppingcar WHERE uid = ?; 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:41:39  DEBUG 1477942ms|>- ==> Parameters: 1(Integer)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:41:39  DEBUG 1477943ms|>- <==      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:43:19  DEBUG 1578085ms|>- ==>  Preparing: SELECT COUNT(1) FROM shoppingcar WHERE uid = ?; 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:43:19  DEBUG 1578091ms|>- ==> Parameters: 1(Integer)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:43:19  DEBUG 1578091ms|>- <==      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:43:34  DEBUG 1593622ms|>- ==>  Preparing: SELECT * FROM users WHERE uname = ? and upwd = ? 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:43:34  DEBUG 1593637ms|>- ==> Parameters: XIAOMING(String), 123(String)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:43:34  TRACE 1593638ms|>- <==    Columns: uid, uname, upwd, phone, city, regDate, idCard, realName, age, email, sex, avatar
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.trace(BaseJdbcLogger.java:165)> 
+2017-11-21 16:43:34  TRACE 1593639ms|>- <==        Row: 1, xiaoming, 123, 18899119292, 西安, 2017-11-11, null, 小明, 22, null, 男, <<BLOB>>
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.trace(BaseJdbcLogger.java:165)> 
+2017-11-21 16:43:34  DEBUG 1593640ms|>- <==      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:43:34  DEBUG 1593640ms|>- ==>  Preparing: SELECT COUNT(1) FROM shoppingcar WHERE uid = ?; 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:43:34  DEBUG 1593641ms|>- ==> Parameters: 1(Integer)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-21 16:43:34  DEBUG 1593642ms|>- <==      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 

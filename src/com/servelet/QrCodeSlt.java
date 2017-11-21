@@ -3,6 +3,8 @@ package com.servelet;
 import java.io.IOException;
 import java.io.OutputStream;
 import java.io.PrintWriter;
+import java.net.InetAddress;
+import java.net.UnknownHostException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.HashMap;
@@ -16,6 +18,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import org.apache.jasper.tagplugins.jstl.core.Out;
+import org.apache.tools.ant.types.CommandlineJava.SysProperties;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.google.zxing.BarcodeFormat;
@@ -35,6 +38,8 @@ import com.service.UserService;
  */
 @WebServlet("/QrCode")
 public class QrCodeSlt extends HttpServlet {
+	
+
 	private static final long serialVersionUID = 1L;
 
 	/**
@@ -62,7 +67,7 @@ public class QrCodeSlt extends HttpServlet {
 			}
 		PrintWriter out = response.getWriter();
 		if (flag.equals("check")) {
-			String uuid = request.getParameter("uuid");
+			String uuid = (String) request.getSession().getAttribute("uuid");
 			
 			String name = request.getParameter("name");
 			String pwd = request.getParameter("pwd");
@@ -77,16 +82,27 @@ public class QrCodeSlt extends HttpServlet {
 				QrcheckService.update(qr);
 				out.write("<script type='text/javascript'>alert('登录成功');</script>");
 			}
-		} else if (flag.equals("verify")) {
+		}else if (flag.equals("scan")){
+			//获得二维码链接里的UUID
+			String uuid = request.getParameter("UUID");
+			
+			QrcheckService.changeStatus(uuid,2);
+			request.getSession().setAttribute("uuid", uuid);
+			response.sendRedirect("qrcheck.jsp");
+		}else if (flag.equals("verify")){
 			String uuid = request.getParameter("uuid");
 			Qrcheck qr = QrcheckService.getQrcheck(uuid);
 			if(qr==null){
 				out.close();
 				return;
 			}
+			
 			if (qr.getStatus() == 0) {
 				out.write("{\"message\":\"验证失败！\"}");
-			} else if (qr.getStatus() == 1) {
+			} else if (qr.getStatus() == 2) {
+				out.write("{\"message\":\"已扫描\"}");
+				
+			}else if (qr.getStatus() == 1) {
 				Users users = new Users(qr.getName(), qr.getPwd());
 				users = UserService.findUser(users);
 				if (users == null) {
@@ -140,7 +156,7 @@ public class QrCodeSlt extends HttpServlet {
 		String uuid = request.getParameter("UUID");
 		String Addr = request.getLocalAddr();
 		int port = request.getLocalPort();
-		st = "http://" + Addr + ":" + port + "/onlineShopping/qrcheck.jsp?UUID=" + uuid;
+		st = "http://" + Addr + ":" + port + "/onlineShopping/QrCode?flag=scan&&UUID=" + uuid;
 		Qrcheck q = new Qrcheck(uuid, 0);
 		boolean b = QrcheckService.insertQrcheck(q);
 		if (!b) {
