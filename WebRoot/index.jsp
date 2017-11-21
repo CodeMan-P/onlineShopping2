@@ -26,9 +26,23 @@
 <script type="text/javascript" src="js/js.js"></script>
 <script type="text/javascript" src="js/jquery.form.js"></script>
 <script type="text/javascript" src="js/ajaxfileupload.js"></script>
+<script type="text/javascript" src="js/Math.uuid.js"></script>
 <script type="text/javascript">
 
 	$(document).ready(function() {
+		$("div[name='QRcode']").hide();	
+		$('#QRshow').click(function(){
+			
+			var val =$('#QRshow').val();
+			if(val==="二维码登录"){
+				doQRcheck();
+				$('#QRshow').val("账号密码登录");
+			}else{
+				$('#QRshow').val("二维码登录");
+			}
+		$("div[name='QRcode']").toggle(500);	
+		$("div[name='form']").toggle(500);	
+			})
 		if($("#userInfo #spc").text()==="-"){
 			$.ajax({
 				async:false,
@@ -53,9 +67,11 @@
 		};
 		<!-- 弹出登录框-->
 		$('.theme-login').click(function(){
-			docheck();
+			$("div[name='QRcode']").hide();	
+			$('#QRshow').val("二维码登录");
 			$('.theme-popover-mask').fadeIn(100);
 			$('.theme-popover').slideDown(200);
+			$("div[name='form']").show();	
 		})
 	$('.theme-poptit .close').click(function(){
 		$('.theme-popover-mask').fadeOut(100);
@@ -63,7 +79,6 @@
 	})
 		
 		function login(){
-			
 			var time = new Date()
 			var ajax_option = {
 				//target: '#output',          //把服务器返回的内容放入id为output的元素中        
@@ -172,11 +187,79 @@
 		
 		
 	});
-	
+	var interval;
+	function verify(){
+		if($("div[name='QRcode']").is(":hidden")){
+			clearInterval(interval);
+			return;
+		}
+		$.ajax({
+			async:true,
+			url : 'QrCode',  
+			type : 'post',
+			data:{"flag":"verify",
+					"uuid":$("#UUID").val()},
+			dataType:'json',
+			timeout:1800,
+			success:function(data){
+				//alert();
+			//	if(data!==null&&data.message !==null &&data.message.match('.+?失败.+')){
+				
+				//}else 
+				if(data.message === "验证失败！"){
+					
+				}else{
+					
+					$("div[name='QRcode']").hide();
+					$("#bt").hide();
+					$("#regist").hide();			
+					$("#quit").show();	
+					
+					$("#h1name").text("Hi!"+data.uname);
+					$("#logina").text("Hi!"+data.uname);
+					$('.theme-popover-mask').fadeOut(100);
+					$('.theme-popover').slideUp(200);
+					var path = "jsp/" + data.avatar;
+					$("#logina").attr("href","javascript:void(0);");
+					$("#touxiang").attr("src",path);
+				}
+			},
+		
+		});
+	}
+Date.prototype.Format = function (fmt) { //author: meizz 
+    var o = {
+        "M+": this.getMonth() + 1, //月份 
+        "d+": this.getDate(), //日 
+        "h+": this.getHours(), //小时 
+        "m+": this.getMinutes(), //分 
+        "s+": this.getSeconds(), //秒 
+        "q+": Math.floor((this.getMonth() + 3) / 3), //季度 
+        "S": this.getMilliseconds() //毫秒 
+    };
+    if (/(y+)/.test(fmt)) fmt = fmt.replace(RegExp.$1, (this.getFullYear() + "").substr(4 - RegExp.$1.length));
+    for (var k in o)
+    if (new RegExp("(" + k + ")").test(fmt)) fmt = fmt.replace(RegExp.$1, (RegExp.$1.length == 1) ? (o[k]) : (("00" + o[k]).substr(("" + o[k]).length)));
+    return fmt;
+}
 	function docheck(){
 		var time = new Date();
 		$("#check").attr("src","<%=request.getContextPath()%>/ck?d="+time);
 	};
+
+	function doQRcheck(){
+		clearInterval(interval);
+		var df = new Date().Format("yyyyMMddhhmmssS");
+		
+		var time = new Date();
+		var uuid = df + Math.uuid().replace(/-/g, '');
+		$("#QRimg").attr("src","<%=request.getContextPath()%>/QrCode?d="+time+"&&UUID="+uuid);
+		//获得UUID，传递UUID
+		$("#UUID").val(uuid);
+		
+		interval = setInterval("verify()",2000);
+	};
+	
 </script>
 </head>
 
@@ -621,15 +704,15 @@
 
 
 
-<div class="theme-popover">
+<div class="theme-popover" style="text-align: center;">
      <div class="theme-poptit">
           <a href="javascript:;" title="关闭" class="close">×</a>
           <h3>登录 是一种态度</h3>
      </div>
-     <div class="theme-popbod dform">
+    <h4>点击图片生成新的验证码（或二维码）！</h4>
+     <div class="theme-popbod dform" name="form">
            <form class="theme-signin" name="loginform" id="fm" action="" method="post">
                 <ol>
-                     <li><h4>你必须先登录才可购物（剁手）！</h4></li>
                      <li><strong>用户名：</strong><input class="ipt" type="text" name="name" value="" size="20" /></li>
                      <li><strong>密码：</strong><input class="ipt" type="password" name="pwd" value="" size="20" /></li>
                      <li><strong>验证码：</strong><input class="ipt" type="text" name="checkcode" value="" size="20" /></li>
@@ -638,6 +721,11 @@
                 </ol>
            </form>
      </div>
+       <div class="theme-popbod dform" name="QRcode">
+	<img src="#" onclick="doQRcheck()" alt="二维码生成失败！" id="QRimg" style=" position:relative; top:-50px"/>
+      <input type="hidden" id="UUID">
+      </div>
+    <input style="position:relative; float:right " class="btn btn-primary" type="button" id="QRshow" value="二维码登录" />                       
 </div>
 
 	

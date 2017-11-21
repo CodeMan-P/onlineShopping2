@@ -66,6 +66,11 @@
 	>
 	<columnOverride column="phone" jdbcType="DECIMAL" javaType="java.long.String" />
 	</table>
-	
+	<table tableName="qrcheck" domainObjectName="Qrcheck"
+	 enableCountByExample="false" enableSelectByExample="false"
+            enableUpdateByExample="false" enableDeleteByExample="false"
+	>
+	<columnOverride column="uuid" javaType="java.lang.String" jdbcType="VARCHAR" />
+	</table>
   </context>
 </generatorConfiguration>

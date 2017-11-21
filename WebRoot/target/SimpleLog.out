@@ -10119,3 +10119,878 @@
 11-20 10:19:17 ====> Parameters: 
 11-20 10:19:17 <====      Total: 1
 11-20 10:19:17 <==      Total: 5
+11-20 14:24:37 Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+11-20 14:24:37 PooledDataSource forcefully closed/removed all connections.
+11-20 14:24:37 PooledDataSource forcefully closed/removed all connections.
+11-20 14:24:37 PooledDataSource forcefully closed/removed all connections.
+11-20 14:24:37 PooledDataSource forcefully closed/removed all connections.
+11-20 14:24:37 Opening JDBC Connection
+11-20 14:24:38 Created connection 376480438.
+11-20 14:24:38 Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@1670a2b6]
+11-20 14:24:38 ==>  Preparing: SELECT * FROM users WHERE uname = ? and upwd = ? 
+11-20 14:24:38 ==> Parameters: xiaoming(String), 123(String)
+11-20 14:24:38 <==    Columns: uid, uname, upwd, phone, city, regDate, idCard, realName, age, email, sex, avatar
+11-20 14:24:38 <==        Row: 1, xiaoming, 123, 18899119292, 西安, 2017-11-11, null, 小明, 22, null, 男, <<BLOB>>
+11-20 14:24:38 <==      Total: 1
+11-20 14:24:38 Opening JDBC Connection
+11-20 14:24:38 Created connection 1961471382.
+11-20 14:24:38 Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@74e9ad96]
+11-20 14:24:38 ==>  Preparing: SELECT COUNT(1) FROM shoppingcar WHERE uid = ?; 
+11-20 14:24:38 ==> Parameters: 1(Integer)
+11-20 14:24:38 <==      Total: 1
+11-20 14:24:42 Opening JDBC Connection
+11-20 14:24:42 Created connection 1634156762.
+11-20 14:24:42 Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@616740da]
+11-20 14:24:42 ==>  Preparing: select gid, gname, tid, price, descption, imgPath, filePath, stock from goods where gid = ? 
+11-20 14:24:42 ==> Parameters: 1(Integer)
+11-20 14:24:42 <==      Total: 1
+11-20 14:24:56 ==>  Preparing: select * from address where uid = ? 
+11-20 14:24:56 ==> Parameters: 1(Integer)
+11-20 14:24:56 <==      Total: 2
+11-20 14:25:19 ==>  Preparing: select cid, addGoodsTime, uid, gid, gnum, descption from shoppingcar where uid = ? and gid = ? 
+11-20 14:25:19 ==> Parameters: 1(Integer), 1(Integer)
+11-20 14:25:19 <==      Total: 0
+11-20 14:25:19 ==>  Preparing: insert into shoppingcar ( addGoodsTime, uid, gid, gnum, descption ) values ( ?, ?, ?, ?, ? ) 
+11-20 14:25:19 ==> Parameters: 2017-11-20 14:25:19.113(Timestamp), 1(Integer), 1(Integer), 1(Integer), [{"网络类型" : "4G全网通","机身颜色" : "钻雕金","套餐类型" : "官方标配","存储容量" : "128GB","购买方式" : "裸机","版本" : "小米6"}](String)
+11-20 14:25:19 <==    Updates: 1
+11-20 14:25:19 ==>  Preparing: SELECT COUNT(1) FROM shoppingcar WHERE uid = ?; 
+11-20 14:25:19 ==> Parameters: 1(Integer)
+11-20 14:25:19 <==      Total: 1
+11-20 14:25:22 ==>  Preparing: select * from address where uid = ? 
+11-20 14:25:22 ==> Parameters: 1(Integer)
+11-20 14:25:22 <==      Total: 2
+11-20 14:25:22 ==>  Preparing: select * from view_car_goods where uid = ?; 
+11-20 14:25:22 ==> Parameters: 1(Integer)
+11-20 14:25:22 <==      Total: 1
+11-20 14:25:28 ==>  Preparing: select * from view_car_goods where uid = ?; 
+11-20 14:25:28 ==> Parameters: 1(Integer)
+11-20 14:25:28 <==      Total: 1
+11-20 14:25:28 Opening JDBC Connection
+11-20 14:25:28 Created connection 1044878598.
+11-20 14:25:28 Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@3e479506]
+11-20 14:25:28 ==>  Preparing: insert into orders ( oid, uid, sum, address ) values ( ?, ?, ?, ? ) 
+11-20 14:25:28 ==> Parameters: 20171120142528(String), 1(Integer), 3488.0(Double), java.io.StringReader@2edcd2a8(StringReader)
+11-20 14:25:29 <==    Updates: 1
+11-20 14:25:29 ==>  Preparing: insert into orderform ( oid, gid, gnum, SubTotal, descption, uid ) values ( ?, ?, ?, ?, ?, ? ) 
+11-20 14:25:29 ==> Parameters: 20171120142528(String), 1(Integer), 1(Integer), 3488.0(Double), [{"网络类型" : "4G全网通","机身颜色" : "钻雕金","套餐类型" : "官方标配","存储容量" : "128GB","购买方式" : "裸机","版本" : "小米6"}](String), 1(Integer)
+11-20 14:25:29 <==    Updates: 1
+11-20 14:25:29 ==>  Preparing: update goods SET gname = ?, tid = ?, price = ?, descption = ?, imgPath = ?, filePath = ?, stock = ? where gid = ? 
+11-20 14:25:29 ==> Parameters: Huawei/华为 P10全网通手机(String), 2(Integer), 3488.0(Double), [ {
+  "网络类型" : "4G全网通",
+  "机身颜色" : "钻雕金,钻雕蓝,草木绿,曜石黑,玫瑰金",
+  "套餐类型" : "官方标配,套餐一,套餐二,套餐三,套餐四,套餐五",
+  "存储容量" : "64GB,128GB",
+  "购买方式" : "裸机",
+  "版本" : "Mate 10,Mate 10 62G+128G,麦芒6,P10,畅享7"
+} ](String), goods/huawei_1/P10.jpg(String), goods/huawei_1/img/(String), 9948(Integer), 1(Integer)
+11-20 14:25:29 <==    Updates: 1
+11-20 14:25:29 ==>  Preparing: delete from shoppingcar where cid = ? 
+11-20 14:25:29 ==> Parameters: 69(Integer)
+11-20 14:25:29 <==    Updates: 1
+11-20 14:25:29 Committing JDBC Connection [com.mysql.jdbc.JDBC4Connection@3e479506]
+11-20 14:25:29 添加新订单(20171120142528)：{
+  "oid" : "20171120142528",
+  "uid" : 1,
+  "state" : "待付款",
+  "sum" : 3488.0,
+  "address" : "西安市外包学院"
+}
+11-20 14:25:29 订单详情(20171120142528)：[ {
+  "oid" : "20171120142528",
+  "gid" : 1,
+  "gnum" : 1,
+  "subtotal" : 3488.0,
+  "descption" : "[{\"网络类型\" : \"4G全网通\",\"机身颜色\" : \"钻雕金\",\"套餐类型\" : \"官方标配\",\"存储容量\" : \"128GB\",\"购买方式\" : \"裸机\",\"版本\" : \"小米6\"}]",
+  "uid" : 1
+} ]
+11-20 14:25:29 ==>  Preparing: select * from view_order_goods where oid = ? and uid = ?; 
+11-20 14:25:29 ==> Parameters: 20171120142528(String), 1(Integer)
+11-20 14:25:29 <==      Total: 1
+11-20 14:25:36 20171120142528--订单付款！
+11-20 14:25:36 ==>  Preparing: update orders set state = "已付款" where oid = ? and uid = ? 
+11-20 14:25:36 ==> Parameters: 20171120142528(Long), 1(Integer)
+11-20 14:25:36 <==    Updates: 1
+11-20 14:25:36 Committing JDBC Connection [com.mysql.jdbc.JDBC4Connection@3e479506]
+11-20 14:25:53 ==>  Preparing: select oid,state,address,sum,uid from view_order_goods where uid = ? group by oid 
+11-20 14:25:53 ==> Parameters: 1(Integer)
+11-20 14:25:53 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171114000359 and uid = 1 
+11-20 14:25:53 ====> Parameters: 
+11-20 14:25:53 <====      Total: 2
+11-20 14:25:53 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171114000839 and uid = 1 
+11-20 14:25:53 ====> Parameters: 
+11-20 14:25:53 <====      Total: 1
+11-20 14:25:53 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171114150342 and uid = 1 
+11-20 14:25:53 ====> Parameters: 
+11-20 14:25:53 <====      Total: 1
+11-20 14:25:53 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171115115255 and uid = 1 
+11-20 14:25:53 ====> Parameters: 
+11-20 14:25:53 <====      Total: 1
+11-20 14:25:53 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171115115316 and uid = 1 
+11-20 14:25:53 ====> Parameters: 
+11-20 14:25:53 <====      Total: 1
+11-20 14:25:53 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171120142528 and uid = 1 
+11-20 14:25:53 ====> Parameters: 
+11-20 14:25:53 <====      Total: 1
+11-20 14:25:53 <==      Total: 6
+11-20 14:34:25 ==>  Preparing: select oid,state,address,sum,uid from view_order_goods where uid = ? group by oid 
+11-20 14:34:25 ==> Parameters: 1(Integer)
+11-20 14:34:25 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171114000359 and uid = 1 
+11-20 14:34:25 ====> Parameters: 
+11-20 14:34:25 <====      Total: 2
+11-20 14:34:25 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171114000839 and uid = 1 
+11-20 14:34:25 ====> Parameters: 
+11-20 14:34:25 <====      Total: 1
+11-20 14:34:25 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171114150342 and uid = 1 
+11-20 14:34:25 ====> Parameters: 
+11-20 14:34:25 <====      Total: 1
+11-20 14:34:25 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171115115255 and uid = 1 
+11-20 14:34:25 ====> Parameters: 
+11-20 14:34:25 <====      Total: 1
+11-20 14:34:25 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171115115316 and uid = 1 
+11-20 14:34:25 ====> Parameters: 
+11-20 14:34:25 <====      Total: 1
+11-20 14:34:25 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171120142528 and uid = 1 
+11-20 14:34:25 ====> Parameters: 
+11-20 14:34:25 <====      Total: 1
+11-20 14:34:25 <==      Total: 6
+11-20 14:48:03 ==>  Preparing: select oid,state,address,sum,uid from view_order_goods where uid = ? group by oid 
+11-20 14:48:03 ==> Parameters: 1(Integer)
+11-20 14:48:03 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171114000359 and uid = 1 
+11-20 14:48:03 ====> Parameters: 
+11-20 14:48:03 <====      Total: 2
+11-20 14:48:03 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171114000839 and uid = 1 
+11-20 14:48:03 ====> Parameters: 
+11-20 14:48:03 <====      Total: 1
+11-20 14:48:03 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171114150342 and uid = 1 
+11-20 14:48:03 ====> Parameters: 
+11-20 14:48:03 <====      Total: 1
+11-20 14:48:03 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171115115255 and uid = 1 
+11-20 14:48:03 ====> Parameters: 
+11-20 14:48:03 <====      Total: 1
+11-20 14:48:03 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171115115316 and uid = 1 
+11-20 14:48:03 ====> Parameters: 
+11-20 14:48:03 <====      Total: 1
+11-20 14:48:03 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171120142528 and uid = 1 
+11-20 14:48:03 ====> Parameters: 
+11-20 14:48:03 <====      Total: 1
+11-20 14:48:03 <==      Total: 6
+11-20 23:55:06 Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+11-20 23:55:06 PooledDataSource forcefully closed/removed all connections.
+11-20 23:55:06 PooledDataSource forcefully closed/removed all connections.
+11-20 23:55:06 PooledDataSource forcefully closed/removed all connections.
+11-20 23:55:06 PooledDataSource forcefully closed/removed all connections.
+11-20 23:55:06 Opening JDBC Connection
+11-20 23:55:07 Created connection 75372808.
+11-20 23:55:07 Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@47e1908]
+11-20 23:55:07 ==>  Preparing: select gid, gname, tid, price, descption, imgPath, filePath, stock from goods where gid = ? 
+11-20 23:55:07 ==> Parameters: 1(Integer)
+11-20 23:55:07 <==      Total: 1
+11-21 09:40:17 Retrieving column information for table "goods"
+11-21 09:40:17 Found column "gid", data type 4, in table "shop..goods"
+11-21 09:40:17 Found column "gname", data type 12, in table "shop..goods"
+11-21 09:40:17 Found column "tid", data type 4, in table "shop..goods"
+11-21 09:40:17 Found column "price", data type 8, in table "shop..goods"
+11-21 09:40:17 Found column "descption", data type -1, in table "shop..goods"
+11-21 09:40:17 Found column "imgPath", data type -1, in table "shop..goods"
+11-21 09:40:17 Found column "filePath", data type -1, in table "shop..goods"
+11-21 09:40:17 Found column "stock", data type 4, in table "shop..goods"
+11-21 09:40:17 Found override for column "descption" in table "shop..goods"
+11-21 09:40:17 Found override for column "imgPath" in table "shop..goods"
+11-21 09:40:17 Found override for column "filePath" in table "shop..goods"
+11-21 09:40:17 Retrieving column information for table "goodsand"
+11-21 09:40:17 Found column "goodsId", data type 4, in table "shop..goodsand"
+11-21 09:40:17 Found column "text", data type 12, in table "shop..goodsand"
+11-21 09:40:17 Found column "imageUrl", data type -1, in table "shop..goodsand"
+11-21 09:40:17 Found column "spanSize", data type 4, in table "shop..goodsand"
+11-21 09:40:17 Found column "banners", data type -1, in table "shop..goodsand"
+11-21 09:40:17 Found column "descption", data type -1, in table "shop..goodsand"
+11-21 09:40:17 Found override for column "text" in table "shop..goodsand"
+11-21 09:40:17 Found override for column "imageUrl" in table "shop..goodsand"
+11-21 09:40:17 Found override for column "banners" in table "shop..goodsand"
+11-21 09:40:17 Found override for column "descption" in table "shop..goodsand"
+11-21 09:40:17 Retrieving column information for table "address"
+11-21 09:40:17 Found column "adressId", data type 4, in table "shop..address"
+11-21 09:40:17 Found column "uid", data type 4, in table "shop..address"
+11-21 09:40:17 Found column "address", data type -1, in table "shop..address"
+11-21 09:40:17 Found column "def", data type -7, in table "shop..address"
+11-21 09:40:17 Found column "aphone", data type 3, in table "shop..address"
+11-21 09:40:17 Found column "aname", data type 12, in table "shop..address"
+11-21 09:40:17 Found override for column "address" in table "shop..address"
+11-21 09:40:17 Found override for column "aphone" in table "shop..address"
+11-21 09:40:17 Retrieving column information for table "goodstype"
+11-21 09:40:17 Found column "tid", data type 4, in table "shop..goodstype"
+11-21 09:40:17 Found column "tname", data type 12, in table "shop..goodstype"
+11-21 09:40:17 Retrieving column information for table "orderform"
+11-21 09:40:17 Found column "oid", data type 3, in table "shop..orderform"
+11-21 09:40:17 Found column "gid", data type 4, in table "shop..orderform"
+11-21 09:40:17 Found column "gnum", data type 4, in table "shop..orderform"
+11-21 09:40:17 Found column "SubTotal", data type 8, in table "shop..orderform"
+11-21 09:40:17 Found column "descption", data type -1, in table "shop..orderform"
+11-21 09:40:17 Found column "uid", data type 4, in table "shop..orderform"
+11-21 09:40:17 Found override for column "oid" in table "shop..orderform"
+11-21 09:40:17 Found override for column "descption" in table "shop..orderform"
+11-21 09:40:17 Retrieving column information for table "orders"
+11-21 09:40:17 Found column "oid", data type 3, in table "shop..orders"
+11-21 09:40:17 Found column "uid", data type 4, in table "shop..orders"
+11-21 09:40:17 Found column "state", data type 12, in table "shop..orders"
+11-21 09:40:17 Found column "address", data type -1, in table "shop..orders"
+11-21 09:40:17 Found column "sum", data type 8, in table "shop..orders"
+11-21 09:40:17 Found override for column "oid" in table "shop..orders"
+11-21 09:40:17 Retrieving column information for table "shoppingcar"
+11-21 09:40:17 Found column "cid", data type 4, in table "shop..shoppingcar"
+11-21 09:40:17 Found column "addGoodsTime", data type 93, in table "shop..shoppingcar"
+11-21 09:40:17 Found column "uid", data type 4, in table "shop..shoppingcar"
+11-21 09:40:17 Found column "gid", data type 4, in table "shop..shoppingcar"
+11-21 09:40:17 Found column "gnum", data type 4, in table "shop..shoppingcar"
+11-21 09:40:17 Found column "descption", data type -1, in table "shop..shoppingcar"
+11-21 09:40:17 Found override for column "addGoodsTime" in table "shop..shoppingcar"
+11-21 09:40:17 Found override for column "descption" in table "shop..shoppingcar"
+11-21 09:40:17 Retrieving column information for table "users"
+11-21 09:40:17 Found column "uid", data type 4, in table "shop..users"
+11-21 09:40:17 Found column "uname", data type 12, in table "shop..users"
+11-21 09:40:17 Found column "upwd", data type 12, in table "shop..users"
+11-21 09:40:17 Found column "phone", data type 3, in table "shop..users"
+11-21 09:40:17 Found column "city", data type 12, in table "shop..users"
+11-21 09:40:17 Found column "regDate", data type 91, in table "shop..users"
+11-21 09:40:17 Found column "idCard", data type 12, in table "shop..users"
+11-21 09:40:17 Found column "realName", data type 12, in table "shop..users"
+11-21 09:40:17 Found column "age", data type 4, in table "shop..users"
+11-21 09:40:17 Found column "email", data type 12, in table "shop..users"
+11-21 09:40:17 Found column "sex", data type 12, in table "shop..users"
+11-21 09:40:17 Found column "avatar", data type -1, in table "shop..users"
+11-21 09:40:17 Found override for column "phone" in table "shop..users"
+11-21 09:40:17 Retrieving column information for table "qrcheck"
+11-21 09:40:17 Found column "uuid", data type -1, in table "shop..qrcheck"
+11-21 09:40:17 Found column "status", data type 4, in table "shop..qrcheck"
+11-21 09:40:17 Found column "name", data type 12, in table "shop..qrcheck"
+11-21 09:40:17 Found column "pwd", data type 12, in table "shop..qrcheck"
+11-21 09:40:17 Found override for column "uuid" in table "shop..qrcheck"
+11-21 09:52:34 Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+11-21 09:52:34 PooledDataSource forcefully closed/removed all connections.
+11-21 09:52:34 PooledDataSource forcefully closed/removed all connections.
+11-21 09:52:34 PooledDataSource forcefully closed/removed all connections.
+11-21 09:52:34 PooledDataSource forcefully closed/removed all connections.
+11-21 09:52:34 Opening JDBC Connection
+11-21 09:52:35 Created connection 700072760.
+11-21 09:52:35 Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@29ba4338]
+11-21 09:52:35 ==>  Preparing: select * from qrcheck where uuid = ? 
+11-21 09:52:35 ==> Parameters: 20171121095151059-8ce3d6ddd4a5431e9f814a0d8db011e9(String)
+11-21 09:52:35 <==      Total: 1
+11-21 09:53:37 Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+11-21 09:53:37 PooledDataSource forcefully closed/removed all connections.
+11-21 09:53:37 PooledDataSource forcefully closed/removed all connections.
+11-21 09:53:37 PooledDataSource forcefully closed/removed all connections.
+11-21 09:53:37 PooledDataSource forcefully closed/removed all connections.
+11-21 09:53:37 Opening JDBC Connection
+11-21 09:53:37 Created connection 1368594774.
+11-21 09:53:37 Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@51931956]
+11-21 09:53:37 ==>  Preparing: delete from qrcheck where uuid = ? 
+11-21 09:53:38 ==> Parameters: 20171121095151059-8ce3d6ddd4a5431e9f814a0d8db011e9(String)
+11-21 09:53:38 <==    Updates: 1
+11-21 09:59:52 Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+11-21 09:59:53 PooledDataSource forcefully closed/removed all connections.
+11-21 09:59:53 PooledDataSource forcefully closed/removed all connections.
+11-21 09:59:53 PooledDataSource forcefully closed/removed all connections.
+11-21 09:59:53 PooledDataSource forcefully closed/removed all connections.
+11-21 09:59:53 Opening JDBC Connection
+11-21 09:59:53 Created connection 1052967153.
+11-21 09:59:54 Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@3ec300f1]
+11-21 09:59:54 ==>  Preparing: insert into qrcheck ( uuid, status ) values ( ?, ? ) 
+11-21 09:59:54 ==> Parameters: 20171121095151059-8ce3d6ddd4a5431e9f814a0d8db011e9(String), 1(Integer)
+11-21 09:59:54 <==    Updates: 1
+11-21 09:59:54 ==>  Preparing: delete from qrcheck where uuid = ? 
+11-21 09:59:54 ==> Parameters: 20171121095151059-8ce3d6ddd4a5431e9f814a0d8db011e9(String)
+11-21 09:59:54 <==    Updates: 1
+11-21 10:05:06 Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+11-21 10:05:07 PooledDataSource forcefully closed/removed all connections.
+11-21 10:05:07 PooledDataSource forcefully closed/removed all connections.
+11-21 10:05:07 PooledDataSource forcefully closed/removed all connections.
+11-21 10:05:07 PooledDataSource forcefully closed/removed all connections.
+11-21 10:05:30 Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+11-21 10:05:30 PooledDataSource forcefully closed/removed all connections.
+11-21 10:05:30 PooledDataSource forcefully closed/removed all connections.
+11-21 10:05:30 PooledDataSource forcefully closed/removed all connections.
+11-21 10:05:30 PooledDataSource forcefully closed/removed all connections.
+11-21 10:05:56 Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+11-21 10:05:56 PooledDataSource forcefully closed/removed all connections.
+11-21 10:05:56 PooledDataSource forcefully closed/removed all connections.
+11-21 10:05:56 PooledDataSource forcefully closed/removed all connections.
+11-21 10:05:56 PooledDataSource forcefully closed/removed all connections.
+11-21 10:39:01 Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+11-21 10:39:02 PooledDataSource forcefully closed/removed all connections.
+11-21 10:39:02 PooledDataSource forcefully closed/removed all connections.
+11-21 10:39:02 PooledDataSource forcefully closed/removed all connections.
+11-21 10:39:02 PooledDataSource forcefully closed/removed all connections.
+11-21 10:39:02 Opening JDBC Connection
+11-21 10:39:03 Created connection 1274367277.
+11-21 10:39:03 Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@4bf54d2d]
+11-21 10:39:03 ==>  Preparing: insert into qrcheck ( uuid, status ) values ( ?, ? ) 
+11-21 10:39:03 ==> Parameters: http://192.168.1.102:8080/onlineShopping/qrcheck.jsp?UUID=20171121103901332-1d8da526d0a249c0972d312a619d5dfa(String), 0(Integer)
+11-21 10:39:03 <==    Updates: 1
+11-21 10:39:04 ==>  Preparing: insert into qrcheck ( uuid, status ) values ( ?, ? ) 
+11-21 10:39:04 ==> Parameters: http://192.168.1.102:8080/onlineShopping/qrcheck.jsp?UUID=20171121103904687-1131f139aa2c479d89e184d72035f7b7(String), 0(Integer)
+11-21 10:39:04 <==    Updates: 1
+11-21 10:42:28 Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+11-21 10:42:28 PooledDataSource forcefully closed/removed all connections.
+11-21 10:42:28 PooledDataSource forcefully closed/removed all connections.
+11-21 10:42:28 PooledDataSource forcefully closed/removed all connections.
+11-21 10:42:28 PooledDataSource forcefully closed/removed all connections.
+11-21 10:42:28 Opening JDBC Connection
+11-21 10:42:28 Created connection 597541048.
+11-21 10:42:28 Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@239dc0b8]
+11-21 10:42:28 ==>  Preparing: insert into qrcheck ( uuid, status ) values ( ?, ? ) 
+11-21 10:42:28 ==> Parameters: http://192.168.9.252:8080/onlineShopping/qrcheck.jsp?UUID=20171121104227935-f7060b0e0c0a40bbb2f77da59be9f2bc(String), 0(Integer)
+11-21 10:42:28 <==    Updates: 1
+11-21 10:47:41 Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+11-21 10:47:41 PooledDataSource forcefully closed/removed all connections.
+11-21 10:47:41 PooledDataSource forcefully closed/removed all connections.
+11-21 10:47:41 PooledDataSource forcefully closed/removed all connections.
+11-21 10:47:41 PooledDataSource forcefully closed/removed all connections.
+11-21 10:47:42 Opening JDBC Connection
+11-21 10:47:42 Created connection 396944918.
+11-21 10:47:42 Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@17a8e616]
+11-21 10:47:42 ==>  Preparing: insert into qrcheck ( uuid, status ) values ( ?, ? ) 
+11-21 10:47:42 ==> Parameters: http://172.20.10.3:8080/onlineShopping/qrcheck.jsp?UUID=20171121104741374-343459e9f9f94312a873164749fe86a5(String), 0(Integer)
+11-21 10:47:42 <==    Updates: 1
+11-21 10:48:03 ==>  Preparing: insert into qrcheck ( uuid, status ) values ( ?, ? ) 
+11-21 10:48:03 ==> Parameters: http://172.20.10.3:8080/onlineShopping/qrcheck.jsp?UUID=20171121104803291-59a1a9b6ce254d5493f2a699f8245e14(String), 0(Integer)
+11-21 10:48:03 <==    Updates: 1
+11-21 10:53:22 Opening JDBC Connection
+11-21 10:53:22 Created connection 1155353721.
+11-21 10:53:22 Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@44dd4c79]
+11-21 10:53:22 ==>  Preparing: SELECT * FROM users WHERE uname = ? and upwd = ? 
+11-21 10:53:22 ==> Parameters: xiaoming(String), 123(String)
+11-21 10:53:22 <==    Columns: uid, uname, upwd, phone, city, regDate, idCard, realName, age, email, sex, avatar
+11-21 10:53:22 <==        Row: 1, xiaoming, 123, 18899119292, 西安, 2017-11-11, null, 小明, 22, null, 男, <<BLOB>>
+11-21 10:53:22 <==      Total: 1
+11-21 10:53:22 ==>  Preparing: update qrcheck set status = ?, name = ?,pwd = ? where uuid = ? 
+11-21 10:53:22 ==> Parameters: 1(Integer), xiaoming(String), 123(String), 20171121104741374-343459e9f9f94312a873164749fe86a5(String)
+11-21 10:53:22 <==    Updates: 0
+11-21 10:54:15 ==>  Preparing: update qrcheck set status = ?, name = ?,pwd = ? where uuid = ? 
+11-21 10:54:15 ==> Parameters: 1(Integer), xiaoming(String), 123(String), 20171121104741374-343459e9f9f94312a873164749fe86a5(String)
+11-21 10:54:15 <==    Updates: 0
+11-21 10:54:32 ==>  Preparing: SELECT * FROM users WHERE uname = ? and upwd = ? 
+11-21 10:54:32 ==> Parameters: Xiaoming (String), 123(String)
+11-21 10:54:32 <==    Columns: uid, uname, upwd, phone, city, regDate, idCard, realName, age, email, sex, avatar
+11-21 10:54:32 <==        Row: 1, xiaoming, 123, 18899119292, 西安, 2017-11-11, null, 小明, 22, null, 男, <<BLOB>>
+11-21 10:54:32 <==      Total: 1
+11-21 10:54:32 ==>  Preparing: update qrcheck set status = ?, name = ?,pwd = ? where uuid = ? 
+11-21 10:54:32 ==> Parameters: 1(Integer), Xiaoming (String), 123(String), 20171121104741374-343459e9f9f94312a873164749fe86a5(String)
+11-21 10:54:32 <==    Updates: 0
+11-21 10:55:00 Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+11-21 10:55:00 PooledDataSource forcefully closed/removed all connections.
+11-21 10:55:00 PooledDataSource forcefully closed/removed all connections.
+11-21 10:55:00 PooledDataSource forcefully closed/removed all connections.
+11-21 10:55:00 PooledDataSource forcefully closed/removed all connections.
+11-21 10:55:00 Opening JDBC Connection
+11-21 10:55:01 Created connection 1751241092.
+11-21 10:55:01 Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@6861d184]
+11-21 10:55:01 ==>  Preparing: SELECT * FROM users WHERE uname = ? and upwd = ? 
+11-21 10:55:01 ==> Parameters: Xiaoming (String), 123(String)
+11-21 10:55:01 <==    Columns: uid, uname, upwd, phone, city, regDate, idCard, realName, age, email, sex, avatar
+11-21 10:55:01 <==        Row: 1, xiaoming, 123, 18899119292, 西安, 2017-11-11, null, 小明, 22, null, 男, <<BLOB>>
+11-21 10:55:01 <==      Total: 1
+11-21 10:55:01 Opening JDBC Connection
+11-21 10:55:01 Created connection 1071409131.
+11-21 10:55:01 Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@3fdc67eb]
+11-21 10:55:01 ==>  Preparing: update qrcheck set status = ?, name = ?,pwd = ? where uuid = ? 
+11-21 10:55:01 ==> Parameters: 1(Integer), Xiaoming (String), 123(String), 20171121104741374-343459e9f9f94312a873164749fe86a5(String)
+11-21 10:55:01 <==    Updates: 0
+11-21 10:57:08 Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+11-21 10:57:08 PooledDataSource forcefully closed/removed all connections.
+11-21 10:57:08 PooledDataSource forcefully closed/removed all connections.
+11-21 10:57:08 PooledDataSource forcefully closed/removed all connections.
+11-21 10:57:08 PooledDataSource forcefully closed/removed all connections.
+11-21 10:57:08 Opening JDBC Connection
+11-21 10:57:08 Created connection 401913202.
+11-21 10:57:08 Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@17f4b572]
+11-21 10:57:08 ==>  Preparing: SELECT * FROM users WHERE uname = ? and upwd = ? 
+11-21 10:57:08 ==> Parameters: Xiaoming (String), 123(String)
+11-21 10:57:08 <==    Columns: uid, uname, upwd, phone, city, regDate, idCard, realName, age, email, sex, avatar
+11-21 10:57:08 <==        Row: 1, xiaoming, 123, 18899119292, 西安, 2017-11-11, null, 小明, 22, null, 男, <<BLOB>>
+11-21 10:57:08 <==      Total: 1
+11-21 10:57:08 Opening JDBC Connection
+11-21 10:57:08 Created connection 176621929.
+11-21 10:57:08 Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@a870969]
+11-21 10:57:08 ==>  Preparing: update qrcheck set status = ?, name = ?,pwd = ? where uuid = ? 
+11-21 10:57:08 ==> Parameters: 1(Integer), Xiaoming (String), 123(String), 20171121104741374-343459e9f9f94312a873164749fe86a5(String)
+11-21 10:57:08 <==    Updates: 0
+11-21 11:01:42 Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+11-21 11:01:42 PooledDataSource forcefully closed/removed all connections.
+11-21 11:01:42 PooledDataSource forcefully closed/removed all connections.
+11-21 11:01:42 PooledDataSource forcefully closed/removed all connections.
+11-21 11:01:42 PooledDataSource forcefully closed/removed all connections.
+11-21 11:01:42 Opening JDBC Connection
+11-21 11:01:42 Created connection 19652116.
+11-21 11:01:42 Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@12bde14]
+11-21 11:01:42 ==>  Preparing: SELECT * FROM users WHERE uname = ? and upwd = ? 
+11-21 11:01:42 ==> Parameters: 1(String), 1(String)
+11-21 11:01:42 <==      Total: 0
+11-21 13:01:11 Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+11-21 13:01:12 PooledDataSource forcefully closed/removed all connections.
+11-21 13:01:12 PooledDataSource forcefully closed/removed all connections.
+11-21 13:01:12 PooledDataSource forcefully closed/removed all connections.
+11-21 13:01:12 PooledDataSource forcefully closed/removed all connections.
+11-21 13:01:12 Opening JDBC Connection
+11-21 13:01:12 Created connection 669216373.
+11-21 13:01:12 Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@27e36e75]
+11-21 13:01:12 ==>  Preparing: insert into qrcheck ( uuid, status ) values ( ?, ? ) 
+11-21 13:01:12 ==> Parameters: 20171121130111663F6ADAFC7970C4FE085C124AB415AA262(String), 0(Integer)
+11-21 13:01:12 <==    Updates: 1
+11-21 13:02:16 ==>  Preparing: insert into qrcheck ( uuid, status ) values ( ?, ? ) 
+11-21 13:02:16 ==> Parameters: 20171121130216750934524A1FC544B39AAD5D056260BA4D4(String), 0(Integer)
+11-21 13:02:16 <==    Updates: 1
+11-21 13:03:24 ==>  Preparing: insert into qrcheck ( uuid, status ) values ( ?, ? ) 
+11-21 13:03:24 ==> Parameters: 20171121130324253D9C535AFC42844628A984E6FB4B4EBC4(String), 0(Integer)
+11-21 13:03:24 <==    Updates: 1
+11-21 13:03:51 ==>  Preparing: insert into qrcheck ( uuid, status ) values ( ?, ? ) 
+11-21 13:03:51 ==> Parameters: 20171121130351522BB6EDC20E67E495D8FA237A1F0E53513(String), 0(Integer)
+11-21 13:03:51 <==    Updates: 1
+11-21 13:03:53 ==>  Preparing: insert into qrcheck ( uuid, status ) values ( ?, ? ) 
+11-21 13:03:53 ==> Parameters: 20171121130353175A360AFF6EE9043D696EA93668E147257(String), 0(Integer)
+11-21 13:03:53 <==    Updates: 1
+11-21 13:05:03 ==>  Preparing: insert into qrcheck ( uuid, status ) values ( ?, ? ) 
+11-21 13:05:03 ==> Parameters: 2017112113050315334275B5D4A75405FB37FDE460F4EDB91(String), 0(Integer)
+11-21 13:05:03 <==    Updates: 1
+11-21 13:05:05 ==>  Preparing: insert into qrcheck ( uuid, status ) values ( ?, ? ) 
+11-21 13:05:05 ==> Parameters: 201711211305051632F8112F1F1FA4B779E0B7AEC48EA2805(String), 0(Integer)
+11-21 13:05:05 <==    Updates: 1
+11-21 13:05:22 ==>  Preparing: insert into qrcheck ( uuid, status ) values ( ?, ? ) 
+11-21 13:05:22 ==> Parameters: 20171121130522283D5365C4BE8A14CAB9B53920673894592(String), 0(Integer)
+11-21 13:05:22 <==    Updates: 1
+11-21 13:05:29 ==>  Preparing: insert into qrcheck ( uuid, status ) values ( ?, ? ) 
+11-21 13:05:29 ==> Parameters: 20171121130529109299ED9420772479F8D9446DC20A3A0F0(String), 0(Integer)
+11-21 13:05:29 <==    Updates: 1
+11-21 13:05:38 ==>  Preparing: insert into qrcheck ( uuid, status ) values ( ?, ? ) 
+11-21 13:05:38 ==> Parameters: 2017112113053811FEE33ACC6CFE4B92960BD4CE7EBAE4EE(String), 0(Integer)
+11-21 13:05:38 <==    Updates: 1
+11-21 13:08:47 ==>  Preparing: insert into qrcheck ( uuid, status ) values ( ?, ? ) 
+11-21 13:08:47 ==> Parameters: 20171121130847383F198DF4CDBF14897BBBAB93036548F3B(String), 0(Integer)
+11-21 13:08:47 <==    Updates: 1
+11-21 13:09:25 ==>  Preparing: insert into qrcheck ( uuid, status ) values ( ?, ? ) 
+11-21 13:09:25 ==> Parameters: 201711211309259562B4CAE22B1524791A76718534AB30273(String), 0(Integer)
+11-21 13:09:25 <==    Updates: 1
+11-21 13:09:28 ==>  Preparing: select * from qrcheck where uuid = ? 
+11-21 13:09:28 ==> Parameters: 201711211309259562B4CAE22B1524791A76718534AB30273(String)
+11-21 13:09:29 <==      Total: 1
+11-21 13:09:40 ==>  Preparing: insert into qrcheck ( uuid, status ) values ( ?, ? ) 
+11-21 13:09:40 ==> Parameters: 201711211309406728CF41E1FDC1A4E3F85D106C73C7C98B5(String), 0(Integer)
+11-21 13:09:40 <==    Updates: 1
+11-21 13:09:43 ==>  Preparing: select * from qrcheck where uuid = ? 
+11-21 13:09:43 ==> Parameters: 201711211309406728CF41E1FDC1A4E3F85D106C73C7C98B5(String)
+11-21 13:09:43 <==      Total: 1
+11-21 13:10:52 ==>  Preparing: insert into qrcheck ( uuid, status ) values ( ?, ? ) 
+11-21 13:10:52 ==> Parameters: 20171121131052769DA99CC1478F1458299142A4DCFB700D9(String), 0(Integer)
+11-21 13:10:52 <==    Updates: 1
+11-21 13:10:55 ==>  Preparing: select * from qrcheck where uuid = ? 
+11-21 13:10:55 ==> Parameters: 20171121131052769DA99CC1478F1458299142A4DCFB700D9(String)
+11-21 13:10:55 <==      Total: 1
+11-21 13:11:19 Opening JDBC Connection
+11-21 13:11:19 Created connection 472393488.
+11-21 13:11:19 Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@1c282710]
+11-21 13:11:19 ==>  Preparing: SELECT * FROM users WHERE uname = ? and upwd = ? 
+11-21 13:11:19 ==> Parameters: xiaoming (String), 123(String)
+11-21 13:11:19 <==    Columns: uid, uname, upwd, phone, city, regDate, idCard, realName, age, email, sex, avatar
+11-21 13:11:19 <==        Row: 1, xiaoming, 123, 18899119292, 西安, 2017-11-11, null, 小明, 22, null, 男, <<BLOB>>
+11-21 13:11:19 <==      Total: 1
+11-21 13:11:19 ==>  Preparing: update qrcheck set status = ?, name = ?,pwd = ? where uuid = ? 
+11-21 13:11:19 ==> Parameters: 1(Integer), xiaoming (String), 123(String), 20171121131052769DA99CC1478F1458299142A4DCFB700D9(String)
+11-21 13:11:19 <==    Updates: 1
+11-21 13:11:19 ==>  Preparing: select * from qrcheck where uuid = ? 
+11-21 13:11:19 ==> Parameters: 20171121131052769DA99CC1478F1458299142A4DCFB700D9(String)
+11-21 13:11:19 <==      Total: 1
+11-21 13:11:19 Opening JDBC Connection
+11-21 13:11:19 Created connection 983503549.
+11-21 13:11:19 Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@3a9f12bd]
+11-21 13:11:19 ==>  Preparing: SELECT COUNT(1) FROM shoppingcar WHERE uid = ?; 
+11-21 13:11:19 ==> Parameters: 1(Integer)
+11-21 13:11:19 <==      Total: 1
+11-21 13:11:20 ==>  Preparing: delete from qrcheck where uuid = ? 
+11-21 13:11:20 ==> Parameters: 20171121131052769DA99CC1478F1458299142A4DCFB700D9(String)
+11-21 13:11:20 <==    Updates: 1
+11-21 13:11:22 ==>  Preparing: select * from qrcheck where uuid = ? 
+11-21 13:11:22 ==> Parameters: 20171121131052769DA99CC1478F1458299142A4DCFB700D9(String)
+11-21 13:11:22 <==      Total: 0
+11-21 13:15:29 Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+11-21 13:15:29 PooledDataSource forcefully closed/removed all connections.
+11-21 13:15:29 PooledDataSource forcefully closed/removed all connections.
+11-21 13:15:29 PooledDataSource forcefully closed/removed all connections.
+11-21 13:15:29 PooledDataSource forcefully closed/removed all connections.
+11-21 13:15:34 Opening JDBC Connection
+11-21 13:15:34 Created connection 1167457926.
+11-21 13:15:34 Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@4595fe86]
+11-21 13:15:34 ==>  Preparing: insert into qrcheck ( uuid, status ) values ( ?, ? ) 
+11-21 13:15:34 ==> Parameters: 201711211315341550FB200B347A4407EA049ADE589FB4EBC(String), 0(Integer)
+11-21 13:15:34 <==    Updates: 1
+11-21 13:15:36 Opening JDBC Connection
+11-21 13:15:36 Created connection 1182233702.
+11-21 13:15:36 Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@46777466]
+11-21 13:15:36 ==>  Preparing: SELECT * FROM users WHERE uname = ? and upwd = ? 
+11-21 13:15:36 ==> Parameters: xiaoming (String), 123(String)
+11-21 13:15:36 <==    Columns: uid, uname, upwd, phone, city, regDate, idCard, realName, age, email, sex, avatar
+11-21 13:15:36 <==        Row: 1, xiaoming, 123, 18899119292, 西安, 2017-11-11, null, 小明, 22, null, 男, <<BLOB>>
+11-21 13:15:36 <==      Total: 1
+11-21 13:15:36 ==>  Preparing: update qrcheck set status = ?, name = ?,pwd = ? where uuid = ? 
+11-21 13:15:36 ==> Parameters: 1(Integer), xiaoming (String), 123(String), 20171121131052769DA99CC1478F1458299142A4DCFB700D9(String)
+11-21 13:15:36 <==    Updates: 0
+11-21 13:15:37 ==>  Preparing: select * from qrcheck where uuid = ? 
+11-21 13:15:37 ==> Parameters: 201711211315341550FB200B347A4407EA049ADE589FB4EBC(String)
+11-21 13:15:37 <==      Total: 1
+11-21 13:15:50 ==>  Preparing: SELECT * FROM users WHERE uname = ? and upwd = ? 
+11-21 13:15:50 ==> Parameters: Xiaoming (String), 123(String)
+11-21 13:15:50 <==    Columns: uid, uname, upwd, phone, city, regDate, idCard, realName, age, email, sex, avatar
+11-21 13:15:50 <==        Row: 1, xiaoming, 123, 18899119292, 西安, 2017-11-11, null, 小明, 22, null, 男, <<BLOB>>
+11-21 13:15:50 <==      Total: 1
+11-21 13:15:50 ==>  Preparing: update qrcheck set status = ?, name = ?,pwd = ? where uuid = ? 
+11-21 13:15:50 ==> Parameters: 1(Integer), Xiaoming (String), 123(String), 201711211315341550FB200B347A4407EA049ADE589FB4EBC(String)
+11-21 13:15:50 <==    Updates: 1
+11-21 13:15:52 ==>  Preparing: select * from qrcheck where uuid = ? 
+11-21 13:15:52 ==> Parameters: 201711211315341550FB200B347A4407EA049ADE589FB4EBC(String)
+11-21 13:15:52 <==      Total: 1
+11-21 13:15:52 Opening JDBC Connection
+11-21 13:15:52 Created connection 21368704.
+11-21 13:15:52 Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@1460f80]
+11-21 13:15:52 ==>  Preparing: SELECT COUNT(1) FROM shoppingcar WHERE uid = ?; 
+11-21 13:15:52 ==> Parameters: 1(Integer)
+11-21 13:15:52 <==      Total: 1
+11-21 13:15:52 ==>  Preparing: delete from qrcheck where uuid = ? 
+11-21 13:15:52 ==> Parameters: 201711211315341550FB200B347A4407EA049ADE589FB4EBC(String)
+11-21 13:15:52 <==    Updates: 1
+11-21 13:15:55 ==>  Preparing: select * from qrcheck where uuid = ? 
+11-21 13:15:55 ==> Parameters: 201711211315341550FB200B347A4407EA049ADE589FB4EBC(String)
+11-21 13:15:55 <==      Total: 0
+11-21 13:23:45 Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+11-21 13:23:45 PooledDataSource forcefully closed/removed all connections.
+11-21 13:23:45 PooledDataSource forcefully closed/removed all connections.
+11-21 13:23:45 PooledDataSource forcefully closed/removed all connections.
+11-21 13:23:45 PooledDataSource forcefully closed/removed all connections.
+11-21 13:23:45 Opening JDBC Connection
+11-21 13:23:45 Created connection 661574154.
+11-21 13:23:45 Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@276ed20a]
+11-21 13:23:45 ==>  Preparing: insert into qrcheck ( uuid, status ) values ( ?, ? ) 
+11-21 13:23:45 ==> Parameters: 2017112113234595577830533788444C818E6B187A60764F(String), 0(Integer)
+11-21 13:23:45 <==    Updates: 1
+11-21 13:23:47 ==>  Preparing: select * from qrcheck where uuid = ? 
+11-21 13:23:47 ==> Parameters: 2017112113234595577830533788444C818E6B187A60764F(String)
+11-21 13:23:47 <==      Total: 1
+11-21 13:23:57 Opening JDBC Connection
+11-21 13:23:57 Created connection 1465827126.
+11-21 13:23:57 Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@575ebf36]
+11-21 13:23:57 ==>  Preparing: SELECT * FROM users WHERE uname = ? and upwd = ? 
+11-21 13:23:57 ==> Parameters: Xiaoming (String), 123(String)
+11-21 13:23:57 <==    Columns: uid, uname, upwd, phone, city, regDate, idCard, realName, age, email, sex, avatar
+11-21 13:23:57 <==        Row: 1, xiaoming, 123, 18899119292, 西安, 2017-11-11, null, 小明, 22, null, 男, <<BLOB>>
+11-21 13:23:57 <==      Total: 1
+11-21 13:23:57 ==>  Preparing: update qrcheck set status = ?, name = ?,pwd = ? where uuid = ? 
+11-21 13:23:57 ==> Parameters: 1(Integer), Xiaoming (String), 123(String), 2017112113234595577830533788444C818E6B187A60764F(String)
+11-21 13:23:57 <==    Updates: 1
+11-21 13:23:59 ==>  Preparing: select * from qrcheck where uuid = ? 
+11-21 13:23:59 ==> Parameters: 2017112113234595577830533788444C818E6B187A60764F(String)
+11-21 13:23:59 <==      Total: 1
+11-21 13:23:59 Opening JDBC Connection
+11-21 13:23:59 Created connection 73156971.
+11-21 13:23:59 Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@45c496b]
+11-21 13:23:59 ==>  Preparing: SELECT COUNT(1) FROM shoppingcar WHERE uid = ?; 
+11-21 13:23:59 ==> Parameters: 1(Integer)
+11-21 13:23:59 <==      Total: 1
+11-21 13:23:59 ==>  Preparing: delete from qrcheck where uuid = ? 
+11-21 13:23:59 ==> Parameters: 2017112113234595577830533788444C818E6B187A60764F(String)
+11-21 13:23:59 <==    Updates: 1
+11-21 13:24:01 ==>  Preparing: select * from qrcheck where uuid = ? 
+11-21 13:24:01 ==> Parameters: 2017112113234595577830533788444C818E6B187A60764F(String)
+11-21 13:24:01 <==      Total: 0
+11-21 13:26:14 ==>  Preparing: insert into qrcheck ( uuid, status ) values ( ?, ? ) 
+11-21 13:26:14 ==> Parameters: 20171121132614974F0B10F57A0374EB88020FA3D6241054D(String), 0(Integer)
+11-21 13:26:14 <==    Updates: 1
+11-21 13:26:17 ==>  Preparing: select * from qrcheck where uuid = ? 
+11-21 13:26:17 ==> Parameters: 20171121132614974F0B10F57A0374EB88020FA3D6241054D(String)
+11-21 13:26:17 <==      Total: 1
+11-21 13:26:26 ==>  Preparing: update qrcheck set status = ?, name = ?,pwd = ? where uuid = ? 
+11-21 13:26:26 ==> Parameters: 1(Integer), Xiaoming (String), 123(String), 20171121132614974F0B10F57A0374EB88020FA3D6241054D(String)
+11-21 13:26:26 <==    Updates: 1
+11-21 13:26:27 ==>  Preparing: select * from qrcheck where uuid = ? 
+11-21 13:26:27 ==> Parameters: 20171121132614974F0B10F57A0374EB88020FA3D6241054D(String)
+11-21 13:26:27 <==      Total: 1
+11-21 13:26:27 ==>  Preparing: SELECT COUNT(1) FROM shoppingcar WHERE uid = ?; 
+11-21 13:26:27 ==> Parameters: 1(Integer)
+11-21 13:26:27 <==      Total: 1
+11-21 13:26:27 ==>  Preparing: delete from qrcheck where uuid = ? 
+11-21 13:26:27 ==> Parameters: 20171121132614974F0B10F57A0374EB88020FA3D6241054D(String)
+11-21 13:26:27 <==    Updates: 1
+11-21 13:26:29 ==>  Preparing: select * from qrcheck where uuid = ? 
+11-21 13:26:29 ==> Parameters: 20171121132614974F0B10F57A0374EB88020FA3D6241054D(String)
+11-21 13:26:29 <==      Total: 0
+11-21 13:27:28 ==>  Preparing: SELECT * FROM users WHERE uname = ? and upwd = ? 
+11-21 13:27:28 ==> Parameters: xiaoming(String), 123(String)
+11-21 13:27:28 <==    Columns: uid, uname, upwd, phone, city, regDate, idCard, realName, age, email, sex, avatar
+11-21 13:27:28 <==        Row: 1, xiaoming, 123, 18899119292, 西安, 2017-11-11, null, 小明, 22, null, 男, <<BLOB>>
+11-21 13:27:28 <==      Total: 1
+11-21 13:27:28 ==>  Preparing: SELECT COUNT(1) FROM shoppingcar WHERE uid = ?; 
+11-21 13:27:28 ==> Parameters: 1(Integer)
+11-21 13:27:28 <==      Total: 1
+11-21 13:29:10 ==>  Preparing: insert into qrcheck ( uuid, status ) values ( ?, ? ) 
+11-21 13:29:10 ==> Parameters: 20171121132910464922FB0A1A27844748617907C9D74FAEC(String), 0(Integer)
+11-21 13:29:10 <==    Updates: 1
+11-21 13:29:12 ==>  Preparing: select * from qrcheck where uuid = ? 
+11-21 13:29:12 ==> Parameters: 20171121132910464922FB0A1A27844748617907C9D74FAEC(String)
+11-21 13:29:12 <==      Total: 1
+11-21 13:29:20 ==>  Preparing: update qrcheck set status = ?, name = ?,pwd = ? where uuid = ? 
+11-21 13:29:20 ==> Parameters: 1(Integer), Xiaoming (String), 123(String), 20171121132910464922FB0A1A27844748617907C9D74FAEC(String)
+11-21 13:29:20 <==    Updates: 1
+11-21 13:29:20 ==>  Preparing: select * from qrcheck where uuid = ? 
+11-21 13:29:20 ==> Parameters: 20171121132910464922FB0A1A27844748617907C9D74FAEC(String)
+11-21 13:29:20 <==      Total: 1
+11-21 13:29:20 ==>  Preparing: SELECT COUNT(1) FROM shoppingcar WHERE uid = ?; 
+11-21 13:29:20 ==> Parameters: 1(Integer)
+11-21 13:29:20 <==      Total: 1
+11-21 13:29:20 ==>  Preparing: delete from qrcheck where uuid = ? 
+11-21 13:29:20 ==> Parameters: 20171121132910464922FB0A1A27844748617907C9D74FAEC(String)
+11-21 13:29:20 <==    Updates: 1
+11-21 13:29:22 ==>  Preparing: select * from qrcheck where uuid = ? 
+11-21 13:29:22 ==> Parameters: 20171121132910464922FB0A1A27844748617907C9D74FAEC(String)
+11-21 13:29:22 <==      Total: 0
+11-21 13:32:14 ==>  Preparing: insert into qrcheck ( uuid, status ) values ( ?, ? ) 
+11-21 13:32:14 ==> Parameters: 2017112113321484613BFA168EFDD416A91DA3543BBFD6024(String), 0(Integer)
+11-21 13:32:14 <==    Updates: 1
+11-21 13:32:25 ==>  Preparing: update qrcheck set status = ?, name = ?,pwd = ? where uuid = ? 
+11-21 13:32:25 ==> Parameters: 1(Integer), Xiaoming (String), 123(String), 2017112113321484613BFA168EFDD416A91DA3543BBFD6024(String)
+11-21 13:32:25 <==    Updates: 1
+11-21 13:33:32 ==>  Preparing: insert into qrcheck ( uuid, status ) values ( ?, ? ) 
+11-21 13:33:32 ==> Parameters: 20171121133332898D4A8B6AA458D4525BAA247CF5FCC0020(String), 0(Integer)
+11-21 13:33:32 <==    Updates: 1
+11-21 13:33:34 ==>  Preparing: select * from qrcheck where uuid = ? 
+11-21 13:33:34 ==> Parameters: 20171121133332898D4A8B6AA458D4525BAA247CF5FCC0020(String)
+11-21 13:33:34 <==      Total: 1
+11-21 13:33:42 ==>  Preparing: update qrcheck set status = ?, name = ?,pwd = ? where uuid = ? 
+11-21 13:33:42 ==> Parameters: 1(Integer), Xiaoming (String), 123(String), 20171121133332898D4A8B6AA458D4525BAA247CF5FCC0020(String)
+11-21 13:33:42 <==    Updates: 1
+11-21 13:33:42 ==>  Preparing: select * from qrcheck where uuid = ? 
+11-21 13:33:42 ==> Parameters: 20171121133332898D4A8B6AA458D4525BAA247CF5FCC0020(String)
+11-21 13:33:42 <==      Total: 1
+11-21 13:33:42 ==>  Preparing: SELECT COUNT(1) FROM shoppingcar WHERE uid = ?; 
+11-21 13:33:42 ==> Parameters: 1(Integer)
+11-21 13:33:42 <==      Total: 1
+11-21 13:33:43 ==>  Preparing: delete from qrcheck where uuid = ? 
+11-21 13:33:43 ==> Parameters: 20171121133332898D4A8B6AA458D4525BAA247CF5FCC0020(String)
+11-21 13:33:43 <==    Updates: 1
+11-21 13:33:44 ==>  Preparing: select * from qrcheck where uuid = ? 
+11-21 13:33:45 ==> Parameters: 20171121133332898D4A8B6AA458D4525BAA247CF5FCC0020(String)
+11-21 13:33:45 <==      Total: 0
+11-21 13:36:17 Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+11-21 13:36:18 PooledDataSource forcefully closed/removed all connections.
+11-21 13:36:18 PooledDataSource forcefully closed/removed all connections.
+11-21 13:36:18 PooledDataSource forcefully closed/removed all connections.
+11-21 13:36:18 PooledDataSource forcefully closed/removed all connections.
+11-21 13:36:26 Opening JDBC Connection
+11-21 13:36:26 Created connection 1554585564.
+11-21 13:36:26 Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@5ca917dc]
+11-21 13:36:26 ==>  Preparing: insert into qrcheck ( uuid, status ) values ( ?, ? ) 
+11-21 13:36:26 ==> Parameters: 2017112113362652B139905F1D814F3FAB291651A7DA7AEC(String), 0(Integer)
+11-21 13:36:26 <==    Updates: 1
+11-21 13:36:28 ==>  Preparing: select * from qrcheck where uuid = ? 
+11-21 13:36:28 ==> Parameters: 2017112113362652B139905F1D814F3FAB291651A7DA7AEC(String)
+11-21 13:36:28 <==      Total: 1
+11-21 13:36:37 Opening JDBC Connection
+11-21 13:36:37 Created connection 659586564.
+11-21 13:36:37 Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@27507e04]
+11-21 13:36:37 ==>  Preparing: SELECT * FROM users WHERE uname = ? and upwd = ? 
+11-21 13:36:37 ==> Parameters: Xiaoming (String), 123(String)
+11-21 13:36:37 <==    Columns: uid, uname, upwd, phone, city, regDate, idCard, realName, age, email, sex, avatar
+11-21 13:36:37 <==        Row: 1, xiaoming, 123, 18899119292, 西安, 2017-11-11, null, 小明, 22, null, 男, <<BLOB>>
+11-21 13:36:37 <==      Total: 1
+11-21 13:36:37 ==>  Preparing: update qrcheck set status = ?, name = ?,pwd = ? where uuid = ? 
+11-21 13:36:37 ==> Parameters: 1(Integer), Xiaoming (String), 123(String), 2017112113362652B139905F1D814F3FAB291651A7DA7AEC(String)
+11-21 13:36:37 <==    Updates: 1
+11-21 13:36:38 ==>  Preparing: select * from qrcheck where uuid = ? 
+11-21 13:36:38 ==> Parameters: 2017112113362652B139905F1D814F3FAB291651A7DA7AEC(String)
+11-21 13:36:38 <==      Total: 1
+11-21 13:36:38 Opening JDBC Connection
+11-21 13:36:38 Created connection 312519888.
+11-21 13:36:38 Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@12a0acd0]
+11-21 13:36:38 ==>  Preparing: SELECT COUNT(1) FROM shoppingcar WHERE uid = ?; 
+11-21 13:36:38 ==> Parameters: 1(Integer)
+11-21 13:36:38 <==      Total: 1
+11-21 13:36:38 ==>  Preparing: delete from qrcheck where uuid = ? 
+11-21 13:36:38 ==> Parameters: 2017112113362652B139905F1D814F3FAB291651A7DA7AEC(String)
+11-21 13:36:38 <==    Updates: 1
+11-21 13:36:40 ==>  Preparing: select * from qrcheck where uuid = ? 
+11-21 13:36:40 ==> Parameters: 2017112113362652B139905F1D814F3FAB291651A7DA7AEC(String)
+11-21 13:36:40 <==      Total: 0
+11-21 13:40:25 ==>  Preparing: insert into qrcheck ( uuid, status ) values ( ?, ? ) 
+11-21 13:40:25 ==> Parameters: 20171121134025659F947884B31194E9F80B9B7006A75C9DD(String), 0(Integer)
+11-21 13:40:25 <==    Updates: 1
+11-21 13:40:27 ==>  Preparing: select * from qrcheck where uuid = ? 
+11-21 13:40:27 ==> Parameters: 20171121134025659F947884B31194E9F80B9B7006A75C9DD(String)
+11-21 13:40:27 <==      Total: 1
+11-21 13:41:24 ==>  Preparing: insert into qrcheck ( uuid, status ) values ( ?, ? ) 
+11-21 13:41:24 ==> Parameters: 201711211341247967B5D2512298E4C5C97F049C5AE57CC82(String), 0(Integer)
+11-21 13:41:24 <==    Updates: 1
+11-21 13:41:26 ==>  Preparing: select * from qrcheck where uuid = ? 
+11-21 13:41:26 ==> Parameters: 201711211341247967B5D2512298E4C5C97F049C5AE57CC82(String)
+11-21 13:41:26 <==      Total: 1
+11-21 13:41:37 ==>  Preparing: update qrcheck set status = ?, name = ?,pwd = ? where uuid = ? 
+11-21 13:41:37 ==> Parameters: 1(Integer), Xiaoming (String), 123(String), 201711211341247967B5D2512298E4C5C97F049C5AE57CC82(String)
+11-21 13:41:37 <==    Updates: 1
+11-21 13:41:38 ==>  Preparing: select * from qrcheck where uuid = ? 
+11-21 13:41:38 ==> Parameters: 201711211341247967B5D2512298E4C5C97F049C5AE57CC82(String)
+11-21 13:41:38 <==      Total: 1
+11-21 13:41:38 ==>  Preparing: SELECT COUNT(1) FROM shoppingcar WHERE uid = ?; 
+11-21 13:41:38 ==> Parameters: 1(Integer)
+11-21 13:41:38 <==      Total: 1
+11-21 13:41:38 ==>  Preparing: delete from qrcheck where uuid = ? 
+11-21 13:41:38 ==> Parameters: 201711211341247967B5D2512298E4C5C97F049C5AE57CC82(String)
+11-21 13:41:38 <==    Updates: 1
+11-21 13:41:40 ==>  Preparing: select * from qrcheck where uuid = ? 
+11-21 13:41:40 ==> Parameters: 201711211341247967B5D2512298E4C5C97F049C5AE57CC82(String)
+11-21 13:41:40 <==      Total: 0
+11-21 13:42:55 ==>  Preparing: insert into qrcheck ( uuid, status ) values ( ?, ? ) 
+11-21 13:42:55 ==> Parameters: 201711211342554105563E69E852547149415A8A7A4208977(String), 0(Integer)
+11-21 13:42:55 <==    Updates: 1
+11-21 13:42:57 ==>  Preparing: select * from qrcheck where uuid = ? 
+11-21 13:42:57 ==> Parameters: 201711211342554105563E69E852547149415A8A7A4208977(String)
+11-21 13:42:57 <==      Total: 1
+11-21 13:44:48 ==>  Preparing: insert into qrcheck ( uuid, status ) values ( ?, ? ) 
+11-21 13:44:48 ==> Parameters: 201711211344489468D448803E9764192BCEC4CDD570065A5(String), 0(Integer)
+11-21 13:44:48 <==    Updates: 1
+11-21 13:44:51 ==>  Preparing: select * from qrcheck where uuid = ? 
+11-21 13:44:51 ==> Parameters: 201711211344489468D448803E9764192BCEC4CDD570065A5(String)
+11-21 13:44:51 <==      Total: 1
+11-21 13:45:10 ==>  Preparing: update qrcheck set status = ?, name = ?,pwd = ? where uuid = ? 
+11-21 13:45:10 ==> Parameters: 1(Integer), Xiaoming (String), 123(String), 201711211344489468D448803E9764192BCEC4CDD570065A5(String)
+11-21 13:45:10 <==    Updates: 1
+11-21 13:45:13 ==>  Preparing: select * from qrcheck where uuid = ? 
+11-21 13:45:13 ==> Parameters: 201711211344489468D448803E9764192BCEC4CDD570065A5(String)
+11-21 13:45:13 <==      Total: 1
+11-21 13:45:13 ==>  Preparing: SELECT COUNT(1) FROM shoppingcar WHERE uid = ?; 
+11-21 13:45:13 ==> Parameters: 1(Integer)
+11-21 13:45:13 <==      Total: 1
+11-21 13:45:13 ==>  Preparing: delete from qrcheck where uuid = ? 
+11-21 13:45:13 ==> Parameters: 201711211344489468D448803E9764192BCEC4CDD570065A5(String)
+11-21 13:45:13 <==    Updates: 1
+11-21 13:46:26 ==>  Preparing: insert into qrcheck ( uuid, status ) values ( ?, ? ) 
+11-21 13:46:26 ==> Parameters: 20171121134626537AEE02892BCB04A19B8A2FFBEE1C2F8E9(String), 0(Integer)
+11-21 13:46:26 <==    Updates: 1
+11-21 13:46:28 ==>  Preparing: select * from qrcheck where uuid = ? 
+11-21 13:46:28 ==> Parameters: 20171121134626537AEE02892BCB04A19B8A2FFBEE1C2F8E9(String)
+11-21 13:46:28 <==      Total: 1
+11-21 13:46:36 ==>  Preparing: update qrcheck set status = ?, name = ?,pwd = ? where uuid = ? 
+11-21 13:46:37 ==> Parameters: 1(Integer), Xiaoming (String), 123(String), 20171121134626537AEE02892BCB04A19B8A2FFBEE1C2F8E9(String)
+11-21 13:46:37 <==    Updates: 1
+11-21 13:46:38 ==>  Preparing: select * from qrcheck where uuid = ? 
+11-21 13:46:38 ==> Parameters: 20171121134626537AEE02892BCB04A19B8A2FFBEE1C2F8E9(String)
+11-21 13:46:38 <==      Total: 1
+11-21 13:46:38 ==>  Preparing: SELECT COUNT(1) FROM shoppingcar WHERE uid = ?; 
+11-21 13:46:38 ==> Parameters: 1(Integer)
+11-21 13:46:38 <==      Total: 1
+11-21 13:46:38 ==>  Preparing: delete from qrcheck where uuid = ? 
+11-21 13:46:38 ==> Parameters: 20171121134626537AEE02892BCB04A19B8A2FFBEE1C2F8E9(String)
+11-21 13:46:38 <==    Updates: 1
+11-21 13:54:10 ==>  Preparing: insert into qrcheck ( uuid, status ) values ( ?, ? ) 
+11-21 13:54:10 ==> Parameters: 20171121135410387704FFB62EBC04BB5B64B9D6E41E454E0(String), 0(Integer)
+11-21 13:54:10 <==    Updates: 1
+11-21 13:54:12 ==>  Preparing: insert into qrcheck ( uuid, status ) values ( ?, ? ) 
+11-21 13:54:12 ==> Parameters: 2017112113541225772996B47E84C4D7A865F375CB0B28689(String), 0(Integer)
+11-21 13:54:12 <==    Updates: 1
+11-21 13:54:17 ==>  Preparing: insert into qrcheck ( uuid, status ) values ( ?, ? ) 
+11-21 13:54:17 ==> Parameters: 2017112113541753684733C296DAC4EDA868FF95390ABE479(String), 0(Integer)
+11-21 13:54:17 <==    Updates: 1
+11-21 13:54:19 ==>  Preparing: select * from qrcheck where uuid = ? 
+11-21 13:54:19 ==> Parameters: 2017112113541753684733C296DAC4EDA868FF95390ABE479(String)
+11-21 13:54:19 <==      Total: 1
+11-21 13:54:27 ==>  Preparing: update qrcheck set status = ?, name = ?,pwd = ? where uuid = ? 
+11-21 13:54:27 ==> Parameters: 1(Integer), Xiaoming (String), 123(String), 2017112113541753684733C296DAC4EDA868FF95390ABE479(String)
+11-21 13:54:27 <==    Updates: 1
+11-21 13:54:27 ==>  Preparing: select * from qrcheck where uuid = ? 
+11-21 13:54:27 ==> Parameters: 2017112113541753684733C296DAC4EDA868FF95390ABE479(String)
+11-21 13:54:27 <==      Total: 1
+11-21 13:54:27 ==>  Preparing: SELECT COUNT(1) FROM shoppingcar WHERE uid = ?; 
+11-21 13:54:27 ==> Parameters: 1(Integer)
+11-21 13:54:27 <==      Total: 1
+11-21 13:54:27 ==>  Preparing: delete from qrcheck where uuid = ? 
+11-21 13:54:27 ==> Parameters: 2017112113541753684733C296DAC4EDA868FF95390ABE479(String)
+11-21 13:54:27 <==    Updates: 1
+11-21 13:54:37 ==>  Preparing: insert into qrcheck ( uuid, status ) values ( ?, ? ) 
+11-21 13:54:37 ==> Parameters: 20171121135437744420B9C0080884184BEB4B0A87F3A5B71(String), 0(Integer)
+11-21 13:54:37 <==    Updates: 1
+11-21 13:54:42 ==>  Preparing: insert into qrcheck ( uuid, status ) values ( ?, ? ) 
+11-21 13:54:42 ==> Parameters: 20171121135442537F8A0E8FA3BC541E1ACD01734C39C57AD(String), 0(Integer)
+11-21 13:54:42 <==    Updates: 1
+11-21 13:55:17 ==>  Preparing: insert into qrcheck ( uuid, status ) values ( ?, ? ) 
+11-21 13:55:17 ==> Parameters: 201711211355177815E887D6D23794EBD8171E7737E2A06D6(String), 0(Integer)
+11-21 13:55:17 <==    Updates: 1
+11-21 13:55:21 ==>  Preparing: insert into qrcheck ( uuid, status ) values ( ?, ? ) 
+11-21 13:55:21 ==> Parameters: 20171121135521211D55C93719F724B16811BC0D87FEC2A17(String), 0(Integer)
+11-21 13:55:21 <==    Updates: 1
+11-21 13:56:32 Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+11-21 13:56:32 PooledDataSource forcefully closed/removed all connections.
+11-21 13:56:32 PooledDataSource forcefully closed/removed all connections.
+11-21 13:56:32 PooledDataSource forcefully closed/removed all connections.
+11-21 13:56:32 PooledDataSource forcefully closed/removed all connections.
+11-21 13:56:33 Opening JDBC Connection
+11-21 13:56:33 Created connection 1875395948.
+11-21 13:56:33 Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@6fc8456c]
+11-21 13:56:33 ==>  Preparing: insert into qrcheck ( uuid, status ) values ( ?, ? ) 
+11-21 13:56:33 ==> Parameters: 201711211356325661BEADEAF0AD349EA97E8FDE2B38866B0(String), 0(Integer)
+11-21 13:56:33 <==    Updates: 1
+11-21 13:56:34 ==>  Preparing: select * from qrcheck where uuid = ? 
+11-21 13:56:34 ==> Parameters: 201711211356325661BEADEAF0AD349EA97E8FDE2B38866B0(String)
+11-21 13:56:34 <==      Total: 1
+11-21 13:56:41 Opening JDBC Connection
+11-21 13:56:41 Created connection 1936586943.
+11-21 13:56:41 Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@736df8bf]
+11-21 13:56:41 ==>  Preparing: SELECT * FROM users WHERE uname = ? and upwd = ? 
+11-21 13:56:41 ==> Parameters: Xiaoming (String), 123(String)
+11-21 13:56:41 <==    Columns: uid, uname, upwd, phone, city, regDate, idCard, realName, age, email, sex, avatar
+11-21 13:56:41 <==        Row: 1, xiaoming, 123, 18899119292, 西安, 2017-11-11, null, 小明, 22, null, 男, <<BLOB>>
+11-21 13:56:41 <==      Total: 1
+11-21 13:56:41 ==>  Preparing: update qrcheck set status = ?, name = ?,pwd = ? where uuid = ? 
+11-21 13:56:41 ==> Parameters: 1(Integer), Xiaoming (String), 123(String), 201711211356325661BEADEAF0AD349EA97E8FDE2B38866B0(String)
+11-21 13:56:41 <==    Updates: 1
+11-21 13:56:42 ==>  Preparing: select * from qrcheck where uuid = ? 
+11-21 13:56:42 ==> Parameters: 201711211356325661BEADEAF0AD349EA97E8FDE2B38866B0(String)
+11-21 13:56:42 <==      Total: 1
+11-21 13:56:42 Opening JDBC Connection
+11-21 13:56:42 Created connection 720362422.
+11-21 13:56:42 Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@2aefdbb6]
+11-21 13:56:42 ==>  Preparing: SELECT COUNT(1) FROM shoppingcar WHERE uid = ?; 
+11-21 13:56:42 ==> Parameters: 1(Integer)
+11-21 13:56:42 <==      Total: 1
+11-21 13:56:43 ==>  Preparing: delete from qrcheck where uuid = ? 
+11-21 13:56:43 ==> Parameters: 201711211356325661BEADEAF0AD349EA97E8FDE2B38866B0(String)
+11-21 13:56:43 <==    Updates: 1
+11-21 13:57:03 ==>  Preparing: insert into qrcheck ( uuid, status ) values ( ?, ? ) 
+11-21 13:57:03 ==> Parameters: 201711211357033796BAF7AAE726D44E6AAAECC83EBDB9ED8(String), 0(Integer)
+11-21 13:57:03 <==    Updates: 1
+11-21 13:57:05 ==>  Preparing: select * from qrcheck where uuid = ? 
+11-21 13:57:05 ==> Parameters: 201711211357033796BAF7AAE726D44E6AAAECC83EBDB9ED8(String)
+11-21 13:57:05 <==      Total: 1
+11-21 13:57:17 ==>  Preparing: update qrcheck set status = ?, name = ?,pwd = ? where uuid = ? 
+11-21 13:57:17 ==> Parameters: 1(Integer), Xiaoming (String), 123(String), 201711211357033796BAF7AAE726D44E6AAAECC83EBDB9ED8(String)
+11-21 13:57:17 <==    Updates: 1
+11-21 13:57:17 ==>  Preparing: select * from qrcheck where uuid = ? 
+11-21 13:57:17 ==> Parameters: 201711211357033796BAF7AAE726D44E6AAAECC83EBDB9ED8(String)
+11-21 13:57:17 <==      Total: 1
+11-21 13:57:17 ==>  Preparing: SELECT COUNT(1) FROM shoppingcar WHERE uid = ?; 
+11-21 13:57:17 ==> Parameters: 1(Integer)
+11-21 13:57:17 <==      Total: 1
+11-21 13:57:17 ==>  Preparing: delete from qrcheck where uuid = ? 
+11-21 13:57:17 ==> Parameters: 201711211357033796BAF7AAE726D44E6AAAECC83EBDB9ED8(String)
+11-21 13:57:17 <==    Updates: 1
+11-21 14:00:13 ==>  Preparing: insert into qrcheck ( uuid, status ) values ( ?, ? ) 
+11-21 14:00:13 ==> Parameters: 20171121140013390AB992FBC147E403DAC6872C8CAC8DB88(String), 0(Integer)
+11-21 14:00:13 <==    Updates: 1
+11-21 14:00:15 ==>  Preparing: select * from qrcheck where uuid = ? 
+11-21 14:00:15 ==> Parameters: 20171121140013390AB992FBC147E403DAC6872C8CAC8DB88(String)
+11-21 14:00:15 <==      Total: 1
+11-21 14:00:23 ==>  Preparing: update qrcheck set status = ?, name = ?,pwd = ? where uuid = ? 
+11-21 14:00:23 ==> Parameters: 1(Integer), Xiaoming (String), 123(String), 20171121140013390AB992FBC147E403DAC6872C8CAC8DB88(String)
+11-21 14:00:23 <==    Updates: 1
+11-21 14:00:23 ==>  Preparing: select * from qrcheck where uuid = ? 
+11-21 14:00:23 ==> Parameters: 20171121140013390AB992FBC147E403DAC6872C8CAC8DB88(String)
+11-21 14:00:23 <==      Total: 1
+11-21 14:00:23 ==>  Preparing: SELECT COUNT(1) FROM shoppingcar WHERE uid = ?; 
+11-21 14:00:23 ==> Parameters: 1(Integer)
+11-21 14:00:23 <==      Total: 1
+11-21 14:00:23 ==>  Preparing: delete from qrcheck where uuid = ? 
+11-21 14:00:23 ==> Parameters: 20171121140013390AB992FBC147E403DAC6872C8CAC8DB88(String)
+11-21 14:00:23 <==    Updates: 1
