@@ -40,14 +40,8 @@ import com.google.zxing.common.HybridBinarizer;
 public class QrCodeTest {
 
 	public static void main(String[] args) {
-	//	creatQRQode();
-		try {
-			
-			System.out.println(InetAddress.getLoopbackAddress().getHostAddress());
-			System.out.println(InetAddress.getLocalHost().getHostAddress());
-		} catch (UnknownHostException e) {
-			e.printStackTrace();
-		}  
+		creatQRQode();
+		
 //		testDecode();
 //		System.out.println(getUUID());
 //		System.out.println(getUUID());

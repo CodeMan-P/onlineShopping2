@@ -195,7 +195,7 @@
 		});
 		
 		
-		$("#QRimg").parent().append("<img id='blur' src='img/0009021160259732_b.jpg' style='z-index:9999; position:relative; width:20%; height:50%;left:-160px;top:-110px'/>");
+		$("#QRimg").parent().append("<img id='blur' src='img/0009021160259732_b.jpg' style='z-index:9999; position:relative; width:30%; height:30%;top:-180px'/>");
 		$("#blur").hide();
 	});
 	var interval;
@@ -747,8 +747,8 @@
                 </ol>
            </form>
      </div>
-       <div class="theme-popbod dform" id="qrdiv" name="QRcode">
-	<img src="#" onclick="doQRcheck()" alt="二维码生成失败！" id="QRimg" style=" position:relative; top:-50px"/>
+       <div id="qrdiv" name="QRcode" style="text-align: center;position:relative;width: 276px;height: 276px;left:180px;float: left;">
+	<img src="#" onclick="doQRcheck()" alt="二维码生成失败！" id="QRimg" style="position:static;width: 276px;height: 276px;"/>
       <input type="hidden" id="UUID">
       </div>
     <input style="position:relative; float:right " class="btn btn-primary" type="button" id="QRshow" value="二维码登录" />                       
