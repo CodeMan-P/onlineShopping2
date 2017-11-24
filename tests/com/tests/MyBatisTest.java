@@ -54,7 +54,7 @@ public class MyBatisTest {
 		ObjectMapper mapper = new ObjectMapper();
 		SerializerProvider sp = mapper.getSerializerProvider();
 		// sp.setAttribute(list2, te);
-
+		
 		sp.setNullValueSerializer(new JsonSerializer<Object>() {
 			@Override
 			public void serialize(Object arg0, JsonGenerator arg1, SerializerProvider arg2)

@@ -5,6 +5,7 @@ import java.io.IOException;
 import java.util.LinkedList;
 
 import com.fasterxml.jackson.core.JsonParseException;
+import com.fasterxml.jackson.core.JsonParser.Feature;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.JsonMappingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -28,6 +29,7 @@ public class sort_content_data {
 				+ "sort_content_data.json";
 		System.out.println(path);
 		ObjectMapper mapper = new ObjectMapper();
+		mapper.configure(Feature.ALLOW_UNQUOTED_FIELD_NAMES, true); 
 		String json = "";
 		File file = new File(path);
 		File file2 = new File(path2);

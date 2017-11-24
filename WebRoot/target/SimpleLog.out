@@ -12087,3 +12087,414 @@
 11-21 21:16:38 ==>  Preparing: delete from qrcheck where uuid = ? 
 11-21 21:16:38 ==> Parameters: 2017112121161962805A050191A9840628FB4E0A4BD83F0D7(String)
 11-21 21:16:38 <==    Updates: 1
+11-22 09:01:51 Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+11-22 09:01:51 PooledDataSource forcefully closed/removed all connections.
+11-22 09:01:51 PooledDataSource forcefully closed/removed all connections.
+11-22 09:01:51 PooledDataSource forcefully closed/removed all connections.
+11-22 09:01:51 PooledDataSource forcefully closed/removed all connections.
+11-22 09:01:52 Opening JDBC Connection
+11-22 09:01:52 Created connection 1204881205.
+11-22 09:01:52 Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@47d10735]
+11-22 09:01:52 ==>  Preparing: insert into qrcheck ( uuid, status ) values ( ?, ? ) 
+11-22 09:01:52 ==> Parameters: 20171122090151439AC7CC2A21BEC45A9BC6B8D2EB0FBDFB1(String), 0(Integer)
+11-22 09:01:52 <==    Updates: 1
+11-22 09:01:53 ==>  Preparing: select * from qrcheck where uuid = ? 
+11-22 09:01:53 ==> Parameters: 20171122090151439AC7CC2A21BEC45A9BC6B8D2EB0FBDFB1(String)
+11-22 09:01:53 <==      Total: 1
+11-22 09:01:56 ==>  Preparing: update qrcheck set status = ? where uuid = ? 
+11-22 09:01:56 ==> Parameters: 2(Integer), 20171122090151439AC7CC2A21BEC45A9BC6B8D2EB0FBDFB1(String)
+11-22 09:01:56 <==    Updates: 1
+11-22 09:01:57 ==>  Preparing: select * from qrcheck where uuid = ? 
+11-22 09:01:57 ==> Parameters: 20171122090151439AC7CC2A21BEC45A9BC6B8D2EB0FBDFB1(String)
+11-22 09:01:57 <==      Total: 1
+11-22 09:02:10 Opening JDBC Connection
+11-22 09:02:10 Created connection 1966955141.
+11-22 09:02:10 Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@753d5a85]
+11-22 09:02:10 ==>  Preparing: SELECT * FROM users WHERE uname = ? and upwd = ? 
+11-22 09:02:10 ==> Parameters: Xiaoming (String), 123(String)
+11-22 09:02:10 <==    Columns: uid, uname, upwd, phone, city, regDate, idCard, realName, age, email, sex, avatar
+11-22 09:02:10 <==        Row: 1, xiaoming, 123, 18899119292, 西安, 2017-11-11, null, 小明, 22, null, 男, <<BLOB>>
+11-22 09:02:10 <==      Total: 1
+11-22 09:02:10 ==>  Preparing: update qrcheck set status = ?, name = ?,pwd = ? where uuid = ? 
+11-22 09:02:10 ==> Parameters: 1(Integer), Xiaoming (String), 123(String), 20171122090151439AC7CC2A21BEC45A9BC6B8D2EB0FBDFB1(String)
+11-22 09:02:10 <==    Updates: 1
+11-22 09:02:11 ==>  Preparing: select * from qrcheck where uuid = ? 
+11-22 09:02:11 ==> Parameters: 20171122090151439AC7CC2A21BEC45A9BC6B8D2EB0FBDFB1(String)
+11-22 09:02:11 <==      Total: 1
+11-22 09:02:11 Opening JDBC Connection
+11-22 09:02:11 Created connection 686041073.
+11-22 09:02:11 Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@28e427f1]
+11-22 09:02:11 ==>  Preparing: SELECT COUNT(1) FROM shoppingcar WHERE uid = ?; 
+11-22 09:02:11 ==> Parameters: 1(Integer)
+11-22 09:02:11 <==      Total: 1
+11-22 09:02:11 ==>  Preparing: delete from qrcheck where uuid = ? 
+11-22 09:02:11 ==> Parameters: 20171122090151439AC7CC2A21BEC45A9BC6B8D2EB0FBDFB1(String)
+11-22 09:02:11 <==    Updates: 1
+11-22 09:04:05 ==>  Preparing: insert into qrcheck ( uuid, status ) values ( ?, ? ) 
+11-22 09:04:05 ==> Parameters: 20171122090405727C2444704658548AD8481A10F7675340B(String), 0(Integer)
+11-22 09:04:05 <==    Updates: 1
+11-22 09:04:07 ==>  Preparing: insert into qrcheck ( uuid, status ) values ( ?, ? ) 
+11-22 09:04:07 ==> Parameters: 2017112209040756142C3DADE4F814CC1B229D4E188EFE600(String), 0(Integer)
+11-22 09:04:07 <==    Updates: 1
+11-22 09:04:08 ==>  Preparing: insert into qrcheck ( uuid, status ) values ( ?, ? ) 
+11-22 09:04:08 ==> Parameters: 201711220904084657DBC17C2E4534494A65B34536EF83B83(String), 0(Integer)
+11-22 09:04:08 <==    Updates: 1
+11-22 09:04:09 ==>  Preparing: insert into qrcheck ( uuid, status ) values ( ?, ? ) 
+11-22 09:04:09 ==> Parameters: 20171122090409241DD075F70ADFE463FA75A7229D389676B(String), 0(Integer)
+11-22 09:04:09 <==    Updates: 1
+11-22 09:04:10 ==>  Preparing: insert into qrcheck ( uuid, status ) values ( ?, ? ) 
+11-22 09:04:10 ==> Parameters: 20171122090410143E0810DE041C64E3DAE8BA4F4ED53B752(String), 0(Integer)
+11-22 09:04:10 <==    Updates: 1
+11-22 09:04:10 ==>  Preparing: insert into qrcheck ( uuid, status ) values ( ?, ? ) 
+11-22 09:04:10 ==> Parameters: 20171122090410833B450B49D100B458BB309539B9D6EA0AF(String), 0(Integer)
+11-22 09:04:10 <==    Updates: 1
+11-22 09:04:12 ==>  Preparing: select * from qrcheck where uuid = ? 
+11-22 09:04:12 ==> Parameters: 20171122090410833B450B49D100B458BB309539B9D6EA0AF(String)
+11-22 09:04:12 <==      Total: 1
+11-22 09:04:13 ==>  Preparing: insert into qrcheck ( uuid, status ) values ( ?, ? ) 
+11-22 09:04:13 ==> Parameters: 2017112209041319777277F6F805546FFA000CA4129D2459E(String), 0(Integer)
+11-22 09:04:13 <==    Updates: 1
+11-22 09:04:14 ==>  Preparing: insert into qrcheck ( uuid, status ) values ( ?, ? ) 
+11-22 09:04:14 ==> Parameters: 20171122090414771C87D77AFBB5C41CE96762757D90ED217(String), 0(Integer)
+11-22 09:04:14 <==    Updates: 1
+11-22 09:04:16 ==>  Preparing: insert into qrcheck ( uuid, status ) values ( ?, ? ) 
+11-22 09:04:16 ==> Parameters: 201711220904162391825D77777FC48D69D64615EF0A84E53(String), 0(Integer)
+11-22 09:04:16 <==    Updates: 1
+11-22 09:04:18 ==>  Preparing: select * from qrcheck where uuid = ? 
+11-22 09:04:18 ==> Parameters: 201711220904162391825D77777FC48D69D64615EF0A84E53(String)
+11-22 09:04:18 <==      Total: 1
+11-22 09:04:20 ==>  Preparing: insert into qrcheck ( uuid, status ) values ( ?, ? ) 
+11-22 09:04:20 ==> Parameters: 201711220904202590E11479843EB4A3595EB164681FCB3A0(String), 0(Integer)
+11-22 09:04:20 <==    Updates: 1
+11-22 09:04:22 ==>  Preparing: select * from qrcheck where uuid = ? 
+11-22 09:04:22 ==> Parameters: 201711220904202590E11479843EB4A3595EB164681FCB3A0(String)
+11-22 09:04:22 <==      Total: 1
+11-22 09:04:23 ==>  Preparing: insert into qrcheck ( uuid, status ) values ( ?, ? ) 
+11-22 09:04:23 ==> Parameters: 2017112209042352334AE60789EE442BC9B50BA2D05FDF860(String), 0(Integer)
+11-22 09:04:23 <==    Updates: 1
+11-22 09:04:25 ==>  Preparing: select * from qrcheck where uuid = ? 
+11-22 09:04:25 ==> Parameters: 2017112209042352334AE60789EE442BC9B50BA2D05FDF860(String)
+11-22 09:04:25 <==      Total: 1
+11-22 09:08:58 ==>  Preparing: insert into qrcheck ( uuid, status ) values ( ?, ? ) 
+11-22 09:08:58 ==> Parameters: 20171122090858253A2ABD7A12E9A4234965211724D58A462(String), 0(Integer)
+11-22 09:08:58 <==    Updates: 1
+11-23 15:39:58 Retrieving column information for table "goods"
+11-23 15:39:58 Found column "gid", data type 4, in table "shop..goods"
+11-23 15:39:58 Found column "gname", data type 12, in table "shop..goods"
+11-23 15:39:58 Found column "tid", data type 4, in table "shop..goods"
+11-23 15:39:58 Found column "price", data type 8, in table "shop..goods"
+11-23 15:39:58 Found column "descption", data type -1, in table "shop..goods"
+11-23 15:39:58 Found column "imgPath", data type -1, in table "shop..goods"
+11-23 15:39:58 Found column "filePath", data type -1, in table "shop..goods"
+11-23 15:39:58 Found column "stock", data type 4, in table "shop..goods"
+11-23 15:39:58 Found override for column "descption" in table "shop..goods"
+11-23 15:39:58 Found override for column "imgPath" in table "shop..goods"
+11-23 15:39:58 Found override for column "filePath" in table "shop..goods"
+11-23 15:39:58 Retrieving column information for table "goodsand"
+11-23 15:39:58 Found column "goodsId", data type 4, in table "shop..goodsand"
+11-23 15:39:58 Found column "text", data type 12, in table "shop..goodsand"
+11-23 15:39:58 Found column "imageUrl", data type -1, in table "shop..goodsand"
+11-23 15:39:58 Found column "spanSize", data type 4, in table "shop..goodsand"
+11-23 15:39:58 Found column "banners", data type -1, in table "shop..goodsand"
+11-23 15:39:58 Found column "descption", data type -1, in table "shop..goodsand"
+11-23 15:39:58 Found override for column "text" in table "shop..goodsand"
+11-23 15:39:58 Found override for column "imageUrl" in table "shop..goodsand"
+11-23 15:39:58 Found override for column "banners" in table "shop..goodsand"
+11-23 15:39:58 Found override for column "descption" in table "shop..goodsand"
+11-23 15:39:58 Retrieving column information for table "address"
+11-23 15:39:58 Found column "adressId", data type 4, in table "shop..address"
+11-23 15:39:58 Found column "uid", data type 4, in table "shop..address"
+11-23 15:39:58 Found column "address", data type -1, in table "shop..address"
+11-23 15:39:58 Found column "def", data type -7, in table "shop..address"
+11-23 15:39:58 Found column "aphone", data type 3, in table "shop..address"
+11-23 15:39:58 Found column "aname", data type 12, in table "shop..address"
+11-23 15:39:58 Found override for column "address" in table "shop..address"
+11-23 15:39:58 Found override for column "aphone" in table "shop..address"
+11-23 15:39:58 Retrieving column information for table "goodstype"
+11-23 15:39:58 Found column "tid", data type 4, in table "shop..goodstype"
+11-23 15:39:58 Found column "tname", data type 12, in table "shop..goodstype"
+11-23 15:39:58 Retrieving column information for table "orderform"
+11-23 15:39:58 Found column "oid", data type 3, in table "shop..orderform"
+11-23 15:39:58 Found column "gid", data type 4, in table "shop..orderform"
+11-23 15:39:58 Found column "gnum", data type 4, in table "shop..orderform"
+11-23 15:39:58 Found column "SubTotal", data type 8, in table "shop..orderform"
+11-23 15:39:58 Found column "descption", data type -1, in table "shop..orderform"
+11-23 15:39:58 Found column "uid", data type 4, in table "shop..orderform"
+11-23 15:39:58 Found override for column "oid" in table "shop..orderform"
+11-23 15:39:58 Found override for column "descption" in table "shop..orderform"
+11-23 15:39:58 Retrieving column information for table "orders"
+11-23 15:39:58 Found column "oid", data type 3, in table "shop..orders"
+11-23 15:39:58 Found column "uid", data type 4, in table "shop..orders"
+11-23 15:39:58 Found column "state", data type 12, in table "shop..orders"
+11-23 15:39:58 Found column "address", data type -1, in table "shop..orders"
+11-23 15:39:58 Found column "sum", data type 8, in table "shop..orders"
+11-23 15:39:58 Found override for column "oid" in table "shop..orders"
+11-23 15:39:58 Retrieving column information for table "shoppingcar"
+11-23 15:39:58 Found column "cid", data type 4, in table "shop..shoppingcar"
+11-23 15:39:58 Found column "addGoodsTime", data type 93, in table "shop..shoppingcar"
+11-23 15:39:58 Found column "uid", data type 4, in table "shop..shoppingcar"
+11-23 15:39:58 Found column "gid", data type 4, in table "shop..shoppingcar"
+11-23 15:39:58 Found column "gnum", data type 4, in table "shop..shoppingcar"
+11-23 15:39:58 Found column "descption", data type -1, in table "shop..shoppingcar"
+11-23 15:39:58 Found override for column "addGoodsTime" in table "shop..shoppingcar"
+11-23 15:39:58 Found override for column "descption" in table "shop..shoppingcar"
+11-23 15:39:58 Retrieving column information for table "users"
+11-23 15:39:58 Found column "uid", data type 4, in table "shop..users"
+11-23 15:39:58 Found column "uname", data type 12, in table "shop..users"
+11-23 15:39:58 Found column "upwd", data type 12, in table "shop..users"
+11-23 15:39:58 Found column "phone", data type 3, in table "shop..users"
+11-23 15:39:58 Found column "city", data type 12, in table "shop..users"
+11-23 15:39:58 Found column "regDate", data type 91, in table "shop..users"
+11-23 15:39:58 Found column "idCard", data type 12, in table "shop..users"
+11-23 15:39:58 Found column "realName", data type 12, in table "shop..users"
+11-23 15:39:58 Found column "age", data type 4, in table "shop..users"
+11-23 15:39:58 Found column "email", data type 12, in table "shop..users"
+11-23 15:39:58 Found column "sex", data type 12, in table "shop..users"
+11-23 15:39:58 Found column "avatar", data type -1, in table "shop..users"
+11-23 15:39:58 Found override for column "phone" in table "shop..users"
+11-23 15:39:58 Retrieving column information for table "qrcheck"
+11-23 15:39:58 Found column "uuid", data type -1, in table "shop..qrcheck"
+11-23 15:39:58 Found column "status", data type 4, in table "shop..qrcheck"
+11-23 15:39:58 Found column "name", data type 12, in table "shop..qrcheck"
+11-23 15:39:58 Found column "pwd", data type 12, in table "shop..qrcheck"
+11-23 15:39:58 Found override for column "uuid" in table "shop..qrcheck"
+11-23 15:42:11 Retrieving column information for table "goods"
+11-23 15:42:11 Found column "gid", data type 4, in table "shop..goods"
+11-23 15:42:11 Found column "gname", data type 12, in table "shop..goods"
+11-23 15:42:11 Found column "tid", data type 4, in table "shop..goods"
+11-23 15:42:11 Found column "price", data type 8, in table "shop..goods"
+11-23 15:42:11 Found column "descption", data type -1, in table "shop..goods"
+11-23 15:42:11 Found column "imgPath", data type -1, in table "shop..goods"
+11-23 15:42:11 Found column "filePath", data type -1, in table "shop..goods"
+11-23 15:42:11 Found column "stock", data type 4, in table "shop..goods"
+11-23 15:42:11 Found override for column "descption" in table "shop..goods"
+11-23 15:42:11 Found override for column "imgPath" in table "shop..goods"
+11-23 15:42:11 Found override for column "filePath" in table "shop..goods"
+11-23 15:42:11 Retrieving column information for table "goodsand"
+11-23 15:42:11 Found column "goodsId", data type 4, in table "shop..goodsand"
+11-23 15:42:11 Found column "text", data type 12, in table "shop..goodsand"
+11-23 15:42:11 Found column "imageUrl", data type -1, in table "shop..goodsand"
+11-23 15:42:11 Found column "spanSize", data type 4, in table "shop..goodsand"
+11-23 15:42:11 Found column "banners", data type -1, in table "shop..goodsand"
+11-23 15:42:11 Found column "descption", data type -1, in table "shop..goodsand"
+11-23 15:42:11 Found override for column "text" in table "shop..goodsand"
+11-23 15:42:11 Found override for column "imageUrl" in table "shop..goodsand"
+11-23 15:42:11 Found override for column "banners" in table "shop..goodsand"
+11-23 15:42:11 Found override for column "descption" in table "shop..goodsand"
+11-23 15:42:11 Retrieving column information for table "address"
+11-23 15:42:11 Found column "adressId", data type 4, in table "shop..address"
+11-23 15:42:11 Found column "uid", data type 4, in table "shop..address"
+11-23 15:42:11 Found column "address", data type -1, in table "shop..address"
+11-23 15:42:11 Found column "def", data type -7, in table "shop..address"
+11-23 15:42:11 Found column "aphone", data type 3, in table "shop..address"
+11-23 15:42:11 Found column "aname", data type 12, in table "shop..address"
+11-23 15:42:11 Found override for column "address" in table "shop..address"
+11-23 15:42:11 Found override for column "aphone" in table "shop..address"
+11-23 15:42:11 Retrieving column information for table "goodstype"
+11-23 15:42:11 Found column "tid", data type 4, in table "shop..goodstype"
+11-23 15:42:11 Found column "tname", data type 12, in table "shop..goodstype"
+11-23 15:42:11 Retrieving column information for table "orderform"
+11-23 15:42:11 Found column "oid", data type 3, in table "shop..orderform"
+11-23 15:42:11 Found column "gid", data type 4, in table "shop..orderform"
+11-23 15:42:11 Found column "gnum", data type 4, in table "shop..orderform"
+11-23 15:42:11 Found column "SubTotal", data type 8, in table "shop..orderform"
+11-23 15:42:11 Found column "descption", data type -1, in table "shop..orderform"
+11-23 15:42:11 Found column "uid", data type 4, in table "shop..orderform"
+11-23 15:42:11 Found override for column "oid" in table "shop..orderform"
+11-23 15:42:11 Found override for column "descption" in table "shop..orderform"
+11-23 15:42:11 Retrieving column information for table "orders"
+11-23 15:42:11 Found column "oid", data type 3, in table "shop..orders"
+11-23 15:42:11 Found column "uid", data type 4, in table "shop..orders"
+11-23 15:42:11 Found column "state", data type 12, in table "shop..orders"
+11-23 15:42:11 Found column "address", data type -1, in table "shop..orders"
+11-23 15:42:11 Found column "sum", data type 8, in table "shop..orders"
+11-23 15:42:11 Found override for column "oid" in table "shop..orders"
+11-23 15:42:11 Retrieving column information for table "shoppingcar"
+11-23 15:42:11 Found column "cid", data type 4, in table "shop..shoppingcar"
+11-23 15:42:11 Found column "addGoodsTime", data type 93, in table "shop..shoppingcar"
+11-23 15:42:11 Found column "uid", data type 4, in table "shop..shoppingcar"
+11-23 15:42:11 Found column "gid", data type 4, in table "shop..shoppingcar"
+11-23 15:42:11 Found column "gnum", data type 4, in table "shop..shoppingcar"
+11-23 15:42:11 Found column "descption", data type -1, in table "shop..shoppingcar"
+11-23 15:42:11 Found override for column "addGoodsTime" in table "shop..shoppingcar"
+11-23 15:42:11 Found override for column "descption" in table "shop..shoppingcar"
+11-23 15:42:11 Retrieving column information for table "users"
+11-23 15:42:11 Found column "uid", data type 4, in table "shop..users"
+11-23 15:42:11 Found column "uname", data type 12, in table "shop..users"
+11-23 15:42:11 Found column "upwd", data type 12, in table "shop..users"
+11-23 15:42:11 Found column "phone", data type 3, in table "shop..users"
+11-23 15:42:11 Found column "city", data type 12, in table "shop..users"
+11-23 15:42:11 Found column "regDate", data type 91, in table "shop..users"
+11-23 15:42:11 Found column "idCard", data type 12, in table "shop..users"
+11-23 15:42:11 Found column "realName", data type 12, in table "shop..users"
+11-23 15:42:11 Found column "age", data type 4, in table "shop..users"
+11-23 15:42:11 Found column "email", data type 12, in table "shop..users"
+11-23 15:42:11 Found column "sex", data type 12, in table "shop..users"
+11-23 15:42:11 Found column "avatar", data type -1, in table "shop..users"
+11-23 15:42:11 Found override for column "phone" in table "shop..users"
+11-23 15:42:11 Retrieving column information for table "qrcheck"
+11-23 15:42:11 Found column "uuid", data type -1, in table "shop..qrcheck"
+11-23 15:42:11 Found column "status", data type 4, in table "shop..qrcheck"
+11-23 15:42:11 Found column "name", data type 12, in table "shop..qrcheck"
+11-23 15:42:11 Found column "pwd", data type 12, in table "shop..qrcheck"
+11-23 15:42:11 Found override for column "uuid" in table "shop..qrcheck"
+11-23 15:42:30 Retrieving column information for table "goods"
+11-23 15:42:30 Found column "gid", data type 4, in table "shop..goods"
+11-23 15:42:30 Found column "gname", data type 12, in table "shop..goods"
+11-23 15:42:30 Found column "tid", data type 4, in table "shop..goods"
+11-23 15:42:30 Found column "price", data type 8, in table "shop..goods"
+11-23 15:42:30 Found column "descption", data type -1, in table "shop..goods"
+11-23 15:42:30 Found column "imgPath", data type -1, in table "shop..goods"
+11-23 15:42:30 Found column "filePath", data type -1, in table "shop..goods"
+11-23 15:42:30 Found column "stock", data type 4, in table "shop..goods"
+11-23 15:42:30 Found override for column "descption" in table "shop..goods"
+11-23 15:42:30 Found override for column "imgPath" in table "shop..goods"
+11-23 15:42:30 Found override for column "filePath" in table "shop..goods"
+11-23 15:42:30 Retrieving column information for table "goodsand"
+11-23 15:42:30 Found column "goodsId", data type 4, in table "shop..goodsand"
+11-23 15:42:30 Found column "text", data type 12, in table "shop..goodsand"
+11-23 15:42:30 Found column "imageUrl", data type -1, in table "shop..goodsand"
+11-23 15:42:30 Found column "spanSize", data type 4, in table "shop..goodsand"
+11-23 15:42:30 Found column "banners", data type -1, in table "shop..goodsand"
+11-23 15:42:30 Found column "descption", data type -1, in table "shop..goodsand"
+11-23 15:42:30 Found override for column "text" in table "shop..goodsand"
+11-23 15:42:30 Found override for column "imageUrl" in table "shop..goodsand"
+11-23 15:42:30 Found override for column "banners" in table "shop..goodsand"
+11-23 15:42:30 Found override for column "descption" in table "shop..goodsand"
+11-23 15:42:30 Retrieving column information for table "address"
+11-23 15:42:31 Found column "adressId", data type 4, in table "shop..address"
+11-23 15:42:31 Found column "uid", data type 4, in table "shop..address"
+11-23 15:42:31 Found column "address", data type -1, in table "shop..address"
+11-23 15:42:31 Found column "def", data type -7, in table "shop..address"
+11-23 15:42:31 Found column "aphone", data type 3, in table "shop..address"
+11-23 15:42:31 Found column "aname", data type 12, in table "shop..address"
+11-23 15:42:31 Found override for column "address" in table "shop..address"
+11-23 15:42:31 Found override for column "aphone" in table "shop..address"
+11-23 15:42:31 Retrieving column information for table "goodstype"
+11-23 15:42:31 Found column "tid", data type 4, in table "shop..goodstype"
+11-23 15:42:31 Found column "tname", data type 12, in table "shop..goodstype"
+11-23 15:42:31 Retrieving column information for table "orderform"
+11-23 15:42:31 Found column "oid", data type 3, in table "shop..orderform"
+11-23 15:42:31 Found column "gid", data type 4, in table "shop..orderform"
+11-23 15:42:31 Found column "gnum", data type 4, in table "shop..orderform"
+11-23 15:42:31 Found column "SubTotal", data type 8, in table "shop..orderform"
+11-23 15:42:31 Found column "descption", data type -1, in table "shop..orderform"
+11-23 15:42:31 Found column "uid", data type 4, in table "shop..orderform"
+11-23 15:42:31 Found override for column "oid" in table "shop..orderform"
+11-23 15:42:31 Found override for column "descption" in table "shop..orderform"
+11-23 15:42:31 Retrieving column information for table "orders"
+11-23 15:42:31 Found column "oid", data type 3, in table "shop..orders"
+11-23 15:42:31 Found column "uid", data type 4, in table "shop..orders"
+11-23 15:42:31 Found column "state", data type 12, in table "shop..orders"
+11-23 15:42:31 Found column "address", data type -1, in table "shop..orders"
+11-23 15:42:31 Found column "sum", data type 8, in table "shop..orders"
+11-23 15:42:31 Found override for column "oid" in table "shop..orders"
+11-23 15:42:31 Retrieving column information for table "shoppingcar"
+11-23 15:42:31 Found column "cid", data type 4, in table "shop..shoppingcar"
+11-23 15:42:31 Found column "addGoodsTime", data type 93, in table "shop..shoppingcar"
+11-23 15:42:31 Found column "uid", data type 4, in table "shop..shoppingcar"
+11-23 15:42:31 Found column "gid", data type 4, in table "shop..shoppingcar"
+11-23 15:42:31 Found column "gnum", data type 4, in table "shop..shoppingcar"
+11-23 15:42:31 Found column "descption", data type -1, in table "shop..shoppingcar"
+11-23 15:42:31 Found override for column "addGoodsTime" in table "shop..shoppingcar"
+11-23 15:42:31 Found override for column "descption" in table "shop..shoppingcar"
+11-23 15:42:31 Retrieving column information for table "users"
+11-23 15:42:31 Found column "uid", data type 4, in table "shop..users"
+11-23 15:42:31 Found column "uname", data type 12, in table "shop..users"
+11-23 15:42:31 Found column "upwd", data type 12, in table "shop..users"
+11-23 15:42:31 Found column "phone", data type 3, in table "shop..users"
+11-23 15:42:31 Found column "city", data type 12, in table "shop..users"
+11-23 15:42:31 Found column "regDate", data type 91, in table "shop..users"
+11-23 15:42:31 Found column "idCard", data type 12, in table "shop..users"
+11-23 15:42:31 Found column "realName", data type 12, in table "shop..users"
+11-23 15:42:31 Found column "age", data type 4, in table "shop..users"
+11-23 15:42:31 Found column "email", data type 12, in table "shop..users"
+11-23 15:42:31 Found column "sex", data type 12, in table "shop..users"
+11-23 15:42:31 Found column "avatar", data type -1, in table "shop..users"
+11-23 15:42:31 Found override for column "phone" in table "shop..users"
+11-23 15:42:31 Retrieving column information for table "qrcheck"
+11-23 15:42:31 Found column "uuid", data type -1, in table "shop..qrcheck"
+11-23 15:42:31 Found column "status", data type 4, in table "shop..qrcheck"
+11-23 15:42:31 Found column "name", data type 12, in table "shop..qrcheck"
+11-23 15:42:31 Found column "pwd", data type 12, in table "shop..qrcheck"
+11-23 15:42:31 Found override for column "uuid" in table "shop..qrcheck"
+11-23 15:44:19 Retrieving column information for table "goods"
+11-23 15:44:19 Found column "gid", data type 4, in table "shop..goods"
+11-23 15:44:19 Found column "gname", data type 12, in table "shop..goods"
+11-23 15:44:19 Found column "tid", data type 4, in table "shop..goods"
+11-23 15:44:19 Found column "price", data type 8, in table "shop..goods"
+11-23 15:44:19 Found column "descption", data type -1, in table "shop..goods"
+11-23 15:44:19 Found column "imgPath", data type -1, in table "shop..goods"
+11-23 15:44:19 Found column "filePath", data type -1, in table "shop..goods"
+11-23 15:44:19 Found column "stock", data type 4, in table "shop..goods"
+11-23 15:44:19 Found override for column "descption" in table "shop..goods"
+11-23 15:44:19 Found override for column "imgPath" in table "shop..goods"
+11-23 15:44:19 Found override for column "filePath" in table "shop..goods"
+11-23 15:44:19 Retrieving column information for table "goodsand"
+11-23 15:44:19 Found column "goodsId", data type 4, in table "shop..goodsand"
+11-23 15:44:19 Found column "text", data type 12, in table "shop..goodsand"
+11-23 15:44:19 Found column "imageUrl", data type -1, in table "shop..goodsand"
+11-23 15:44:19 Found column "spanSize", data type 4, in table "shop..goodsand"
+11-23 15:44:19 Found column "banners", data type -1, in table "shop..goodsand"
+11-23 15:44:19 Found column "descption", data type -1, in table "shop..goodsand"
+11-23 15:44:19 Found override for column "text" in table "shop..goodsand"
+11-23 15:44:19 Found override for column "imageUrl" in table "shop..goodsand"
+11-23 15:44:19 Found override for column "banners" in table "shop..goodsand"
+11-23 15:44:19 Found override for column "descption" in table "shop..goodsand"
+11-23 15:44:19 Retrieving column information for table "address"
+11-23 15:44:19 Found column "adressId", data type 4, in table "shop..address"
+11-23 15:44:19 Found column "uid", data type 4, in table "shop..address"
+11-23 15:44:19 Found column "address", data type -1, in table "shop..address"
+11-23 15:44:19 Found column "def", data type -7, in table "shop..address"
+11-23 15:44:19 Found column "aphone", data type 3, in table "shop..address"
+11-23 15:44:19 Found column "aname", data type 12, in table "shop..address"
+11-23 15:44:19 Found override for column "address" in table "shop..address"
+11-23 15:44:19 Found override for column "aphone" in table "shop..address"
+11-23 15:44:19 Retrieving column information for table "goodstype"
+11-23 15:44:19 Found column "tid", data type 4, in table "shop..goodstype"
+11-23 15:44:19 Found column "tname", data type 12, in table "shop..goodstype"
+11-23 15:44:19 Retrieving column information for table "orderform"
+11-23 15:44:19 Found column "oid", data type 3, in table "shop..orderform"
+11-23 15:44:19 Found column "gid", data type 4, in table "shop..orderform"
+11-23 15:44:19 Found column "gnum", data type 4, in table "shop..orderform"
+11-23 15:44:19 Found column "SubTotal", data type 8, in table "shop..orderform"
+11-23 15:44:19 Found column "descption", data type -1, in table "shop..orderform"
+11-23 15:44:19 Found column "uid", data type 4, in table "shop..orderform"
+11-23 15:44:19 Found override for column "oid" in table "shop..orderform"
+11-23 15:44:19 Found override for column "descption" in table "shop..orderform"
+11-23 15:44:19 Retrieving column information for table "orders"
+11-23 15:44:19 Found column "oid", data type 3, in table "shop..orders"
+11-23 15:44:19 Found column "uid", data type 4, in table "shop..orders"
+11-23 15:44:19 Found column "state", data type 12, in table "shop..orders"
+11-23 15:44:19 Found column "address", data type -1, in table "shop..orders"
+11-23 15:44:19 Found column "sum", data type 8, in table "shop..orders"
+11-23 15:44:19 Found override for column "oid" in table "shop..orders"
+11-23 15:44:19 Retrieving column information for table "shoppingcar"
+11-23 15:44:19 Found column "cid", data type 4, in table "shop..shoppingcar"
+11-23 15:44:19 Found column "addGoodsTime", data type 93, in table "shop..shoppingcar"
+11-23 15:44:19 Found column "uid", data type 4, in table "shop..shoppingcar"
+11-23 15:44:19 Found column "gid", data type 4, in table "shop..shoppingcar"
+11-23 15:44:19 Found column "gnum", data type 4, in table "shop..shoppingcar"
+11-23 15:44:19 Found column "descption", data type -1, in table "shop..shoppingcar"
+11-23 15:44:19 Found override for column "addGoodsTime" in table "shop..shoppingcar"
+11-23 15:44:19 Found override for column "descption" in table "shop..shoppingcar"
+11-23 15:44:19 Retrieving column information for table "users"
+11-23 15:44:19 Found column "uid", data type 4, in table "shop..users"
+11-23 15:44:19 Found column "uname", data type 12, in table "shop..users"
+11-23 15:44:19 Found column "upwd", data type 12, in table "shop..users"
+11-23 15:44:19 Found column "phone", data type 3, in table "shop..users"
+11-23 15:44:19 Found column "city", data type 12, in table "shop..users"
+11-23 15:44:19 Found column "regDate", data type 91, in table "shop..users"
+11-23 15:44:19 Found column "idCard", data type 12, in table "shop..users"
+11-23 15:44:19 Found column "realName", data type 12, in table "shop..users"
+11-23 15:44:19 Found column "age", data type 4, in table "shop..users"
+11-23 15:44:19 Found column "email", data type 12, in table "shop..users"
+11-23 15:44:19 Found column "sex", data type 12, in table "shop..users"
+11-23 15:44:19 Found column "avatar", data type -1, in table "shop..users"
+11-23 15:44:19 Found override for column "phone" in table "shop..users"
+11-23 15:44:19 Retrieving column information for table "qrcheck"
+11-23 15:44:19 Found column "uuid", data type -1, in table "shop..qrcheck"
+11-23 15:44:19 Found column "status", data type 4, in table "shop..qrcheck"
+11-23 15:44:19 Found column "name", data type 12, in table "shop..qrcheck"
+11-23 15:44:19 Found column "pwd", data type 12, in table "shop..qrcheck"
+11-23 15:44:19 Found override for column "uuid" in table "shop..qrcheck"
