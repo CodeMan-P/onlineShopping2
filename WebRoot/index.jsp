@@ -425,9 +425,10 @@
 				<div class="logo">
 					<div class="top_img"><img src="img/2.jpg"/></div>
 					<div class="top_form">
-						<form>
-							<input class="bg_color1" type="text" /><input class="bg_color2" type="submit"  value="搜索"/>
-						</form>
+							<form action="search" method="post">	
+							<input class="bg_color1" type="text" placeholder="请输入想要的东西吧" value="" name="word"/>
+							<input class="bg_color2" type="submit"  value="搜索"/>
+							</form>
 						<p><span><a href="#">新款连衣裙</a></span><span><a href="#">四件套</a></span>
 							<span><a href="#">潮流T恤</a></span><span><a href="#">时尚女鞋</a></span>
 							<span><a href="#">短裤</a></span><span><a href="#">半身裙</a></span>

@@ -15,6 +15,7 @@ import org.apache.log4j.Logger;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.mod.bean.Address;
+import com.mod.bean.Goods;
 import com.mod.bean.ShoppingCar;
 import com.service.SpCarService;
 import com.service.UserService;
@@ -83,21 +84,16 @@ public class ShoppingCarSlt extends HttpServlet {
 		response.setCharacterEncoding("utf-8");
 		response.setContentType("text/html");
 		String flag = request.getParameter("flag");
-		PrintWriter out = response.getWriter();
+		if(flag == null){
+			return;
+		}
 		int uid = (int) request.getSession().getAttribute("uid");
-		if (flag.equalsIgnoreCase("add")) {
+		if (flag.equalsIgnoreCase("change")) {
+			changeSpc(request, response);
+		}else if (flag.equalsIgnoreCase("add")) {
 			addGoods(request, response);
 		} else if (flag.equalsIgnoreCase("dele")) {
-			int cid = Integer.parseInt(request.getParameter("cid"));
-			if (SpCarService.deleGoods(cid)) {
-				out.write("{\"message\":\"删除成功！\",\"num\":" + 0 + "}");
-				int num = SpCarService.getCarNum(uid);
-				request.getSession().setAttribute("carnum", num);
-			} else {
-				out.write("{\"message\":\"删除失败！\"}");
-			}
-			out.flush();
-			out.close();
+			deleteCarItem(request, response, uid);
 		} else if (flag.equalsIgnoreCase("view")) {
 			// LinkedList<ShoppingCar> list = SpCarService.getCarListByUid(uid);
 			// request.getSession().setAttribute("carlist", list);
@@ -108,12 +104,55 @@ public class ShoppingCarSlt extends HttpServlet {
 			LinkedList<HashMap<String, Object>> view = SpCarService.getCarView(uid);
 			request.getSession().setAttribute("view", view);
 			request.getSession().setAttribute("adresJson", adresJson);
-			request.getRequestDispatcher("jsp/shoppingcar.jsp").forward(request, response);
+			//request.getRequestDispatcher("jsp/shoppingcar.jsp").forward(request, response);
+			response.sendRedirect("jsp/shoppingcar.jsp");
 		}
 
 		// request.setAttribute("list", ProductService.getList());
 		// request.getRequestDispatcher("/jsp/shopping.jsp").forward(request,
 		// response);
+	}
+
+	/**
+	 * @param request
+	 * @param response
+	 * @param uid
+	 * @throws IOException
+	 */
+	public void deleteCarItem(HttpServletRequest request, HttpServletResponse response, int uid) throws IOException {
+		PrintWriter out = response.getWriter();
+		int cid = Integer.parseInt(request.getParameter("cid"));
+		if (SpCarService.deleGoods(cid)) {
+			out.write("{\"message\":\"删除成功！\",\"num\":" + 0 + "}");
+			int num = SpCarService.getCarNum(uid);
+			request.getSession().setAttribute("carnum", num);
+		} else {
+			out.write("{\"message\":\"删除失败！\"}");
+		}
+		out.flush();
+		out.close();
+	}
+
+	/**
+	 * @param request
+	 * @param response
+	 * @throws IOException
+	 */
+	public void changeSpc(HttpServletRequest request, HttpServletResponse response) throws IOException {
+		PrintWriter out = response.getWriter();
+		int cid = Integer.parseInt(request.getParameter("cid"));
+		int gnum = Integer.parseInt(request.getParameter("gnum"));
+		ShoppingCar record = new ShoppingCar();
+		record.setCid(cid);
+		record.setGnum(gnum);
+		boolean b = SpCarService.updateByPrimaryKeySelective(record);
+		if(b){
+			out.write("{\"message\":\"修改成功！\"}");
+		}else{
+			out.write("{\"message\":\"修改失败！\"}");
+		}
+		out.flush();
+		out.close();
 	}
 
 	/**

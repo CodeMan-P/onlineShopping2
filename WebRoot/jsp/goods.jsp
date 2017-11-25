@@ -5,7 +5,7 @@
 String path = request.getContextPath();
 String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/jsp/";
 %>
-
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
   <head>
@@ -24,8 +24,101 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	<script type="text/javascript" src="../js/jquery-2.1.0.js"></script>
 <script type="text/javascript" src="../js/jquery.form.js"></script>
 <script type="text/javascript" src="../js/ajaxfileupload.js"></script>
+		<link href="./img/bootstrap.min.css" rel="stylesheet"/>
+		<script src="./img/bootstrap.min.js.下载"></script>
+		<link href="./img/style.css" rel="stylesheet"/>
+
+		<style type="text/css">
+		*{margin:0;padding:0}
+		li{list-style:none;}
+		</style>
+		<script type="text/javascript">
+		function showTime(){
+			now=new Date;
+			document.write(now.getYear()+"年"+(now.getMonth()+1)+"月"+now.getDate()+"日"+now.getHours()+"点"+now.getMinutes()+"分");}
+			function number(){
+			var b=document.getElementById("gnum").value;
+			
+			if(b == null||b=== ""){
+				document.getElementById("gnum").value="1";
+				return;
+			}
+			var a=parseInt(b);
+			a=a+1;
+			b=a.toString();
+			document.getElementById("gnum").value=b;
+			}
+			function number1(){
+			var b=document.getElementById("gnum").value;
+			if(b == null||b=== ""){
+				document.getElementById("gnum").value="1";
+				return;
+			}
+			var a=parseInt(b);
+			if(a==0){
+				return;
+			}
+			a=a-1;
+			b=a.toString();
+			document.getElementById("gnum").value=b;
+			}
+			$(document).ready(function(){
+				
+					//显示图片
+				$(".f_l_ow").mouseenter(function() {
+					$(".f_l_ow:not(this)").css({
+						border: "1px solid #ccc"
+					});
+					$(this).css({
+						border: "1px solid #000"
+					});
+					var $src = $(this).children().attr("src");
+					
+					// console.log($src)
+					$(".f_l_img").attr("src", $src);
+					$(".f_l_img").attr("src", $src);
+				});
+				//放大境——移入鼠标显示图片
+				$(".f_middle").hover(function(e) {
+					$(".f_r_imgNone").show();
+					$(".f_m_divNone").show();
+				},
+				function(e) {
+
+					$(".f_r_imgNone").hide();
+					$(".f_m_divNone").hide();
+				});
+				$(".f_middle").mousemove(function(e) {
+				// e.stopPropagation();
+				var $x = e.pageX - $(".f_middle").offset().left - ($(".f_m_divNone").width() / 2);
+				var $y = e.pageY - $(".f_middle").offset().top - ($(".f_m_divNone").height() / 2);
+				var $maxWidth = $(".f_middle").width() - $(".f_m_divNone").width();
+				var $maxHeight = $(".f_middle").height() - $(".f_m_divNone").height();
+				var $nowX = Math.max(Math.min($x, $maxWidth), 0);
+				var $nowY = Math.max(Math.min($y, $maxHeight), 0);
+				//console.log($nowX * 2,$nowY * 2)
+				$(".f_m_divNone").css({
+					left: $nowX+$(".f_middle").offset().left,
+					top: $nowY+$(".f_middle").offset().top,
+				});
+				$(".f_r_none_img").css({
+				left: -$nowX * 2,
+				top: -$nowY * 2
+				});
+				
+				});
+
+				});
+
+		</script>
 <script type="text/javascript">
     $(document).ready(function(){
+		
+    	
+    	
+    	
+    	
+    	<!--================================================== -->
      $("#num").on("keyup",function(){
     		if($(this).val() == null||$(this).val() <=0){
     			$("a[name='buy']").attr("href","#");
@@ -38,7 +131,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 
   	
     function addGoods(){
-    	if($("#num").val() == null||$("#num").val() <=0){
+    	if($("#gnum").val() == null||$("#gnum").val() <=0){
     		alert("输入购物数量？>0！");
     		return false;
     	}
@@ -80,7 +173,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     };
 
     function buyGoods(){
-    	if($("#num").val() == null||$("#num").val() <=0){
+    	if($("#gnum").val() == null||$("#gnum").val() <=0){
     		alert("输入购物数量？>0！");
     		return false;
     	}
@@ -114,9 +207,33 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   </head>
   
   <body>
-  <center>
-    <div style="width:900px;height:auto;border: double 5px #0033CC">
-    <% Goods g = (Goods)request.getAttribute("goods");
+     <script>
+function formatMoney(num){
+	num = num.toString().replace(/\$|\,/g,'');  
+	if(isNaN(num))  
+	    num = "0";  
+	sign = (num == (num = Math.abs(num)));  
+	num = Math.floor(num*100+0.50000000001);  
+	cents = num%100;  
+	num = Math.floor(num/100).toString();  
+	if(cents<10)  
+	cents = "0" + cents;  
+	for (var i = 0; i < Math.floor((num.length-(1+i))/3); i++)  
+	num = num.substring(0,num.length-(4*i+3))+','+  
+	num.substring(num.length-(4*i+3));  
+	return (((sign)?'':'-') + num + '.' + cents);  
+}
+function checkEmpty(id, name){
+	var value = $("#"+id).val();
+	if(value.length==0){
+		
+		$("#"+id)[0].focus();
+		return false;
+	}
+	return true;
+}
+</script>	
+    <% Goods g = (Goods)request.getSession().getAttribute("goods");
     ObjectMapper mapper = new ObjectMapper();
     String temp = g.getDescption();
     temp = temp.replaceAll("\\]", "");
@@ -124,31 +241,127 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
    	@SuppressWarnings("unchecked")
     HashMap<String,String> h = mapper.readValue(temp, HashMap.class);
     %>
-    商品名称：<%=g.getGname() %><br/><hr/>
-    价格：<%=g.getPrice() %><br/><hr/>
-    库存：<%=g.getStock() %><br/><hr/>
-    <% for (String s:h.keySet()){
-    	%>
-    	<%=s%>__:__<%=h.get(s)%><br/>
-    		
-   <% }%><br/><hr/>
-    <img alt="数据库炸了？？？" src="<%=g.getImgpath()%>" style="position:relative; left:-200px;width: 300px;height:auto"/><br/><hr/>
-
- <div style="width:300px;height:auto; position:relative; left:200px;top:-200px;border:double 5px #DFD184">
- 购买数量：
-<form action="" id="fm">
-    <input type="text" name="gnum" id="num"/>
-    <input id="gid" name="gid" value="<%=g.getGid()%>" type="hidden"/>
-	</form>    
-    
-    <input type="button" id="btbuy" value="立即购买" onclick="buyGoods()" />
-	<input type="button" value="加入购物车" onclick="addGoods()" />
-	<a href="../Spcar?flag=view" target="_blank" style="z-index:9;">
-			购物车<span id="sp1" style="font-size:18px; color:#F00">${sessionScope.carnum}</span>
+<nav class="top ">
+	<div class="top_middle">
+	
+		<a href="../index.jsp">
+			<span style="color:#C40000;margin:0px" class=" glyphicon glyphicon-home redColor"></span>
+			
+		</a>	
+		
+			<a href="../index.jsp"style="float:right">退出</a>	
+		
+		
+			<a href="javascript:void(0);" style="float:right"><c:out value="${sessionScope.name}" ></c:out></a>
+			
+				<a href="../Spcar?flag=view" target="_blank" style="float:right;color:#F00">
+			购物车(${sessionScope.carnum})
+			</a>
+	</div>
+</nav>
+<div class="simpleSearchOutDiv">
+	<a href="../index.jsp">
+		<img id="simpleLogo" class="simpleLogo" width="190"height="30" src="./img/simpleLogo.png">	
 	</a>
- 
- </div>  
-     <%
+	
+	<form action="../search" method="post">	
+	<div class="simpleSearchDiv pull-right">
+		<input type="text" placeholder="请输入想要的东西吧" value="" name="word">
+		<button class="searchButton" type="submit">搜索</button>
+		
+	</div>
+	</form>
+	<div style="clear:both"></div>
+</div>
+        <!--*********************************former**********************************************-->
+     <div class="former">
+			
+			<div  class="f_left">
+				<div class="f_l_show">
+							 <div class="f_l_button1"></div>
+                            <ul class="f_l_ow">
+                                <li class="f_l_ow">
+                                   <img src="<%=g.getImgpath()%>" class="f_l_img"/>
+                                </li>
+                                <li class="f_l_ow">
+                                   <img src="<%=g.getImgpath()%>" class="f_l_img"/>
+                                </li>
+                                <li class="f_l_ow">
+                                   <img src="<%=g.getImgpath()%>"class="f_l_img"/>
+                                </li>
+                                <li class="f_l_ow">
+                                   <img src="<%=g.getImgpath()%>" class="f_l_img"/>
+                                </li>
+                            </ul>
+                                <div class="f_l_button2"></div>
+				</div>
+				<div class="f_middle">
+					<img class="f_m_img" src="<%=g.getImgpath()%>">
+					<div class="f_m_divNone" style="display: none; left:215px; top: 187px;"></div>
+				</div>
+				
+			</div>
+			<div class="f_r_imgNone" style="display: none;">
+                            <img class="f_r_none_img" src="<%=g.getImgpath()%>" style="left: -367px; top: -380px;">
+                        </div>
+			<div class="f_right">
+						 <h1><%=g.getGname() %></h1>
+                        <div class="ffr_price">
+                            <span class="ffr_price_span2"><em>￥</em><span class="ffr_price_span3"><%=g.getPrice() %></span></span>
+                            <span class="ffr_price_span1">想打折，没门</span>
+                        </div>
+                        <div class="ffr_freight">
+                           	 运费：10米内包邮
+                        </div>
+                        <div class="ffr_freight">
+                            <span >颜色:</span>
+							
+                            <input style="left:10px;width:60px;height:25px;" type="color"/><br/>
+							<span style="font-size:16px">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+							没错，本店的产品只有你想不到，没有本店搞不定的--->就是这么神奇！</span>
+							
+                        </div>
+                        <div class="ffr_freight">
+                            <span >型号：</span>
+							<select style="left:10px;width:100px;height:25px;" >
+							<option value="1">请选择....</option>
+							<option value="2">金手机</option>
+							<option value="3">银手机</option>
+							<option value="3">铁手机</option>
+							<option value="4">纸手机</option>
+							</select>
+							
+                        </div>
+                        <div class="ffr_freight">
+                            <span class="ffr_freight_span">数量：</span>
+                            <form id="fm">
+                            <input type="hidden" name="gid" value="<%=g.getGid()%>"/>
+                            <input type="text" class="ffr_freight_input" value="1" name="gnum" id="gnum"/>
+                            </form>
+                            <div class="ffr_freight_div"> 
+                                <a href="javascript:number();void(0);" class="ffr_freight_input1"></a>
+                                <a href="javascript:number1();void(0);" class="ffr_freight_input2"></a>
+                            </div>
+                            	（库存<%=g.getStock() %>）
+                        </div>
+                        <div class="ffr_freight_onclick">
+                            <div class="ffr_freight_onclicks">
+                                <a href="javascript:buyGoods();void(0);" class="ffr_freight_onclick_shop">立即购买</a>
+                                <a href="javascript:addGoods();void(0);" class="ffr_freight_onclick_shop">加入购物车</a>
+								
+                            </div>
+                           
+                        </div>
+                        
+                    </div>
+				</div>
+     </div>
+	<div class="downsold">
+                
+                    <div class="f_b_h2 f_b_h21">
+                        <h2 id="a">商品详情</h2>
+                    </div>
+                     <%
      String fpath = "jsp/"+g.getFilepath();
      fpath = application.getRealPath(fpath);
      File file = new File(fpath);
@@ -160,13 +373,17 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 			int index =ipath.lastIndexOf("goods");
 			ipath = ipath.substring(index);
 			%>	
-	<img alt="数据库炸了？？？" src="<%=ipath%>" style="width: 800px;height:auto"/><br/><hr/>
-
+               <div class="f_b_xiangqing">
+	<img alt="数据库炸了？？？" src="<%=ipath%>" class="f_b_x_img" />
+                    </div>
+     
 			<%
 			
 		}}
      %>
-    </div>
-    </center>
+     
+                   
+                   </div>
+ 
   </body>
 </html>

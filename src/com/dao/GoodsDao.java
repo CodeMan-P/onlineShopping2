@@ -3,6 +3,11 @@ package com.dao;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.ArrayList;
 import java.util.LinkedHashMap;
 import java.util.LinkedList;
 import java.util.WeakHashMap;
@@ -129,4 +134,43 @@ public class GoodsDao {
 		LinkedList<LinkedHashMap<String, Object>> list =gam.getGoddsAnd();
 		return list;
 	};
+	
+	static PreparedStatement pst=null;
+	static Connection con=null;
+	static boolean flog=false;
+	static ResultSet rs=null;
+    public static ArrayList<Goods> productList(String st,String st1){
+    	
+    	ArrayList<Goods> productList=new ArrayList<Goods>();
+    con=	DbConn.getCon();
+    try {
+		pst=con.prepareStatement("SELECT gid, gname, tid, price, descption, imgpath,filepath,stock FROM goods" +
+                " where gname like '%"+st+"%' ORDER BY price "+st1);
+	
+   rs= pst.executeQuery();
+   
+     while(rs.next()){
+    	 Goods b=new Goods();
+    	  b.setGid(rs.getInt("gid"));
+		   b.setGname(rs.getString("gname"));
+		   b.setTid(rs.getInt("tid"));
+		   b.setPrice(rs.getDouble("price"));
+		   b.setDescption(rs.getString("descption"));
+		   b.setImgpath(rs.getString("imgpath"));
+		   b.setFilepath(rs.getString("filepath"));
+		   b.setStock(rs.getInt("stock"));
+    	 productList.add(b);
+     }
+    
+    } catch (SQLException e) {
+		// TODO Auto-generated catch block
+		e.printStackTrace();
+	}
+    finally{
+    	DbConn.closeConn(rs, pst, con);
+    }
+    	return productList;
+    	
+    	
+    }
 }

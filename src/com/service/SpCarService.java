@@ -26,4 +26,7 @@ public class SpCarService {
 	public static LinkedList<HashMap<String, Object>> getCarView(Integer uid) {
 		return SpCarDao.getCarView(uid);
 	}
+	public static boolean updateByPrimaryKeySelective(ShoppingCar car){
+		return SpCarDao.updateByPrimaryKeySelective(car);
+	}
 }

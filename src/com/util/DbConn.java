@@ -2,13 +2,14 @@ package com.util;
 
 import java.io.Reader;
 import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.sql.SQLException;
 import org.apache.commons.dbcp.BasicDataSource;
 import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSessionFactory;
 import org.apache.ibatis.session.SqlSessionFactoryBuilder;
 import org.apache.log4j.Logger;
-
 
 public class DbConn {
 	private static SqlSessionFactory sqlSessionFactory = null;
@@ -62,6 +63,25 @@ public class DbConn {
 				bds.close();
 			}
 		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+	}
+
+	public static void closeConn(ResultSet rs, PreparedStatement pst, Connection con) {
+
+		try {
+			if (rs != null) {
+				rs.close();
+			}
+			if(pst != null){
+				pst.close();
+			}
+			if(con != null){
+				con.close();
+			}
+			
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 	}

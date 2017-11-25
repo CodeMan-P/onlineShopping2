@@ -68,9 +68,10 @@ public class ProInfo extends HttpServlet {
 		if (goods != null) {
 			ObjectMapper mapper = new ObjectMapper();
 			String json = mapper.writerWithDefaultPrettyPrinter().writeValueAsString(goods);
-			request.setAttribute("json", json);
-			request.setAttribute("goods", goods);
-			request.getRequestDispatcher("jsp/goods.jsp").forward(request, response);
+			request.getSession().setAttribute("json", json);
+			request.getSession().setAttribute("goods", goods);
+			//request.getRequestDispatcher("jsp/goods.jsp").forward(request, response);
+			response.sendRedirect("jsp/goods.jsp");
 		}
 	}
 

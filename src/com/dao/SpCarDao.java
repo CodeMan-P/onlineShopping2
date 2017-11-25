@@ -86,7 +86,19 @@ public class SpCarDao {
 		}
 		return i;
 	}
-
+	public static boolean updateByPrimaryKeySelective(ShoppingCar car){
+		int i = 0;
+		try {
+			i = scm.updateByPrimaryKeySelective(car);
+		} catch (Exception e) {
+			e.printStackTrace();
+			return false;
+		}
+		if(i>0){
+			return true;
+		}
+		return false;
+	}
 	public static boolean addGoods(ShoppingCar car) {
 		int i = 0;
 		ShoppingCar temp = null;

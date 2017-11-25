@@ -10,6 +10,15 @@
     <servlet-name>Login</servlet-name>
     <url-pattern>/login</url-pattern>
   </servlet-mapping>
+    <servlet>
+    <servlet-name>searchServlet</servlet-name>
+    <servlet-class>com.servelet.searchServlet</servlet-class>
+  </servlet>
+    <servlet-mapping>
+    <servlet-name>searchServlet</servlet-name>
+    <url-pattern>/search</url-pattern>
+  </servlet-mapping>
+  
   <servlet>
     <display-name>ProInfo</display-name>
     <servlet-name>ProInfo</servlet-name>
