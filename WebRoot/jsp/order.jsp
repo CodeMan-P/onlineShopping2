@@ -28,6 +28,9 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 <script type="text/javascript" src="../js/jquery-2.1.0.js"></script>
 <script type="text/javascript" src="../js/jquery.form.js"></script>
 <script type="text/javascript" src="../js/ajaxfileupload.js"></script>
+	<link href="./img/bootstrap.min.css" rel="stylesheet">
+	<script src="./img/bootstrap.min.js.下载"></script>
+	<link href="./img/style.css" rel="stylesheet">
 <link rel="stylesheet" href="../css/lanrenzhijia.css" media="all">
 <script type="text/javascript">
     $(document).ready(function(){
@@ -80,154 +83,210 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   </head>
   
   <body>
-  <center>
-  <div style="width:1200px;height:auto;border:dotted 5px #0033CC;">
+  <nav class="top ">
+	<div class="top_middle">
+	
+		<a href="../index.jsp">
+			<span style="color:#C40000;margin:0px" class=" glyphicon glyphicon-home redColor"></span>
+			
+		</a>	
+		
+			<a href="../index.jsp"style="float:right">退出</a>	
+		
+		
+			<a href="javascript:void(0);" style="float:right"><c:out value="${sessionScope.name}" ></c:out></a>
+			
+				<a href="../Spcar?flag=view" target="_blank" style="float:right;color:#F00">
+			购物车(${sessionScope.carnum})
+			</a>
+	</div>
+</nav>
+<div class="simpleSearchOutDiv">
+	<a href="../index.jsp">
+		<img id="simpleLogo" class="simpleLogo" width="190"height="30" src="./img/simpleLogo.png">	
+	</a>
+	
+	<form action="../search" method="post">	
+	<div class="simpleSearchDiv pull-right">
+		<input type="text" placeholder="请输入想要的东西吧" value="" name="word">
+		<button class="searchButton" type="submit">搜索</button>
+		
+	</div>
+	</form>
+	<div style="clear:both"></div>
+</div>
+
+
+  
   <% 
+  SimpleDateFormat sdf = new SimpleDateFormat("yyyyMMddHHmmss");
+  SimpleDateFormat sdf2 = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
   String hmJson = (String)request.getSession().getAttribute("hm");
   	ObjectMapper mapper = new ObjectMapper();
 	@SuppressWarnings("unchecked")
 	HashMap<String,Object> hm = (HashMap<String,Object>)mapper.readValue(hmJson, HashMap.class);
   	
   %>
-  <p style="font-size: 35px">
-  订单号：<%=(String)hm.get("oid")%>
-  <input type="hidden" id="oid" value="<%=(String)hm.remove("oid")%>">
-  </p>
+ 
+  <input type="hidden" id="oid" value="<%=(String)hm.get("oid")%>">
   <%hm.remove("uid");%>
    <%hm.remove("state");%>
 
-
  <%String address = (String)hm.remove("address");
  if(address.equalsIgnoreCase("#")){
+	 
 	 //单个支付标志=============================
 	 	String adresJson = (String)request.getSession().getAttribute("adresJson");
 	 	@SuppressWarnings("unchecked")
 	 	LinkedList<HashMap<String,Object>> adlist = mapper.readValue(adresJson, LinkedList.class);
 	 	%>
 <input type="hidden" id="flag" value="spay"/>
-<div style="width:1200px;height:250px;bottom: 10px;border: double 5px #AA33CC;">
-
-	 	<% 
-	 	for(HashMap<String,Object> item : adlist){
- %>
- <div style="float:left;width:300px;height:90%; margin: 10px;bottom: 10px;border: double 5px #0033FF; font-size: 18px">
-	     <input type="radio" name="radio" id="radio<%=item.get("adressid")%>" value="<%=item.get("address")%>"><%=item.get("adressid") %><br/><hr/>
+ <div 	class="cartDiv"	style="text-align: center;">
+   <% 
+	     int idindex = 1;
+  for(HashMap<String,Object> item : adlist){
+	  %>
+	  <div  style="float:left;width:300px;height:170px; margin: 10px;bottom: 10px;border: 1px solid #CCCCCC">
+	     <input type="radio" name="radio" id="radio<%=item.get("adressid")%>" value="<%=item.get("address")%>"><%=idindex++%><br/>
 	     <% 
-
-	 	item.remove("uid");
 	     item.remove("uid");
 	     for (String s:item.keySet()){
     	if(s.equals("default")){
     		if((Boolean)item.get(s)){
     			%>
     			<br/>
-    			<span style="width:100px;height:auto;bottom: 10px;margin: 10px;border: double 5px #0033CC;">
+    			<span style="width:100px;height:auto;bottom: 1px;margin: 1px;border: solid 1px #0033CC;">
     			默认收货地址
     			</span>
     			<br/>
     			<br/>
     			<script type="text/javascript">
-    			$("#radio<%=item.get("adressid")%>").attr("checked","checked");
+    			$("#radio<%=item.get("adressid")%>").prop("checked",true);
     			</script>
     			<%
     		}
     	}else{
     	
     	%>
-    	<%=s%>:<%=item.get(s)%><br/>
+    	
+    	<%=s.equals("adressid")?"":item.get(s)%><br/>
     	
   		 <% }}%>
 		</div>
-			 <% }%>
+	  <% }%>
+	  <div style="float:left;width:300px;height:auto; margin: 20px;bottom: 20px;border:  1px solid #CCCCCC;">
+	      			<br/>
+    			<span style="width:100px;height:auto;bottom: 10px;margin: 10px;border:  1px solid #CCCCCC;">
+    			<a href="javascript:void(0);">新增收货地址</a>
+    			</span>
+    			<br/>
+    			<br/>
+	  </div>
  </div>
  <%}else{%>
  <!-- 通过购物车支付标志！！！！！！！！！！！！！！！！！！！！！ -->
- <input type="hidden" id="flag" value="mpay"/>
- <p style="font-size: 25px ; color:red">
- 送货地址: <%=address%>
-</p>  
  <%}%>
-
  
- 
-<p style="font-size: 25px ; color:red">
- 总计：<%=hm.remove("sum")%>
-
-    <table border="1"
-				style="text-align:center;border:5px #06C solid;width:100%;"
-				cellspacing="20px">
+ <hr/>           				
+<div class="cartDiv">
+	<div class="cartTitle pull-right">
+	<%if(!address.equalsIgnoreCase("#")){ %>
+	
+ <input type="hidden" id="flag" value="mpay"/>
+送货地址: <%=address%>
+	
+	<% }%>
+	</div>
+	<div class="cartProductList">
+		<table class="cartProductTable">
+			<thead>
+					<tr>
+							<td colspan="5" align="center">
+            					<h3>订单号:<%=(String)hm.get("oid")%></h3>
+            				</td>
+					</tr>
 				<tr>
-					<td style="border-color:#6A5ACD">序号</td>
+					<th class="selectAndImage">
+										
 					
-					<td style="border-color:#6A5ACD">产品详情</td>
-					<td style="border-color:#1A7ACD">产品图片</td>
-					<td style="border-color:#2A7ADD">产品参数</td>
-					<td style="border-color: 	#F4A460">小计</td>
-				</tr>
+					
+					</th>
+					<th>商品信息</th>
+					<th>单价</th>
+					<th>数量</th>
+					<th width="120px">金额</th>
 				
-  <%int index = 1; 
+				</tr>
+			</thead>
+			<tbody  id="table">
+				  <%int index = 1; 
 mapper.setDateFormat(new SimpleDateFormat("yyyy-MM-dd HH:mm:ss"));
+hm.remove("oid");
+double sum = (double)hm.remove("sum");
 for(String temp : hm.keySet()){
+	
 	@SuppressWarnings("unchecked")
 	HashMap<String,Object> item =(HashMap<String,Object>)hm.get(temp);  
 	  %>
-	   <tr style="border: double 5px #0033CC;padding: 20px;margin:50px;">
-	  <td style="border-color:#6A5ACD"><%=index %></td>
-<td style="border-color:#6A5ACD">
-<%String descJson = (String)item.get("descption");
-item.remove("descption");
-String imgPath = (String)item.get("imgPath");
-item.remove("imgPath");;
-
-String itemJson = mapper.writeValueAsString(item);
-@SuppressWarnings("unchecked")
-HashMap<Object,Object> h = mapper.readValue(itemJson, HashMap.class);
-double SubTotal = (double)h.remove("SubTotal");
-%>
-    <% for (Object s:h.keySet()){
-    	%>
-    	<%=s%>:<%=h.get(s)%><br/>
-    	
-   <% }%>
-</td>
-	<td style="border-color:#1A7ACD"><img alt="#" src="<%=imgPath%>" style="width: 150px;height: auto">
-	
-	</td>
-<td style="border-color:#2A7ADD">
-<%
-if(descJson!=null){
-	
-descJson = descJson.replaceAll("\\]", "");
-descJson = descJson.replaceAll("\\[", "");
-@SuppressWarnings("unchecked")
-HashMap<String,String> h2 = mapper.readValue(descJson, HashMap.class);
-
-%>
-    <% for (String s:h2.keySet()){
-    	%>
-    	<%=s%>:<%=h2.get(s)%><br/>
-   <% }}%>
-
-</td>
-	<td style="border-color: 	#F4A460">
-	<%=SubTotal%>
-	</td>
-					
-			
-			
-	  </tr>
-	  
+					<tr class="cartProductItemTR">
+						<td>
+							<img class="cartProductImg" src="<%=(String)item.get("imgPath")%>">
+						</td>
+						<td>
+							<div class="cartProductLinkOutDiv">
+								<a href="#" class="cartProductLink"><%=(String)item.get("gname")%></a>
+								
+							</div>
+							
+						</td>
+						<td>
+							
+							<span class="cartProductItemPromotionPrice">￥<%=item.get("price")%></span>
+							
+						</td>
+						<td>
+							<div class="cartProductChangeNumberDiv">
+								<span ><%=item.get("gnum")%></span>
+							</div>					
+						 </td>
+						<td>
+							<span class="cartProductItemSmallSumPrice">
+							￥<%=(double)item.get("price")*(int)item.get("gnum")%>
+							</span>
+						
+						</td>
+						
+					</tr>
+				
+					  
 	  <%
 	index++;  
   } %>
-  
-  </table>
-  
-  </div>
+								
+			</tbody>
+		
+		</table>
+	</div>
+	
+	<div class="cartFoot">
+		
+		
+		<div class="pull-right">
+			<span>合计 : </span> 
+			<span class="cartSumPrice">￥<%=sum%></span>
+			<a class="btn btn-primary btn-large theme-login" href="javascript:;">购买</a>
+			
+		</div>
+		
+	</div>
+	
+</div>
+ 
+
     
 
 <div class="theme-buy" style="position: relative;top:-130px;">
-<a class="btn btn-primary btn-large theme-login" href="javascript:;">购买</a>
+
 </div>
 <div class="theme-popover">
      <div class="theme-poptit">

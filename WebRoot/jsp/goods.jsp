@@ -136,7 +136,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     		return false;
     	}
     	//参数应选择获取······
-    	var desc = '[{"网络类型" : "4G全网通","机身颜色" : "钻雕金","套餐类型" : "官方标配","存储容量" : "128GB","购买方式" : "裸机","版本" : "小米6"}]';
+    	var desc = '[{"颜色" : "钻雕金","套餐类型" : "官方标配"}]';
     	var ajax_option={  
 				   //target: '#output',          //把服务器返回的内容放入id为output的元素中        
 				   //beforeSubmit://提交前的回调函数    
@@ -178,7 +178,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     		return false;
     	}
     	//参数应选择获取······
-    	var desc = '[{"网络类型" : "4G全网通","机身颜色" : "钻雕金","套餐类型" : "官方标配","存储容量" : "128GB","购买方式" : "裸机","版本" : "小米6"}]';
+    	var desc = '[{"颜色" : "钻雕金","套餐类型" : "官方标配"}]';
     	var ajax_option={  
 				   url: '../Order',                 //默认是form的action， 如果申明，则会覆盖    
 				   type: 'post',               //默认是form的method（get or post），如果申明，则会覆盖    
