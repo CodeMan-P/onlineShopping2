@@ -1,6 +1,8 @@
 package com.servelet;
 
 import java.io.IOException;
+import java.io.PrintWriter;
+import java.util.HashMap;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -8,7 +10,10 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import com.dao.UsersDao;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import com.mod.bean.Address;
+import com.service.UserService;
 
 /**
  * Servlet implementation class addressSlt
@@ -46,12 +51,47 @@ public class addressSlt extends HttpServlet {
 		response.setCharacterEncoding("utf-8");
 		//PrintWriter out = response.getWriter();
 		String flag = request.getParameter("flag");
+		int uid = (int) request.getSession().getAttribute("uid");
 		if (flag == null) {
-			response.sendRedirect("jsp/address.jsp");
-		} else if (flag.equalsIgnoreCase("addAdres")) {
-
-			// 新建地址完成返回首页
-			response.sendRedirect("/index.jsp");
+			return;
+			
+		} else if (flag.equalsIgnoreCase("dele")) {
+			int aid = Integer.parseInt(request.getParameter("aid"));
+			
+			boolean b = UserService.deleAddress(aid);
+			PrintWriter out = response.getWriter();
+			if(b){
+				out.write("{\"message\":\"删除成功！\"}");
+			}else{
+				out.write("{\"message\":\"删除失败！\"}");
+			}
+			out.flush();
+			out.close();
+			return;
+		} else if (flag.equalsIgnoreCase("changeAdd")) {
+			String json;
+			ObjectMapper mapper = new ObjectMapper();
+			json = mapper.writerWithDefaultPrettyPrinter().writeValueAsString(request.getParameterMap());
+			json = json.replaceAll("\\[|\\]", "");
+			Address adr = mapper.readValue(json, Address.class);
+			
+			@SuppressWarnings("unchecked")
+			HashMap<String,String> hm = mapper.readValue(json, HashMap.class);
+			adr.setProvince(hm.get("province"));
+			adr.setCity(hm.get("city"));
+			adr.setUid(uid);
+			boolean b = UserService.addAddress(adr);
+			PrintWriter out = response.getWriter();
+			if(b){
+				out.write("{\"message\":\"添加成功！\"}");
+			}else{
+				out.write("{\"message\":\"添加失败！\"}");
+			}
+			out.flush();
+			out.close();
+			// 新建地址完成后刷新
+			//response.sendRedirect("/Spcar?flag=view");
+			return;
 		} else if (flag.equalsIgnoreCase("editAdres")) {
 			String addr = request.getParameter("addr");
 			String aname = request.getParameter("aname");
@@ -61,8 +101,6 @@ public class addressSlt extends HttpServlet {
 			if (temp != null && temp.equals("1")) {
 				def = true;
 			}
-			int uid = (int) request.getSession().getAttribute("uid");
-
 			Address newAdd = new Address(uid, def, aphone, aname, addr);
 
 		} else if (flag.equalsIgnoreCase("deleAdres")) {

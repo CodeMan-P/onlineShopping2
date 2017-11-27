@@ -29,14 +29,15 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 <script type="text/javascript" src="../js/jquery-2.1.0.js"></script>
 <script type="text/javascript" src="../js/jquery.form.js"></script>
 <script type="text/javascript" src="../js/ajaxfileupload.js"></script>
-
+<script type="text/javascript" src="js/role.js"></script>
+<link rel="stylesheet" href="../css/lanrenzhijia.css" media="all">
 	<link href="./img/bootstrap.min.css" rel="stylesheet">
 	<script src="./img/bootstrap.min.js.下载"></script>
 	<link href="./img/style.css" rel="stylesheet">
 
 <script type="text/javascript">
-    $(document).ready(function(){ 
-    	$("button.createOrderButton").click(function(){  
+$(document).ready(function(){
+    	$("button.createOrderButton").click(function(){ 
             var $check_boxes = $("input[type=checkbox][id!=check_all_box]:checked");  
             if($check_boxes.length<=0){ alert('未勾选购买物品，请勾选！');return;}  
             if(confirm('确定要剁手（购买）吗？')){
@@ -53,8 +54,87 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
             }
             
         });  
+      	$('a[name = address]').click(function(){
+    		//$('.theme-popover-mask').fadeIn(100);
+    		$('div[class=theme-popover][name=address]').slideDown(200);
+    		$("div[name='form']").show();
+    	});
     	
+    $('.theme-poptit .close').click(function(){
+    	$('.theme-popover-mask').fadeOut(100);
+    	$('.theme-popover').slideUp(200);
     });
+
+    
+   $('#addb').click(function(){
+    		var time = new Date();
+
+    		
+    		var ajax_option = {
+    			//target: '#output',          //把服务器返回的内容放入id为output的元素中        
+    			//beforeSubmit://提交前的回调函数    
+    			url : '../ast', //默认是form的action， 如果申明，则会覆盖    
+    			type : 'post', //默认是form的method（get or post），如果申明，则会覆盖    
+    			dataType : 'json', //html(默认), xml, script, json...接受服务端返回的类型    
+    			date:{"d":time},
+    			clearForm : true, //成功提交后，清除所有表单元素的值    
+    			resetForm : true, //成功提交后，重置所有表单元素的值    
+    			timeout : 3000, //限制请求的时间，当请求大于3秒后，跳出请求   
+    			success : function(data) {
+    				if(data.message.match('.+?失败.+')){
+    					if(data.message.match('.+?验证码.+')){
+    						alert("验证码错误");
+    					}else if(data.message.match('.+?旧.+')){
+    						alert("旧密码错误");
+    					}else{
+    						alert("修改失败，请重试！");
+    					}
+    					
+    				}else{
+    					alert("修改成功！");
+    					location.href="<%=request.getContextPath()%>/Spcar?flag=view";
+    				//$('.theme-popover-mask').fadeOut(100);
+    				$('.theme-popover').slideUp(200);
+    				
+    				}
+    			}, //提交后的回调函数
+    			error:function(XMLHttpRequest, textStatus, errorThrown){
+    				alert("修改异常，请重试！");
+    			   },
+    		};
+    		$("#pfm").ajaxSubmit(ajax_option);
+    	});
+});
+    <%------------------document-------------%>
+    function deleA(a){
+    	var aid = a;
+    	 $.ajax({
+             type:'post',  
+             traditional :true,//阻止深度序列化  
+             url:'../ast',  
+             data:{
+             	"flag":"dele",
+             	"aid":aid},
+             dataType:'json',
+             async: false,
+             success:function(data){  
+ 				if(data.message.match('.+?成功.+')){
+                 	alert("成功删除！"); 
+                     //MARK**转付款界面
+ 					//location.href="../index.jsp";	
+                 	location.href="<%=request.getContextPath()%>/Spcar?flag=view";
+ 				}else{
+ 						alert("删除失败");
+ 					}
+             },
+             error:function(XMLHttpRequest, textStatus, errorThrown){
+ 				   alert(XMLHttpRequest.status);
+ 				   alert(XMLHttpRequest.readyState);
+ 				   alert(textStatus);
+ 			   }
+         });  
+    };
+	
     function changeBox(){
     	//$("input[type=checkbox][id!=check_all_box]").removeAttr("checked");
 		$("input[type=checkbox][id!=check_all_box]").prop("checked",$('input[id=check_all_box]').is(':checked'));
@@ -485,7 +565,9 @@ function formatMoney(num){
 	     int idindex = 1;
   for(HashMap<String,Object> item : adlist){
 	  %><div style="float:left;width:300px;height:170px; margin: 10px;bottom: 10px;border: 1px solid #CCCCCC">
-	     <input type="radio" name="radio" id="radio<%=item.get("adressid")%>" value="<%=item.get("address")%>"><%=idindex++%><br/>
+	     <input type="radio" name="radio" id="radio<%=item.get("adressid")%>" value="<%=item.get("address")%>"><%=idindex%><br/>
+	     
+	     <input id="deleb" type="button" value="删除" onclick="deleA(<%=item.get("adressid")%>)" /><br/>
 	     <% 
 	     item.remove("uid");
 	     for (String s:item.keySet()){
@@ -511,16 +593,65 @@ function formatMoney(num){
     	
   		 <% }}%>
 		</div>
-	  <% }%>
+		
+	  <% 
+	  idindex++;
+	  if(idindex == 4){
+		  break;
+		}  
+  }%>
+  
+    <% 
+	  
+	  if(idindex != 4){
+		  %>
+		  <%-- 添加新收货地址后刷新 ../Spcar?flag=view--%>
 	  <div style="float:left;width:300px;height:auto; margin: 20px;bottom: 20px;border:  1px solid #CCCCCC;">
 	      			<br/>
     			<span style="width:100px;height:auto;bottom: 10px;margin: 10px;border:  1px solid #CCCCCC;">
-    			<a href="javascript:void(0);">新增收货地址</a>
+    			<a name="address" href="javascript:void(0);">新增收货地址</a>
     			</span>
     			<br/>
     			<br/>
-	  </div>
+	  </div>		  
+
  </div>
+<%-- 地址弹窗 ../Spcar?flag=view--%>
+	<div class="theme-popover" name="address" style="text-align: center; height:400px;">
+     <div class="theme-poptit">
+          <a href="javascript:;" title="关闭" class="close">×</a>
+          <h3>新增地址</h3>
+     </div>
+   
+     <div class="theme-popbod dform" name="form">
+           <form class="theme-signin" name="loginform" id="pfm" action="" method="post">
+                	<input type="hidden" name="flag" value="changeAdd"/>
+                <ol>
+				                     
+                  	<li><strong>地区：</strong><select  id="roles" name="province"  required>
+						   <option >--选择省份--</option>
+						   </select>
+						   <select  id="user" name="city"    required>
+						   <option>--选择城市--</option>
+						   </select>
+						   	</li>
+   					<li><strong>设为默认：</strong>是<input type="radio" name="default" value="true">
+   					否<input type="radio" name="default" value="false" defaultSelected>
+   					</li>
+                  	
+   					<li><strong>姓名：</strong><input required class="ipt" type="text" name="aname"  size="20"></li>
+                  	<li><strong>地址：</strong><input required class="ipt" type="text" name="address"  size="20"></li>
+                  	<li><strong>手机：</strong><input class="ipt" type="text" name="aphone" onkeyup="this.value=this.value.replace(/\D/g,'')" required  size="20"></li>
+                  	 <li ><input class="btn btn-primary" style="left:60px" type="button" id="addb" value="确认"/></li>
+                  	
+                </ol>
+           </form>
+     </div>                    
+</div>	  
+<%-- 地址弹窗../Spcar?flag=view--%>
+		  	<%  
+		}  
+  %>
 <!-- ------------------------------------------------------------ -->
 
 
@@ -604,8 +735,7 @@ for(HashMap<String,Object> item : view){
 	<div class="cartFoot">
 		<img selectit="false" class="selectAllItem" src="./img/cartNotSelected.png">
 		<span>全选</span>
-<!-- 		<a href="#">删除</a> -->
-		
+	
 		<div class="pull-right">
 			<span>已选商品 <span class="cartSumNumber">0</span> 件</span>
 			

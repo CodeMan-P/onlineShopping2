@@ -117,13 +117,13 @@ public class UserManagerSlt extends HttpServlet {
 	 */
 	public void changePwd(HttpServletRequest request, PrintWriter out, ObjectMapper mapper)
 			throws JsonProcessingException, IOException, JsonParseException, JsonMappingException {
-		String json;
 		String code = request.getParameter("checkcode");
 		if(code!=null&&!code.equals(request.getSession().getAttribute("code"))){
 			out.write("{\"message\":\"验证码错误，修改失败!\"}");
 			out.close();
 			return;
 		}
+		String json;
 		json = mapper.writeValueAsString(request.getParameterMap());
 		json = json.replaceAll("\\[|\\]", "");
 		@SuppressWarnings("unchecked")

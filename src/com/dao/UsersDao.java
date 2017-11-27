@@ -1,5 +1,8 @@
 package com.dao;
 
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.util.LinkedList;
 
 import org.apache.ibatis.session.SqlSession;
@@ -58,6 +61,14 @@ public class UsersDao {
 		int i = 0;
 
 		try {
+			if(address.getDef()){
+				//其他全部设置为非默认
+				Connection con = DbConn.getCon();
+				PreparedStatement pst = con.prepareStatement("update address set def = 0 where uid = ?");
+				pst.setInt(1, address.getUid());
+				pst.executeUpdate();
+				DbConn.closeConn(null, pst, con);
+			}
 			i = am.insertSelective(address);
 		} catch (Exception e) {
 			log.warn(e.getLocalizedMessage());
@@ -90,7 +101,38 @@ public class UsersDao {
 		int i = 0;
 
 		try {
+			
+			
+			Address address = am.selectByPrimaryKey(addressId);
 			i = am.deleteByPrimaryKey(addressId);
+			Connection con = DbConn.getCon();
+			PreparedStatement pst = con.prepareStatement("select * from address where def = 1 and uid = ?");
+			pst.setInt(1, address.getUid());
+			ResultSet rs = pst.executeQuery();
+			if(!rs.next()){
+				ResultSet temp = pst.executeQuery("select * from address where uid = "+address.getUid());
+				if(temp.next()){
+					String sql1="SELECT adressId FROM address WHERE  uid = "+address.getUid()+" ORDER BY adressId LIMIT 1";
+					ResultSet temp2 = pst.executeQuery(sql1);
+					int aid = -1;
+					if(temp2.next()){
+						aid = temp2.getInt("adressId");
+						Address a = new Address();
+						a.setAdressid(aid);
+						a.setDef(true);
+						System.out.println(aid);
+						editAddress(a);
+					}
+					if(temp2!=null){
+						temp2.close();
+					}
+				}
+				if(temp != null){
+					temp.close();
+				}
+			}
+			DbConn.closeConn(rs, pst, con);
+			
 		} catch (Exception e) {
 			log.warn(e.getLocalizedMessage());
 			e.printStackTrace();

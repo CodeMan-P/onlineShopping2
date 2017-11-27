@@ -33,6 +33,8 @@
 	>
 	<columnOverride column="aphone" jdbcType="DECIMAL" javaType="java.long.String" />
 	<columnOverride column="address" javaType="java.lang.String" jdbcType="VARCHAR" />
+	<columnOverride column="province" javaType="java.lang.String" jdbcType="VARCHAR" />
+	<columnOverride column="city" javaType="java.lang.String" jdbcType="VARCHAR" />
 	</table>
 	<table tableName="goodstype" domainObjectName="GoodsType"
 	 enableCountByExample="false" enableSelectByExample="false"

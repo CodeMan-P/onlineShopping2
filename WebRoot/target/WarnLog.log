@@ -276,3 +276,11 @@
  <com.util.DbConn.getFactory(DbConn.java:25)> 
 2017-11-15 14:25:04  WARN 200ms|>- 
  <com.dao.GoodsDao.getGoddsByTid(GoodsDao.java:53)> 
+2017-11-27 14:13:49  WARN 34595ms|>- 
+ <com.dao.UsersDao.addAddress(UsersDao.java:73)> 
+2017-11-27 14:15:44  WARN 17521ms|>- 
+ <com.dao.UsersDao.addAddress(UsersDao.java:73)> 
+2017-11-27 14:51:07  WARN 25489ms|>- 
+ <com.dao.UsersDao.deleAddress(UsersDao.java:136)> 
+2017-11-27 14:53:24  WARN 13281ms|>- You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'uid = 1' at line 1
+ <com.dao.UsersDao.deleAddress(UsersDao.java:136)> 
