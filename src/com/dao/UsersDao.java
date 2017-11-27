@@ -29,6 +29,19 @@ public class UsersDao {
 			log.warn(e.getLocalizedMessage());
 		}
 	}
+	public static boolean updateByPrimaryKeySelective(Users record){
+		int i = 0;
+		try {
+			i = um.updateByPrimaryKeySelective(record);
+		} catch (Exception e) {
+			e.printStackTrace();
+			return false;
+		}
+		if(i>0){
+			return true;
+		}
+		return false;
+	}
 
 	@Test
 	public void testMethdo() {

@@ -5,6 +5,7 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.HashMap;
 
 import javax.servlet.ServletConfig;
 import javax.servlet.ServletException;
@@ -14,6 +15,9 @@ import javax.servlet.http.HttpServletResponse;
 
 import org.apache.log4j.Logger;
 
+import com.fasterxml.jackson.core.JsonParseException;
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.JsonMappingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.jspsmart.upload.Files;
 import com.jspsmart.upload.SmartUpload;
@@ -79,41 +83,81 @@ public class UserManagerSlt extends HttpServlet {
 		if (flag != null) {
 			switch (flag) {
 			case "regist":
-				json = mapper.writeValueAsString(request.getParameterMap());
-				// ajaxSubmit 提交时每个参数以数组传递，需要删除[]
-				json = json.replace("[", "");
-				json = json.replace("]", "");
-				System.out.println(json);
+				regist(request, out, mapper);
+				return;
+			case "changePwd":
+				
 				try {
-					user = mapper.readValue(json, Users.class);
-					String message = UserService.addUser(user);
-					if (message.contains("成功")) {
-						request.getSession().setAttribute("name", user.getUname());
-						request.getSession().setAttribute("uid", user.getUid());
-						request.getSession().setAttribute("avatar", user.getAvatar());
-						request.getSession().setAttribute("city", user.getCity());
-						out.write("注册成功！");
-					} else if (message.contains("Duplicate")) {
-						out.write("用户名已存在！注册失败！");
-						log.warn(message);
-					} else {
-						log.warn(message);
-						out.write("注册失败！");
-					}
+					changePwd(request, out, mapper);
 				} catch (Exception e) {
 					e.printStackTrace();
-					out.write("请输入正确的注册信息！");
+					out.write("{\"message\":\"密码修改失败！\"}");
 					out.flush();
 					out.close();
-					return;
 				}
-				out.flush();
-				out.close();
 				return;
+			
+			default:;
 			}
 		}
 
 		// 上传请求
+		uploadAvator(request, response, out);
+
+	}
+
+	/**
+	 * @param request
+	 * @param out
+	 * @param mapper
+	 * @throws JsonProcessingException
+	 * @throws IOException
+	 * @throws JsonParseException
+	 * @throws JsonMappingException
+	 */
+	public void changePwd(HttpServletRequest request, PrintWriter out, ObjectMapper mapper)
+			throws JsonProcessingException, IOException, JsonParseException, JsonMappingException {
+		String json;
+		String code = request.getParameter("checkcode");
+		if(code!=null&&!code.equals(request.getSession().getAttribute("code"))){
+			out.write("{\"message\":\"验证码错误，修改失败!\"}");
+			out.close();
+			return;
+		}
+		json = mapper.writeValueAsString(request.getParameterMap());
+		json = json.replaceAll("\\[|\\]", "");
+		@SuppressWarnings("unchecked")
+		HashMap<String,String> hm = mapper.readValue(json, HashMap.class);
+		String pwd = hm.get("opwd");
+		String name = (String) request.getSession().getAttribute("name");
+		Users users = new Users(name, pwd);
+		users = UserService.findUser(users);
+		if (users == null) {
+			out.write("{\"message\":\"旧密码错误，修改失败!\"}");
+			out.flush();
+		}else{
+			Users newUser = new Users(name,hm.get("npwd"));
+			newUser.setUid(users.getUid());
+			boolean b = UserService.updateByPrimaryKeySelective(newUser);
+			if(b){
+				out.write("{\"message\":\"密码修改成功！\"}");
+			}else{
+				out.write("{\"message\":\"密码修改失败！\"}");
+			}
+			out.flush();
+		}
+		out.close();
+		return;
+	}
+
+	/**
+	 * @param request
+	 * @param response
+	 * @param out
+	 * @throws ServletException
+	 */
+	public void uploadAvator(HttpServletRequest request, HttpServletResponse response, PrintWriter out)
+			throws ServletException {
 		SmartUpload su = new SmartUpload();
 		su.initialize(this, request, response);
 		su.setAllowedFilesList("jpg,png,JPG,PNG");
@@ -157,7 +201,48 @@ public class UserManagerSlt extends HttpServlet {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
+	}
 
+	/**
+	 * @param request
+	 * @param out
+	 * @param mapper
+	 * @throws JsonProcessingException
+	 */
+	public void regist(HttpServletRequest request, PrintWriter out, ObjectMapper mapper)
+			throws JsonProcessingException {
+		Users user;
+		String json;
+		json = mapper.writeValueAsString(request.getParameterMap());
+		// ajaxSubmit 提交时每个参数以数组传递，需要删除[]
+		json = json.replace("[", "");
+		json = json.replace("]", "");
+		try {
+			user = mapper.readValue(json, Users.class);
+			String message = UserService.addUser(user);
+			if (message.contains("成功")) {
+				request.getSession().setAttribute("name", user.getUname());
+				request.getSession().setAttribute("uid", user.getUid());
+				request.getSession().setAttribute("avatar", user.getAvatar());
+				request.getSession().setAttribute("city", user.getCity());
+				out.write("注册成功！");
+			} else if (message.contains("Duplicate")) {
+				out.write("用户名已存在！注册失败！");
+				log.warn(message);
+			} else {
+				log.warn(message);
+				out.write("注册失败！");
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+			out.write("请输入正确的注册信息！");
+			out.flush();
+			out.close();
+			return;
+		}
+		out.flush();
+		out.close();
+		return;
 	}
 
 }

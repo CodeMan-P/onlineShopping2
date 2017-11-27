@@ -123,17 +123,6 @@
 					$("#logina").attr("href","javascript:void(0);");
 					$("#touxiang").attr("src",path);
 					}
-			//		$("#user").hide();
-					//	$("body").remove("#user");
-				//	$("#userInfo #spc").empty();
-					//借密码变量 存储 购物车数量
-					//$("#userInfo #spc").text(data.upwd);
-				//	$("#userInfo #sp1").empty();
-			//		$("#userInfo #sp1").text(data.uname);
-		//			$("#userInfo #sp2").empty();
-	//				$("#userInfo #sp2").text(data.city);
-//					$("#userInfo").show();
-				//temp.show();
 				}, //提交后的回调函数
 				error : function() {
 					alert("登录异常，请重新登录！");

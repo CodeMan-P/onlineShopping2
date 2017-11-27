@@ -20,10 +20,10 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	<!--
 	<link rel="stylesheet" type="text/css" href="styles.css">
 	-->
-			<link href="./img/bootstrap.min.css" rel="stylesheet"/>
-		<script src="./img/bootstrap.min.js.下载"></script>
-		<link href="./img/style.css" rel="stylesheet"/>
-<script type="text/javascript" src="../js/jquery-1.8.3.js"></script>
+<script type="text/javascript" src="../js/jquery-2.1.0.js"></script>
+<link href="./img/bootstrap.min.css" rel="stylesheet"/>
+<link href="./img/style.css" rel="stylesheet"/>
+<script src="./img/bootstrap.min.js.下载"></script>
 	<script type="text/javascript">
 	$(document).ready(function(){
 		
@@ -95,9 +95,9 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 </c:if>
 		
 		
-		<td style="border: solid 1px #CCCCCC;margin:30px;	 text-align: center;">
+		<td style="width:30%;border: solid 1px #CCCCCC;margin:30px;	 text-align: center;">
 		<a href="../ProInfo?gid=${list.gid}">
-		<img alt="商品图片" src="${list.imgpath}" style="width: 188px;position:relative;	top:15px; height: 188px">
+		<img alt="商品图片" src="${list.imgpath}" style="width: 188px;position:relative;	top:1px; height: 188px">
 		</a><br/>
 		<span	style="color:#f40">${list.gname }</span><br/>
 		<span	style="color:#F40">	￥<strong style="color: #F40;font-weight: 700;font-family: arial;" >${list.price }</strong></span><br/>
@@ -106,12 +106,22 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 		
 <c:if test="${index == 3}">
 </tr>
+<c:set value="0"	var="index" ></c:set>
 </c:if>
 
-<c:if test="${index == 3}">
-<c:set value="0"	var="index" ></c:set>
-</c:if>		
  </c:forEach>
+ 
+ <c:if test="${index != 0}">
+<c:choose>
+<c:when test="${index == 1}">
+<td></td><td></td>
+</c:when>
+<c:otherwise>
+<td></td>
+</c:otherwise>
+</c:choose>
+</tr>
+</c:if>
 <%----------------------------------列表循环 --%>
 		</table>
 	</div>

@@ -13,12 +13,93 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   <head>
     <base href="<%=basePath%>">
     <title>全部订单页面</title>
+<link rel="stylesheet" href="../css/lanrenzhijia.css" media="all">
 <link rel="stylesheet" href="css/style_order.css" /> 
 <script type="text/javascript" src="../js/jquery-2.1.0.js"></script>
 <script type="text/javascript" src="../js/jquery.form.js"></script>
 <script type="text/javascript" src="../js/ajaxfileupload.js"></script>
 <script type="text/javascript">
 $(document).ready(function(){
+	<!-- 弹出登录框-->
+	$('a[name = pwd]').click(function(){
+		//$('.theme-popover-mask').fadeIn(100);
+		$('div[class=theme-popover][name=pwd]').slideDown(200);
+		$("div[name='form']").show();
+	});
+	$('a[name = avatar]').click(function(){
+		//$('.theme-popover-mask').fadeIn(100);
+		$('div[class=theme-popover][name=avatar]').slideDown(200);
+		$("div[name='aform']").show();
+	});
+$('.theme-poptit .close').click(function(){
+	$('.theme-popover-mask').fadeOut(100);
+	$('.theme-popover').slideUp(200);
+})
+	
+	$('#cpwd').click(function(){
+		var time = new Date();
+	var	c = $("#ccpwd").val();
+		if(c===""){
+			alert("输入验证码！");
+			return;
+		}
+		c = $("input[name=opwd]").val();
+		if(c===""){
+			alert("输入旧密码！");
+			return;
+		}
+		c = $("input[name=npwd]").val();
+		if(c===""){
+			alert("输入新密码！");
+			return;
+		}
+		var c2 = $("input[name=npwd2]").val();
+		if(c2===""){
+			alert("确认新密码！");
+			return;
+		}
+		if(c !== c2){
+			alert("新密码不一致！");
+			return;
+		}
+		var ajax_option = {
+			//target: '#output',          //把服务器返回的内容放入id为output的元素中        
+			//beforeSubmit://提交前的回调函数    
+			url : '../UMS', //默认是form的action， 如果申明，则会覆盖    
+			type : 'post', //默认是form的method（get or post），如果申明，则会覆盖    
+			dataType : 'json', //html(默认), xml, script, json...接受服务端返回的类型    
+			date:{"d":time},
+			clearForm : true, //成功提交后，清除所有表单元素的值    
+			resetForm : true, //成功提交后，重置所有表单元素的值    
+			timeout : 3000, //限制请求的时间，当请求大于3秒后，跳出请求   
+			success : function(data) {
+				if(data.message.match('.+?失败.+')){
+					if(data.message.match('.+?验证码.+')){
+						alert("验证码错误");
+					}else if(data.message.match('.+?旧.+')){
+						alert("旧密码错误");
+					}else{
+						alert("修改失败，请重试！");
+					}
+					
+				}else{
+					alert("修改成功！");
+				//$('.theme-popover-mask').fadeOut(100);
+				$('.theme-popover').slideUp(200);
+				
+				}
+			}, //提交后的回调函数
+			error:function(XMLHttpRequest, textStatus, errorThrown){
+				alert("修改异常，请重试！");
+			   },
+		};
+		$("#pfm").ajaxSubmit(ajax_option);
+	});
+$("#check").click(function(){
+	var time = new Date();
+	$(this).attr("src","<%=request.getContextPath()%>/ck?d="+time);	
+});
+
 	$("input[type=button]").click(function(){
 		var str = $(this).val();
 		if(str !== "付款"){
@@ -56,21 +137,21 @@ SimpleDateFormat sdf2 = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 			<div class="top">
 				<div class="top_left">
 					<ul>
-						<li><a  class="img01" hrref="javascript:void(0);"><c:out value="${sessionScope.name}"></c:out></a><span><img src="img/44.png"/></span></li>
-						<li><a hrref="javascript:void(0);">消息</a><span><img src="img/44.png"/></span></li>
+						<li><a  class="img01" href="javascript:void(0);"><c:out value="${sessionScope.name}"></c:out></a><span><img src="img/44.png"/></span></li>
+						<li><a href="javascript:void(0);">消息</a><span><img src="img/44.png"/></span></li>
 						<li><a hrref="javascript:void(0);">手机逛淘宝</a></li>
 					</ul>
 				</div>
 				<div class="top_right">
 					<ul>
-						<li><a hrref="javascript:void(0);">淘宝网首页</a></li>
-						<li><a hrref="javascript:void(0);">我的淘宝</a><span><img src="img/44.png"/></span></li>
-						<li><a class="img02" hrref="javascript:void(0);">购物车</a><span>(${sessionScope.carnum})</span><span><img src="img/44.png"/></span></li>
-						<li><a class="img03" hrref="javascript:void(0);">收藏夹</a></li>
-						<li><a hrref="javascript:void(0);">商品分类</a><span>|</span></li>
-						<li><a hrref="javascript:void(0);">卖家中心</a><span><img src="img/44.png"/></span></li>
-						<li><a hrref="javascript:void(0);">联系客服</a><span><img src="img/44.png"/></span></li>
-						<li><a class="img04" hrref="javascript:void(0);">网站导航</a><span><img src="img/44.png"/></span></li>
+						<li><a href="javascript:void(0);">淘宝网首页</a></li>
+						<li><a href="javascript:void(0);">我的淘宝</a><span><img src="img/44.png"/></span></li>
+						<li><a class="img02"  href="../Spcar?flag=view">购物车</a><span>(${sessionScope.carnum})</span><span><img src="img/44.png"/></span></li>
+						<li><a class="img03" href="javascript:void(0);">地址管理</a><span>|</span></li>
+						<li><a name="pwd" href="javascript:void(0);">修改密码</a><span>|</span></li>
+						<li><a name="avatar" href="javascript:void(0);">问题反馈</a><span></span>|</li>
+						<li><a href="javascript:void(0);">联系客服</a><span><img src="img/44.png"/></span></li>
+						<li><a class="img04" href="javascript:void(0);">网站导航</a><span><img src="img/44.png"/></span></li>
 					</ul>
 				</div>
 			</div>
@@ -102,7 +183,7 @@ SimpleDateFormat sdf2 = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 			<div class="content_left">
 				<ul>
 					<span>全部功能</span>
-					<li><a href="javascript:void(0);">我的购物车</a></li>
+					<li><a href="../Spcar?flag=view">我的购物车</a></li>
 					<li><a class="nav01" href="javascript:void(0);">已买到的宝贝</a></li>
 					<li><a href="javascript:void(0);">购买过的店铺</a></li>
 					<li><a class="nav01" href="javascript:void(0);">我的发票</a></li>
@@ -262,6 +343,35 @@ for(LinkedHashMap<String, Object> temp : list){
             </div>
             </div>
           </div>
+
+
+
+<%---------------修改密码 --------------------------%>
+<div class="theme-popover" name="pwd" style="text-align: center; height:400px;">
+     <div class="theme-poptit">
+          <a href="javascript:;" title="关闭" class="close">×</a>
+          <h3>修改密码</h3>
+     </div>
+    <h4>点击图片生成新的验证码！</h4>
+     <div class="theme-popbod dform" name="form">
+           <form class="theme-signin" name="loginform" id="pfm" action="" method="post">
+                	<input type="hidden" name="flag" value="changePwd"/>
+                <ol>
+					<li><strong>旧密码：</strong><input class="ipt" type="password" name="opwd" value="" size="20"/></li>                     
+                     <li><strong>新密码：</strong><input class="ipt" type="password" name="npwd" value="" size="20" /></li>
+                     <li><strong>确认密码：</strong><input class="ipt" type="password" name="npwd2" value="" size="20" /></li>
+                     <li><strong>验证码：</strong><input class="ipt" type="text" name="checkcode" id="ccpwd" value="" size="20" /></li>
+                     <li><img id="check" alt="验证码" src="<%=request.getContextPath()%>/ck" onclick="docheck()" style="width: 200px;height: 60px;border-color: blue"/>
+                     <li ><input class="btn btn-primary" style="left:60px" type="button" id="cpwd" value="确认修改"/></li>
+                </ol>
+           </form>
+     </div>
+      
+      
+                           
+</div>
+<%---------------修改密码end --------------------------%>
+
 
   </body>
 </html>

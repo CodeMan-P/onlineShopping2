@@ -32,4 +32,7 @@ public class UserService {
 	public static boolean addAddress(Address address) {
 		return UsersDao.addAddress(address);
 	}
+	public static boolean updateByPrimaryKeySelective(Users record){
+		return UsersDao.updateByPrimaryKeySelective(record);
+	}
 }

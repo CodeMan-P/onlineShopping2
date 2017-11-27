@@ -14795,3 +14795,778 @@
 11-26 18:55:06 ====> Parameters: 
 11-26 18:55:06 <====      Total: 2
 11-26 18:55:06 <==      Total: 16
+11-26 22:43:32 Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+11-26 22:43:35 PooledDataSource forcefully closed/removed all connections.
+11-26 22:43:35 PooledDataSource forcefully closed/removed all connections.
+11-26 22:43:35 PooledDataSource forcefully closed/removed all connections.
+11-26 22:43:35 PooledDataSource forcefully closed/removed all connections.
+11-26 22:50:55 Opening JDBC Connection
+11-26 22:50:55 Created connection 373885830.
+11-26 22:50:55 Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@16490b86]
+11-26 22:50:55 ==>  Preparing: select gid, gname, tid, price, descption, imgPath, filePath, stock from goods where gid = ? 
+11-26 22:50:55 ==> Parameters: 1(Integer)
+11-26 22:50:55 <==      Total: 1
+11-27 09:02:38 Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+11-27 09:02:38 PooledDataSource forcefully closed/removed all connections.
+11-27 09:02:38 PooledDataSource forcefully closed/removed all connections.
+11-27 09:02:38 PooledDataSource forcefully closed/removed all connections.
+11-27 09:02:38 PooledDataSource forcefully closed/removed all connections.
+11-27 09:02:39 Opening JDBC Connection
+11-27 09:02:39 Created connection 168072079.
+11-27 09:02:39 Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@a04938f]
+11-27 09:02:39 ==>  Preparing: SELECT * FROM users WHERE uname = ? and upwd = ? 
+11-27 09:02:39 ==> Parameters: xiaoming(String), 123(String)
+11-27 09:02:39 <==    Columns: uid, uname, upwd, phone, city, regDate, idCard, realName, age, email, sex, avatar
+11-27 09:02:39 <==        Row: 1, xiaoming, 123, 18899119292, 西安, 2017-11-11, null, 小明, 22, null, 男, <<BLOB>>
+11-27 09:02:39 <==      Total: 1
+11-27 09:02:39 Opening JDBC Connection
+11-27 09:02:39 Created connection 318734037.
+11-27 09:02:39 Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@12ff7ed5]
+11-27 09:02:39 ==>  Preparing: SELECT COUNT(1) FROM shoppingcar WHERE uid = ?; 
+11-27 09:02:39 ==> Parameters: 1(Integer)
+11-27 09:02:39 <==      Total: 1
+11-27 09:02:42 Opening JDBC Connection
+11-27 09:02:42 Created connection 1964696521.
+11-27 09:02:42 Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@751ae3c9]
+11-27 09:02:42 ==>  Preparing: select gid, gname, tid, price, descption, imgPath, filePath, stock from goods where gid = ? 
+11-27 09:02:42 ==> Parameters: 1(Integer)
+11-27 09:02:42 <==      Total: 1
+11-27 09:02:48 ==>  Preparing: select * from address where uid = ? 
+11-27 09:02:48 ==> Parameters: 1(Integer)
+11-27 09:02:48 <==      Total: 2
+11-27 09:02:48 ==>  Preparing: select * from view_car_goods where uid = ?; 
+11-27 09:02:48 ==> Parameters: 1(Integer)
+11-27 09:02:48 <==      Total: 0
+11-27 09:02:59 ==>  Preparing: select gid, gname, tid, price, descption, imgPath, filePath, stock from goods where gid = ? 
+11-27 09:02:59 ==> Parameters: 5(Integer)
+11-27 09:02:59 <==      Total: 1
+11-27 09:03:03 ==>  Preparing: select cid, addGoodsTime, uid, gid, gnum, descption from shoppingcar where uid = ? and gid = ? 
+11-27 09:03:03 ==> Parameters: 1(Integer), 5(Integer)
+11-27 09:03:03 <==      Total: 0
+11-27 09:03:03 ==>  Preparing: insert into shoppingcar ( addGoodsTime, uid, gid, gnum, descption ) values ( ?, ?, ?, ?, ? ) 
+11-27 09:03:03 ==> Parameters: 2017-11-27 09:03:03.343(Timestamp), 1(Integer), 5(Integer), 3(Integer), [{"颜色" : "钻雕金","套餐类型" : "官方标配"}](String)
+11-27 09:03:03 <==    Updates: 1
+11-27 09:03:03 ==>  Preparing: SELECT COUNT(1) FROM shoppingcar WHERE uid = ?; 
+11-27 09:03:03 ==> Parameters: 1(Integer)
+11-27 09:03:03 <==      Total: 1
+11-27 09:03:06 ==>  Preparing: select * from address where uid = ? 
+11-27 09:03:06 ==> Parameters: 1(Integer)
+11-27 09:03:06 <==      Total: 2
+11-27 09:03:06 ==>  Preparing: select * from view_car_goods where uid = ?; 
+11-27 09:03:06 ==> Parameters: 1(Integer)
+11-27 09:03:06 <==      Total: 1
+11-27 09:03:11 ==>  Preparing: select * from address where uid = ? 
+11-27 09:03:11 ==> Parameters: 1(Integer)
+11-27 09:03:11 <==      Total: 2
+11-27 09:03:17 Opening JDBC Connection
+11-27 09:03:17 Created connection 354167560.
+11-27 09:03:17 Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@151c2b08]
+11-27 09:03:17 ==>  Preparing: insert into orders ( oid, uid, state, sum, address ) values ( ?, ?, ?, ?, ? ) 
+11-27 09:03:17 ==> Parameters: 20171127090311(String), 1(Integer), 已付款(String), 4400.0(Double), java.io.StringReader@69fbef56(StringReader)
+11-27 09:03:17 <==    Updates: 1
+11-27 09:03:17 ==>  Preparing: insert into orderform ( oid, gid, gnum, SubTotal, descption, uid ) values ( ?, ?, ?, ?, ?, ? ) 
+11-27 09:03:17 ==> Parameters: 20171127090311(String), 5(Integer), 2(Integer), 4400.0(Double), [{"颜色" : "钻雕金","套餐类型" : "官方标配"}](String), 1(Integer)
+11-27 09:03:17 <==    Updates: 1
+11-27 09:03:17 ==>  Preparing: update goods SET gname = ?, tid = ?, price = ?, descption = ?, imgPath = ?, filePath = ?, stock = ? where gid = ? 
+11-27 09:03:17 ==> Parameters: 红米Note 4X(String), 2(Integer), 2200.0(Double), [ {
+  "网络类型" : "4G全网通",
+  "机身颜色" : "钻雕金,钻雕蓝,草木绿,曜石黑,玫瑰金",
+  "套餐类型" : "官方标配,套餐一,套餐二,套餐三,套餐四,套餐五",
+  "存储容量" : "64GB,128GB",
+  "购买方式" : "裸机",
+  "版本" : "Mate 10,Mate 10 62G+128G,麦芒6,P10,畅享7"
+} ](String), goods/xiaomi_6/6.jpg(String), goods/xiaomi_6/img/(String), 9997(Integer), 5(Integer)
+11-27 09:03:17 <==    Updates: 1
+11-27 09:03:17 Committing JDBC Connection [com.mysql.jdbc.JDBC4Connection@151c2b08]
+11-27 09:03:17 添加新订单(20171127090311)：{
+  "oid" : "20171127090311",
+  "uid" : 1,
+  "state" : "已付款",
+  "sum" : 4400.0,
+  "address" : "西安市外包学院"
+}
+11-27 09:03:17 订单详情(20171127090311)：{
+  "oid" : "20171127090311",
+  "gid" : 5,
+  "gnum" : 2,
+  "subtotal" : 4400.0,
+  "descption" : "[{\"颜色\" : \"钻雕金\",\"套餐类型\" : \"官方标配\"}]",
+  "uid" : 1
+}
+11-27 09:03:19 ==>  Preparing: select oid,state,address,sum,uid from view_order_goods where uid = ? group by oid 
+11-27 09:03:19 ==> Parameters: 1(Integer)
+11-27 09:03:19 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171114000359 and uid = 1 
+11-27 09:03:19 ====> Parameters: 
+11-27 09:03:19 <====      Total: 2
+11-27 09:03:19 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171114000839 and uid = 1 
+11-27 09:03:19 ====> Parameters: 
+11-27 09:03:19 <====      Total: 1
+11-27 09:03:19 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171114150342 and uid = 1 
+11-27 09:03:19 ====> Parameters: 
+11-27 09:03:19 <====      Total: 1
+11-27 09:03:19 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171115115255 and uid = 1 
+11-27 09:03:19 ====> Parameters: 
+11-27 09:03:19 <====      Total: 1
+11-27 09:03:19 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171115115316 and uid = 1 
+11-27 09:03:19 ====> Parameters: 
+11-27 09:03:19 <====      Total: 1
+11-27 09:03:19 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171120142528 and uid = 1 
+11-27 09:03:19 ====> Parameters: 
+11-27 09:03:19 <====      Total: 1
+11-27 09:03:19 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171125185207 and uid = 1 
+11-27 09:03:19 ====> Parameters: 
+11-27 09:03:19 <====      Total: 1
+11-27 09:03:19 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171125214247 and uid = 1 
+11-27 09:03:19 ====> Parameters: 
+11-27 09:03:19 <====      Total: 1
+11-27 09:03:19 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171125222523 and uid = 1 
+11-27 09:03:19 ====> Parameters: 
+11-27 09:03:19 <====      Total: 1
+11-27 09:03:19 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171125223010 and uid = 1 
+11-27 09:03:19 ====> Parameters: 
+11-27 09:03:19 <====      Total: 2
+11-27 09:03:19 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171125223156 and uid = 1 
+11-27 09:03:19 ====> Parameters: 
+11-27 09:03:19 <====      Total: 1
+11-27 09:03:19 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171125231209 and uid = 1 
+11-27 09:03:19 ====> Parameters: 
+11-27 09:03:19 <====      Total: 1
+11-27 09:03:19 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171126180009 and uid = 1 
+11-27 09:03:19 ====> Parameters: 
+11-27 09:03:19 <====      Total: 1
+11-27 09:03:19 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171126180109 and uid = 1 
+11-27 09:03:19 ====> Parameters: 
+11-27 09:03:19 <====      Total: 2
+11-27 09:03:19 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171126180345 and uid = 1 
+11-27 09:03:19 ====> Parameters: 
+11-27 09:03:19 <====      Total: 1
+11-27 09:03:19 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171126180444 and uid = 1 
+11-27 09:03:19 ====> Parameters: 
+11-27 09:03:19 <====      Total: 2
+11-27 09:03:19 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171127090311 and uid = 1 
+11-27 09:03:19 ====> Parameters: 
+11-27 09:03:19 <====      Total: 1
+11-27 09:03:19 <==      Total: 17
+11-27 09:04:58 ==>  Preparing: select oid,state,address,sum,uid from view_order_goods where uid = ? group by oid 
+11-27 09:04:58 ==> Parameters: 1(Integer)
+11-27 09:04:58 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171114000359 and uid = 1 
+11-27 09:04:58 ====> Parameters: 
+11-27 09:04:58 <====      Total: 2
+11-27 09:04:58 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171114000839 and uid = 1 
+11-27 09:04:58 ====> Parameters: 
+11-27 09:04:58 <====      Total: 1
+11-27 09:04:58 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171114150342 and uid = 1 
+11-27 09:04:58 ====> Parameters: 
+11-27 09:04:58 <====      Total: 1
+11-27 09:04:58 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171115115255 and uid = 1 
+11-27 09:04:58 ====> Parameters: 
+11-27 09:04:58 <====      Total: 1
+11-27 09:04:58 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171115115316 and uid = 1 
+11-27 09:04:58 ====> Parameters: 
+11-27 09:04:58 <====      Total: 1
+11-27 09:04:58 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171120142528 and uid = 1 
+11-27 09:04:58 ====> Parameters: 
+11-27 09:04:58 <====      Total: 1
+11-27 09:04:58 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171125185207 and uid = 1 
+11-27 09:04:58 ====> Parameters: 
+11-27 09:04:58 <====      Total: 1
+11-27 09:04:58 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171125214247 and uid = 1 
+11-27 09:04:58 ====> Parameters: 
+11-27 09:04:58 <====      Total: 1
+11-27 09:04:58 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171125222523 and uid = 1 
+11-27 09:04:58 ====> Parameters: 
+11-27 09:04:58 <====      Total: 1
+11-27 09:04:58 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171125223010 and uid = 1 
+11-27 09:04:58 ====> Parameters: 
+11-27 09:04:58 <====      Total: 2
+11-27 09:04:58 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171125223156 and uid = 1 
+11-27 09:04:58 ====> Parameters: 
+11-27 09:04:58 <====      Total: 1
+11-27 09:04:58 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171125231209 and uid = 1 
+11-27 09:04:58 ====> Parameters: 
+11-27 09:04:58 <====      Total: 1
+11-27 09:04:58 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171126180009 and uid = 1 
+11-27 09:04:58 ====> Parameters: 
+11-27 09:04:58 <====      Total: 1
+11-27 09:04:58 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171126180109 and uid = 1 
+11-27 09:04:58 ====> Parameters: 
+11-27 09:04:58 <====      Total: 2
+11-27 09:04:58 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171126180345 and uid = 1 
+11-27 09:04:58 ====> Parameters: 
+11-27 09:04:58 <====      Total: 1
+11-27 09:04:58 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171126180444 and uid = 1 
+11-27 09:04:58 ====> Parameters: 
+11-27 09:04:58 <====      Total: 2
+11-27 09:04:58 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171127090311 and uid = 1 
+11-27 09:04:58 ====> Parameters: 
+11-27 09:04:58 <====      Total: 1
+11-27 09:04:58 <==      Total: 17
+11-27 09:08:31 ==>  Preparing: select oid,state,address,sum,uid from view_order_goods where uid = ? group by oid 
+11-27 09:08:31 ==> Parameters: 1(Integer)
+11-27 09:08:31 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171114000359 and uid = 1 
+11-27 09:08:31 ====> Parameters: 
+11-27 09:08:31 <====      Total: 2
+11-27 09:08:31 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171114000839 and uid = 1 
+11-27 09:08:31 ====> Parameters: 
+11-27 09:08:31 <====      Total: 1
+11-27 09:08:31 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171114150342 and uid = 1 
+11-27 09:08:31 ====> Parameters: 
+11-27 09:08:31 <====      Total: 1
+11-27 09:08:31 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171115115255 and uid = 1 
+11-27 09:08:31 ====> Parameters: 
+11-27 09:08:31 <====      Total: 1
+11-27 09:08:31 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171115115316 and uid = 1 
+11-27 09:08:31 ====> Parameters: 
+11-27 09:08:31 <====      Total: 1
+11-27 09:08:31 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171120142528 and uid = 1 
+11-27 09:08:31 ====> Parameters: 
+11-27 09:08:31 <====      Total: 1
+11-27 09:08:31 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171125185207 and uid = 1 
+11-27 09:08:31 ====> Parameters: 
+11-27 09:08:31 <====      Total: 1
+11-27 09:08:31 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171125214247 and uid = 1 
+11-27 09:08:31 ====> Parameters: 
+11-27 09:08:31 <====      Total: 1
+11-27 09:08:31 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171125222523 and uid = 1 
+11-27 09:08:31 ====> Parameters: 
+11-27 09:08:31 <====      Total: 1
+11-27 09:08:31 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171125223010 and uid = 1 
+11-27 09:08:31 ====> Parameters: 
+11-27 09:08:31 <====      Total: 2
+11-27 09:08:31 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171125223156 and uid = 1 
+11-27 09:08:31 ====> Parameters: 
+11-27 09:08:31 <====      Total: 1
+11-27 09:08:31 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171125231209 and uid = 1 
+11-27 09:08:31 ====> Parameters: 
+11-27 09:08:31 <====      Total: 1
+11-27 09:08:31 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171126180009 and uid = 1 
+11-27 09:08:31 ====> Parameters: 
+11-27 09:08:31 <====      Total: 1
+11-27 09:08:31 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171126180109 and uid = 1 
+11-27 09:08:31 ====> Parameters: 
+11-27 09:08:31 <====      Total: 2
+11-27 09:08:31 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171126180345 and uid = 1 
+11-27 09:08:31 ====> Parameters: 
+11-27 09:08:31 <====      Total: 1
+11-27 09:08:31 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171126180444 and uid = 1 
+11-27 09:08:31 ====> Parameters: 
+11-27 09:08:31 <====      Total: 2
+11-27 09:08:31 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171127090311 and uid = 1 
+11-27 09:08:31 ====> Parameters: 
+11-27 09:08:31 <====      Total: 1
+11-27 09:08:31 <==      Total: 17
+11-27 09:10:07 ==>  Preparing: select oid,state,address,sum,uid from view_order_goods where uid = ? group by oid 
+11-27 09:10:07 ==> Parameters: 1(Integer)
+11-27 09:10:07 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171114000359 and uid = 1 
+11-27 09:10:07 ====> Parameters: 
+11-27 09:10:07 <====      Total: 2
+11-27 09:10:07 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171114000839 and uid = 1 
+11-27 09:10:07 ====> Parameters: 
+11-27 09:10:07 <====      Total: 1
+11-27 09:10:07 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171114150342 and uid = 1 
+11-27 09:10:07 ====> Parameters: 
+11-27 09:10:07 <====      Total: 1
+11-27 09:10:07 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171115115255 and uid = 1 
+11-27 09:10:07 ====> Parameters: 
+11-27 09:10:07 <====      Total: 1
+11-27 09:10:07 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171115115316 and uid = 1 
+11-27 09:10:07 ====> Parameters: 
+11-27 09:10:07 <====      Total: 1
+11-27 09:10:07 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171120142528 and uid = 1 
+11-27 09:10:07 ====> Parameters: 
+11-27 09:10:07 <====      Total: 1
+11-27 09:10:07 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171125185207 and uid = 1 
+11-27 09:10:07 ====> Parameters: 
+11-27 09:10:07 <====      Total: 1
+11-27 09:10:07 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171125214247 and uid = 1 
+11-27 09:10:07 ====> Parameters: 
+11-27 09:10:07 <====      Total: 1
+11-27 09:10:07 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171125222523 and uid = 1 
+11-27 09:10:07 ====> Parameters: 
+11-27 09:10:07 <====      Total: 1
+11-27 09:10:07 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171125223010 and uid = 1 
+11-27 09:10:07 ====> Parameters: 
+11-27 09:10:07 <====      Total: 2
+11-27 09:10:07 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171125223156 and uid = 1 
+11-27 09:10:07 ====> Parameters: 
+11-27 09:10:07 <====      Total: 1
+11-27 09:10:07 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171125231209 and uid = 1 
+11-27 09:10:07 ====> Parameters: 
+11-27 09:10:07 <====      Total: 1
+11-27 09:10:07 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171126180009 and uid = 1 
+11-27 09:10:07 ====> Parameters: 
+11-27 09:10:07 <====      Total: 1
+11-27 09:10:07 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171126180109 and uid = 1 
+11-27 09:10:07 ====> Parameters: 
+11-27 09:10:07 <====      Total: 2
+11-27 09:10:07 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171126180345 and uid = 1 
+11-27 09:10:07 ====> Parameters: 
+11-27 09:10:07 <====      Total: 1
+11-27 09:10:07 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171126180444 and uid = 1 
+11-27 09:10:07 ====> Parameters: 
+11-27 09:10:07 <====      Total: 2
+11-27 09:10:07 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171127090311 and uid = 1 
+11-27 09:10:07 ====> Parameters: 
+11-27 09:10:07 <====      Total: 1
+11-27 09:10:07 <==      Total: 17
+11-27 09:11:10 ==>  Preparing: select oid,state,address,sum,uid from view_order_goods where uid = ? group by oid 
+11-27 09:11:10 ==> Parameters: 1(Integer)
+11-27 09:11:10 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171114000359 and uid = 1 
+11-27 09:11:10 ====> Parameters: 
+11-27 09:11:10 <====      Total: 2
+11-27 09:11:10 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171114000839 and uid = 1 
+11-27 09:11:10 ====> Parameters: 
+11-27 09:11:10 <====      Total: 1
+11-27 09:11:10 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171114150342 and uid = 1 
+11-27 09:11:10 ====> Parameters: 
+11-27 09:11:10 <====      Total: 1
+11-27 09:11:10 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171115115255 and uid = 1 
+11-27 09:11:10 ====> Parameters: 
+11-27 09:11:10 <====      Total: 1
+11-27 09:11:10 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171115115316 and uid = 1 
+11-27 09:11:10 ====> Parameters: 
+11-27 09:11:10 <====      Total: 1
+11-27 09:11:10 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171120142528 and uid = 1 
+11-27 09:11:10 ====> Parameters: 
+11-27 09:11:10 <====      Total: 1
+11-27 09:11:10 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171125185207 and uid = 1 
+11-27 09:11:10 ====> Parameters: 
+11-27 09:11:10 <====      Total: 1
+11-27 09:11:10 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171125214247 and uid = 1 
+11-27 09:11:10 ====> Parameters: 
+11-27 09:11:10 <====      Total: 1
+11-27 09:11:10 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171125222523 and uid = 1 
+11-27 09:11:10 ====> Parameters: 
+11-27 09:11:10 <====      Total: 1
+11-27 09:11:10 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171125223010 and uid = 1 
+11-27 09:11:10 ====> Parameters: 
+11-27 09:11:10 <====      Total: 2
+11-27 09:11:10 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171125223156 and uid = 1 
+11-27 09:11:10 ====> Parameters: 
+11-27 09:11:10 <====      Total: 1
+11-27 09:11:10 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171125231209 and uid = 1 
+11-27 09:11:10 ====> Parameters: 
+11-27 09:11:10 <====      Total: 1
+11-27 09:11:10 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171126180009 and uid = 1 
+11-27 09:11:10 ====> Parameters: 
+11-27 09:11:10 <====      Total: 1
+11-27 09:11:10 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171126180109 and uid = 1 
+11-27 09:11:10 ====> Parameters: 
+11-27 09:11:10 <====      Total: 2
+11-27 09:11:10 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171126180345 and uid = 1 
+11-27 09:11:10 ====> Parameters: 
+11-27 09:11:10 <====      Total: 1
+11-27 09:11:10 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171126180444 and uid = 1 
+11-27 09:11:10 ====> Parameters: 
+11-27 09:11:10 <====      Total: 2
+11-27 09:11:10 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171127090311 and uid = 1 
+11-27 09:11:10 ====> Parameters: 
+11-27 09:11:10 <====      Total: 1
+11-27 09:11:10 <==      Total: 17
+11-27 09:13:29 ==>  Preparing: SELECT * FROM users WHERE uname = ? and upwd = ? 
+11-27 09:13:29 ==> Parameters: xiaoming(String), 123(String)
+11-27 09:13:29 <==    Columns: uid, uname, upwd, phone, city, regDate, idCard, realName, age, email, sex, avatar
+11-27 09:13:29 <==        Row: 1, xiaoming, 123, 18899119292, 西安, 2017-11-11, null, 小明, 22, null, 男, <<BLOB>>
+11-27 09:13:29 <==      Total: 1
+11-27 09:13:29 ==>  Preparing: SELECT COUNT(1) FROM shoppingcar WHERE uid = ?; 
+11-27 09:13:29 ==> Parameters: 1(Integer)
+11-27 09:13:29 <==      Total: 1
+11-27 09:13:31 ==>  Preparing: select oid,state,address,sum,uid from view_order_goods where uid = ? group by oid 
+11-27 09:13:31 ==> Parameters: 1(Integer)
+11-27 09:13:31 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171114000359 and uid = 1 
+11-27 09:13:31 ====> Parameters: 
+11-27 09:13:31 <====      Total: 2
+11-27 09:13:31 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171114000839 and uid = 1 
+11-27 09:13:31 ====> Parameters: 
+11-27 09:13:31 <====      Total: 1
+11-27 09:13:31 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171114150342 and uid = 1 
+11-27 09:13:31 ====> Parameters: 
+11-27 09:13:31 <====      Total: 1
+11-27 09:13:31 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171115115255 and uid = 1 
+11-27 09:13:31 ====> Parameters: 
+11-27 09:13:31 <====      Total: 1
+11-27 09:13:31 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171115115316 and uid = 1 
+11-27 09:13:31 ====> Parameters: 
+11-27 09:13:31 <====      Total: 1
+11-27 09:13:31 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171120142528 and uid = 1 
+11-27 09:13:31 ====> Parameters: 
+11-27 09:13:31 <====      Total: 1
+11-27 09:13:31 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171125185207 and uid = 1 
+11-27 09:13:31 ====> Parameters: 
+11-27 09:13:31 <====      Total: 1
+11-27 09:13:31 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171125214247 and uid = 1 
+11-27 09:13:31 ====> Parameters: 
+11-27 09:13:31 <====      Total: 1
+11-27 09:13:31 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171125222523 and uid = 1 
+11-27 09:13:31 ====> Parameters: 
+11-27 09:13:31 <====      Total: 1
+11-27 09:13:31 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171125223010 and uid = 1 
+11-27 09:13:31 ====> Parameters: 
+11-27 09:13:31 <====      Total: 2
+11-27 09:13:31 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171125223156 and uid = 1 
+11-27 09:13:31 ====> Parameters: 
+11-27 09:13:31 <====      Total: 1
+11-27 09:13:31 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171125231209 and uid = 1 
+11-27 09:13:31 ====> Parameters: 
+11-27 09:13:31 <====      Total: 1
+11-27 09:13:31 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171126180009 and uid = 1 
+11-27 09:13:31 ====> Parameters: 
+11-27 09:13:31 <====      Total: 1
+11-27 09:13:31 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171126180109 and uid = 1 
+11-27 09:13:31 ====> Parameters: 
+11-27 09:13:31 <====      Total: 2
+11-27 09:13:31 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171126180345 and uid = 1 
+11-27 09:13:31 ====> Parameters: 
+11-27 09:13:31 <====      Total: 1
+11-27 09:13:31 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171126180444 and uid = 1 
+11-27 09:13:31 ====> Parameters: 
+11-27 09:13:31 <====      Total: 2
+11-27 09:13:31 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171127090311 and uid = 1 
+11-27 09:13:31 ====> Parameters: 
+11-27 09:13:31 <====      Total: 1
+11-27 09:13:31 <==      Total: 17
+11-27 09:36:37 ==>  Preparing: select oid,state,address,sum,uid from view_order_goods where uid = ? group by oid 
+11-27 09:36:37 ==> Parameters: 1(Integer)
+11-27 09:36:37 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171114000359 and uid = 1 
+11-27 09:36:37 ====> Parameters: 
+11-27 09:36:37 <====      Total: 2
+11-27 09:36:37 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171114000839 and uid = 1 
+11-27 09:36:37 ====> Parameters: 
+11-27 09:36:37 <====      Total: 1
+11-27 09:36:37 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171114150342 and uid = 1 
+11-27 09:36:37 ====> Parameters: 
+11-27 09:36:37 <====      Total: 1
+11-27 09:36:37 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171115115255 and uid = 1 
+11-27 09:36:37 ====> Parameters: 
+11-27 09:36:37 <====      Total: 1
+11-27 09:36:37 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171115115316 and uid = 1 
+11-27 09:36:37 ====> Parameters: 
+11-27 09:36:37 <====      Total: 1
+11-27 09:36:37 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171120142528 and uid = 1 
+11-27 09:36:37 ====> Parameters: 
+11-27 09:36:37 <====      Total: 1
+11-27 09:36:37 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171125185207 and uid = 1 
+11-27 09:36:37 ====> Parameters: 
+11-27 09:36:37 <====      Total: 1
+11-27 09:36:37 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171125214247 and uid = 1 
+11-27 09:36:37 ====> Parameters: 
+11-27 09:36:37 <====      Total: 1
+11-27 09:36:37 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171125222523 and uid = 1 
+11-27 09:36:37 ====> Parameters: 
+11-27 09:36:37 <====      Total: 1
+11-27 09:36:37 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171125223010 and uid = 1 
+11-27 09:36:37 ====> Parameters: 
+11-27 09:36:37 <====      Total: 2
+11-27 09:36:37 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171125223156 and uid = 1 
+11-27 09:36:37 ====> Parameters: 
+11-27 09:36:37 <====      Total: 1
+11-27 09:36:37 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171125231209 and uid = 1 
+11-27 09:36:37 ====> Parameters: 
+11-27 09:36:37 <====      Total: 1
+11-27 09:36:37 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171126180009 and uid = 1 
+11-27 09:36:37 ====> Parameters: 
+11-27 09:36:37 <====      Total: 1
+11-27 09:36:37 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171126180109 and uid = 1 
+11-27 09:36:37 ====> Parameters: 
+11-27 09:36:37 <====      Total: 2
+11-27 09:36:37 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171126180345 and uid = 1 
+11-27 09:36:37 ====> Parameters: 
+11-27 09:36:37 <====      Total: 1
+11-27 09:36:37 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171126180444 and uid = 1 
+11-27 09:36:37 ====> Parameters: 
+11-27 09:36:37 <====      Total: 2
+11-27 09:36:37 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171127090311 and uid = 1 
+11-27 09:36:37 ====> Parameters: 
+11-27 09:36:38 <====      Total: 1
+11-27 09:36:38 <==      Total: 17
+11-27 09:37:05 ==>  Preparing: select oid,state,address,sum,uid from view_order_goods where uid = ? group by oid 
+11-27 09:37:05 ==> Parameters: 1(Integer)
+11-27 09:37:05 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171114000359 and uid = 1 
+11-27 09:37:05 ====> Parameters: 
+11-27 09:37:05 <====      Total: 2
+11-27 09:37:05 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171114000839 and uid = 1 
+11-27 09:37:05 ====> Parameters: 
+11-27 09:37:05 <====      Total: 1
+11-27 09:37:05 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171114150342 and uid = 1 
+11-27 09:37:05 ====> Parameters: 
+11-27 09:37:05 <====      Total: 1
+11-27 09:37:05 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171115115255 and uid = 1 
+11-27 09:37:05 ====> Parameters: 
+11-27 09:37:05 <====      Total: 1
+11-27 09:37:05 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171115115316 and uid = 1 
+11-27 09:37:05 ====> Parameters: 
+11-27 09:37:05 <====      Total: 1
+11-27 09:37:05 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171120142528 and uid = 1 
+11-27 09:37:05 ====> Parameters: 
+11-27 09:37:05 <====      Total: 1
+11-27 09:37:05 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171125185207 and uid = 1 
+11-27 09:37:05 ====> Parameters: 
+11-27 09:37:05 <====      Total: 1
+11-27 09:37:05 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171125214247 and uid = 1 
+11-27 09:37:05 ====> Parameters: 
+11-27 09:37:05 <====      Total: 1
+11-27 09:37:05 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171125222523 and uid = 1 
+11-27 09:37:05 ====> Parameters: 
+11-27 09:37:05 <====      Total: 1
+11-27 09:37:05 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171125223010 and uid = 1 
+11-27 09:37:05 ====> Parameters: 
+11-27 09:37:05 <====      Total: 2
+11-27 09:37:05 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171125223156 and uid = 1 
+11-27 09:37:05 ====> Parameters: 
+11-27 09:37:05 <====      Total: 1
+11-27 09:37:05 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171125231209 and uid = 1 
+11-27 09:37:05 ====> Parameters: 
+11-27 09:37:05 <====      Total: 1
+11-27 09:37:05 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171126180009 and uid = 1 
+11-27 09:37:05 ====> Parameters: 
+11-27 09:37:05 <====      Total: 1
+11-27 09:37:05 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171126180109 and uid = 1 
+11-27 09:37:05 ====> Parameters: 
+11-27 09:37:05 <====      Total: 2
+11-27 09:37:05 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171126180345 and uid = 1 
+11-27 09:37:05 ====> Parameters: 
+11-27 09:37:05 <====      Total: 1
+11-27 09:37:05 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171126180444 and uid = 1 
+11-27 09:37:05 ====> Parameters: 
+11-27 09:37:05 <====      Total: 2
+11-27 09:37:05 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171127090311 and uid = 1 
+11-27 09:37:05 ====> Parameters: 
+11-27 09:37:05 <====      Total: 1
+11-27 09:37:05 <==      Total: 17
+11-27 09:37:13 ==>  Preparing: select * from address where uid = ? 
+11-27 09:37:13 ==> Parameters: 1(Integer)
+11-27 09:37:13 <==      Total: 2
+11-27 09:37:13 ==>  Preparing: select * from view_car_goods where uid = ?; 
+11-27 09:37:13 ==> Parameters: 1(Integer)
+11-27 09:37:13 <==      Total: 1
+11-27 09:39:25 ==>  Preparing: select * from address where uid = ? 
+11-27 09:39:25 ==> Parameters: 1(Integer)
+11-27 09:39:25 <==      Total: 2
+11-27 09:39:25 ==>  Preparing: select * from view_car_goods where uid = ?; 
+11-27 09:39:25 ==> Parameters: 1(Integer)
+11-27 09:39:25 <==      Total: 1
+11-27 10:07:32 ==>  Preparing: select oid,state,address,sum,uid from view_order_goods where uid = ? group by oid 
+11-27 10:07:32 ==> Parameters: 1(Integer)
+11-27 10:07:32 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171114000359 and uid = 1 
+11-27 10:07:32 ====> Parameters: 
+11-27 10:07:32 <====      Total: 2
+11-27 10:07:32 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171114000839 and uid = 1 
+11-27 10:07:32 ====> Parameters: 
+11-27 10:07:32 <====      Total: 1
+11-27 10:07:32 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171114150342 and uid = 1 
+11-27 10:07:32 ====> Parameters: 
+11-27 10:07:32 <====      Total: 1
+11-27 10:07:32 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171115115255 and uid = 1 
+11-27 10:07:32 ====> Parameters: 
+11-27 10:07:32 <====      Total: 1
+11-27 10:07:32 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171115115316 and uid = 1 
+11-27 10:07:32 ====> Parameters: 
+11-27 10:07:32 <====      Total: 1
+11-27 10:07:32 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171120142528 and uid = 1 
+11-27 10:07:32 ====> Parameters: 
+11-27 10:07:32 <====      Total: 1
+11-27 10:07:32 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171125185207 and uid = 1 
+11-27 10:07:32 ====> Parameters: 
+11-27 10:07:32 <====      Total: 1
+11-27 10:07:32 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171125214247 and uid = 1 
+11-27 10:07:32 ====> Parameters: 
+11-27 10:07:32 <====      Total: 1
+11-27 10:07:32 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171125222523 and uid = 1 
+11-27 10:07:32 ====> Parameters: 
+11-27 10:07:32 <====      Total: 1
+11-27 10:07:32 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171125223010 and uid = 1 
+11-27 10:07:32 ====> Parameters: 
+11-27 10:07:32 <====      Total: 2
+11-27 10:07:32 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171125223156 and uid = 1 
+11-27 10:07:32 ====> Parameters: 
+11-27 10:07:32 <====      Total: 1
+11-27 10:07:32 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171125231209 and uid = 1 
+11-27 10:07:32 ====> Parameters: 
+11-27 10:07:32 <====      Total: 1
+11-27 10:07:32 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171126180009 and uid = 1 
+11-27 10:07:32 ====> Parameters: 
+11-27 10:07:32 <====      Total: 1
+11-27 10:07:32 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171126180109 and uid = 1 
+11-27 10:07:32 ====> Parameters: 
+11-27 10:07:32 <====      Total: 2
+11-27 10:07:32 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171126180345 and uid = 1 
+11-27 10:07:32 ====> Parameters: 
+11-27 10:07:32 <====      Total: 1
+11-27 10:07:32 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171126180444 and uid = 1 
+11-27 10:07:32 ====> Parameters: 
+11-27 10:07:32 <====      Total: 2
+11-27 10:07:32 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171127090311 and uid = 1 
+11-27 10:07:32 ====> Parameters: 
+11-27 10:07:32 <====      Total: 1
+11-27 10:07:32 <==      Total: 17
+11-27 11:05:06 Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+11-27 11:05:06 PooledDataSource forcefully closed/removed all connections.
+11-27 11:05:06 PooledDataSource forcefully closed/removed all connections.
+11-27 11:05:06 PooledDataSource forcefully closed/removed all connections.
+11-27 11:05:06 PooledDataSource forcefully closed/removed all connections.
+11-27 11:05:06 Opening JDBC Connection
+11-27 11:05:07 Created connection 1004314873.
+11-27 11:05:07 Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@3bdca0f9]
+11-27 11:05:07 ==>  Preparing: select oid,state,address,sum,uid from view_order_goods where uid = ? group by oid 
+11-27 11:05:07 ==> Parameters: 1(Integer)
+11-27 11:05:07 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171114000359 and uid = 1 
+11-27 11:05:07 ====> Parameters: 
+11-27 11:05:07 <====      Total: 2
+11-27 11:05:07 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171114000839 and uid = 1 
+11-27 11:05:07 ====> Parameters: 
+11-27 11:05:07 <====      Total: 1
+11-27 11:05:07 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171114150342 and uid = 1 
+11-27 11:05:07 ====> Parameters: 
+11-27 11:05:07 <====      Total: 1
+11-27 11:05:07 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171115115255 and uid = 1 
+11-27 11:05:07 ====> Parameters: 
+11-27 11:05:07 <====      Total: 1
+11-27 11:05:07 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171115115316 and uid = 1 
+11-27 11:05:07 ====> Parameters: 
+11-27 11:05:07 <====      Total: 1
+11-27 11:05:07 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171120142528 and uid = 1 
+11-27 11:05:07 ====> Parameters: 
+11-27 11:05:07 <====      Total: 1
+11-27 11:05:07 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171125185207 and uid = 1 
+11-27 11:05:07 ====> Parameters: 
+11-27 11:05:07 <====      Total: 1
+11-27 11:05:07 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171125214247 and uid = 1 
+11-27 11:05:07 ====> Parameters: 
+11-27 11:05:07 <====      Total: 1
+11-27 11:05:07 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171125222523 and uid = 1 
+11-27 11:05:07 ====> Parameters: 
+11-27 11:05:07 <====      Total: 1
+11-27 11:05:07 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171125223010 and uid = 1 
+11-27 11:05:07 ====> Parameters: 
+11-27 11:05:07 <====      Total: 2
+11-27 11:05:07 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171125223156 and uid = 1 
+11-27 11:05:07 ====> Parameters: 
+11-27 11:05:07 <====      Total: 1
+11-27 11:05:07 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171125231209 and uid = 1 
+11-27 11:05:07 ====> Parameters: 
+11-27 11:05:07 <====      Total: 1
+11-27 11:05:07 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171126180009 and uid = 1 
+11-27 11:05:07 ====> Parameters: 
+11-27 11:05:07 <====      Total: 1
+11-27 11:05:07 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171126180109 and uid = 1 
+11-27 11:05:07 ====> Parameters: 
+11-27 11:05:07 <====      Total: 2
+11-27 11:05:07 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171126180345 and uid = 1 
+11-27 11:05:07 ====> Parameters: 
+11-27 11:05:07 <====      Total: 1
+11-27 11:05:07 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171126180444 and uid = 1 
+11-27 11:05:07 ====> Parameters: 
+11-27 11:05:07 <====      Total: 2
+11-27 11:05:07 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171127090311 and uid = 1 
+11-27 11:05:07 ====> Parameters: 
+11-27 11:05:07 <====      Total: 1
+11-27 11:05:07 <==      Total: 17
+11-27 11:24:08 Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+11-27 11:24:09 PooledDataSource forcefully closed/removed all connections.
+11-27 11:24:09 PooledDataSource forcefully closed/removed all connections.
+11-27 11:24:09 PooledDataSource forcefully closed/removed all connections.
+11-27 11:24:09 PooledDataSource forcefully closed/removed all connections.
+11-27 11:24:09 Opening JDBC Connection
+11-27 11:24:10 Created connection 928218025.
+11-27 11:24:10 Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@37537ba9]
+11-27 11:24:10 ==>  Preparing: SELECT * FROM users WHERE uname = ? and upwd = ? 
+11-27 11:24:10 ==> Parameters: xiaoming(String), 123(String)
+11-27 11:24:10 <==    Columns: uid, uname, upwd, phone, city, regDate, idCard, realName, age, email, sex, avatar
+11-27 11:24:10 <==        Row: 1, xiaoming, 123, 18899119292, 西安, 2017-11-11, null, 小明, 22, null, 男, <<BLOB>>
+11-27 11:24:10 <==      Total: 1
+11-27 11:24:10 Opening JDBC Connection
+11-27 11:24:10 Created connection 1575450555.
+11-27 11:24:10 Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@5de777bb]
+11-27 11:24:10 ==>  Preparing: SELECT COUNT(1) FROM shoppingcar WHERE uid = ?; 
+11-27 11:24:10 ==> Parameters: 1(Integer)
+11-27 11:24:10 <==      Total: 1
+11-27 11:24:12 Opening JDBC Connection
+11-27 11:24:12 Created connection 1168131981.
+11-27 11:24:12 Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@45a0478d]
+11-27 11:24:12 ==>  Preparing: select oid,state,address,sum,uid from view_order_goods where uid = ? group by oid 
+11-27 11:24:12 ==> Parameters: 1(Integer)
+11-27 11:24:12 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171114000359 and uid = 1 
+11-27 11:24:12 ====> Parameters: 
+11-27 11:24:12 <====      Total: 2
+11-27 11:24:12 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171114000839 and uid = 1 
+11-27 11:24:12 ====> Parameters: 
+11-27 11:24:12 <====      Total: 1
+11-27 11:24:12 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171114150342 and uid = 1 
+11-27 11:24:12 ====> Parameters: 
+11-27 11:24:12 <====      Total: 1
+11-27 11:24:12 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171115115255 and uid = 1 
+11-27 11:24:12 ====> Parameters: 
+11-27 11:24:12 <====      Total: 1
+11-27 11:24:12 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171115115316 and uid = 1 
+11-27 11:24:12 ====> Parameters: 
+11-27 11:24:12 <====      Total: 1
+11-27 11:24:12 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171120142528 and uid = 1 
+11-27 11:24:12 ====> Parameters: 
+11-27 11:24:12 <====      Total: 1
+11-27 11:24:12 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171125185207 and uid = 1 
+11-27 11:24:12 ====> Parameters: 
+11-27 11:24:12 <====      Total: 1
+11-27 11:24:12 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171125214247 and uid = 1 
+11-27 11:24:12 ====> Parameters: 
+11-27 11:24:12 <====      Total: 1
+11-27 11:24:12 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171125222523 and uid = 1 
+11-27 11:24:12 ====> Parameters: 
+11-27 11:24:12 <====      Total: 1
+11-27 11:24:12 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171125223010 and uid = 1 
+11-27 11:24:12 ====> Parameters: 
+11-27 11:24:12 <====      Total: 2
+11-27 11:24:12 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171125223156 and uid = 1 
+11-27 11:24:12 ====> Parameters: 
+11-27 11:24:12 <====      Total: 1
+11-27 11:24:12 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171125231209 and uid = 1 
+11-27 11:24:12 ====> Parameters: 
+11-27 11:24:12 <====      Total: 1
+11-27 11:24:12 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171126180009 and uid = 1 
+11-27 11:24:12 ====> Parameters: 
+11-27 11:24:12 <====      Total: 1
+11-27 11:24:12 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171126180109 and uid = 1 
+11-27 11:24:12 ====> Parameters: 
+11-27 11:24:12 <====      Total: 2
+11-27 11:24:12 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171126180345 and uid = 1 
+11-27 11:24:12 ====> Parameters: 
+11-27 11:24:12 <====      Total: 1
+11-27 11:24:12 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171126180444 and uid = 1 
+11-27 11:24:12 ====> Parameters: 
+11-27 11:24:12 <====      Total: 2
+11-27 11:24:12 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171127090311 and uid = 1 
+11-27 11:24:12 ====> Parameters: 
+11-27 11:24:12 <====      Total: 1
+11-27 11:24:12 <==      Total: 17
+11-27 11:24:30 ==>  Preparing: update users SET uname = ?, upwd = ? where uid = ? 
+11-27 11:24:30 ==> Parameters: xiaoming(String), 1234(String), 1(Integer)
+11-27 11:24:30 <==    Updates: 1
+11-27 11:29:31 Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+11-27 11:29:31 PooledDataSource forcefully closed/removed all connections.
+11-27 11:29:31 PooledDataSource forcefully closed/removed all connections.
+11-27 11:29:31 PooledDataSource forcefully closed/removed all connections.
+11-27 11:29:31 PooledDataSource forcefully closed/removed all connections.
+11-27 11:29:31 Opening JDBC Connection
+11-27 11:29:32 Created connection 1683459943.
+11-27 11:29:32 Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@64578f67]
+11-27 11:29:32 ==>  Preparing: SELECT * FROM users WHERE uname = ? and upwd = ? 
+11-27 11:29:32 ==> Parameters: xiaoming(String), 123(String)
+11-27 11:29:32 <==      Total: 0
+11-27 11:30:51 Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+11-27 11:30:51 PooledDataSource forcefully closed/removed all connections.
+11-27 11:30:51 PooledDataSource forcefully closed/removed all connections.
+11-27 11:30:51 PooledDataSource forcefully closed/removed all connections.
+11-27 11:30:51 PooledDataSource forcefully closed/removed all connections.
+11-27 11:30:51 Opening JDBC Connection
+11-27 11:30:52 Created connection 1034241980.
+11-27 11:30:52 Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@3da547bc]
+11-27 11:30:52 ==>  Preparing: SELECT * FROM users WHERE uname = ? and upwd = ? 
+11-27 11:30:52 ==> Parameters: xiaoming(String), 123(String)
+11-27 11:30:52 <==      Total: 0
+11-27 11:31:17 ==>  Preparing: SELECT * FROM users WHERE uname = ? and upwd = ? 
+11-27 11:31:17 ==> Parameters: xiaoming(String), 1234(String)
+11-27 11:31:17 <==    Columns: uid, uname, upwd, phone, city, regDate, idCard, realName, age, email, sex, avatar
+11-27 11:31:17 <==        Row: 1, xiaoming, 1234, 18899119292, 西安, 2017-11-11, null, 小明, 22, null, 男, <<BLOB>>
+11-27 11:31:17 <==      Total: 1
+11-27 11:31:17 ==>  Preparing: update users SET uname = ?, upwd = ? where uid = ? 
+11-27 11:31:17 ==> Parameters: xiaoming(String), 123(String), 1(Integer)
+11-27 11:31:17 <==    Updates: 1

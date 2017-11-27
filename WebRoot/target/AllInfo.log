@@ -28409,3 +28409,1533 @@
  <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
 2017-11-26 18:55:06  DEBUG 277216ms|>- <==      Total: 16
  <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-26 22:43:32  DEBUG 0ms|>- Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+ <org.apache.ibatis.logging.LogFactory.setImplementation(LogFactory.java:135)> 
+2017-11-26 22:43:35  DEBUG 3435ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-26 22:43:35  DEBUG 3435ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-26 22:43:35  DEBUG 3436ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-26 22:43:35  DEBUG 3436ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-26 22:50:55  DEBUG 443348ms|>- Opening JDBC Connection
+ <org.apache.ibatis.transaction.jdbc.JdbcTransaction.openConnection(JdbcTransaction.java:137)> 
+2017-11-26 22:50:55  DEBUG 443393ms|>- Created connection 373885830.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.popConnection(PooledDataSource.java:406)> 
+2017-11-26 22:50:55  DEBUG 443397ms|>- Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@16490b86]
+ <org.apache.ibatis.transaction.jdbc.JdbcTransaction.setDesiredAutoCommit(JdbcTransaction.java:101)> 
+2017-11-26 22:50:55  DEBUG 443405ms|>- ==>  Preparing: select gid, gname, tid, price, descption, imgPath, filePath, stock from goods where gid = ? 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-26 22:50:55  DEBUG 443448ms|>- ==> Parameters: 1(Integer)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-26 22:50:55  DEBUG 443490ms|>- <==      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:02:38  DEBUG 0ms|>- Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+ <org.apache.ibatis.logging.LogFactory.setImplementation(LogFactory.java:135)> 
+2017-11-27 09:02:38  DEBUG 426ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-27 09:02:38  DEBUG 442ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-27 09:02:38  DEBUG 442ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-27 09:02:38  DEBUG 442ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-27 09:02:39  DEBUG 943ms|>- Opening JDBC Connection
+ <org.apache.ibatis.transaction.jdbc.JdbcTransaction.openConnection(JdbcTransaction.java:137)> 
+2017-11-27 09:02:39  DEBUG 1363ms|>- Created connection 168072079.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.popConnection(PooledDataSource.java:406)> 
+2017-11-27 09:02:39  DEBUG 1364ms|>- Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@a04938f]
+ <org.apache.ibatis.transaction.jdbc.JdbcTransaction.setDesiredAutoCommit(JdbcTransaction.java:101)> 
+2017-11-27 09:02:39  DEBUG 1369ms|>- ==>  Preparing: SELECT * FROM users WHERE uname = ? and upwd = ? 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:02:39  DEBUG 1384ms|>- ==> Parameters: xiaoming(String), 123(String)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:02:39  TRACE 1481ms|>- <==    Columns: uid, uname, upwd, phone, city, regDate, idCard, realName, age, email, sex, avatar
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.trace(BaseJdbcLogger.java:165)> 
+2017-11-27 09:02:39  TRACE 1497ms|>- <==        Row: 1, xiaoming, 123, 18899119292, 西安, 2017-11-11, null, 小明, 22, null, 男, <<BLOB>>
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.trace(BaseJdbcLogger.java:165)> 
+2017-11-27 09:02:39  DEBUG 1497ms|>- <==      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:02:39  DEBUG 1497ms|>- Opening JDBC Connection
+ <org.apache.ibatis.transaction.jdbc.JdbcTransaction.openConnection(JdbcTransaction.java:137)> 
+2017-11-27 09:02:39  DEBUG 1528ms|>- Created connection 318734037.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.popConnection(PooledDataSource.java:406)> 
+2017-11-27 09:02:39  DEBUG 1528ms|>- Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@12ff7ed5]
+ <org.apache.ibatis.transaction.jdbc.JdbcTransaction.setDesiredAutoCommit(JdbcTransaction.java:101)> 
+2017-11-27 09:02:39  DEBUG 1528ms|>- ==>  Preparing: SELECT COUNT(1) FROM shoppingcar WHERE uid = ?; 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:02:39  DEBUG 1544ms|>- ==> Parameters: 1(Integer)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:02:39  DEBUG 1544ms|>- <==      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:02:42  DEBUG 4247ms|>- Opening JDBC Connection
+ <org.apache.ibatis.transaction.jdbc.JdbcTransaction.openConnection(JdbcTransaction.java:137)> 
+2017-11-27 09:02:42  DEBUG 4266ms|>- Created connection 1964696521.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.popConnection(PooledDataSource.java:406)> 
+2017-11-27 09:02:42  DEBUG 4267ms|>- Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@751ae3c9]
+ <org.apache.ibatis.transaction.jdbc.JdbcTransaction.setDesiredAutoCommit(JdbcTransaction.java:101)> 
+2017-11-27 09:02:42  DEBUG 4268ms|>- ==>  Preparing: select gid, gname, tid, price, descption, imgPath, filePath, stock from goods where gid = ? 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:02:42  DEBUG 4268ms|>- ==> Parameters: 1(Integer)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:02:42  DEBUG 4269ms|>- <==      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:02:48  DEBUG 10196ms|>- ==>  Preparing: select * from address where uid = ? 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:02:48  DEBUG 10202ms|>- ==> Parameters: 1(Integer)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:02:48  DEBUG 10236ms|>- <==      Total: 2
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:02:48  DEBUG 10265ms|>- ==>  Preparing: select * from view_car_goods where uid = ?; 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:02:48  DEBUG 10265ms|>- ==> Parameters: 1(Integer)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:02:48  DEBUG 10265ms|>- <==      Total: 0
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:02:59  DEBUG 21068ms|>- ==>  Preparing: select gid, gname, tid, price, descption, imgPath, filePath, stock from goods where gid = ? 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:02:59  DEBUG 21083ms|>- ==> Parameters: 5(Integer)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:02:59  DEBUG 21084ms|>- <==      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:03:03  DEBUG 25224ms|>- ==>  Preparing: select cid, addGoodsTime, uid, gid, gnum, descption from shoppingcar where uid = ? and gid = ? 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:03:03  DEBUG 25237ms|>- ==> Parameters: 1(Integer), 5(Integer)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:03:03  DEBUG 25238ms|>- <==      Total: 0
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:03:03  DEBUG 25271ms|>- ==>  Preparing: insert into shoppingcar ( addGoodsTime, uid, gid, gnum, descption ) values ( ?, ?, ?, ?, ? ) 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:03:03  DEBUG 25271ms|>- ==> Parameters: 2017-11-27 09:03:03.343(Timestamp), 1(Integer), 5(Integer), 3(Integer), [{"颜色" : "钻雕金","套餐类型" : "官方标配"}](String)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:03:03  DEBUG 25271ms|>- <==    Updates: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:03:03  DEBUG 25271ms|>- ==>  Preparing: SELECT COUNT(1) FROM shoppingcar WHERE uid = ?; 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:03:03  DEBUG 25287ms|>- ==> Parameters: 1(Integer)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:03:03  DEBUG 25288ms|>- <==      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:03:06  DEBUG 27971ms|>- ==>  Preparing: select * from address where uid = ? 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:03:06  DEBUG 27982ms|>- ==> Parameters: 1(Integer)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:03:06  DEBUG 27984ms|>- <==      Total: 2
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:03:06  DEBUG 27990ms|>- ==>  Preparing: select * from view_car_goods where uid = ?; 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:03:06  DEBUG 27991ms|>- ==> Parameters: 1(Integer)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:03:06  DEBUG 27993ms|>- <==      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:03:11  DEBUG 32895ms|>- ==>  Preparing: select * from address where uid = ? 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:03:11  DEBUG 32905ms|>- ==> Parameters: 1(Integer)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:03:11  DEBUG 32907ms|>- <==      Total: 2
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:03:17  DEBUG 39487ms|>- Opening JDBC Connection
+ <org.apache.ibatis.transaction.jdbc.JdbcTransaction.openConnection(JdbcTransaction.java:137)> 
+2017-11-27 09:03:17  DEBUG 39503ms|>- Created connection 354167560.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.popConnection(PooledDataSource.java:406)> 
+2017-11-27 09:03:17  DEBUG 39503ms|>- Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@151c2b08]
+ <org.apache.ibatis.transaction.jdbc.JdbcTransaction.setDesiredAutoCommit(JdbcTransaction.java:101)> 
+2017-11-27 09:03:17  DEBUG 39503ms|>- ==>  Preparing: insert into orders ( oid, uid, state, sum, address ) values ( ?, ?, ?, ?, ? ) 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:03:17  DEBUG 39503ms|>- ==> Parameters: 20171127090311(String), 1(Integer), 已付款(String), 4400.0(Double), java.io.StringReader@69fbef56(StringReader)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:03:17  DEBUG 39534ms|>- <==    Updates: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:03:17  DEBUG 39534ms|>- ==>  Preparing: insert into orderform ( oid, gid, gnum, SubTotal, descption, uid ) values ( ?, ?, ?, ?, ?, ? ) 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:03:17  DEBUG 39534ms|>- ==> Parameters: 20171127090311(String), 5(Integer), 2(Integer), 4400.0(Double), [{"颜色" : "钻雕金","套餐类型" : "官方标配"}](String), 1(Integer)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:03:17  DEBUG 39550ms|>- <==    Updates: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:03:17  DEBUG 39550ms|>- ==>  Preparing: update goods SET gname = ?, tid = ?, price = ?, descption = ?, imgPath = ?, filePath = ?, stock = ? where gid = ? 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:03:17  DEBUG 39550ms|>- ==> Parameters: 红米Note 4X(String), 2(Integer), 2200.0(Double), [ {
+  "网络类型" : "4G全网通",
+  "机身颜色" : "钻雕金,钻雕蓝,草木绿,曜石黑,玫瑰金",
+  "套餐类型" : "官方标配,套餐一,套餐二,套餐三,套餐四,套餐五",
+  "存储容量" : "64GB,128GB",
+  "购买方式" : "裸机",
+  "版本" : "Mate 10,Mate 10 62G+128G,麦芒6,P10,畅享7"
+} ](String), goods/xiaomi_6/6.jpg(String), goods/xiaomi_6/img/(String), 9997(Integer), 5(Integer)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:03:17  DEBUG 39571ms|>- <==    Updates: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:03:17  DEBUG 39571ms|>- Committing JDBC Connection [com.mysql.jdbc.JDBC4Connection@151c2b08]
+ <org.apache.ibatis.transaction.jdbc.JdbcTransaction.commit(JdbcTransaction.java:70)> 
+2017-11-27 09:03:17  INFO 39571ms|>- 添加新订单(20171127090311)：{
+  "oid" : "20171127090311",
+  "uid" : 1,
+  "state" : "已付款",
+  "sum" : 4400.0,
+  "address" : "西安市外包学院"
+}
+ <com.dao.OrdersDao.orderLog(OrdersDao.java:270)> 
+2017-11-27 09:03:17  INFO 39571ms|>- 订单详情(20171127090311)：{
+  "oid" : "20171127090311",
+  "gid" : 5,
+  "gnum" : 2,
+  "subtotal" : 4400.0,
+  "descption" : "[{\"颜色\" : \"钻雕金\",\"套餐类型\" : \"官方标配\"}]",
+  "uid" : 1
+}
+ <com.dao.OrdersDao.orderLog(OrdersDao.java:272)> 
+2017-11-27 09:03:19  DEBUG 41572ms|>- ==>  Preparing: select oid,state,address,sum,uid from view_order_goods where uid = ? group by oid 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:03:19  DEBUG 41575ms|>- ==> Parameters: 1(Integer)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:03:19  DEBUG 41575ms|>- ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171114000359 and uid = 1 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:03:19  DEBUG 41575ms|>- ====> Parameters: 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:03:19  DEBUG 41575ms|>- <====      Total: 2
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:03:19  DEBUG 41590ms|>- ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171114000839 and uid = 1 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:03:19  DEBUG 41590ms|>- ====> Parameters: 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:03:19  DEBUG 41590ms|>- <====      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:03:19  DEBUG 41590ms|>- ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171114150342 and uid = 1 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:03:19  DEBUG 41590ms|>- ====> Parameters: 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:03:19  DEBUG 41590ms|>- <====      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:03:19  DEBUG 41590ms|>- ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171115115255 and uid = 1 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:03:19  DEBUG 41590ms|>- ====> Parameters: 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:03:19  DEBUG 41590ms|>- <====      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:03:19  DEBUG 41590ms|>- ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171115115316 and uid = 1 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:03:19  DEBUG 41590ms|>- ====> Parameters: 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:03:19  DEBUG 41590ms|>- <====      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:03:19  DEBUG 41590ms|>- ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171120142528 and uid = 1 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:03:19  DEBUG 41590ms|>- ====> Parameters: 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:03:19  DEBUG 41590ms|>- <====      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:03:19  DEBUG 41606ms|>- ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171125185207 and uid = 1 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:03:19  DEBUG 41606ms|>- ====> Parameters: 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:03:19  DEBUG 41606ms|>- <====      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:03:19  DEBUG 41606ms|>- ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171125214247 and uid = 1 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:03:19  DEBUG 41606ms|>- ====> Parameters: 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:03:19  DEBUG 41606ms|>- <====      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:03:19  DEBUG 41606ms|>- ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171125222523 and uid = 1 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:03:19  DEBUG 41606ms|>- ====> Parameters: 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:03:19  DEBUG 41606ms|>- <====      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:03:19  DEBUG 41606ms|>- ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171125223010 and uid = 1 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:03:19  DEBUG 41606ms|>- ====> Parameters: 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:03:19  DEBUG 41606ms|>- <====      Total: 2
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:03:19  DEBUG 41606ms|>- ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171125223156 and uid = 1 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:03:19  DEBUG 41606ms|>- ====> Parameters: 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:03:19  DEBUG 41606ms|>- <====      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:03:19  DEBUG 41606ms|>- ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171125231209 and uid = 1 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:03:19  DEBUG 41606ms|>- ====> Parameters: 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:03:19  DEBUG 41621ms|>- <====      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:03:19  DEBUG 41621ms|>- ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171126180009 and uid = 1 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:03:19  DEBUG 41621ms|>- ====> Parameters: 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:03:19  DEBUG 41621ms|>- <====      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:03:19  DEBUG 41621ms|>- ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171126180109 and uid = 1 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:03:19  DEBUG 41621ms|>- ====> Parameters: 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:03:19  DEBUG 41621ms|>- <====      Total: 2
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:03:19  DEBUG 41621ms|>- ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171126180345 and uid = 1 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:03:19  DEBUG 41621ms|>- ====> Parameters: 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:03:19  DEBUG 41621ms|>- <====      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:03:19  DEBUG 41621ms|>- ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171126180444 and uid = 1 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:03:19  DEBUG 41621ms|>- ====> Parameters: 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:03:19  DEBUG 41621ms|>- <====      Total: 2
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:03:19  DEBUG 41621ms|>- ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171127090311 and uid = 1 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:03:19  DEBUG 41621ms|>- ====> Parameters: 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:03:19  DEBUG 41637ms|>- <====      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:03:19  DEBUG 41637ms|>- <==      Total: 17
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:04:58  DEBUG 140069ms|>- ==>  Preparing: select oid,state,address,sum,uid from view_order_goods where uid = ? group by oid 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:04:58  DEBUG 140072ms|>- ==> Parameters: 1(Integer)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:04:58  DEBUG 140074ms|>- ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171114000359 and uid = 1 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:04:58  DEBUG 140074ms|>- ====> Parameters: 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:04:58  DEBUG 140074ms|>- <====      Total: 2
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:04:58  DEBUG 140074ms|>- ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171114000839 and uid = 1 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:04:58  DEBUG 140074ms|>- ====> Parameters: 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:04:58  DEBUG 140074ms|>- <====      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:04:58  DEBUG 140074ms|>- ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171114150342 and uid = 1 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:04:58  DEBUG 140074ms|>- ====> Parameters: 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:04:58  DEBUG 140074ms|>- <====      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:04:58  DEBUG 140074ms|>- ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171115115255 and uid = 1 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:04:58  DEBUG 140074ms|>- ====> Parameters: 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:04:58  DEBUG 140074ms|>- <====      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:04:58  DEBUG 140074ms|>- ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171115115316 and uid = 1 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:04:58  DEBUG 140074ms|>- ====> Parameters: 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:04:58  DEBUG 140074ms|>- <====      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:04:58  DEBUG 140091ms|>- ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171120142528 and uid = 1 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:04:58  DEBUG 140091ms|>- ====> Parameters: 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:04:58  DEBUG 140092ms|>- <====      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:04:58  DEBUG 140092ms|>- ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171125185207 and uid = 1 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:04:58  DEBUG 140092ms|>- ====> Parameters: 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:04:58  DEBUG 140092ms|>- <====      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:04:58  DEBUG 140092ms|>- ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171125214247 and uid = 1 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:04:58  DEBUG 140092ms|>- ====> Parameters: 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:04:58  DEBUG 140092ms|>- <====      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:04:58  DEBUG 140092ms|>- ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171125222523 and uid = 1 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:04:58  DEBUG 140092ms|>- ====> Parameters: 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:04:58  DEBUG 140092ms|>- <====      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:04:58  DEBUG 140092ms|>- ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171125223010 and uid = 1 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:04:58  DEBUG 140092ms|>- ====> Parameters: 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:04:58  DEBUG 140092ms|>- <====      Total: 2
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:04:58  DEBUG 140092ms|>- ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171125223156 and uid = 1 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:04:58  DEBUG 140092ms|>- ====> Parameters: 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:04:58  DEBUG 140107ms|>- <====      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:04:58  DEBUG 140107ms|>- ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171125231209 and uid = 1 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:04:58  DEBUG 140107ms|>- ====> Parameters: 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:04:58  DEBUG 140107ms|>- <====      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:04:58  DEBUG 140107ms|>- ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171126180009 and uid = 1 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:04:58  DEBUG 140107ms|>- ====> Parameters: 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:04:58  DEBUG 140107ms|>- <====      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:04:58  DEBUG 140107ms|>- ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171126180109 and uid = 1 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:04:58  DEBUG 140107ms|>- ====> Parameters: 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:04:58  DEBUG 140107ms|>- <====      Total: 2
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:04:58  DEBUG 140107ms|>- ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171126180345 and uid = 1 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:04:58  DEBUG 140107ms|>- ====> Parameters: 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:04:58  DEBUG 140107ms|>- <====      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:04:58  DEBUG 140107ms|>- ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171126180444 and uid = 1 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:04:58  DEBUG 140107ms|>- ====> Parameters: 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:04:58  DEBUG 140123ms|>- <====      Total: 2
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:04:58  DEBUG 140123ms|>- ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171127090311 and uid = 1 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:04:58  DEBUG 140123ms|>- ====> Parameters: 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:04:58  DEBUG 140123ms|>- <====      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:04:58  DEBUG 140123ms|>- <==      Total: 17
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:08:31  DEBUG 353655ms|>- ==>  Preparing: select oid,state,address,sum,uid from view_order_goods where uid = ? group by oid 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:08:31  DEBUG 353659ms|>- ==> Parameters: 1(Integer)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:08:31  DEBUG 353660ms|>- ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171114000359 and uid = 1 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:08:31  DEBUG 353660ms|>- ====> Parameters: 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:08:31  DEBUG 353660ms|>- <====      Total: 2
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:08:31  DEBUG 353660ms|>- ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171114000839 and uid = 1 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:08:31  DEBUG 353660ms|>- ====> Parameters: 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:08:31  DEBUG 353660ms|>- <====      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:08:31  DEBUG 353660ms|>- ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171114150342 and uid = 1 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:08:31  DEBUG 353660ms|>- ====> Parameters: 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:08:31  DEBUG 353660ms|>- <====      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:08:31  DEBUG 353660ms|>- ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171115115255 and uid = 1 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:08:31  DEBUG 353660ms|>- ====> Parameters: 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:08:31  DEBUG 353660ms|>- <====      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:08:31  DEBUG 353660ms|>- ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171115115316 and uid = 1 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:08:31  DEBUG 353660ms|>- ====> Parameters: 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:08:31  DEBUG 353660ms|>- <====      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:08:31  DEBUG 353676ms|>- ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171120142528 and uid = 1 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:08:31  DEBUG 353676ms|>- ====> Parameters: 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:08:31  DEBUG 353676ms|>- <====      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:08:31  DEBUG 353676ms|>- ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171125185207 and uid = 1 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:08:31  DEBUG 353676ms|>- ====> Parameters: 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:08:31  DEBUG 353676ms|>- <====      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:08:31  DEBUG 353676ms|>- ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171125214247 and uid = 1 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:08:31  DEBUG 353676ms|>- ====> Parameters: 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:08:31  DEBUG 353676ms|>- <====      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:08:31  DEBUG 353676ms|>- ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171125222523 and uid = 1 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:08:31  DEBUG 353676ms|>- ====> Parameters: 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:08:31  DEBUG 353676ms|>- <====      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:08:31  DEBUG 353676ms|>- ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171125223010 and uid = 1 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:08:31  DEBUG 353676ms|>- ====> Parameters: 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:08:31  DEBUG 353676ms|>- <====      Total: 2
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:08:31  DEBUG 353676ms|>- ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171125223156 and uid = 1 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:08:31  DEBUG 353676ms|>- ====> Parameters: 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:08:31  DEBUG 353692ms|>- <====      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:08:31  DEBUG 353692ms|>- ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171125231209 and uid = 1 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:08:31  DEBUG 353692ms|>- ====> Parameters: 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:08:31  DEBUG 353692ms|>- <====      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:08:31  DEBUG 353692ms|>- ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171126180009 and uid = 1 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:08:31  DEBUG 353692ms|>- ====> Parameters: 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:08:31  DEBUG 353692ms|>- <====      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:08:31  DEBUG 353692ms|>- ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171126180109 and uid = 1 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:08:31  DEBUG 353692ms|>- ====> Parameters: 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:08:31  DEBUG 353692ms|>- <====      Total: 2
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:08:31  DEBUG 353692ms|>- ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171126180345 and uid = 1 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:08:31  DEBUG 353692ms|>- ====> Parameters: 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:08:31  DEBUG 353692ms|>- <====      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:08:31  DEBUG 353692ms|>- ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171126180444 and uid = 1 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:08:31  DEBUG 353692ms|>- ====> Parameters: 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:08:31  DEBUG 353692ms|>- <====      Total: 2
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:08:31  DEBUG 353692ms|>- ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171127090311 and uid = 1 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:08:31  DEBUG 353692ms|>- ====> Parameters: 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:08:31  DEBUG 353692ms|>- <====      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:08:31  DEBUG 353692ms|>- <==      Total: 17
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:10:07  DEBUG 448990ms|>- ==>  Preparing: select oid,state,address,sum,uid from view_order_goods where uid = ? group by oid 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:10:07  DEBUG 448990ms|>- ==> Parameters: 1(Integer)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:10:07  DEBUG 448991ms|>- ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171114000359 and uid = 1 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:10:07  DEBUG 448991ms|>- ====> Parameters: 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:10:07  DEBUG 448991ms|>- <====      Total: 2
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:10:07  DEBUG 448991ms|>- ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171114000839 and uid = 1 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:10:07  DEBUG 448991ms|>- ====> Parameters: 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:10:07  DEBUG 448991ms|>- <====      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:10:07  DEBUG 448991ms|>- ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171114150342 and uid = 1 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:10:07  DEBUG 448991ms|>- ====> Parameters: 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:10:07  DEBUG 448991ms|>- <====      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:10:07  DEBUG 448991ms|>- ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171115115255 and uid = 1 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:10:07  DEBUG 448991ms|>- ====> Parameters: 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:10:07  DEBUG 448991ms|>- <====      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:10:07  DEBUG 448991ms|>- ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171115115316 and uid = 1 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:10:07  DEBUG 448991ms|>- ====> Parameters: 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:10:07  DEBUG 448991ms|>- <====      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:10:07  DEBUG 448991ms|>- ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171120142528 and uid = 1 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:10:07  DEBUG 448991ms|>- ====> Parameters: 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:10:07  DEBUG 448991ms|>- <====      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:10:07  DEBUG 448991ms|>- ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171125185207 and uid = 1 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:10:07  DEBUG 449007ms|>- ====> Parameters: 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:10:07  DEBUG 449007ms|>- <====      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:10:07  DEBUG 449007ms|>- ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171125214247 and uid = 1 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:10:07  DEBUG 449007ms|>- ====> Parameters: 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:10:07  DEBUG 449007ms|>- <====      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:10:07  DEBUG 449007ms|>- ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171125222523 and uid = 1 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:10:07  DEBUG 449007ms|>- ====> Parameters: 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:10:07  DEBUG 449007ms|>- <====      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:10:07  DEBUG 449007ms|>- ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171125223010 and uid = 1 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:10:07  DEBUG 449007ms|>- ====> Parameters: 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:10:07  DEBUG 449007ms|>- <====      Total: 2
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:10:07  DEBUG 449007ms|>- ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171125223156 and uid = 1 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:10:07  DEBUG 449007ms|>- ====> Parameters: 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:10:07  DEBUG 449007ms|>- <====      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:10:07  DEBUG 449007ms|>- ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171125231209 and uid = 1 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:10:07  DEBUG 449007ms|>- ====> Parameters: 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:10:07  DEBUG 449007ms|>- <====      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:10:07  DEBUG 449007ms|>- ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171126180009 and uid = 1 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:10:07  DEBUG 449007ms|>- ====> Parameters: 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:10:07  DEBUG 449023ms|>- <====      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:10:07  DEBUG 449023ms|>- ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171126180109 and uid = 1 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:10:07  DEBUG 449023ms|>- ====> Parameters: 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:10:07  DEBUG 449023ms|>- <====      Total: 2
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:10:07  DEBUG 449023ms|>- ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171126180345 and uid = 1 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:10:07  DEBUG 449023ms|>- ====> Parameters: 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:10:07  DEBUG 449023ms|>- <====      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:10:07  DEBUG 449023ms|>- ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171126180444 and uid = 1 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:10:07  DEBUG 449023ms|>- ====> Parameters: 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:10:07  DEBUG 449023ms|>- <====      Total: 2
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:10:07  DEBUG 449023ms|>- ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171127090311 and uid = 1 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:10:07  DEBUG 449023ms|>- ====> Parameters: 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:10:07  DEBUG 449023ms|>- <====      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:10:07  DEBUG 449023ms|>- <==      Total: 17
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:11:10  DEBUG 512747ms|>- ==>  Preparing: select oid,state,address,sum,uid from view_order_goods where uid = ? group by oid 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:11:10  DEBUG 512747ms|>- ==> Parameters: 1(Integer)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:11:10  DEBUG 512752ms|>- ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171114000359 and uid = 1 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:11:10  DEBUG 512753ms|>- ====> Parameters: 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:11:10  DEBUG 512754ms|>- <====      Total: 2
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:11:10  DEBUG 512754ms|>- ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171114000839 and uid = 1 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:11:10  DEBUG 512754ms|>- ====> Parameters: 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:11:10  DEBUG 512754ms|>- <====      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:11:10  DEBUG 512754ms|>- ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171114150342 and uid = 1 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:11:10  DEBUG 512754ms|>- ====> Parameters: 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:11:10  DEBUG 512754ms|>- <====      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:11:10  DEBUG 512754ms|>- ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171115115255 and uid = 1 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:11:10  DEBUG 512754ms|>- ====> Parameters: 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:11:10  DEBUG 512754ms|>- <====      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:11:10  DEBUG 512754ms|>- ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171115115316 and uid = 1 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:11:10  DEBUG 512754ms|>- ====> Parameters: 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:11:10  DEBUG 512754ms|>- <====      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:11:10  DEBUG 512754ms|>- ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171120142528 and uid = 1 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:11:10  DEBUG 512754ms|>- ====> Parameters: 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:11:10  DEBUG 512754ms|>- <====      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:11:10  DEBUG 512770ms|>- ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171125185207 and uid = 1 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:11:10  DEBUG 512770ms|>- ====> Parameters: 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:11:10  DEBUG 512770ms|>- <====      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:11:10  DEBUG 512770ms|>- ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171125214247 and uid = 1 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:11:10  DEBUG 512770ms|>- ====> Parameters: 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:11:10  DEBUG 512770ms|>- <====      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:11:10  DEBUG 512770ms|>- ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171125222523 and uid = 1 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:11:10  DEBUG 512770ms|>- ====> Parameters: 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:11:10  DEBUG 512770ms|>- <====      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:11:10  DEBUG 512770ms|>- ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171125223010 and uid = 1 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:11:10  DEBUG 512770ms|>- ====> Parameters: 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:11:10  DEBUG 512770ms|>- <====      Total: 2
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:11:10  DEBUG 512770ms|>- ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171125223156 and uid = 1 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:11:10  DEBUG 512770ms|>- ====> Parameters: 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:11:10  DEBUG 512770ms|>- <====      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:11:10  DEBUG 512770ms|>- ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171125231209 and uid = 1 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:11:10  DEBUG 512770ms|>- ====> Parameters: 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:11:10  DEBUG 512786ms|>- <====      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:11:10  DEBUG 512787ms|>- ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171126180009 and uid = 1 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:11:10  DEBUG 512787ms|>- ====> Parameters: 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:11:10  DEBUG 512789ms|>- <====      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:11:10  DEBUG 512790ms|>- ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171126180109 and uid = 1 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:11:10  DEBUG 512791ms|>- ====> Parameters: 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:11:10  DEBUG 512792ms|>- <====      Total: 2
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:11:10  DEBUG 512792ms|>- ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171126180345 and uid = 1 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:11:10  DEBUG 512792ms|>- ====> Parameters: 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:11:10  DEBUG 512792ms|>- <====      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:11:10  DEBUG 512792ms|>- ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171126180444 and uid = 1 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:11:10  DEBUG 512792ms|>- ====> Parameters: 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:11:10  DEBUG 512792ms|>- <====      Total: 2
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:11:10  DEBUG 512792ms|>- ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171127090311 and uid = 1 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:11:10  DEBUG 512792ms|>- ====> Parameters: 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:11:10  DEBUG 512792ms|>- <====      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:11:10  DEBUG 512792ms|>- <==      Total: 17
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:13:29  DEBUG 651087ms|>- ==>  Preparing: SELECT * FROM users WHERE uname = ? and upwd = ? 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:13:29  DEBUG 651104ms|>- ==> Parameters: xiaoming(String), 123(String)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:13:29  TRACE 651105ms|>- <==    Columns: uid, uname, upwd, phone, city, regDate, idCard, realName, age, email, sex, avatar
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.trace(BaseJdbcLogger.java:165)> 
+2017-11-27 09:13:29  TRACE 651106ms|>- <==        Row: 1, xiaoming, 123, 18899119292, 西安, 2017-11-11, null, 小明, 22, null, 男, <<BLOB>>
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.trace(BaseJdbcLogger.java:165)> 
+2017-11-27 09:13:29  DEBUG 651107ms|>- <==      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:13:29  DEBUG 651108ms|>- ==>  Preparing: SELECT COUNT(1) FROM shoppingcar WHERE uid = ?; 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:13:29  DEBUG 651108ms|>- ==> Parameters: 1(Integer)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:13:29  DEBUG 651109ms|>- <==      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:13:31  DEBUG 652988ms|>- ==>  Preparing: select oid,state,address,sum,uid from view_order_goods where uid = ? group by oid 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:13:31  DEBUG 653001ms|>- ==> Parameters: 1(Integer)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:13:31  DEBUG 653004ms|>- ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171114000359 and uid = 1 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:13:31  DEBUG 653004ms|>- ====> Parameters: 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:13:31  DEBUG 653005ms|>- <====      Total: 2
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:13:31  DEBUG 653006ms|>- ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171114000839 and uid = 1 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:13:31  DEBUG 653007ms|>- ====> Parameters: 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:13:31  DEBUG 653008ms|>- <====      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:13:31  DEBUG 653008ms|>- ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171114150342 and uid = 1 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:13:31  DEBUG 653009ms|>- ====> Parameters: 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:13:31  DEBUG 653010ms|>- <====      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:13:31  DEBUG 653010ms|>- ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171115115255 and uid = 1 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:13:31  DEBUG 653010ms|>- ====> Parameters: 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:13:31  DEBUG 653010ms|>- <====      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:13:31  DEBUG 653010ms|>- ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171115115316 and uid = 1 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:13:31  DEBUG 653010ms|>- ====> Parameters: 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:13:31  DEBUG 653010ms|>- <====      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:13:31  DEBUG 653010ms|>- ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171120142528 and uid = 1 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:13:31  DEBUG 653010ms|>- ====> Parameters: 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:13:31  DEBUG 653010ms|>- <====      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:13:31  DEBUG 653010ms|>- ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171125185207 and uid = 1 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:13:31  DEBUG 653010ms|>- ====> Parameters: 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:13:31  DEBUG 653010ms|>- <====      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:13:31  DEBUG 653010ms|>- ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171125214247 and uid = 1 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:13:31  DEBUG 653010ms|>- ====> Parameters: 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:13:31  DEBUG 653010ms|>- <====      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:13:31  DEBUG 653010ms|>- ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171125222523 and uid = 1 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:13:31  DEBUG 653010ms|>- ====> Parameters: 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:13:31  DEBUG 653010ms|>- <====      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:13:31  DEBUG 653010ms|>- ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171125223010 and uid = 1 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:13:31  DEBUG 653010ms|>- ====> Parameters: 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:13:31  DEBUG 653010ms|>- <====      Total: 2
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:13:31  DEBUG 653010ms|>- ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171125223156 and uid = 1 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:13:31  DEBUG 653010ms|>- ====> Parameters: 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:13:31  DEBUG 653010ms|>- <====      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:13:31  DEBUG 653026ms|>- ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171125231209 and uid = 1 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:13:31  DEBUG 653026ms|>- ====> Parameters: 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:13:31  DEBUG 653026ms|>- <====      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:13:31  DEBUG 653026ms|>- ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171126180009 and uid = 1 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:13:31  DEBUG 653026ms|>- ====> Parameters: 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:13:31  DEBUG 653026ms|>- <====      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:13:31  DEBUG 653041ms|>- ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171126180109 and uid = 1 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:13:31  DEBUG 653041ms|>- ====> Parameters: 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:13:31  DEBUG 653041ms|>- <====      Total: 2
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:13:31  DEBUG 653041ms|>- ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171126180345 and uid = 1 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:13:31  DEBUG 653041ms|>- ====> Parameters: 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:13:31  DEBUG 653041ms|>- <====      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:13:31  DEBUG 653041ms|>- ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171126180444 and uid = 1 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:13:31  DEBUG 653041ms|>- ====> Parameters: 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:13:31  DEBUG 653041ms|>- <====      Total: 2
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:13:31  DEBUG 653041ms|>- ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171127090311 and uid = 1 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:13:31  DEBUG 653041ms|>- ====> Parameters: 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:13:31  DEBUG 653041ms|>- <====      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:13:31  DEBUG 653041ms|>- <==      Total: 17
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:36:37  DEBUG 2039830ms|>- ==>  Preparing: select oid,state,address,sum,uid from view_order_goods where uid = ? group by oid 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:36:37  DEBUG 2039846ms|>- ==> Parameters: 1(Integer)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:36:37  DEBUG 2039847ms|>- ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171114000359 and uid = 1 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:36:37  DEBUG 2039847ms|>- ====> Parameters: 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:36:37  DEBUG 2039847ms|>- <====      Total: 2
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:36:37  DEBUG 2039847ms|>- ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171114000839 and uid = 1 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:36:37  DEBUG 2039847ms|>- ====> Parameters: 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:36:37  DEBUG 2039847ms|>- <====      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:36:37  DEBUG 2039847ms|>- ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171114150342 and uid = 1 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:36:37  DEBUG 2039847ms|>- ====> Parameters: 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:36:37  DEBUG 2039847ms|>- <====      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:36:37  DEBUG 2039847ms|>- ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171115115255 and uid = 1 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:36:37  DEBUG 2039847ms|>- ====> Parameters: 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:36:37  DEBUG 2039863ms|>- <====      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:36:37  DEBUG 2039863ms|>- ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171115115316 and uid = 1 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:36:37  DEBUG 2039863ms|>- ====> Parameters: 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:36:37  DEBUG 2039863ms|>- <====      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:36:37  DEBUG 2039863ms|>- ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171120142528 and uid = 1 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:36:37  DEBUG 2039863ms|>- ====> Parameters: 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:36:37  DEBUG 2039863ms|>- <====      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:36:37  DEBUG 2039863ms|>- ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171125185207 and uid = 1 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:36:37  DEBUG 2039863ms|>- ====> Parameters: 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:36:37  DEBUG 2039863ms|>- <====      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:36:37  DEBUG 2039863ms|>- ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171125214247 and uid = 1 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:36:37  DEBUG 2039863ms|>- ====> Parameters: 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:36:37  DEBUG 2039863ms|>- <====      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:36:37  DEBUG 2039863ms|>- ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171125222523 and uid = 1 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:36:37  DEBUG 2039863ms|>- ====> Parameters: 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:36:37  DEBUG 2039863ms|>- <====      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:36:37  DEBUG 2039863ms|>- ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171125223010 and uid = 1 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:36:37  DEBUG 2039863ms|>- ====> Parameters: 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:36:37  DEBUG 2039878ms|>- <====      Total: 2
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:36:37  DEBUG 2039878ms|>- ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171125223156 and uid = 1 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:36:37  DEBUG 2039878ms|>- ====> Parameters: 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:36:37  DEBUG 2039878ms|>- <====      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:36:37  DEBUG 2039878ms|>- ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171125231209 and uid = 1 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:36:37  DEBUG 2039878ms|>- ====> Parameters: 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:36:37  DEBUG 2039878ms|>- <====      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:36:37  DEBUG 2039878ms|>- ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171126180009 and uid = 1 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:36:37  DEBUG 2039878ms|>- ====> Parameters: 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:36:37  DEBUG 2039878ms|>- <====      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:36:37  DEBUG 2039878ms|>- ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171126180109 and uid = 1 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:36:37  DEBUG 2039878ms|>- ====> Parameters: 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:36:37  DEBUG 2039878ms|>- <====      Total: 2
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:36:37  DEBUG 2039878ms|>- ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171126180345 and uid = 1 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:36:37  DEBUG 2039878ms|>- ====> Parameters: 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:36:37  DEBUG 2039878ms|>- <====      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:36:37  DEBUG 2039878ms|>- ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171126180444 and uid = 1 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:36:37  DEBUG 2039878ms|>- ====> Parameters: 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:36:37  DEBUG 2039878ms|>- <====      Total: 2
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:36:37  DEBUG 2039878ms|>- ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171127090311 and uid = 1 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:36:37  DEBUG 2039878ms|>- ====> Parameters: 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:36:38  DEBUG 2039896ms|>- <====      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:36:38  DEBUG 2039896ms|>- <==      Total: 17
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:37:05  DEBUG 2067818ms|>- ==>  Preparing: select oid,state,address,sum,uid from view_order_goods where uid = ? group by oid 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:37:05  DEBUG 2067818ms|>- ==> Parameters: 1(Integer)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:37:05  DEBUG 2067820ms|>- ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171114000359 and uid = 1 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:37:05  DEBUG 2067821ms|>- ====> Parameters: 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:37:05  DEBUG 2067822ms|>- <====      Total: 2
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:37:05  DEBUG 2067823ms|>- ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171114000839 and uid = 1 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:37:05  DEBUG 2067823ms|>- ====> Parameters: 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:37:05  DEBUG 2067824ms|>- <====      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:37:05  DEBUG 2067825ms|>- ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171114150342 and uid = 1 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:37:05  DEBUG 2067826ms|>- ====> Parameters: 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:37:05  DEBUG 2067828ms|>- <====      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:37:05  DEBUG 2067829ms|>- ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171115115255 and uid = 1 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:37:05  DEBUG 2067831ms|>- ====> Parameters: 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:37:05  DEBUG 2067832ms|>- <====      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:37:05  DEBUG 2067833ms|>- ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171115115316 and uid = 1 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:37:05  DEBUG 2067833ms|>- ====> Parameters: 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:37:05  DEBUG 2067835ms|>- <====      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:37:05  DEBUG 2067836ms|>- ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171120142528 and uid = 1 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:37:05  DEBUG 2067836ms|>- ====> Parameters: 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:37:05  DEBUG 2067838ms|>- <====      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:37:05  DEBUG 2067839ms|>- ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171125185207 and uid = 1 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:37:05  DEBUG 2067839ms|>- ====> Parameters: 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:37:05  DEBUG 2067841ms|>- <====      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:37:05  DEBUG 2067843ms|>- ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171125214247 and uid = 1 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:37:05  DEBUG 2067843ms|>- ====> Parameters: 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:37:05  DEBUG 2067845ms|>- <====      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:37:05  DEBUG 2067846ms|>- ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171125222523 and uid = 1 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:37:05  DEBUG 2067847ms|>- ====> Parameters: 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:37:05  DEBUG 2067849ms|>- <====      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:37:05  DEBUG 2067850ms|>- ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171125223010 and uid = 1 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:37:05  DEBUG 2067850ms|>- ====> Parameters: 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:37:05  DEBUG 2067851ms|>- <====      Total: 2
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:37:05  DEBUG 2067852ms|>- ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171125223156 and uid = 1 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:37:05  DEBUG 2067853ms|>- ====> Parameters: 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:37:05  DEBUG 2067855ms|>- <====      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:37:05  DEBUG 2067856ms|>- ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171125231209 and uid = 1 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:37:05  DEBUG 2067856ms|>- ====> Parameters: 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:37:05  DEBUG 2067858ms|>- <====      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:37:05  DEBUG 2067859ms|>- ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171126180009 and uid = 1 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:37:05  DEBUG 2067859ms|>- ====> Parameters: 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:37:05  DEBUG 2067862ms|>- <====      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:37:05  DEBUG 2067863ms|>- ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171126180109 and uid = 1 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:37:05  DEBUG 2067864ms|>- ====> Parameters: 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:37:05  DEBUG 2067865ms|>- <====      Total: 2
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:37:05  DEBUG 2067866ms|>- ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171126180345 and uid = 1 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:37:05  DEBUG 2067867ms|>- ====> Parameters: 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:37:05  DEBUG 2067869ms|>- <====      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:37:05  DEBUG 2067870ms|>- ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171126180444 and uid = 1 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:37:05  DEBUG 2067870ms|>- ====> Parameters: 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:37:05  DEBUG 2067872ms|>- <====      Total: 2
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:37:05  DEBUG 2067873ms|>- ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171127090311 and uid = 1 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:37:05  DEBUG 2067873ms|>- ====> Parameters: 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:37:05  DEBUG 2067875ms|>- <====      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:37:05  DEBUG 2067875ms|>- <==      Total: 17
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:37:13  DEBUG 2075226ms|>- ==>  Preparing: select * from address where uid = ? 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:37:13  DEBUG 2075227ms|>- ==> Parameters: 1(Integer)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:37:13  DEBUG 2075228ms|>- <==      Total: 2
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:37:13  DEBUG 2075232ms|>- ==>  Preparing: select * from view_car_goods where uid = ?; 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:37:13  DEBUG 2075233ms|>- ==> Parameters: 1(Integer)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:37:13  DEBUG 2075234ms|>- <==      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:39:25  DEBUG 2207076ms|>- ==>  Preparing: select * from address where uid = ? 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:39:25  DEBUG 2207076ms|>- ==> Parameters: 1(Integer)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:39:25  DEBUG 2207077ms|>- <==      Total: 2
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:39:25  DEBUG 2207082ms|>- ==>  Preparing: select * from view_car_goods where uid = ?; 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:39:25  DEBUG 2207083ms|>- ==> Parameters: 1(Integer)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 09:39:25  DEBUG 2207085ms|>- <==      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 10:07:32  DEBUG 3894552ms|>- ==>  Preparing: select oid,state,address,sum,uid from view_order_goods where uid = ? group by oid 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 10:07:32  DEBUG 3894553ms|>- ==> Parameters: 1(Integer)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 10:07:32  DEBUG 3894557ms|>- ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171114000359 and uid = 1 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 10:07:32  DEBUG 3894558ms|>- ====> Parameters: 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 10:07:32  DEBUG 3894559ms|>- <====      Total: 2
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 10:07:32  DEBUG 3894560ms|>- ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171114000839 and uid = 1 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 10:07:32  DEBUG 3894561ms|>- ====> Parameters: 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 10:07:32  DEBUG 3894562ms|>- <====      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 10:07:32  DEBUG 3894563ms|>- ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171114150342 and uid = 1 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 10:07:32  DEBUG 3894563ms|>- ====> Parameters: 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 10:07:32  DEBUG 3894564ms|>- <====      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 10:07:32  DEBUG 3894565ms|>- ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171115115255 and uid = 1 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 10:07:32  DEBUG 3894565ms|>- ====> Parameters: 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 10:07:32  DEBUG 3894566ms|>- <====      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 10:07:32  DEBUG 3894567ms|>- ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171115115316 and uid = 1 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 10:07:32  DEBUG 3894567ms|>- ====> Parameters: 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 10:07:32  DEBUG 3894569ms|>- <====      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 10:07:32  DEBUG 3894571ms|>- ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171120142528 and uid = 1 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 10:07:32  DEBUG 3894572ms|>- ====> Parameters: 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 10:07:32  DEBUG 3894574ms|>- <====      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 10:07:32  DEBUG 3894575ms|>- ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171125185207 and uid = 1 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 10:07:32  DEBUG 3894576ms|>- ====> Parameters: 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 10:07:32  DEBUG 3894577ms|>- <====      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 10:07:32  DEBUG 3894578ms|>- ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171125214247 and uid = 1 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 10:07:32  DEBUG 3894578ms|>- ====> Parameters: 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 10:07:32  DEBUG 3894579ms|>- <====      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 10:07:32  DEBUG 3894580ms|>- ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171125222523 and uid = 1 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 10:07:32  DEBUG 3894580ms|>- ====> Parameters: 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 10:07:32  DEBUG 3894582ms|>- <====      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 10:07:32  DEBUG 3894582ms|>- ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171125223010 and uid = 1 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 10:07:32  DEBUG 3894583ms|>- ====> Parameters: 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 10:07:32  DEBUG 3894584ms|>- <====      Total: 2
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 10:07:32  DEBUG 3894584ms|>- ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171125223156 and uid = 1 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 10:07:32  DEBUG 3894585ms|>- ====> Parameters: 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 10:07:32  DEBUG 3894588ms|>- <====      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 10:07:32  DEBUG 3894589ms|>- ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171125231209 and uid = 1 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 10:07:32  DEBUG 3894590ms|>- ====> Parameters: 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 10:07:32  DEBUG 3894591ms|>- <====      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 10:07:32  DEBUG 3894592ms|>- ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171126180009 and uid = 1 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 10:07:32  DEBUG 3894592ms|>- ====> Parameters: 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 10:07:32  DEBUG 3894593ms|>- <====      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 10:07:32  DEBUG 3894594ms|>- ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171126180109 and uid = 1 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 10:07:32  DEBUG 3894594ms|>- ====> Parameters: 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 10:07:32  DEBUG 3894595ms|>- <====      Total: 2
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 10:07:32  DEBUG 3894596ms|>- ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171126180345 and uid = 1 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 10:07:32  DEBUG 3894596ms|>- ====> Parameters: 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 10:07:32  DEBUG 3894597ms|>- <====      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 10:07:32  DEBUG 3894597ms|>- ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171126180444 and uid = 1 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 10:07:32  DEBUG 3894598ms|>- ====> Parameters: 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 10:07:32  DEBUG 3894599ms|>- <====      Total: 2
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 10:07:32  DEBUG 3894599ms|>- ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171127090311 and uid = 1 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 10:07:32  DEBUG 3894599ms|>- ====> Parameters: 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 10:07:32  DEBUG 3894600ms|>- <====      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 10:07:32  DEBUG 3894601ms|>- <==      Total: 17
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 11:05:06  DEBUG 0ms|>- Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+ <org.apache.ibatis.logging.LogFactory.setImplementation(LogFactory.java:135)> 
+2017-11-27 11:05:06  DEBUG 365ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-27 11:05:06  DEBUG 366ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-27 11:05:06  DEBUG 366ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-27 11:05:06  DEBUG 367ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-27 11:05:06  DEBUG 846ms|>- Opening JDBC Connection
+ <org.apache.ibatis.transaction.jdbc.JdbcTransaction.openConnection(JdbcTransaction.java:137)> 
+2017-11-27 11:05:07  DEBUG 1153ms|>- Created connection 1004314873.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.popConnection(PooledDataSource.java:406)> 
+2017-11-27 11:05:07  DEBUG 1154ms|>- Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@3bdca0f9]
+ <org.apache.ibatis.transaction.jdbc.JdbcTransaction.setDesiredAutoCommit(JdbcTransaction.java:101)> 
+2017-11-27 11:05:07  DEBUG 1158ms|>- ==>  Preparing: select oid,state,address,sum,uid from view_order_goods where uid = ? group by oid 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 11:05:07  DEBUG 1194ms|>- ==> Parameters: 1(Integer)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 11:05:07  DEBUG 1271ms|>- ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171114000359 and uid = 1 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 11:05:07  DEBUG 1271ms|>- ====> Parameters: 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 11:05:07  DEBUG 1275ms|>- <====      Total: 2
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 11:05:07  DEBUG 1277ms|>- ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171114000839 and uid = 1 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 11:05:07  DEBUG 1278ms|>- ====> Parameters: 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 11:05:07  DEBUG 1280ms|>- <====      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 11:05:07  DEBUG 1283ms|>- ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171114150342 and uid = 1 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 11:05:07  DEBUG 1284ms|>- ====> Parameters: 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 11:05:07  DEBUG 1286ms|>- <====      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 11:05:07  DEBUG 1287ms|>- ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171115115255 and uid = 1 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 11:05:07  DEBUG 1288ms|>- ====> Parameters: 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 11:05:07  DEBUG 1290ms|>- <====      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 11:05:07  DEBUG 1291ms|>- ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171115115316 and uid = 1 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 11:05:07  DEBUG 1291ms|>- ====> Parameters: 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 11:05:07  DEBUG 1293ms|>- <====      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 11:05:07  DEBUG 1293ms|>- ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171120142528 and uid = 1 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 11:05:07  DEBUG 1294ms|>- ====> Parameters: 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 11:05:07  DEBUG 1295ms|>- <====      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 11:05:07  DEBUG 1296ms|>- ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171125185207 and uid = 1 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 11:05:07  DEBUG 1297ms|>- ====> Parameters: 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 11:05:07  DEBUG 1298ms|>- <====      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 11:05:07  DEBUG 1300ms|>- ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171125214247 and uid = 1 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 11:05:07  DEBUG 1301ms|>- ====> Parameters: 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 11:05:07  DEBUG 1302ms|>- <====      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 11:05:07  DEBUG 1303ms|>- ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171125222523 and uid = 1 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 11:05:07  DEBUG 1303ms|>- ====> Parameters: 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 11:05:07  DEBUG 1305ms|>- <====      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 11:05:07  DEBUG 1306ms|>- ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171125223010 and uid = 1 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 11:05:07  DEBUG 1306ms|>- ====> Parameters: 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 11:05:07  DEBUG 1308ms|>- <====      Total: 2
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 11:05:07  DEBUG 1309ms|>- ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171125223156 and uid = 1 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 11:05:07  DEBUG 1309ms|>- ====> Parameters: 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 11:05:07  DEBUG 1310ms|>- <====      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 11:05:07  DEBUG 1312ms|>- ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171125231209 and uid = 1 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 11:05:07  DEBUG 1313ms|>- ====> Parameters: 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 11:05:07  DEBUG 1316ms|>- <====      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 11:05:07  DEBUG 1317ms|>- ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171126180009 and uid = 1 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 11:05:07  DEBUG 1318ms|>- ====> Parameters: 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 11:05:07  DEBUG 1321ms|>- <====      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 11:05:07  DEBUG 1322ms|>- ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171126180109 and uid = 1 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 11:05:07  DEBUG 1323ms|>- ====> Parameters: 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 11:05:07  DEBUG 1326ms|>- <====      Total: 2
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 11:05:07  DEBUG 1327ms|>- ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171126180345 and uid = 1 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 11:05:07  DEBUG 1328ms|>- ====> Parameters: 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 11:05:07  DEBUG 1332ms|>- <====      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 11:05:07  DEBUG 1334ms|>- ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171126180444 and uid = 1 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 11:05:07  DEBUG 1336ms|>- ====> Parameters: 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 11:05:07  DEBUG 1338ms|>- <====      Total: 2
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 11:05:07  DEBUG 1340ms|>- ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171127090311 and uid = 1 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 11:05:07  DEBUG 1340ms|>- ====> Parameters: 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 11:05:07  DEBUG 1342ms|>- <====      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 11:05:07  DEBUG 1343ms|>- <==      Total: 17
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 11:24:08  DEBUG 0ms|>- Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+ <org.apache.ibatis.logging.LogFactory.setImplementation(LogFactory.java:135)> 
+2017-11-27 11:24:09  DEBUG 247ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-27 11:24:09  DEBUG 247ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-27 11:24:09  DEBUG 247ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-27 11:24:09  DEBUG 247ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-27 11:24:09  DEBUG 933ms|>- Opening JDBC Connection
+ <org.apache.ibatis.transaction.jdbc.JdbcTransaction.openConnection(JdbcTransaction.java:137)> 
+2017-11-27 11:24:10  DEBUG 1187ms|>- Created connection 928218025.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.popConnection(PooledDataSource.java:406)> 
+2017-11-27 11:24:10  DEBUG 1187ms|>- Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@37537ba9]
+ <org.apache.ibatis.transaction.jdbc.JdbcTransaction.setDesiredAutoCommit(JdbcTransaction.java:101)> 
+2017-11-27 11:24:10  DEBUG 1187ms|>- ==>  Preparing: SELECT * FROM users WHERE uname = ? and upwd = ? 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 11:24:10  DEBUG 1244ms|>- ==> Parameters: xiaoming(String), 123(String)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 11:24:10  TRACE 1369ms|>- <==    Columns: uid, uname, upwd, phone, city, regDate, idCard, realName, age, email, sex, avatar
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.trace(BaseJdbcLogger.java:165)> 
+2017-11-27 11:24:10  TRACE 1371ms|>- <==        Row: 1, xiaoming, 123, 18899119292, 西安, 2017-11-11, null, 小明, 22, null, 男, <<BLOB>>
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.trace(BaseJdbcLogger.java:165)> 
+2017-11-27 11:24:10  DEBUG 1371ms|>- <==      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 11:24:10  DEBUG 1371ms|>- Opening JDBC Connection
+ <org.apache.ibatis.transaction.jdbc.JdbcTransaction.openConnection(JdbcTransaction.java:137)> 
+2017-11-27 11:24:10  DEBUG 1387ms|>- Created connection 1575450555.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.popConnection(PooledDataSource.java:406)> 
+2017-11-27 11:24:10  DEBUG 1387ms|>- Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@5de777bb]
+ <org.apache.ibatis.transaction.jdbc.JdbcTransaction.setDesiredAutoCommit(JdbcTransaction.java:101)> 
+2017-11-27 11:24:10  DEBUG 1387ms|>- ==>  Preparing: SELECT COUNT(1) FROM shoppingcar WHERE uid = ?; 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 11:24:10  DEBUG 1403ms|>- ==> Parameters: 1(Integer)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 11:24:10  DEBUG 1403ms|>- <==      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 11:24:12  DEBUG 3235ms|>- Opening JDBC Connection
+ <org.apache.ibatis.transaction.jdbc.JdbcTransaction.openConnection(JdbcTransaction.java:137)> 
+2017-11-27 11:24:12  DEBUG 3250ms|>- Created connection 1168131981.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.popConnection(PooledDataSource.java:406)> 
+2017-11-27 11:24:12  DEBUG 3250ms|>- Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@45a0478d]
+ <org.apache.ibatis.transaction.jdbc.JdbcTransaction.setDesiredAutoCommit(JdbcTransaction.java:101)> 
+2017-11-27 11:24:12  DEBUG 3250ms|>- ==>  Preparing: select oid,state,address,sum,uid from view_order_goods where uid = ? group by oid 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 11:24:12  DEBUG 3250ms|>- ==> Parameters: 1(Integer)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 11:24:12  DEBUG 3287ms|>- ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171114000359 and uid = 1 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 11:24:12  DEBUG 3287ms|>- ====> Parameters: 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 11:24:12  DEBUG 3302ms|>- <====      Total: 2
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 11:24:12  DEBUG 3302ms|>- ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171114000839 and uid = 1 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 11:24:12  DEBUG 3302ms|>- ====> Parameters: 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 11:24:12  DEBUG 3302ms|>- <====      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 11:24:12  DEBUG 3302ms|>- ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171114150342 and uid = 1 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 11:24:12  DEBUG 3302ms|>- ====> Parameters: 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 11:24:12  DEBUG 3302ms|>- <====      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 11:24:12  DEBUG 3302ms|>- ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171115115255 and uid = 1 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 11:24:12  DEBUG 3302ms|>- ====> Parameters: 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 11:24:12  DEBUG 3318ms|>- <====      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 11:24:12  DEBUG 3318ms|>- ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171115115316 and uid = 1 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 11:24:12  DEBUG 3318ms|>- ====> Parameters: 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 11:24:12  DEBUG 3318ms|>- <====      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 11:24:12  DEBUG 3318ms|>- ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171120142528 and uid = 1 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 11:24:12  DEBUG 3318ms|>- ====> Parameters: 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 11:24:12  DEBUG 3318ms|>- <====      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 11:24:12  DEBUG 3318ms|>- ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171125185207 and uid = 1 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 11:24:12  DEBUG 3318ms|>- ====> Parameters: 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 11:24:12  DEBUG 3318ms|>- <====      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 11:24:12  DEBUG 3334ms|>- ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171125214247 and uid = 1 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 11:24:12  DEBUG 3334ms|>- ====> Parameters: 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 11:24:12  DEBUG 3334ms|>- <====      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 11:24:12  DEBUG 3334ms|>- ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171125222523 and uid = 1 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 11:24:12  DEBUG 3334ms|>- ====> Parameters: 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 11:24:12  DEBUG 3334ms|>- <====      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 11:24:12  DEBUG 3334ms|>- ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171125223010 and uid = 1 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 11:24:12  DEBUG 3334ms|>- ====> Parameters: 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 11:24:12  DEBUG 3334ms|>- <====      Total: 2
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 11:24:12  DEBUG 3334ms|>- ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171125223156 and uid = 1 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 11:24:12  DEBUG 3334ms|>- ====> Parameters: 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 11:24:12  DEBUG 3349ms|>- <====      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 11:24:12  DEBUG 3349ms|>- ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171125231209 and uid = 1 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 11:24:12  DEBUG 3349ms|>- ====> Parameters: 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 11:24:12  DEBUG 3349ms|>- <====      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 11:24:12  DEBUG 3349ms|>- ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171126180009 and uid = 1 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 11:24:12  DEBUG 3349ms|>- ====> Parameters: 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 11:24:12  DEBUG 3349ms|>- <====      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 11:24:12  DEBUG 3349ms|>- ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171126180109 and uid = 1 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 11:24:12  DEBUG 3349ms|>- ====> Parameters: 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 11:24:12  DEBUG 3349ms|>- <====      Total: 2
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 11:24:12  DEBUG 3349ms|>- ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171126180345 and uid = 1 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 11:24:12  DEBUG 3365ms|>- ====> Parameters: 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 11:24:12  DEBUG 3368ms|>- <====      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 11:24:12  DEBUG 3370ms|>- ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171126180444 and uid = 1 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 11:24:12  DEBUG 3371ms|>- ====> Parameters: 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 11:24:12  DEBUG 3373ms|>- <====      Total: 2
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 11:24:12  DEBUG 3373ms|>- ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171127090311 and uid = 1 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 11:24:12  DEBUG 3373ms|>- ====> Parameters: 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 11:24:12  DEBUG 3373ms|>- <====      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 11:24:12  DEBUG 3373ms|>- <==      Total: 17
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 11:24:30  DEBUG 21244ms|>- ==>  Preparing: update users SET uname = ?, upwd = ? where uid = ? 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 11:24:30  DEBUG 21252ms|>- ==> Parameters: xiaoming(String), 1234(String), 1(Integer)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 11:24:30  DEBUG 21270ms|>- <==    Updates: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 11:29:31  DEBUG 0ms|>- Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+ <org.apache.ibatis.logging.LogFactory.setImplementation(LogFactory.java:135)> 
+2017-11-27 11:29:31  DEBUG 154ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-27 11:29:31  DEBUG 154ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-27 11:29:31  DEBUG 154ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-27 11:29:31  DEBUG 154ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-27 11:29:31  DEBUG 426ms|>- Opening JDBC Connection
+ <org.apache.ibatis.transaction.jdbc.JdbcTransaction.openConnection(JdbcTransaction.java:137)> 
+2017-11-27 11:29:32  DEBUG 620ms|>- Created connection 1683459943.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.popConnection(PooledDataSource.java:406)> 
+2017-11-27 11:29:32  DEBUG 620ms|>- Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@64578f67]
+ <org.apache.ibatis.transaction.jdbc.JdbcTransaction.setDesiredAutoCommit(JdbcTransaction.java:101)> 
+2017-11-27 11:29:32  DEBUG 620ms|>- ==>  Preparing: SELECT * FROM users WHERE uname = ? and upwd = ? 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 11:29:32  DEBUG 636ms|>- ==> Parameters: xiaoming(String), 123(String)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 11:29:32  DEBUG 636ms|>- <==      Total: 0
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 11:30:51  DEBUG 0ms|>- Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+ <org.apache.ibatis.logging.LogFactory.setImplementation(LogFactory.java:135)> 
+2017-11-27 11:30:51  DEBUG 104ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-27 11:30:51  DEBUG 104ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-27 11:30:51  DEBUG 104ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-27 11:30:51  DEBUG 104ms|>- PooledDataSource forcefully closed/removed all connections.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)> 
+2017-11-27 11:30:51  DEBUG 351ms|>- Opening JDBC Connection
+ <org.apache.ibatis.transaction.jdbc.JdbcTransaction.openConnection(JdbcTransaction.java:137)> 
+2017-11-27 11:30:52  DEBUG 552ms|>- Created connection 1034241980.
+ <org.apache.ibatis.datasource.pooled.PooledDataSource.popConnection(PooledDataSource.java:406)> 
+2017-11-27 11:30:52  DEBUG 552ms|>- Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@3da547bc]
+ <org.apache.ibatis.transaction.jdbc.JdbcTransaction.setDesiredAutoCommit(JdbcTransaction.java:101)> 
+2017-11-27 11:30:52  DEBUG 552ms|>- ==>  Preparing: SELECT * FROM users WHERE uname = ? and upwd = ? 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 11:30:52  DEBUG 568ms|>- ==> Parameters: xiaoming(String), 123(String)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 11:30:52  DEBUG 583ms|>- <==      Total: 0
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 11:31:17  DEBUG 25926ms|>- ==>  Preparing: SELECT * FROM users WHERE uname = ? and upwd = ? 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 11:31:17  DEBUG 25937ms|>- ==> Parameters: xiaoming(String), 1234(String)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 11:31:17  TRACE 25937ms|>- <==    Columns: uid, uname, upwd, phone, city, regDate, idCard, realName, age, email, sex, avatar
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.trace(BaseJdbcLogger.java:165)> 
+2017-11-27 11:31:17  TRACE 25937ms|>- <==        Row: 1, xiaoming, 1234, 18899119292, 西安, 2017-11-11, null, 小明, 22, null, 男, <<BLOB>>
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.trace(BaseJdbcLogger.java:165)> 
+2017-11-27 11:31:17  DEBUG 25955ms|>- <==      Total: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 11:31:17  DEBUG 25979ms|>- ==>  Preparing: update users SET uname = ?, upwd = ? where uid = ? 
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 11:31:17  DEBUG 25979ms|>- ==> Parameters: xiaoming(String), 123(String), 1(Integer)
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
+2017-11-27 11:31:17  DEBUG 25995ms|>- <==    Updates: 1
+ <org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)> 
