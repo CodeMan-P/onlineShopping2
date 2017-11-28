@@ -74,7 +74,6 @@ public class addressSlt extends HttpServlet {
 			json = mapper.writerWithDefaultPrettyPrinter().writeValueAsString(request.getParameterMap());
 			json = json.replaceAll("\\[|\\]", "");
 			Address adr = mapper.readValue(json, Address.class);
-			
 			@SuppressWarnings("unchecked")
 			HashMap<String,String> hm = mapper.readValue(json, HashMap.class);
 			adr.setProvince(hm.get("province"));
@@ -91,6 +90,36 @@ public class addressSlt extends HttpServlet {
 			out.close();
 			// 新建地址完成后刷新
 			//response.sendRedirect("/Spcar?flag=view");
+			return;
+		}else if (flag.equalsIgnoreCase("edit")) {
+			String json;
+			ObjectMapper mapper = new ObjectMapper();
+			json = mapper.writerWithDefaultPrettyPrinter().writeValueAsString(request.getParameterMap());
+			json = json.replaceAll("\\[|\\]|/s", "");
+			
+			Address adr = mapper.readValue(json, Address.class);
+			@SuppressWarnings("unchecked")
+			HashMap<String,String> hm = mapper.readValue(json, HashMap.class);
+			adr.setProvince(hm.get("province"));
+			adr.setCity(hm.get("city"));
+			adr.setUid(uid);
+			String province = hm.get("provice");
+			String city = hm.get("city");
+			if(city!=null&&!city.contains("-")){
+				adr.setProvince(province);
+				adr.setCity(city);
+			}
+			String aid = request.getParameter("aid");
+			adr.setAdressid(Integer.parseInt(aid));
+			boolean b = UserService.editAddress(adr);
+			PrintWriter out = response.getWriter();
+			if(b){
+				out.write("{\"message\":\"修改成功！\"}");
+			}else{
+				out.write("{\"message\":\"修改失败！\"}");
+			}
+			out.flush();
+			out.close();
 			return;
 		} else if (flag.equalsIgnoreCase("editAdres")) {
 			String addr = request.getParameter("addr");

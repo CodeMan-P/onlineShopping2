@@ -266,7 +266,7 @@ function checkEmpty(id, name){
 	
 	<form action="../search" method="post">	
 	<div class="simpleSearchDiv pull-right">
-		<input type="text" placeholder="请输入想要的东西吧" value="" name="word">
+		<input type="text" placeholder="请输入想要的东西吧" required value="" name="word">
 		<button class="searchButton" type="submit">搜索</button>
 		
 	</div>

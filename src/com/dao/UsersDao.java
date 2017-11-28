@@ -85,6 +85,14 @@ public class UsersDao {
 		int i = 0;
 
 		try {
+			if(address.getDef()){
+				//其他全部设置为非默认
+				Connection con = DbConn.getCon();
+				PreparedStatement pst = con.prepareStatement("update address set def = 0 where uid = ?");
+				pst.setInt(1, address.getUid());
+				pst.executeUpdate();
+				DbConn.closeConn(null, pst, con);
+			}
 			i = am.updateByPrimaryKeySelective(address);
 		} catch (Exception e) {
 			log.warn(e.getLocalizedMessage());
@@ -104,10 +112,11 @@ public class UsersDao {
 			
 			
 			Address address = am.selectByPrimaryKey(addressId);
-			i = am.deleteByPrimaryKey(addressId);
+			int uid = address.getUid();
 			Connection con = DbConn.getCon();
 			PreparedStatement pst = con.prepareStatement("select * from address where def = 1 and uid = ?");
 			pst.setInt(1, address.getUid());
+			i = am.deleteByPrimaryKey(addressId);
 			ResultSet rs = pst.executeQuery();
 			if(!rs.next()){
 				ResultSet temp = pst.executeQuery("select * from address where uid = "+address.getUid());
@@ -120,6 +129,7 @@ public class UsersDao {
 						Address a = new Address();
 						a.setAdressid(aid);
 						a.setDef(true);
+						a.setUid(uid);
 						System.out.println(aid);
 						editAddress(a);
 					}

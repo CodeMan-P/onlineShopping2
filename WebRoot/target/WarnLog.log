@@ -284,3 +284,53 @@
  <com.dao.UsersDao.deleAddress(UsersDao.java:136)> 
 2017-11-27 14:53:24  WARN 13281ms|>- You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'uid = 1' at line 1
  <com.dao.UsersDao.deleAddress(UsersDao.java:136)> 
+2017-11-27 15:52:02  WARN 1370765ms|>- 
+ <com.dao.UsersDao.addAddress(UsersDao.java:74)> 
+2017-11-27 15:52:05  WARN 1373101ms|>- 
+ <com.dao.UsersDao.addAddress(UsersDao.java:74)> 
+2017-11-27 15:54:10  WARN 1498771ms|>- 
+ <com.dao.UsersDao.addAddress(UsersDao.java:74)> 
+2017-11-27 15:57:01  WARN 1669110ms|>- 
+ <com.dao.UsersDao.addAddress(UsersDao.java:74)> 
+2017-11-27 15:57:23  WARN 1691633ms|>- 
+ <com.dao.UsersDao.addAddress(UsersDao.java:74)> 
+2017-11-27 15:57:42  WARN 332ms|>- 
+ <com.dao.UsersDao.addAddress(UsersDao.java:74)> 
+2017-11-27 16:57:25  WARN 16017ms|>- 
+### Error updating database.  Cause: com.mysql.jdbc.MysqlDataTruncation: Data truncation: Data too long for column 'aname' at row 1
+### The error may involve com.mod.mapper.AddressMapper.updateByPrimaryKeySelective-Inline
+### The error occurred while setting parameters
+### SQL: update address      SET uid = ?,                       address = ?,                              aphone = ?,                       aname = ?,                       province = ?,                       city = ?      where adressId = ?
+### Cause: com.mysql.jdbc.MysqlDataTruncation: Data truncation: Data too long for column 'aname' at row 1
+ <com.dao.UsersDao.editAddress(UsersDao.java:90)> 
+2017-11-27 17:00:40  WARN 211387ms|>- 
+### Error updating database.  Cause: com.mysql.jdbc.MysqlDataTruncation: Data truncation: Data too long for column 'aname' at row 1
+### The error may involve com.mod.mapper.AddressMapper.updateByPrimaryKeySelective-Inline
+### The error occurred while setting parameters
+### SQL: update address      SET uid = ?,                       address = ?,                              aphone = ?,                       aname = ?,                       province = ?,                       city = ?      where adressId = ?
+### Cause: com.mysql.jdbc.MysqlDataTruncation: Data truncation: Data too long for column 'aname' at row 1
+ <com.dao.UsersDao.editAddress(UsersDao.java:90)> 
+2017-11-27 17:03:05  WARN 559ms|>- 
+### Error updating database.  Cause: com.mysql.jdbc.MysqlDataTruncation: Data truncation: Data too long for column 'aname' at row 1
+### The error may involve com.mod.mapper.AddressMapper.updateByPrimaryKeySelective-Inline
+### The error occurred while setting parameters
+### SQL: update address      SET uid = ?,                       address = ?,                              aphone = ?,                       aname = ?,                       province = ?,                       city = ?      where adressId = ?
+### Cause: com.mysql.jdbc.MysqlDataTruncation: Data truncation: Data too long for column 'aname' at row 1
+ <com.dao.UsersDao.editAddress(UsersDao.java:90)> 
+2017-11-27 18:51:03  WARN 1484698ms|>- 
+ <com.dao.UsersDao.editAddress(UsersDao.java:98)> 
+2017-11-27 19:06:09  WARN 2390791ms|>- 
+ <com.dao.UsersDao.editAddress(UsersDao.java:98)> 
+2017-11-27 19:10:58  WARN 917ms|>- 
+ <com.dao.UsersDao.editAddress(UsersDao.java:98)> 
+2017-11-27 19:12:14  WARN 4444ms|>- 
+ <com.dao.UsersDao.editAddress(UsersDao.java:98)> 
+2017-11-28 12:01:26  WARN 150952ms|>- 
+### Error updating database.  Cause: java.sql.SQLException: Incorrect decimal value: '' for column 'aphone' at row 1
+### The error may involve com.mod.mapper.AddressMapper.insertSelective-Inline
+### The error occurred while setting parameters
+### SQL: insert into address      ( uid,                       address,                       def,                       aphone,                       aname,                       province,                       city )       values ( ?,                       ?,                       ?,                       ?,                       ?,                       ?,                       ? )
+### Cause: java.sql.SQLException: Incorrect decimal value: '' for column 'aphone' at row 1
+ <com.dao.UsersDao.addAddress(UsersDao.java:74)> 
+2017-11-28 12:02:13  WARN 198065ms|>- 
+ <com.dao.UsersDao.addAddress(UsersDao.java:74)> 

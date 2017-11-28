@@ -29,485 +29,22 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 <script type="text/javascript" src="../js/jquery-2.1.0.js"></script>
 <script type="text/javascript" src="../js/jquery.form.js"></script>
 <script type="text/javascript" src="../js/ajaxfileupload.js"></script>
-<script type="text/javascript" src="js/role.js"></script>
-<link rel="stylesheet" href="../css/lanrenzhijia.css" media="all">
+
 	<link href="./img/bootstrap.min.css" rel="stylesheet">
 	<script src="./img/bootstrap.min.js.下载"></script>
 	<link href="./img/style.css" rel="stylesheet">
-
+<link rel="stylesheet" href="../css/lanrenzhijia.css">
+<script src="../js/addressOp.js"></script>
+<script src="../js/shoppingcar.js"></script>	
+<script type="text/javascript" src="js/role.js"></script>
 <script type="text/javascript">
 $(document).ready(function(){
-    	$("button.createOrderButton").click(function(){ 
-            var $check_boxes = $("input[type=checkbox][id!=check_all_box]:checked");  
-            if($check_boxes.length<=0){ alert('未勾选购买物品，请勾选！');return;}  
-            if(confirm('确定要剁手（购买）吗？')){
-                var buyCids = new Array();  
-                $check_boxes.each(function(){  
-                	buyCids.push($(this).val());  
-                });  
-                var adresId = $("input[type=radio]:checked").val();
-             
-                $("input[name='buyCids']").val(buyCids.toString());
-                $("input[name='adresId']").val(adresId+"");
-                $("#frm").submit();
-             
-            }
-            
-        });  
-      	$('a[name = address]').click(function(){
-    		//$('.theme-popover-mask').fadeIn(100);
-    		$('div[class=theme-popover][name=address]').slideDown(200);
-    		$("div[name='form']").show();
-    	});
-    	
-    $('.theme-poptit .close').click(function(){
-    	$('.theme-popover-mask').fadeOut(100);
-    	$('.theme-popover').slideUp(200);
-    });
+$("input").bind('keyup',function () {
+	$(this).val($(this).val().replace(/\s/g,''));
+});	
+})
+</script>
 
-    
-   $('#addb').click(function(){
-    		var time = new Date();
-
-    		
-    		var ajax_option = {
-    			//target: '#output',          //把服务器返回的内容放入id为output的元素中        
-    			//beforeSubmit://提交前的回调函数    
-    			url : '../ast', //默认是form的action， 如果申明，则会覆盖    
-    			type : 'post', //默认是form的method（get or post），如果申明，则会覆盖    
-    			dataType : 'json', //html(默认), xml, script, json...接受服务端返回的类型    
-    			date:{"d":time},
-    			clearForm : true, //成功提交后，清除所有表单元素的值    
-    			resetForm : true, //成功提交后，重置所有表单元素的值    
-    			timeout : 3000, //限制请求的时间，当请求大于3秒后，跳出请求   
-    			success : function(data) {
-    				if(data.message.match('.+?失败.+')){
-    					if(data.message.match('.+?验证码.+')){
-    						alert("验证码错误");
-    					}else if(data.message.match('.+?旧.+')){
-    						alert("旧密码错误");
-    					}else{
-    						alert("修改失败，请重试！");
-    					}
-    					
-    				}else{
-    					alert("修改成功！");
-    					location.href="<%=request.getContextPath()%>/Spcar?flag=view";
-    				//$('.theme-popover-mask').fadeOut(100);
-    				$('.theme-popover').slideUp(200);
-    				
-    				}
-    			}, //提交后的回调函数
-    			error:function(XMLHttpRequest, textStatus, errorThrown){
-    				alert("修改异常，请重试！");
-    			   },
-    		};
-    		$("#pfm").ajaxSubmit(ajax_option);
-    	});
-});
-    <%------------------document-------------%>
-    function deleA(a){
-    	var aid = a;
-    	 $.ajax({
-             type:'post',  
-             traditional :true,//阻止深度序列化  
-             url:'../ast',  
-             data:{
-             	"flag":"dele",
-             	"aid":aid},
-             dataType:'json',
-             async: false,
-             success:function(data){  
- 				if(data.message.match('.+?成功.+')){
-                 	alert("成功删除！"); 
-                     //MARK**转付款界面
- 					//location.href="../index.jsp";	
-                 	location.href="<%=request.getContextPath()%>/Spcar?flag=view";
- 				}else{
- 						alert("删除失败");
- 					}
-             },
-             error:function(XMLHttpRequest, textStatus, errorThrown){
- 				   alert(XMLHttpRequest.status);
- 				   alert(XMLHttpRequest.readyState);
- 				   alert(textStatus);
- 			   }
-         });  
-    };
-	
-    function changeBox(){
-    	//$("input[type=checkbox][id!=check_all_box]").removeAttr("checked");
-		$("input[type=checkbox][id!=check_all_box]").prop("checked",$('input[id=check_all_box]').is(':checked'));
-    };
-    function deleGoods(cid){
-    	flag = false;
-        $.ajax({
-            type:'post',  
-            traditional :true,//阻止深度序列化  
-            url:'../Spcar',  
-            data:{
-            	"flag":"dele",
-            	"cid":cid},
-            dataType:'json',
-            async: false,
-            success:function(data){  
-				if(data.message.match('.+?成功.+')){
-                	alert("成功删除！"); 
-                    //MARK**转付款界面
-					//location.href="../index.jsp";	
-                	flag =true; 
-				}else{
-						alert("删除失败");
-					}
-            },
-            error:function(XMLHttpRequest, textStatus, errorThrown){
-				   alert(XMLHttpRequest.status);
-				   alert(XMLHttpRequest.readyState);
-				   alert(textStatus);
-			   }
-        });  
-    return flag;  
-    };
-    
-    </script>
-<script>
-
-function checkEmpty(id, name){
-	var value = $("#"+id).val();
-	if(value.length==0){
-		
-		$("#"+id)[0].focus();
-		return false;
-	}
-	return true;
-}
-</script>	
-<script>
-var deleteOrderItem = false;
-var deleteOrderItemid = 0;
-$(function(){
-
-	$("a.deleteOrderItem").click(function(){
-		deleteOrderItem = false;
-		var oiid = $(this).attr("oiid")
-		deleteOrderItemid = oiid;
-		$("#deleteConfirmModal").modal('show');	   
-	});
-	$("button.deleteConfirmButton").click(function(){
-		deleteOrderItem = true;
-		$("#deleteConfirmModal").modal('hide');
-	});
-	
-	$('#deleteConfirmModal').on('hidden.bs.modal', function (e) {
-		if(deleteOrderItem){
-			var page="foredeleteOrderItem";
-			$.post(
-				    page,
-				    {"oiid":deleteOrderItemid},
-				    function(result){
-						if("success"==result){
-							$("tr.cartProductItemTR[oiid="+deleteOrderItemid+"]").hide();
-						}
-						else{
-							location.href="login.jsp";
-						}
-				    }
-				);
-			
-		}
-	})	
-	
-	$("img.cartProductItemIfSelected").click(function(){
-		var selectit = $(this).attr("selectit");
-		var oiid = $(this).attr("oiid")
-		
-		if("selectit"==selectit){
-			$("input[type=checkbox][name="+oiid+"]").prop("checked",false);
-			$(this).attr("src","img/cartNotSelected.png");
-			$(this).attr("selectit","false")
-			$(this).parents("tr.cartProductItemTR").css("background-color","#fff");
-		}
-		else{
-			$("input[type=checkbox][name="+oiid+"]").prop("checked",true);
-			$(this).attr("src","img/cartSelected.png");
-			$(this).attr("selectit","selectit")
-			$(this).parents("tr.cartProductItemTR").css("background-color","#FFF8E1");
-		}
-		
-		syncSelect();
-		syncCreateOrderButton();
-		calcCartSumPriceAndNumber();
-	});
-	$("img.selectAllItem").click(function(){
-		var selectit = $(this).attr("selectit")
-		if("selectit"==selectit){
-			$("img.selectAllItem").attr("src","img/cartNotSelected.png");
-			$("img.selectAllItem").attr("selectit","false");
-			$("input[type=checkbox][id!=check_all_box]").prop("checked",false);
-			$(".cartProductItemIfSelected").each(function(){
-				$(this).attr("src","img/cartNotSelected.png");
-				$(this).attr("selectit","false");
-				$(this).parent("td").children("input[type=checkbox]").prop("checked",false);
-				$(this).parents("tr.cartProductItemTR").css("background-color","#fff");
-			});			
-		}
-		else{
-			$("input[type=checkbox][id!=check_all_box]").prop("checked",true);
-			$("img.selectAllItem").attr("src","img/cartSelected.png");
-			$("img.selectAllItem").attr("selectit","selectit")
-			$(".cartProductItemIfSelected").each(function(){
-				$(this).attr("src","img/cartSelected.png");
-				$(this).attr("selectit","selectit");
-				$(this).parent("td").children("input[type=checkbox]").prop("checked",true);
-				$(this).parents("tr.cartProductItemTR").css("background-color","#FFF8E1");
-			});				
-		}
-		syncCreateOrderButton();
-		calcCartSumPriceAndNumber();
-		
-
-	});
-
-	$(".numberPlus").click(function(){
-		
-		var pid=$(this).attr("pid");
-		var stock= $("span.orderItemStock[pid="+pid+"]").text();
-		var price= $("span.orderItemPromotePrice[pid="+pid+"]").text();
-		var num= $(".orderItemNumberSetting[pid="+pid+"]").val();
-
-		num++;
-		if(num>stock){
-			num = stock;
-		}
-		
-		syncPrice(pid,num,price);
-	});
-
-	$(".numberMinus").click(function(){
-		var pid=$(this).attr("pid");
-		var stock= $("span.orderItemStock[pid="+pid+"]").text();
-		var price= $("span.orderItemPromotePrice[pid="+pid+"]").text();
-		
-		var num= $(".orderItemNumberSetting[pid="+pid+"]").val();
-		--num;
-		if(num<=0){
-			num=1;
-		}
-		syncPrice(pid,num,price);
-	});
-	function syncPrice(pid,num,price){
-		
-		var oiid =$(".orderItemNumberSetting[pid="+pid+"]").attr("oiid"); 
-		var cartProductItemSmallSumPrice = formatMoney(num*price);
-		$.ajax({
-            type:'post',  
-            traditional :true,//阻止深度序列化  
-            url:'../Spcar',  
-            data:{
-            	"flag":"change",
-            	"cid":oiid,
-            	"gnum":num},
-        	dataType:'json',
-            async: false,
-            success:function(data){  
-				if(data.message.match('.+?成功.+')){
-					$(".orderItemNumberSetting[pid="+pid+"]").val(num);
-					 
-					$(".cartProductItemSmallSumPrice[pid="+pid+"]").html("￥"+cartProductItemSmallSumPrice);
-					calcCartSumPriceAndNumber();
-				}else{
-						alert("修改失败");
-					}
-            },
-            error:function(XMLHttpRequest, textStatus, errorThrown){
-				   alert(XMLHttpRequest.status);
-				   alert(XMLHttpRequest.readyState);
-				   alert(textStatus);
-			   }
-        });  
-		/*
-		 * var page = "forechangeOrderItem";
-			$.post(
-				    page,
-				    {"pid":pid,"number":num},
-				    function(result){
-						if("success"!=result){
-							location.href="login.jsp";
-						}
-				    }
-				);
-		 */	
-	}
-	function calcCartSumPriceAndNumber(){
-		var sum = 0;
-		var totalNumber = 0;
-		$("img.cartProductItemIfSelected[selectit='selectit']").each(function(){
-			var oiid = $(this).attr("oiid");
-			var price =$(".cartProductItemSmallSumPrice[oiid="+oiid+"]").text();
-			price = price.replace(/,/g, "");
-			price = price.replace(/￥/g, "");
-			sum += new Number(price);	
-			
-			var num =$(".orderItemNumberSetting[oiid="+oiid+"]").val();
-			totalNumber += new Number(num);	
-			
-		});
-		
-		if(totalNumber==0){
-			$("span.cartSumNumber").html(0);
-			$("span.cartSumPrice").html("￥0.00");
-			return;
-		}
-		$("span.cartSumPrice").html("￥"+formatMoney(sum));
-		$("span.cartSumNumber").html(totalNumber);
-	}
-	function formatMoney(num){
-		num = num.toString().replace(/\$|\,/g,'');  
-		if(isNaN(num))  
-		    num = "0";  
-		sign = (num == (num = Math.abs(num)));  
-		num = Math.floor(num*100+0.50000000001);  
-		cents = num%100;  
-		num = Math.floor(num/100).toString();  
-		if(cents<10)  
-		cents = "0" + cents;  
-		for (var i = 0; i < Math.floor((num.length-(1+i))/3); i++)  
-		num = num.substring(0,num.length-(4*i+3))+','+  
-		num.substring(num.length-(4*i+3));  
-		return (((sign)?'':'-') + num + '.' + cents);  
-	}
-	$(".orderItemNumberSetting").keyup(function(){
-		var pid=$(this).attr("pid");
-		var stock= $("span.orderItemStock[pid="+pid+"]").text();
-		var price= $("span.orderItemPromotePrice[pid="+pid+"]").text();
-		
-		var num= $(".orderItemNumberSetting[pid="+pid+"]").val();
-		num = parseInt(num);
-		if(isNaN(num))
-			num= 1;
-		if(num<=0)
-			num = 1;
-		if(num>stock)
-			num = stock;
-		
-		syncPrice(pid,num,price);
-	});
-
-	
-	
-	$("#bt1").click(function(){
-		var params = "";
-		$(".cartProductItemIfSelected").each(function(){
-			if("selectit"==$(this).attr("selectit")){
-				var oiid = $(this).attr("oiid");
-				params += "&oiid="+oiid;
-			}
-		});
-		params = params.substring(1);
-		location.href="forebuy?"+params;
-	});
-	
-	function syncCreateOrderButton(){
-		var selectAny = false;
-		$(".cartProductItemIfSelected").each(function(){
-			if("selectit"==$(this).attr("selectit")){
-				selectAny = true;
-			}
-		});
-		
-		if(selectAny){
-			$("button.createOrderButton").css("background-color","#C40000");
-			$("button.createOrderButton").removeAttr("disabled");
-		}
-		else{
-			$("button.createOrderButton").css("background-color","#AAAAAA");
-			$("button.createOrderButton").attr("disabled","disabled");		
-		}
-			
-	}
-	function syncSelect(){
-		var selectAll = true;
-		$(".cartProductItemIfSelected").each(function(){
-			if("false"==$(this).attr("selectit")){
-				selectAll = false;
-			}
-		});
-		if(selectAll)
-			$("img.selectAllItem").attr("src","img/cartSelected.png");
-		else
-			$("img.selectAllItem").attr("src","img/cartNotSelected.png");
-	}
-
-});
-function syncSelect(){
-	var selectAll = true;
-	var sum = 0;
-	$(".cartProductItemIfSelected").each(function(){
-		if("false"==$(this).attr("selectit")){
-			selectAll = false;
-		}
-		sum+=1;
-	});
-	if(selectAll&&sum!=0)
-		$("img.selectAllItem").attr("src","img/cartSelected.png");
-	else
-		$("img.selectAllItem").attr("src","img/cartNotSelected.png");
-}
-function deleterow2(src,oiid) {
-
-	$("img.cartProductItemIfSelected[oiid="+oiid+"]").attr("selectit","false");
-	$("input[type=checkbox][name="+oiid+"]").prop("checked",false);
-	$(src).empty();
-	
-	src.parentElement.deleteRow(src.rowIndex-1);
-	var a=document.getElementById("table").rows.length;
-	calcCart();
-	syncSelect();
-	if(a==0){
-		$("#table").append("<tr><td>您的购物车没有商品，快去商城看看吧</td></tr>");
-//		document.getElementById("div").style.display=null;		
-	}	
-}
-
-function calcCart(){
-	var sum = 0;
-	var totalNumber = 0;
-	$("img.cartProductItemIfSelected[selectit='selectit']").each(function(){
-		var oiid = $(this).attr("oiid");
-		var price =$(".cartProductItemSmallSumPrice[oiid="+oiid+"]").text();
-		price = price.replace(/,/g, "");
-		price = price.replace(/￥/g, "");
-		sum += new Number(price);	
-		
-		var num =$(".orderItemNumberSetting[oiid="+oiid+"]").val();
-		totalNumber += new Number(num);	
-		
-	});
-
-	if(totalNumber==0){
-		$("span.cartSumNumber").html(0);
-		$("span.cartSumPrice").html("￥0.00");
-		return;
-	}
-	$("span.cartSumPrice").html("￥"+formatMoney(sum));
-	$("span.cartSumNumber").html(totalNumber);
-}
-function formatMoney(num){
-	num = num.toString().replace(/\$|\,/g,'');  
-	if(isNaN(num))  
-	    num = "0";  
-	sign = (num == (num = Math.abs(num)));  
-	num = Math.floor(num*100+0.50000000001);  
-	cents = num%100;  
-	num = Math.floor(num/100).toString();  
-	if(cents<10)  
-	cents = "0" + cents;  
-	for (var i = 0; i < Math.floor((num.length-(1+i))/3); i++)  
-	num = num.substring(0,num.length-(4*i+3))+','+  
-	num.substring(num.length-(4*i+3));  
-	return (((sign)?'':'-') + num + '.' + cents);  
-}
-</script>	
 </head>
 
 <body>
@@ -536,7 +73,7 @@ function formatMoney(num){
 	
 	<form action="../search" method="post">	
 	<div class="simpleSearchDiv pull-right">
-		<input type="text" placeholder="请输入想要的东西吧" value="" name="word">
+		<input type="text" placeholder="请输入想要的东西吧" required value="" name="word">
 		<button class="searchButton" type="submit">搜索</button>
 		
 	</div>
@@ -560,13 +97,13 @@ function formatMoney(num){
 	LinkedList<HashMap<String,Object>> adlist = mapper.readValue(adresJson, LinkedList.class);
 	 %>
  <center>
- <div style="width:1010px;height:200px;border: 1px solid #CCCCCC">
+ <div style="width:1010px;height:195px;border: 1px solid #CCCCCC;text-align:center;'" >
    <% 
 	     int idindex = 1;
   for(HashMap<String,Object> item : adlist){
-	  %><div style="float:left;width:300px;height:170px; margin: 10px;bottom: 10px;border: 1px solid #CCCCCC">
+	  %><div name= "<%=item.get("adressid")%>" style="float:left;height:170px;width:31%; margin: 10px;border: 1px solid #CCCCCC">
 	     <input type="radio" name="radio" id="radio<%=item.get("adressid")%>" value="<%=item.get("address")%>"><%=idindex%><br/>
-	     
+	     <input id="editb" type="button" name="<%=item.get("adressid")%>" value="修改"  />
 	     <input id="deleb" type="button" value="删除" onclick="deleA(<%=item.get("adressid")%>)" /><br/>
 	     <% 
 	     item.remove("uid");
@@ -589,7 +126,9 @@ function formatMoney(num){
     	
     	%>
     	
-    	<%=s.equals("adressid")?"":item.get(s)%><br/>
+    	<span name = <%=s %>>
+    	<%=s.equals("adressid")?"":item.get(s)%>
+    	</span><br/>
     	
   		 <% }}%>
 		</div>
@@ -600,13 +139,47 @@ function formatMoney(num){
 		  break;
 		}  
   }%>
-  
+  <%-- 修改地址弹窗 ../Spcar?flag=view--%>
+	<div class="theme-popover" name="edit" style="text-align: center; height:330px;">
+     <div class="theme-poptit">
+          <a href="javascript:;" title="关闭" class="close">×</a>
+          <h3>修改地址</h3>
+     </div>
+   
+     <div class="theme-popbod dform" name="eform">
+           <form class="theme-signin" name="loginform" id="efm" action="../ast" method="post">
+                	
+                	<input type="hidden" name="aid" value=""/>
+                <ol>
+				                     
+                  	<li><strong>地区：</strong><select  id="pro" name="province"  >
+						   <option >--选择省份--</option>
+						   </select>
+						   <select  id="city" name="city"    >
+						   <option>--选择城市--</option>
+						   </select>
+						   	</li>
+   					<li><strong>设为默认：</strong>是<input type="radio" name="default" value="true">
+   					否<input type="radio" name="default" value="false"  checked="checked">
+   					</li>
+                  	
+   					<li><strong>姓名：</strong><input class="ipt" required  type="text" name="aname"  size="20"></li>
+                  	<li><strong>地址：</strong><input class="ipt" required   type="text" name="address"  size="20"></li>
+                  	<li><strong>手机：</strong><input  class="ipt" required type="text" name="aphone" onkeyup="this.value=this.value.replace(/\D/g,'')"  size="20"></li>
+                  	 <li ><input class="btn btn-primary" style="left:60px" type="submit" id="editbt" value="确认"/></li>
+ 
+                </ol>
+           </form>
+     </div>                    
+</div>	  
+<%-- 修改地址弹窗../Spcar?flag=view--%>
+
     <% 
 	  
 	  if(idindex != 4){
 		  %>
 		  <%-- 添加新收货地址后刷新 ../Spcar?flag=view--%>
-	  <div style="float:left;width:300px;height:auto; margin: 20px;bottom: 20px;border:  1px solid #CCCCCC;">
+	  <div style="float:left;width:31%;height:170px; margin: 10px;border:  1px solid #CCCCCC;">
 	      			<br/>
     			<span style="width:100px;height:auto;bottom: 10px;margin: 10px;border:  1px solid #CCCCCC;">
     			<a name="address" href="javascript:void(0);">新增收货地址</a>
@@ -617,7 +190,7 @@ function formatMoney(num){
 
  </div>
 <%-- 地址弹窗 ../Spcar?flag=view--%>
-	<div class="theme-popover" name="address" style="text-align: center; height:400px;">
+	<div class="theme-popover" name="address" style="text-align: center; height:330px;">
      <div class="theme-poptit">
           <a href="javascript:;" title="关闭" class="close">×</a>
           <h3>新增地址</h3>
@@ -636,13 +209,13 @@ function formatMoney(num){
 						   </select>
 						   	</li>
    					<li><strong>设为默认：</strong>是<input type="radio" name="default" value="true">
-   					否<input type="radio" name="default" value="false" defaultSelected>
+   					否<input type="radio" name="default" value="false" checked="checked">
    					</li>
                   	
    					<li><strong>姓名：</strong><input required class="ipt" type="text" name="aname"  size="20"></li>
                   	<li><strong>地址：</strong><input required class="ipt" type="text" name="address"  size="20"></li>
-                  	<li><strong>手机：</strong><input class="ipt" type="text" name="aphone" onkeyup="this.value=this.value.replace(/\D/g,'')" required  size="20"></li>
-                  	 <li ><input class="btn btn-primary" style="left:60px" type="button" id="addb" value="确认"/></li>
+                  	<li><strong>手机：</strong><input required class="ipt" type="text" name="aphone" onkeyup="this.value=this.value.replace(/\D/g,'')" required  size="20"></li>
+                  	 <li ><input class="btn btn-primary" style="left:60px" type="submit" id="addb" value="确认"/></li>
                   	
                 </ol>
            </form>

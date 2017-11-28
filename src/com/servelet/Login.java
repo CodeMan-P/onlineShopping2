@@ -35,7 +35,7 @@ public class Login extends HttpServlet {
 	public void destroy() {
 		super.destroy(); // Just puts "destroy" string in log
 		// Put your code here
-		DbConn.closeBds();
+		//DbConn.closeBds();
 	}
 
 	/**
@@ -82,7 +82,7 @@ public class Login extends HttpServlet {
 		PrintWriter out = response.getWriter();
 		String flag = request.getParameter("flag");
 		String code = request.getParameter("checkcode");
-		if(code!=null&&!code.equals(request.getSession().getAttribute("code"))){
+		if(code!=null&&!code.equalsIgnoreCase((String) request.getSession().getAttribute("code"))){
 			System.out.println(request.getSession().getAttribute("code"));
 			System.out.println(code);
 			out.write("{\"message\":\"验证码错误\"}");

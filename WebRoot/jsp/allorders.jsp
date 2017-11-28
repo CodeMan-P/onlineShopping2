@@ -170,7 +170,7 @@ SimpleDateFormat sdf2 = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 					</div>
 					<div class="bottom_right">
 					<form action="../search" method="post">	
-						<input class="search_left" type="text" placeholder="请输入想要的东西吧" value="" name="word"/>
+						<input class="search_left" type="text" required placeholder="请输入想要的东西吧" value="" name="word"/>
 						<input class="search_right" type="submit" value="搜索" />
 					</form>
 					</div>

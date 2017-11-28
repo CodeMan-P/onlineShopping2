@@ -108,6 +108,7 @@
 					//						$("body").remove("#userInfo");
 					if(data.message === "验证码错误"){
 						alert("验证码错误");
+						docheck();
 					}else{
 						
 					$("#bt").hide();
@@ -129,9 +130,12 @@
 				}
 			};
 			$("#fm").ajaxSubmit(ajax_option);
+			return false;
 		};
 	
-		$("#b").on("click",login);
+		//$("#b").on("click",login);
+		//$("#fm").bind("submit",login);
+		$("#fm").submit(login);
 		$("#quit").on("click", function() {
 		//$("#name").val("@quit");
 		//$("#pwd").val("@quit");
@@ -415,7 +419,7 @@
 					<div class="top_img"><img src="img/2.jpg"/></div>
 					<div class="top_form">
 							<form action="search" method="post">	
-							<input class="bg_color1" type="text" placeholder="请输入想要的东西吧" value="" name="word"/>
+							<input class="bg_color1" required type="text" placeholder="请输入想要的东西吧" value="" name="word"/>
 							<input class="bg_color2" type="submit"  value="搜索"/>
 							</form>
 						<p><span><a href="#">新款连衣裙</a></span><span><a href="#">四件套</a></span>
@@ -729,11 +733,11 @@
      <div class="theme-popbod dform" name="form">
            <form class="theme-signin" name="loginform" id="fm" action="" method="post">
                 <ol>
-                     <li><strong>用户名：</strong><input class="ipt" type="text" name="name" value="" size="20" /></li>
-                     <li><strong>密码：</strong><input class="ipt" type="password" name="pwd" value="" size="20" /></li>
-                     <li><strong>验证码：</strong><input class="ipt" type="text" name="checkcode" value="" size="20" /></li>
+                     <li><strong>用户名：</strong><input class="ipt" type="text" name="name" value="" size="20" required="required"/></li>
+                     <li><strong>密码：</strong><input class="ipt" type="password" name="pwd" value="" size="20" required="required"/></li>
+                     <li><strong>验证码：</strong><input class="ipt" type="text" name="checkcode" value="" size="20" required="required"/></li>
                      <li><img id="check" alt="验证码" src="<%=request.getContextPath()%>/ck" onclick="docheck()" style="width: 200px;height: 60px;border-color: blue"/>
-                     <li ><input class="btn btn-primary" style="left:60px" type="button" id="b" value="登 录 "/></li>
+                     <li ><input class="btn btn-primary" style="left:60px" type="submit" id="b" value="登 录 "/></li>
                 </ol>
            </form>
      </div>

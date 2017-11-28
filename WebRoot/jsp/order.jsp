@@ -108,7 +108,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	
 	<form action="../search" method="post">	
 	<div class="simpleSearchDiv pull-right">
-		<input type="text" placeholder="请输入想要的东西吧" value="" name="word">
+		<input type="text" placeholder="请输入想要的东西吧" required value="" name="word">
 		<button class="searchButton" type="submit">搜索</button>
 		
 	</div>
@@ -174,14 +174,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   		 <% }}%>
 		</div>
 	  <% }%>
-	  <div style="float:left;width:300px;height:auto; margin: 20px;bottom: 20px;border:  1px solid #CCCCCC;">
-	      			<br/>
-    			<span style="width:100px;height:auto;bottom: 10px;margin: 10px;border:  1px solid #CCCCCC;">
-    			<a href="javascript:void(0);">新增收货地址</a>
-    			</span>
-    			<br/>
-    			<br/>
-	  </div>
+	
  </div>
  <%}else{%>
  <!-- 通过购物车支付标志！！！！！！！！！！！！！！！！！！！！！ -->
