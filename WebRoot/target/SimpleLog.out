@@ -17351,3 +17351,684 @@
 11-28 12:15:08 ==>  Preparing: SELECT COUNT(1) FROM shoppingcar WHERE uid = ?; 
 11-28 12:15:08 ==> Parameters: 1(Integer)
 11-28 12:15:08 <==      Total: 1
+11-29 14:05:16 Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+11-29 14:05:16 PooledDataSource forcefully closed/removed all connections.
+11-29 14:05:16 PooledDataSource forcefully closed/removed all connections.
+11-29 14:05:16 PooledDataSource forcefully closed/removed all connections.
+11-29 14:05:16 PooledDataSource forcefully closed/removed all connections.
+11-29 14:05:17 Opening JDBC Connection
+11-29 14:05:17 Created connection 1327977398.
+11-29 14:05:17 Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@4f2753b6]
+11-29 14:05:17 ==>  Preparing: SELECT * FROM users WHERE uname = ? and upwd = ? 
+11-29 14:05:17 ==> Parameters: xiaoming(String), 123(String)
+11-29 14:05:17 <==    Columns: uid, uname, upwd, phone, city, regDate, idCard, realName, age, email, sex, avatar
+11-29 14:05:17 <==        Row: 1, xiaoming, 123, 18899119292, 西安, 2017-11-11, null, 小明, 22, null, 男, <<BLOB>>
+11-29 14:05:17 <==      Total: 1
+11-29 14:05:17 Opening JDBC Connection
+11-29 14:05:17 Created connection 666245553.
+11-29 14:05:17 Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@27b619b1]
+11-29 14:05:17 ==>  Preparing: SELECT COUNT(1) FROM shoppingcar WHERE uid = ?; 
+11-29 14:05:17 ==> Parameters: 1(Integer)
+11-29 14:05:17 <==      Total: 1
+11-29 14:05:19 ==>  Preparing: select * from address where uid = ? 
+11-29 14:05:19 ==> Parameters: 1(Integer)
+11-29 14:05:19 <==      Total: 2
+11-29 14:05:19 ==>  Preparing: select * from view_car_goods where uid = ?; 
+11-29 14:05:19 ==> Parameters: 1(Integer)
+11-29 14:05:19 <==      Total: 0
+11-29 14:05:28 ==>  Preparing: insert into address ( uid, address, def, aphone, aname ) values ( ?, ?, ?, ?, ? ) 
+11-29 14:05:28 ==> Parameters: 1(Integer), SADFSDF(String), true(Boolean), 12312312(String), ASDFSDF(String)
+11-29 14:05:28 <==    Updates: 1
+11-29 14:05:29 ==>  Preparing: select * from address where uid = ? 
+11-29 14:05:29 ==> Parameters: 1(Integer)
+11-29 14:05:29 <==      Total: 3
+11-29 14:05:29 ==>  Preparing: select * from view_car_goods where uid = ?; 
+11-29 14:05:29 ==> Parameters: 1(Integer)
+11-29 14:05:29 <==      Total: 0
+11-29 14:05:42 ==>  Preparing: update address SET uid = ?, address = ?, def = ?, aphone = ?, aname = ?, city = ? where adressId = ? 
+11-29 14:05:42 ==> Parameters: 1(Integer), 西安外包学院(String), false(Boolean), 123123123(String), 小明(String), 9(String), 12(Integer)
+11-29 14:05:42 <==    Updates: 1
+11-29 14:05:43 ==>  Preparing: select * from address where uid = ? 
+11-29 14:05:43 ==> Parameters: 1(Integer)
+11-29 14:05:43 <==      Total: 3
+11-29 14:05:43 ==>  Preparing: select * from view_car_goods where uid = ?; 
+11-29 14:05:43 ==> Parameters: 1(Integer)
+11-29 14:05:43 <==      Total: 0
+11-29 14:05:56 ==>  Preparing: update address SET uid = ?, address = ?, def = ?, aphone = ?, aname = ?, city = ? where adressId = ? 
+11-29 14:05:56 ==> Parameters: 1(Integer), 西安外包学院(String), false(Boolean), 123123123(String), 小明(String), 9(String), 12(Integer)
+11-29 14:05:56 <==    Updates: 1
+11-29 14:05:57 ==>  Preparing: select * from address where uid = ? 
+11-29 14:05:57 ==> Parameters: 1(Integer)
+11-29 14:05:57 <==      Total: 3
+11-29 14:05:57 ==>  Preparing: select * from view_car_goods where uid = ?; 
+11-29 14:05:57 ==> Parameters: 1(Integer)
+11-29 14:05:57 <==      Total: 0
+11-29 14:06:06 ==>  Preparing: update address SET uid = ?, address = ?, def = ?, aphone = ?, aname = ?, city = ? where adressId = ? 
+11-29 14:06:06 ==> Parameters: 1(Integer), SADFSDF(String), false(Boolean), 12312312(String), ASDFSDF(String), 22(String), 21(Integer)
+11-29 14:06:06 <==    Updates: 1
+11-29 14:06:07 ==>  Preparing: select * from address where uid = ? 
+11-29 14:06:07 ==> Parameters: 1(Integer)
+11-29 14:06:07 <==      Total: 3
+11-29 14:06:07 ==>  Preparing: select * from view_car_goods where uid = ?; 
+11-29 14:06:07 ==> Parameters: 1(Integer)
+11-29 14:06:07 <==      Total: 0
+11-29 14:11:20 Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+11-29 14:11:20 PooledDataSource forcefully closed/removed all connections.
+11-29 14:11:20 PooledDataSource forcefully closed/removed all connections.
+11-29 14:11:20 PooledDataSource forcefully closed/removed all connections.
+11-29 14:11:20 PooledDataSource forcefully closed/removed all connections.
+11-29 14:11:20 Opening JDBC Connection
+11-29 14:11:20 Created connection 2057823410.
+11-29 14:11:20 Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@7aa7e4b2]
+11-29 14:11:20 ==>  Preparing: update address SET uid = ?, address = ?, def = ?, aphone = ?, aname = ?, city = ? where adressId = ? 
+11-29 14:11:20 ==> Parameters: 1(Integer), SADFSDF(String), false(Boolean), 12312312(String), ASDFSDF(String), 15(String), 21(Integer)
+11-29 14:11:20 <==    Updates: 1
+11-29 14:11:21 ==>  Preparing: select * from address where uid = ? 
+11-29 14:11:21 ==> Parameters: 1(Integer)
+11-29 14:11:21 <==      Total: 3
+11-29 14:11:21 Opening JDBC Connection
+11-29 14:11:21 Created connection 402577805.
+11-29 14:11:21 Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@17fed98d]
+11-29 14:11:21 ==>  Preparing: select * from view_car_goods where uid = ?; 
+11-29 14:11:21 ==> Parameters: 1(Integer)
+11-29 14:11:21 <==      Total: 0
+11-29 14:11:42 ==>  Preparing: select adressId, uid, address, def, aphone, aname, province, city from address where adressId = ? 
+11-29 14:11:42 ==> Parameters: 21(Integer)
+11-29 14:11:42 <==      Total: 1
+11-29 14:11:42 ==>  Preparing: delete from address where adressId = ? 
+11-29 14:11:42 ==> Parameters: 21(Integer)
+11-29 14:11:42 <==    Updates: 1
+11-29 14:11:42 ==>  Preparing: update address SET uid = ?, def = ? where adressId = ? 
+11-29 14:11:42 ==> Parameters: 1(Integer), true(Boolean), 2(Integer)
+11-29 14:11:42 <==    Updates: 1
+11-29 14:11:43 ==>  Preparing: select * from address where uid = ? 
+11-29 14:11:43 ==> Parameters: 1(Integer)
+11-29 14:11:43 <==      Total: 2
+11-29 14:11:43 ==>  Preparing: select * from view_car_goods where uid = ?; 
+11-29 14:11:43 ==> Parameters: 1(Integer)
+11-29 14:11:43 <==      Total: 0
+11-29 14:11:51 ==>  Preparing: insert into address ( uid, address, def, aphone, aname, city ) values ( ?, ?, ?, ?, ?, ? ) 
+11-29 14:11:51 ==> Parameters: 1(Integer), sdf(String), true(Boolean), 123123(String), sadf(String), 9(String)
+11-29 14:11:51 <==    Updates: 1
+11-29 14:11:51 ==>  Preparing: select * from address where uid = ? 
+11-29 14:11:51 ==> Parameters: 1(Integer)
+11-29 14:11:51 <==      Total: 3
+11-29 14:11:51 ==>  Preparing: select * from view_car_goods where uid = ?; 
+11-29 14:11:51 ==> Parameters: 1(Integer)
+11-29 14:11:51 <==      Total: 0
+11-29 14:14:13 Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+11-29 14:14:14 PooledDataSource forcefully closed/removed all connections.
+11-29 14:14:14 PooledDataSource forcefully closed/removed all connections.
+11-29 14:14:14 PooledDataSource forcefully closed/removed all connections.
+11-29 14:14:14 PooledDataSource forcefully closed/removed all connections.
+11-29 14:14:14 Opening JDBC Connection
+11-29 14:14:14 Created connection 399195289.
+11-29 14:14:14 Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@17cb3c99]
+11-29 14:14:14 ==>  Preparing: select adressId, uid, address, def, aphone, aname, province, city from address where adressId = ? 
+11-29 14:14:14 ==> Parameters: 22(Integer)
+11-29 14:14:14 <==      Total: 1
+11-29 14:14:14 ==>  Preparing: delete from address where adressId = ? 
+11-29 14:14:14 ==> Parameters: 22(Integer)
+11-29 14:14:14 <==    Updates: 1
+11-29 14:14:14 ==>  Preparing: update address SET uid = ?, def = ? where adressId = ? 
+11-29 14:14:14 ==> Parameters: 1(Integer), true(Boolean), 2(Integer)
+11-29 14:14:14 <==    Updates: 1
+11-29 14:14:15 ==>  Preparing: select * from address where uid = ? 
+11-29 14:14:15 ==> Parameters: 1(Integer)
+11-29 14:14:15 <==      Total: 2
+11-29 14:14:16 Opening JDBC Connection
+11-29 14:14:16 Created connection 572562369.
+11-29 14:14:16 Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@22209bc1]
+11-29 14:14:16 ==>  Preparing: select * from view_car_goods where uid = ?; 
+11-29 14:14:16 ==> Parameters: 1(Integer)
+11-29 14:14:16 <==      Total: 0
+11-29 14:14:26 ==>  Preparing: insert into address ( uid, address, def, aphone, aname, city ) values ( ?, ?, ?, ?, ?, ? ) 
+11-29 14:14:26 ==> Parameters: 1(Integer), sadf(String), true(Boolean), 1231233(String), sadf(String), 11(String)
+11-29 14:14:26 <==    Updates: 1
+11-29 14:14:27 ==>  Preparing: select * from address where uid = ? 
+11-29 14:14:27 ==> Parameters: 1(Integer)
+11-29 14:14:27 <==      Total: 3
+11-29 14:14:27 ==>  Preparing: select * from view_car_goods where uid = ?; 
+11-29 14:14:27 ==> Parameters: 1(Integer)
+11-29 14:14:27 <==      Total: 0
+11-29 14:17:15 Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+11-29 14:17:15 PooledDataSource forcefully closed/removed all connections.
+11-29 14:17:15 PooledDataSource forcefully closed/removed all connections.
+11-29 14:17:15 PooledDataSource forcefully closed/removed all connections.
+11-29 14:17:15 PooledDataSource forcefully closed/removed all connections.
+11-29 14:17:16 Opening JDBC Connection
+11-29 14:17:16 Created connection 260074838.
+11-29 14:17:16 Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@f806d56]
+11-29 14:17:16 ==>  Preparing: select adressId, uid, address, def, aphone, aname, province, city from address where adressId = ? 
+11-29 14:17:16 ==> Parameters: 23(Integer)
+11-29 14:17:16 <==      Total: 1
+11-29 14:17:16 ==>  Preparing: delete from address where adressId = ? 
+11-29 14:17:16 ==> Parameters: 23(Integer)
+11-29 14:17:16 <==    Updates: 1
+11-29 14:17:16 ==>  Preparing: update address SET uid = ?, def = ? where adressId = ? 
+11-29 14:17:16 ==> Parameters: 1(Integer), true(Boolean), 2(Integer)
+11-29 14:17:16 <==    Updates: 1
+11-29 14:17:17 ==>  Preparing: select * from address where uid = ? 
+11-29 14:17:17 ==> Parameters: 1(Integer)
+11-29 14:17:17 <==      Total: 2
+11-29 14:17:17 Opening JDBC Connection
+11-29 14:17:17 Created connection 2020618339.
+11-29 14:17:17 Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@78703063]
+11-29 14:17:17 ==>  Preparing: select * from view_car_goods where uid = ?; 
+11-29 14:17:17 ==> Parameters: 1(Integer)
+11-29 14:17:17 <==      Total: 0
+11-29 14:17:26 ==>  Preparing: insert into address ( uid, address, def, aphone, aname, city ) values ( ?, ?, ?, ?, ?, ? ) 
+11-29 14:17:26 ==> Parameters: 1(Integer), sdf(String), true(Boolean), 1231233(String), sadf(String), 9(String)
+11-29 14:17:26 <==    Updates: 1
+11-29 14:17:27 ==>  Preparing: select * from address where uid = ? 
+11-29 14:17:27 ==> Parameters: 1(Integer)
+11-29 14:17:27 <==      Total: 3
+11-29 14:17:27 ==>  Preparing: select * from view_car_goods where uid = ?; 
+11-29 14:17:27 ==> Parameters: 1(Integer)
+11-29 14:17:27 <==      Total: 0
+11-29 23:53:03 20171129235303486
+11-29 23:53:03 接收：84f909afly8fikiuarj1qj205o05pgm3
+保存为：---->84f909afly8fikiuarj1qj205o05pgm3_date_20171129235303492.jpg
+11-29 23:53:49 20171129235349962
+11-29 23:53:49 接收：84f909afly8fikiuarj1qj205o05pgm3
+保存为：---->84f909afly8fikiuarj1qj205o05pgm3_date_20171129235349965.jpg
+11-29 23:55:17 20171129235517968
+11-29 23:55:17 接收：84f909afly8fikiuarj1qj205o05pgm3
+保存为：---->84f909afly8fikiuarj1qj205o05pgm3_date_20171129235517969.jpg
+11-29 23:55:55 20171129235555719
+11-29 23:55:55 接收：84f909afly8fikiuarj1qj205o05pgm3
+保存为：---->84f909afly8fikiuarj1qj205o05pgm3_date_20171129235555719.jpg
+11-30 00:00:07 20171130000007737
+11-30 00:00:07 接收：84f909afly8fikiuarj1qj205o05pgm3
+保存为：---->84f909afly8fikiuarj1qj205o05pgm3_date_20171130000007742.jpg
+11-30 00:00:24 20171130000024411
+11-30 00:00:24 接收：84f909afly8fikiuarj1qj205o05pgm3
+保存为：---->84f909afly8fikiuarj1qj205o05pgm3_date_20171130000024414.jpg
+11-30 00:01:47 20171130000147138
+11-30 00:01:47 接收：84f909afly8fikiuarj1qj205o05pgm3
+保存为：---->84f909afly8fikiuarj1qj205o05pgm3_date_20171130000147139.jpg
+11-30 00:01:53 20171130000153149
+11-30 00:01:53 接收：84f909afly8fikiuarj1qj205o05pgm3
+保存为：---->84f909afly8fikiuarj1qj205o05pgm3_date_20171130000153150.jpg
+11-30 00:02:03 20171130000203511
+11-30 00:02:03 接收：84f909afly8fikiuarj1qj205o05pgm3
+保存为：---->84f909afly8fikiuarj1qj205o05pgm3_date_20171130000203512.jpg
+11-30 00:04:24 20171130000424461
+11-30 00:08:35 Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+11-30 00:08:35 PooledDataSource forcefully closed/removed all connections.
+11-30 00:08:35 PooledDataSource forcefully closed/removed all connections.
+11-30 00:08:35 PooledDataSource forcefully closed/removed all connections.
+11-30 00:08:35 PooledDataSource forcefully closed/removed all connections.
+11-30 00:08:36 Opening JDBC Connection
+11-30 00:08:36 Created connection 1165510946.
+11-30 00:08:36 Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@45784922]
+11-30 00:08:36 ==>  Preparing: insert into users (uid, uname, upwd, phone, city, regDate, idCard, realName, age, email, sex, avatar ) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ? ) 
+11-30 00:08:36 ==> Parameters: null, sdfasdf(String), 123(String), 12412412(String), qweqwe(String), 2017-11-30(Date), (String), (String), 22(Integer), afasdfasdf(String), 男(String), java.io.StringReader@3cb5d2dc(StringReader)
+11-30 00:08:36 <==    Updates: 1
+11-30 00:08:36 新用户注册：sdfasdf
+11-30 00:10:17 ==>  Preparing: insert into users (uid, uname, upwd, phone, city, regDate, idCard, realName, age, email, sex, avatar ) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ? ) 
+11-30 00:10:17 ==> Parameters: null, asdf(String), 123(String), 4124124(String), qwewqe(String), 2017-11-30(Date), (String), (String), 22(Integer), qwrqrqwr(String), 男(String), java.io.StringReader@724c24d8(StringReader)
+11-30 00:10:17 <==    Updates: 1
+11-30 00:10:17 新用户注册：asdf
+11-30 00:10:25 20171130001025408
+11-30 00:11:06 20171130001106749
+11-30 00:11:08 20171130001108938
+11-30 00:13:17 20171130001317532
+11-30 00:13:17 接收：84f909afly8fikiuarj1qj205o05pgm3
+保存为：---->84f909afly8fikiuarj1qj205o05pgm3_date_20171130001317533.jpg
+11-30 00:13:21 20171130001321855
+11-30 00:13:33 20171130001333993
+11-30 00:15:41 20171130001541967
+11-30 00:15:41 接收：84f909afly8fikiuarj1qj205o05pgm3
+保存为：---->84f909afly8fikiuarj1qj205o05pgm3_date_20171130001541968.jpg
+11-30 00:15:45 20171130001545479
+11-30 00:16:00 20171130001600354
+11-30 00:16:00 接收：84f909afly8fikiuarj1qj205o05pgm3
+保存为：---->84f909afly8fikiuarj1qj205o05pgm3_date_20171130001600355.jpg
+11-30 00:16:03 2017113000160329
+11-30 00:17:53 20171130001753449
+11-30 00:17:58 20171130001758526
+11-30 00:22:48 20171130002248980
+11-30 00:23:05 20171130002305471
+11-30 00:23:14 20171130002314700
+11-30 00:24:00 20171130002400717
+11-30 00:24:40 20171130002440741
+11-30 00:25:54 ==>  Preparing: insert into users (uid, uname, upwd, phone, city, regDate, idCard, realName, age, email, sex, avatar ) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ? ) 
+11-30 00:25:54 ==> Parameters: null, asdfqweqw(String), 123(String), 4124124(String), qwewqe(String), 2017-11-30(Date), (String), (String), 22(Integer), qwrqrqwr(String), 男(String), java.io.StringReader@13fd1fb5(StringReader)
+11-30 00:25:54 <==    Updates: 1
+11-30 00:25:54 新用户注册：asdfqweqw
+11-30 00:26:05 20171130002605671
+11-30 00:26:39 2017113000263952
+11-30 00:26:39 接收：84f909afly8fikiuarj1qj205o05pgm3
+保存为：---->84f909afly8fikiuarj1qj205o05pgm3_date_2017113000263953.jpg
+11-30 00:26:44 ==>  Preparing: insert into users (uid, uname, upwd, phone, city, regDate, idCard, realName, age, email, sex, avatar ) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ? ) 
+11-30 00:26:44 ==> Parameters: null, asdfqweqwqweasd(String), 123(String), 4124124(String), qwewqe(String), 2017-11-30(Date), (String), (String), 22(Integer), qwrqrqwr(String), 男(String), java.io.StringReader@22a48e4c(StringReader)
+11-30 00:26:44 <==    Updates: 1
+11-30 00:26:44 新用户注册：asdfqweqwqweasd
+11-30 08:54:03 20171130085403334
+11-30 08:54:03 接收：84f909afly8fikiuarj1qj205o05pgm3
+保存为：---->84f909afly8fikiuarj1qj205o05pgm3_date_20171130085403348.jpg
+11-30 08:54:06 Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+11-30 08:54:06 PooledDataSource forcefully closed/removed all connections.
+11-30 08:54:06 PooledDataSource forcefully closed/removed all connections.
+11-30 08:54:06 PooledDataSource forcefully closed/removed all connections.
+11-30 08:54:06 PooledDataSource forcefully closed/removed all connections.
+11-30 08:54:07 Opening JDBC Connection
+11-30 08:54:07 Created connection 429801931.
+11-30 08:54:07 Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@199e41cb]
+11-30 08:54:07 ==>  Preparing: insert into users (uid, uname, upwd, phone, city, regDate, idCard, realName, age, email, sex, avatar ) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ? ) 
+11-30 08:54:07 ==> Parameters: null, asdf(String), 123(String), 3123123(String), qweqwe(String), 2017-11-30(Date), (String), (String), 22(Integer), qweqweqwe(String), 男(String), java.io.StringReader@475b6f95(StringReader)
+11-30 08:54:07 
+### Error updating database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry 'asdf' for key 'uk_users_uname'
+### The error may involve com.mod.mapper.UsersMapper.insert-Inline
+### The error occurred while setting parameters
+### SQL: insert into users (uid, uname, upwd,        phone, city, regDate,        idCard, realName, age,        email, sex, avatar       )     values (?, ?, ?,        ?, ?, ?,        ?, ?, ?,        ?, ?, ?       )
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry 'asdf' for key 'uk_users_uname'
+11-30 08:54:12 ==>  Preparing: insert into users (uid, uname, upwd, phone, city, regDate, idCard, realName, age, email, sex, avatar ) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ? ) 
+11-30 08:54:12 ==> Parameters: null, asdfdasdas(String), 123(String), 3123123(String), qweqwe(String), 2017-11-30(Date), (String), (String), 22(Integer), qweqweqwe(String), 男(String), java.io.StringReader@7f091976(StringReader)
+11-30 08:54:12 <==    Updates: 1
+11-30 08:54:12 新用户注册：asdfdasdas
+11-30 09:57:25 ==>  Preparing: insert into users (uid, uname, upwd, phone, city, regDate, idCard, realName, age, email, sex, avatar ) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ? ) 
+11-30 09:57:25 ==> Parameters: null, wqdqwd(String), 123(String), 1762902(String), qwe(String), 2017-11-30(Date), (String), (String), 22(Integer), (String), 男(String), java.io.StringReader@187f3327(StringReader)
+11-30 09:57:25 <==    Updates: 1
+11-30 09:57:25 新用户注册：wqdqwd
+11-30 10:03:13 20171130100313193
+11-30 10:03:13 接收：84f909afly8fikiuarj1qj205o05pgm3
+保存为：---->84f909afly8fikiuarj1qj205o05pgm3_date_20171130100313194.jpg
+11-30 10:03:16 ==>  Preparing: insert into users (uid, uname, upwd, phone, city, regDate, idCard, realName, age, email, sex, avatar ) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ? ) 
+11-30 10:03:16 ==> Parameters: null, qwe(String), qwe(String), 17629029999(String), 33(String), 2017-11-30(Date), (String), (String), 33(Integer), 304554815@ww.com(String), 男(String), java.io.StringReader@2eb3ff26(StringReader)
+11-30 10:03:16 
+### Error updating database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry 'qwe' for key 'uk_users_uname'
+### The error may involve com.mod.mapper.UsersMapper.insert-Inline
+### The error occurred while setting parameters
+### SQL: insert into users (uid, uname, upwd,        phone, city, regDate,        idCard, realName, age,        email, sex, avatar       )     values (?, ?, ?,        ?, ?, ?,        ?, ?, ?,        ?, ?, ?       )
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry 'qwe' for key 'uk_users_uname'
+11-30 10:03:20 ==>  Preparing: insert into users (uid, uname, upwd, phone, city, regDate, idCard, realName, age, email, sex, avatar ) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ? ) 
+11-30 10:03:20 ==> Parameters: null, qweqw(String), qwe(String), 17629029999(String), 33(String), 2017-11-30(Date), (String), (String), 33(Integer), 304554815@ww.com(String), 男(String), java.io.StringReader@4b95b3e3(StringReader)
+11-30 10:03:20 <==    Updates: 1
+11-30 10:03:20 新用户注册：qweqw
+11-30 10:23:23 ==>  Preparing: insert into users (uid, uname, upwd, phone, city, regDate, idCard, realName, age, email, sex, avatar ) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ? ) 
+11-30 10:23:23 ==> Parameters: null, qweww(String), 123(String), 12312312311(String), 123(String), 2017-11-30(Date), (String), (String), 123(Integer), 123123!@qwe.c(String), 男(String), java.io.StringReader@40528024(StringReader)
+11-30 10:23:23 <==    Updates: 1
+11-30 10:23:23 新用户注册：qweww
+11-30 10:27:34 ==>  Preparing: insert into users (uid, uname, upwd, phone, city, regDate, idCard, realName, age, email, sex, avatar ) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ? ) 
+11-30 10:27:34 ==> Parameters: null, qwer(String), 123(String), 12312312311(String), 123(String), 2017-11-30(Date), (String), (String), 123(Integer), 123345665@qq.com(String), 男(String), java.io.StringReader@64a414b8(StringReader)
+11-30 10:27:34 <==    Updates: 1
+11-30 10:27:34 新用户注册：qwer
+11-30 10:39:28 ==>  Preparing: SELECT * FROM users WHERE uname = ? and upwd = ? 
+11-30 10:39:28 ==> Parameters: xiaoming(String), 123(String)
+11-30 10:39:28 <==    Columns: uid, uname, upwd, phone, city, regDate, idCard, realName, age, email, sex, avatar
+11-30 10:39:28 <==        Row: 1, xiaoming, 123, 18899119292, 西安, 2017-11-11, null, 小明, 22, null, 男, <<BLOB>>
+11-30 10:39:28 <==      Total: 1
+11-30 10:39:28 Opening JDBC Connection
+11-30 10:39:28 Created connection 183370649.
+11-30 10:39:28 Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@aee0399]
+11-30 10:39:28 ==>  Preparing: SELECT COUNT(1) FROM shoppingcar WHERE uid = ?; 
+11-30 10:39:28 ==> Parameters: 1(Integer)
+11-30 10:39:28 <==      Total: 1
+11-30 10:39:30 Opening JDBC Connection
+11-30 10:39:30 Created connection 1468941970.
+11-30 10:39:30 Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@578e4692]
+11-30 10:39:30 ==>  Preparing: select gid, gname, tid, price, descption, imgPath, filePath, stock from goods where gid = ? 
+11-30 10:39:30 ==> Parameters: 1(Integer)
+11-30 10:39:30 <==      Total: 1
+11-30 10:39:44 ==>  Preparing: select * from address where uid = ? 
+11-30 10:39:44 ==> Parameters: 1(Integer)
+11-30 10:39:44 <==      Total: 3
+11-30 10:40:03 Opening JDBC Connection
+11-30 10:40:03 Created connection 879674027.
+11-30 10:40:03 Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@346ec2ab]
+11-30 10:40:03 ==>  Preparing: insert into orders ( oid, uid, state, sum, address ) values ( ?, ?, ?, ?, ? ) 
+11-30 10:40:03 ==> Parameters: 20171130103944(String), 1(Integer), 已付款(String), 3488.0(Double), java.io.StringReader@54d76b1d(StringReader)
+11-30 10:40:03 <==    Updates: 1
+11-30 10:40:03 ==>  Preparing: insert into orderform ( oid, gid, gnum, SubTotal, descption, uid ) values ( ?, ?, ?, ?, ?, ? ) 
+11-30 10:40:03 ==> Parameters: 20171130103944(String), 1(Integer), 1(Integer), 3488.0(Double), [{"颜色" : "钻雕金","套餐类型" : "官方标配"}](String), 1(Integer)
+11-30 10:40:03 <==    Updates: 1
+11-30 10:40:03 ==>  Preparing: update goods SET gname = ?, tid = ?, price = ?, descption = ?, imgPath = ?, filePath = ?, stock = ? where gid = ? 
+11-30 10:40:03 ==> Parameters: Huawei/华为 P10全网通手机(String), 2(Integer), 3488.0(Double), [ {
+  "网络类型" : "4G全网通",
+  "机身颜色" : "钻雕金,钻雕蓝,草木绿,曜石黑,玫瑰金",
+  "套餐类型" : "官方标配,套餐一,套餐二,套餐三,套餐四,套餐五",
+  "存储容量" : "64GB,128GB",
+  "购买方式" : "裸机",
+  "版本" : "Mate 10,Mate 10 62G+128G,麦芒6,P10,畅享7"
+} ](String), goods/huawei_1/P10.jpg(String), goods/huawei_1/img/(String), 9920(Integer), 1(Integer)
+11-30 10:40:03 <==    Updates: 1
+11-30 10:40:03 Committing JDBC Connection [com.mysql.jdbc.JDBC4Connection@346ec2ab]
+11-30 10:40:03 添加新订单(20171130103944)：{
+  "oid" : "20171130103944",
+  "uid" : 1,
+  "state" : "已付款",
+  "sum" : 3488.0,
+  "address" : "sdf"
+}
+11-30 10:40:03 订单详情(20171130103944)：{
+  "oid" : "20171130103944",
+  "gid" : 1,
+  "gnum" : 1,
+  "subtotal" : 3488.0,
+  "descption" : "[{\"颜色\" : \"钻雕金\",\"套餐类型\" : \"官方标配\"}]",
+  "uid" : 1
+}
+11-30 10:40:08 ==>  Preparing: select cid, addGoodsTime, uid, gid, gnum, descption from shoppingcar where uid = ? and gid = ? 
+11-30 10:40:08 ==> Parameters: 1(Integer), 1(Integer)
+11-30 10:40:08 <==      Total: 0
+11-30 10:40:08 ==>  Preparing: insert into shoppingcar ( addGoodsTime, uid, gid, gnum, descption ) values ( ?, ?, ?, ?, ? ) 
+11-30 10:40:08 ==> Parameters: 2017-11-30 10:40:08.928(Timestamp), 1(Integer), 1(Integer), 1(Integer), [{"颜色" : "钻雕金","套餐类型" : "官方标配"}](String)
+11-30 10:40:08 <==    Updates: 1
+11-30 10:40:08 ==>  Preparing: SELECT COUNT(1) FROM shoppingcar WHERE uid = ?; 
+11-30 10:40:08 ==> Parameters: 1(Integer)
+11-30 10:40:08 <==      Total: 1
+11-30 10:40:13 ==>  Preparing: select * from address where uid = ? 
+11-30 10:40:13 ==> Parameters: 1(Integer)
+11-30 10:40:14 <==      Total: 3
+11-30 10:40:14 ==>  Preparing: select * from view_car_goods where uid = ?; 
+11-30 10:40:14 ==> Parameters: 1(Integer)
+11-30 10:40:14 <==      Total: 1
+11-30 10:40:17 ==>  Preparing: select adressId, uid, address, def, aphone, aname, province, city from address where adressId = ? 
+11-30 10:40:17 ==> Parameters: 24(Integer)
+11-30 10:40:17 <==      Total: 1
+11-30 10:40:17 ==>  Preparing: delete from address where adressId = ? 
+11-30 10:40:17 ==> Parameters: 24(Integer)
+11-30 10:40:17 <==    Updates: 1
+11-30 10:40:17 ==>  Preparing: update address SET uid = ?, def = ? where adressId = ? 
+11-30 10:40:17 ==> Parameters: 1(Integer), true(Boolean), 2(Integer)
+11-30 10:40:17 <==    Updates: 1
+11-30 10:49:38 Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+11-30 10:49:38 PooledDataSource forcefully closed/removed all connections.
+11-30 10:49:38 PooledDataSource forcefully closed/removed all connections.
+11-30 10:49:38 PooledDataSource forcefully closed/removed all connections.
+11-30 10:49:38 PooledDataSource forcefully closed/removed all connections.
+11-30 10:49:38 Opening JDBC Connection
+11-30 10:49:39 Created connection 2107897498.
+11-30 10:49:39 Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@7da3f69a]
+11-30 10:49:39 ==>  Preparing: insert into qrcheck ( uuid, status ) values ( ?, ? ) 
+11-30 10:49:39 ==> Parameters: 20171130104938113118964099B5B43FAB3B383221574A1FD(String), 0(Integer)
+11-30 10:49:39 <==    Updates: 1
+11-30 10:49:40 ==>  Preparing: select * from qrcheck where uuid = ? 
+11-30 10:49:40 ==> Parameters: 20171130104938113118964099B5B43FAB3B383221574A1FD(String)
+11-30 10:49:40 <==      Total: 1
+11-30 10:49:45 ==>  Preparing: update qrcheck set status = ? where uuid = ? 
+11-30 10:49:45 ==> Parameters: 2(Integer), 20171130104938113118964099B5B43FAB3B383221574A1FD(String)
+11-30 10:49:45 <==    Updates: 1
+11-30 10:49:46 ==>  Preparing: select * from qrcheck where uuid = ? 
+11-30 10:49:46 ==> Parameters: 20171130104938113118964099B5B43FAB3B383221574A1FD(String)
+11-30 10:49:46 <==      Total: 1
+11-30 10:50:00 Opening JDBC Connection
+11-30 10:50:01 Created connection 722283751.
+11-30 10:50:01 Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@2b0d2ce7]
+11-30 10:50:01 ==>  Preparing: SELECT * FROM users WHERE uname = ? and upwd = ? 
+11-30 10:50:01 ==> Parameters: xiaoming (String), 123(String)
+11-30 10:50:01 <==    Columns: uid, uname, upwd, phone, city, regDate, idCard, realName, age, email, sex, avatar
+11-30 10:50:01 <==        Row: 1, xiaoming, 123, 18899119292, 西安, 2017-11-11, null, 小明, 22, null, 男, <<BLOB>>
+11-30 10:50:01 <==      Total: 1
+11-30 10:50:01 ==>  Preparing: update qrcheck set status = ?, name = ?,pwd = ? where uuid = ? 
+11-30 10:50:01 ==> Parameters: 1(Integer), xiaoming (String), 123(String), 20171130104938113118964099B5B43FAB3B383221574A1FD(String)
+11-30 10:50:01 <==    Updates: 1
+11-30 10:50:02 ==>  Preparing: select * from qrcheck where uuid = ? 
+11-30 10:50:02 ==> Parameters: 20171130104938113118964099B5B43FAB3B383221574A1FD(String)
+11-30 10:50:02 <==      Total: 1
+11-30 10:50:02 Opening JDBC Connection
+11-30 10:50:02 Created connection 1788373137.
+11-30 10:50:02 Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@6a986891]
+11-30 10:50:02 ==>  Preparing: SELECT COUNT(1) FROM shoppingcar WHERE uid = ?; 
+11-30 10:50:02 ==> Parameters: 1(Integer)
+11-30 10:50:02 <==      Total: 1
+11-30 10:50:02 ==>  Preparing: delete from qrcheck where uuid = ? 
+11-30 10:50:02 ==> Parameters: 20171130104938113118964099B5B43FAB3B383221574A1FD(String)
+11-30 10:50:02 <==    Updates: 1
+11-30 10:51:23 Opening JDBC Connection
+11-30 10:51:23 Created connection 2068284110.
+11-30 10:51:23 Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@7b4782ce]
+11-30 10:51:23 ==>  Preparing: select gid, gname, tid, price, descption, imgPath, filePath, stock from goods where gid = ? 
+11-30 10:51:23 ==> Parameters: 1(Integer)
+11-30 10:51:23 <==      Total: 1
+11-30 10:52:48 ==>  Preparing: select * from address where uid = ? 
+11-30 10:52:48 ==> Parameters: 1(Integer)
+11-30 10:52:48 <==      Total: 2
+11-30 10:52:48 ==>  Preparing: select * from view_car_goods where uid = ?; 
+11-30 10:52:48 ==> Parameters: 1(Integer)
+11-30 10:52:48 <==      Total: 1
+11-30 10:53:33 ==>  Preparing: select gid, gname, tid, price, descption, imgPath, filePath, stock from goods where gid = ? 
+11-30 10:53:33 ==> Parameters: 4(Integer)
+11-30 10:53:33 <==      Total: 1
+11-30 10:53:36 ==>  Preparing: select cid, addGoodsTime, uid, gid, gnum, descption from shoppingcar where uid = ? and gid = ? 
+11-30 10:53:36 ==> Parameters: 1(Integer), 4(Integer)
+11-30 10:53:36 <==      Total: 0
+11-30 10:53:36 ==>  Preparing: insert into shoppingcar ( addGoodsTime, uid, gid, gnum, descption ) values ( ?, ?, ?, ?, ? ) 
+11-30 10:53:36 ==> Parameters: 2017-11-30 10:53:36.46(Timestamp), 1(Integer), 4(Integer), 3(Integer), [{"颜色" : "钻雕金","套餐类型" : "官方标配"}](String)
+11-30 10:53:36 <==    Updates: 1
+11-30 10:53:36 ==>  Preparing: SELECT COUNT(1) FROM shoppingcar WHERE uid = ?; 
+11-30 10:53:36 ==> Parameters: 1(Integer)
+11-30 10:53:36 <==      Total: 1
+11-30 10:53:41 ==>  Preparing: select * from address where uid = ? 
+11-30 10:53:41 ==> Parameters: 1(Integer)
+11-30 10:53:41 <==      Total: 2
+11-30 10:53:41 ==>  Preparing: select * from view_car_goods where uid = ?; 
+11-30 10:53:41 ==> Parameters: 1(Integer)
+11-30 10:53:41 <==      Total: 2
+11-30 10:53:49 ==>  Preparing: update shoppingcar SET gnum = ? where cid = ? 
+11-30 10:53:49 ==> Parameters: 4(Integer), 106(Integer)
+11-30 10:53:49 <==    Updates: 1
+11-30 10:53:49 ==>  Preparing: update shoppingcar SET gnum = ? where cid = ? 
+11-30 10:53:49 ==> Parameters: 5(Integer), 106(Integer)
+11-30 10:53:49 <==    Updates: 1
+11-30 10:53:52 ==>  Preparing: select * from view_car_goods where uid = ?; 
+11-30 10:53:52 ==> Parameters: 1(Integer)
+11-30 10:53:52 <==      Total: 2
+11-30 10:53:52 Opening JDBC Connection
+11-30 10:53:52 Created connection 1066909097.
+11-30 10:53:52 Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@3f97bda9]
+11-30 10:53:52 ==>  Preparing: insert into orders ( oid, uid, sum, address ) values ( ?, ?, ?, ? ) 
+11-30 10:53:52 ==> Parameters: 20171130105352(String), 1(Integer), 18048.0(Double), java.io.StringReader@1f842c07(StringReader)
+11-30 10:53:52 <==    Updates: 1
+11-30 10:53:52 ==>  Preparing: insert into orderform ( oid, gid, gnum, SubTotal, descption, uid ) values ( ?, ?, ?, ?, ?, ? ) 
+11-30 10:53:52 ==> Parameters: 20171130105352(String), 1(Integer), 1(Integer), 3488.0(Double), [{"颜色" : "钻雕金","套餐类型" : "官方标配"}](String), 1(Integer)
+11-30 10:53:52 <==    Updates: 1
+11-30 10:53:52 ==>  Preparing: update goods SET gname = ?, tid = ?, price = ?, descption = ?, imgPath = ?, filePath = ?, stock = ? where gid = ? 
+11-30 10:53:52 ==> Parameters: Huawei/华为 P10全网通手机(String), 2(Integer), 3488.0(Double), [ {
+  "网络类型" : "4G全网通",
+  "机身颜色" : "钻雕金,钻雕蓝,草木绿,曜石黑,玫瑰金",
+  "套餐类型" : "官方标配,套餐一,套餐二,套餐三,套餐四,套餐五",
+  "存储容量" : "64GB,128GB",
+  "购买方式" : "裸机",
+  "版本" : "Mate 10,Mate 10 62G+128G,麦芒6,P10,畅享7"
+} ](String), goods/huawei_1/P10.jpg(String), goods/huawei_1/img/(String), 9919(Integer), 1(Integer)
+11-30 10:53:52 <==    Updates: 1
+11-30 10:53:52 ==>  Preparing: insert into orderform ( oid, gid, gnum, SubTotal, descption, uid ) values ( ?, ?, ?, ?, ?, ? ) 
+11-30 10:53:52 ==> Parameters: 20171130105352(String), 4(Integer), 5(Integer), 14560.0(Double), [{"颜色" : "钻雕金","套餐类型" : "官方标配"}](String), 1(Integer)
+11-30 10:53:52 <==    Updates: 1
+11-30 10:53:52 ==>  Preparing: update goods SET gname = ?, tid = ?, price = ?, descption = ?, imgPath = ?, filePath = ?, stock = ? where gid = ? 
+11-30 10:53:52 ==> Parameters: 红米4X(String), 2(Integer), 2912.0(Double), [ {
+  "网络类型" : "4G全网通",
+  "机身颜色" : "钻雕金,钻雕蓝,草木绿,曜石黑,玫瑰金",
+  "套餐类型" : "官方标配,套餐一,套餐二,套餐三,套餐四,套餐五",
+  "存储容量" : "64GB,128GB",
+  "购买方式" : "裸机",
+  "版本" : "Mate 10,Mate 10 62G+128G,麦芒6,P10,畅享7"
+} ](String), goods/xiaomi_6/6.jpg(String), goods/xiaomi_6/img/(String), 9994(Integer), 4(Integer)
+11-30 10:53:52 <==    Updates: 1
+11-30 10:53:52 ==>  Preparing: delete from shoppingcar where cid = ? 
+11-30 10:53:52 ==> Parameters: 105(Integer)
+11-30 10:53:52 <==    Updates: 1
+11-30 10:53:52 ==>  Preparing: delete from shoppingcar where cid = ? 
+11-30 10:53:52 ==> Parameters: 106(Integer)
+11-30 10:53:52 <==    Updates: 1
+11-30 10:53:52 Committing JDBC Connection [com.mysql.jdbc.JDBC4Connection@3f97bda9]
+11-30 10:53:52 添加新订单(20171130105352)：{
+  "oid" : "20171130105352",
+  "uid" : 1,
+  "state" : "待付款",
+  "sum" : 18048.0,
+  "address" : "西安外包学院"
+}
+11-30 10:53:52 订单详情(20171130105352)：[ {
+  "oid" : "20171130105352",
+  "gid" : 1,
+  "gnum" : 1,
+  "subtotal" : 3488.0,
+  "descption" : "[{\"颜色\" : \"钻雕金\",\"套餐类型\" : \"官方标配\"}]",
+  "uid" : 1
+}, {
+  "oid" : "20171130105352",
+  "gid" : 4,
+  "gnum" : 5,
+  "subtotal" : 14560.0,
+  "descption" : "[{\"颜色\" : \"钻雕金\",\"套餐类型\" : \"官方标配\"}]",
+  "uid" : 1
+} ]
+11-30 10:53:52 ==>  Preparing: select * from view_order_goods where oid = ? and uid = ?; 
+11-30 10:53:52 ==> Parameters: 20171130105352(String), 1(Integer)
+11-30 10:53:52 <==      Total: 2
+11-30 10:54:04 20171130105352--订单付款！
+11-30 10:54:04 ==>  Preparing: update orders set state = "已付款" where oid = ? and uid = ? 
+11-30 10:54:04 ==> Parameters: 20171130105352(Long), 1(Integer)
+11-30 10:54:04 <==    Updates: 1
+11-30 10:54:04 Committing JDBC Connection [com.mysql.jdbc.JDBC4Connection@3f97bda9]
+11-30 10:54:07 ==>  Preparing: select oid,state,address,sum,uid from view_order_goods where uid = ? group by oid 
+11-30 10:54:07 ==> Parameters: 1(Integer)
+11-30 10:54:07 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171114000359 and uid = 1 
+11-30 10:54:07 ====> Parameters: 
+11-30 10:54:07 <====      Total: 2
+11-30 10:54:07 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171114000839 and uid = 1 
+11-30 10:54:07 ====> Parameters: 
+11-30 10:54:07 <====      Total: 1
+11-30 10:54:07 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171114150342 and uid = 1 
+11-30 10:54:07 ====> Parameters: 
+11-30 10:54:07 <====      Total: 1
+11-30 10:54:07 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171115115255 and uid = 1 
+11-30 10:54:07 ====> Parameters: 
+11-30 10:54:07 <====      Total: 1
+11-30 10:54:07 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171115115316 and uid = 1 
+11-30 10:54:07 ====> Parameters: 
+11-30 10:54:07 <====      Total: 1
+11-30 10:54:07 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171120142528 and uid = 1 
+11-30 10:54:07 ====> Parameters: 
+11-30 10:54:07 <====      Total: 1
+11-30 10:54:07 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171125185207 and uid = 1 
+11-30 10:54:07 ====> Parameters: 
+11-30 10:54:07 <====      Total: 1
+11-30 10:54:07 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171125214247 and uid = 1 
+11-30 10:54:07 ====> Parameters: 
+11-30 10:54:07 <====      Total: 1
+11-30 10:54:07 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171125222523 and uid = 1 
+11-30 10:54:07 ====> Parameters: 
+11-30 10:54:07 <====      Total: 1
+11-30 10:54:07 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171125223010 and uid = 1 
+11-30 10:54:07 ====> Parameters: 
+11-30 10:54:07 <====      Total: 2
+11-30 10:54:07 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171125223156 and uid = 1 
+11-30 10:54:07 ====> Parameters: 
+11-30 10:54:07 <====      Total: 1
+11-30 10:54:07 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171125231209 and uid = 1 
+11-30 10:54:07 ====> Parameters: 
+11-30 10:54:07 <====      Total: 1
+11-30 10:54:07 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171126180009 and uid = 1 
+11-30 10:54:07 ====> Parameters: 
+11-30 10:54:07 <====      Total: 1
+11-30 10:54:07 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171126180109 and uid = 1 
+11-30 10:54:07 ====> Parameters: 
+11-30 10:54:07 <====      Total: 2
+11-30 10:54:07 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171126180345 and uid = 1 
+11-30 10:54:07 ====> Parameters: 
+11-30 10:54:07 <====      Total: 1
+11-30 10:54:07 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171126180444 and uid = 1 
+11-30 10:54:07 ====> Parameters: 
+11-30 10:54:07 <====      Total: 2
+11-30 10:54:07 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171127090311 and uid = 1 
+11-30 10:54:07 ====> Parameters: 
+11-30 10:54:07 <====      Total: 1
+11-30 10:54:07 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171127150050 and uid = 1 
+11-30 10:54:07 ====> Parameters: 
+11-30 10:54:07 <====      Total: 1
+11-30 10:54:07 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171127192619 and uid = 1 
+11-30 10:54:07 ====> Parameters: 
+11-30 10:54:07 <====      Total: 1
+11-30 10:54:07 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171127192651 and uid = 1 
+11-30 10:54:07 ====> Parameters: 
+11-30 10:54:07 <====      Total: 2
+11-30 10:54:07 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171130103944 and uid = 1 
+11-30 10:54:07 ====> Parameters: 
+11-30 10:54:07 <====      Total: 1
+11-30 10:54:07 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171130105352 and uid = 1 
+11-30 10:54:07 ====> Parameters: 
+11-30 10:54:07 <====      Total: 2
+11-30 10:54:07 <==      Total: 22
+11-30 14:39:51 Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+11-30 14:39:51 PooledDataSource forcefully closed/removed all connections.
+11-30 14:39:51 PooledDataSource forcefully closed/removed all connections.
+11-30 14:39:51 PooledDataSource forcefully closed/removed all connections.
+11-30 14:39:51 PooledDataSource forcefully closed/removed all connections.
+11-30 14:39:52 Opening JDBC Connection
+11-30 14:39:52 Created connection 792466413.
+11-30 14:39:52 Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@2f3c13ed]
+11-30 14:39:52 ==>  Preparing: select * from goodsand 
+11-30 14:39:52 ==> Parameters: 
+11-30 14:39:52 <==      Total: 12
+11-30 14:51:09 Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+11-30 14:51:09 PooledDataSource forcefully closed/removed all connections.
+11-30 14:51:09 PooledDataSource forcefully closed/removed all connections.
+11-30 14:51:09 PooledDataSource forcefully closed/removed all connections.
+11-30 14:51:09 PooledDataSource forcefully closed/removed all connections.
+11-30 14:51:10 Opening JDBC Connection
+11-30 14:51:10 Created connection 683304004.
+11-30 14:51:10 Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@28ba6444]
+11-30 14:51:10 ==>  Preparing: select * from goodsand 
+11-30 14:51:10 ==> Parameters: 
+11-30 14:51:10 <==      Total: 12
+11-30 14:52:36 Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+11-30 14:52:36 PooledDataSource forcefully closed/removed all connections.
+11-30 14:52:36 PooledDataSource forcefully closed/removed all connections.
+11-30 14:52:36 PooledDataSource forcefully closed/removed all connections.
+11-30 14:52:36 PooledDataSource forcefully closed/removed all connections.
+11-30 14:52:36 Opening JDBC Connection
+11-30 14:52:36 Created connection 909407741.
+11-30 14:52:36 Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@363475fd]
+11-30 14:52:36 ==>  Preparing: select * from goodsand 
+11-30 14:52:36 ==> Parameters: 
+11-30 14:52:36 <==      Total: 12
+11-30 15:04:14 Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+11-30 15:04:18 PooledDataSource forcefully closed/removed all connections.
+11-30 15:04:18 PooledDataSource forcefully closed/removed all connections.
+11-30 15:04:18 PooledDataSource forcefully closed/removed all connections.
+11-30 15:04:18 PooledDataSource forcefully closed/removed all connections.
+11-30 15:04:20 Opening JDBC Connection
+11-30 15:04:21 Created connection 36265690.
+11-30 15:04:21 Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@2295eda]
+11-30 15:04:21 ==>  Preparing: select * from goodsand 
+11-30 15:04:21 ==> Parameters: 
+11-30 15:04:21 <==      Total: 12
+11-30 15:08:05 Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+11-30 15:29:50 Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+11-30 15:29:51 PooledDataSource forcefully closed/removed all connections.
+11-30 15:29:51 PooledDataSource forcefully closed/removed all connections.
+11-30 15:29:51 PooledDataSource forcefully closed/removed all connections.
+11-30 15:29:51 PooledDataSource forcefully closed/removed all connections.
+11-30 15:29:52 Opening JDBC Connection
+11-30 15:29:53 Created connection 1637012421.
+11-30 15:29:53 Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@6192d3c5]
+11-30 15:29:53 ==>  Preparing: select * from goodsand 
+11-30 15:29:53 ==> Parameters: 
+11-30 15:29:53 <==      Total: 12
+11-30 15:35:47 Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+11-30 15:35:47 PooledDataSource forcefully closed/removed all connections.
+11-30 15:35:47 PooledDataSource forcefully closed/removed all connections.
+11-30 15:35:47 PooledDataSource forcefully closed/removed all connections.
+11-30 15:35:47 PooledDataSource forcefully closed/removed all connections.
+11-30 15:35:48 Opening JDBC Connection
+11-30 15:35:49 Created connection 242609130.
+11-30 15:35:49 Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@e75ebea]
+11-30 15:35:49 ==>  Preparing: select * from goodsand 
+11-30 15:35:49 ==> Parameters: 
+11-30 15:35:49 <==      Total: 12
+11-30 15:37:31 Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+11-30 15:37:32 PooledDataSource forcefully closed/removed all connections.
+11-30 15:37:32 PooledDataSource forcefully closed/removed all connections.
+11-30 15:37:32 PooledDataSource forcefully closed/removed all connections.
+11-30 15:37:32 PooledDataSource forcefully closed/removed all connections.
+11-30 15:37:33 Opening JDBC Connection
+11-30 15:37:33 Created connection 1406860598.
+11-30 15:37:33 Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@53dafd36]
+11-30 15:37:33 ==>  Preparing: select * from goodsand 
+11-30 15:37:33 ==> Parameters: 
+11-30 15:37:33 <==      Total: 12

@@ -334,3 +334,17 @@
  <com.dao.UsersDao.addAddress(UsersDao.java:74)> 
 2017-11-28 12:02:13  WARN 198065ms|>- 
  <com.dao.UsersDao.addAddress(UsersDao.java:74)> 
+2017-11-30 08:54:07  WARN 4212ms|>- 
+### Error updating database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry 'asdf' for key 'uk_users_uname'
+### The error may involve com.mod.mapper.UsersMapper.insert-Inline
+### The error occurred while setting parameters
+### SQL: insert into users (uid, uname, upwd,        phone, city, regDate,        idCard, realName, age,        email, sex, avatar       )     values (?, ?, ?,        ?, ?, ?,        ?, ?, ?,        ?, ?, ?       )
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry 'asdf' for key 'uk_users_uname'
+ <com.servelet.UserManagerSlt.regist(UserManagerSlt.java:233)> 
+2017-11-30 10:03:16  WARN 4152957ms|>- 
+### Error updating database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry 'qwe' for key 'uk_users_uname'
+### The error may involve com.mod.mapper.UsersMapper.insert-Inline
+### The error occurred while setting parameters
+### SQL: insert into users (uid, uname, upwd,        phone, city, regDate,        idCard, realName, age,        email, sex, avatar       )     values (?, ?, ?,        ?, ?, ?,        ?, ?, ?,        ?, ?, ?       )
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry 'qwe' for key 'uk_users_uname'
+ <com.servelet.UserManagerSlt.regist(UserManagerSlt.java:233)> 

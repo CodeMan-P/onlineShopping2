@@ -72,13 +72,22 @@ public class addressSlt extends HttpServlet {
 			String json;
 			ObjectMapper mapper = new ObjectMapper();
 			json = mapper.writerWithDefaultPrettyPrinter().writeValueAsString(request.getParameterMap());
+			
 			json = json.replaceAll("\\[|\\]", "");
 			Address adr = mapper.readValue(json, Address.class);
 			@SuppressWarnings("unchecked")
 			HashMap<String,String> hm = mapper.readValue(json, HashMap.class);
-			adr.setProvince(hm.get("province"));
-			adr.setCity(hm.get("city"));
+			String province = hm.get("province");
+			String city = hm.get("city");
+			if(city!=null&&!city.contains("-")){
+				adr.setProvince(province);
+				adr.setCity(city);
+			}else{
+				System.out.println(city==null);
+				System.out.println(!city.contains("-"));
+			}
 			adr.setUid(uid);
+			
 			boolean b = UserService.addAddress(adr);
 			PrintWriter out = response.getWriter();
 			if(b){
@@ -100,15 +109,13 @@ public class addressSlt extends HttpServlet {
 			Address adr = mapper.readValue(json, Address.class);
 			@SuppressWarnings("unchecked")
 			HashMap<String,String> hm = mapper.readValue(json, HashMap.class);
-			adr.setProvince(hm.get("province"));
-			adr.setCity(hm.get("city"));
-			adr.setUid(uid);
-			String province = hm.get("provice");
+			String province = hm.get("province");
 			String city = hm.get("city");
 			if(city!=null&&!city.contains("-")){
 				adr.setProvince(province);
 				adr.setCity(city);
 			}
+			adr.setUid(uid);
 			String aid = request.getParameter("aid");
 			adr.setAdressid(Integer.parseInt(aid));
 			boolean b = UserService.editAddress(adr);

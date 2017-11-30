@@ -346,8 +346,8 @@ function checkEmpty(id, name){
                         </div>
                         <div class="ffr_freight_onclick">
                             <div class="ffr_freight_onclicks">
-                                <a href="javascript:buyGoods();void(0);" class="ffr_freight_onclick_shop">立即购买</a>
-                                <a href="javascript:addGoods();void(0);" class="ffr_freight_onclick_shop">加入购物车</a>
+                                <a href="javascript:buyGoods();void(0);" class="ffr_freight_onclick_shop" style="color: black;">立即购买</a>
+                                <a href="javascript:addGoods();void(0);" class="ffr_freight_onclick_shop" style="color: black;">加入购物车</a>
 								
                             </div>
                            

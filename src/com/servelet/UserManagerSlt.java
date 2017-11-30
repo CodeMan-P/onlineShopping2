@@ -213,7 +213,8 @@ public class UserManagerSlt extends HttpServlet {
 			throws JsonProcessingException {
 		Users user;
 		String json;
-		json = mapper.writeValueAsString(request.getParameterMap());
+		json = mapper.writerWithDefaultPrettyPrinter().writeValueAsString(request.getParameterMap());
+		System.out.println(json);
 		// ajaxSubmit 提交时每个参数以数组传递，需要删除[]
 		json = json.replace("[", "");
 		json = json.replace("]", "");
@@ -226,6 +227,7 @@ public class UserManagerSlt extends HttpServlet {
 				request.getSession().setAttribute("avatar", user.getAvatar());
 				request.getSession().setAttribute("city", user.getCity());
 				out.write("注册成功！");
+				log.info("新用户注册："+user.getUname());
 			} else if (message.contains("Duplicate")) {
 				out.write("用户名已存在！注册失败！");
 				log.warn(message);

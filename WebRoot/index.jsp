@@ -11,11 +11,7 @@
 <base href="<%=basePath%>">
 
 <title>首页</title>
-<meta http-equiv="pragma" content="no-cache">
-<meta http-equiv="cache-control" content="no-cache">
-<meta http-equiv="expires" content="0">
-<meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
-<meta http-equiv="description" content="This is my page">
+
 <!--
 	<link rel="stylesheet" type="text/css" href="styles.css">
 	-->
@@ -742,7 +738,7 @@
            </form>
      </div>
        <div id="qrdiv" name="QRcode" style="text-align: center;position:relative;width: 276px;height: 276px;left:180px;float: left;">
-	<img src="#" onclick="doQRcheck()" alt="二维码生成失败！" id="QRimg" style="position:static;width: 276px;height: 276px;"/>
+	<img src="#" onclick="doQRcheck()" alt="二维码" id="QRimg" style="position:static;width: 276px;height: 276px;"/>
       <input type="hidden" id="UUID">
       </div>
     <input style="position:relative; float:right " class="btn btn-primary" type="button" id="QRshow" value="二维码登录" />                       
