@@ -1,6 +1,7 @@
 {
   "code": 0,
   "message": "OK",
+  "flag":true,
   "data": [
     {
       "title": "小米6 6GB+128GB",

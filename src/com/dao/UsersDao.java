@@ -48,13 +48,22 @@ public class UsersDao {
 
 	@Test
 	public void testMethdo() {
-		ObjectMapper mapper = new ObjectMapper();
-		LinkedList<Address> list = getAdress(1);
-		try {
-			System.out.println(mapper.writerWithDefaultPrettyPrinter().writeValueAsString(list));
-		} catch (JsonProcessingException e) {
-			e.printStackTrace();
-		}
+		//获得自增主键id
+		//useGeneratedKeys="true" keyProperty="字段名">  
+		Address record = new Address();
+		record.setUid(1);
+		record.setAddress("asdasd");
+		record.setAphone("123123213");
+		record.setAname("asda");
+		am.insertSelective(record);
+		System.out.println(record.getAdressid());
+		//		ObjectMapper mapper = new ObjectMapper();
+//		LinkedList<Address> list = getAdress(1);
+//		try {
+//			System.out.println(mapper.writerWithDefaultPrettyPrinter().writeValueAsString(list));
+//		} catch (JsonProcessingException e) {
+//			e.printStackTrace();
+//		}
 	}
 
 	public static boolean addAddress(Address address) {

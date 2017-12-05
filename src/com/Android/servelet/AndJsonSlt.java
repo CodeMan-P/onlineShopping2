@@ -38,6 +38,7 @@ public class AndJsonSlt extends HttpServlet {
 		ObjectMapper mapper = new ObjectMapper();
 		System.out.println(mapper.writerWithDefaultPrettyPrinter().writeValueAsString(request.getParameterMap()));
 		String fn = request.getParameter("fn");
+		//System.out.println(fn);
 		if(fn!=null){
 			file = new File(path+fn);
 			String json = JsonFileToStr.getJson(file);
@@ -45,6 +46,16 @@ public class AndJsonSlt extends HttpServlet {
 			out.write(json);
 			out.flush();
 			out.close();
+		}else{
+			String[] fns = request.getParameterValues("fn");
+			if(fns.length >0){
+				file = new File(path+fns[0]);
+				String json = JsonFileToStr.getJson(file);
+				PrintWriter out = response.getWriter();
+				out.write(json);
+				out.flush();
+				out.close();
+			}
 		}
 		
 		

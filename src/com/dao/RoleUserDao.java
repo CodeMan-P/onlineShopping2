@@ -23,7 +23,7 @@ public class RoleUserDao {
 		
 		ArrayList<RoleBean> list=new ArrayList<RoleBean>();
 		con=DbConn.getCon();
-		String sql="select roleid,rolename from role";
+		String sql="select id as roleid,shortname as rolename from region where pid = 0";
 		pst=con.prepareStatement(sql);
 		rs=pst.executeQuery();
 		while (rs.next()){
@@ -42,7 +42,7 @@ public class RoleUserDao {
 		UserBean ub;
 		ArrayList<UserBean> list =new ArrayList<UserBean>();
 		con=DbConn.getCon();
-		String sql="select userid,username from r_user where roleid=?";
+		String sql="select id as userid,shortname as username from region where pid=?";
 		pst=con.prepareStatement(sql);
 		pst.setInt(1, id);
 		rs=pst.executeQuery();
