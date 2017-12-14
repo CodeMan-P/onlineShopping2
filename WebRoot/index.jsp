@@ -73,6 +73,7 @@
 		$('.theme-login').click(function(){
 			//刷新验证码
 			docheck();
+			docheck();
 			$("div[name='QRcode']").hide();	
 			$('#QRshow').val("二维码登录");
 			$('.theme-popover-mask').fadeIn(100);
@@ -95,7 +96,7 @@
 				date:{"d":time},
 				clearForm : true, //成功提交后，清除所有表单元素的值    
 				resetForm : true, //成功提交后，重置所有表单元素的值    
-				timeout : 3000, //限制请求的时间，当请求大于3秒后，跳出请求   
+				timeout : 5000, //限制请求的时间，当请求大于5秒后，跳出请求   
 				success : function(data) {
 					//	   alert(JSON.stringify(data));
 					//	alert(data.sex+""+

@@ -251,12 +251,16 @@ function checkEmpty(id, name){
 		
 			<a href="../index.jsp"style="float:right">退出</a>	
 		
-		
-			<a href="javascript:void(0);" style="float:right"><c:out value="${sessionScope.name}" ></c:out></a>
+		<c:if test="${not empty sessionScope.name}">
+		<a href="javascript:void(0);" style="float:right"><c:out value="${sessionScope.name}" ></c:out></a>
 			
 				<a href="../Spcar?flag=view" target="_blank" style="float:right;color:#F00">
 			购物车(${sessionScope.carnum})
 			</a>
+		
+		</c:if>
+			
+			
 	</div>
 </nav>
 <div class="simpleSearchOutDiv">

@@ -67,9 +67,12 @@ public class searchServlet extends HttpServlet {
 		response.setContentType("text/html");
 		response.setCharacterEncoding("utf-8");
 		request.setCharacterEncoding("utf-8");
-		int uid = (int) request.getSession().getAttribute("uid");
-		int num = SpCarService.getCarNum(uid);
-		request.getSession().setAttribute("carnum", num);
+		Object temp = request.getSession().getAttribute("uid");
+		if(temp != null){
+			int uid = (int) temp;
+			int num = SpCarService.getCarNum(uid);
+			request.getSession().setAttribute("carnum", num);
+		}
 		String word = request.getParameter("word");
 		if(word == null){
 			word = (String) request.getSession().getAttribute("word");

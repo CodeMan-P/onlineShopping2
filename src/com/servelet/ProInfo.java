@@ -56,9 +56,12 @@ public class ProInfo extends HttpServlet {
 		response.setCharacterEncoding("utf-8");
 		request.setCharacterEncoding("utf-8");
 		response.setContentType("text/html");
-		int uid = (int) request.getSession().getAttribute("uid");
-		int num = SpCarService.getCarNum(uid);
-		request.getSession().setAttribute("carnum", num);
+		Object temp = request.getSession().getAttribute("uid");
+		if(temp != null){
+			int uid = (int) temp;
+			int num = SpCarService.getCarNum(uid);
+			request.getSession().setAttribute("carnum", num);
+		}
 		int gid = 0;
 		try {
 			gid = Integer.parseInt(request.getParameter("gid"));

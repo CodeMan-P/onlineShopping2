@@ -57,13 +57,13 @@ $("input").bind('keyup',function () {
 		</a>	
 		
 			<a href="../index.jsp"style="float:right">退出</a>	
-		
-		
 			<a href="javascript:void(0);" style="float:right"><c:out value="${sessionScope.name}" ></c:out></a>
 			
 				<a href="../Spcar?flag=view" target="_blank" style="float:right;color:#F00">
 			购物车(${sessionScope.carnum})
 			</a>
+		
+		
 	</div>
 </nav>
 <div class="simpleSearchOutDiv">
@@ -100,6 +100,9 @@ $("input").bind('keyup',function () {
  <div style="width:1010px;height:195px;border: 1px solid #CCCCCC;text-align:center;'" >
    <% 
 	     int idindex = 1;
+   if(adlist != null){
+	   
+   
   for(HashMap<String,Object> item : adlist){
 	  %><div name= "<%=item.get("adressid")%>" style="float:left;height:170px;width:31%; margin: 10px;border: 1px solid #CCCCCC">
 	     <input type="radio" name="radio" id="radio<%=item.get("adressid")%>" value="<%=item.get("address")%>"><%=idindex%><br/>
@@ -107,6 +110,8 @@ $("input").bind('keyup',function () {
 	     <input id="deleb" type="button" value="删除" onclick="deleA(<%=item.get("adressid")%>)" /><br/>
 	     <% 
 	     item.remove("uid");
+	     if(!item.isEmpty()){
+	    	 
 	     for (String s:item.keySet()){
     	if(s.equals("default")){
     		if((Boolean)item.get(s)){
@@ -130,7 +135,7 @@ $("input").bind('keyup',function () {
     	<%=s.equals("adressid")?"":item.get(s)%>
     	</span><br/>
     	
-  		 <% }}%>
+  		 <% }}}%>
 		</div>
 		
 	  <% 
@@ -138,7 +143,7 @@ $("input").bind('keyup',function () {
 	  if(idindex == 4){
 		  break;
 		}  
-  }%>
+  }}%>
   <%-- 修改地址弹窗 ../Spcar?flag=view--%>
 	<div class="theme-popover" name="edit" style="text-align: center; height:330px;">
      <div class="theme-poptit">
@@ -254,6 +259,9 @@ $("input").bind('keyup',function () {
 				  <%int index = 1; 
 mapper.setSerializationInclusion(Include.NON_NULL);  
 mapper.setDateFormat(new SimpleDateFormat("yyyy-MM-dd HH:mm:ss"));
+if(!view.isEmpty()){
+	
+
 for(HashMap<String,Object> item : view){
 	  
 	  %>
@@ -298,7 +306,7 @@ for(HashMap<String,Object> item : view){
 				
 						  <%
 	index++;  
-  } %>
+  } }%>
 								
 			</tbody>
 		
