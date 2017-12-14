@@ -172,9 +172,10 @@ public class QrCodeSlt extends HttpServlet {
 		String st = null;
 		//String uuid = getUUID();
 		String uuid = request.getParameter("UUID");
-		String Addr = request.getLocalAddr();
+		//String Addr = request.getLocalAddr();
+		String Addr = request.getServerName();//"60.205.225.65";
 		int port = request.getLocalPort();
-		st = "http://" + Addr + ":" + port + "/onlineShopping/QrCode?flag=scan&&UUID=" + uuid;
+		st = "http://" + Addr + ":" + port + "/shopping/QrCode?flag=scan&&UUID=" + uuid;
 		Qrcheck q = new Qrcheck(uuid, 0);
 		boolean b = QrcheckService.insertQrcheck(q);
 		if (!b) {
@@ -202,9 +203,11 @@ public class QrCodeSlt extends HttpServlet {
 		OutputStream ou = response.getOutputStream();
 		String st = null;
 		String uuid = request.getParameter("UUID");
-		String Addr = request.getLocalAddr();
+		//String Addr = request.getLocalAddr();
+		String Addr = request.getServerName();//"60.205.225.65";
+		
 		int port = request.getLocalPort();
-		st = "http://" + Addr + ":" + port + "/onlineShopping/QrCode?flag=scan&&UUID=" + uuid;
+		st = "http://" + Addr + ":" + port + "/shopping/QrCode?flag=scan&&UUID=" + uuid;
 		Qrcheck q = new Qrcheck(uuid, 0);
 		boolean b = QrcheckService.insertQrcheck(q);
 		if (!b) {
@@ -212,7 +215,7 @@ public class QrCodeSlt extends HttpServlet {
 			return;
 		}
 		
-		BufferedImage img = createQRCode(logoFile, st, "海贼王");
+		BufferedImage img = createQRCode(logoFile, st, "欢迎登录!");
 		ImageIO.write(img, "png", ou);
 		ou.flush();
 		ou.close();

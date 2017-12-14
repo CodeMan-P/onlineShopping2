@@ -362,3 +362,103 @@
 ### The error occurred while executing a query
 ### Cause: java.lang.ClassCastException: org.apache.ibatis.executor.ExecutionPlaceholder cannot be cast to java.util.List
  <com.dao.QrcheckDao.getQrcheck(QrcheckDao.java:32)> 
+2017-12-08 10:39:53  WARN 3833ms|>- 
+### Error querying database.  Cause: java.lang.ClassCastException: org.apache.ibatis.executor.ExecutionPlaceholder cannot be cast to java.util.List
+### The error may exist in com/mod/mapper/QrcheckMapper.java (best guess)
+### The error may involve com.mod.mapper.QrcheckMapper.selectByUUID
+### The error occurred while executing a query
+### Cause: java.lang.ClassCastException: org.apache.ibatis.executor.ExecutionPlaceholder cannot be cast to java.util.List
+ <com.dao.QrcheckDao.getQrcheck(QrcheckDao.java:32)> 
+2017-12-08 10:39:55  WARN 5827ms|>- 
+### Error querying database.  Cause: java.lang.ClassCastException: org.apache.ibatis.executor.ExecutionPlaceholder cannot be cast to java.util.List
+### The error may exist in com/mod/mapper/QrcheckMapper.java (best guess)
+### The error may involve com.mod.mapper.QrcheckMapper.selectByUUID
+### The error occurred while executing a query
+### Cause: java.lang.ClassCastException: org.apache.ibatis.executor.ExecutionPlaceholder cannot be cast to java.util.List
+ <com.dao.QrcheckDao.getQrcheck(QrcheckDao.java:32)> 
+2017-12-08 10:39:57  WARN 7836ms|>- 
+### Error querying database.  Cause: java.lang.ClassCastException: org.apache.ibatis.executor.ExecutionPlaceholder cannot be cast to java.util.List
+### The error may exist in com/mod/mapper/QrcheckMapper.java (best guess)
+### The error may involve com.mod.mapper.QrcheckMapper.selectByUUID
+### The error occurred while executing a query
+### Cause: java.lang.ClassCastException: org.apache.ibatis.executor.ExecutionPlaceholder cannot be cast to java.util.List
+ <com.dao.QrcheckDao.getQrcheck(QrcheckDao.java:32)> 
+2017-12-08 10:39:58  WARN 9230ms|>- 
+### Error querying database.  Cause: com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+Last packet sent to the server was 0 ms ago.
+### The error may exist in com/mod/mapper/QrcheckMapper.java (best guess)
+### The error may involve com.mod.mapper.QrcheckMapper.selectByUUID
+### The error occurred while executing a query
+### Cause: com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+Last packet sent to the server was 0 ms ago.
+ <com.dao.QrcheckDao.getQrcheck(QrcheckDao.java:32)> 
+2017-12-08 10:40:01  WARN 11863ms|>- 
+### Error querying database.  Cause: java.lang.ClassCastException: org.apache.ibatis.executor.ExecutionPlaceholder cannot be cast to java.util.List
+### The error may exist in com/mod/mapper/QrcheckMapper.java (best guess)
+### The error may involve com.mod.mapper.QrcheckMapper.selectByUUID
+### The error occurred while executing a query
+### Cause: java.lang.ClassCastException: org.apache.ibatis.executor.ExecutionPlaceholder cannot be cast to java.util.List
+ <com.dao.QrcheckDao.getQrcheck(QrcheckDao.java:32)> 
+2017-12-08 10:40:03  WARN 13885ms|>- 
+### Error querying database.  Cause: java.lang.ClassCastException: org.apache.ibatis.executor.ExecutionPlaceholder cannot be cast to java.util.List
+### The error may exist in com/mod/mapper/QrcheckMapper.java (best guess)
+### The error may involve com.mod.mapper.QrcheckMapper.selectByUUID
+### The error occurred while executing a query
+### Cause: java.lang.ClassCastException: org.apache.ibatis.executor.ExecutionPlaceholder cannot be cast to java.util.List
+ <com.dao.QrcheckDao.getQrcheck(QrcheckDao.java:32)> 
+2017-12-08 10:40:03  WARN 13934ms|>- 
+### Error querying database.  Cause: com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+Last packet sent to the server was 0 ms ago.
+### The error may exist in com/mod/mapper/QrcheckMapper.java (best guess)
+### The error may involve com.mod.mapper.QrcheckMapper.selectByUUID
+### The error occurred while executing a query
+### Cause: com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+Last packet sent to the server was 0 ms ago.
+ <com.dao.QrcheckDao.getQrcheck(QrcheckDao.java:32)> 
+2017-12-08 10:40:07  WARN 17915ms|>- 
+### Error querying database.  Cause: java.lang.ClassCastException: org.apache.ibatis.executor.ExecutionPlaceholder cannot be cast to java.util.List
+### The error may exist in com/mod/mapper/QrcheckMapper.java (best guess)
+### The error may involve com.mod.mapper.QrcheckMapper.selectByUUID
+### The error occurred while executing a query
+### Cause: java.lang.ClassCastException: org.apache.ibatis.executor.ExecutionPlaceholder cannot be cast to java.util.List
+ <com.dao.QrcheckDao.getQrcheck(QrcheckDao.java:32)> 
+2017-12-08 10:40:09  WARN 19928ms|>- 
+### Error querying database.  Cause: java.lang.ClassCastException: org.apache.ibatis.executor.ExecutionPlaceholder cannot be cast to java.util.List
+### The error may exist in com/mod/mapper/QrcheckMapper.java (best guess)
+### The error may involve com.mod.mapper.QrcheckMapper.selectByUUID
+### The error occurred while executing a query
+### Cause: java.lang.ClassCastException: org.apache.ibatis.executor.ExecutionPlaceholder cannot be cast to java.util.List
+ <com.dao.QrcheckDao.getQrcheck(QrcheckDao.java:32)> 
+2017-12-08 10:40:09  WARN 20007ms|>- 
+### Error querying database.  Cause: com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+Last packet sent to the server was 0 ms ago.
+### The error may exist in com/mod/mapper/QrcheckMapper.java (best guess)
+### The error may involve com.mod.mapper.QrcheckMapper.selectByUUID
+### The error occurred while executing a query
+### Cause: com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+Last packet sent to the server was 0 ms ago.
+ <com.dao.QrcheckDao.getQrcheck(QrcheckDao.java:32)> 
+2017-12-08 10:40:13  WARN 23945ms|>- 
+### Error querying database.  Cause: java.lang.ClassCastException: org.apache.ibatis.executor.ExecutionPlaceholder cannot be cast to java.util.List
+### The error may exist in com/mod/mapper/QrcheckMapper.java (best guess)
+### The error may involve com.mod.mapper.QrcheckMapper.selectByUUID
+### The error occurred while executing a query
+### Cause: java.lang.ClassCastException: org.apache.ibatis.executor.ExecutionPlaceholder cannot be cast to java.util.List
+ <com.dao.QrcheckDao.getQrcheck(QrcheckDao.java:32)> 
+2017-12-08 10:40:15  WARN 26012ms|>- 
+### Error querying database.  Cause: com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+Last packet sent to the server was 0 ms ago.
+### The error may exist in com/mod/mapper/QrcheckMapper.java (best guess)
+### The error may involve com.mod.mapper.QrcheckMapper.selectByUUID
+### The error occurred while executing a query
+### Cause: com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+Last packet sent to the server was 0 ms ago.
+ <com.dao.QrcheckDao.getQrcheck(QrcheckDao.java:32)> 

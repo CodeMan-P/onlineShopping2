@@ -188,8 +188,12 @@ public class UserManagerSlt extends HttpServlet {
 			name2 = name1 + "_date_" + sdf.format(new Date()) + type;
 			char sp = File.separatorChar;
 			file.saveAs("jsp" + sp + "img" + sp + name2, com.jspsmart.upload.File.SAVEAS_VIRTUAL);
-			file.saveAs("D:" + sp + "MyEclipse" + sp + "Workspaces" + sp + "onlineShopping2" + sp + "WebRoot" + sp
-					+ "jsp" + sp + "img" + sp + name2, com.jspsmart.upload.File.SAVEAS_PHYSICAL);
+			try {
+				file.saveAs("D:" + sp + "MyEclipse" + sp + "Workspaces" + sp + "onlineShopping2" + sp + "WebRoot" + sp
+						+ "jsp" + sp + "img" + sp + name2, com.jspsmart.upload.File.SAVEAS_PHYSICAL);
+			} catch (Exception e) {
+				
+			}
 			log.info("接收：" + name1 + "\r\n保存为：---->" + name2);
 			out.write("img/" + name2);
 			out.flush();

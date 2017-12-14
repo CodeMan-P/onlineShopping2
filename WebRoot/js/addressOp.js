@@ -48,7 +48,7 @@ function addr(){
 				
 			}else{
 				alert("添加成功！");
-				location.href="/onlineShopping/Spcar?flag=view";
+				location.href="/shopping/Spcar?flag=view";
 			//$('.theme-popover-mask').fadeOut(100);
 			$('.theme-popover').slideUp(200);
 			
@@ -74,7 +74,7 @@ function eddr(){
 	
 	var ajax_option2 = {
          type:'post',    
-         url:'/onlineShopping/ast',  
+         url:'/shopping/ast',  
          data:{
          	"flag":"edit",
          	},
@@ -85,7 +85,7 @@ function eddr(){
              	alert("修改成功！"); 
                  //MARK**转付款界面
 					//location.href="../index.jsp";	
-             	location.href="/onlineShopping/Spcar?flag=view";
+             	location.href="/shopping/Spcar?flag=view";
 				}else{
 						alert("修改失败");
 					}
@@ -119,7 +119,7 @@ function deleA(a){
              	alert("成功删除！"); 
                  //MARK**转付款界面
 					//location.href="../index.jsp";	
-             	location.href="/onlineShopping/Spcar?flag=view";
+             	location.href="/shopping/Spcar?flag=view";
 				}else{
 						alert("删除失败");
 					}

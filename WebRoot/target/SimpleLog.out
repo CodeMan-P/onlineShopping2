@@ -18932,3 +18932,682 @@
 12-05 14:06:51 ==>  Preparing: select * from view_car_goods where uid = ?; 
 12-05 14:06:51 ==> Parameters: 3(Integer)
 12-05 14:06:51 <==      Total: 0
+12-07 14:15:03 Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+12-07 14:15:04 PooledDataSource forcefully closed/removed all connections.
+12-07 14:15:04 PooledDataSource forcefully closed/removed all connections.
+12-07 14:15:04 PooledDataSource forcefully closed/removed all connections.
+12-07 14:15:04 PooledDataSource forcefully closed/removed all connections.
+12-07 14:15:04 Opening JDBC Connection
+12-07 14:15:04 Created connection 624533275.
+12-07 14:15:04 Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@25399f1b]
+12-07 14:15:04 ==>  Preparing: SELECT * FROM users WHERE uname = ? and upwd = ? 
+12-07 14:15:04 ==> Parameters: xiaoming(String), 123(String)
+12-07 14:15:04 <==    Columns: uid, uname, upwd, phone, city, regDate, idCard, realName, age, email, sex, avatar
+12-07 14:15:04 <==        Row: 2, xiaoming, 123, 18899119292, 西安市, 2017-11-11, deasdc38faib2ecasd, 小明, 22, 6pasd9tenbgdy@qq.com, 男, <<BLOB>>
+12-07 14:15:04 <==      Total: 1
+12-07 14:15:04 Opening JDBC Connection
+12-07 14:15:04 Created connection 298498668.
+12-07 14:15:04 Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@11caba6c]
+12-07 14:15:04 ==>  Preparing: SELECT COUNT(1) FROM shoppingcar WHERE uid = ?; 
+12-07 14:15:04 ==> Parameters: 2(Integer)
+12-07 14:15:04 <==      Total: 1
+12-07 14:15:08 Opening JDBC Connection
+12-07 14:15:08 Created connection 1374275850.
+12-07 14:15:08 Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@51e9c90a]
+12-07 14:15:08 ==>  Preparing: select oid,state,address,sum,uid from view_order_goods where uid = ? group by oid 
+12-07 14:15:08 ==> Parameters: 2(Integer)
+12-07 14:15:08 <==      Total: 0
+12-07 14:45:59 Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+12-07 14:45:59 PooledDataSource forcefully closed/removed all connections.
+12-07 14:45:59 PooledDataSource forcefully closed/removed all connections.
+12-07 14:45:59 PooledDataSource forcefully closed/removed all connections.
+12-07 14:45:59 PooledDataSource forcefully closed/removed all connections.
+12-07 14:45:59 Opening JDBC Connection
+12-07 14:46:00 Created connection 920198184.
+12-07 14:46:00 Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@36d91c28]
+12-07 14:46:00 ==>  Preparing: SELECT * FROM users WHERE uname = ? and upwd = ? 
+12-07 14:46:00 ==> Parameters: xiaoming(String), 123(String)
+12-07 14:46:00 <==    Columns: uid, uname, upwd, phone, city, regDate, idCard, realName, age, email, sex, avatar
+12-07 14:46:00 <==        Row: 2, xiaoming, 123, 18899119292, 西安市, 2017-11-11, deasdc38faib2ecasd, 小明, 22, 6pasd9tenbgdy@qq.com, 男, <<BLOB>>
+12-07 14:46:00 <==      Total: 1
+12-07 14:46:00 Opening JDBC Connection
+12-07 14:46:00 Created connection 1834430516.
+12-07 14:46:00 Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@6d573034]
+12-07 14:46:00 ==>  Preparing: SELECT COUNT(1) FROM shoppingcar WHERE uid = ?; 
+12-07 14:46:00 ==> Parameters: 2(Integer)
+12-07 14:46:00 <==      Total: 1
+12-07 14:46:02 Opening JDBC Connection
+12-07 14:46:02 Created connection 1870533290.
+12-07 14:46:02 Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@6f7e12aa]
+12-07 14:46:02 ==>  Preparing: select gid, gname, tid, price, descption, imgPath, filePath, stock from goods where gid = ? 
+12-07 14:46:02 ==> Parameters: 1(Integer)
+12-07 14:46:02 <==      Total: 1
+12-07 14:46:06 ==>  Preparing: select cid, addGoodsTime, uid, gid, gnum, descption from shoppingcar where uid = ? and gid = ? 
+12-07 14:46:07 ==> Parameters: 2(Integer), 1(Integer)
+12-07 14:46:07 <==      Total: 0
+12-07 14:46:07 ==>  Preparing: insert into shoppingcar ( addGoodsTime, uid, gid, gnum, descption ) values ( ?, ?, ?, ?, ? ) 
+12-07 14:46:07 ==> Parameters: 2017-12-07 14:46:06.998(Timestamp), 2(Integer), 1(Integer), 3(Integer), [{"颜色" : "钻雕金","套餐类型" : "官方标配"}](String)
+12-07 14:46:07 <==    Updates: 1
+12-07 14:46:07 ==>  Preparing: SELECT COUNT(1) FROM shoppingcar WHERE uid = ?; 
+12-07 14:46:07 ==> Parameters: 2(Integer)
+12-07 14:46:07 <==      Total: 1
+12-07 14:46:09 ==>  Preparing: select * from address where uid = ? 
+12-07 14:46:09 ==> Parameters: 2(Integer)
+12-07 14:46:09 <==      Total: 0
+12-07 14:46:09 ==>  Preparing: select * from view_car_goods where uid = ?; 
+12-07 14:46:09 ==> Parameters: 2(Integer)
+12-07 14:46:09 <==      Total: 1
+12-07 14:47:09 ==>  Preparing: insert into address ( uid, address, def, aphone, aname, province, city ) values ( ?, ?, ?, ?, ?, ?, ? ) 
+12-07 14:47:09 ==> Parameters: 2(Integer), 陕西省西安市超神学院(String), true(Boolean), 17612383232(String), 小明(String), 2898(String), 2899(String)
+12-07 14:47:09 <==    Updates: 1
+12-07 14:47:10 ==>  Preparing: select * from address where uid = ? 
+12-07 14:47:10 ==> Parameters: 2(Integer)
+12-07 14:47:10 <==      Total: 1
+12-07 14:47:10 ==>  Preparing: select * from view_car_goods where uid = ?; 
+12-07 14:47:10 ==> Parameters: 2(Integer)
+12-07 14:47:10 <==      Total: 1
+12-07 14:47:19 ==>  Preparing: select * from view_car_goods where uid = ?; 
+12-07 14:47:19 ==> Parameters: 2(Integer)
+12-07 14:47:19 <==      Total: 1
+12-07 14:47:19 Opening JDBC Connection
+12-07 14:47:19 Created connection 1376435141.
+12-07 14:47:19 Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@520abbc5]
+12-07 14:47:19 ==>  Preparing: insert into orders ( oid, uid, sum, address ) values ( ?, ?, ?, ? ) 
+12-07 14:47:19 ==> Parameters: 20171207144719(String), 2(Integer), 10464.0(Double), java.io.StringReader@7d535e3d(StringReader)
+12-07 14:47:19 <==    Updates: 1
+12-07 14:47:19 ==>  Preparing: insert into orderform ( oid, gid, gnum, SubTotal, descption, uid ) values ( ?, ?, ?, ?, ?, ? ) 
+12-07 14:47:19 ==> Parameters: 20171207144719(String), 1(Integer), 3(Integer), 10464.0(Double), [{"颜色" : "钻雕金","套餐类型" : "官方标配"}](String), 2(Integer)
+12-07 14:47:19 <==    Updates: 1
+12-07 14:47:19 ==>  Preparing: update goods SET gname = ?, tid = ?, price = ?, descption = ?, imgPath = ?, filePath = ?, stock = ? where gid = ? 
+12-07 14:47:19 ==> Parameters: Huawei/华为 P10全网通手机(String), 2(Integer), 3488.0(Double), [ {
+  "网络类型" : "4G全网通",
+  "机身颜色" : "钻雕金,钻雕蓝,草木绿,曜石黑,玫瑰金",
+  "套餐类型" : "官方标配,套餐一,套餐二,套餐三,套餐四,套餐五",
+  "存储容量" : "64GB,128GB",
+  "购买方式" : "裸机",
+  "版本" : "Mate 10,Mate 10 62G+128G,麦芒6,P10,畅享7"
+} ](String), goods/huawei_1/P10.jpg(String), goods/huawei_1/img/(String), 9600(Integer), 1(Integer)
+12-07 14:47:19 <==    Updates: 1
+12-07 14:47:19 ==>  Preparing: delete from shoppingcar where cid = ? 
+12-07 14:47:19 ==> Parameters: 115(Integer)
+12-07 14:47:19 <==    Updates: 1
+12-07 14:47:19 Committing JDBC Connection [com.mysql.jdbc.JDBC4Connection@520abbc5]
+12-07 14:47:19 添加新订单(20171207144719)：{
+  "oid" : "20171207144719",
+  "uid" : 2,
+  "state" : "待付款",
+  "sum" : 10464.0,
+  "address" : "陕西省西安市超神学院"
+}
+12-07 14:47:19 订单详情(20171207144719)：[ {
+  "oid" : "20171207144719",
+  "gid" : 1,
+  "gnum" : 3,
+  "subtotal" : 10464.0,
+  "descption" : "[{\"颜色\" : \"钻雕金\",\"套餐类型\" : \"官方标配\"}]",
+  "uid" : 2
+} ]
+12-07 14:47:19 ==>  Preparing: select * from view_order_goods where oid = ? and uid = ?; 
+12-07 14:47:19 ==> Parameters: 20171207144719(String), 2(Integer)
+12-07 14:47:19 <==      Total: 1
+12-07 14:47:25 20171207144719--订单付款！
+12-07 14:47:25 ==>  Preparing: update orders set state = "已付款" where oid = ? and uid = ? 
+12-07 14:47:25 ==> Parameters: 20171207144719(Long), 2(Integer)
+12-07 14:47:25 <==    Updates: 1
+12-07 14:47:25 Committing JDBC Connection [com.mysql.jdbc.JDBC4Connection@520abbc5]
+12-07 14:47:30 ==>  Preparing: select * from address where uid = ? 
+12-07 14:47:30 ==> Parameters: 2(Integer)
+12-07 14:47:30 <==      Total: 1
+12-07 14:47:35 ==>  Preparing: insert into orders ( oid, uid, state, sum, address ) values ( ?, ?, ?, ?, ? ) 
+12-07 14:47:35 ==> Parameters: 20171207144730(String), 2(Integer), 已付款(String), 10464.0(Double), java.io.StringReader@7bba5137(StringReader)
+12-07 14:47:35 <==    Updates: 1
+12-07 14:47:35 ==>  Preparing: insert into orderform ( oid, gid, gnum, SubTotal, descption, uid ) values ( ?, ?, ?, ?, ?, ? ) 
+12-07 14:47:35 ==> Parameters: 20171207144730(String), 1(Integer), 3(Integer), 10464.0(Double), [{"颜色" : "钻雕金","套餐类型" : "官方标配"}](String), 2(Integer)
+12-07 14:47:35 <==    Updates: 1
+12-07 14:47:35 ==>  Preparing: update goods SET gname = ?, tid = ?, price = ?, descption = ?, imgPath = ?, filePath = ?, stock = ? where gid = ? 
+12-07 14:47:35 ==> Parameters: Huawei/华为 P10全网通手机(String), 2(Integer), 3488.0(Double), [ {
+  "网络类型" : "4G全网通",
+  "机身颜色" : "钻雕金,钻雕蓝,草木绿,曜石黑,玫瑰金",
+  "套餐类型" : "官方标配,套餐一,套餐二,套餐三,套餐四,套餐五",
+  "存储容量" : "64GB,128GB",
+  "购买方式" : "裸机",
+  "版本" : "Mate 10,Mate 10 62G+128G,麦芒6,P10,畅享7"
+} ](String), goods/huawei_1/P10.jpg(String), goods/huawei_1/img/(String), 9597(Integer), 1(Integer)
+12-07 14:47:35 <==    Updates: 1
+12-07 14:47:35 Committing JDBC Connection [com.mysql.jdbc.JDBC4Connection@520abbc5]
+12-07 14:47:35 添加新订单(20171207144730)：{
+  "oid" : "20171207144730",
+  "uid" : 2,
+  "state" : "已付款",
+  "sum" : 10464.0,
+  "address" : "陕西省西安市超神学院"
+}
+12-07 14:47:35 订单详情(20171207144730)：{
+  "oid" : "20171207144730",
+  "gid" : 1,
+  "gnum" : 3,
+  "subtotal" : 10464.0,
+  "descption" : "[{\"颜色\" : \"钻雕金\",\"套餐类型\" : \"官方标配\"}]",
+  "uid" : 2
+}
+12-07 14:47:37 ==>  Preparing: select oid,state,address,sum,uid from view_order_goods where uid = ? group by oid 
+12-07 14:47:37 ==> Parameters: 2(Integer)
+12-07 14:47:37 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171207144719 and uid = 2 
+12-07 14:47:37 ====> Parameters: 
+12-07 14:47:37 <====      Total: 1
+12-07 14:47:37 ====>  Preparing: select gid,gname,tid,gnum,subtotal,price,imgPath,descption from view_order_goods where oid = 20171207144730 and uid = 2 
+12-07 14:47:37 ====> Parameters: 
+12-07 14:47:37 <====      Total: 1
+12-07 14:47:37 <==      Total: 2
+12-07 14:47:49 ==>  Preparing: select * from address where uid = ? 
+12-07 14:47:49 ==> Parameters: 2(Integer)
+12-07 14:47:49 <==      Total: 1
+12-07 14:47:49 ==>  Preparing: select * from view_car_goods where uid = ?; 
+12-07 14:47:49 ==> Parameters: 2(Integer)
+12-07 14:47:49 <==      Total: 0
+12-07 14:47:56 ==>  Preparing: select * from address where uid = ? 
+12-07 14:47:56 ==> Parameters: 2(Integer)
+12-07 14:47:56 <==      Total: 1
+12-07 14:47:56 ==>  Preparing: select * from view_car_goods where uid = ?; 
+12-07 14:47:56 ==> Parameters: 2(Integer)
+12-07 14:47:56 <==      Total: 0
+12-07 14:48:01 ==>  Preparing: select * from address where uid = ? 
+12-07 14:48:01 ==> Parameters: 2(Integer)
+12-07 14:48:01 <==      Total: 1
+12-07 14:48:01 ==>  Preparing: select * from view_car_goods where uid = ?; 
+12-07 14:48:01 ==> Parameters: 2(Integer)
+12-07 14:48:01 <==      Total: 0
+12-07 14:48:28 ==>  Preparing: select * from address where uid = ? 
+12-07 14:48:28 ==> Parameters: 2(Integer)
+12-07 14:48:28 <==      Total: 1
+12-07 14:48:28 ==>  Preparing: select * from view_car_goods where uid = ?; 
+12-07 14:48:28 ==> Parameters: 2(Integer)
+12-07 14:48:28 <==      Total: 0
+12-07 14:51:24 ==>  Preparing: select * from address where uid = ? 
+12-07 14:51:24 ==> Parameters: 2(Integer)
+12-07 14:51:24 <==      Total: 1
+12-07 14:51:24 ==>  Preparing: select * from view_car_goods where uid = ?; 
+12-07 14:51:24 ==> Parameters: 2(Integer)
+12-07 14:51:24 <==      Total: 0
+12-07 14:51:33 ==>  Preparing: select * from address where uid = ? 
+12-07 14:51:33 ==> Parameters: 2(Integer)
+12-07 14:51:33 <==      Total: 1
+12-07 14:51:33 ==>  Preparing: select * from view_car_goods where uid = ?; 
+12-07 14:51:33 ==> Parameters: 2(Integer)
+12-07 14:51:33 <==      Total: 0
+12-07 14:51:55 ==>  Preparing: SELECT * FROM users WHERE uname = ? and upwd = ? 
+12-07 14:51:55 ==> Parameters: xiaoming(String), 123(String)
+12-07 14:51:55 <==    Columns: uid, uname, upwd, phone, city, regDate, idCard, realName, age, email, sex, avatar
+12-07 14:51:55 <==        Row: 2, xiaoming, 123, 18899119292, 西安市, 2017-11-11, deasdc38faib2ecasd, 小明, 22, 6pasd9tenbgdy@qq.com, 男, <<BLOB>>
+12-07 14:51:55 <==      Total: 1
+12-07 14:51:55 ==>  Preparing: SELECT COUNT(1) FROM shoppingcar WHERE uid = ?; 
+12-07 14:51:55 ==> Parameters: 2(Integer)
+12-07 14:51:55 <==      Total: 1
+12-07 14:51:57 ==>  Preparing: select * from address where uid = ? 
+12-07 14:51:57 ==> Parameters: 2(Integer)
+12-07 14:51:57 <==      Total: 1
+12-07 14:51:57 ==>  Preparing: select * from view_car_goods where uid = ?; 
+12-07 14:51:57 ==> Parameters: 2(Integer)
+12-07 14:51:57 <==      Total: 0
+12-07 14:55:06 Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+12-07 14:55:07 PooledDataSource forcefully closed/removed all connections.
+12-07 14:55:07 PooledDataSource forcefully closed/removed all connections.
+12-07 14:55:07 PooledDataSource forcefully closed/removed all connections.
+12-07 14:55:07 PooledDataSource forcefully closed/removed all connections.
+12-07 14:55:07 Opening JDBC Connection
+12-07 14:55:08 Created connection 1816158189.
+12-07 14:55:08 Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@6c405fed]
+12-07 14:55:08 ==>  Preparing: insert into qrcheck ( uuid, status ) values ( ?, ? ) 
+12-07 14:55:08 ==> Parameters: 20171207145506508AC00471114BF4EBAA9E6A87E240263C9(String), 0(Integer)
+12-07 14:55:08 <==    Updates: 1
+12-07 14:55:08 ==>  Preparing: select * from qrcheck where uuid = ? 
+12-07 14:55:08 ==> Parameters: 20171207145506508AC00471114BF4EBAA9E6A87E240263C9(String)
+12-07 14:55:08 <==      Total: 1
+12-07 14:55:47 Opening JDBC Connection
+12-07 14:55:47 Created connection 1922035439.
+12-07 14:55:47 Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@728feeef]
+12-07 14:55:47 ==>  Preparing: SELECT * FROM users WHERE uname = ? and upwd = ? 
+12-07 14:55:47 ==> Parameters: xiaoming(String), 123(String)
+12-07 14:55:47 <==    Columns: uid, uname, upwd, phone, city, regDate, idCard, realName, age, email, sex, avatar
+12-07 14:55:47 <==        Row: 2, xiaoming, 123, 18899119292, 西安市, 2017-11-11, deasdc38faib2ecasd, 小明, 22, 6pasd9tenbgdy@qq.com, 男, <<BLOB>>
+12-07 14:55:47 <==      Total: 1
+12-07 14:55:47 Opening JDBC Connection
+12-07 14:55:47 Created connection 1887256548.
+12-07 14:55:47 Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@707d3fe4]
+12-07 14:55:47 ==>  Preparing: SELECT COUNT(1) FROM shoppingcar WHERE uid = ?; 
+12-07 14:55:47 ==> Parameters: 2(Integer)
+12-07 14:55:47 <==      Total: 1
+12-07 14:55:49 ==>  Preparing: SELECT COUNT(1) FROM shoppingcar WHERE uid = ?; 
+12-07 14:55:49 ==> Parameters: 2(Integer)
+12-07 14:55:49 <==      Total: 1
+12-07 14:55:49 Opening JDBC Connection
+12-07 14:55:49 Created connection 1538472156.
+12-07 14:55:49 Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@5bb338dc]
+12-07 14:55:49 ==>  Preparing: select gid, gname, tid, price, descption, imgPath, filePath, stock from goods where gid = ? 
+12-07 14:55:49 ==> Parameters: 1(Integer)
+12-07 14:55:49 <==      Total: 1
+12-07 14:55:53 ==>  Preparing: SELECT COUNT(1) FROM shoppingcar WHERE uid = ?; 
+12-07 14:55:53 ==> Parameters: 2(Integer)
+12-07 14:55:53 <==      Total: 1
+12-07 14:55:53 ==>  Preparing: select * from address where uid = ? 
+12-07 14:55:53 ==> Parameters: 2(Integer)
+12-07 14:55:53 <==      Total: 1
+12-07 14:55:59 ==>  Preparing: SELECT COUNT(1) FROM shoppingcar WHERE uid = ?; 
+12-07 14:55:59 ==> Parameters: 2(Integer)
+12-07 14:55:59 <==      Total: 1
+12-07 14:55:59 Opening JDBC Connection
+12-07 14:55:59 Created connection 1413996436.
+12-07 14:55:59 Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@5447df94]
+12-07 14:55:59 ==>  Preparing: insert into orders ( oid, uid, state, sum, address ) values ( ?, ?, ?, ?, ? ) 
+12-07 14:55:59 ==> Parameters: 20171207145553(String), 2(Integer), 已付款(String), 6976.0(Double), java.io.StringReader@6922dac0(StringReader)
+12-07 14:55:59 <==    Updates: 1
+12-07 14:55:59 ==>  Preparing: insert into orderform ( oid, gid, gnum, SubTotal, descption, uid ) values ( ?, ?, ?, ?, ?, ? ) 
+12-07 14:55:59 ==> Parameters: 20171207145553(String), 1(Integer), 2(Integer), 6976.0(Double), [{"颜色" : "钻雕金","套餐类型" : "官方标配"}](String), 2(Integer)
+12-07 14:55:59 <==    Updates: 1
+12-07 14:55:59 ==>  Preparing: update goods SET gname = ?, tid = ?, price = ?, descption = ?, imgPath = ?, filePath = ?, stock = ? where gid = ? 
+12-07 14:55:59 ==> Parameters: Huawei/华为 P10全网通手机(String), 2(Integer), 3488.0(Double), [ {
+  "网络类型" : "4G全网通",
+  "机身颜色" : "钻雕金,钻雕蓝,草木绿,曜石黑,玫瑰金",
+  "套餐类型" : "官方标配,套餐一,套餐二,套餐三,套餐四,套餐五",
+  "存储容量" : "64GB,128GB",
+  "购买方式" : "裸机",
+  "版本" : "Mate 10,Mate 10 62G+128G,麦芒6,P10,畅享7"
+} ](String), goods/huawei_1/P10.jpg(String), goods/huawei_1/img/(String), 9595(Integer), 1(Integer)
+12-07 14:55:59 <==    Updates: 1
+12-07 14:55:59 Committing JDBC Connection [com.mysql.jdbc.JDBC4Connection@5447df94]
+12-07 14:55:59 添加新订单(20171207145553)：{
+  "oid" : "20171207145553",
+  "uid" : 2,
+  "state" : "已付款",
+  "sum" : 6976.0,
+  "address" : "陕西省西安市超神学院"
+}
+12-07 14:55:59 订单详情(20171207145553)：{
+  "oid" : "20171207145553",
+  "gid" : 1,
+  "gnum" : 2,
+  "subtotal" : 6976.0,
+  "descption" : "[{\"颜色\" : \"钻雕金\",\"套餐类型\" : \"官方标配\"}]",
+  "uid" : 2
+}
+12-07 14:56:01 ==>  Preparing: SELECT COUNT(1) FROM shoppingcar WHERE uid = ?; 
+12-07 14:56:01 ==> Parameters: 2(Integer)
+12-07 14:56:01 <==      Total: 1
+12-07 14:56:01 ==>  Preparing: select gid, gname, tid, price, descption, imgPath, filePath, stock from goods where gid = ? 
+12-07 14:56:01 ==> Parameters: 2(Integer)
+12-07 14:56:01 <==      Total: 1
+12-07 14:56:04 ==>  Preparing: SELECT COUNT(1) FROM shoppingcar WHERE uid = ?; 
+12-07 14:56:04 ==> Parameters: 2(Integer)
+12-07 14:56:04 <==      Total: 1
+12-07 14:56:04 ==>  Preparing: select cid, addGoodsTime, uid, gid, gnum, descption from shoppingcar where uid = ? and gid = ? 
+12-07 14:56:04 ==> Parameters: 2(Integer), 2(Integer)
+12-07 14:56:04 <==      Total: 0
+12-07 14:56:04 ==>  Preparing: insert into shoppingcar ( addGoodsTime, uid, gid, gnum, descption ) values ( ?, ?, ?, ?, ? ) 
+12-07 14:56:04 ==> Parameters: 2017-12-07 14:56:04.577(Timestamp), 2(Integer), 2(Integer), 3(Integer), [{"颜色" : "钻雕金","套餐类型" : "官方标配"}](String)
+12-07 14:56:04 <==    Updates: 1
+12-07 14:56:04 ==>  Preparing: SELECT COUNT(1) FROM shoppingcar WHERE uid = ?; 
+12-07 14:56:04 ==> Parameters: 2(Integer)
+12-07 14:56:04 <==      Total: 1
+12-07 14:56:11 ==>  Preparing: SELECT COUNT(1) FROM shoppingcar WHERE uid = ?; 
+12-07 14:56:11 ==> Parameters: 2(Integer)
+12-07 14:56:11 <==      Total: 1
+12-07 14:56:15 ==>  Preparing: SELECT COUNT(1) FROM shoppingcar WHERE uid = ?; 
+12-07 14:56:15 ==> Parameters: 2(Integer)
+12-07 14:56:15 <==      Total: 1
+12-07 14:56:15 ==>  Preparing: select cid, addGoodsTime, uid, gid, gnum, descption from shoppingcar where uid = ? and gid = ? 
+12-07 14:56:15 ==> Parameters: 2(Integer), 1(Integer)
+12-07 14:56:15 <==      Total: 0
+12-07 14:56:15 ==>  Preparing: insert into shoppingcar ( addGoodsTime, uid, gid, gnum, descption ) values ( ?, ?, ?, ?, ? ) 
+12-07 14:56:15 ==> Parameters: 2017-12-07 14:56:15.019(Timestamp), 2(Integer), 1(Integer), 3(Integer), [{"颜色" : "钻雕金","套餐类型" : "官方标配"}](String)
+12-07 14:56:15 <==    Updates: 1
+12-07 14:56:15 ==>  Preparing: SELECT COUNT(1) FROM shoppingcar WHERE uid = ?; 
+12-07 14:56:15 ==> Parameters: 2(Integer)
+12-07 14:56:15 <==      Total: 1
+12-07 14:56:17 ==>  Preparing: SELECT COUNT(1) FROM shoppingcar WHERE uid = ?; 
+12-07 14:56:17 ==> Parameters: 2(Integer)
+12-07 14:56:17 <==      Total: 1
+12-07 14:56:17 ==>  Preparing: select * from address where uid = ? 
+12-07 14:56:17 ==> Parameters: 2(Integer)
+12-07 14:56:17 <==      Total: 1
+12-07 14:56:17 ==>  Preparing: select * from view_car_goods where uid = ?; 
+12-07 14:56:17 ==> Parameters: 2(Integer)
+12-07 14:56:17 <==      Total: 2
+12-07 14:56:28 ==>  Preparing: SELECT COUNT(1) FROM shoppingcar WHERE uid = ?; 
+12-07 14:56:28 ==> Parameters: 2(Integer)
+12-07 14:56:28 <==      Total: 1
+12-07 14:56:28 ==>  Preparing: select * from view_car_goods where uid = ?; 
+12-07 14:56:28 ==> Parameters: 2(Integer)
+12-07 14:56:28 <==      Total: 2
+12-07 14:56:28 ==>  Preparing: insert into orders ( oid, uid, sum, address ) values ( ?, ?, ?, ? ) 
+12-07 14:56:28 ==> Parameters: 20171207145628(String), 2(Integer), 13464.0(Double), java.io.StringReader@5e1e2fc4(StringReader)
+12-07 14:56:28 <==    Updates: 1
+12-07 14:56:28 ==>  Preparing: insert into orderform ( oid, gid, gnum, SubTotal, descption, uid ) values ( ?, ?, ?, ?, ?, ? ) 
+12-07 14:56:28 ==> Parameters: 20171207145628(String), 1(Integer), 3(Integer), 10464.0(Double), [{"颜色" : "钻雕金","套餐类型" : "官方标配"}](String), 2(Integer)
+12-07 14:56:28 <==    Updates: 1
+12-07 14:56:28 ==>  Preparing: update goods SET gname = ?, tid = ?, price = ?, descption = ?, imgPath = ?, filePath = ?, stock = ? where gid = ? 
+12-07 14:56:28 ==> Parameters: Huawei/华为 P10全网通手机(String), 2(Integer), 3488.0(Double), [ {
+  "网络类型" : "4G全网通",
+  "机身颜色" : "钻雕金,钻雕蓝,草木绿,曜石黑,玫瑰金",
+  "套餐类型" : "官方标配,套餐一,套餐二,套餐三,套餐四,套餐五",
+  "存储容量" : "64GB,128GB",
+  "购买方式" : "裸机",
+  "版本" : "Mate 10,Mate 10 62G+128G,麦芒6,P10,畅享7"
+} ](String), goods/huawei_1/P10.jpg(String), goods/huawei_1/img/(String), 9592(Integer), 1(Integer)
+12-07 14:56:28 <==    Updates: 1
+12-07 14:56:28 ==>  Preparing: insert into orderform ( oid, gid, gnum, SubTotal, descption, uid ) values ( ?, ?, ?, ?, ?, ? ) 
+12-07 14:56:28 ==> Parameters: 20171207145628(String), 2(Integer), 3(Integer), 3000.0(Double), [{"颜色" : "钻雕金","套餐类型" : "官方标配"}](String), 2(Integer)
+12-07 14:56:28 <==    Updates: 1
+12-07 14:56:28 ==>  Preparing: update goods SET gname = ?, tid = ?, price = ?, descption = ?, imgPath = ?, filePath = ?, stock = ? where gid = ? 
+12-07 14:56:28 ==> Parameters: 小米6(String), 2(Integer), 1000.0(Double), [ {
+  "网络类型" : "4G全网通",
+  "机身颜色" : "钻雕金,钻雕蓝,草木绿,曜石黑,玫瑰金",
+  "套餐类型" : "官方标配,套餐一,套餐二,套餐三,套餐四,套餐五",
+  "存储容量" : "64GB,128GB",
+  "购买方式" : "裸机",
+  "版本" : "小米6"
+} ](String), goods/xiaomi_6/6.jpg(String), goods/xiaomi_6/img/(String), 9980(Integer), 2(Integer)
+12-07 14:56:28 <==    Updates: 1
+12-07 14:56:28 ==>  Preparing: delete from shoppingcar where cid = ? 
+12-07 14:56:28 ==> Parameters: 117(Integer)
+12-07 14:56:28 <==    Updates: 1
+12-07 14:56:28 ==>  Preparing: delete from shoppingcar where cid = ? 
+12-07 14:56:28 ==> Parameters: 116(Integer)
+12-07 14:56:28 <==    Updates: 1
+12-07 14:56:28 Committing JDBC Connection [com.mysql.jdbc.JDBC4Connection@5447df94]
+12-07 14:56:28 添加新订单(20171207145628)：{
+  "oid" : "20171207145628",
+  "uid" : 2,
+  "state" : "待付款",
+  "sum" : 13464.0,
+  "address" : "陕西省西安市超神学院"
+}
+12-07 14:56:28 订单详情(20171207145628)：[ {
+  "oid" : "20171207145628",
+  "gid" : 1,
+  "gnum" : 3,
+  "subtotal" : 10464.0,
+  "descption" : "[{\"颜色\" : \"钻雕金\",\"套餐类型\" : \"官方标配\"}]",
+  "uid" : 2
+}, {
+  "oid" : "20171207145628",
+  "gid" : 2,
+  "gnum" : 3,
+  "subtotal" : 3000.0,
+  "descption" : "[{\"颜色\" : \"钻雕金\",\"套餐类型\" : \"官方标配\"}]",
+  "uid" : 2
+} ]
+12-07 14:56:28 ==>  Preparing: select * from view_order_goods where oid = ? and uid = ?; 
+12-07 14:56:28 ==> Parameters: 20171207145628(String), 2(Integer)
+12-07 14:56:28 <==      Total: 2
+12-07 14:56:33 ==>  Preparing: SELECT COUNT(1) FROM shoppingcar WHERE uid = ?; 
+12-07 14:56:33 ==> Parameters: 2(Integer)
+12-07 14:56:33 <==      Total: 1
+12-07 14:56:33 20171207145628--订单付款！
+12-07 14:56:33 ==>  Preparing: update orders set state = "已付款" where oid = ? and uid = ? 
+12-07 14:56:33 ==> Parameters: 20171207145628(Long), 2(Integer)
+12-07 14:56:33 <==    Updates: 1
+12-07 14:56:33 Committing JDBC Connection [com.mysql.jdbc.JDBC4Connection@5447df94]
+12-07 14:56:36 ==>  Preparing: SELECT COUNT(1) FROM shoppingcar WHERE uid = ?; 
+12-07 14:56:36 ==> Parameters: 2(Integer)
+12-07 14:56:36 <==      Total: 1
+12-07 14:57:31 20171207145731617
+12-07 14:57:31 接收：4601213
+保存为：---->4601213_date_20171207145731628.jpg
+12-07 14:59:12 ==>  Preparing: insert into users (uid, uname, upwd, phone, city, regDate, idCard, realName, age, email, sex, avatar ) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ? ) 
+12-07 14:59:12 ==> Parameters: null, mycount2017(String), cc123cc123(String), 19888921352(String), 西安超神学院(String), 2017-12-07(Date), 610425195607123215(String), 路飞(String), 22(Integer), 31212312@qq.com(String), 男(String), java.io.StringReader@66e7727d(StringReader)
+12-07 14:59:12 <==    Updates: 1
+12-07 14:59:12 新用户注册：mycount2017
+12-07 15:11:27 Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+12-07 15:11:27 PooledDataSource forcefully closed/removed all connections.
+12-07 15:11:27 PooledDataSource forcefully closed/removed all connections.
+12-07 15:11:27 PooledDataSource forcefully closed/removed all connections.
+12-07 15:11:27 PooledDataSource forcefully closed/removed all connections.
+12-07 15:11:28 Opening JDBC Connection
+12-07 15:11:28 Created connection 1597688217.
+12-07 15:11:28 Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@5f3ac999]
+12-07 15:11:28 ==>  Preparing: insert into qrcheck ( uuid, status ) values ( ?, ? ) 
+12-07 15:11:28 ==> Parameters: 2017120715112782D5083C22D4B843D3ADB7CBB8071A1079(String), 0(Integer)
+12-07 15:11:28 <==    Updates: 1
+12-07 15:11:29 ==>  Preparing: select * from qrcheck where uuid = ? 
+12-07 15:11:29 ==> Parameters: 2017120715112782D5083C22D4B843D3ADB7CBB8071A1079(String)
+12-07 15:11:29 <==      Total: 1
+12-07 15:54:45 Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+12-07 15:54:45 PooledDataSource forcefully closed/removed all connections.
+12-07 15:54:45 PooledDataSource forcefully closed/removed all connections.
+12-07 15:54:45 PooledDataSource forcefully closed/removed all connections.
+12-07 15:54:45 PooledDataSource forcefully closed/removed all connections.
+12-07 15:54:45 Opening JDBC Connection
+12-07 15:54:46 Created connection 846662871.
+12-07 15:54:46 Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@32770cd7]
+12-07 15:54:46 ==>  Preparing: SELECT * FROM users WHERE uname = ? and upwd = ? 
+12-07 15:54:46 ==> Parameters: xiaoming(String), 123(String)
+12-07 15:54:46 <==    Columns: uid, uname, upwd, phone, city, regDate, idCard, realName, age, email, sex, avatar
+12-07 15:54:46 <==        Row: 2, xiaoming, 123, 18899119292, 西安市, 2017-11-11, deasdc38faib2ecasd, 小明, 22, 6pasd9tenbgdy@qq.com, 男, <<BLOB>>
+12-07 15:54:46 <==      Total: 1
+12-07 15:54:46 Opening JDBC Connection
+12-07 15:54:46 Created connection 1326629538.
+12-07 15:54:46 Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@4f12c2a2]
+12-07 15:54:46 ==>  Preparing: SELECT COUNT(1) FROM shoppingcar WHERE uid = ?; 
+12-07 15:54:46 ==> Parameters: 2(Integer)
+12-07 15:54:46 <==      Total: 1
+12-07 15:54:47 ==>  Preparing: SELECT COUNT(1) FROM shoppingcar WHERE uid = ?; 
+12-07 15:54:47 ==> Parameters: 2(Integer)
+12-07 15:54:47 <==      Total: 1
+12-07 15:54:47 Opening JDBC Connection
+12-07 15:54:48 Created connection 382846881.
+12-07 15:54:48 Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@16d1c7a1]
+12-07 15:54:48 ==>  Preparing: select gid, gname, tid, price, descption, imgPath, filePath, stock from goods where gid = ? 
+12-07 15:54:48 ==> Parameters: 1(Integer)
+12-07 15:54:48 <==      Total: 1
+12-07 15:54:50 ==>  Preparing: SELECT COUNT(1) FROM shoppingcar WHERE uid = ?; 
+12-07 15:54:50 ==> Parameters: 2(Integer)
+12-07 15:54:50 <==      Total: 1
+12-07 15:54:50 ==>  Preparing: select * from address where uid = ? 
+12-07 15:54:50 ==> Parameters: 2(Integer)
+12-07 15:54:50 <==      Total: 1
+12-07 15:54:55 ==>  Preparing: SELECT COUNT(1) FROM shoppingcar WHERE uid = ?; 
+12-07 15:54:55 ==> Parameters: 2(Integer)
+12-07 15:54:55 <==      Total: 1
+12-07 15:54:55 Opening JDBC Connection
+12-07 15:54:55 Created connection 1237656688.
+12-07 15:54:55 Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@49c52470]
+12-07 15:54:55 ==>  Preparing: insert into orders ( oid, uid, state, sum, address ) values ( ?, ?, ?, ?, ? ) 
+12-07 15:54:55 ==> Parameters: 20171207155450(String), 2(Integer), 已付款(String), 3488.0(Double), java.io.StringReader@4caa7be8(StringReader)
+12-07 15:54:55 <==    Updates: 1
+12-07 15:54:55 ==>  Preparing: insert into orderform ( oid, gid, gnum, SubTotal, descption, uid ) values ( ?, ?, ?, ?, ?, ? ) 
+12-07 15:54:55 ==> Parameters: 20171207155450(String), 1(Integer), 1(Integer), 3488.0(Double), [{"颜色" : "钻雕金","套餐类型" : "官方标配"}](String), 2(Integer)
+12-07 15:54:55 <==    Updates: 1
+12-07 15:54:55 ==>  Preparing: update goods SET gname = ?, tid = ?, price = ?, descption = ?, imgPath = ?, filePath = ?, stock = ? where gid = ? 
+12-07 15:54:55 ==> Parameters: Huawei/华为 P10全网通手机(String), 2(Integer), 3488.0(Double),  {  "网络类型" : "4G全网通",  "机身颜色" : "钻雕金,钻雕蓝,草木绿,曜石黑,玫瑰金",  "套餐类型" : "官方标配,套餐一,套餐二,套餐三,套餐四,套餐五",  "存储容量" : "64GB,128GB",  "购买方式" : "裸机",  "版本" : "Mate 10,Mate 10 62G+128G,麦芒6,P10,畅享7"} (String), goods/huawei_1/P10.jpg(String), goods/huawei_1/img/(String), 9591(Integer), 1(Integer)
+12-07 15:54:55 <==    Updates: 1
+12-07 15:54:55 Committing JDBC Connection [com.mysql.jdbc.JDBC4Connection@49c52470]
+12-07 15:54:55 添加新订单(20171207155450)：{
+  "oid" : "20171207155450",
+  "uid" : 2,
+  "state" : "已付款",
+  "sum" : 3488.0,
+  "address" : "陕西省西安市超神学院"
+}
+12-07 15:54:55 订单详情(20171207155450)：{
+  "oid" : "20171207155450",
+  "gid" : 1,
+  "gnum" : 1,
+  "subtotal" : 3488.0,
+  "descption" : "[{\"颜色\" : \"钻雕金\",\"套餐类型\" : \"官方标配\"}]",
+  "uid" : 2
+}
+12-08 10:39:49 Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+12-08 10:39:50 PooledDataSource forcefully closed/removed all connections.
+12-08 10:39:50 PooledDataSource forcefully closed/removed all connections.
+12-08 10:39:50 PooledDataSource forcefully closed/removed all connections.
+12-08 10:39:50 PooledDataSource forcefully closed/removed all connections.
+12-08 10:39:50 Opening JDBC Connection
+12-08 10:39:51 Opening JDBC Connection
+12-08 10:39:53 
+### Error querying database.  Cause: java.lang.ClassCastException: org.apache.ibatis.executor.ExecutionPlaceholder cannot be cast to java.util.List
+### The error may exist in com/mod/mapper/QrcheckMapper.java (best guess)
+### The error may involve com.mod.mapper.QrcheckMapper.selectByUUID
+### The error occurred while executing a query
+### Cause: java.lang.ClassCastException: org.apache.ibatis.executor.ExecutionPlaceholder cannot be cast to java.util.List
+12-08 10:39:55 
+### Error querying database.  Cause: java.lang.ClassCastException: org.apache.ibatis.executor.ExecutionPlaceholder cannot be cast to java.util.List
+### The error may exist in com/mod/mapper/QrcheckMapper.java (best guess)
+### The error may involve com.mod.mapper.QrcheckMapper.selectByUUID
+### The error occurred while executing a query
+### Cause: java.lang.ClassCastException: org.apache.ibatis.executor.ExecutionPlaceholder cannot be cast to java.util.List
+12-08 10:39:57 
+### Error querying database.  Cause: java.lang.ClassCastException: org.apache.ibatis.executor.ExecutionPlaceholder cannot be cast to java.util.List
+### The error may exist in com/mod/mapper/QrcheckMapper.java (best guess)
+### The error may involve com.mod.mapper.QrcheckMapper.selectByUUID
+### The error occurred while executing a query
+### Cause: java.lang.ClassCastException: org.apache.ibatis.executor.ExecutionPlaceholder cannot be cast to java.util.List
+12-08 10:39:58 
+### Error querying database.  Cause: com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+Last packet sent to the server was 0 ms ago.
+### The error may exist in com/mod/mapper/QrcheckMapper.java (best guess)
+### The error may involve com.mod.mapper.QrcheckMapper.selectByUUID
+### The error occurred while executing a query
+### Cause: com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+Last packet sent to the server was 0 ms ago.
+12-08 10:39:59 Opening JDBC Connection
+12-08 10:40:01 
+### Error querying database.  Cause: java.lang.ClassCastException: org.apache.ibatis.executor.ExecutionPlaceholder cannot be cast to java.util.List
+### The error may exist in com/mod/mapper/QrcheckMapper.java (best guess)
+### The error may involve com.mod.mapper.QrcheckMapper.selectByUUID
+### The error occurred while executing a query
+### Cause: java.lang.ClassCastException: org.apache.ibatis.executor.ExecutionPlaceholder cannot be cast to java.util.List
+12-08 10:40:03 
+### Error querying database.  Cause: java.lang.ClassCastException: org.apache.ibatis.executor.ExecutionPlaceholder cannot be cast to java.util.List
+### The error may exist in com/mod/mapper/QrcheckMapper.java (best guess)
+### The error may involve com.mod.mapper.QrcheckMapper.selectByUUID
+### The error occurred while executing a query
+### Cause: java.lang.ClassCastException: org.apache.ibatis.executor.ExecutionPlaceholder cannot be cast to java.util.List
+12-08 10:40:03 
+### Error querying database.  Cause: com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+Last packet sent to the server was 0 ms ago.
+### The error may exist in com/mod/mapper/QrcheckMapper.java (best guess)
+### The error may involve com.mod.mapper.QrcheckMapper.selectByUUID
+### The error occurred while executing a query
+### Cause: com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+Last packet sent to the server was 0 ms ago.
+12-08 10:40:05 Opening JDBC Connection
+12-08 10:40:07 
+### Error querying database.  Cause: java.lang.ClassCastException: org.apache.ibatis.executor.ExecutionPlaceholder cannot be cast to java.util.List
+### The error may exist in com/mod/mapper/QrcheckMapper.java (best guess)
+### The error may involve com.mod.mapper.QrcheckMapper.selectByUUID
+### The error occurred while executing a query
+### Cause: java.lang.ClassCastException: org.apache.ibatis.executor.ExecutionPlaceholder cannot be cast to java.util.List
+12-08 10:40:09 
+### Error querying database.  Cause: java.lang.ClassCastException: org.apache.ibatis.executor.ExecutionPlaceholder cannot be cast to java.util.List
+### The error may exist in com/mod/mapper/QrcheckMapper.java (best guess)
+### The error may involve com.mod.mapper.QrcheckMapper.selectByUUID
+### The error occurred while executing a query
+### Cause: java.lang.ClassCastException: org.apache.ibatis.executor.ExecutionPlaceholder cannot be cast to java.util.List
+12-08 10:40:09 
+### Error querying database.  Cause: com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+Last packet sent to the server was 0 ms ago.
+### The error may exist in com/mod/mapper/QrcheckMapper.java (best guess)
+### The error may involve com.mod.mapper.QrcheckMapper.selectByUUID
+### The error occurred while executing a query
+### Cause: com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+Last packet sent to the server was 0 ms ago.
+12-08 10:40:11 Opening JDBC Connection
+12-08 10:40:13 
+### Error querying database.  Cause: java.lang.ClassCastException: org.apache.ibatis.executor.ExecutionPlaceholder cannot be cast to java.util.List
+### The error may exist in com/mod/mapper/QrcheckMapper.java (best guess)
+### The error may involve com.mod.mapper.QrcheckMapper.selectByUUID
+### The error occurred while executing a query
+### Cause: java.lang.ClassCastException: org.apache.ibatis.executor.ExecutionPlaceholder cannot be cast to java.util.List
+12-08 10:40:15 
+### Error querying database.  Cause: com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+Last packet sent to the server was 0 ms ago.
+### The error may exist in com/mod/mapper/QrcheckMapper.java (best guess)
+### The error may involve com.mod.mapper.QrcheckMapper.selectByUUID
+### The error occurred while executing a query
+### Cause: com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+Last packet sent to the server was 0 ms ago.
+12-08 10:41:56 Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+12-08 10:41:56 PooledDataSource forcefully closed/removed all connections.
+12-08 10:41:56 PooledDataSource forcefully closed/removed all connections.
+12-08 10:41:56 PooledDataSource forcefully closed/removed all connections.
+12-08 10:41:56 PooledDataSource forcefully closed/removed all connections.
+12-08 10:41:57 Opening JDBC Connection
+12-08 10:41:57 Created connection 2135031040.
+12-08 10:41:57 Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@7f41fd00]
+12-08 10:41:57 ==>  Preparing: insert into qrcheck ( uuid, status ) values ( ?, ? ) 
+12-08 10:41:57 ==> Parameters: 2017120810415669B6FD3FC999B14DBD8310840DD662419B(String), 0(Integer)
+12-08 10:41:57 <==    Updates: 1
+12-08 10:41:58 ==>  Preparing: select * from qrcheck where uuid = ? 
+12-08 10:41:58 ==> Parameters: 2017120810415669B6FD3FC999B14DBD8310840DD662419B(String)
+12-08 10:41:58 <==      Total: 1
+12-08 10:42:06 ==>  Preparing: update qrcheck set status = ? where uuid = ? 
+12-08 10:42:07 ==> Parameters: 2(Integer), 2017120810415669B6FD3FC999B14DBD8310840DD662419B(String)
+12-08 10:42:07 <==    Updates: 1
+12-08 10:42:08 ==>  Preparing: select * from qrcheck where uuid = ? 
+12-08 10:42:08 ==> Parameters: 2017120810415669B6FD3FC999B14DBD8310840DD662419B(String)
+12-08 10:42:08 <==      Total: 1
+12-08 10:48:30 Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+12-08 10:48:30 PooledDataSource forcefully closed/removed all connections.
+12-08 10:48:30 PooledDataSource forcefully closed/removed all connections.
+12-08 10:48:30 PooledDataSource forcefully closed/removed all connections.
+12-08 10:48:30 PooledDataSource forcefully closed/removed all connections.
+12-08 10:48:31 Opening JDBC Connection
+12-08 10:48:31 Created connection 56621455.
+12-08 10:48:31 Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@35ff98f]
+12-08 10:48:31 ==>  Preparing: insert into qrcheck ( uuid, status ) values ( ?, ? ) 
+12-08 10:48:31 ==> Parameters: 2017120810483060383AEE93370040C0BDDE04391E333823(String), 0(Integer)
+12-08 10:48:31 <==    Updates: 1
+12-08 10:48:32 ==>  Preparing: select * from qrcheck where uuid = ? 
+12-08 10:48:32 ==> Parameters: 2017120810483060383AEE93370040C0BDDE04391E333823(String)
+12-08 10:48:32 <==      Total: 1
+12-13 16:35:26 Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+12-13 16:35:26 PooledDataSource forcefully closed/removed all connections.
+12-13 16:35:26 PooledDataSource forcefully closed/removed all connections.
+12-13 16:35:26 PooledDataSource forcefully closed/removed all connections.
+12-13 16:35:26 PooledDataSource forcefully closed/removed all connections.
+12-13 16:35:27 Opening JDBC Connection
+12-13 16:35:27 Created connection 675439651.
+12-13 16:35:27 Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@28426423]
+12-13 16:35:27 ==>  Preparing: insert into qrcheck ( uuid, status ) values ( ?, ? ) 
+12-13 16:35:27 ==> Parameters: 2017121316352626447A22BCFE41D40E5883D3F22722C3EA4(String), 0(Integer)
+12-13 16:35:27 <==    Updates: 1
+12-13 16:35:28 ==>  Preparing: select * from qrcheck where uuid = ? 
+12-13 16:35:28 ==> Parameters: 2017121316352626447A22BCFE41D40E5883D3F22722C3EA4(String)
+12-13 16:35:28 <==      Total: 1
+12-13 16:36:48 Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+12-13 16:36:49 PooledDataSource forcefully closed/removed all connections.
+12-13 16:36:49 PooledDataSource forcefully closed/removed all connections.
+12-13 16:36:49 PooledDataSource forcefully closed/removed all connections.
+12-13 16:36:49 PooledDataSource forcefully closed/removed all connections.
+12-13 16:36:49 Opening JDBC Connection
+12-13 16:36:49 Created connection 731570176.
+12-13 16:36:49 Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@2b9ae000]
+12-13 16:36:49 ==>  Preparing: select * from qrcheck where uuid = ? 
+12-13 16:36:49 ==> Parameters: 2017121316352626447A22BCFE41D40E5883D3F22722C3EA4(String)
+12-13 16:36:49 <==      Total: 1
+12-13 16:37:04 ==>  Preparing: insert into qrcheck ( uuid, status ) values ( ?, ? ) 
+12-13 16:37:04 ==> Parameters: 20171213163704583224A95A600EB43F8849750DDC6A7824D(String), 0(Integer)
+12-13 16:37:04 <==    Updates: 1
+12-13 16:37:06 ==>  Preparing: select * from qrcheck where uuid = ? 
+12-13 16:37:06 ==> Parameters: 20171213163704583224A95A600EB43F8849750DDC6A7824D(String)
+12-13 16:37:06 <==      Total: 1
+12-13 16:37:36 ==>  Preparing: insert into qrcheck ( uuid, status ) values ( ?, ? ) 
+12-13 16:37:36 ==> Parameters: 2017121316373637487A7A0346B504246B14CFD4ED846D0DC(String), 0(Integer)
+12-13 16:37:36 <==    Updates: 1
+12-13 16:37:38 ==>  Preparing: select * from qrcheck where uuid = ? 
+12-13 16:37:38 ==> Parameters: 2017121316373637487A7A0346B504246B14CFD4ED846D0DC(String)
+12-13 16:37:38 <==      Total: 1
+12-13 16:37:42 ==>  Preparing: update qrcheck set status = ? where uuid = ? 
+12-13 16:37:42 ==> Parameters: 2(Integer), 2017121316373637487A7A0346B504246B14CFD4ED846D0DC(String)
+12-13 16:37:42 <==    Updates: 1
+12-13 16:37:42 ==>  Preparing: select * from qrcheck where uuid = ? 
+12-13 16:37:42 ==> Parameters: 2017121316373637487A7A0346B504246B14CFD4ED846D0DC(String)
+12-13 16:37:42 <==      Total: 1

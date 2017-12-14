@@ -84,10 +84,13 @@ public class ShoppingCarSlt extends HttpServlet {
 		response.setCharacterEncoding("utf-8");
 		response.setContentType("text/html");
 		String flag = request.getParameter("flag");
+		
 		if(flag == null){
 			return;
 		}
 		int uid = (int) request.getSession().getAttribute("uid");
+		int num = SpCarService.getCarNum(uid);
+		request.getSession().setAttribute("carnum", num);
 		if (flag.equalsIgnoreCase("change")) {
 			changeSpc(request, response);
 		}else if (flag.equalsIgnoreCase("add")) {

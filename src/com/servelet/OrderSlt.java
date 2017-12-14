@@ -73,6 +73,8 @@ public class OrderSlt extends HttpServlet {
 		}
 		PrintWriter out = response.getWriter();
 		int uid = (int) request.getSession().getAttribute("uid");
+		int num = SpCarService.getCarNum(uid);
+		request.getSession().setAttribute("carnum", num);
 		if (flag.equalsIgnoreCase("payOrder")) {// 支付已存在订单
 			String oid = (String) request.getParameter("oid");
 			LinkedList<HashMap<String, Object>> orderslist = OrdersService.getOrderList(oid, uid);

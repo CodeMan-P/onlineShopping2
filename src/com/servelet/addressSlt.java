@@ -13,6 +13,7 @@ import javax.servlet.http.HttpServletResponse;
 import com.dao.UsersDao;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.mod.bean.Address;
+import com.service.SpCarService;
 import com.service.UserService;
 
 /**
@@ -52,6 +53,8 @@ public class addressSlt extends HttpServlet {
 		//PrintWriter out = response.getWriter();
 		String flag = request.getParameter("flag");
 		int uid = (int) request.getSession().getAttribute("uid");
+		int num = SpCarService.getCarNum(uid);
+		request.getSession().setAttribute("carnum", num);
 		if (flag == null) {
 			return;
 			

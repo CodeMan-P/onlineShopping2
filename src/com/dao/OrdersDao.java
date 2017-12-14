@@ -289,6 +289,7 @@ public class OrdersDao {
 				arg1.writeString("待付款");
 			}
 		});
+		
 		try {
 			log.info("添加新订单(" + orders.getOid() + ")："
 					+ mapper.writerWithDefaultPrettyPrinter().writeValueAsString(orders));

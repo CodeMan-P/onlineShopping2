@@ -11,6 +11,7 @@ import javax.servlet.http.HttpServletResponse;
 
 import com.mod.bean.Goods;
 import com.service.GoodsService;
+import com.service.SpCarService;
 
 public class searchServlet extends HttpServlet {
 
@@ -66,6 +67,9 @@ public class searchServlet extends HttpServlet {
 		response.setContentType("text/html");
 		response.setCharacterEncoding("utf-8");
 		request.setCharacterEncoding("utf-8");
+		int uid = (int) request.getSession().getAttribute("uid");
+		int num = SpCarService.getCarNum(uid);
+		request.getSession().setAttribute("carnum", num);
 		String word = request.getParameter("word");
 		if(word == null){
 			word = (String) request.getSession().getAttribute("word");
