@@ -41,11 +41,7 @@ public class RequestFilter implements Filter{
 			name = (String)ss.getAttribute("name");
 			String path = req.getServletPath();
 			String begin = config.getInitParameter("begin");
-//			String login = config.getInitParameter("login");
-//			String regist=config.getInitParameter("regist");
-//			String param = config.getInitParameter("param");
-//			String[] params = param.split(",");
-			
+		
 			if(name == null&&!path.endsWith(".js")&&isContains(path)){
 				rep.sendRedirect(req.getContextPath()+"/"+begin);
 				//rep.sendRedirect(basePath+"index.jsp");
