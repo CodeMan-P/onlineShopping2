@@ -8,6 +8,7 @@ import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.LinkedList;
 
+import javax.servlet.ServletConfig;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -15,6 +16,9 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import org.apache.log4j.Logger;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+import org.springframework.web.context.support.SpringBeanAutowiringSupport;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -31,9 +35,23 @@ import com.service.UserService;
  * Servlet implementation class OrderSlt
  */
 @WebServlet("/Order")
+@Component
 public class OrderSlt extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
+	@Autowired
+	UserService userService;
+	@Autowired
+	OrdersService ordersService;
+	@Autowired
+	GoodsService goodsService;
+	@Autowired
+	SpCarService spCarService;
+	@Override
+	public void init(ServletConfig config) throws ServletException {
+	    SpringBeanAutowiringSupport.processInjectionBasedOnServletContext(this,  
+	              config.getServletContext());  
+	}
 	/**
 	 * @see HttpServlet#HttpServlet()
 	 */
@@ -73,12 +91,12 @@ public class OrderSlt extends HttpServlet {
 		}
 		PrintWriter out = response.getWriter();
 		int uid = (int) request.getSession().getAttribute("uid");
-		int num = SpCarService.getCarNum(uid);
+		int num = spCarService.getCarNum(uid);
 		request.getSession().setAttribute("carnum", num);
 		if (flag.equalsIgnoreCase("payOrder")) {// 支付已存在订单
 			String oid = (String) request.getParameter("oid");
-			LinkedList<HashMap<String, Object>> orderslist = OrdersService.getOrderList(oid, uid);
-			HashMap<String, Object> hm = OrdersService.jsonFactory(orderslist);
+			LinkedList<HashMap<String, Object>> orderslist = ordersService.getOrderList(oid, uid);
+			HashMap<String, Object> hm = ordersService.jsonFactory(orderslist);
 			ObjectMapper mapper = new ObjectMapper();
 			String hmJson = mapper.writeValueAsString(hm);
 			request.getSession().setAttribute("hm", hmJson);
@@ -93,8 +111,8 @@ public class OrderSlt extends HttpServlet {
 			String oid = sf.format(new Date());
 			if (addOrders(request, response, oid)) {
 				// 获取当前订单视图
-				LinkedList<HashMap<String, Object>> orderslist = OrdersService.getOrderList(oid, uid);
-				HashMap<String, Object> hm = OrdersService.jsonFactory(orderslist);
+				LinkedList<HashMap<String, Object>> orderslist = ordersService.getOrderList(oid, uid);
+				HashMap<String, Object> hm = ordersService.jsonFactory(orderslist);
 				ObjectMapper mapper = new ObjectMapper();
 				String hmJson = mapper.writeValueAsString(hm);
 				request.getSession().setAttribute("hm", hmJson);
@@ -128,7 +146,7 @@ public class OrderSlt extends HttpServlet {
 			}
 			if (flag.equalsIgnoreCase("mpay")) {
 				log.info(oid + "--订单付款！");
-				OrdersService.updateByOUid(oid, uid);
+				ordersService.updateByOUid(oid, uid);
 			} else if (flag.equalsIgnoreCase("spay")) {
 				String address = request.getParameter("addr");
 				String ofJson = (String) request.getSession().getAttribute("ofJson");
@@ -140,12 +158,12 @@ public class OrderSlt extends HttpServlet {
 				OrderForm orderform = mapper.readValue(ofJson, OrderForm.class);
 				orders.setState("已付款");
 				orders.setAddress(address);
-				OrdersService.addOrders(orders, orderform);
+				ordersService.addOrders(orders, orderform);
 			}
 		} else if (flag.equals("allorder")) {
 
 			ObjectMapper mapper = new ObjectMapper();
-			LinkedList<LinkedHashMap<String, Object>> ogview = OrdersService.getOGViewGoupByOid(uid);
+			LinkedList<LinkedHashMap<String, Object>> ogview = ordersService.getOGViewGoupByOid(uid);
 			String json = mapper.writeValueAsString(ogview);
 			request.getSession().setAttribute("ogJson", json);
 			response.sendRedirect("jsp/allorders.jsp");
@@ -160,7 +178,7 @@ public class OrderSlt extends HttpServlet {
 		String oid = smf.format(new Date());
 		// uid
 		int gid = Integer.parseInt(request.getParameter("gid"));
-		Goods goods = GoodsService.getGoods(gid);
+		Goods goods = goodsService.getGoods(gid);
 		String gname = goods.getGname();
 		int gnum = Integer.parseInt(request.getParameter("gnum"));
 		double price = goods.getPrice();
@@ -209,7 +227,7 @@ public class OrderSlt extends HttpServlet {
 		request.getSession().setAttribute("hm", hmJson);
 		request.getSession().setAttribute("ofJson", ofJson);
 		request.getSession().setAttribute("oJson", oJson);
-		LinkedList<Address> adresList = UserService.getAdress(uid);
+		LinkedList<Address> adresList = userService.getAdress(uid);
 		String adresJson = null;
 		try {
 			adresJson = mapper.writerWithDefaultPrettyPrinter().writeValueAsString(adresList);
@@ -236,8 +254,8 @@ public class OrderSlt extends HttpServlet {
 			tempcids.addAll(buyCids);
 
 			// orderfor表添加
-			// LinkedList<ShoppingCar> list = SpCarService.getCarListByUid(uid);
-			LinkedList<HashMap<String, Object>> view = SpCarService.getCarView(uid);
+			// LinkedList<ShoppingCar> list = spCarService.getCarListByUid(uid);
+			LinkedList<HashMap<String, Object>> view = spCarService.getCarView(uid);
 			orderlist = new LinkedList<OrderForm>();
 
 			OrderForm tempOrder = null;
@@ -270,7 +288,7 @@ public class OrderSlt extends HttpServlet {
 		if (orders == null || orderlist == null || buyCids == null) {
 			return false;
 		}
-		return OrdersService.addOrders(orders, orderlist, buyCids);
+		return ordersService.addOrders(orders, orderlist, buyCids);
 	}
 
 }

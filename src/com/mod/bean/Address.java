@@ -1,8 +1,10 @@
 package com.mod.bean;
 
+import org.springframework.stereotype.Component;
+
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
-
+@Component("address")
 @JsonIgnoreProperties(ignoreUnknown = true,value={"province","city"})
 public class Address {
 	/**

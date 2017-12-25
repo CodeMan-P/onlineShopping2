@@ -1,3 +1,4 @@
+<%@ page errorPage="ShowError.jsp" %>
 <%@ page language="java" import="java.util.*" import="com.mod.bean.Goods"  pageEncoding="utf-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%

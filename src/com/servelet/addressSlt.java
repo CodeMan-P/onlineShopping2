@@ -10,6 +10,9 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+
 import com.dao.UsersDao;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.mod.bean.Address;
@@ -20,9 +23,14 @@ import com.service.UserService;
  * Servlet implementation class addressSlt
  */
 @WebServlet("/ast")
+@Controller
 public class addressSlt extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
+	@Autowired
+	UserService userService;
+	@Autowired
+	SpCarService spCarService;
 	/**
 	 * @see HttpServlet#HttpServlet()
 	 */
@@ -52,8 +60,9 @@ public class addressSlt extends HttpServlet {
 		response.setCharacterEncoding("utf-8");
 		//PrintWriter out = response.getWriter();
 		String flag = request.getParameter("flag");
-		int uid = (int) request.getSession().getAttribute("uid");
-		int num = SpCarService.getCarNum(uid);
+		
+		int uid = Integer.parseInt(String.valueOf(request.getSession().getAttribute("uid")));
+		int num = spCarService.getCarNum(uid);
 		request.getSession().setAttribute("carnum", num);
 		if (flag == null) {
 			return;
@@ -61,7 +70,7 @@ public class addressSlt extends HttpServlet {
 		} else if (flag.equalsIgnoreCase("dele")) {
 			int aid = Integer.parseInt(request.getParameter("aid"));
 			
-			boolean b = UserService.deleAddress(aid);
+			boolean b = userService.deleAddress(aid);
 			PrintWriter out = response.getWriter();
 			if(b){
 				out.write("{\"message\":\"删除成功！\"}");
@@ -91,7 +100,7 @@ public class addressSlt extends HttpServlet {
 			}
 			adr.setUid(uid);
 			
-			boolean b = UserService.addAddress(adr);
+			boolean b = userService.addAddress(adr);
 			PrintWriter out = response.getWriter();
 			if(b){
 				out.write("{\"message\":\"添加成功！\"}");
@@ -121,7 +130,7 @@ public class addressSlt extends HttpServlet {
 			adr.setUid(uid);
 			String aid = request.getParameter("aid");
 			adr.setAdressid(Integer.parseInt(aid));
-			boolean b = UserService.editAddress(adr);
+			boolean b = userService.editAddress(adr);
 			PrintWriter out = response.getWriter();
 			if(b){
 				out.write("{\"message\":\"修改成功！\"}");

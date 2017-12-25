@@ -1,3 +1,4 @@
+<%@ page errorPage="ShowError.jsp" %>
 <%@ page language="java" import="java.util.*"  import="com.mod.bean.Goods" pageEncoding="UTF-8"%>
 <%@ page import="java.util.HashMap" import="java.io.File"%>
 <%@page import="com.fasterxml.jackson.databind.ObjectMapper"%>
@@ -135,6 +136,11 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     		alert("输入购物数量？>0！");
     		return false;
     	}
+    	var maxStock = $("#gStock").val();
+    	if($("#gnum").val() >maxStock){
+    		alert("超出库存范围！！！");
+    		return false;
+    	}
     	//参数应选择获取······
     	var desc = '[{"颜色" : "钻雕金","套餐类型" : "官方标配"}]';
     	var ajax_option={  
@@ -175,6 +181,11 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     function buyGoods(){
     	if($("#gnum").val() == null||$("#gnum").val() <=0){
     		alert("输入购物数量？>0！");
+    		return false;
+    	}
+    	var maxStock = $("#gStock").val();
+    	if($("#gnum").val() >maxStock){
+    		alert("超出库存范围！！！");
     		return false;
     	}
     	//参数应选择获取······
@@ -346,6 +357,7 @@ function checkEmpty(id, name){
                                 <a href="javascript:number();void(0);" class="ffr_freight_input1"></a>
                                 <a href="javascript:number1();void(0);" class="ffr_freight_input2"></a>
                             </div>
+                            <input type="hidden" id="gStock" value="<%=g.getStock()%>"/>
                             	（库存<%=g.getStock() %>）
                         </div>
                         <div class="ffr_freight_onclick">

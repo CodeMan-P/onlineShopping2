@@ -3,11 +3,15 @@ package com.mod.mapper;
 import java.util.LinkedHashMap;
 import java.util.LinkedList;
 
+import javax.annotation.Resource;
+
 import org.apache.ibatis.annotations.Param;
 import org.apache.ibatis.annotations.Select;
+import org.mybatis.spring.annotation.MapperScan;
+import org.springframework.stereotype.Repository;
 
 import com.mod.bean.Goods;
-
+@MapperScan
 public interface GoodsMapper {
 
 	/**

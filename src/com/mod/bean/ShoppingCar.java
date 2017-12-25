@@ -4,7 +4,10 @@ import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import java.sql.Timestamp;
 
+import org.springframework.stereotype.Component;
+
 @JsonIgnoreProperties(ignoreUnknown = true)
+@Component("shoppingCar")
 public class ShoppingCar {
 
 	/**

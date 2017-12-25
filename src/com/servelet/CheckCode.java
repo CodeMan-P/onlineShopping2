@@ -4,9 +4,7 @@ import java.awt.Color;
 import java.awt.Font;
 import java.awt.Graphics;
 import java.awt.image.BufferedImage;
-import java.io.File;
 import java.io.IOException;
-import java.io.PrintWriter;
 import java.util.Random;
 
 import javax.imageio.ImageIO;
@@ -16,12 +14,14 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import com.sun.javafx.iio.ImageStorage.ImageType;
+import org.springframework.stereotype.Controller;
+
 
 /**
  * Servlet implementation class CheckCode
  */
 @WebServlet("/ck")
+@Controller
 public class CheckCode extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        

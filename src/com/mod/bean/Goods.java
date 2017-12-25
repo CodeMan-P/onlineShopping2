@@ -1,7 +1,9 @@
 package com.mod.bean;
 
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import org.springframework.stereotype.Component;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+@Component("goods")
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class Goods {
 
@@ -189,4 +191,11 @@ public class Goods {
 	public void setStock(Integer stock) {
 		this.stock = stock;
 	}
+
+	@Override
+	public String toString() {
+		return "Goods [gid=" + gid + ", gname=" + gname + ", tid=" + tid + ", price=" + price + ", descption="
+				+ descption + ", imgpath=" + imgpath + ", filepath=" + filepath + ", stock=" + stock + "]";
+	}
+	
 }

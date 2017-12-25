@@ -4,9 +4,10 @@ import java.util.LinkedHashMap;
 import java.util.LinkedList;
 
 import org.apache.ibatis.annotations.Param;
+import org.mybatis.spring.annotation.MapperScan;
 
 import com.mod.bean.Orders;
-
+@MapperScan
 public interface OrdersMapper {
 
 	/**

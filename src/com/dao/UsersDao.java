@@ -5,9 +5,15 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.util.LinkedList;
 
+import javax.annotation.Resource;
+
 import org.apache.ibatis.session.SqlSession;
 import org.apache.log4j.Logger;
 import org.junit.Test;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
+import org.springframework.stereotype.Service;
+
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.mod.bean.Address;
@@ -16,23 +22,26 @@ import com.mod.mapper.AddressMapper;
 import com.mod.mapper.UsersMapper;
 import com.util.DbConn;
 
+@Repository
 public class UsersDao {
-	static Logger log = Logger.getLogger(UsersDao.class.getName());
-	private static UsersMapper um;
-	private static AddressMapper am;
-	private static SqlSession session = null;
-
-	static {
-		try {
-			session = DbConn.getFactory().openSession();
-			um = session.getMapper(UsersMapper.class);
-			am = session.getMapper(AddressMapper.class);
-		} catch (Exception e) {
-			e.printStackTrace();
-			log.warn(e.getLocalizedMessage());
-		}
-	}
-	public static boolean updateByPrimaryKeySelective(Users record){
+	@Autowired
+	private  UsersMapper um;
+	@Autowired
+	private  AddressMapper am;
+	
+//	private  SqlSession session = null;
+//
+//	 {
+//		try {
+//			session = DbConn.getFactory().openSession();
+//			um = session.getMapper(UsersMapper.class);
+//			am = session.getMapper(AddressMapper.class);
+//		} catch (Exception e) {
+//			e.printStackTrace();
+//			log.warn(e.getLocalizedMessage());
+//		}
+//	}
+	public  boolean updateByPrimaryKeySelective(Users record){
 		int i = 0;
 		try {
 			i = um.updateByPrimaryKeySelective(record);
@@ -66,7 +75,7 @@ public class UsersDao {
 //		}
 	}
 
-	public static boolean addAddress(Address address) {
+	public  boolean addAddress(Address address) {
 		int i = 0;
 
 		try {
@@ -80,7 +89,6 @@ public class UsersDao {
 			}
 			i = am.insertSelective(address);
 		} catch (Exception e) {
-			log.warn(e.getLocalizedMessage());
 			e.printStackTrace();
 			return false;
 		}
@@ -90,7 +98,7 @@ public class UsersDao {
 		return false;
 	}
 
-	public static boolean editAddress(Address address) {
+	public  boolean editAddress(Address address) {
 		int i = 0;
 
 		try {
@@ -104,7 +112,6 @@ public class UsersDao {
 			}
 			i = am.updateByPrimaryKeySelective(address);
 		} catch (Exception e) {
-			log.warn(e.getLocalizedMessage());
 			e.printStackTrace();
 			return false;
 		}
@@ -114,7 +121,7 @@ public class UsersDao {
 		return false;
 	}
 
-	public static boolean deleAddress(Integer addressId) {
+	public  boolean deleAddress(Integer addressId) {
 		int i = 0;
 
 		try {
@@ -153,7 +160,6 @@ public class UsersDao {
 			DbConn.closeConn(rs, pst, con);
 			
 		} catch (Exception e) {
-			log.warn(e.getLocalizedMessage());
 			e.printStackTrace();
 			return false;
 		}
@@ -163,17 +169,17 @@ public class UsersDao {
 		return false;
 	}
 
-	public static LinkedList<Address> getAdress(Integer uid) {
+	public  LinkedList<Address> getAdress(Integer uid) {
 		LinkedList<Address> list = am.getAdrsListByUid(uid);
 		return list;
 	}
 
-	public static Users findUser(Users users) {
+	public  Users findUser(Users users) {
 		Users temp = (Users) um.getUser(users.getUname(), users.getUpwd());
 		return temp;
 	}
 
-	public static String addUser(Users users) {
+	public  String addUser(Users users) {
 		String res = null;
 		try {
 			int temp = um.insert(users);

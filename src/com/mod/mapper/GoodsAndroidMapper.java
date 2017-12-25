@@ -4,9 +4,11 @@ import java.util.LinkedHashMap;
 import java.util.LinkedList;
 
 import org.apache.ibatis.annotations.Select;
+import org.mybatis.spring.annotation.MapperScan;
+import org.springframework.stereotype.Repository;
 
 import com.mod.bean.GoodsAndroid;
-
+@MapperScan
 public interface GoodsAndroidMapper {
 
 	/**

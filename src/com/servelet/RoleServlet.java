@@ -12,6 +12,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import org.springframework.stereotype.Controller;
+
 import com.dao.RoleUserDao;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.mod.bean.RoleBean;
@@ -19,6 +21,7 @@ import com.mod.bean.UserBean;
 
 
 @WebServlet("/RoleServlet")
+@Controller
 public class RoleServlet extends HttpServlet {
 	
 

@@ -7,21 +7,29 @@ import java.util.Date;
 import java.util.HashMap;
 import java.util.LinkedList;
 
+import javax.servlet.ServletConfig;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import org.apache.log4j.Logger;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.context.support.SpringBeanAutowiringSupport;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.mod.bean.Address;
-import com.mod.bean.Goods;
 import com.mod.bean.ShoppingCar;
 import com.service.SpCarService;
 import com.service.UserService;
 
+@Controller
 public class ShoppingCarSlt extends HttpServlet {
 
+	@Autowired
+	UserService userService;
+	@Autowired
+	SpCarService spCarService;
 	/**
 	 * 
 	 */
@@ -89,7 +97,7 @@ public class ShoppingCarSlt extends HttpServlet {
 			return;
 		}
 		int uid = (int) request.getSession().getAttribute("uid");
-		int num = SpCarService.getCarNum(uid);
+		int num = spCarService.getCarNum(uid);
 		request.getSession().setAttribute("carnum", num);
 		if (flag.equalsIgnoreCase("change")) {
 			changeSpc(request, response);
@@ -98,13 +106,13 @@ public class ShoppingCarSlt extends HttpServlet {
 		} else if (flag.equalsIgnoreCase("dele")) {
 			deleteCarItem(request, response, uid);
 		} else if (flag.equalsIgnoreCase("view")) {
-			// LinkedList<ShoppingCar> list = SpCarService.getCarListByUid(uid);
+			// LinkedList<ShoppingCar> list = spCarService.getCarListByUid(uid);
 			// request.getSession().setAttribute("carlist", list);
 
 			ObjectMapper mapper = new ObjectMapper();
-			LinkedList<Address> adresList = UserService.getAdress(uid);
+			LinkedList<Address> adresList = userService.getAdress(uid);
 			String adresJson = mapper.writerWithDefaultPrettyPrinter().writeValueAsString(adresList);
-			LinkedList<HashMap<String, Object>> view = SpCarService.getCarView(uid);
+			LinkedList<HashMap<String, Object>> view = spCarService.getCarView(uid);
 			request.getSession().setAttribute("view", view);
 			request.getSession().setAttribute("adresJson", adresJson);
 			//request.getRequestDispatcher("jsp/shoppingcar.jsp").forward(request, response);
@@ -125,9 +133,9 @@ public class ShoppingCarSlt extends HttpServlet {
 	public void deleteCarItem(HttpServletRequest request, HttpServletResponse response, int uid) throws IOException {
 		PrintWriter out = response.getWriter();
 		int cid = Integer.parseInt(request.getParameter("cid"));
-		if (SpCarService.deleGoods(cid)) {
+		if (spCarService.deleGoods(cid)) {
 			out.write("{\"message\":\"删除成功！\",\"num\":" + 0 + "}");
-			int num = SpCarService.getCarNum(uid);
+			int num = spCarService.getCarNum(uid);
 			request.getSession().setAttribute("carnum", num);
 		} else {
 			out.write("{\"message\":\"删除失败！\"}");
@@ -148,7 +156,7 @@ public class ShoppingCarSlt extends HttpServlet {
 		ShoppingCar record = new ShoppingCar();
 		record.setCid(cid);
 		record.setGnum(gnum);
-		boolean b = SpCarService.updateByPrimaryKeySelective(record);
+		boolean b = spCarService.updateByPrimaryKeySelective(record);
 		if(b){
 			out.write("{\"message\":\"修改成功！\"}");
 		}else{
@@ -174,9 +182,9 @@ public class ShoppingCarSlt extends HttpServlet {
 			ShoppingCar sc = new ShoppingCar(tm, uid, gid, gnum, desc);
 			// ObjectMapper mapper = new ObjectMapper();
 			// System.out.println(mapper.writerWithDefaultPrettyPrinter().writeValueAsString(sc));
-			if (SpCarService.addGoods(sc)) {
+			if (spCarService.addGoods(sc)) {
 				request.getSession().removeAttribute("carnum");
-				int num = SpCarService.getCarNum(uid);
+				int num = spCarService.getCarNum(uid);
 				request.getSession().setAttribute("carnum", num);
 
 				out.write("{\"message\":\"添加成功！\",\"num\":" + num + "}");
@@ -196,15 +204,9 @@ public class ShoppingCarSlt extends HttpServlet {
 
 	Logger log = Logger.getLogger(ShoppingCarSlt.class.getName());
 
-	/**
-	 * Initialization of the servlet. <br>
-	 *
-	 * @throws ServletException
-	 *             if an error occurs
-	 */
 	@Override
-	public void init() throws ServletException {
-		// Put your code here
+	public void init(ServletConfig config) throws ServletException {
+	    SpringBeanAutowiringSupport.processInjectionBasedOnServletContext(this,  
+	              config.getServletContext());  
 	}
-
 }

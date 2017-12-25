@@ -3,19 +3,28 @@ package com.servelet;
 import java.io.IOException;
 import java.io.PrintWriter;
 
+import javax.servlet.ServletConfig;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.context.support.SpringBeanAutowiringSupport;
+
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.mod.bean.Users;
 import com.service.SpCarService;
 import com.service.UserService;
-import com.util.DbConn;
 
+@Controller
 public class Login extends HttpServlet {
 
+	@Autowired
+	private UserService userService;
+	@Autowired
+	SpCarService spCarService;
 	/**
 	 * 
 	 */
@@ -92,12 +101,13 @@ public class Login extends HttpServlet {
 		if (flag != null && flag.equalsIgnoreCase("flush")) {
 			int uid;
 			try {
-				uid = (int) request.getSession().getAttribute("uid");
+				Object temp =request.getSession().getAttribute("uid"); 
+				uid = Integer.parseInt(String.valueOf(temp));
 			} catch (Exception e) {
 				out.close();
 				return;
 			}
-			int num = SpCarService.getCarNum(uid);
+			int num = spCarService.getCarNum(uid);
 			request.getSession().setAttribute("carnum", num);
 			out.write("{\"message\":\"刷新成功！\",\"cnum\":" + num + "}");
 			out.flush();
@@ -113,7 +123,7 @@ public class Login extends HttpServlet {
 		}
 		String pwd = request.getParameter("pwd");
 		Users users = new Users(name, pwd);
-		users = UserService.findUser(users);
+		users = userService.findUser(users);
 		if (users == null) {
 			response.sendRedirect("index.jsp");
 		} else {
@@ -122,7 +132,7 @@ public class Login extends HttpServlet {
 			request.getSession().setAttribute("uid", uid);
 			request.getSession().setAttribute("avatar", users.getAvatar());
 			request.getSession().setAttribute("city", users.getCity());
-			int num = SpCarService.getCarNum(uid);
+			int num = spCarService.getCarNum(uid);
 			request.getSession().setAttribute("carnum", num);
 
 			ObjectMapper mapper = new ObjectMapper();
@@ -157,9 +167,9 @@ public class Login extends HttpServlet {
 	 *             if an error occurs
 	 */
 	@Override
-	public void init() throws ServletException {
-		// Put your code here
-		DbConn.getFactory();
+	public void init(ServletConfig config) throws ServletException {
+	    SpringBeanAutowiringSupport.processInjectionBasedOnServletContext(this,  
+	              config.getServletContext());  
 	}
 
 }

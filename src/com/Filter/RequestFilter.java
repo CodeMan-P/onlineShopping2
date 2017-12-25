@@ -1,6 +1,8 @@
 package com.Filter;
 
 import java.io.IOException;
+import java.util.Arrays;
+
 import javax.servlet.Filter;
 import javax.servlet.FilterChain;
 import javax.servlet.FilterConfig;
@@ -15,38 +17,46 @@ public class RequestFilter implements Filter{
 
 
 	//req.getContextPath();//->"/shopping"
-	//String realPath = req.getServletContext().getRealPath("/");
 	//D:\apache-tomcat-7.0.52\webapps\shopping\
+	//String realPath = req.getServletContext().getRealPath("/");
 	//String basePath = req.getScheme()+"://"+req.getServerName()+":"+req.getServerPort()+req.getContextPath()+"/";
 	FilterConfig config;
+	String errPage="/jsp/ShowError.jsp";
 	String[] params;
 	@Override
 	public void init(FilterConfig config) throws ServletException {
 		this.config = config;
 		String param = config.getInitParameter("param");
 		this.params = param.split(",");
+		
 	}
 
 	@Override
 	public void doFilter(ServletRequest arg0, ServletResponse arg1, FilterChain arg2)
 			throws IOException, ServletException {
-	
 			HttpServletRequest req = (HttpServletRequest) arg0;
 			HttpServletResponse rep = (HttpServletResponse) arg1;
 			req.setCharacterEncoding("utf-8");
 			rep.setCharacterEncoding("utf-8");
-		
 			HttpSession ss = req.getSession(true);
 			String name="";
 			name = (String)ss.getAttribute("name");
 			String path = req.getServletPath();
 			String begin = config.getInitParameter("begin");
-		
+
 			if(name == null&&!path.endsWith(".js")&&isContains(path)){
 				rep.sendRedirect(req.getContextPath()+"/"+begin);
 				//rep.sendRedirect(basePath+"index.jsp");
 			}else{
-					arg2.doFilter(req, rep);
+					try {
+						arg2.doFilter(req, rep);
+					} catch (Exception e) {
+						
+						req.getSession().setAttribute("exception", e);
+						rep.sendRedirect(req.getContextPath()+errPage);
+						//req.getRequestDispatcher(errPage).forward(req, rep);
+						e.printStackTrace();
+					}
 			}
 		
 	}
@@ -58,5 +68,11 @@ public class RequestFilter implements Filter{
 			}
 		}
 		return true;
+	}
+
+	@Override
+	public void destroy() {
+		// TODO Auto-generated method stub
+		
 	}
 }

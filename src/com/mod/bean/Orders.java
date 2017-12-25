@@ -1,5 +1,8 @@
 package com.mod.bean;
 
+import org.springframework.stereotype.Component;
+
+@Component("orders")
 public class Orders {
 
 	/**

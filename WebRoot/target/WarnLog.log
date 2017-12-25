@@ -1,464 +1,298 @@
-2017-11-11 21:32:34  WARN 273705ms|>- java.lang.Integer cannot be cast to java.lang.String
- <com.servelet.ShoppingCarSlt.doPost(ShoppingCarSlt.java:99)> 
-2017-11-11 21:34:52  WARN 6762ms|>- java.lang.Integer cannot be cast to java.lang.String
- <com.servelet.ShoppingCarSlt.doPost(ShoppingCarSlt.java:100)> 
-2017-11-11 21:53:19  WARN 5616ms|>- 
- <com.servelet.ShoppingCarSlt.doPost(ShoppingCarSlt.java:94)> 
-2017-11-11 21:57:24  WARN 0ms|>- 
- <com.servelet.ShoppingCarSlt.doPost(ShoppingCarSlt.java:94)> 
-2017-11-11 22:01:43  WARN 560ms|>- Invalid bound statement (not found): com.mod.mapper.ShoppingCarMapper.update
- <com.dao.SpCarDao.addGoods(SpCarDao.java:43)> 
-2017-11-11 22:32:17  WARN 389132ms|>- 
- <com.servelet.ShoppingCarSlt.doPost(ShoppingCarSlt.java:94)> 
-2017-11-11 22:34:22  WARN 513418ms|>- 
- <com.servelet.ShoppingCarSlt.doPost(ShoppingCarSlt.java:94)> 
-2017-11-11 23:33:03  WARN 174189ms|>- 
- <com.servelet.ShoppingCarSlt.doPost(ShoppingCarSlt.java:96)> 
-2017-11-11 23:46:10  WARN 248499ms|>- 
- <com.servelet.ShoppingCarSlt.doPost(ShoppingCarSlt.java:99)> 
-2017-11-11 23:46:15  WARN 253431ms|>- 
- <com.servelet.ShoppingCarSlt.doPost(ShoppingCarSlt.java:99)> 
-2017-11-11 23:48:12  WARN 2823ms|>- 
- <com.servelet.ShoppingCarSlt.doPost(ShoppingCarSlt.java:99)> 
-2017-11-11 23:48:30  WARN 20729ms|>- 
- <com.servelet.ShoppingCarSlt.doPost(ShoppingCarSlt.java:99)> 
-2017-11-12 11:19:59  WARN 1066ms|>- 
-### Error building SqlSession.
-### The error may exist in com/mod/mapper/ShoppingCarMapper.xml
-### The error occurred while processing mapper_resultMap[OrderMap]
-### Cause: org.apache.ibatis.builder.BuilderException: Error parsing SQL Mapper Configuration. Cause: org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 162; columnNumber: 94; 必须声明元素类型 "columnOverride"。
- <com.util.DbConn.getFactory(DbConn.java:27)> 
-2017-11-12 11:19:59  WARN 1086ms|>- 
- <com.dao.SpCarDao.getCarView(SpCarDao.java:48)> 
-2017-11-12 15:58:49  WARN 227281ms|>- 
- <com.dao.OrdersDao.addOrders(OrdersDao.java:55)> 
-2017-11-12 21:15:52  WARN 928ms|>- 
-### Error querying database.  Cause: java.lang.ClassCastException: org.apache.ibatis.executor.ExecutionPlaceholder cannot be cast to java.util.List
-### The error may exist in com/mod/mapper/ShoppingCarMapper.xml
-### The error may involve com.mod.mapper.ShoppingCarMapper.getCarView
-### The error occurred while executing a query
-### Cause: java.lang.ClassCastException: org.apache.ibatis.executor.ExecutionPlaceholder cannot be cast to java.util.List
- <com.dao.SpCarDao.getCarView(SpCarDao.java:61)> 
-2017-11-13 00:01:25  WARN 13342ms|>- 
-### Error updating database.  Cause: java.sql.SQLException: Field 'address' doesn't have a default value
-### The error may involve com.mod.mapper.OrdersMapper.insertSelective-Inline
+2017-12-25 15:14:47  WARN 145203ms|>- 
+### Error updating database.  Cause: com.mysql.jdbc.MysqlDataTruncation: Data truncation: Out of range value for column 'SubTotal' at row 1
+### The error may involve com.mod.mapper.OrderFormMapper.insertSelective-Inline
 ### The error occurred while setting parameters
-### SQL: insert into orders      ( oid,                       uid,                       state,                       sum )       values ( ?,                       ?,                       ?,                       ? )
-### Cause: java.sql.SQLException: Field 'address' doesn't have a default value
- <com.dao.OrdersDao.addOrders(OrdersDao.java:96)> 
-2017-11-13 00:02:48  WARN 10045ms|>- 
-### Error updating database.  Cause: java.sql.SQLException: Field 'address' doesn't have a default value
-### The error may involve com.mod.mapper.OrdersMapper.insertSelective-Inline
+### SQL: insert into orderform      ( oid,                       gid,                       gnum,                       SubTotal,                       descption,                       uid )       values ( ?,                       ?,                       ?,                       ?,                       ?,                       ? )
+### Cause: com.mysql.jdbc.MysqlDataTruncation: Data truncation: Out of range value for column 'SubTotal' at row 1
+; SQL []; Data truncation: Out of range value for column 'SubTotal' at row 1; nested exception is com.mysql.jdbc.MysqlDataTruncation: Data truncation: Out of range value for column 'SubTotal' at row 1
+ <com.dao.OrdersDao.addOrders(OrdersDao.java:197)> 
+2017-12-25 15:14:48  WARN 145274ms|>- Method <addOrders> end with exception: addOrders更新失败!....
+ <com.log.DaoLogging.afterThrowing(DaoLogging.java:54)> 
+2017-12-25 15:34:42  WARN 55089ms|>- Method <addOrders> end with exception: 
+### Error updating database.  Cause: com.mysql.jdbc.MysqlDataTruncation: Data truncation: Out of range value for column 'SubTotal' at row 1
+### The error may involve com.mod.mapper.OrderFormMapper.insertSelective-Inline
 ### The error occurred while setting parameters
-### SQL: insert into orders      ( oid,                       uid,                       state,                       sum )       values ( ?,                       ?,                       ?,                       ? )
-### Cause: java.sql.SQLException: Field 'address' doesn't have a default value
- <com.dao.OrdersDao.addOrders(OrdersDao.java:96)> 
-2017-11-13 00:08:33  WARN 354205ms|>- 
-### Error updating database.  Cause: java.sql.SQLException: Field 'address' doesn't have a default value
-### The error may involve com.mod.mapper.OrdersMapper.insertSelective-Inline
-### The error occurred while setting parameters
-### SQL: insert into orders      ( oid,                       uid,                       state,                       sum )       values ( ?,                       ?,                       ?,                       ? )
-### Cause: java.sql.SQLException: Field 'address' doesn't have a default value
- <com.dao.OrdersDao.addOrders(OrdersDao.java:96)> 
-2017-11-13 15:54:08  WARN 306ms|>- 
-### Error building SqlSession.
-### The error may exist in com/mod/mapper/OrdersMapper.xml
-### The error occurred while processing mapper_resultMap[ogViewGoupByOid]_collection[goods]
-### Cause: org.apache.ibatis.builder.BuilderException: Error parsing SQL Mapper Configuration. Cause: org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'ogViewGoupByOid'.  Cause: java.lang.ClassNotFoundException: Cannot find class: ogViewGoupByOid
- <com.util.DbConn.getFactory(DbConn.java:27)> 
-2017-11-13 15:55:18  WARN 285ms|>- 
-### Error building SqlSession.
-### The error may exist in com/mod/mapper/OrdersMapper.xml
-### The error occurred while processing mapper_resultMap[BaseResultMap]
-### Cause: org.apache.ibatis.builder.BuilderException: Error parsing SQL Mapper Configuration. Cause: org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 88; columnNumber: 63; 必须声明元素类型 "resultType"。
- <com.util.DbConn.getFactory(DbConn.java:27)> 
-2017-11-13 16:01:05  WARN 316ms|>- 
-### Error building SqlSession.
-### The error may exist in com/mod/mapper/OrdersMapper.xml
-### The error occurred while processing mapper_resultMap[ogViewGoupByOid]_collection[goods]
-### Cause: org.apache.ibatis.builder.BuilderException: Error parsing SQL Mapper Configuration. Cause: org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'ogViewGoupByOid'.  Cause: java.lang.ClassNotFoundException: Cannot find class: ogViewGoupByOid
- <com.util.DbConn.getFactory(DbConn.java:27)> 
-2017-11-13 16:47:26  WARN 278ms|>- 
-### Error building SqlSession.
-### The error may exist in com/mod/mapper/OrdersMapper.xml
-### The error occurred while processing mapper_resultMap[ogViewGoupByOid]
-### Cause: org.apache.ibatis.builder.BuilderException: Error parsing SQL Mapper Configuration. Cause: org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'ohm'.  Cause: java.lang.ClassNotFoundException: Cannot find class: ohm
- <com.util.DbConn.getFactory(DbConn.java:27)> 
-2017-11-13 16:49:00  WARN 300ms|>- 
-### Error building SqlSession.
-### The error may exist in com/mod/mapper/OrdersMapper.xml
-### The error occurred while processing mapper_resultMap[BaseResultMap]
-### Cause: org.apache.ibatis.builder.BuilderException: Error parsing SQL Mapper Configuration. Cause: org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 112; columnNumber: 50; 需要属性 "type", 并且必须为元素类型 "resultMap" 指定该属性。
- <com.util.DbConn.getFactory(DbConn.java:27)> 
-2017-11-13 16:51:46  WARN 256ms|>- 
-### Error building SqlSession.
-### The error may exist in com/mod/mapper/OrdersMapper.xml
-### The error occurred while processing mapper_resultMap[BaseResultMap]
-### Cause: org.apache.ibatis.builder.BuilderException: Error parsing SQL Mapper Configuration. Cause: org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 88; columnNumber: 64; 需要属性 "type", 并且必须为元素类型 "resultMap" 指定该属性。
- <com.util.DbConn.getFactory(DbConn.java:27)> 
-2017-11-13 17:04:45  WARN 263ms|>- 
-### Error building SqlSession.
-### The error may exist in com/mod/mapper/OrdersMapper.xml
-### The error occurred while processing mapper_resultMap[BaseResultMap]
-### Cause: org.apache.ibatis.builder.BuilderException: Error parsing SQL Mapper Configuration. Cause: org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 96; columnNumber: 55; 需要属性 "property", 并且必须为元素类型 "collection" 指定该属性。
- <com.util.DbConn.getFactory(DbConn.java:27)> 
-2017-11-13 17:10:28  WARN 575ms|>- 
-### Error building SqlSession.
-### The error may exist in com/mod/mapper/OrdersMapper.xml
-### The error occurred while processing mapper_resultMap[BaseResultMap]
-### Cause: org.apache.ibatis.builder.BuilderException: Error parsing SQL Mapper Configuration. Cause: org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 97; columnNumber: 37; 与元素类型 "collection" 相关联的属性 "property" 应有左引号。
- <com.util.DbConn.getFactory(DbConn.java:27)> 
-2017-11-13 17:11:45  WARN 636ms|>- 
-### Error building SqlSession.
-### The error may exist in com/mod/mapper/OrdersMapper.xml
-### The error occurred while processing mapper_resultMap[BaseResultMap]
-### Cause: org.apache.ibatis.builder.BuilderException: Error parsing SQL Mapper Configuration. Cause: org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 110; columnNumber: 14; 元素类型为 "resultMap" 的内容必须匹配 "(constructor?,id*,result*,association*,collection*,discriminator?)"。
- <com.util.DbConn.getFactory(DbConn.java:27)> 
-2017-11-13 17:13:52  WARN 348ms|>- 
-### Error building SqlSession.
-### The error may exist in com/mod/mapper/OrdersMapper.xml
-### The error occurred while processing mapper_resultMap[BaseResultMap]
-### Cause: org.apache.ibatis.builder.BuilderException: Error parsing SQL Mapper Configuration. Cause: org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 110; columnNumber: 14; 元素类型为 "resultMap" 的内容必须匹配 "(constructor?,id*,result*,association*,collection*,discriminator?)"。
- <com.util.DbConn.getFactory(DbConn.java:27)> 
-2017-11-13 17:37:00  WARN 506ms|>- 
-### Error building SqlSession.
-### The error may exist in com/mod/mapper/OrdersMapper.xml
-### The error occurred while processing mapper_resultMap[BaseResultMap]
-### Cause: org.apache.ibatis.builder.BuilderException: Error parsing SQL Mapper Configuration. Cause: org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 96; columnNumber: 42; 元素类型 "collection" 必须后跟属性规范 ">" 或 "/>"。
- <com.util.DbConn.getFactory(DbConn.java:27)> 
-2017-11-13 17:37:35  WARN 316ms|>- 
-### Error building SqlSession.
-### The error may exist in com/mod/mapper/OrdersMapper.xml
-### The error occurred while processing mapper_resultMap[BaseResultMap]
-### Cause: org.apache.ibatis.builder.BuilderException: Error parsing SQL Mapper Configuration. Cause: org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 96; columnNumber: 42; 元素类型 "collection" 必须后跟属性规范 ">" 或 "/>"。
- <com.util.DbConn.getFactory(DbConn.java:27)> 
-2017-11-13 17:43:02  WARN 366ms|>- 
-### Error building SqlSession.
-### The error may exist in com/mod/mapper/OrdersMapper.xml
-### The error occurred while processing mapper_resultMap[BaseResultMap]
-### Cause: org.apache.ibatis.builder.BuilderException: Error parsing SQL Mapper Configuration. Cause: org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 99; columnNumber: 55; 需要属性 "property", 并且必须为元素类型 "collection" 指定该属性。
- <com.util.DbConn.getFactory(DbConn.java:27)> 
-2017-11-13 17:44:51  WARN 298ms|>- 
-### Error building SqlSession.
-### The error may exist in com/mod/mapper/OrdersMapper.xml
-### The error occurred while processing mapper_resultMap[BaseResultMap]
-### Cause: org.apache.ibatis.builder.BuilderException: Error parsing SQL Mapper Configuration. Cause: org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 99; columnNumber: 37; 与元素类型 "collection" 相关联的属性 "property" 应有左引号。
- <com.util.DbConn.getFactory(DbConn.java:27)> 
-2017-11-13 17:45:29  WARN 300ms|>- 
-### Error building SqlSession.
-### The error may exist in com/mod/mapper/OrdersMapper.xml
-### The error occurred while processing mapper_resultMap[BaseResultMap]
-### Cause: org.apache.ibatis.builder.BuilderException: Error parsing SQL Mapper Configuration. Cause: org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 112; columnNumber: 14; 元素类型为 "resultMap" 的内容必须匹配 "(constructor?,id*,result*,association*,collection*,discriminator?)"。
- <com.util.DbConn.getFactory(DbConn.java:27)> 
-2017-11-13 17:46:37  WARN 339ms|>- 
-### Error building SqlSession.
-### The error may exist in com/mod/mapper/OrdersMapper.xml
-### The error occurred while processing mapper_resultMap[BaseResultMap]
-### Cause: org.apache.ibatis.builder.BuilderException: Error parsing SQL Mapper Configuration. Cause: org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 110; columnNumber: 14; 元素类型为 "resultMap" 的内容必须匹配 "(constructor?,id*,result*,association*,collection*,discriminator?)"。
- <com.util.DbConn.getFactory(DbConn.java:27)> 
-2017-11-13 17:47:20  WARN 645ms|>- 
-### Error building SqlSession.
-### The error may exist in com/mod/mapper/OrdersMapper.xml
-### The error occurred while processing mapper_resultMap[BaseResultMap]
-### Cause: org.apache.ibatis.builder.BuilderException: Error parsing SQL Mapper Configuration. Cause: org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 110; columnNumber: 14; 元素类型为 "resultMap" 的内容必须匹配 "(constructor?,id*,result*,association*,collection*,discriminator?)"。
- <com.util.DbConn.getFactory(DbConn.java:27)> 
-2017-11-13 19:01:06  WARN 312ms|>- 
-### Error building SqlSession.
-### The error may exist in com/mod/mapper/OrdersMapper.xml
-### The error occurred while processing mapper_resultMap[BaseResultMap]
-### Cause: org.apache.ibatis.builder.BuilderException: Error parsing SQL Mapper Configuration. Cause: org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 96; columnNumber: 43; 需要属性 "property", 并且必须为元素类型 "collection" 指定该属性。
- <com.util.DbConn.getFactory(DbConn.java:27)> 
-2017-11-13 19:03:19  WARN 525ms|>- 
-### Error building SqlSession.
-### The error may exist in com/mod/mapper/OrdersMapper.xml
-### The error occurred while processing mapper_resultMap[BaseResultMap]
-### Cause: org.apache.ibatis.builder.BuilderException: Error parsing SQL Mapper Configuration. Cause: org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 109; columnNumber: 33; 需要属性 "property", 并且必须为元素类型 "collection" 指定该属性。
- <com.util.DbConn.getFactory(DbConn.java:27)> 
-2017-11-13 19:10:08  WARN 304ms|>- 
-### Error building SqlSession.
-### The error may exist in com/mod/mapper/OrdersMapper.xml
-### The error occurred while processing mapper_resultMap[BaseResultMap]
-### Cause: org.apache.ibatis.builder.BuilderException: Error parsing SQL Mapper Configuration. Cause: org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 108; columnNumber: 24; 与元素类型 "collection" 相关联的属性 "property" 应有左引号。
- <com.util.DbConn.getFactory(DbConn.java:27)> 
-2017-11-13 21:08:45  WARN 797ms|>- 
-### Error building SqlSession.
-### The error may exist in com/mod/mapper/OrdersMapper.xml
-### The error occurred while processing mapper_resultMap[BaseResultMap]
-### Cause: org.apache.ibatis.builder.BuilderException: Error parsing SQL Mapper Configuration. Cause: org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 114; columnNumber: 25; 与元素类型 "collection" 相关联的 "property" 属性值不能包含 '<' 字符。
- <com.util.DbConn.getFactory(DbConn.java:27)> 
-2017-11-13 21:09:40  WARN 310ms|>- 
-### Error building SqlSession.
-### The error may exist in com/mod/mapper/OrdersMapper.xml
-### The error occurred while processing mapper_resultMap[BaseResultMap]
-### Cause: org.apache.ibatis.builder.BuilderException: Error parsing SQL Mapper Configuration. Cause: org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 114; columnNumber: 31; 元素类型 "collection" 必须后跟属性规范 ">" 或 "/>"。
- <com.util.DbConn.getFactory(DbConn.java:27)> 
-2017-11-13 21:13:23  WARN 307ms|>- 
-### Error building SqlSession.
-### The error may exist in com/mod/mapper/OrdersMapper.xml
-### The error occurred while processing mapper_resultMap[BaseResultMap]
-### Cause: org.apache.ibatis.builder.BuilderException: Error parsing SQL Mapper Configuration. Cause: org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 115; columnNumber: 37; 值为 "NONE" 的属性 "autoMapping" 必须具有列表 "true false " 中的值。
- <com.util.DbConn.getFactory(DbConn.java:27)> 
-2017-11-13 21:39:32  WARN 550ms|>- 
-### Error building SqlSession.
-### The error may exist in com/mod/mapper/OrdersMapper.xml
-### The error occurred while processing mapper_resultMap[ogViewGoupByOid]_collection[goods]
-### Cause: org.apache.ibatis.builder.BuilderException: Error parsing SQL Mapper Configuration. Cause: org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'subView'.  Cause: java.lang.ClassNotFoundException: Cannot find class: subView
- <com.util.DbConn.getFactory(DbConn.java:27)> 
-2017-11-13 21:40:42  WARN 308ms|>- 
-### Error building SqlSession.
-### The error may exist in com/mod/mapper/OrdersMapper.xml
-### The error occurred while processing mapper_resultMap[BaseResultMap]
-### Cause: org.apache.ibatis.builder.BuilderException: Error parsing SQL Mapper Configuration. Cause: org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 115; columnNumber: 52; 值为 "subView" 的属性 "fetchType" 必须具有列表 "lazy eager " 中的值。
- <com.util.DbConn.getFactory(DbConn.java:27)> 
-2017-11-13 21:41:25  WARN 301ms|>- 
-### Error building SqlSession.
-### The error may exist in com/mod/mapper/OrdersMapper.xml
-### The error occurred while processing mapper_resultMap[ogViewGoupByOid]_collection[goods]
-### Cause: org.apache.ibatis.builder.BuilderException: Error parsing SQL Mapper Configuration. Cause: org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'subView'.  Cause: java.lang.ClassNotFoundException: Cannot find class: subView
- <com.util.DbConn.getFactory(DbConn.java:27)> 
-2017-11-15 14:15:18  WARN 331ms|>- 
-### Error building SqlSession.
-### The error may exist in SQL Mapper Configuration
-### Cause: org.apache.ibatis.builder.BuilderException: Error parsing SQL Mapper Configuration. Cause: java.lang.ClassCastException: com.github.pagehelper.PageHelper cannot be cast to org.apache.ibatis.plugin.Interceptor
- <com.util.DbConn.getFactory(DbConn.java:25)> 
-2017-11-15 14:15:18  WARN 367ms|>- 
-### Error building SqlSession.
-### The error may exist in SQL Mapper Configuration
-### Cause: org.apache.ibatis.builder.BuilderException: Error parsing SQL Mapper Configuration. Cause: java.lang.ClassCastException: com.github.pagehelper.PageHelper cannot be cast to org.apache.ibatis.plugin.Interceptor
- <com.util.DbConn.getFactory(DbConn.java:25)> 
-2017-11-15 14:15:18  WARN 369ms|>- 
- <com.dao.GoodsDao.getGoddsByTid(GoodsDao.java:53)> 
-2017-11-15 14:16:04  WARN 100ms|>- 
-### Error building SqlSession.
-### The error may exist in SQL Mapper Configuration
-### Cause: org.apache.ibatis.builder.BuilderException: Error parsing SQL Mapper Configuration. Cause: java.lang.ClassCastException: com.github.pagehelper.PageHelper cannot be cast to org.apache.ibatis.plugin.Interceptor
- <com.util.DbConn.getFactory(DbConn.java:25)> 
-2017-11-15 14:16:04  WARN 122ms|>- 
-### Error building SqlSession.
-### The error may exist in SQL Mapper Configuration
-### Cause: org.apache.ibatis.builder.BuilderException: Error parsing SQL Mapper Configuration. Cause: java.lang.ClassCastException: com.github.pagehelper.PageHelper cannot be cast to org.apache.ibatis.plugin.Interceptor
- <com.util.DbConn.getFactory(DbConn.java:25)> 
-2017-11-15 14:16:04  WARN 122ms|>- 
- <com.dao.GoodsDao.getGoddsByTid(GoodsDao.java:53)> 
-2017-11-15 14:18:37  WARN 127ms|>- 
-### Error building SqlSession.
-### The error may exist in SQL Mapper Configuration
-### Cause: org.apache.ibatis.builder.BuilderException: Error parsing SQL Mapper Configuration. Cause: java.lang.ClassCastException: com.github.pagehelper.PageHelper cannot be cast to org.apache.ibatis.plugin.Interceptor
- <com.util.DbConn.getFactory(DbConn.java:25)> 
-2017-11-15 14:18:37  WARN 144ms|>- 
-### Error building SqlSession.
-### The error may exist in SQL Mapper Configuration
-### Cause: org.apache.ibatis.builder.BuilderException: Error parsing SQL Mapper Configuration. Cause: java.lang.ClassCastException: com.github.pagehelper.PageHelper cannot be cast to org.apache.ibatis.plugin.Interceptor
- <com.util.DbConn.getFactory(DbConn.java:25)> 
-2017-11-15 14:18:37  WARN 146ms|>- 
- <com.dao.GoodsDao.getGoddsByTid(GoodsDao.java:53)> 
-2017-11-15 14:19:17  WARN 100ms|>- 
-### Error building SqlSession.
-### The error may exist in SQL Mapper Configuration
-### Cause: org.apache.ibatis.builder.BuilderException: Error parsing SQL Mapper Configuration. Cause: java.lang.ClassCastException: com.github.pagehelper.PageHelper cannot be cast to org.apache.ibatis.plugin.Interceptor
- <com.util.DbConn.getFactory(DbConn.java:25)> 
-2017-11-15 14:19:17  WARN 116ms|>- 
-### Error building SqlSession.
-### The error may exist in SQL Mapper Configuration
-### Cause: org.apache.ibatis.builder.BuilderException: Error parsing SQL Mapper Configuration. Cause: java.lang.ClassCastException: com.github.pagehelper.PageHelper cannot be cast to org.apache.ibatis.plugin.Interceptor
- <com.util.DbConn.getFactory(DbConn.java:25)> 
-2017-11-15 14:19:17  WARN 116ms|>- 
- <com.dao.GoodsDao.getGoddsByTid(GoodsDao.java:53)> 
-2017-11-15 14:25:04  WARN 184ms|>- 
-### Error building SqlSession.
-### The error may exist in SQL Mapper Configuration
-### Cause: org.apache.ibatis.builder.BuilderException: Error parsing SQL Mapper Configuration. Cause: com.github.pagehelper.PageException: java.lang.ClassNotFoundException: mysql
- <com.util.DbConn.getFactory(DbConn.java:25)> 
-2017-11-15 14:25:04  WARN 200ms|>- 
-### Error building SqlSession.
-### The error may exist in SQL Mapper Configuration
-### Cause: org.apache.ibatis.builder.BuilderException: Error parsing SQL Mapper Configuration. Cause: com.github.pagehelper.PageException: java.lang.ClassNotFoundException: mysql
- <com.util.DbConn.getFactory(DbConn.java:25)> 
-2017-11-15 14:25:04  WARN 200ms|>- 
- <com.dao.GoodsDao.getGoddsByTid(GoodsDao.java:53)> 
-2017-11-27 14:13:49  WARN 34595ms|>- 
- <com.dao.UsersDao.addAddress(UsersDao.java:73)> 
-2017-11-27 14:15:44  WARN 17521ms|>- 
- <com.dao.UsersDao.addAddress(UsersDao.java:73)> 
-2017-11-27 14:51:07  WARN 25489ms|>- 
- <com.dao.UsersDao.deleAddress(UsersDao.java:136)> 
-2017-11-27 14:53:24  WARN 13281ms|>- You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'uid = 1' at line 1
- <com.dao.UsersDao.deleAddress(UsersDao.java:136)> 
-2017-11-27 15:52:02  WARN 1370765ms|>- 
- <com.dao.UsersDao.addAddress(UsersDao.java:74)> 
-2017-11-27 15:52:05  WARN 1373101ms|>- 
- <com.dao.UsersDao.addAddress(UsersDao.java:74)> 
-2017-11-27 15:54:10  WARN 1498771ms|>- 
- <com.dao.UsersDao.addAddress(UsersDao.java:74)> 
-2017-11-27 15:57:01  WARN 1669110ms|>- 
- <com.dao.UsersDao.addAddress(UsersDao.java:74)> 
-2017-11-27 15:57:23  WARN 1691633ms|>- 
- <com.dao.UsersDao.addAddress(UsersDao.java:74)> 
-2017-11-27 15:57:42  WARN 332ms|>- 
- <com.dao.UsersDao.addAddress(UsersDao.java:74)> 
-2017-11-27 16:57:25  WARN 16017ms|>- 
-### Error updating database.  Cause: com.mysql.jdbc.MysqlDataTruncation: Data truncation: Data too long for column 'aname' at row 1
-### The error may involve com.mod.mapper.AddressMapper.updateByPrimaryKeySelective-Inline
-### The error occurred while setting parameters
-### SQL: update address      SET uid = ?,                       address = ?,                              aphone = ?,                       aname = ?,                       province = ?,                       city = ?      where adressId = ?
-### Cause: com.mysql.jdbc.MysqlDataTruncation: Data truncation: Data too long for column 'aname' at row 1
- <com.dao.UsersDao.editAddress(UsersDao.java:90)> 
-2017-11-27 17:00:40  WARN 211387ms|>- 
-### Error updating database.  Cause: com.mysql.jdbc.MysqlDataTruncation: Data truncation: Data too long for column 'aname' at row 1
-### The error may involve com.mod.mapper.AddressMapper.updateByPrimaryKeySelective-Inline
-### The error occurred while setting parameters
-### SQL: update address      SET uid = ?,                       address = ?,                              aphone = ?,                       aname = ?,                       province = ?,                       city = ?      where adressId = ?
-### Cause: com.mysql.jdbc.MysqlDataTruncation: Data truncation: Data too long for column 'aname' at row 1
- <com.dao.UsersDao.editAddress(UsersDao.java:90)> 
-2017-11-27 17:03:05  WARN 559ms|>- 
-### Error updating database.  Cause: com.mysql.jdbc.MysqlDataTruncation: Data truncation: Data too long for column 'aname' at row 1
-### The error may involve com.mod.mapper.AddressMapper.updateByPrimaryKeySelective-Inline
-### The error occurred while setting parameters
-### SQL: update address      SET uid = ?,                       address = ?,                              aphone = ?,                       aname = ?,                       province = ?,                       city = ?      where adressId = ?
-### Cause: com.mysql.jdbc.MysqlDataTruncation: Data truncation: Data too long for column 'aname' at row 1
- <com.dao.UsersDao.editAddress(UsersDao.java:90)> 
-2017-11-27 18:51:03  WARN 1484698ms|>- 
- <com.dao.UsersDao.editAddress(UsersDao.java:98)> 
-2017-11-27 19:06:09  WARN 2390791ms|>- 
- <com.dao.UsersDao.editAddress(UsersDao.java:98)> 
-2017-11-27 19:10:58  WARN 917ms|>- 
- <com.dao.UsersDao.editAddress(UsersDao.java:98)> 
-2017-11-27 19:12:14  WARN 4444ms|>- 
- <com.dao.UsersDao.editAddress(UsersDao.java:98)> 
-2017-11-28 12:01:26  WARN 150952ms|>- 
-### Error updating database.  Cause: java.sql.SQLException: Incorrect decimal value: '' for column 'aphone' at row 1
-### The error may involve com.mod.mapper.AddressMapper.insertSelective-Inline
-### The error occurred while setting parameters
-### SQL: insert into address      ( uid,                       address,                       def,                       aphone,                       aname,                       province,                       city )       values ( ?,                       ?,                       ?,                       ?,                       ?,                       ?,                       ? )
-### Cause: java.sql.SQLException: Incorrect decimal value: '' for column 'aphone' at row 1
- <com.dao.UsersDao.addAddress(UsersDao.java:74)> 
-2017-11-28 12:02:13  WARN 198065ms|>- 
- <com.dao.UsersDao.addAddress(UsersDao.java:74)> 
-2017-11-30 08:54:07  WARN 4212ms|>- 
-### Error updating database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry 'asdf' for key 'uk_users_uname'
-### The error may involve com.mod.mapper.UsersMapper.insert-Inline
-### The error occurred while setting parameters
-### SQL: insert into users (uid, uname, upwd,        phone, city, regDate,        idCard, realName, age,        email, sex, avatar       )     values (?, ?, ?,        ?, ?, ?,        ?, ?, ?,        ?, ?, ?       )
-### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry 'asdf' for key 'uk_users_uname'
- <com.servelet.UserManagerSlt.regist(UserManagerSlt.java:233)> 
-2017-11-30 10:03:16  WARN 4152957ms|>- 
-### Error updating database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry 'qwe' for key 'uk_users_uname'
-### The error may involve com.mod.mapper.UsersMapper.insert-Inline
-### The error occurred while setting parameters
-### SQL: insert into users (uid, uname, upwd,        phone, city, regDate,        idCard, realName, age,        email, sex, avatar       )     values (?, ?, ?,        ?, ?, ?,        ?, ?, ?,        ?, ?, ?       )
-### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry 'qwe' for key 'uk_users_uname'
- <com.servelet.UserManagerSlt.regist(UserManagerSlt.java:233)> 
-2017-12-01 16:16:19  WARN 3301701ms|>- 
-### Error updating database.  Cause: java.sql.SQLException: Field 'address' doesn't have a default value
-### The error may involve com.mod.mapper.OrdersMapper.insertSelective-Inline
-### The error occurred while setting parameters
-### SQL: insert into orders      ( oid,                       uid,                       state,                       sum )       values ( ?,                       ?,                       ?,                       ? )
-### Cause: java.sql.SQLException: Field 'address' doesn't have a default value
- <com.dao.OrdersDao.addOrders(OrdersDao.java:145)> 
-2017-12-05 13:45:05  WARN 1630ms|>- 
-### Error querying database.  Cause: java.lang.ClassCastException: org.apache.ibatis.executor.ExecutionPlaceholder cannot be cast to java.util.List
-### The error may exist in com/mod/mapper/QrcheckMapper.java (best guess)
-### The error may involve com.mod.mapper.QrcheckMapper.selectByUUID
-### The error occurred while executing a query
-### Cause: java.lang.ClassCastException: org.apache.ibatis.executor.ExecutionPlaceholder cannot be cast to java.util.List
- <com.dao.QrcheckDao.getQrcheck(QrcheckDao.java:32)> 
-2017-12-08 10:39:53  WARN 3833ms|>- 
-### Error querying database.  Cause: java.lang.ClassCastException: org.apache.ibatis.executor.ExecutionPlaceholder cannot be cast to java.util.List
-### The error may exist in com/mod/mapper/QrcheckMapper.java (best guess)
-### The error may involve com.mod.mapper.QrcheckMapper.selectByUUID
-### The error occurred while executing a query
-### Cause: java.lang.ClassCastException: org.apache.ibatis.executor.ExecutionPlaceholder cannot be cast to java.util.List
- <com.dao.QrcheckDao.getQrcheck(QrcheckDao.java:32)> 
-2017-12-08 10:39:55  WARN 5827ms|>- 
-### Error querying database.  Cause: java.lang.ClassCastException: org.apache.ibatis.executor.ExecutionPlaceholder cannot be cast to java.util.List
-### The error may exist in com/mod/mapper/QrcheckMapper.java (best guess)
-### The error may involve com.mod.mapper.QrcheckMapper.selectByUUID
-### The error occurred while executing a query
-### Cause: java.lang.ClassCastException: org.apache.ibatis.executor.ExecutionPlaceholder cannot be cast to java.util.List
- <com.dao.QrcheckDao.getQrcheck(QrcheckDao.java:32)> 
-2017-12-08 10:39:57  WARN 7836ms|>- 
-### Error querying database.  Cause: java.lang.ClassCastException: org.apache.ibatis.executor.ExecutionPlaceholder cannot be cast to java.util.List
-### The error may exist in com/mod/mapper/QrcheckMapper.java (best guess)
-### The error may involve com.mod.mapper.QrcheckMapper.selectByUUID
-### The error occurred while executing a query
-### Cause: java.lang.ClassCastException: org.apache.ibatis.executor.ExecutionPlaceholder cannot be cast to java.util.List
- <com.dao.QrcheckDao.getQrcheck(QrcheckDao.java:32)> 
-2017-12-08 10:39:58  WARN 9230ms|>- 
-### Error querying database.  Cause: com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+### SQL: insert into orderform      ( oid,                       gid,                       gnum,                       SubTotal,                       descption,                       uid )       values ( ?,                       ?,                       ?,                       ?,                       ?,                       ? )
+### Cause: com.mysql.jdbc.MysqlDataTruncation: Data truncation: Out of range value for column 'SubTotal' at row 1
+; SQL []; Data truncation: Out of range value for column 'SubTotal' at row 1; nested exception is com.mysql.jdbc.MysqlDataTruncation: Data truncation: Out of range value for column 'SubTotal' at row 1....
+ <com.log.DaoLogging.afterThrowing(DaoLogging.java:53)> 
+2017-12-25 15:38:51  WARN 303840ms|>- Method <addOrders> end with exception: addOrders更新失败!库存不足....
+ <com.log.DaoLogging.afterThrowing(DaoLogging.java:53)> 
+2017-12-25 15:52:28  WARN 50997ms|>- Method <addOrders> end with exception: addOrders更新失败!库存不足....
+ <com.log.DaoLogging.afterThrowing(DaoLogging.java:53)> 
+2017-12-25 15:54:57  WARN 200527ms|>- Method <addOrders> end with exception: addOrders更新失败!库存不足....
+ <com.log.DaoLogging.afterThrowing(DaoLogging.java:53)> 
+2017-12-25 15:56:36  WARN 299074ms|>- Method <addOrders> end with exception: addOrders更新失败!库存不足....
+ <com.log.DaoLogging.afterThrowing(DaoLogging.java:53)> 
+2017-12-25 16:12:03  WARN 29024ms|>- Method <addOrders> end with exception: addOrders更新失败!库存不足....
+ <com.log.DaoLogging.afterThrowing(DaoLogging.java:53)> 
+2017-12-25 16:13:34  WARN 30652ms|>- Method <addOrders> end with exception: addOrders更新失败!库存不足....
+ <com.log.DaoLogging.afterThrowing(DaoLogging.java:53)> 
+2017-12-25 16:14:57  WARN 113313ms|>- Method <addOrders> end with exception: addOrders更新失败!库存不足....
+ <com.log.DaoLogging.afterThrowing(DaoLogging.java:53)> 
+2017-12-25 16:15:07  WARN 123430ms|>- Method <addOrders> end with exception: addOrders更新失败!库存不足....
+ <com.log.DaoLogging.afterThrowing(DaoLogging.java:53)> 
+2017-12-25 16:15:49  WARN 165624ms|>- Method <addOrders> end with exception: addOrders更新失败!库存不足....
+ <com.log.DaoLogging.afterThrowing(DaoLogging.java:53)> 
+2017-12-25 16:18:30  WARN 326768ms|>- Method <addOrders> end with exception: addOrders更新失败!库存不足....
+ <com.log.DaoLogging.afterThrowing(DaoLogging.java:53)> 
+2017-12-25 16:30:27  WARN 29222ms|>- Method <addOrders> end with exception: addOrders更新失败!库存不足....
+ <com.log.DaoLogging.afterThrowing(DaoLogging.java:53)> 
+2017-12-25 16:31:20  WARN 81974ms|>- Method <addOrders> end with exception: addOrders更新失败!库存不足....
+ <com.log.DaoLogging.afterThrowing(DaoLogging.java:53)> 
+2017-12-25 16:35:17  WARN 29335ms|>- Method <addOrders> end with exception: addOrders更新失败!库存不足....
+ <com.log.DaoLogging.afterThrowing(DaoLogging.java:53)> 
+2017-12-25 16:39:01  WARN 14771ms|>- Method <addOrders> end with exception: addOrders更新失败!库存不足....
+ <com.log.DaoLogging.afterThrowing(DaoLogging.java:53)> 
+2017-12-25 16:41:13  WARN 17058ms|>- Method <addOrders> end with exception: addOrders更新失败!库存不足....
+ <com.log.DaoLogging.afterThrowing(DaoLogging.java:53)> 
+2017-12-25 17:49:24  WARN 4478ms|>- Exception encountered during context initialization - cancelling refresh attempt
+ <org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:487)> 
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'indexAnd' defined in file [D:\MyEclipse\apache-tomcat-9.0.1\webapps\shoppingSSM\WEB-INF\classes\com\Android\servelet\IndexAnd.class]: BeanPostProcessor before instantiation of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.transaction.config.internalTransactionAdvisor': Cannot resolve reference to bean 'org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0' while setting bean property 'transactionAttributeSource'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0': Initialization of bean failed; nested exception is java.lang.IllegalArgumentException: Pointcut is not well-formed: expecting ')' at character position 0
+execution(* com.dao.*.*(..)) && !execution(* com.service.QrcheckService.getQrcheck(String)
+^
 
-Last packet sent to the server was 0 ms ago.
-### The error may exist in com/mod/mapper/QrcheckMapper.java (best guess)
-### The error may involve com.mod.mapper.QrcheckMapper.selectByUUID
-### The error occurred while executing a query
-### Cause: com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:472)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:229)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:298)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:193)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:725)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:757)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:480)
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:403)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:306)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:106)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4643)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5105)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:740)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:716)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:703)
+	at org.apache.catalina.startup.HostConfig.deployDirectory(HostConfig.java:1134)
+	at org.apache.catalina.startup.HostConfig$DeployDirectory.run(HostConfig.java:1868)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:112)
+	at org.apache.catalina.startup.HostConfig.deployDirectories(HostConfig.java:1045)
+	at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:433)
+	at org.apache.catalina.startup.HostConfig.start(HostConfig.java:1578)
+	at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:308)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:123)
+	at org.apache.catalina.util.LifecycleBase.setStateInternal(LifecycleBase.java:424)
+	at org.apache.catalina.util.LifecycleBase.setState(LifecycleBase.java:367)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:964)
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:839)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1425)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1415)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:134)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:941)
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:258)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:422)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:770)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:671)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:355)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:495)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.transaction.config.internalTransactionAdvisor': Cannot resolve reference to bean 'org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0' while setting bean property 'transactionAttributeSource'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0': Initialization of bean failed; nested exception is java.lang.IllegalArgumentException: Pointcut is not well-formed: expecting ')' at character position 0
+execution(* com.dao.*.*(..)) && !execution(* com.service.QrcheckService.getQrcheck(String)
+^
 
-Last packet sent to the server was 0 ms ago.
- <com.dao.QrcheckDao.getQrcheck(QrcheckDao.java:32)> 
-2017-12-08 10:40:01  WARN 11863ms|>- 
-### Error querying database.  Cause: java.lang.ClassCastException: org.apache.ibatis.executor.ExecutionPlaceholder cannot be cast to java.util.List
-### The error may exist in com/mod/mapper/QrcheckMapper.java (best guess)
-### The error may involve com.mod.mapper.QrcheckMapper.selectByUUID
-### The error occurred while executing a query
-### Cause: java.lang.ClassCastException: org.apache.ibatis.executor.ExecutionPlaceholder cannot be cast to java.util.List
- <com.dao.QrcheckDao.getQrcheck(QrcheckDao.java:32)> 
-2017-12-08 10:40:03  WARN 13885ms|>- 
-### Error querying database.  Cause: java.lang.ClassCastException: org.apache.ibatis.executor.ExecutionPlaceholder cannot be cast to java.util.List
-### The error may exist in com/mod/mapper/QrcheckMapper.java (best guess)
-### The error may involve com.mod.mapper.QrcheckMapper.selectByUUID
-### The error occurred while executing a query
-### Cause: java.lang.ClassCastException: org.apache.ibatis.executor.ExecutionPlaceholder cannot be cast to java.util.List
- <com.dao.QrcheckDao.getQrcheck(QrcheckDao.java:32)> 
-2017-12-08 10:40:03  WARN 13934ms|>- 
-### Error querying database.  Cause: com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:336)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:108)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1471)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1216)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:538)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:476)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:229)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:298)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:198)
+	at org.springframework.aop.framework.autoproxy.BeanFactoryAdvisorRetrievalHelper.findAdvisorBeans(BeanFactoryAdvisorRetrievalHelper.java:92)
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.findCandidateAdvisors(AbstractAdvisorAutoProxyCreator.java:101)
+	at org.springframework.aop.aspectj.annotation.AnnotationAwareAspectJAutoProxyCreator.findCandidateAdvisors(AnnotationAwareAspectJAutoProxyCreator.java:85)
+	at org.springframework.aop.aspectj.autoproxy.AspectJAwareAdvisorAutoProxyCreator.shouldSkip(AspectJAwareAdvisorAutoProxyCreator.java:103)
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.postProcessBeforeInstantiation(AbstractAutoProxyCreator.java:241)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:977)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.resolveBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:948)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:466)
+	... 51 more
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0': Initialization of bean failed; nested exception is java.lang.IllegalArgumentException: Pointcut is not well-formed: expecting ')' at character position 0
+execution(* com.dao.*.*(..)) && !execution(* com.service.QrcheckService.getQrcheck(String)
+^
 
-Last packet sent to the server was 0 ms ago.
-### The error may exist in com/mod/mapper/QrcheckMapper.java (best guess)
-### The error may involve com.mod.mapper.QrcheckMapper.selectByUUID
-### The error occurred while executing a query
-### Cause: com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:548)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:476)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:229)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:298)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:193)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:328)
+	... 68 more
+Caused by: java.lang.IllegalArgumentException: Pointcut is not well-formed: expecting ')' at character position 0
+execution(* com.dao.*.*(..)) && !execution(* com.service.QrcheckService.getQrcheck(String)
+^
 
-Last packet sent to the server was 0 ms ago.
- <com.dao.QrcheckDao.getQrcheck(QrcheckDao.java:32)> 
-2017-12-08 10:40:07  WARN 17915ms|>- 
-### Error querying database.  Cause: java.lang.ClassCastException: org.apache.ibatis.executor.ExecutionPlaceholder cannot be cast to java.util.List
-### The error may exist in com/mod/mapper/QrcheckMapper.java (best guess)
-### The error may involve com.mod.mapper.QrcheckMapper.selectByUUID
-### The error occurred while executing a query
-### Cause: java.lang.ClassCastException: org.apache.ibatis.executor.ExecutionPlaceholder cannot be cast to java.util.List
- <com.dao.QrcheckDao.getQrcheck(QrcheckDao.java:32)> 
-2017-12-08 10:40:09  WARN 19928ms|>- 
-### Error querying database.  Cause: java.lang.ClassCastException: org.apache.ibatis.executor.ExecutionPlaceholder cannot be cast to java.util.List
-### The error may exist in com/mod/mapper/QrcheckMapper.java (best guess)
-### The error may involve com.mod.mapper.QrcheckMapper.selectByUUID
-### The error occurred while executing a query
-### Cause: java.lang.ClassCastException: org.apache.ibatis.executor.ExecutionPlaceholder cannot be cast to java.util.List
- <com.dao.QrcheckDao.getQrcheck(QrcheckDao.java:32)> 
-2017-12-08 10:40:09  WARN 20007ms|>- 
-### Error querying database.  Cause: com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+	at org.aspectj.weaver.tools.PointcutParser.resolvePointcutExpression(PointcutParser.java:334)
+	at org.aspectj.weaver.reflect.InternalUseOnlyPointcutParser.resolvePointcutExpression(InternalUseOnlyPointcutParser.java:36)
+	at org.aspectj.weaver.reflect.Java15ReflectionBasedReferenceTypeDelegate.getDeclaredPointcuts(Java15ReflectionBasedReferenceTypeDelegate.java:309)
+	at org.aspectj.weaver.ReferenceType.getDeclaredPointcuts(ReferenceType.java:890)
+	at org.aspectj.weaver.ResolvedType$PointcutGetter.get(ResolvedType.java:243)
+	at org.aspectj.weaver.ResolvedType$PointcutGetter.get(ResolvedType.java:241)
+	at org.aspectj.weaver.Iterators$4$1.hasNext(Iterators.java:213)
+	at org.aspectj.weaver.Iterators$4.hasNext(Iterators.java:230)
+	at org.aspectj.weaver.ResolvedType.findPointcut(ResolvedType.java:743)
+	at org.aspectj.weaver.patterns.ReferencePointcut.resolveBindings(ReferencePointcut.java:148)
+	at org.aspectj.weaver.patterns.Pointcut.resolve(Pointcut.java:189)
+	at org.aspectj.weaver.tools.PointcutParser.resolvePointcutExpression(PointcutParser.java:331)
+	at org.aspectj.weaver.tools.PointcutParser.parsePointcutExpression(PointcutParser.java:312)
+	at org.springframework.aop.aspectj.AspectJExpressionPointcut.buildPointcutExpression(AspectJExpressionPointcut.java:206)
+	at org.springframework.aop.aspectj.AspectJExpressionPointcut.checkReadyToMatch(AspectJExpressionPointcut.java:192)
+	at org.springframework.aop.aspectj.AspectJExpressionPointcut.getClassFilter(AspectJExpressionPointcut.java:169)
+	at org.springframework.aop.support.AopUtils.canApply(AopUtils.java:208)
+	at org.springframework.aop.support.AopUtils.canApply(AopUtils.java:262)
+	at org.springframework.aop.support.AopUtils.findAdvisorsThatCanApply(AopUtils.java:294)
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.findAdvisorsThatCanApply(AbstractAdvisorAutoProxyCreator.java:118)
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.findEligibleAdvisors(AbstractAdvisorAutoProxyCreator.java:88)
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.getAdvicesAndAdvisorsForBean(AbstractAdvisorAutoProxyCreator.java:69)
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.wrapIfNecessary(AbstractAutoProxyCreator.java:328)
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.postProcessAfterInitialization(AbstractAutoProxyCreator.java:291)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsAfterInitialization(AbstractAutowireCapableBeanFactory.java:422)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1573)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:540)
+	... 74 more
+2017-12-25 17:49:24  ERROR 4529ms|>- Context initialization failed
+ <org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:331)> 
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'indexAnd' defined in file [D:\MyEclipse\apache-tomcat-9.0.1\webapps\shoppingSSM\WEB-INF\classes\com\Android\servelet\IndexAnd.class]: BeanPostProcessor before instantiation of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.transaction.config.internalTransactionAdvisor': Cannot resolve reference to bean 'org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0' while setting bean property 'transactionAttributeSource'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0': Initialization of bean failed; nested exception is java.lang.IllegalArgumentException: Pointcut is not well-formed: expecting ')' at character position 0
+execution(* com.dao.*.*(..)) && !execution(* com.service.QrcheckService.getQrcheck(String)
+^
 
-Last packet sent to the server was 0 ms ago.
-### The error may exist in com/mod/mapper/QrcheckMapper.java (best guess)
-### The error may involve com.mod.mapper.QrcheckMapper.selectByUUID
-### The error occurred while executing a query
-### Cause: com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:472)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:229)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:298)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:193)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:725)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:757)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:480)
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:403)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:306)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:106)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4643)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5105)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:740)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:716)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:703)
+	at org.apache.catalina.startup.HostConfig.deployDirectory(HostConfig.java:1134)
+	at org.apache.catalina.startup.HostConfig$DeployDirectory.run(HostConfig.java:1868)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:112)
+	at org.apache.catalina.startup.HostConfig.deployDirectories(HostConfig.java:1045)
+	at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:433)
+	at org.apache.catalina.startup.HostConfig.start(HostConfig.java:1578)
+	at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:308)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:123)
+	at org.apache.catalina.util.LifecycleBase.setStateInternal(LifecycleBase.java:424)
+	at org.apache.catalina.util.LifecycleBase.setState(LifecycleBase.java:367)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:964)
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:839)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1425)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1415)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:134)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:941)
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:258)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:422)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:770)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:671)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:355)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:495)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.transaction.config.internalTransactionAdvisor': Cannot resolve reference to bean 'org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0' while setting bean property 'transactionAttributeSource'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0': Initialization of bean failed; nested exception is java.lang.IllegalArgumentException: Pointcut is not well-formed: expecting ')' at character position 0
+execution(* com.dao.*.*(..)) && !execution(* com.service.QrcheckService.getQrcheck(String)
+^
 
-Last packet sent to the server was 0 ms ago.
- <com.dao.QrcheckDao.getQrcheck(QrcheckDao.java:32)> 
-2017-12-08 10:40:13  WARN 23945ms|>- 
-### Error querying database.  Cause: java.lang.ClassCastException: org.apache.ibatis.executor.ExecutionPlaceholder cannot be cast to java.util.List
-### The error may exist in com/mod/mapper/QrcheckMapper.java (best guess)
-### The error may involve com.mod.mapper.QrcheckMapper.selectByUUID
-### The error occurred while executing a query
-### Cause: java.lang.ClassCastException: org.apache.ibatis.executor.ExecutionPlaceholder cannot be cast to java.util.List
- <com.dao.QrcheckDao.getQrcheck(QrcheckDao.java:32)> 
-2017-12-08 10:40:15  WARN 26012ms|>- 
-### Error querying database.  Cause: com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:336)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:108)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1471)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1216)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:538)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:476)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:229)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:298)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:198)
+	at org.springframework.aop.framework.autoproxy.BeanFactoryAdvisorRetrievalHelper.findAdvisorBeans(BeanFactoryAdvisorRetrievalHelper.java:92)
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.findCandidateAdvisors(AbstractAdvisorAutoProxyCreator.java:101)
+	at org.springframework.aop.aspectj.annotation.AnnotationAwareAspectJAutoProxyCreator.findCandidateAdvisors(AnnotationAwareAspectJAutoProxyCreator.java:85)
+	at org.springframework.aop.aspectj.autoproxy.AspectJAwareAdvisorAutoProxyCreator.shouldSkip(AspectJAwareAdvisorAutoProxyCreator.java:103)
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.postProcessBeforeInstantiation(AbstractAutoProxyCreator.java:241)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:977)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.resolveBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:948)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:466)
+	... 51 more
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0': Initialization of bean failed; nested exception is java.lang.IllegalArgumentException: Pointcut is not well-formed: expecting ')' at character position 0
+execution(* com.dao.*.*(..)) && !execution(* com.service.QrcheckService.getQrcheck(String)
+^
 
-Last packet sent to the server was 0 ms ago.
-### The error may exist in com/mod/mapper/QrcheckMapper.java (best guess)
-### The error may involve com.mod.mapper.QrcheckMapper.selectByUUID
-### The error occurred while executing a query
-### Cause: com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:548)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:476)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:229)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:298)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:193)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:328)
+	... 68 more
+Caused by: java.lang.IllegalArgumentException: Pointcut is not well-formed: expecting ')' at character position 0
+execution(* com.dao.*.*(..)) && !execution(* com.service.QrcheckService.getQrcheck(String)
+^
 
-Last packet sent to the server was 0 ms ago.
- <com.dao.QrcheckDao.getQrcheck(QrcheckDao.java:32)> 
+	at org.aspectj.weaver.tools.PointcutParser.resolvePointcutExpression(PointcutParser.java:334)
+	at org.aspectj.weaver.reflect.InternalUseOnlyPointcutParser.resolvePointcutExpression(InternalUseOnlyPointcutParser.java:36)
+	at org.aspectj.weaver.reflect.Java15ReflectionBasedReferenceTypeDelegate.getDeclaredPointcuts(Java15ReflectionBasedReferenceTypeDelegate.java:309)
+	at org.aspectj.weaver.ReferenceType.getDeclaredPointcuts(ReferenceType.java:890)
+	at org.aspectj.weaver.ResolvedType$PointcutGetter.get(ResolvedType.java:243)
+	at org.aspectj.weaver.ResolvedType$PointcutGetter.get(ResolvedType.java:241)
+	at org.aspectj.weaver.Iterators$4$1.hasNext(Iterators.java:213)
+	at org.aspectj.weaver.Iterators$4.hasNext(Iterators.java:230)
+	at org.aspectj.weaver.ResolvedType.findPointcut(ResolvedType.java:743)
+	at org.aspectj.weaver.patterns.ReferencePointcut.resolveBindings(ReferencePointcut.java:148)
+	at org.aspectj.weaver.patterns.Pointcut.resolve(Pointcut.java:189)
+	at org.aspectj.weaver.tools.PointcutParser.resolvePointcutExpression(PointcutParser.java:331)
+	at org.aspectj.weaver.tools.PointcutParser.parsePointcutExpression(PointcutParser.java:312)
+	at org.springframework.aop.aspectj.AspectJExpressionPointcut.buildPointcutExpression(AspectJExpressionPointcut.java:206)
+	at org.springframework.aop.aspectj.AspectJExpressionPointcut.checkReadyToMatch(AspectJExpressionPointcut.java:192)
+	at org.springframework.aop.aspectj.AspectJExpressionPointcut.getClassFilter(AspectJExpressionPointcut.java:169)
+	at org.springframework.aop.support.AopUtils.canApply(AopUtils.java:208)
+	at org.springframework.aop.support.AopUtils.canApply(AopUtils.java:262)
+	at org.springframework.aop.support.AopUtils.findAdvisorsThatCanApply(AopUtils.java:294)
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.findAdvisorsThatCanApply(AbstractAdvisorAutoProxyCreator.java:118)
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.findEligibleAdvisors(AbstractAdvisorAutoProxyCreator.java:88)
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.getAdvicesAndAdvisorsForBean(AbstractAdvisorAutoProxyCreator.java:69)
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.wrapIfNecessary(AbstractAutoProxyCreator.java:328)
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.postProcessAfterInitialization(AbstractAutoProxyCreator.java:291)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsAfterInitialization(AbstractAutowireCapableBeanFactory.java:422)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1573)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:540)
+	... 74 more

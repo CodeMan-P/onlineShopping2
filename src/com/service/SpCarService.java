@@ -3,30 +3,36 @@ package com.service;
 import java.util.HashMap;
 import java.util.LinkedList;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
+
 import com.dao.SpCarDao;
 import com.mod.bean.ShoppingCar;
 
+@Repository
 public class SpCarService {
-	public static boolean addGoods(ShoppingCar car) {
-		return SpCarDao.addGoods(car);
+	@Autowired
+	SpCarDao spCarDao;
+	public  boolean addGoods(ShoppingCar car) {
+		return spCarDao.addGoods(car);
 	}
 
-	public static int getCarNum(Integer uid) {
-		return SpCarDao.getCarNum(uid);
+	public  int getCarNum(Integer uid) {
+		return spCarDao.getCarNum(uid);
 	}
 
-	public static boolean deleGoods(Integer cid) {
-		return SpCarDao.deleGoods(cid);
+	public  boolean deleGoods(Integer cid) {
+		return spCarDao.deleGoods(cid);
 	}
 
-	public static LinkedList<ShoppingCar> getCarListByUid(Integer uid) {
-		return SpCarDao.getCarListByUid(uid);
+	public  LinkedList<ShoppingCar> getCarListByUid(Integer uid) {
+		return spCarDao.getCarListByUid(uid);
 	}
 
-	public static LinkedList<HashMap<String, Object>> getCarView(Integer uid) {
-		return SpCarDao.getCarView(uid);
+	public  LinkedList<HashMap<String, Object>> getCarView(Integer uid) {
+		return spCarDao.getCarView(uid);
 	}
-	public static boolean updateByPrimaryKeySelective(ShoppingCar car){
-		return SpCarDao.updateByPrimaryKeySelective(car);
+	public  boolean updateByPrimaryKeySelective(ShoppingCar car){
+		return spCarDao.updateByPrimaryKeySelective(car);
 	}
 }

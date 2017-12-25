@@ -1,5 +1,8 @@
 package com.mod.bean;
 
+import org.springframework.stereotype.Component;
+
+@Component("userBean")
 public class UserBean {
 	
 	private int userid;

@@ -13,6 +13,9 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
 import com.fasterxml.jackson.annotation.JsonInclude.Include;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.service.GoodsService;
@@ -21,7 +24,10 @@ import com.service.GoodsService;
  * Servlet implementation class IndexAnd
  */
 @WebServlet("/IndexAnd")
+@Component
 public class IndexAnd extends HttpServlet {
+	@Autowired
+	GoodsService goodsService;
 	private static final long serialVersionUID = 1L;
 
 	/**
@@ -42,7 +48,7 @@ public class IndexAnd extends HttpServlet {
 		request.setCharacterEncoding("utf-8");
 		response.setContentType("text/html");
 		response.setCharacterEncoding("utf-8");
-		LinkedList<LinkedHashMap<String, Object>> list = GoodsService.getGoddsAnd();
+		LinkedList<LinkedHashMap<String, Object>> list = goodsService.getGoddsAnd();
 		LinkedHashMap<String, Object> result = new LinkedHashMap<String, Object>();
 		result.put("code", 0);
 		result.put("message", "OK");

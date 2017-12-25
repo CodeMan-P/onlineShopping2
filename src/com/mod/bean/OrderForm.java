@@ -1,7 +1,9 @@
 package com.mod.bean;
 
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import org.springframework.stereotype.Component;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+@Component("orderForm")
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class OrderForm {
 

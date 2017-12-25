@@ -6,11 +6,15 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 
+import javax.annotation.Resource;
+
+import org.springframework.stereotype.Repository;
+
 import com.mod.bean.RoleBean;
 import com.mod.bean.UserBean;
 import com.util.DbConn;
 
-
+@Repository
 public class RoleUserDao {
 	
 	Connection con=null;

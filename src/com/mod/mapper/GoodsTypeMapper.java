@@ -1,7 +1,9 @@
 package com.mod.mapper;
 
-import com.mod.bean.GoodsType;
+import org.mybatis.spring.annotation.MapperScan;
 
+import com.mod.bean.GoodsType;
+@MapperScan
 public interface GoodsTypeMapper {
 
 	/**

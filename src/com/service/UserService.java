@@ -2,37 +2,41 @@ package com.service;
 
 import java.util.LinkedList;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
 import com.dao.UsersDao;
 import com.mod.bean.Address;
 import com.mod.bean.Users;
-
+@Service
 public class UserService {
-
-	public static Users findUser(Users user) {
-		return UsersDao.findUser(user);
+	@Autowired
+	UsersDao usersDao;
+	public  Users findUser(Users user) {
+		return usersDao.findUser(user);
 	}
 
-	public static String addUser(Users user) {
+	public  String addUser(Users user) {
 
-		return UsersDao.addUser(user);
+		return usersDao.addUser(user);
 	}
 
-	public static LinkedList<Address> getAdress(Integer uid) {
-		return UsersDao.getAdress(uid);
+	public  LinkedList<Address> getAdress(Integer uid) {
+		return usersDao.getAdress(uid);
 	}
 
-	public static boolean deleAddress(Integer addressId) {
-		return UsersDao.deleAddress(addressId);
+	public  boolean deleAddress(Integer addressId) {
+		return usersDao.deleAddress(addressId);
 	}
 
-	public static boolean editAddress(Address address) {
-		return UsersDao.editAddress(address);
+	public  boolean editAddress(Address address) {
+		return usersDao.editAddress(address);
 	}
 
-	public static boolean addAddress(Address address) {
-		return UsersDao.addAddress(address);
+	public  boolean addAddress(Address address) {
+		return usersDao.addAddress(address);
 	}
-	public static boolean updateByPrimaryKeySelective(Users record){
-		return UsersDao.updateByPrimaryKeySelective(record);
+	public  boolean updateByPrimaryKeySelective(Users record){
+		return usersDao.updateByPrimaryKeySelective(record);
 	}
 }

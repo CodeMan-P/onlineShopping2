@@ -1,25 +1,31 @@
 package com.service;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
 import com.dao.QrcheckDao;
 import com.mod.bean.Qrcheck;
 
+@Service
 public class QrcheckService {
-	public static Qrcheck getQrcheck(String UUID){
-		return QrcheckDao.getQrcheck(UUID);
+	@Autowired
+	QrcheckDao qrcheckDao;
+	public  Qrcheck getQrcheck(String UUID){
+		return qrcheckDao.getQrcheck(UUID);
 	}
 	
-	public static boolean deleQrcheck(String UUID){
-		return QrcheckDao.deleQrcheck(UUID);
+	public  boolean deleQrcheck(String UUID){
+		return qrcheckDao.deleQrcheck(UUID);
 	}
 	
-	public static boolean insertQrcheck(Qrcheck qrc){
-		return QrcheckDao.insertQrcheck(qrc);
+	public  boolean insertQrcheck(Qrcheck qrc){
+		return qrcheckDao.insertQrcheck(qrc);
 	}
 	
-	public static boolean changeStatus(String UUID,Integer status){
-		return QrcheckDao.changeStatus(UUID, status);
+	public  boolean changeStatus(String UUID,Integer status){
+		return qrcheckDao.changeStatus(UUID, status);
 	}
-	public static boolean update(Qrcheck qrc){
-		return QrcheckDao.update(qrc);
+	public  boolean update(Qrcheck qrc){
+		return qrcheckDao.update(qrc);
 	}
 }

@@ -14,6 +14,9 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import org.apache.log4j.Logger;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.context.support.SpringBeanAutowiringSupport;
 
 import com.fasterxml.jackson.core.JsonParseException;
 import com.fasterxml.jackson.core.JsonProcessingException;
@@ -27,7 +30,10 @@ import com.service.UserService;
 /**
  * Servlet implementation class UserManagerSlt
  */
+@Controller
 public class UserManagerSlt extends HttpServlet {
+	@Autowired
+	UserService userService;
 	/**
 	 * 
 	 */
@@ -42,16 +48,11 @@ public class UserManagerSlt extends HttpServlet {
 	}
 
 	@Override
-	public void init() throws ServletException {
-		// TODO Auto-generated method stub
-		super.init();
+	public void init(ServletConfig config) throws ServletException {
+	    SpringBeanAutowiringSupport.processInjectionBasedOnServletContext(this,  
+	              config.getServletContext());  
 	}
 
-	@Override
-	public void init(ServletConfig config) throws ServletException {
-		// TODO Auto-generated method stub
-		super.init(config);
-	}
 
 	/**
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse
@@ -78,8 +79,6 @@ public class UserManagerSlt extends HttpServlet {
 		PrintWriter out = response.getWriter();
 		String flag = request.getParameter("flag");
 		ObjectMapper mapper = new ObjectMapper();
-		String json = "";
-		Users user = null;
 		if (flag != null) {
 			switch (flag) {
 			case "regist":
@@ -131,14 +130,14 @@ public class UserManagerSlt extends HttpServlet {
 		String pwd = hm.get("opwd");
 		String name = (String) request.getSession().getAttribute("name");
 		Users users = new Users(name, pwd);
-		users = UserService.findUser(users);
+		users = userService.findUser(users);
 		if (users == null) {
 			out.write("{\"message\":\"旧密码错误，修改失败!\"}");
 			out.flush();
 		}else{
 			Users newUser = new Users(name,hm.get("npwd"));
 			newUser.setUid(users.getUid());
-			boolean b = UserService.updateByPrimaryKeySelective(newUser);
+			boolean b = userService.updateByPrimaryKeySelective(newUser);
 			if(b){
 				out.write("{\"message\":\"密码修改成功！\"}");
 			}else{
@@ -224,7 +223,7 @@ public class UserManagerSlt extends HttpServlet {
 		json = json.replace("]", "");
 		try {
 			user = mapper.readValue(json, Users.class);
-			String message = UserService.addUser(user);
+			String message = userService.addUser(user);
 			if (message.contains("成功")) {
 				request.getSession().setAttribute("name", user.getUname());
 				request.getSession().setAttribute("uid", user.getUid());

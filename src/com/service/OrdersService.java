@@ -4,42 +4,48 @@ import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.LinkedList;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
 import com.dao.OrdersDao;
 import com.mod.bean.OrderForm;
 import com.mod.bean.Orders;
 
+@Service
 public class OrdersService {
-	public static boolean addOrders(Orders orders, LinkedList<OrderForm> orderlist, LinkedList<Integer> buyCids) {
-		return OrdersDao.addOrders(orders, orderlist, buyCids);
+	@Autowired
+	OrdersDao ordersDao;
+	public  boolean addOrders(Orders orders, LinkedList<OrderForm> orderlist, LinkedList<Integer> buyCids) {
+		return ordersDao.addOrders(orders, orderlist, buyCids);
 	}
 
-	public static LinkedList<HashMap<String, Object>> getOrderList(Long oid, Integer uid) {
-		return OrdersDao.getOrderList(oid, uid);
+	public  LinkedList<HashMap<String, Object>> getOrderList(Long oid, Integer uid) {
+		return ordersDao.getOrderList(oid, uid);
 	}
 
-	public static LinkedList<HashMap<String, Object>> getOrderList(String oid, Integer uid) {
-		return OrdersDao.getOrderList(oid, uid);
+	public  LinkedList<HashMap<String, Object>> getOrderList(String oid, Integer uid) {
+		return ordersDao.getOrderList(oid, uid);
 	}
 
-	public static boolean updateByOUid(String oid, Integer uid) {
-		return OrdersDao.updateByOUid(oid, uid);
+	public  boolean updateByOUid(String oid, Integer uid) {
+		return ordersDao.updateByOUid(oid, uid);
 	}
 
-	public static boolean updateByOUid(Long oid, Integer uid) {
-		return OrdersDao.updateByOUid(oid, uid);
+	public  boolean updateByOUid(Long oid, Integer uid) {
+		return ordersDao.updateByOUid(oid, uid);
 	}
 
-	public static boolean addOrders(Orders orders, OrderForm orderform) {
-		return OrdersDao.addOrders(orders, orderform);
+	public  boolean addOrders(Orders orders, OrderForm orderform) {
+		return ordersDao.addOrders(orders, orderform);
 	}
 
-	public static LinkedList<LinkedHashMap<String, Object>> getOGViewGoupByOid(Integer uid) {
+	public  LinkedList<LinkedHashMap<String, Object>> getOGViewGoupByOid(Integer uid) {
 
-		return OrdersDao.getOGViewGoupByOid(uid);
+		return ordersDao.getOGViewGoupByOid(uid);
 	}
 
 	@SuppressWarnings("unchecked")
-	public static HashMap<String, Object> jsonFactory(LinkedList<HashMap<String, Object>> orderslist) {
+	public  HashMap<String, Object> jsonFactory(LinkedList<HashMap<String, Object>> orderslist) {
 		// 提取公共字段
 		HashMap<String, Object> m = new HashMap<String, Object>();
 		LinkedList<String> fileds = new LinkedList<String>();

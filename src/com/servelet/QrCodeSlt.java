@@ -10,8 +10,6 @@ import java.io.File;
 import java.io.IOException;
 import java.io.OutputStream;
 import java.io.PrintWriter;
-import java.net.InetAddress;
-import java.net.UnknownHostException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.HashMap;
@@ -19,15 +17,16 @@ import java.util.Map;
 import java.util.UUID;
 
 import javax.imageio.ImageIO;
+import javax.servlet.ServletConfig;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import org.apache.commons.codec.binary.Base64;
-import org.apache.jasper.tagplugins.jstl.core.Out;
-import org.apache.tools.ant.types.CommandlineJava.SysProperties;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+import org.springframework.web.context.support.SpringBeanAutowiringSupport;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.google.zxing.BarcodeFormat;
@@ -51,14 +50,21 @@ public class QrCodeSlt extends HttpServlet {
 	static int WIDTH = 400;
 	static int HEIGHT = 400;
 	File logoFile;
-	@Override
-	public void init() throws ServletException {
-		super.init();
-		
-		logoFile = new File(this.getServletContext()
-				.getRealPath("./img/QRlogo.png"));
-	}
+	@Autowired
+	UserService userService;
+	@Autowired
+	QrcheckService qrcheckService;
+	@Autowired
+	SpCarService spCarService;
 
+	@Override
+	public void init(ServletConfig config) throws ServletException {
+	    SpringBeanAutowiringSupport.processInjectionBasedOnServletContext(this,  
+	              config.getServletContext());  
+	    String path = config.getServletContext().getRealPath("./img/QRlogo.png");
+		logoFile = new File(path);
+	}
+	
 	private static final long serialVersionUID = 1L;
 
 	/**
@@ -91,26 +97,26 @@ public class QrCodeSlt extends HttpServlet {
 			String name = request.getParameter("name");
 			String pwd = request.getParameter("pwd");
 			Users users = new Users(name, pwd);
-			users = UserService.findUser(users);
+			users = userService.findUser(users);
 
 			if (users == null) {
 				out.write("<script type='text/javascript'>alert('登录失败，账户不存在！');</script>");
 				
 			} else {
 				Qrcheck qr = new Qrcheck(uuid, 1, name, pwd);
-				QrcheckService.update(qr);
+				qrcheckService.update(qr);
 				out.write("<script type='text/javascript'>alert('登录成功');</script>");
 			}
 		}else if (flag.equals("scan")){
 			//获得二维码链接里的UUID
 			String uuid = request.getParameter("UUID");
 			
-			QrcheckService.changeStatus(uuid,2);
+			qrcheckService.changeStatus(uuid,2);
 			request.getSession().setAttribute("uuid", uuid);
 			response.sendRedirect("qrcheck.jsp");
 		}else if (flag.equals("verify")){
 			String uuid = request.getParameter("uuid");
-			Qrcheck qr = QrcheckService.getQrcheck(uuid);
+			Qrcheck qr = qrcheckService.getQrcheck(uuid);
 			if(qr==null){
 				out.close();
 				return;
@@ -123,7 +129,7 @@ public class QrCodeSlt extends HttpServlet {
 				
 			}else if (qr.getStatus() == 1) {
 				Users users = new Users(qr.getName(), qr.getPwd());
-				users = UserService.findUser(users);
+				users = userService.findUser(users);
 				if (users == null) {
 					out.write("{\"message\":\"验证失败！\"}");
 				} else {
@@ -132,7 +138,7 @@ public class QrCodeSlt extends HttpServlet {
 					request.getSession().setAttribute("uid", uid);
 					request.getSession().setAttribute("avatar", users.getAvatar());
 					request.getSession().setAttribute("city", users.getCity());
-					int num = SpCarService.getCarNum(uid);
+					int num = spCarService.getCarNum(uid);
 					request.getSession().setAttribute("carnum", num);
 
 					ObjectMapper mapper = new ObjectMapper();
@@ -142,7 +148,7 @@ public class QrCodeSlt extends HttpServlet {
 					
 					out.write(json);
 					out.flush();
-					QrcheckService.deleQrcheck(uuid);
+					qrcheckService.deleQrcheck(uuid);
 				}
 
 			}
@@ -177,7 +183,7 @@ public class QrCodeSlt extends HttpServlet {
 		int port = request.getLocalPort();
 		st = "http://" + Addr + ":" + port + "/shopping/QrCode?flag=scan&&UUID=" + uuid;
 		Qrcheck q = new Qrcheck(uuid, 0);
-		boolean b = QrcheckService.insertQrcheck(q);
+		boolean b = qrcheckService.insertQrcheck(q);
 		if (!b) {
 			// 二维码插入数据库失败返回
 			return;
@@ -205,11 +211,11 @@ public class QrCodeSlt extends HttpServlet {
 		String uuid = request.getParameter("UUID");
 		//String Addr = request.getLocalAddr();
 		String Addr = request.getServerName();//"60.205.225.65";
-		
+		System.out.println(Addr);
 		int port = request.getLocalPort();
 		st = "http://" + Addr + ":" + port + "/shopping/QrCode?flag=scan&&UUID=" + uuid;
 		Qrcheck q = new Qrcheck(uuid, 0);
-		boolean b = QrcheckService.insertQrcheck(q);
+		boolean b = qrcheckService.insertQrcheck(q);
 		if (!b) {
 			// 二维码插入数据库失败返回
 			return;
@@ -217,6 +223,7 @@ public class QrCodeSlt extends HttpServlet {
 		
 		BufferedImage img = createQRCode(logoFile, st, "欢迎登录!");
 		ImageIO.write(img, "png", ou);
+		System.out.println(img);
 		ou.flush();
 		ou.close();
 	}

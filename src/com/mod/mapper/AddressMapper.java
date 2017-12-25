@@ -3,9 +3,10 @@ package com.mod.mapper;
 import java.util.LinkedList;
 
 import org.apache.ibatis.annotations.Param;
+import org.mybatis.spring.annotation.MapperScan;
 
 import com.mod.bean.Address;
-
+@MapperScan
 public interface AddressMapper {
 
 	/**

@@ -1,19 +1,31 @@
 package com.servelet;
 
 import java.io.IOException;
-import java.io.PrintWriter;
 import java.util.ArrayList;
 
+import javax.servlet.ServletConfig;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+import org.springframework.web.context.support.SpringBeanAutowiringSupport;
+
 import com.mod.bean.Goods;
 import com.service.GoodsService;
 import com.service.SpCarService;
-
+@Component
 public class searchServlet extends HttpServlet {
+	@Autowired
+	GoodsService goodsService;
+	@Autowired
+	SpCarService spCarService;
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 6540417266194506013L;
 
 	/**
 	 * Constructor of the object.
@@ -70,7 +82,7 @@ public class searchServlet extends HttpServlet {
 		Object temp = request.getSession().getAttribute("uid");
 		if(temp != null){
 			int uid = (int) temp;
-			int num = SpCarService.getCarNum(uid);
+			int num = spCarService.getCarNum(uid);
 			request.getSession().setAttribute("carnum", num);
 		}
 		String word = request.getParameter("word");
@@ -89,7 +101,7 @@ public class searchServlet extends HttpServlet {
 		}
 		 
 		ArrayList<Goods> productList = null;
-		 productList = GoodsService.productList(word, sort);
+		 productList = goodsService.productList(word, sort);
 		
 		request.getSession().setAttribute("productList", productList);
 		request.getSession().setAttribute("word", word);
@@ -98,14 +110,10 @@ public class searchServlet extends HttpServlet {
 
 	}
 
-	/**
-	 * Initialization of the servlet. <br>
-	 *
-	 * @throws ServletException
-	 *             if an error occurs
-	 */
-	public void init() throws ServletException {
-		// Put your code here
+	@Override
+	public void init(ServletConfig config) throws ServletException {
+	    SpringBeanAutowiringSupport.processInjectionBasedOnServletContext(this,  
+	              config.getServletContext());  
 	}
 
 }

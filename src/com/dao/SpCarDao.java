@@ -3,9 +3,15 @@ package com.dao;
 import java.util.HashMap;
 import java.util.LinkedList;
 
+import javax.annotation.Resource;
+
 import org.apache.ibatis.session.SqlSession;
+import org.apache.ibatis.session.SqlSessionFactory;
 import org.apache.log4j.Logger;
 import org.junit.Test;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
+import org.springframework.transaction.annotation.Transactional;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -13,35 +19,13 @@ import com.mod.bean.ShoppingCar;
 import com.mod.mapper.ShoppingCarMapper;
 import com.util.DbConn;
 
+@Transactional
+@Repository
 public class SpCarDao {
-	private static ShoppingCarMapper scm;
-	private static SqlSession session = null;
+	@Autowired
+	private ShoppingCarMapper scm;
 
-	static {
-		try {
-			session = DbConn.getFactory().openSession();
-			scm = session.getMapper(ShoppingCarMapper.class);
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
-	}
-
-	static Logger log = Logger.getLogger(SpCarDao.class.getName());
-
-	@Test
-	public void testMethhod() {
-		LinkedList<HashMap<String, Object>> list = getCarView(1);
-		// LinkedList<ShoppingCar> list = getCarListByUid(1);
-		System.out.println(list.size());
-		ObjectMapper mapper = new ObjectMapper();
-		try {
-			System.out.println(mapper.writerWithDefaultPrettyPrinter().writeValueAsString(list));
-		} catch (JsonProcessingException e) {
-			e.printStackTrace();
-		}
-	}
-
-	public static boolean deleGoods(Integer cid) {
+	public boolean deleGoods(Integer cid) {
 		int i = 0;
 
 		try {
@@ -55,57 +39,59 @@ public class SpCarDao {
 		return false;
 	}
 
-	public static LinkedList<HashMap<String, Object>> getCarView(Integer uid) {
+	@Transactional(readOnly = true)
+	public LinkedList<HashMap<String, Object>> getCarView(Integer uid) {
 		LinkedList<HashMap<String, Object>> list = null;
 		try {
 			list = scm.getCarView(uid);
 		} catch (Exception e) {
 			e.printStackTrace();
-			log.warn(e.getLocalizedMessage());
 		}
 		return list;
 	}
 
-	public static LinkedList<ShoppingCar> getCarListByUid(Integer uid) {
+	@Transactional(readOnly = true)
+	public LinkedList<ShoppingCar> getCarListByUid(Integer uid) {
 		LinkedList<ShoppingCar> list = null;
 		try {
 			list = scm.getCarListByUid(uid);
 		} catch (Exception e) {
 			e.printStackTrace();
-			log.warn(e.getLocalizedMessage());
 		}
 		return list;
 	}
 
-	public static int getCarNum(Integer uid) {
+	@Transactional(readOnly = true)
+	public int getCarNum(Integer uid) {
 		int i = 0;
-		try {
-			i = scm.queryCarNum(uid);
-		} catch (Exception e) {
-			log.warn(e.getLocalizedMessage());
-		}
+
+		i = scm.queryCarNum(uid);
+
 		return i;
 	}
-	public static boolean updateByPrimaryKeySelective(ShoppingCar car){
+
+	public boolean updateByPrimaryKeySelective(ShoppingCar car) {
 		int i = 0;
 		try {
 			i = scm.updateByPrimaryKeySelective(car);
 		} catch (Exception e) {
 			e.printStackTrace();
-			return false;
+			throw new RuntimeException("更新失败");
 		}
-		if(i>0){
+		if (i > 0) {
 			return true;
+		} else {
+			throw new RuntimeException("更新失败");
 		}
-		return false;
 	}
-	public static boolean addGoods(ShoppingCar car) {
+
+	public boolean addGoods(ShoppingCar car) {
 		int i = 0;
 		ShoppingCar temp = null;
 		try {
 			temp = scm.selectByUGid(car.getUid(), car.getGid());
 		} catch (Exception e) {
-			e.printStackTrace();
+			throw new RuntimeException("添加失败");
 		}
 
 		try {
@@ -119,7 +105,7 @@ public class SpCarDao {
 				i = scm.insertSelective(car);
 			}
 		} catch (Exception e) {
-			log.warn(e.getLocalizedMessage());
+			throw new RuntimeException("添加失败");
 		}
 		if (i > 0) {
 			return true;

@@ -2,19 +2,28 @@ package com.servelet;
 
 import java.io.IOException;
 
+import javax.servlet.ServletConfig;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import org.apache.log4j.Logger;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+import org.springframework.web.context.support.SpringBeanAutowiringSupport;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.mod.bean.Goods;
 import com.service.GoodsService;
 import com.service.SpCarService;
 
+@Component
 public class ProInfo extends HttpServlet {
+	@Autowired
+	GoodsService goodsService;
+	@Autowired
+	SpCarService spCarService;
 	/**
 	 * 
 	 */
@@ -59,7 +68,7 @@ public class ProInfo extends HttpServlet {
 		Object temp = request.getSession().getAttribute("uid");
 		if(temp != null){
 			int uid = (int) temp;
-			int num = SpCarService.getCarNum(uid);
+			int num = spCarService.getCarNum(uid);
 			request.getSession().setAttribute("carnum", num);
 		}
 		int gid = 0;
@@ -70,7 +79,7 @@ public class ProInfo extends HttpServlet {
 		}
 		Goods goods = null;
 		if (gid != 0) {
-			goods = GoodsService.getGoods(gid);
+			goods = goodsService.getGoods(gid);
 		}
 		if (goods != null) {
 			ObjectMapper mapper = new ObjectMapper();
@@ -102,15 +111,10 @@ public class ProInfo extends HttpServlet {
 		this.doGet(request, response);
 	}
 
-	/**
-	 * Initialization of the servlet. <br>
-	 *
-	 * @throws ServletException
-	 *             if an error occurs
-	 */
 	@Override
-	public void init() throws ServletException {
-		// Put your code here
+	public void init(ServletConfig config) throws ServletException {
+	    SpringBeanAutowiringSupport.processInjectionBasedOnServletContext(this,  
+	              config.getServletContext());  
 	}
 
 }
