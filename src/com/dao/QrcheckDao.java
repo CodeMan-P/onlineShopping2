@@ -1,17 +1,11 @@
 package com.dao;
 
-import javax.annotation.Resource;
 
-import org.apache.ibatis.session.SqlSession;
-import org.apache.log4j.Logger;
-import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Repository;
 
 import com.mod.bean.Qrcheck;
 import com.mod.mapper.QrcheckMapper;
-import com.util.DbConn;
 @Repository
 public class QrcheckDao {
 

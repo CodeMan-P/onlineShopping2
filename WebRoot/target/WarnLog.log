@@ -296,3 +296,775 @@ execution(* com.dao.*.*(..)) && !execution(* com.service.QrcheckService.getQrche
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1573)
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:540)
 	... 74 more
+2017-12-26 11:04:19  WARN 5493ms|>- Exception encountered during context initialization - cancelling refresh attempt
+ <org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:487)> 
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userController': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire field: com.fasterxml.jackson.databind.ObjectMapper com.controller.UserController.mapper; nested exception is org.springframework.beans.factory.NoUniqueBeanDefinitionException: No qualifying bean of type [com.fasterxml.jackson.databind.ObjectMapper] is defined: expected single matching bean but found 3: objectMapper,org.springframework.beans.factory.config.MethodInvokingFactoryBean#0,org.springframework.beans.factory.config.MethodInvokingFactoryBean#1
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:326)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1204)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:538)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:476)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:229)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:298)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:193)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:725)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:757)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:480)
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:403)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:306)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:106)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4643)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5105)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:740)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:716)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:703)
+	at org.apache.catalina.startup.HostConfig.deployDirectory(HostConfig.java:1134)
+	at org.apache.catalina.startup.HostConfig$DeployDirectory.run(HostConfig.java:1868)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:112)
+	at org.apache.catalina.startup.HostConfig.deployDirectories(HostConfig.java:1045)
+	at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:433)
+	at org.apache.catalina.startup.HostConfig.start(HostConfig.java:1578)
+	at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:308)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:123)
+	at org.apache.catalina.util.LifecycleBase.setStateInternal(LifecycleBase.java:424)
+	at org.apache.catalina.util.LifecycleBase.setState(LifecycleBase.java:367)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:964)
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:839)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1425)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1415)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:134)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:941)
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:258)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:422)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:770)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:671)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:355)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:495)
+Caused by: org.springframework.beans.factory.BeanCreationException: Could not autowire field: com.fasterxml.jackson.databind.ObjectMapper com.controller.UserController.mapper; nested exception is org.springframework.beans.factory.NoUniqueBeanDefinitionException: No qualifying bean of type [com.fasterxml.jackson.databind.ObjectMapper] is defined: expected single matching bean but found 3: objectMapper,org.springframework.beans.factory.config.MethodInvokingFactoryBean#0,org.springframework.beans.factory.config.MethodInvokingFactoryBean#1
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:542)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:87)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:323)
+	... 54 more
+Caused by: org.springframework.beans.factory.NoUniqueBeanDefinitionException: No qualifying bean of type [com.fasterxml.jackson.databind.ObjectMapper] is defined: expected single matching bean but found 3: objectMapper,org.springframework.beans.factory.config.MethodInvokingFactoryBean#0,org.springframework.beans.factory.config.MethodInvokingFactoryBean#1
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1016)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:904)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:514)
+	... 56 more
+2017-12-26 11:04:20  ERROR 5507ms|>- Context initialization failed
+ <org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:331)> 
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userController': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire field: com.fasterxml.jackson.databind.ObjectMapper com.controller.UserController.mapper; nested exception is org.springframework.beans.factory.NoUniqueBeanDefinitionException: No qualifying bean of type [com.fasterxml.jackson.databind.ObjectMapper] is defined: expected single matching bean but found 3: objectMapper,org.springframework.beans.factory.config.MethodInvokingFactoryBean#0,org.springframework.beans.factory.config.MethodInvokingFactoryBean#1
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:326)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1204)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:538)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:476)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:229)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:298)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:193)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:725)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:757)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:480)
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:403)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:306)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:106)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4643)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5105)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:740)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:716)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:703)
+	at org.apache.catalina.startup.HostConfig.deployDirectory(HostConfig.java:1134)
+	at org.apache.catalina.startup.HostConfig$DeployDirectory.run(HostConfig.java:1868)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:112)
+	at org.apache.catalina.startup.HostConfig.deployDirectories(HostConfig.java:1045)
+	at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:433)
+	at org.apache.catalina.startup.HostConfig.start(HostConfig.java:1578)
+	at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:308)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:123)
+	at org.apache.catalina.util.LifecycleBase.setStateInternal(LifecycleBase.java:424)
+	at org.apache.catalina.util.LifecycleBase.setState(LifecycleBase.java:367)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:964)
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:839)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1425)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1415)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:134)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:941)
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:258)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:422)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:770)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:671)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:355)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:495)
+Caused by: org.springframework.beans.factory.BeanCreationException: Could not autowire field: com.fasterxml.jackson.databind.ObjectMapper com.controller.UserController.mapper; nested exception is org.springframework.beans.factory.NoUniqueBeanDefinitionException: No qualifying bean of type [com.fasterxml.jackson.databind.ObjectMapper] is defined: expected single matching bean but found 3: objectMapper,org.springframework.beans.factory.config.MethodInvokingFactoryBean#0,org.springframework.beans.factory.config.MethodInvokingFactoryBean#1
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:542)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:87)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:323)
+	... 54 more
+Caused by: org.springframework.beans.factory.NoUniqueBeanDefinitionException: No qualifying bean of type [com.fasterxml.jackson.databind.ObjectMapper] is defined: expected single matching bean but found 3: objectMapper,org.springframework.beans.factory.config.MethodInvokingFactoryBean#0,org.springframework.beans.factory.config.MethodInvokingFactoryBean#1
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1016)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:904)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:514)
+	... 56 more
+2017-12-26 11:17:44  ERROR 6999ms|>- Context initialization failed
+ <org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:492)> 
+org.springframework.beans.factory.BeanDefinitionStoreException: IOException parsing XML document from class path resource [spring/dispatcher-servlet.xml]; nested exception is java.io.FileNotFoundException: class path resource [spring/dispatcher-servlet.xml] cannot be opened because it does not exist
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:343)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:303)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:180)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:216)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:187)
+	at org.springframework.web.context.support.XmlWebApplicationContext.loadBeanDefinitions(XmlWebApplicationContext.java:125)
+	at org.springframework.web.context.support.XmlWebApplicationContext.loadBeanDefinitions(XmlWebApplicationContext.java:94)
+	at org.springframework.context.support.AbstractRefreshableApplicationContext.refreshBeanFactory(AbstractRefreshableApplicationContext.java:129)
+	at org.springframework.context.support.AbstractApplicationContext.obtainFreshBeanFactory(AbstractApplicationContext.java:537)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:452)
+	at org.springframework.web.servlet.FrameworkServlet.configureAndRefreshWebApplicationContext(FrameworkServlet.java:658)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:624)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:672)
+	at org.springframework.web.servlet.FrameworkServlet.initWebApplicationContext(FrameworkServlet.java:543)
+	at org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:484)
+	at org.springframework.web.servlet.HttpServletBean.init(HttpServletBean.java:136)
+	at javax.servlet.GenericServlet.init(GenericServlet.java:158)
+	at org.apache.catalina.core.StandardWrapper.initServlet(StandardWrapper.java:1174)
+	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1090)
+	at org.apache.catalina.core.StandardWrapper.load(StandardWrapper.java:980)
+	at org.apache.catalina.core.StandardContext.loadOnStartup(StandardContext.java:4829)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5139)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:740)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:716)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:703)
+	at org.apache.catalina.startup.HostConfig.deployDirectory(HostConfig.java:1134)
+	at org.apache.catalina.startup.HostConfig$DeployDirectory.run(HostConfig.java:1868)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:112)
+	at org.apache.catalina.startup.HostConfig.deployDirectories(HostConfig.java:1045)
+	at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:433)
+	at org.apache.catalina.startup.HostConfig.start(HostConfig.java:1578)
+	at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:308)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:123)
+	at org.apache.catalina.util.LifecycleBase.setStateInternal(LifecycleBase.java:424)
+	at org.apache.catalina.util.LifecycleBase.setState(LifecycleBase.java:367)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:964)
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:839)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1425)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1415)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:134)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:941)
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:258)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:422)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:770)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:671)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:355)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:495)
+Caused by: java.io.FileNotFoundException: class path resource [spring/dispatcher-servlet.xml] cannot be opened because it does not exist
+	at org.springframework.core.io.ClassPathResource.getInputStream(ClassPathResource.java:172)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:329)
+	... 60 more
+2017-12-26 11:18:17  ERROR 39770ms|>- Context initialization failed
+ <org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:492)> 
+org.springframework.beans.factory.BeanDefinitionStoreException: IOException parsing XML document from class path resource [spring/dispatcher-servlet.xml]; nested exception is java.io.FileNotFoundException: class path resource [spring/dispatcher-servlet.xml] cannot be opened because it does not exist
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:343)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:303)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:180)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:216)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:187)
+	at org.springframework.web.context.support.XmlWebApplicationContext.loadBeanDefinitions(XmlWebApplicationContext.java:125)
+	at org.springframework.web.context.support.XmlWebApplicationContext.loadBeanDefinitions(XmlWebApplicationContext.java:94)
+	at org.springframework.context.support.AbstractRefreshableApplicationContext.refreshBeanFactory(AbstractRefreshableApplicationContext.java:129)
+	at org.springframework.context.support.AbstractApplicationContext.obtainFreshBeanFactory(AbstractApplicationContext.java:537)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:452)
+	at org.springframework.web.servlet.FrameworkServlet.configureAndRefreshWebApplicationContext(FrameworkServlet.java:658)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:624)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:672)
+	at org.springframework.web.servlet.FrameworkServlet.initWebApplicationContext(FrameworkServlet.java:543)
+	at org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:484)
+	at org.springframework.web.servlet.HttpServletBean.init(HttpServletBean.java:136)
+	at javax.servlet.GenericServlet.init(GenericServlet.java:158)
+	at org.apache.catalina.core.StandardWrapper.initServlet(StandardWrapper.java:1174)
+	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1090)
+	at org.apache.catalina.core.StandardWrapper.allocate(StandardWrapper.java:770)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:133)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:475)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:651)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:500)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:754)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1376)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.io.FileNotFoundException: class path resource [spring/dispatcher-servlet.xml] cannot be opened because it does not exist
+	at org.springframework.core.io.ClassPathResource.getInputStream(ClassPathResource.java:172)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:329)
+	... 36 more
+2017-12-26 11:31:49  WARN 34547ms|>- No mapping found for HTTP request with URI [/shoppingSSM/jsp/ucc/uc] in DispatcherServlet with name 'DispatcherServlet'
+ <org.springframework.web.servlet.DispatcherServlet.noHandlerFound(DispatcherServlet.java:1120)> 
+2017-12-26 11:32:13  WARN 58437ms|>- No mapping found for HTTP request with URI [/shoppingSSM/ucc/uc] in DispatcherServlet with name 'DispatcherServlet'
+ <org.springframework.web.servlet.DispatcherServlet.noHandlerFound(DispatcherServlet.java:1120)> 
+2017-12-26 11:32:20  WARN 65412ms|>- No mapping found for HTTP request with URI [/shoppingSSM/uc] in DispatcherServlet with name 'DispatcherServlet'
+ <org.springframework.web.servlet.DispatcherServlet.noHandlerFound(DispatcherServlet.java:1120)> 
+2017-12-26 11:32:29  WARN 74761ms|>- No mapping found for HTTP request with URI [/shoppingSSM/jsp/uc] in DispatcherServlet with name 'DispatcherServlet'
+ <org.springframework.web.servlet.DispatcherServlet.noHandlerFound(DispatcherServlet.java:1120)> 
+2017-12-26 11:35:14  WARN 13455ms|>- No mapping found for HTTP request with URI [/shoppingSSM/jsp/ucc/uc] in DispatcherServlet with name 'DispatcherServlet'
+ <org.springframework.web.servlet.DispatcherServlet.noHandlerFound(DispatcherServlet.java:1120)> 
+2017-12-26 11:35:52  WARN 51748ms|>- No mapping found for HTTP request with URI [/shoppingSSM/ucc/uc] in DispatcherServlet with name 'DispatcherServlet'
+ <org.springframework.web.servlet.DispatcherServlet.noHandlerFound(DispatcherServlet.java:1120)> 
+2017-12-26 12:24:34  WARN 32051ms|>- No mapping found for HTTP request with URI [/shoppingSSM/ucc] in DispatcherServlet with name 'DispatcherServlet'
+ <org.springframework.web.servlet.DispatcherServlet.noHandlerFound(DispatcherServlet.java:1120)> 
+2017-12-26 12:26:21  WARN 139188ms|>- No mapping found for HTTP request with URI [/shoppingSSM/jsp/ucc] in DispatcherServlet with name 'DispatcherServlet'
+ <org.springframework.web.servlet.DispatcherServlet.noHandlerFound(DispatcherServlet.java:1120)> 
+2017-12-26 12:26:25  WARN 143267ms|>- No mapping found for HTTP request with URI [/shoppingSSM/ucc] in DispatcherServlet with name 'DispatcherServlet'
+ <org.springframework.web.servlet.DispatcherServlet.noHandlerFound(DispatcherServlet.java:1120)> 
+2017-12-26 12:39:24  WARN 24759ms|>- No mapping found for HTTP request with URI [/shoppingSSM/jsp/ucc.do] in DispatcherServlet with name 'DispatcherServlet'
+ <org.springframework.web.servlet.DispatcherServlet.noHandlerFound(DispatcherServlet.java:1120)> 
+2017-12-26 12:40:53  WARN 10699ms|>- No mapping found for HTTP request with URI [/shoppingSSM/jsp/ucc.do] in DispatcherServlet with name 'DispatcherServlet'
+ <org.springframework.web.servlet.DispatcherServlet.noHandlerFound(DispatcherServlet.java:1120)> 
+2017-12-26 12:40:54  WARN 11690ms|>- No mapping found for HTTP request with URI [/shoppingSSM/jsp/ucc.do] in DispatcherServlet with name 'DispatcherServlet'
+ <org.springframework.web.servlet.DispatcherServlet.noHandlerFound(DispatcherServlet.java:1120)> 
+2017-12-26 12:40:57  WARN 14532ms|>- No mapping found for HTTP request with URI [/shoppingSSM/ucc.do] in DispatcherServlet with name 'DispatcherServlet'
+ <org.springframework.web.servlet.DispatcherServlet.noHandlerFound(DispatcherServlet.java:1120)> 
+2017-12-26 12:40:57  WARN 15315ms|>- No mapping found for HTTP request with URI [/shoppingSSM/ucc.do] in DispatcherServlet with name 'DispatcherServlet'
+ <org.springframework.web.servlet.DispatcherServlet.noHandlerFound(DispatcherServlet.java:1120)> 
+2017-12-26 12:41:39  WARN 57283ms|>- Request method 'GET' not supported
+ <org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver.handleHttpRequestMethodNotSupported(DefaultHandlerExceptionResolver.java:198)> 
+2017-12-26 12:45:17  WARN 170121ms|>- No mapping found for HTTP request with URI [/shoppingSSM/ucc.do] in DispatcherServlet with name 'DispatcherServlet'
+ <org.springframework.web.servlet.DispatcherServlet.noHandlerFound(DispatcherServlet.java:1120)> 
+2017-12-26 13:04:33  WARN 783214ms|>- No mapping found for HTTP request with URI [/shoppingSSM/js/jquery-2.1.0.js] in DispatcherServlet with name 'DispatcherServlet'
+ <org.springframework.web.servlet.DispatcherServlet.noHandlerFound(DispatcherServlet.java:1120)> 
+2017-12-26 13:04:34  WARN 784365ms|>- No mapping found for HTTP request with URI [/shoppingSSM/js/jquery-2.1.0.js] in DispatcherServlet with name 'DispatcherServlet'
+ <org.springframework.web.servlet.DispatcherServlet.noHandlerFound(DispatcherServlet.java:1120)> 
+2017-12-26 13:05:01  WARN 810804ms|>- No mapping found for HTTP request with URI [/shoppingSSM/js/jquery-2.1.0.js] in DispatcherServlet with name 'DispatcherServlet'
+ <org.springframework.web.servlet.DispatcherServlet.noHandlerFound(DispatcherServlet.java:1120)> 
+2017-12-26 13:05:03  WARN 812498ms|>- No mapping found for HTTP request with URI [/shoppingSSM/js/jquery-2.1.0.js] in DispatcherServlet with name 'DispatcherServlet'
+ <org.springframework.web.servlet.DispatcherServlet.noHandlerFound(DispatcherServlet.java:1120)> 
+2017-12-26 13:05:07  WARN 816888ms|>- No mapping found for HTTP request with URI [/shoppingSSM/js/jquery-2.1.0.js] in DispatcherServlet with name 'DispatcherServlet'
+ <org.springframework.web.servlet.DispatcherServlet.noHandlerFound(DispatcherServlet.java:1120)> 
+2017-12-26 13:05:08  WARN 817766ms|>- No mapping found for HTTP request with URI [/shoppingSSM/js/jquery-2.1.0.js] in DispatcherServlet with name 'DispatcherServlet'
+ <org.springframework.web.servlet.DispatcherServlet.noHandlerFound(DispatcherServlet.java:1120)> 
+2017-12-26 13:05:27  WARN 836508ms|>- No mapping found for HTTP request with URI [/shoppingSSM/js/js.js] in DispatcherServlet with name 'DispatcherServlet'
+ <org.springframework.web.servlet.DispatcherServlet.noHandlerFound(DispatcherServlet.java:1120)> 
+2017-12-26 13:05:27  WARN 836512ms|>- No mapping found for HTTP request with URI [/shoppingSSM/css/style.css] in DispatcherServlet with name 'DispatcherServlet'
+ <org.springframework.web.servlet.DispatcherServlet.noHandlerFound(DispatcherServlet.java:1120)> 
+2017-12-26 13:05:27  WARN 836513ms|>- No mapping found for HTTP request with URI [/shoppingSSM/js/jquery-1.8.3.js] in DispatcherServlet with name 'DispatcherServlet'
+ <org.springframework.web.servlet.DispatcherServlet.noHandlerFound(DispatcherServlet.java:1120)> 
+2017-12-26 13:05:27  WARN 836528ms|>- No mapping found for HTTP request with URI [/shoppingSSM/css/lanrenzhijia.css] in DispatcherServlet with name 'DispatcherServlet'
+ <org.springframework.web.servlet.DispatcherServlet.noHandlerFound(DispatcherServlet.java:1120)> 
+2017-12-26 13:05:27  WARN 836544ms|>- No mapping found for HTTP request with URI [/shoppingSSM/js/jquery.form.js] in DispatcherServlet with name 'DispatcherServlet'
+ <org.springframework.web.servlet.DispatcherServlet.noHandlerFound(DispatcherServlet.java:1120)> 
+2017-12-26 13:05:27  WARN 836571ms|>- No mapping found for HTTP request with URI [/shoppingSSM/js/ajaxfileupload.js] in DispatcherServlet with name 'DispatcherServlet'
+ <org.springframework.web.servlet.DispatcherServlet.noHandlerFound(DispatcherServlet.java:1120)> 
+2017-12-26 13:05:27  WARN 836610ms|>- No mapping found for HTTP request with URI [/shoppingSSM/js/Math.uuid.js] in DispatcherServlet with name 'DispatcherServlet'
+ <org.springframework.web.servlet.DispatcherServlet.noHandlerFound(DispatcherServlet.java:1120)> 
+2017-12-26 13:05:27  WARN 836629ms|>- No mapping found for HTTP request with URI [/shoppingSSM/img/1.jpg] in DispatcherServlet with name 'DispatcherServlet'
+ <org.springframework.web.servlet.DispatcherServlet.noHandlerFound(DispatcherServlet.java:1120)> 
+2017-12-26 13:05:27  WARN 836651ms|>- No mapping found for HTTP request with URI [/shoppingSSM/img/3.jpg] in DispatcherServlet with name 'DispatcherServlet'
+ <org.springframework.web.servlet.DispatcherServlet.noHandlerFound(DispatcherServlet.java:1120)> 
+2017-12-26 13:05:27  WARN 836680ms|>- No mapping found for HTTP request with URI [/shoppingSSM/img/4.jpg] in DispatcherServlet with name 'DispatcherServlet'
+ <org.springframework.web.servlet.DispatcherServlet.noHandlerFound(DispatcherServlet.java:1120)> 
+2017-12-26 13:05:27  WARN 836714ms|>- No mapping found for HTTP request with URI [/shoppingSSM/img/5.jpg] in DispatcherServlet with name 'DispatcherServlet'
+ <org.springframework.web.servlet.DispatcherServlet.noHandlerFound(DispatcherServlet.java:1120)> 
+2017-12-26 13:05:27  WARN 836733ms|>- No mapping found for HTTP request with URI [/shoppingSSM/img/2.jpg] in DispatcherServlet with name 'DispatcherServlet'
+ <org.springframework.web.servlet.DispatcherServlet.noHandlerFound(DispatcherServlet.java:1120)> 
+2017-12-26 13:05:27  WARN 836865ms|>- No mapping found for HTTP request with URI [/shoppingSSM/img/8.jpg] in DispatcherServlet with name 'DispatcherServlet'
+ <org.springframework.web.servlet.DispatcherServlet.noHandlerFound(DispatcherServlet.java:1120)> 
+2017-12-26 13:05:27  WARN 836899ms|>- No mapping found for HTTP request with URI [/shoppingSSM/img/42.png] in DispatcherServlet with name 'DispatcherServlet'
+ <org.springframework.web.servlet.DispatcherServlet.noHandlerFound(DispatcherServlet.java:1120)> 
+2017-12-26 13:05:27  WARN 836968ms|>- No mapping found for HTTP request with URI [/shoppingSSM/img/%E5%8D%8E%E4%B8%BA.png] in DispatcherServlet with name 'DispatcherServlet'
+ <org.springframework.web.servlet.DispatcherServlet.noHandlerFound(DispatcherServlet.java:1120)> 
+2017-12-26 13:05:27  WARN 836998ms|>- No mapping found for HTTP request with URI [/shoppingSSM/img/10.jpg] in DispatcherServlet with name 'DispatcherServlet'
+ <org.springframework.web.servlet.DispatcherServlet.noHandlerFound(DispatcherServlet.java:1120)> 
+2017-12-26 13:05:27  WARN 837012ms|>- No mapping found for HTTP request with URI [/shoppingSSM/img/%E5%B0%8F%E7%B1%B36.PNG] in DispatcherServlet with name 'DispatcherServlet'
+ <org.springframework.web.servlet.DispatcherServlet.noHandlerFound(DispatcherServlet.java:1120)> 
+2017-12-26 13:05:27  WARN 837028ms|>- No mapping found for HTTP request with URI [/shoppingSSM/img/13.jpg] in DispatcherServlet with name 'DispatcherServlet'
+ <org.springframework.web.servlet.DispatcherServlet.noHandlerFound(DispatcherServlet.java:1120)> 
+2017-12-26 13:05:27  WARN 837045ms|>- No mapping found for HTTP request with URI [/shoppingSSM/img/15.jpg] in DispatcherServlet with name 'DispatcherServlet'
+ <org.springframework.web.servlet.DispatcherServlet.noHandlerFound(DispatcherServlet.java:1120)> 
+2017-12-26 13:05:27  WARN 837047ms|>- No mapping found for HTTP request with URI [/shoppingSSM/img/20.jpg] in DispatcherServlet with name 'DispatcherServlet'
+ <org.springframework.web.servlet.DispatcherServlet.noHandlerFound(DispatcherServlet.java:1120)> 
+2017-12-26 13:05:27  WARN 837048ms|>- No mapping found for HTTP request with URI [/shoppingSSM/img/14.jpg] in DispatcherServlet with name 'DispatcherServlet'
+ <org.springframework.web.servlet.DispatcherServlet.noHandlerFound(DispatcherServlet.java:1120)> 
+2017-12-26 13:05:27  WARN 837045ms|>- No mapping found for HTTP request with URI [/shoppingSSM/img/17.jpg] in DispatcherServlet with name 'DispatcherServlet'
+ <org.springframework.web.servlet.DispatcherServlet.noHandlerFound(DispatcherServlet.java:1120)> 
+2017-12-26 13:05:27  WARN 837083ms|>- No mapping found for HTTP request with URI [/shoppingSSM/img/21.jpg] in DispatcherServlet with name 'DispatcherServlet'
+ <org.springframework.web.servlet.DispatcherServlet.noHandlerFound(DispatcherServlet.java:1120)> 
+2017-12-26 13:05:27  WARN 837139ms|>- No mapping found for HTTP request with URI [/shoppingSSM/img/22.png] in DispatcherServlet with name 'DispatcherServlet'
+ <org.springframework.web.servlet.DispatcherServlet.noHandlerFound(DispatcherServlet.java:1120)> 
+2017-12-26 13:05:27  WARN 837158ms|>- No mapping found for HTTP request with URI [/shoppingSSM/img/23.png] in DispatcherServlet with name 'DispatcherServlet'
+ <org.springframework.web.servlet.DispatcherServlet.noHandlerFound(DispatcherServlet.java:1120)> 
+2017-12-26 13:05:27  WARN 837186ms|>- No mapping found for HTTP request with URI [/shoppingSSM/img/24.png] in DispatcherServlet with name 'DispatcherServlet'
+ <org.springframework.web.servlet.DispatcherServlet.noHandlerFound(DispatcherServlet.java:1120)> 
+2017-12-26 13:05:27  WARN 837215ms|>- No mapping found for HTTP request with URI [/shoppingSSM/img/25.png] in DispatcherServlet with name 'DispatcherServlet'
+ <org.springframework.web.servlet.DispatcherServlet.noHandlerFound(DispatcherServlet.java:1120)> 
+2017-12-26 13:05:27  WARN 837231ms|>- No mapping found for HTTP request with URI [/shoppingSSM/img/26.png] in DispatcherServlet with name 'DispatcherServlet'
+ <org.springframework.web.servlet.DispatcherServlet.noHandlerFound(DispatcherServlet.java:1120)> 
+2017-12-26 13:05:27  WARN 837244ms|>- No mapping found for HTTP request with URI [/shoppingSSM/img/27.png] in DispatcherServlet with name 'DispatcherServlet'
+ <org.springframework.web.servlet.DispatcherServlet.noHandlerFound(DispatcherServlet.java:1120)> 
+2017-12-26 13:05:27  WARN 837270ms|>- No mapping found for HTTP request with URI [/shoppingSSM/img/28.png] in DispatcherServlet with name 'DispatcherServlet'
+ <org.springframework.web.servlet.DispatcherServlet.noHandlerFound(DispatcherServlet.java:1120)> 
+2017-12-26 13:05:27  WARN 837291ms|>- No mapping found for HTTP request with URI [/shoppingSSM/img/29.png] in DispatcherServlet with name 'DispatcherServlet'
+ <org.springframework.web.servlet.DispatcherServlet.noHandlerFound(DispatcherServlet.java:1120)> 
+2017-12-26 13:05:27  WARN 837305ms|>- No mapping found for HTTP request with URI [/shoppingSSM/img/30.png] in DispatcherServlet with name 'DispatcherServlet'
+ <org.springframework.web.servlet.DispatcherServlet.noHandlerFound(DispatcherServlet.java:1120)> 
+2017-12-26 13:05:27  WARN 837318ms|>- No mapping found for HTTP request with URI [/shoppingSSM/img/31.png] in DispatcherServlet with name 'DispatcherServlet'
+ <org.springframework.web.servlet.DispatcherServlet.noHandlerFound(DispatcherServlet.java:1120)> 
+2017-12-26 13:05:27  WARN 837334ms|>- No mapping found for HTTP request with URI [/shoppingSSM/img/32.png] in DispatcherServlet with name 'DispatcherServlet'
+ <org.springframework.web.servlet.DispatcherServlet.noHandlerFound(DispatcherServlet.java:1120)> 
+2017-12-26 13:05:27  WARN 837354ms|>- No mapping found for HTTP request with URI [/shoppingSSM/img/33.png] in DispatcherServlet with name 'DispatcherServlet'
+ <org.springframework.web.servlet.DispatcherServlet.noHandlerFound(DispatcherServlet.java:1120)> 
+2017-12-26 13:05:27  WARN 837358ms|>- No mapping found for HTTP request with URI [/shoppingSSM/img/34.png] in DispatcherServlet with name 'DispatcherServlet'
+ <org.springframework.web.servlet.DispatcherServlet.noHandlerFound(DispatcherServlet.java:1120)> 
+2017-12-26 13:05:27  WARN 837371ms|>- No mapping found for HTTP request with URI [/shoppingSSM/img/35.png] in DispatcherServlet with name 'DispatcherServlet'
+ <org.springframework.web.servlet.DispatcherServlet.noHandlerFound(DispatcherServlet.java:1120)> 
+2017-12-26 13:05:27  WARN 837384ms|>- No mapping found for HTTP request with URI [/shoppingSSM/img/37.png] in DispatcherServlet with name 'DispatcherServlet'
+ <org.springframework.web.servlet.DispatcherServlet.noHandlerFound(DispatcherServlet.java:1120)> 
+2017-12-26 13:05:27  WARN 837384ms|>- No mapping found for HTTP request with URI [/shoppingSSM/img/36.png] in DispatcherServlet with name 'DispatcherServlet'
+ <org.springframework.web.servlet.DispatcherServlet.noHandlerFound(DispatcherServlet.java:1120)> 
+2017-12-26 13:05:27  WARN 837384ms|>- No mapping found for HTTP request with URI [/shoppingSSM/img/38.png] in DispatcherServlet with name 'DispatcherServlet'
+ <org.springframework.web.servlet.DispatcherServlet.noHandlerFound(DispatcherServlet.java:1120)> 
+2017-12-26 13:05:27  WARN 837403ms|>- No mapping found for HTTP request with URI [/shoppingSSM/img/39.png] in DispatcherServlet with name 'DispatcherServlet'
+ <org.springframework.web.servlet.DispatcherServlet.noHandlerFound(DispatcherServlet.java:1120)> 
+2017-12-26 13:05:27  WARN 837423ms|>- No mapping found for HTTP request with URI [/shoppingSSM/img/40.png] in DispatcherServlet with name 'DispatcherServlet'
+ <org.springframework.web.servlet.DispatcherServlet.noHandlerFound(DispatcherServlet.java:1120)> 
+2017-12-26 13:05:27  WARN 837434ms|>- No mapping found for HTTP request with URI [/shoppingSSM/img/41.png] in DispatcherServlet with name 'DispatcherServlet'
+ <org.springframework.web.servlet.DispatcherServlet.noHandlerFound(DispatcherServlet.java:1120)> 
+2017-12-26 13:05:28  WARN 837460ms|>- No mapping found for HTTP request with URI [/shoppingSSM/js/js.js] in DispatcherServlet with name 'DispatcherServlet'
+ <org.springframework.web.servlet.DispatcherServlet.noHandlerFound(DispatcherServlet.java:1120)> 
+2017-12-26 13:05:28  WARN 837485ms|>- No mapping found for HTTP request with URI [/shoppingSSM/js/jquery.form.js] in DispatcherServlet with name 'DispatcherServlet'
+ <org.springframework.web.servlet.DispatcherServlet.noHandlerFound(DispatcherServlet.java:1120)> 
+2017-12-26 13:05:28  WARN 837501ms|>- No mapping found for HTTP request with URI [/shoppingSSM/js/ajaxfileupload.js] in DispatcherServlet with name 'DispatcherServlet'
+ <org.springframework.web.servlet.DispatcherServlet.noHandlerFound(DispatcherServlet.java:1120)> 
+2017-12-26 13:05:28  WARN 837523ms|>- No mapping found for HTTP request with URI [/shoppingSSM/js/Math.uuid.js] in DispatcherServlet with name 'DispatcherServlet'
+ <org.springframework.web.servlet.DispatcherServlet.noHandlerFound(DispatcherServlet.java:1120)> 
+2017-12-26 13:05:28  WARN 837561ms|>- No mapping found for HTTP request with URI [/shoppingSSM/img/1.jpg] in DispatcherServlet with name 'DispatcherServlet'
+ <org.springframework.web.servlet.DispatcherServlet.noHandlerFound(DispatcherServlet.java:1120)> 
+2017-12-26 13:05:28  WARN 837579ms|>- No mapping found for HTTP request with URI [/shoppingSSM/img/3.jpg] in DispatcherServlet with name 'DispatcherServlet'
+ <org.springframework.web.servlet.DispatcherServlet.noHandlerFound(DispatcherServlet.java:1120)> 
+2017-12-26 13:05:28  WARN 837614ms|>- No mapping found for HTTP request with URI [/shoppingSSM/img/4.jpg] in DispatcherServlet with name 'DispatcherServlet'
+ <org.springframework.web.servlet.DispatcherServlet.noHandlerFound(DispatcherServlet.java:1120)> 
+2017-12-26 13:05:28  WARN 837681ms|>- No mapping found for HTTP request with URI [/shoppingSSM/img/5.jpg] in DispatcherServlet with name 'DispatcherServlet'
+ <org.springframework.web.servlet.DispatcherServlet.noHandlerFound(DispatcherServlet.java:1120)> 
+2017-12-26 13:05:28  WARN 837688ms|>- No mapping found for HTTP request with URI [/shoppingSSM/img/2.jpg] in DispatcherServlet with name 'DispatcherServlet'
+ <org.springframework.web.servlet.DispatcherServlet.noHandlerFound(DispatcherServlet.java:1120)> 
+2017-12-26 13:05:28  WARN 837691ms|>- No mapping found for HTTP request with URI [/shoppingSSM/img/8.jpg] in DispatcherServlet with name 'DispatcherServlet'
+ <org.springframework.web.servlet.DispatcherServlet.noHandlerFound(DispatcherServlet.java:1120)> 
+2017-12-26 13:05:28  WARN 837720ms|>- No mapping found for HTTP request with URI [/shoppingSSM/img/42.png] in DispatcherServlet with name 'DispatcherServlet'
+ <org.springframework.web.servlet.DispatcherServlet.noHandlerFound(DispatcherServlet.java:1120)> 
+2017-12-26 13:05:28  WARN 837798ms|>- No mapping found for HTTP request with URI [/shoppingSSM/img/%E5%8D%8E%E4%B8%BA.png] in DispatcherServlet with name 'DispatcherServlet'
+ <org.springframework.web.servlet.DispatcherServlet.noHandlerFound(DispatcherServlet.java:1120)> 
+2017-12-26 13:05:28  WARN 837810ms|>- No mapping found for HTTP request with URI [/shoppingSSM/img/10.jpg] in DispatcherServlet with name 'DispatcherServlet'
+ <org.springframework.web.servlet.DispatcherServlet.noHandlerFound(DispatcherServlet.java:1120)> 
+2017-12-26 13:05:28  WARN 837828ms|>- No mapping found for HTTP request with URI [/shoppingSSM/img/%E5%B0%8F%E7%B1%B36.PNG] in DispatcherServlet with name 'DispatcherServlet'
+ <org.springframework.web.servlet.DispatcherServlet.noHandlerFound(DispatcherServlet.java:1120)> 
+2017-12-26 13:05:28  WARN 837837ms|>- No mapping found for HTTP request with URI [/shoppingSSM/img/13.jpg] in DispatcherServlet with name 'DispatcherServlet'
+ <org.springframework.web.servlet.DispatcherServlet.noHandlerFound(DispatcherServlet.java:1120)> 
+2017-12-26 13:05:28  WARN 837850ms|>- No mapping found for HTTP request with URI [/shoppingSSM/img/14.jpg] in DispatcherServlet with name 'DispatcherServlet'
+ <org.springframework.web.servlet.DispatcherServlet.noHandlerFound(DispatcherServlet.java:1120)> 
+2017-12-26 13:05:28  WARN 837860ms|>- No mapping found for HTTP request with URI [/shoppingSSM/img/15.jpg] in DispatcherServlet with name 'DispatcherServlet'
+ <org.springframework.web.servlet.DispatcherServlet.noHandlerFound(DispatcherServlet.java:1120)> 
+2017-12-26 13:05:28  WARN 837876ms|>- No mapping found for HTTP request with URI [/shoppingSSM/img/17.jpg] in DispatcherServlet with name 'DispatcherServlet'
+ <org.springframework.web.servlet.DispatcherServlet.noHandlerFound(DispatcherServlet.java:1120)> 
+2017-12-26 13:05:28  WARN 837899ms|>- No mapping found for HTTP request with URI [/shoppingSSM/img/20.jpg] in DispatcherServlet with name 'DispatcherServlet'
+ <org.springframework.web.servlet.DispatcherServlet.noHandlerFound(DispatcherServlet.java:1120)> 
+2017-12-26 13:05:28  WARN 837905ms|>- No mapping found for HTTP request with URI [/shoppingSSM/img/21.jpg] in DispatcherServlet with name 'DispatcherServlet'
+ <org.springframework.web.servlet.DispatcherServlet.noHandlerFound(DispatcherServlet.java:1120)> 
+2017-12-26 13:05:28  WARN 837921ms|>- No mapping found for HTTP request with URI [/shoppingSSM/img/22.png] in DispatcherServlet with name 'DispatcherServlet'
+ <org.springframework.web.servlet.DispatcherServlet.noHandlerFound(DispatcherServlet.java:1120)> 
+2017-12-26 13:05:28  WARN 837926ms|>- No mapping found for HTTP request with URI [/shoppingSSM/img/23.png] in DispatcherServlet with name 'DispatcherServlet'
+ <org.springframework.web.servlet.DispatcherServlet.noHandlerFound(DispatcherServlet.java:1120)> 
+2017-12-26 13:05:28  WARN 837938ms|>- No mapping found for HTTP request with URI [/shoppingSSM/img/24.png] in DispatcherServlet with name 'DispatcherServlet'
+ <org.springframework.web.servlet.DispatcherServlet.noHandlerFound(DispatcherServlet.java:1120)> 
+2017-12-26 13:05:28  WARN 837958ms|>- No mapping found for HTTP request with URI [/shoppingSSM/img/25.png] in DispatcherServlet with name 'DispatcherServlet'
+ <org.springframework.web.servlet.DispatcherServlet.noHandlerFound(DispatcherServlet.java:1120)> 
+2017-12-26 13:05:28  WARN 837964ms|>- No mapping found for HTTP request with URI [/shoppingSSM/img/26.png] in DispatcherServlet with name 'DispatcherServlet'
+ <org.springframework.web.servlet.DispatcherServlet.noHandlerFound(DispatcherServlet.java:1120)> 
+2017-12-26 13:05:28  WARN 837976ms|>- No mapping found for HTTP request with URI [/shoppingSSM/img/27.png] in DispatcherServlet with name 'DispatcherServlet'
+ <org.springframework.web.servlet.DispatcherServlet.noHandlerFound(DispatcherServlet.java:1120)> 
+2017-12-26 13:05:28  WARN 837983ms|>- No mapping found for HTTP request with URI [/shoppingSSM/img/28.png] in DispatcherServlet with name 'DispatcherServlet'
+ <org.springframework.web.servlet.DispatcherServlet.noHandlerFound(DispatcherServlet.java:1120)> 
+2017-12-26 13:05:28  WARN 837994ms|>- No mapping found for HTTP request with URI [/shoppingSSM/img/29.png] in DispatcherServlet with name 'DispatcherServlet'
+ <org.springframework.web.servlet.DispatcherServlet.noHandlerFound(DispatcherServlet.java:1120)> 
+2017-12-26 13:05:28  WARN 838003ms|>- No mapping found for HTTP request with URI [/shoppingSSM/img/30.png] in DispatcherServlet with name 'DispatcherServlet'
+ <org.springframework.web.servlet.DispatcherServlet.noHandlerFound(DispatcherServlet.java:1120)> 
+2017-12-26 13:05:28  WARN 838032ms|>- No mapping found for HTTP request with URI [/shoppingSSM/img/31.png] in DispatcherServlet with name 'DispatcherServlet'
+ <org.springframework.web.servlet.DispatcherServlet.noHandlerFound(DispatcherServlet.java:1120)> 
+2017-12-26 13:05:28  WARN 838044ms|>- No mapping found for HTTP request with URI [/shoppingSSM/img/32.png] in DispatcherServlet with name 'DispatcherServlet'
+ <org.springframework.web.servlet.DispatcherServlet.noHandlerFound(DispatcherServlet.java:1120)> 
+2017-12-26 13:05:28  WARN 838052ms|>- No mapping found for HTTP request with URI [/shoppingSSM/img/33.png] in DispatcherServlet with name 'DispatcherServlet'
+ <org.springframework.web.servlet.DispatcherServlet.noHandlerFound(DispatcherServlet.java:1120)> 
+2017-12-26 13:05:28  WARN 838065ms|>- No mapping found for HTTP request with URI [/shoppingSSM/img/34.png] in DispatcherServlet with name 'DispatcherServlet'
+ <org.springframework.web.servlet.DispatcherServlet.noHandlerFound(DispatcherServlet.java:1120)> 
+2017-12-26 13:05:28  WARN 838081ms|>- No mapping found for HTTP request with URI [/shoppingSSM/img/35.png] in DispatcherServlet with name 'DispatcherServlet'
+ <org.springframework.web.servlet.DispatcherServlet.noHandlerFound(DispatcherServlet.java:1120)> 
+2017-12-26 13:05:28  WARN 838086ms|>- No mapping found for HTTP request with URI [/shoppingSSM/img/36.png] in DispatcherServlet with name 'DispatcherServlet'
+ <org.springframework.web.servlet.DispatcherServlet.noHandlerFound(DispatcherServlet.java:1120)> 
+2017-12-26 13:05:28  WARN 838094ms|>- No mapping found for HTTP request with URI [/shoppingSSM/img/37.png] in DispatcherServlet with name 'DispatcherServlet'
+ <org.springframework.web.servlet.DispatcherServlet.noHandlerFound(DispatcherServlet.java:1120)> 
+2017-12-26 13:05:28  WARN 838101ms|>- No mapping found for HTTP request with URI [/shoppingSSM/img/38.png] in DispatcherServlet with name 'DispatcherServlet'
+ <org.springframework.web.servlet.DispatcherServlet.noHandlerFound(DispatcherServlet.java:1120)> 
+2017-12-26 13:05:28  WARN 838110ms|>- No mapping found for HTTP request with URI [/shoppingSSM/img/39.png] in DispatcherServlet with name 'DispatcherServlet'
+ <org.springframework.web.servlet.DispatcherServlet.noHandlerFound(DispatcherServlet.java:1120)> 
+2017-12-26 13:05:28  WARN 838118ms|>- No mapping found for HTTP request with URI [/shoppingSSM/img/40.png] in DispatcherServlet with name 'DispatcherServlet'
+ <org.springframework.web.servlet.DispatcherServlet.noHandlerFound(DispatcherServlet.java:1120)> 
+2017-12-26 13:05:28  WARN 838127ms|>- No mapping found for HTTP request with URI [/shoppingSSM/img/41.png] in DispatcherServlet with name 'DispatcherServlet'
+ <org.springframework.web.servlet.DispatcherServlet.noHandlerFound(DispatcherServlet.java:1120)> 
+2017-12-26 13:10:09  WARN 118950ms|>- No mapping found for HTTP request with URI [/shoppingSSM/ucc/uc] in DispatcherServlet with name 'DispatcherServlet'
+ <org.springframework.web.servlet.DispatcherServlet.noHandlerFound(DispatcherServlet.java:1120)> 
+2017-12-26 13:10:22  WARN 132545ms|>- No mapping found for HTTP request with URI [/shoppingSSM/jsp/ucc/uc] in DispatcherServlet with name 'DispatcherServlet'
+ <org.springframework.web.servlet.DispatcherServlet.noHandlerFound(DispatcherServlet.java:1120)> 
+2017-12-26 13:10:28  WARN 138705ms|>- No mapping found for HTTP request with URI [/shoppingSSM/ucc/uc] in DispatcherServlet with name 'DispatcherServlet'
+ <org.springframework.web.servlet.DispatcherServlet.noHandlerFound(DispatcherServlet.java:1120)> 
+2017-12-26 14:02:38  WARN 5865ms|>- Exception encountered during context initialization - cancelling refresh attempt
+ <org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:487)> 
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping#0' defined in class path resource [jackson.xml]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping found. Cannot map 'userController' bean method 
+public java.util.HashMap<java.lang.String, java.lang.Object> com.controller.UserController.testM4(java.util.Date)
+to {[/ucc.do/uc3],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}: There is already 'userController' bean method
+public java.util.HashMap<java.lang.String, java.lang.Object> com.controller.UserController.testM3(java.util.HashMap<java.lang.String, java.lang.Object>) mapped.
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1568)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:540)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:476)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:229)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:298)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:193)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:725)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:757)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:480)
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:403)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:306)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:106)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4643)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5105)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:740)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:716)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:703)
+	at org.apache.catalina.startup.HostConfig.deployDirectory(HostConfig.java:1134)
+	at org.apache.catalina.startup.HostConfig$DeployDirectory.run(HostConfig.java:1868)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:112)
+	at org.apache.catalina.startup.HostConfig.deployDirectories(HostConfig.java:1045)
+	at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:433)
+	at org.apache.catalina.startup.HostConfig.start(HostConfig.java:1578)
+	at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:308)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:123)
+	at org.apache.catalina.util.LifecycleBase.setStateInternal(LifecycleBase.java:424)
+	at org.apache.catalina.util.LifecycleBase.setState(LifecycleBase.java:367)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:964)
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:839)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1425)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1415)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:134)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:941)
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:258)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:422)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:770)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:671)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:355)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:495)
+Caused by: java.lang.IllegalStateException: Ambiguous mapping found. Cannot map 'userController' bean method 
+public java.util.HashMap<java.lang.String, java.lang.Object> com.controller.UserController.testM4(java.util.Date)
+to {[/ucc.do/uc3],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}: There is already 'userController' bean method
+public java.util.HashMap<java.lang.String, java.lang.Object> com.controller.UserController.testM3(java.util.HashMap<java.lang.String, java.lang.Object>) mapped.
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:215)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.detectHandlerMethods(AbstractHandlerMethodMapping.java:187)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.initHandlerMethods(AbstractHandlerMethodMapping.java:147)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.afterPropertiesSet(AbstractHandlerMethodMapping.java:126)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.afterPropertiesSet(RequestMappingHandlerMapping.java:126)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1627)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1564)
+	... 53 more
+2017-12-26 14:02:39  ERROR 6133ms|>- Context initialization failed
+ <org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:331)> 
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping#0' defined in class path resource [jackson.xml]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping found. Cannot map 'userController' bean method 
+public java.util.HashMap<java.lang.String, java.lang.Object> com.controller.UserController.testM4(java.util.Date)
+to {[/ucc.do/uc3],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}: There is already 'userController' bean method
+public java.util.HashMap<java.lang.String, java.lang.Object> com.controller.UserController.testM3(java.util.HashMap<java.lang.String, java.lang.Object>) mapped.
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1568)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:540)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:476)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:229)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:298)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:193)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:725)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:757)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:480)
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:403)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:306)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:106)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4643)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5105)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:740)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:716)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:703)
+	at org.apache.catalina.startup.HostConfig.deployDirectory(HostConfig.java:1134)
+	at org.apache.catalina.startup.HostConfig$DeployDirectory.run(HostConfig.java:1868)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:112)
+	at org.apache.catalina.startup.HostConfig.deployDirectories(HostConfig.java:1045)
+	at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:433)
+	at org.apache.catalina.startup.HostConfig.start(HostConfig.java:1578)
+	at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:308)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:123)
+	at org.apache.catalina.util.LifecycleBase.setStateInternal(LifecycleBase.java:424)
+	at org.apache.catalina.util.LifecycleBase.setState(LifecycleBase.java:367)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:964)
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:839)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1425)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1415)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:134)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:941)
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:258)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:422)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:770)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:671)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:355)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:495)
+Caused by: java.lang.IllegalStateException: Ambiguous mapping found. Cannot map 'userController' bean method 
+public java.util.HashMap<java.lang.String, java.lang.Object> com.controller.UserController.testM4(java.util.Date)
+to {[/ucc.do/uc3],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}: There is already 'userController' bean method
+public java.util.HashMap<java.lang.String, java.lang.Object> com.controller.UserController.testM3(java.util.HashMap<java.lang.String, java.lang.Object>) mapped.
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:215)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.detectHandlerMethods(AbstractHandlerMethodMapping.java:187)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.initHandlerMethods(AbstractHandlerMethodMapping.java:147)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.afterPropertiesSet(AbstractHandlerMethodMapping.java:126)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.afterPropertiesSet(RequestMappingHandlerMapping.java:126)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1627)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1564)
+	... 53 more
+2017-12-26 18:38:15  ERROR 296ms|>- Context initialization failed
+ <org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:331)> 
+org.springframework.beans.factory.BeanDefinitionStoreException: IOException parsing XML document from ServletContext resource [/WEB-INF/applicationContext.xml]; nested exception is java.io.FileNotFoundException: Could not open ServletContext resource [/WEB-INF/applicationContext.xml]
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:343)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:303)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:180)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:216)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:187)
+	at org.springframework.web.context.support.XmlWebApplicationContext.loadBeanDefinitions(XmlWebApplicationContext.java:125)
+	at org.springframework.web.context.support.XmlWebApplicationContext.loadBeanDefinitions(XmlWebApplicationContext.java:94)
+	at org.springframework.context.support.AbstractRefreshableApplicationContext.refreshBeanFactory(AbstractRefreshableApplicationContext.java:129)
+	at org.springframework.context.support.AbstractApplicationContext.obtainFreshBeanFactory(AbstractApplicationContext.java:537)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:452)
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:403)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:306)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:106)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4643)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5105)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:740)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:716)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:703)
+	at org.apache.catalina.startup.HostConfig.deployDirectory(HostConfig.java:1134)
+	at org.apache.catalina.startup.HostConfig$DeployDirectory.run(HostConfig.java:1868)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:112)
+	at org.apache.catalina.startup.HostConfig.deployDirectories(HostConfig.java:1045)
+	at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:433)
+	at org.apache.catalina.startup.HostConfig.start(HostConfig.java:1578)
+	at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:308)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:123)
+	at org.apache.catalina.util.LifecycleBase.setStateInternal(LifecycleBase.java:424)
+	at org.apache.catalina.util.LifecycleBase.setState(LifecycleBase.java:367)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:964)
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:839)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1425)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1415)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:134)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:941)
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:258)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:422)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:770)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:671)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:355)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:495)
+Caused by: java.io.FileNotFoundException: Could not open ServletContext resource [/WEB-INF/applicationContext.xml]
+	at org.springframework.web.context.support.ServletContextResource.getInputStream(ServletContextResource.java:141)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:329)
+	... 53 more
+2017-12-26 18:38:15  WARN 336ms|>- Exception thrown from ApplicationListener handling ContextClosedEvent
+ <org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:872)> 
+java.lang.IllegalStateException: ApplicationEventMulticaster not initialized - call 'refresh' before multicasting events via the context: Root WebApplicationContext: startup date [Tue Dec 26 18:38:15 CST 2017]; root of context hierarchy
+	at org.springframework.context.support.AbstractApplicationContext.getApplicationEventMulticaster(AbstractApplicationContext.java:344)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:331)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:869)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:836)
+	at org.springframework.web.context.ContextLoader.closeWebApplicationContext(ContextLoader.java:579)
+	at org.springframework.web.context.ContextLoaderListener.contextDestroyed(ContextLoaderListener.java:115)
+	at org.apache.catalina.core.StandardContext.listenerStop(StandardContext.java:4690)
+	at org.apache.catalina.core.StandardContext.stopInternal(StandardContext.java:5327)
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:187)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:740)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:716)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:703)
+	at org.apache.catalina.startup.HostConfig.deployDirectory(HostConfig.java:1134)
+	at org.apache.catalina.startup.HostConfig$DeployDirectory.run(HostConfig.java:1868)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:112)
+	at org.apache.catalina.startup.HostConfig.deployDirectories(HostConfig.java:1045)
+	at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:433)
+	at org.apache.catalina.startup.HostConfig.start(HostConfig.java:1578)
+	at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:308)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:123)
+	at org.apache.catalina.util.LifecycleBase.setStateInternal(LifecycleBase.java:424)
+	at org.apache.catalina.util.LifecycleBase.setState(LifecycleBase.java:367)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:964)
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:839)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1425)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1415)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:134)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:941)
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:258)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:422)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:770)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:671)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:355)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:495)
+2017-12-26 18:38:15  WARN 338ms|>- Exception thrown from LifecycleProcessor on context close
+ <org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:880)> 
+java.lang.IllegalStateException: LifecycleProcessor not initialized - call 'refresh' before invoking lifecycle methods via the context: Root WebApplicationContext: startup date [Tue Dec 26 18:38:15 CST 2017]; root of context hierarchy
+	at org.springframework.context.support.AbstractApplicationContext.getLifecycleProcessor(AbstractApplicationContext.java:357)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:877)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:836)
+	at org.springframework.web.context.ContextLoader.closeWebApplicationContext(ContextLoader.java:579)
+	at org.springframework.web.context.ContextLoaderListener.contextDestroyed(ContextLoaderListener.java:115)
+	at org.apache.catalina.core.StandardContext.listenerStop(StandardContext.java:4690)
+	at org.apache.catalina.core.StandardContext.stopInternal(StandardContext.java:5327)
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:187)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:740)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:716)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:703)
+	at org.apache.catalina.startup.HostConfig.deployDirectory(HostConfig.java:1134)
+	at org.apache.catalina.startup.HostConfig$DeployDirectory.run(HostConfig.java:1868)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:112)
+	at org.apache.catalina.startup.HostConfig.deployDirectories(HostConfig.java:1045)
+	at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:433)
+	at org.apache.catalina.startup.HostConfig.start(HostConfig.java:1578)
+	at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:308)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:123)
+	at org.apache.catalina.util.LifecycleBase.setStateInternal(LifecycleBase.java:424)
+	at org.apache.catalina.util.LifecycleBase.setState(LifecycleBase.java:367)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:964)
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:839)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1425)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1415)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:134)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:941)
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:258)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:422)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:770)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:671)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:355)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:495)
+2017-12-26 18:44:55  WARN 277936ms|>- Request method 'GET' not supported
+ <org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver.handleHttpRequestMethodNotSupported(DefaultHandlerExceptionResolver.java:198)> 

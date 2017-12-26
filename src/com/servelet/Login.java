@@ -24,7 +24,7 @@ public class Login extends HttpServlet {
 	@Autowired
 	private UserService userService;
 	@Autowired
-	SpCarService spCarService;
+	private SpCarService spCarService;
 	/**
 	 * 
 	 */

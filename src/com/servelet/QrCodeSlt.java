@@ -26,6 +26,7 @@ import javax.servlet.http.HttpServletResponse;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Controller;
 import org.springframework.web.context.support.SpringBeanAutowiringSupport;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -46,6 +47,7 @@ import com.service.UserService;
  * Servlet implementation class QrCodeSlt
  */
 @WebServlet("/QrCode")
+@Controller
 public class QrCodeSlt extends HttpServlet {
 	static int WIDTH = 400;
 	static int HEIGHT = 400;
@@ -181,7 +183,8 @@ public class QrCodeSlt extends HttpServlet {
 		//String Addr = request.getLocalAddr();
 		String Addr = request.getServerName();//"60.205.225.65";
 		int port = request.getLocalPort();
-		st = "http://" + Addr + ":" + port + "/shopping/QrCode?flag=scan&&UUID=" + uuid;
+		
+		st = "http://" + Addr + ":" + port + request.getContextPath()+"/QrCode?flag=scan&&UUID=" + uuid;
 		Qrcheck q = new Qrcheck(uuid, 0);
 		boolean b = qrcheckService.insertQrcheck(q);
 		if (!b) {
@@ -211,9 +214,8 @@ public class QrCodeSlt extends HttpServlet {
 		String uuid = request.getParameter("UUID");
 		//String Addr = request.getLocalAddr();
 		String Addr = request.getServerName();//"60.205.225.65";
-		System.out.println(Addr);
 		int port = request.getLocalPort();
-		st = "http://" + Addr + ":" + port + "/shopping/QrCode?flag=scan&&UUID=" + uuid;
+		st = "http://" + Addr + ":" + port + request.getContextPath()+"/QrCode?flag=scan&&UUID=" + uuid;
 		Qrcheck q = new Qrcheck(uuid, 0);
 		boolean b = qrcheckService.insertQrcheck(q);
 		if (!b) {
@@ -223,7 +225,6 @@ public class QrCodeSlt extends HttpServlet {
 		
 		BufferedImage img = createQRCode(logoFile, st, "欢迎登录!");
 		ImageIO.write(img, "png", ou);
-		System.out.println(img);
 		ou.flush();
 		ou.close();
 	}

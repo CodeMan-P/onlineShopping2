@@ -1921,3 +1921,1431 @@ execution(* com.dao.*.*(..)) && !execution(* com.service.QrcheckService.getQrche
   "购买方式" : "裸机",
   "版本" : "Mate 10,Mate 10 62G+128G,麦芒6,P10,畅享7"
 } ], imgpath=goods/huawei_1/P10.jpg, filepath=goods/huawei_1/img/, stock=9567]....
+12-26 10:49:04 Root WebApplicationContext: initialization started
+12-26 10:49:04 Refreshing Root WebApplicationContext: startup date [Tue Dec 26 10:49:04 CST 2017]; root of context hierarchy
+12-26 10:49:04 Loading XML bean definitions from class path resource [ApplicationContext.xml]
+12-26 10:49:06 Loading XML bean definitions from class path resource [jackson.xml]
+12-26 10:49:07 Loading properties file from class path resource [jdbc.properties]
+12-26 10:49:08 MLog clients using slf4j logging.
+12-26 10:49:09 Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+12-26 10:49:11 Mapped "{[/uc/uc],methods=[POST],params=[user && pwd],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.Map com.controller.UserController.testM(java.util.Map)
+12-26 10:49:11 Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Tue Dec 26 10:49:04 CST 2017]; root of context hierarchy
+12-26 10:49:11 Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Tue Dec 26 10:49:04 CST 2017]; root of context hierarchy
+12-26 10:49:11 Mapped "{[/uc/uc],methods=[POST],params=[user && pwd],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.Map com.controller.UserController.testM(java.util.Map)
+12-26 10:49:11 Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Tue Dec 26 10:49:04 CST 2017]; root of context hierarchy
+12-26 10:49:11 Root WebApplicationContext: initialization completed in 7378 ms
+12-26 10:49:34 Method <insertQrcheck> begin with ---> [com.mod.bean.Qrcheck@61c6c9c8]....
+12-26 10:49:35 Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 1hgeby99s145lrqjjel46p|3ffac12a, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> 1hgeby99s145lrqjjel46p|3ffac12a, idleConnectionTestPeriod -> 0, initialPoolSize -> 5, jdbcUrl -> jdbc:mysql://localhost:3306/shop?characterEncoding=UTF-8, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 2, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 20, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+12-26 10:49:35 Method <insertQrcheck> end!
+12-26 10:49:35 Method <insertQrcheck> end with --->true....
+12-26 10:50:19 Method <insertQrcheck> begin with ---> [com.mod.bean.Qrcheck@55692f69]....
+12-26 10:50:19 Method <insertQrcheck> end!
+12-26 10:50:19 Method <insertQrcheck> end with --->true....
+12-26 10:52:16 Root WebApplicationContext: initialization started
+12-26 10:52:17 Refreshing Root WebApplicationContext: startup date [Tue Dec 26 10:52:17 CST 2017]; root of context hierarchy
+12-26 10:52:17 Loading XML bean definitions from class path resource [ApplicationContext.xml]
+12-26 10:52:24 Loading XML bean definitions from class path resource [jackson.xml]
+12-26 10:52:25 Loading properties file from class path resource [jdbc.properties]
+12-26 10:52:26 MLog clients using slf4j logging.
+12-26 10:52:27 Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+12-26 10:52:29 Mapped "{[/uc/uc],methods=[POST],params=[user && pwd],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.Map com.controller.UserController.testM(java.util.Map)
+12-26 10:52:30 Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Tue Dec 26 10:52:17 CST 2017]; root of context hierarchy
+12-26 10:52:30 Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Tue Dec 26 10:52:17 CST 2017]; root of context hierarchy
+12-26 10:52:30 Mapped "{[/uc/uc],methods=[POST],params=[user && pwd],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.Map com.controller.UserController.testM(java.util.Map)
+12-26 10:52:30 Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Tue Dec 26 10:52:17 CST 2017]; root of context hierarchy
+12-26 10:52:30 Root WebApplicationContext: initialization completed in 13764 ms
+12-26 10:52:31 Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 1hgeby99s145q0jfrgy2q4|3ffac12a, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> 1hgeby99s145q0jfrgy2q4|3ffac12a, idleConnectionTestPeriod -> 0, initialPoolSize -> 5, jdbcUrl -> jdbc:mysql://localhost:3306/shop?characterEncoding=UTF-8, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 2, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 20, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+12-26 10:52:36 Method <insertQrcheck> begin with ---> [com.mod.bean.Qrcheck@73dc5ee1]....
+12-26 10:52:37 Method <insertQrcheck> end!
+12-26 10:52:37 Method <insertQrcheck> end with --->true....
+12-26 10:52:41 Method <changeStatus> begin with ---> [201712261052368057DA98BECD7044FA3B028AB78D49E2F13, 2]....
+12-26 10:52:41 Method <changeStatus> end!
+12-26 10:52:41 Method <changeStatus> end with --->true....
+12-26 10:53:06 Method <findUser> begin with ---> [com.mod.bean.Users@33660018]....
+12-26 10:53:06 Method <findUser> end!
+12-26 10:53:06 Method <findUser> end with --->com.mod.bean.Users@42837b97....
+12-26 10:53:06 Method <update> begin with ---> [com.mod.bean.Qrcheck@52eb5e21]....
+12-26 10:53:06 Method <update> end!
+12-26 10:53:06 Method <update> end with --->true....
+12-26 10:53:06 Method <findUser> begin with ---> [com.mod.bean.Users@54b981cd]....
+12-26 10:53:06 Method <findUser> end!
+12-26 10:53:06 Method <findUser> end with --->com.mod.bean.Users@28f18a0a....
+12-26 10:53:06 Method <getCarNum> begin with ---> [2]....
+12-26 10:53:06 Method <getCarNum> end!
+12-26 10:53:06 Method <getCarNum> end with --->1....
+12-26 10:53:06 Method <deleQrcheck> begin with ---> [201712261052368057DA98BECD7044FA3B028AB78D49E2F13]....
+12-26 10:53:07 Method <deleQrcheck> end!
+12-26 10:53:07 Method <deleQrcheck> end with --->true....
+12-26 10:53:57 Method <getCarNum> begin with ---> [2]....
+12-26 10:53:57 Method <getCarNum> end!
+12-26 10:53:57 Method <getCarNum> end with --->1....
+12-26 10:53:57 Method <getGoods> begin with ---> [1]....
+12-26 10:53:57 Method <getGoods> end!
+12-26 10:53:57 Method <getGoods> end with --->Goods [gid=1, gname=Huawei/华为 P10全网通手机, tid=2, price=3488.0, descption=[ {
+  "网络类型" : "4G全网通",
+  "机身颜色" : "钻雕金,钻雕蓝,草木绿,曜石黑,玫瑰金",
+  "套餐类型" : "官方标配,套餐一,套餐二,套餐三,套餐四,套餐五",
+  "存储容量" : "64GB,128GB",
+  "购买方式" : "裸机",
+  "版本" : "Mate 10,Mate 10 62G+128G,麦芒6,P10,畅享7"
+} ], imgpath=goods/huawei_1/P10.jpg, filepath=goods/huawei_1/img/, stock=9567]....
+12-26 11:04:14 Root WebApplicationContext: initialization started
+12-26 11:04:14 Refreshing Root WebApplicationContext: startup date [Tue Dec 26 11:04:14 CST 2017]; root of context hierarchy
+12-26 11:04:14 Loading XML bean definitions from class path resource [ApplicationContext.xml]
+12-26 11:04:16 Loading XML bean definitions from class path resource [jackson.xml]
+12-26 11:04:17 Loading properties file from class path resource [jdbc.properties]
+12-26 11:04:18 MLog clients using slf4j logging.
+12-26 11:04:18 Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+12-26 11:04:19 Exception encountered during context initialization - cancelling refresh attempt
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userController': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire field: com.fasterxml.jackson.databind.ObjectMapper com.controller.UserController.mapper; nested exception is org.springframework.beans.factory.NoUniqueBeanDefinitionException: No qualifying bean of type [com.fasterxml.jackson.databind.ObjectMapper] is defined: expected single matching bean but found 3: objectMapper,org.springframework.beans.factory.config.MethodInvokingFactoryBean#0,org.springframework.beans.factory.config.MethodInvokingFactoryBean#1
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:326)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1204)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:538)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:476)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:229)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:298)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:193)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:725)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:757)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:480)
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:403)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:306)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:106)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4643)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5105)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:740)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:716)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:703)
+	at org.apache.catalina.startup.HostConfig.deployDirectory(HostConfig.java:1134)
+	at org.apache.catalina.startup.HostConfig$DeployDirectory.run(HostConfig.java:1868)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:112)
+	at org.apache.catalina.startup.HostConfig.deployDirectories(HostConfig.java:1045)
+	at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:433)
+	at org.apache.catalina.startup.HostConfig.start(HostConfig.java:1578)
+	at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:308)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:123)
+	at org.apache.catalina.util.LifecycleBase.setStateInternal(LifecycleBase.java:424)
+	at org.apache.catalina.util.LifecycleBase.setState(LifecycleBase.java:367)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:964)
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:839)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1425)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1415)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:134)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:941)
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:258)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:422)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:770)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:671)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:355)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:495)
+Caused by: org.springframework.beans.factory.BeanCreationException: Could not autowire field: com.fasterxml.jackson.databind.ObjectMapper com.controller.UserController.mapper; nested exception is org.springframework.beans.factory.NoUniqueBeanDefinitionException: No qualifying bean of type [com.fasterxml.jackson.databind.ObjectMapper] is defined: expected single matching bean but found 3: objectMapper,org.springframework.beans.factory.config.MethodInvokingFactoryBean#0,org.springframework.beans.factory.config.MethodInvokingFactoryBean#1
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:542)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:87)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:323)
+	... 54 more
+Caused by: org.springframework.beans.factory.NoUniqueBeanDefinitionException: No qualifying bean of type [com.fasterxml.jackson.databind.ObjectMapper] is defined: expected single matching bean but found 3: objectMapper,org.springframework.beans.factory.config.MethodInvokingFactoryBean#0,org.springframework.beans.factory.config.MethodInvokingFactoryBean#1
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1016)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:904)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:514)
+	... 56 more
+12-26 11:04:20 Context initialization failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userController': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire field: com.fasterxml.jackson.databind.ObjectMapper com.controller.UserController.mapper; nested exception is org.springframework.beans.factory.NoUniqueBeanDefinitionException: No qualifying bean of type [com.fasterxml.jackson.databind.ObjectMapper] is defined: expected single matching bean but found 3: objectMapper,org.springframework.beans.factory.config.MethodInvokingFactoryBean#0,org.springframework.beans.factory.config.MethodInvokingFactoryBean#1
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:326)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1204)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:538)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:476)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:229)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:298)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:193)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:725)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:757)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:480)
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:403)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:306)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:106)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4643)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5105)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:740)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:716)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:703)
+	at org.apache.catalina.startup.HostConfig.deployDirectory(HostConfig.java:1134)
+	at org.apache.catalina.startup.HostConfig$DeployDirectory.run(HostConfig.java:1868)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:112)
+	at org.apache.catalina.startup.HostConfig.deployDirectories(HostConfig.java:1045)
+	at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:433)
+	at org.apache.catalina.startup.HostConfig.start(HostConfig.java:1578)
+	at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:308)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:123)
+	at org.apache.catalina.util.LifecycleBase.setStateInternal(LifecycleBase.java:424)
+	at org.apache.catalina.util.LifecycleBase.setState(LifecycleBase.java:367)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:964)
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:839)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1425)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1415)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:134)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:941)
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:258)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:422)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:770)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:671)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:355)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:495)
+Caused by: org.springframework.beans.factory.BeanCreationException: Could not autowire field: com.fasterxml.jackson.databind.ObjectMapper com.controller.UserController.mapper; nested exception is org.springframework.beans.factory.NoUniqueBeanDefinitionException: No qualifying bean of type [com.fasterxml.jackson.databind.ObjectMapper] is defined: expected single matching bean but found 3: objectMapper,org.springframework.beans.factory.config.MethodInvokingFactoryBean#0,org.springframework.beans.factory.config.MethodInvokingFactoryBean#1
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:542)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:87)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:323)
+	... 54 more
+Caused by: org.springframework.beans.factory.NoUniqueBeanDefinitionException: No qualifying bean of type [com.fasterxml.jackson.databind.ObjectMapper] is defined: expected single matching bean but found 3: objectMapper,org.springframework.beans.factory.config.MethodInvokingFactoryBean#0,org.springframework.beans.factory.config.MethodInvokingFactoryBean#1
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1016)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:904)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:514)
+	... 56 more
+12-26 11:06:45 Root WebApplicationContext: initialization started
+12-26 11:06:46 Refreshing Root WebApplicationContext: startup date [Tue Dec 26 11:06:46 CST 2017]; root of context hierarchy
+12-26 11:06:46 Loading XML bean definitions from class path resource [ApplicationContext.xml]
+12-26 11:06:48 Loading XML bean definitions from class path resource [jackson.xml]
+12-26 11:06:48 Loading properties file from class path resource [jdbc.properties]
+12-26 11:06:50 MLog clients using slf4j logging.
+12-26 11:06:50 Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+12-26 11:06:52 Mapped "{[/uc/uc],methods=[POST],params=[user && pwd],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.Map com.controller.UserController.testM(java.util.Map)
+12-26 11:06:52 Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Tue Dec 26 11:06:46 CST 2017]; root of context hierarchy
+12-26 11:06:52 Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Tue Dec 26 11:06:46 CST 2017]; root of context hierarchy
+12-26 11:06:52 Mapped "{[/uc/uc],methods=[POST],params=[user && pwd],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.Map com.controller.UserController.testM(java.util.Map)
+12-26 11:06:52 Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Tue Dec 26 11:06:46 CST 2017]; root of context hierarchy
+12-26 11:06:52 Root WebApplicationContext: initialization completed in 6700 ms
+12-26 11:08:28 Root WebApplicationContext: initialization started
+12-26 11:08:28 Refreshing Root WebApplicationContext: startup date [Tue Dec 26 11:08:28 CST 2017]; root of context hierarchy
+12-26 11:08:28 Loading XML bean definitions from class path resource [ApplicationContext.xml]
+12-26 11:08:30 Loading XML bean definitions from class path resource [jackson.xml]
+12-26 11:08:31 Loading properties file from class path resource [jdbc.properties]
+12-26 11:08:32 MLog clients using slf4j logging.
+12-26 11:08:32 Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+12-26 11:08:34 Mapped "{[/uc/uc],methods=[POST],params=[user && pwd],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.Map com.controller.UserController.testM(java.util.Map)
+12-26 11:08:34 Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Tue Dec 26 11:08:28 CST 2017]; root of context hierarchy
+12-26 11:08:34 Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Tue Dec 26 11:08:28 CST 2017]; root of context hierarchy
+12-26 11:08:35 Mapped "{[/uc/uc],methods=[POST],params=[user && pwd],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.Map com.controller.UserController.testM(java.util.Map)
+12-26 11:08:35 Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Tue Dec 26 11:08:28 CST 2017]; root of context hierarchy
+12-26 11:08:35 Root WebApplicationContext: initialization completed in 6993 ms
+12-26 11:13:05 Closing Root WebApplicationContext: startup date [Tue Dec 26 11:08:28 CST 2017]; root of context hierarchy
+12-26 11:13:19 Root WebApplicationContext: initialization started
+12-26 11:13:20 Refreshing Root WebApplicationContext: startup date [Tue Dec 26 11:13:20 CST 2017]; root of context hierarchy
+12-26 11:13:20 Loading XML bean definitions from class path resource [ApplicationContext.xml]
+12-26 11:13:22 Loading XML bean definitions from class path resource [jackson.xml]
+12-26 11:13:23 Loading properties file from class path resource [jdbc.properties]
+12-26 11:13:24 MLog clients using slf4j logging.
+12-26 11:13:24 Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+12-26 11:13:26 Mapped "{[/uc/uc],methods=[POST],params=[user && pwd],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.Map com.controller.UserController.testM(java.util.Map)
+12-26 11:13:27 Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Tue Dec 26 11:13:20 CST 2017]; root of context hierarchy
+12-26 11:13:27 Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Tue Dec 26 11:13:20 CST 2017]; root of context hierarchy
+12-26 11:13:27 Mapped "{[/uc/uc],methods=[POST],params=[user && pwd],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.Map com.controller.UserController.testM(java.util.Map)
+12-26 11:13:27 Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Tue Dec 26 11:13:20 CST 2017]; root of context hierarchy
+12-26 11:13:27 Root WebApplicationContext: initialization completed in 7525 ms
+12-26 11:17:37 Root WebApplicationContext: initialization started
+12-26 11:17:37 Refreshing Root WebApplicationContext: startup date [Tue Dec 26 11:17:37 CST 2017]; root of context hierarchy
+12-26 11:17:38 Loading XML bean definitions from class path resource [ApplicationContext.xml]
+12-26 11:17:40 Loading XML bean definitions from class path resource [jackson.xml]
+12-26 11:17:40 Loading properties file from class path resource [jdbc.properties]
+12-26 11:17:42 MLog clients using slf4j logging.
+12-26 11:17:42 Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+12-26 11:17:44 Mapped "{[/uc/uc],methods=[POST],params=[user && pwd],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.Map com.controller.UserController.testM(java.util.Map)
+12-26 11:17:44 Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Tue Dec 26 11:17:37 CST 2017]; root of context hierarchy
+12-26 11:17:44 Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Tue Dec 26 11:17:37 CST 2017]; root of context hierarchy
+12-26 11:17:44 Mapped "{[/uc/uc],methods=[POST],params=[user && pwd],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.Map com.controller.UserController.testM(java.util.Map)
+12-26 11:17:44 Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Tue Dec 26 11:17:37 CST 2017]; root of context hierarchy
+12-26 11:17:44 Root WebApplicationContext: initialization completed in 6942 ms
+12-26 11:17:44 FrameworkServlet 'DispatcherServlet': initialization started
+12-26 11:17:44 Refreshing WebApplicationContext for namespace 'DispatcherServlet-servlet': startup date [Tue Dec 26 11:17:44 CST 2017]; parent: Root WebApplicationContext
+12-26 11:17:44 Loading XML bean definitions from class path resource [spring/dispatcher-servlet.xml]
+12-26 11:17:44 Context initialization failed
+org.springframework.beans.factory.BeanDefinitionStoreException: IOException parsing XML document from class path resource [spring/dispatcher-servlet.xml]; nested exception is java.io.FileNotFoundException: class path resource [spring/dispatcher-servlet.xml] cannot be opened because it does not exist
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:343)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:303)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:180)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:216)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:187)
+	at org.springframework.web.context.support.XmlWebApplicationContext.loadBeanDefinitions(XmlWebApplicationContext.java:125)
+	at org.springframework.web.context.support.XmlWebApplicationContext.loadBeanDefinitions(XmlWebApplicationContext.java:94)
+	at org.springframework.context.support.AbstractRefreshableApplicationContext.refreshBeanFactory(AbstractRefreshableApplicationContext.java:129)
+	at org.springframework.context.support.AbstractApplicationContext.obtainFreshBeanFactory(AbstractApplicationContext.java:537)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:452)
+	at org.springframework.web.servlet.FrameworkServlet.configureAndRefreshWebApplicationContext(FrameworkServlet.java:658)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:624)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:672)
+	at org.springframework.web.servlet.FrameworkServlet.initWebApplicationContext(FrameworkServlet.java:543)
+	at org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:484)
+	at org.springframework.web.servlet.HttpServletBean.init(HttpServletBean.java:136)
+	at javax.servlet.GenericServlet.init(GenericServlet.java:158)
+	at org.apache.catalina.core.StandardWrapper.initServlet(StandardWrapper.java:1174)
+	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1090)
+	at org.apache.catalina.core.StandardWrapper.load(StandardWrapper.java:980)
+	at org.apache.catalina.core.StandardContext.loadOnStartup(StandardContext.java:4829)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5139)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:740)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:716)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:703)
+	at org.apache.catalina.startup.HostConfig.deployDirectory(HostConfig.java:1134)
+	at org.apache.catalina.startup.HostConfig$DeployDirectory.run(HostConfig.java:1868)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:112)
+	at org.apache.catalina.startup.HostConfig.deployDirectories(HostConfig.java:1045)
+	at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:433)
+	at org.apache.catalina.startup.HostConfig.start(HostConfig.java:1578)
+	at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:308)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:123)
+	at org.apache.catalina.util.LifecycleBase.setStateInternal(LifecycleBase.java:424)
+	at org.apache.catalina.util.LifecycleBase.setState(LifecycleBase.java:367)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:964)
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:839)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1425)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1415)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:134)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:941)
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:258)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:422)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:770)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:671)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:355)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:495)
+Caused by: java.io.FileNotFoundException: class path resource [spring/dispatcher-servlet.xml] cannot be opened because it does not exist
+	at org.springframework.core.io.ClassPathResource.getInputStream(ClassPathResource.java:172)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:329)
+	... 60 more
+12-26 11:18:17 FrameworkServlet 'DispatcherServlet': initialization started
+12-26 11:18:17 Refreshing WebApplicationContext for namespace 'DispatcherServlet-servlet': startup date [Tue Dec 26 11:18:17 CST 2017]; parent: Root WebApplicationContext
+12-26 11:18:17 Loading XML bean definitions from class path resource [spring/dispatcher-servlet.xml]
+12-26 11:18:17 Context initialization failed
+org.springframework.beans.factory.BeanDefinitionStoreException: IOException parsing XML document from class path resource [spring/dispatcher-servlet.xml]; nested exception is java.io.FileNotFoundException: class path resource [spring/dispatcher-servlet.xml] cannot be opened because it does not exist
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:343)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:303)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:180)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:216)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:187)
+	at org.springframework.web.context.support.XmlWebApplicationContext.loadBeanDefinitions(XmlWebApplicationContext.java:125)
+	at org.springframework.web.context.support.XmlWebApplicationContext.loadBeanDefinitions(XmlWebApplicationContext.java:94)
+	at org.springframework.context.support.AbstractRefreshableApplicationContext.refreshBeanFactory(AbstractRefreshableApplicationContext.java:129)
+	at org.springframework.context.support.AbstractApplicationContext.obtainFreshBeanFactory(AbstractApplicationContext.java:537)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:452)
+	at org.springframework.web.servlet.FrameworkServlet.configureAndRefreshWebApplicationContext(FrameworkServlet.java:658)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:624)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:672)
+	at org.springframework.web.servlet.FrameworkServlet.initWebApplicationContext(FrameworkServlet.java:543)
+	at org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:484)
+	at org.springframework.web.servlet.HttpServletBean.init(HttpServletBean.java:136)
+	at javax.servlet.GenericServlet.init(GenericServlet.java:158)
+	at org.apache.catalina.core.StandardWrapper.initServlet(StandardWrapper.java:1174)
+	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1090)
+	at org.apache.catalina.core.StandardWrapper.allocate(StandardWrapper.java:770)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:133)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:475)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:651)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:500)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:754)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1376)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.io.FileNotFoundException: class path resource [spring/dispatcher-servlet.xml] cannot be opened because it does not exist
+	at org.springframework.core.io.ClassPathResource.getInputStream(ClassPathResource.java:172)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:329)
+	... 36 more
+12-26 11:31:15 Root WebApplicationContext: initialization started
+12-26 11:31:15 Refreshing Root WebApplicationContext: startup date [Tue Dec 26 11:31:15 CST 2017]; root of context hierarchy
+12-26 11:31:15 Loading XML bean definitions from class path resource [ApplicationContext.xml]
+12-26 11:31:19 Loading XML bean definitions from class path resource [jackson.xml]
+12-26 11:31:19 Loading properties file from class path resource [jdbc.properties]
+12-26 11:31:21 MLog clients using slf4j logging.
+12-26 11:31:22 Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+12-26 11:31:24 Mapped "{[/ucc/uc],methods=[POST],params=[user && pwd],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.Map com.controller.UserController.testM(java.util.Map)
+12-26 11:31:24 Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Tue Dec 26 11:31:15 CST 2017]; root of context hierarchy
+12-26 11:31:24 Root WebApplicationContext: initialization completed in 9497 ms
+12-26 11:31:24 FrameworkServlet 'DispatcherServlet': initialization started
+12-26 11:31:24 Refreshing WebApplicationContext for namespace 'DispatcherServlet-servlet': startup date [Tue Dec 26 11:31:24 CST 2017]; parent: Root WebApplicationContext
+12-26 11:31:24 Loading XML bean definitions from class path resource [Dispatcher-servlet.xml]
+12-26 11:31:24 Looking for @ControllerAdvice: WebApplicationContext for namespace 'DispatcherServlet-servlet': startup date [Tue Dec 26 11:31:24 CST 2017]; parent: Root WebApplicationContext
+12-26 11:31:25 Looking for @ControllerAdvice: WebApplicationContext for namespace 'DispatcherServlet-servlet': startup date [Tue Dec 26 11:31:24 CST 2017]; parent: Root WebApplicationContext
+12-26 11:31:25 FrameworkServlet 'DispatcherServlet': initialization completed in 487 ms
+12-26 11:31:49 No mapping found for HTTP request with URI [/shoppingSSM/jsp/ucc/uc] in DispatcherServlet with name 'DispatcherServlet'
+12-26 11:32:13 No mapping found for HTTP request with URI [/shoppingSSM/ucc/uc] in DispatcherServlet with name 'DispatcherServlet'
+12-26 11:32:20 No mapping found for HTTP request with URI [/shoppingSSM/uc] in DispatcherServlet with name 'DispatcherServlet'
+12-26 11:32:29 No mapping found for HTTP request with URI [/shoppingSSM/jsp/uc] in DispatcherServlet with name 'DispatcherServlet'
+12-26 11:35:00 Root WebApplicationContext: initialization started
+12-26 11:35:00 Refreshing Root WebApplicationContext: startup date [Tue Dec 26 11:35:00 CST 2017]; root of context hierarchy
+12-26 11:35:01 Loading XML bean definitions from class path resource [ApplicationContext.xml]
+12-26 11:35:03 Loading XML bean definitions from class path resource [jackson.xml]
+12-26 11:35:04 Loading properties file from class path resource [jdbc.properties]
+12-26 11:35:05 MLog clients using slf4j logging.
+12-26 11:35:05 Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+12-26 11:35:07 Mapped "{[/ucc/uc],methods=[POST],params=[user && pwd],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.Map com.controller.UserController.testM(java.util.Map)
+12-26 11:35:07 Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Tue Dec 26 11:35:00 CST 2017]; root of context hierarchy
+12-26 11:35:07 Root WebApplicationContext: initialization completed in 6717 ms
+12-26 11:35:07 FrameworkServlet 'DispatcherServlet': initialization started
+12-26 11:35:07 Refreshing WebApplicationContext for namespace 'DispatcherServlet-servlet': startup date [Tue Dec 26 11:35:07 CST 2017]; parent: Root WebApplicationContext
+12-26 11:35:07 Loading XML bean definitions from class path resource [Dispatcher-servlet.xml]
+12-26 11:35:07 Looking for @ControllerAdvice: WebApplicationContext for namespace 'DispatcherServlet-servlet': startup date [Tue Dec 26 11:35:07 CST 2017]; parent: Root WebApplicationContext
+12-26 11:35:07 Looking for @ControllerAdvice: WebApplicationContext for namespace 'DispatcherServlet-servlet': startup date [Tue Dec 26 11:35:07 CST 2017]; parent: Root WebApplicationContext
+12-26 11:35:08 FrameworkServlet 'DispatcherServlet': initialization completed in 441 ms
+12-26 11:35:14 No mapping found for HTTP request with URI [/shoppingSSM/jsp/ucc/uc] in DispatcherServlet with name 'DispatcherServlet'
+12-26 11:35:52 No mapping found for HTTP request with URI [/shoppingSSM/ucc/uc] in DispatcherServlet with name 'DispatcherServlet'
+12-26 12:24:02 Root WebApplicationContext: initialization started
+12-26 12:24:02 Refreshing Root WebApplicationContext: startup date [Tue Dec 26 12:24:02 CST 2017]; root of context hierarchy
+12-26 12:24:02 Loading XML bean definitions from class path resource [ApplicationContext.xml]
+12-26 12:24:06 Loading XML bean definitions from class path resource [jackson.xml]
+12-26 12:24:07 Loading properties file from class path resource [jdbc.properties]
+12-26 12:24:08 MLog clients using slf4j logging.
+12-26 12:24:09 Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+12-26 12:24:10 Mapped "{[/ucc/uc],methods=[POST],params=[user && pwd],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.Map com.controller.UserController.testM(java.util.Map)
+12-26 12:24:11 Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Tue Dec 26 12:24:02 CST 2017]; root of context hierarchy
+12-26 12:24:11 Root WebApplicationContext: initialization completed in 8546 ms
+12-26 12:24:11 FrameworkServlet 'DispatcherServlet': initialization started
+12-26 12:24:11 Refreshing WebApplicationContext for namespace 'DispatcherServlet-servlet': startup date [Tue Dec 26 12:24:11 CST 2017]; parent: Root WebApplicationContext
+12-26 12:24:11 Loading XML bean definitions from class path resource [Dispatcher-servlet.xml]
+12-26 12:24:11 Looking for @ControllerAdvice: WebApplicationContext for namespace 'DispatcherServlet-servlet': startup date [Tue Dec 26 12:24:11 CST 2017]; parent: Root WebApplicationContext
+12-26 12:24:11 Looking for @ControllerAdvice: WebApplicationContext for namespace 'DispatcherServlet-servlet': startup date [Tue Dec 26 12:24:11 CST 2017]; parent: Root WebApplicationContext
+12-26 12:24:11 FrameworkServlet 'DispatcherServlet': initialization completed in 344 ms
+12-26 12:24:34 No mapping found for HTTP request with URI [/shoppingSSM/ucc] in DispatcherServlet with name 'DispatcherServlet'
+12-26 12:26:21 No mapping found for HTTP request with URI [/shoppingSSM/jsp/ucc] in DispatcherServlet with name 'DispatcherServlet'
+12-26 12:26:25 No mapping found for HTTP request with URI [/shoppingSSM/ucc] in DispatcherServlet with name 'DispatcherServlet'
+12-26 12:30:48 Root WebApplicationContext: initialization started
+12-26 12:30:49 Refreshing Root WebApplicationContext: startup date [Tue Dec 26 12:30:49 CST 2017]; root of context hierarchy
+12-26 12:30:49 Loading XML bean definitions from class path resource [ApplicationContext.xml]
+12-26 12:30:51 Loading XML bean definitions from class path resource [jackson.xml]
+12-26 12:30:51 Loading properties file from class path resource [jdbc.properties]
+12-26 12:30:53 MLog clients using slf4j logging.
+12-26 12:30:53 Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+12-26 12:30:55 Mapped "{[/ucc/uc],methods=[POST],params=[user && pwd],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.Map com.controller.UserController.testM(java.util.Map)
+12-26 12:30:56 Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Tue Dec 26 12:30:49 CST 2017]; root of context hierarchy
+12-26 12:30:56 Root WebApplicationContext: initialization completed in 7252 ms
+12-26 12:30:56 FrameworkServlet 'DispatcherServlet': initialization started
+12-26 12:30:56 Refreshing WebApplicationContext for namespace 'DispatcherServlet-servlet': startup date [Tue Dec 26 12:30:56 CST 2017]; parent: Root WebApplicationContext
+12-26 12:30:56 Loading XML bean definitions from class path resource [Dispatcher-servlet.xml]
+12-26 12:30:56 Looking for @ControllerAdvice: WebApplicationContext for namespace 'DispatcherServlet-servlet': startup date [Tue Dec 26 12:30:56 CST 2017]; parent: Root WebApplicationContext
+12-26 12:30:56 Looking for @ControllerAdvice: WebApplicationContext for namespace 'DispatcherServlet-servlet': startup date [Tue Dec 26 12:30:56 CST 2017]; parent: Root WebApplicationContext
+12-26 12:30:56 Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+12-26 12:30:56 FrameworkServlet 'DispatcherServlet': initialization completed in 428 ms
+12-26 12:37:22 Root WebApplicationContext: initialization started
+12-26 12:37:22 Refreshing Root WebApplicationContext: startup date [Tue Dec 26 12:37:22 CST 2017]; root of context hierarchy
+12-26 12:37:22 Loading XML bean definitions from class path resource [ApplicationContext.xml]
+12-26 12:37:27 Loading XML bean definitions from class path resource [jackson.xml]
+12-26 12:37:28 Loading properties file from class path resource [jdbc.properties]
+12-26 12:37:29 MLog clients using slf4j logging.
+12-26 12:37:29 Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+12-26 12:37:31 Mapped "{[/ucc.do/uc],methods=[POST],params=[user && pwd],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.Map com.controller.UserController.testM(java.util.Map)
+12-26 12:37:31 Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Tue Dec 26 12:37:22 CST 2017]; root of context hierarchy
+12-26 12:37:32 Root WebApplicationContext: initialization completed in 9836 ms
+12-26 12:37:32 FrameworkServlet 'DispatcherServlet': initialization started
+12-26 12:37:32 Refreshing WebApplicationContext for namespace 'DispatcherServlet-servlet': startup date [Tue Dec 26 12:37:32 CST 2017]; parent: Root WebApplicationContext
+12-26 12:37:32 Loading XML bean definitions from class path resource [Dispatcher-servlet.xml]
+12-26 12:37:32 Looking for @ControllerAdvice: WebApplicationContext for namespace 'DispatcherServlet-servlet': startup date [Tue Dec 26 12:37:32 CST 2017]; parent: Root WebApplicationContext
+12-26 12:37:32 Looking for @ControllerAdvice: WebApplicationContext for namespace 'DispatcherServlet-servlet': startup date [Tue Dec 26 12:37:32 CST 2017]; parent: Root WebApplicationContext
+12-26 12:37:32 Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+12-26 12:37:32 FrameworkServlet 'DispatcherServlet': initialization completed in 410 ms
+12-26 12:38:59 Root WebApplicationContext: initialization started
+12-26 12:39:00 Refreshing Root WebApplicationContext: startup date [Tue Dec 26 12:39:00 CST 2017]; root of context hierarchy
+12-26 12:39:00 Loading XML bean definitions from class path resource [ApplicationContext.xml]
+12-26 12:39:02 Loading XML bean definitions from class path resource [jackson.xml]
+12-26 12:39:02 Loading properties file from class path resource [jdbc.properties]
+12-26 12:39:04 MLog clients using slf4j logging.
+12-26 12:39:04 Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+12-26 12:39:06 Mapped "{[/ucc.do/uc],methods=[POST],params=[user && pwd],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.Map com.controller.UserController.testM(java.util.Map)
+12-26 12:39:06 Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Tue Dec 26 12:39:00 CST 2017]; root of context hierarchy
+12-26 12:39:06 Root WebApplicationContext: initialization completed in 6697 ms
+12-26 12:39:06 FrameworkServlet 'DispatcherServlet': initialization started
+12-26 12:39:06 Refreshing WebApplicationContext for namespace 'DispatcherServlet-servlet': startup date [Tue Dec 26 12:39:06 CST 2017]; parent: Root WebApplicationContext
+12-26 12:39:06 Loading XML bean definitions from class path resource [Dispatcher-servlet.xml]
+12-26 12:39:06 Looking for @ControllerAdvice: WebApplicationContext for namespace 'DispatcherServlet-servlet': startup date [Tue Dec 26 12:39:06 CST 2017]; parent: Root WebApplicationContext
+12-26 12:39:06 Looking for @ControllerAdvice: WebApplicationContext for namespace 'DispatcherServlet-servlet': startup date [Tue Dec 26 12:39:06 CST 2017]; parent: Root WebApplicationContext
+12-26 12:39:06 FrameworkServlet 'DispatcherServlet': initialization completed in 352 ms
+12-26 12:39:24 No mapping found for HTTP request with URI [/shoppingSSM/jsp/ucc.do] in DispatcherServlet with name 'DispatcherServlet'
+12-26 12:40:42 Root WebApplicationContext: initialization started
+12-26 12:40:42 Refreshing Root WebApplicationContext: startup date [Tue Dec 26 12:40:42 CST 2017]; root of context hierarchy
+12-26 12:40:42 Loading XML bean definitions from class path resource [ApplicationContext.xml]
+12-26 12:40:45 Loading XML bean definitions from class path resource [jackson.xml]
+12-26 12:40:46 Loading properties file from class path resource [jdbc.properties]
+12-26 12:40:47 MLog clients using slf4j logging.
+12-26 12:40:47 Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+12-26 12:40:49 Mapped "{[/ucc.do/uc],methods=[POST],params=[user && pwd],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.Map com.controller.UserController.testM(java.util.Map)
+12-26 12:40:49 Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Tue Dec 26 12:40:42 CST 2017]; root of context hierarchy
+12-26 12:40:49 Root WebApplicationContext: initialization completed in 7070 ms
+12-26 12:40:49 FrameworkServlet 'DispatcherServlet': initialization started
+12-26 12:40:49 Refreshing WebApplicationContext for namespace 'DispatcherServlet-servlet': startup date [Tue Dec 26 12:40:49 CST 2017]; parent: Root WebApplicationContext
+12-26 12:40:49 Loading XML bean definitions from class path resource [Dispatcher-servlet.xml]
+12-26 12:40:50 Mapped "{[/ucc.do/uc],methods=[POST],params=[user && pwd],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.Map com.controller.UserController.testM(java.util.Map)
+12-26 12:40:50 Looking for @ControllerAdvice: WebApplicationContext for namespace 'DispatcherServlet-servlet': startup date [Tue Dec 26 12:40:49 CST 2017]; parent: Root WebApplicationContext
+12-26 12:40:50 Looking for @ControllerAdvice: WebApplicationContext for namespace 'DispatcherServlet-servlet': startup date [Tue Dec 26 12:40:49 CST 2017]; parent: Root WebApplicationContext
+12-26 12:40:50 FrameworkServlet 'DispatcherServlet': initialization completed in 583 ms
+12-26 12:40:53 No mapping found for HTTP request with URI [/shoppingSSM/jsp/ucc.do] in DispatcherServlet with name 'DispatcherServlet'
+12-26 12:40:54 No mapping found for HTTP request with URI [/shoppingSSM/jsp/ucc.do] in DispatcherServlet with name 'DispatcherServlet'
+12-26 12:40:57 No mapping found for HTTP request with URI [/shoppingSSM/ucc.do] in DispatcherServlet with name 'DispatcherServlet'
+12-26 12:40:57 No mapping found for HTTP request with URI [/shoppingSSM/ucc.do] in DispatcherServlet with name 'DispatcherServlet'
+12-26 12:41:39 Request method 'GET' not supported
+12-26 12:42:27 Root WebApplicationContext: initialization started
+12-26 12:42:27 Refreshing Root WebApplicationContext: startup date [Tue Dec 26 12:42:27 CST 2017]; root of context hierarchy
+12-26 12:42:27 Loading XML bean definitions from class path resource [ApplicationContext.xml]
+12-26 12:42:29 Loading XML bean definitions from class path resource [jackson.xml]
+12-26 12:42:29 Loading properties file from class path resource [jdbc.properties]
+12-26 12:42:31 MLog clients using slf4j logging.
+12-26 12:42:31 Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+12-26 12:42:33 Mapped "{[/ucc.do/uc],methods=[GET],params=[user && pwd],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.Map com.controller.UserController.testM(java.util.Map)
+12-26 12:42:33 Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Tue Dec 26 12:42:27 CST 2017]; root of context hierarchy
+12-26 12:42:33 Root WebApplicationContext: initialization completed in 6601 ms
+12-26 12:42:33 FrameworkServlet 'DispatcherServlet': initialization started
+12-26 12:42:33 Refreshing WebApplicationContext for namespace 'DispatcherServlet-servlet': startup date [Tue Dec 26 12:42:33 CST 2017]; parent: Root WebApplicationContext
+12-26 12:42:33 Loading XML bean definitions from class path resource [Dispatcher-servlet.xml]
+12-26 12:42:34 Mapped "{[/ucc.do/uc],methods=[GET],params=[user && pwd],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.Map com.controller.UserController.testM(java.util.Map)
+12-26 12:42:34 Looking for @ControllerAdvice: WebApplicationContext for namespace 'DispatcherServlet-servlet': startup date [Tue Dec 26 12:42:33 CST 2017]; parent: Root WebApplicationContext
+12-26 12:42:34 Looking for @ControllerAdvice: WebApplicationContext for namespace 'DispatcherServlet-servlet': startup date [Tue Dec 26 12:42:33 CST 2017]; parent: Root WebApplicationContext
+12-26 12:42:34 FrameworkServlet 'DispatcherServlet': initialization completed in 838 ms
+12-26 12:45:17 No mapping found for HTTP request with URI [/shoppingSSM/ucc.do] in DispatcherServlet with name 'DispatcherServlet'
+12-26 12:49:05 Closing WebApplicationContext for namespace 'DispatcherServlet-servlet': startup date [Tue Dec 26 12:42:33 CST 2017]; parent: Root WebApplicationContext
+12-26 12:49:05 Closing Root WebApplicationContext: startup date [Tue Dec 26 12:42:27 CST 2017]; root of context hierarchy
+12-26 12:49:18 Root WebApplicationContext: initialization started
+12-26 12:49:18 Refreshing Root WebApplicationContext: startup date [Tue Dec 26 12:49:18 CST 2017]; root of context hierarchy
+12-26 12:49:18 Loading XML bean definitions from class path resource [ApplicationContext.xml]
+12-26 12:49:22 Loading XML bean definitions from class path resource [jackson.xml]
+12-26 12:49:22 Loading properties file from class path resource [jdbc.properties]
+12-26 12:49:23 MLog clients using slf4j logging.
+12-26 12:49:23 Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+12-26 12:49:25 Mapped "{[/ucc.do/uc],methods=[GET],params=[user=root],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.Map com.controller.UserController.testM(java.util.Map)
+12-26 12:49:26 Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Tue Dec 26 12:49:18 CST 2017]; root of context hierarchy
+12-26 12:49:26 Root WebApplicationContext: initialization completed in 7780 ms
+12-26 12:49:26 FrameworkServlet 'DispatcherServlet': initialization started
+12-26 12:49:26 Refreshing WebApplicationContext for namespace 'DispatcherServlet-servlet': startup date [Tue Dec 26 12:49:26 CST 2017]; parent: Root WebApplicationContext
+12-26 12:49:26 Loading XML bean definitions from class path resource [Dispatcher-servlet.xml]
+12-26 12:49:26 Mapped "{[/ucc.do/uc],methods=[GET],params=[user=root],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.Map com.controller.UserController.testM(java.util.Map)
+12-26 12:49:26 Looking for @ControllerAdvice: WebApplicationContext for namespace 'DispatcherServlet-servlet': startup date [Tue Dec 26 12:49:26 CST 2017]; parent: Root WebApplicationContext
+12-26 12:49:26 Looking for @ControllerAdvice: WebApplicationContext for namespace 'DispatcherServlet-servlet': startup date [Tue Dec 26 12:49:26 CST 2017]; parent: Root WebApplicationContext
+12-26 12:49:26 FrameworkServlet 'DispatcherServlet': initialization completed in 571 ms
+12-26 12:50:21 Root WebApplicationContext: initialization started
+12-26 12:50:21 Refreshing Root WebApplicationContext: startup date [Tue Dec 26 12:50:21 CST 2017]; root of context hierarchy
+12-26 12:50:21 Loading XML bean definitions from class path resource [ApplicationContext.xml]
+12-26 12:50:25 Loading XML bean definitions from class path resource [jackson.xml]
+12-26 12:50:26 Loading properties file from class path resource [jdbc.properties]
+12-26 12:50:28 MLog clients using slf4j logging.
+12-26 12:50:28 Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+12-26 12:50:30 Mapped "{[/ucc.do/uc],methods=[GET],params=[user=root],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.Map com.controller.UserController.testM(java.util.Map)
+12-26 12:50:30 Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Tue Dec 26 12:50:21 CST 2017]; root of context hierarchy
+12-26 12:50:30 Root WebApplicationContext: initialization completed in 9107 ms
+12-26 12:50:30 FrameworkServlet 'DispatcherServlet': initialization started
+12-26 12:50:30 Refreshing WebApplicationContext for namespace 'DispatcherServlet-servlet': startup date [Tue Dec 26 12:50:30 CST 2017]; parent: Root WebApplicationContext
+12-26 12:50:30 Loading XML bean definitions from class path resource [Dispatcher-servlet.xml]
+12-26 12:50:30 Mapped "{[/ucc.do/uc],methods=[GET],params=[user=root],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.Map com.controller.UserController.testM(java.util.Map)
+12-26 12:50:31 Looking for @ControllerAdvice: WebApplicationContext for namespace 'DispatcherServlet-servlet': startup date [Tue Dec 26 12:50:30 CST 2017]; parent: Root WebApplicationContext
+12-26 12:50:31 Looking for @ControllerAdvice: WebApplicationContext for namespace 'DispatcherServlet-servlet': startup date [Tue Dec 26 12:50:30 CST 2017]; parent: Root WebApplicationContext
+12-26 12:50:31 FrameworkServlet 'DispatcherServlet': initialization completed in 621 ms
+12-26 12:51:21 Closing WebApplicationContext for namespace 'DispatcherServlet-servlet': startup date [Tue Dec 26 12:50:30 CST 2017]; parent: Root WebApplicationContext
+12-26 12:51:21 Closing Root WebApplicationContext: startup date [Tue Dec 26 12:50:21 CST 2017]; root of context hierarchy
+12-26 12:51:30 Root WebApplicationContext: initialization started
+12-26 12:51:30 Refreshing Root WebApplicationContext: startup date [Tue Dec 26 12:51:30 CST 2017]; root of context hierarchy
+12-26 12:51:30 Loading XML bean definitions from class path resource [ApplicationContext.xml]
+12-26 12:51:33 Loading XML bean definitions from class path resource [jackson.xml]
+12-26 12:51:33 Loading properties file from class path resource [jdbc.properties]
+12-26 12:51:34 MLog clients using slf4j logging.
+12-26 12:51:34 Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+12-26 12:51:36 Mapped "{[/ucc.do/uc],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.Map com.controller.UserController.testM(java.util.Map)
+12-26 12:51:36 Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Tue Dec 26 12:51:30 CST 2017]; root of context hierarchy
+12-26 12:51:36 Root WebApplicationContext: initialization completed in 6213 ms
+12-26 12:51:36 FrameworkServlet 'DispatcherServlet': initialization started
+12-26 12:51:36 Refreshing WebApplicationContext for namespace 'DispatcherServlet-servlet': startup date [Tue Dec 26 12:51:36 CST 2017]; parent: Root WebApplicationContext
+12-26 12:51:36 Loading XML bean definitions from class path resource [Dispatcher-servlet.xml]
+12-26 12:51:37 Mapped "{[/ucc.do/uc],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.Map com.controller.UserController.testM(java.util.Map)
+12-26 12:51:37 Looking for @ControllerAdvice: WebApplicationContext for namespace 'DispatcherServlet-servlet': startup date [Tue Dec 26 12:51:36 CST 2017]; parent: Root WebApplicationContext
+12-26 12:51:37 Looking for @ControllerAdvice: WebApplicationContext for namespace 'DispatcherServlet-servlet': startup date [Tue Dec 26 12:51:36 CST 2017]; parent: Root WebApplicationContext
+12-26 12:51:37 FrameworkServlet 'DispatcherServlet': initialization completed in 828 ms
+12-26 13:04:33 No mapping found for HTTP request with URI [/shoppingSSM/js/jquery-2.1.0.js] in DispatcherServlet with name 'DispatcherServlet'
+12-26 13:04:34 No mapping found for HTTP request with URI [/shoppingSSM/js/jquery-2.1.0.js] in DispatcherServlet with name 'DispatcherServlet'
+12-26 13:05:01 No mapping found for HTTP request with URI [/shoppingSSM/js/jquery-2.1.0.js] in DispatcherServlet with name 'DispatcherServlet'
+12-26 13:05:03 No mapping found for HTTP request with URI [/shoppingSSM/js/jquery-2.1.0.js] in DispatcherServlet with name 'DispatcherServlet'
+12-26 13:05:07 No mapping found for HTTP request with URI [/shoppingSSM/js/jquery-2.1.0.js] in DispatcherServlet with name 'DispatcherServlet'
+12-26 13:05:08 No mapping found for HTTP request with URI [/shoppingSSM/js/jquery-2.1.0.js] in DispatcherServlet with name 'DispatcherServlet'
+12-26 13:05:27 No mapping found for HTTP request with URI [/shoppingSSM/js/js.js] in DispatcherServlet with name 'DispatcherServlet'
+12-26 13:05:27 No mapping found for HTTP request with URI [/shoppingSSM/css/style.css] in DispatcherServlet with name 'DispatcherServlet'
+12-26 13:05:27 No mapping found for HTTP request with URI [/shoppingSSM/js/jquery-1.8.3.js] in DispatcherServlet with name 'DispatcherServlet'
+12-26 13:05:27 No mapping found for HTTP request with URI [/shoppingSSM/css/lanrenzhijia.css] in DispatcherServlet with name 'DispatcherServlet'
+12-26 13:05:27 No mapping found for HTTP request with URI [/shoppingSSM/js/jquery.form.js] in DispatcherServlet with name 'DispatcherServlet'
+12-26 13:05:27 No mapping found for HTTP request with URI [/shoppingSSM/js/ajaxfileupload.js] in DispatcherServlet with name 'DispatcherServlet'
+12-26 13:05:27 No mapping found for HTTP request with URI [/shoppingSSM/js/Math.uuid.js] in DispatcherServlet with name 'DispatcherServlet'
+12-26 13:05:27 No mapping found for HTTP request with URI [/shoppingSSM/img/1.jpg] in DispatcherServlet with name 'DispatcherServlet'
+12-26 13:05:27 No mapping found for HTTP request with URI [/shoppingSSM/img/3.jpg] in DispatcherServlet with name 'DispatcherServlet'
+12-26 13:05:27 No mapping found for HTTP request with URI [/shoppingSSM/img/4.jpg] in DispatcherServlet with name 'DispatcherServlet'
+12-26 13:05:27 No mapping found for HTTP request with URI [/shoppingSSM/img/5.jpg] in DispatcherServlet with name 'DispatcherServlet'
+12-26 13:05:27 No mapping found for HTTP request with URI [/shoppingSSM/img/2.jpg] in DispatcherServlet with name 'DispatcherServlet'
+12-26 13:05:27 No mapping found for HTTP request with URI [/shoppingSSM/img/8.jpg] in DispatcherServlet with name 'DispatcherServlet'
+12-26 13:05:27 No mapping found for HTTP request with URI [/shoppingSSM/img/42.png] in DispatcherServlet with name 'DispatcherServlet'
+12-26 13:05:27 No mapping found for HTTP request with URI [/shoppingSSM/img/%E5%8D%8E%E4%B8%BA.png] in DispatcherServlet with name 'DispatcherServlet'
+12-26 13:05:27 No mapping found for HTTP request with URI [/shoppingSSM/img/10.jpg] in DispatcherServlet with name 'DispatcherServlet'
+12-26 13:05:27 No mapping found for HTTP request with URI [/shoppingSSM/img/%E5%B0%8F%E7%B1%B36.PNG] in DispatcherServlet with name 'DispatcherServlet'
+12-26 13:05:27 No mapping found for HTTP request with URI [/shoppingSSM/img/13.jpg] in DispatcherServlet with name 'DispatcherServlet'
+12-26 13:05:27 No mapping found for HTTP request with URI [/shoppingSSM/img/15.jpg] in DispatcherServlet with name 'DispatcherServlet'
+12-26 13:05:27 No mapping found for HTTP request with URI [/shoppingSSM/img/20.jpg] in DispatcherServlet with name 'DispatcherServlet'
+12-26 13:05:27 No mapping found for HTTP request with URI [/shoppingSSM/img/14.jpg] in DispatcherServlet with name 'DispatcherServlet'
+12-26 13:05:27 No mapping found for HTTP request with URI [/shoppingSSM/img/17.jpg] in DispatcherServlet with name 'DispatcherServlet'
+12-26 13:05:27 No mapping found for HTTP request with URI [/shoppingSSM/img/21.jpg] in DispatcherServlet with name 'DispatcherServlet'
+12-26 13:05:27 No mapping found for HTTP request with URI [/shoppingSSM/img/22.png] in DispatcherServlet with name 'DispatcherServlet'
+12-26 13:05:27 No mapping found for HTTP request with URI [/shoppingSSM/img/23.png] in DispatcherServlet with name 'DispatcherServlet'
+12-26 13:05:27 No mapping found for HTTP request with URI [/shoppingSSM/img/24.png] in DispatcherServlet with name 'DispatcherServlet'
+12-26 13:05:27 No mapping found for HTTP request with URI [/shoppingSSM/img/25.png] in DispatcherServlet with name 'DispatcherServlet'
+12-26 13:05:27 No mapping found for HTTP request with URI [/shoppingSSM/img/26.png] in DispatcherServlet with name 'DispatcherServlet'
+12-26 13:05:27 No mapping found for HTTP request with URI [/shoppingSSM/img/27.png] in DispatcherServlet with name 'DispatcherServlet'
+12-26 13:05:27 No mapping found for HTTP request with URI [/shoppingSSM/img/28.png] in DispatcherServlet with name 'DispatcherServlet'
+12-26 13:05:27 No mapping found for HTTP request with URI [/shoppingSSM/img/29.png] in DispatcherServlet with name 'DispatcherServlet'
+12-26 13:05:27 No mapping found for HTTP request with URI [/shoppingSSM/img/30.png] in DispatcherServlet with name 'DispatcherServlet'
+12-26 13:05:27 No mapping found for HTTP request with URI [/shoppingSSM/img/31.png] in DispatcherServlet with name 'DispatcherServlet'
+12-26 13:05:27 No mapping found for HTTP request with URI [/shoppingSSM/img/32.png] in DispatcherServlet with name 'DispatcherServlet'
+12-26 13:05:27 No mapping found for HTTP request with URI [/shoppingSSM/img/33.png] in DispatcherServlet with name 'DispatcherServlet'
+12-26 13:05:27 No mapping found for HTTP request with URI [/shoppingSSM/img/34.png] in DispatcherServlet with name 'DispatcherServlet'
+12-26 13:05:27 No mapping found for HTTP request with URI [/shoppingSSM/img/35.png] in DispatcherServlet with name 'DispatcherServlet'
+12-26 13:05:27 No mapping found for HTTP request with URI [/shoppingSSM/img/37.png] in DispatcherServlet with name 'DispatcherServlet'
+12-26 13:05:27 No mapping found for HTTP request with URI [/shoppingSSM/img/36.png] in DispatcherServlet with name 'DispatcherServlet'
+12-26 13:05:27 No mapping found for HTTP request with URI [/shoppingSSM/img/38.png] in DispatcherServlet with name 'DispatcherServlet'
+12-26 13:05:27 No mapping found for HTTP request with URI [/shoppingSSM/img/39.png] in DispatcherServlet with name 'DispatcherServlet'
+12-26 13:05:27 No mapping found for HTTP request with URI [/shoppingSSM/img/40.png] in DispatcherServlet with name 'DispatcherServlet'
+12-26 13:05:27 No mapping found for HTTP request with URI [/shoppingSSM/img/41.png] in DispatcherServlet with name 'DispatcherServlet'
+12-26 13:05:28 No mapping found for HTTP request with URI [/shoppingSSM/js/js.js] in DispatcherServlet with name 'DispatcherServlet'
+12-26 13:05:28 No mapping found for HTTP request with URI [/shoppingSSM/js/jquery.form.js] in DispatcherServlet with name 'DispatcherServlet'
+12-26 13:05:28 No mapping found for HTTP request with URI [/shoppingSSM/js/ajaxfileupload.js] in DispatcherServlet with name 'DispatcherServlet'
+12-26 13:05:28 No mapping found for HTTP request with URI [/shoppingSSM/js/Math.uuid.js] in DispatcherServlet with name 'DispatcherServlet'
+12-26 13:05:28 No mapping found for HTTP request with URI [/shoppingSSM/img/1.jpg] in DispatcherServlet with name 'DispatcherServlet'
+12-26 13:05:28 No mapping found for HTTP request with URI [/shoppingSSM/img/3.jpg] in DispatcherServlet with name 'DispatcherServlet'
+12-26 13:05:28 No mapping found for HTTP request with URI [/shoppingSSM/img/4.jpg] in DispatcherServlet with name 'DispatcherServlet'
+12-26 13:05:28 No mapping found for HTTP request with URI [/shoppingSSM/img/5.jpg] in DispatcherServlet with name 'DispatcherServlet'
+12-26 13:05:28 No mapping found for HTTP request with URI [/shoppingSSM/img/2.jpg] in DispatcherServlet with name 'DispatcherServlet'
+12-26 13:05:28 No mapping found for HTTP request with URI [/shoppingSSM/img/8.jpg] in DispatcherServlet with name 'DispatcherServlet'
+12-26 13:05:28 No mapping found for HTTP request with URI [/shoppingSSM/img/42.png] in DispatcherServlet with name 'DispatcherServlet'
+12-26 13:05:28 No mapping found for HTTP request with URI [/shoppingSSM/img/%E5%8D%8E%E4%B8%BA.png] in DispatcherServlet with name 'DispatcherServlet'
+12-26 13:05:28 No mapping found for HTTP request with URI [/shoppingSSM/img/10.jpg] in DispatcherServlet with name 'DispatcherServlet'
+12-26 13:05:28 No mapping found for HTTP request with URI [/shoppingSSM/img/%E5%B0%8F%E7%B1%B36.PNG] in DispatcherServlet with name 'DispatcherServlet'
+12-26 13:05:28 No mapping found for HTTP request with URI [/shoppingSSM/img/13.jpg] in DispatcherServlet with name 'DispatcherServlet'
+12-26 13:05:28 No mapping found for HTTP request with URI [/shoppingSSM/img/14.jpg] in DispatcherServlet with name 'DispatcherServlet'
+12-26 13:05:28 No mapping found for HTTP request with URI [/shoppingSSM/img/15.jpg] in DispatcherServlet with name 'DispatcherServlet'
+12-26 13:05:28 No mapping found for HTTP request with URI [/shoppingSSM/img/17.jpg] in DispatcherServlet with name 'DispatcherServlet'
+12-26 13:05:28 No mapping found for HTTP request with URI [/shoppingSSM/img/20.jpg] in DispatcherServlet with name 'DispatcherServlet'
+12-26 13:05:28 No mapping found for HTTP request with URI [/shoppingSSM/img/21.jpg] in DispatcherServlet with name 'DispatcherServlet'
+12-26 13:05:28 No mapping found for HTTP request with URI [/shoppingSSM/img/22.png] in DispatcherServlet with name 'DispatcherServlet'
+12-26 13:05:28 No mapping found for HTTP request with URI [/shoppingSSM/img/23.png] in DispatcherServlet with name 'DispatcherServlet'
+12-26 13:05:28 No mapping found for HTTP request with URI [/shoppingSSM/img/24.png] in DispatcherServlet with name 'DispatcherServlet'
+12-26 13:05:28 No mapping found for HTTP request with URI [/shoppingSSM/img/25.png] in DispatcherServlet with name 'DispatcherServlet'
+12-26 13:05:28 No mapping found for HTTP request with URI [/shoppingSSM/img/26.png] in DispatcherServlet with name 'DispatcherServlet'
+12-26 13:05:28 No mapping found for HTTP request with URI [/shoppingSSM/img/27.png] in DispatcherServlet with name 'DispatcherServlet'
+12-26 13:05:28 No mapping found for HTTP request with URI [/shoppingSSM/img/28.png] in DispatcherServlet with name 'DispatcherServlet'
+12-26 13:05:28 No mapping found for HTTP request with URI [/shoppingSSM/img/29.png] in DispatcherServlet with name 'DispatcherServlet'
+12-26 13:05:28 No mapping found for HTTP request with URI [/shoppingSSM/img/30.png] in DispatcherServlet with name 'DispatcherServlet'
+12-26 13:05:28 No mapping found for HTTP request with URI [/shoppingSSM/img/31.png] in DispatcherServlet with name 'DispatcherServlet'
+12-26 13:05:28 No mapping found for HTTP request with URI [/shoppingSSM/img/32.png] in DispatcherServlet with name 'DispatcherServlet'
+12-26 13:05:28 No mapping found for HTTP request with URI [/shoppingSSM/img/33.png] in DispatcherServlet with name 'DispatcherServlet'
+12-26 13:05:28 No mapping found for HTTP request with URI [/shoppingSSM/img/34.png] in DispatcherServlet with name 'DispatcherServlet'
+12-26 13:05:28 No mapping found for HTTP request with URI [/shoppingSSM/img/35.png] in DispatcherServlet with name 'DispatcherServlet'
+12-26 13:05:28 No mapping found for HTTP request with URI [/shoppingSSM/img/36.png] in DispatcherServlet with name 'DispatcherServlet'
+12-26 13:05:28 No mapping found for HTTP request with URI [/shoppingSSM/img/37.png] in DispatcherServlet with name 'DispatcherServlet'
+12-26 13:05:28 No mapping found for HTTP request with URI [/shoppingSSM/img/38.png] in DispatcherServlet with name 'DispatcherServlet'
+12-26 13:05:28 No mapping found for HTTP request with URI [/shoppingSSM/img/39.png] in DispatcherServlet with name 'DispatcherServlet'
+12-26 13:05:28 No mapping found for HTTP request with URI [/shoppingSSM/img/40.png] in DispatcherServlet with name 'DispatcherServlet'
+12-26 13:05:28 No mapping found for HTTP request with URI [/shoppingSSM/img/41.png] in DispatcherServlet with name 'DispatcherServlet'
+12-26 13:08:10 Root WebApplicationContext: initialization started
+12-26 13:08:10 Refreshing Root WebApplicationContext: startup date [Tue Dec 26 13:08:10 CST 2017]; root of context hierarchy
+12-26 13:08:10 Loading XML bean definitions from class path resource [ApplicationContext.xml]
+12-26 13:08:12 Loading XML bean definitions from class path resource [jackson.xml]
+12-26 13:08:13 Loading properties file from class path resource [jdbc.properties]
+12-26 13:08:14 MLog clients using slf4j logging.
+12-26 13:08:14 Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+12-26 13:08:16 Mapped "{[/ucc.do/uc],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.Map com.controller.UserController.testM(java.util.Map)
+12-26 13:08:16 Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Tue Dec 26 13:08:10 CST 2017]; root of context hierarchy
+12-26 13:08:16 Root WebApplicationContext: initialization completed in 6767 ms
+12-26 13:08:16 FrameworkServlet 'DispatcherServlet': initialization started
+12-26 13:08:16 Refreshing WebApplicationContext for namespace 'DispatcherServlet-servlet': startup date [Tue Dec 26 13:08:16 CST 2017]; parent: Root WebApplicationContext
+12-26 13:08:16 Loading XML bean definitions from class path resource [Dispatcher-servlet.xml]
+12-26 13:08:17 Mapped "{[/ucc.do/uc],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.Map com.controller.UserController.testM(java.util.Map)
+12-26 13:08:17 Looking for @ControllerAdvice: WebApplicationContext for namespace 'DispatcherServlet-servlet': startup date [Tue Dec 26 13:08:16 CST 2017]; parent: Root WebApplicationContext
+12-26 13:08:17 Looking for @ControllerAdvice: WebApplicationContext for namespace 'DispatcherServlet-servlet': startup date [Tue Dec 26 13:08:16 CST 2017]; parent: Root WebApplicationContext
+12-26 13:08:17 FrameworkServlet 'DispatcherServlet': initialization completed in 647 ms
+12-26 13:10:09 No mapping found for HTTP request with URI [/shoppingSSM/ucc/uc] in DispatcherServlet with name 'DispatcherServlet'
+12-26 13:10:22 No mapping found for HTTP request with URI [/shoppingSSM/jsp/ucc/uc] in DispatcherServlet with name 'DispatcherServlet'
+12-26 13:10:28 No mapping found for HTTP request with URI [/shoppingSSM/ucc/uc] in DispatcherServlet with name 'DispatcherServlet'
+12-26 13:14:23 Root WebApplicationContext: initialization started
+12-26 13:14:23 Refreshing Root WebApplicationContext: startup date [Tue Dec 26 13:14:23 CST 2017]; root of context hierarchy
+12-26 13:14:23 Loading XML bean definitions from class path resource [ApplicationContext.xml]
+12-26 13:14:26 Loading XML bean definitions from class path resource [jackson.xml]
+12-26 13:14:27 Loading properties file from class path resource [jdbc.properties]
+12-26 13:14:29 MLog clients using slf4j logging.
+12-26 13:14:29 Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+12-26 13:14:31 Mapped "{[/ucc.do/uc],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.controller.UserController.testM()
+12-26 13:14:32 Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Tue Dec 26 13:14:23 CST 2017]; root of context hierarchy
+12-26 13:14:32 Root WebApplicationContext: initialization completed in 8903 ms
+12-26 13:14:32 FrameworkServlet 'DispatcherServlet': initialization started
+12-26 13:14:32 Refreshing WebApplicationContext for namespace 'DispatcherServlet-servlet': startup date [Tue Dec 26 13:14:32 CST 2017]; parent: Root WebApplicationContext
+12-26 13:14:32 Loading XML bean definitions from class path resource [Dispatcher-servlet.xml]
+12-26 13:14:32 Mapped "{[/ucc.do/uc],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.controller.UserController.testM()
+12-26 13:14:32 Looking for @ControllerAdvice: WebApplicationContext for namespace 'DispatcherServlet-servlet': startup date [Tue Dec 26 13:14:32 CST 2017]; parent: Root WebApplicationContext
+12-26 13:14:32 Looking for @ControllerAdvice: WebApplicationContext for namespace 'DispatcherServlet-servlet': startup date [Tue Dec 26 13:14:32 CST 2017]; parent: Root WebApplicationContext
+12-26 13:14:32 FrameworkServlet 'DispatcherServlet': initialization completed in 493 ms
+12-26 13:43:51 Root WebApplicationContext: initialization started
+12-26 13:43:51 Refreshing Root WebApplicationContext: startup date [Tue Dec 26 13:43:51 CST 2017]; root of context hierarchy
+12-26 13:43:52 Loading XML bean definitions from class path resource [ApplicationContext.xml]
+12-26 13:43:56 Loading XML bean definitions from class path resource [jackson.xml]
+12-26 13:43:57 Loading properties file from class path resource [jdbc.properties]
+12-26 13:43:58 MLog clients using slf4j logging.
+12-26 13:43:58 Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+12-26 13:44:02 Mapped "{[/ucc.do/uc],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.controller.UserController.testM()
+12-26 13:44:03 Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Tue Dec 26 13:43:51 CST 2017]; root of context hierarchy
+12-26 13:44:03 Root WebApplicationContext: initialization completed in 11973 ms
+12-26 13:44:03 FrameworkServlet 'DispatcherServlet': initialization started
+12-26 13:44:03 Refreshing WebApplicationContext for namespace 'DispatcherServlet-servlet': startup date [Tue Dec 26 13:44:03 CST 2017]; parent: Root WebApplicationContext
+12-26 13:44:03 Loading XML bean definitions from class path resource [Dispatcher-servlet.xml]
+12-26 13:44:04 Mapped "{[/ucc.do/uc],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.controller.UserController.testM()
+12-26 13:44:04 Looking for @ControllerAdvice: WebApplicationContext for namespace 'DispatcherServlet-servlet': startup date [Tue Dec 26 13:44:03 CST 2017]; parent: Root WebApplicationContext
+12-26 13:44:04 Looking for @ControllerAdvice: WebApplicationContext for namespace 'DispatcherServlet-servlet': startup date [Tue Dec 26 13:44:03 CST 2017]; parent: Root WebApplicationContext
+12-26 13:44:04 Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+12-26 13:44:04 FrameworkServlet 'DispatcherServlet': initialization completed in 821 ms
+12-26 14:02:33 Root WebApplicationContext: initialization started
+12-26 14:02:33 Refreshing Root WebApplicationContext: startup date [Tue Dec 26 14:02:33 CST 2017]; root of context hierarchy
+12-26 14:02:33 Loading XML bean definitions from class path resource [ApplicationContext.xml]
+12-26 14:02:35 Loading XML bean definitions from class path resource [jackson.xml]
+12-26 14:02:36 Loading properties file from class path resource [jdbc.properties]
+12-26 14:02:37 MLog clients using slf4j logging.
+12-26 14:02:37 Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+12-26 14:02:38 Mapped "{[/ucc.do/uc],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.controller.UserController.testM()
+12-26 14:02:38 Mapped "{[/ucc.do/uc3],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.HashMap<java.lang.String, java.lang.Object> com.controller.UserController.testM6(java.util.HashMap<java.lang.String, java.lang.Object>)
+12-26 14:02:38 Mapped "{[/ucc.do/uc3],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.HashMap<java.lang.String, java.lang.Object> com.controller.UserController.testM3(java.util.HashMap<java.lang.String, java.lang.Object>)
+12-26 14:02:38 Mapped "{[/ucc.do/uc2],methods=[GET],params=[user=root],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.controller.UserController.testM2()
+12-26 14:02:38 Exception encountered during context initialization - cancelling refresh attempt
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping#0' defined in class path resource [jackson.xml]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping found. Cannot map 'userController' bean method 
+public java.util.HashMap<java.lang.String, java.lang.Object> com.controller.UserController.testM4(java.util.Date)
+to {[/ucc.do/uc3],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}: There is already 'userController' bean method
+public java.util.HashMap<java.lang.String, java.lang.Object> com.controller.UserController.testM3(java.util.HashMap<java.lang.String, java.lang.Object>) mapped.
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1568)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:540)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:476)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:229)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:298)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:193)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:725)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:757)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:480)
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:403)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:306)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:106)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4643)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5105)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:740)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:716)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:703)
+	at org.apache.catalina.startup.HostConfig.deployDirectory(HostConfig.java:1134)
+	at org.apache.catalina.startup.HostConfig$DeployDirectory.run(HostConfig.java:1868)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:112)
+	at org.apache.catalina.startup.HostConfig.deployDirectories(HostConfig.java:1045)
+	at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:433)
+	at org.apache.catalina.startup.HostConfig.start(HostConfig.java:1578)
+	at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:308)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:123)
+	at org.apache.catalina.util.LifecycleBase.setStateInternal(LifecycleBase.java:424)
+	at org.apache.catalina.util.LifecycleBase.setState(LifecycleBase.java:367)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:964)
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:839)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1425)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1415)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:134)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:941)
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:258)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:422)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:770)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:671)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:355)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:495)
+Caused by: java.lang.IllegalStateException: Ambiguous mapping found. Cannot map 'userController' bean method 
+public java.util.HashMap<java.lang.String, java.lang.Object> com.controller.UserController.testM4(java.util.Date)
+to {[/ucc.do/uc3],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}: There is already 'userController' bean method
+public java.util.HashMap<java.lang.String, java.lang.Object> com.controller.UserController.testM3(java.util.HashMap<java.lang.String, java.lang.Object>) mapped.
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:215)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.detectHandlerMethods(AbstractHandlerMethodMapping.java:187)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.initHandlerMethods(AbstractHandlerMethodMapping.java:147)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.afterPropertiesSet(AbstractHandlerMethodMapping.java:126)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.afterPropertiesSet(RequestMappingHandlerMapping.java:126)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1627)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1564)
+	... 53 more
+12-26 14:02:39 Context initialization failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping#0' defined in class path resource [jackson.xml]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping found. Cannot map 'userController' bean method 
+public java.util.HashMap<java.lang.String, java.lang.Object> com.controller.UserController.testM4(java.util.Date)
+to {[/ucc.do/uc3],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}: There is already 'userController' bean method
+public java.util.HashMap<java.lang.String, java.lang.Object> com.controller.UserController.testM3(java.util.HashMap<java.lang.String, java.lang.Object>) mapped.
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1568)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:540)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:476)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:229)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:298)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:193)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:725)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:757)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:480)
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:403)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:306)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:106)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4643)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5105)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:740)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:716)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:703)
+	at org.apache.catalina.startup.HostConfig.deployDirectory(HostConfig.java:1134)
+	at org.apache.catalina.startup.HostConfig$DeployDirectory.run(HostConfig.java:1868)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:112)
+	at org.apache.catalina.startup.HostConfig.deployDirectories(HostConfig.java:1045)
+	at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:433)
+	at org.apache.catalina.startup.HostConfig.start(HostConfig.java:1578)
+	at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:308)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:123)
+	at org.apache.catalina.util.LifecycleBase.setStateInternal(LifecycleBase.java:424)
+	at org.apache.catalina.util.LifecycleBase.setState(LifecycleBase.java:367)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:964)
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:839)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1425)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1415)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:134)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:941)
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:258)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:422)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:770)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:671)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:355)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:495)
+Caused by: java.lang.IllegalStateException: Ambiguous mapping found. Cannot map 'userController' bean method 
+public java.util.HashMap<java.lang.String, java.lang.Object> com.controller.UserController.testM4(java.util.Date)
+to {[/ucc.do/uc3],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}: There is already 'userController' bean method
+public java.util.HashMap<java.lang.String, java.lang.Object> com.controller.UserController.testM3(java.util.HashMap<java.lang.String, java.lang.Object>) mapped.
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:215)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.detectHandlerMethods(AbstractHandlerMethodMapping.java:187)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.initHandlerMethods(AbstractHandlerMethodMapping.java:147)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.afterPropertiesSet(AbstractHandlerMethodMapping.java:126)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.afterPropertiesSet(RequestMappingHandlerMapping.java:126)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1627)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1564)
+	... 53 more
+12-26 14:10:42 Root WebApplicationContext: initialization started
+12-26 14:10:42 Refreshing Root WebApplicationContext: startup date [Tue Dec 26 14:10:42 CST 2017]; root of context hierarchy
+12-26 14:10:42 Loading XML bean definitions from class path resource [ApplicationContext.xml]
+12-26 14:10:45 Loading XML bean definitions from class path resource [jackson.xml]
+12-26 14:10:46 Loading properties file from class path resource [jdbc.properties]
+12-26 14:10:48 MLog clients using slf4j logging.
+12-26 14:10:48 Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+12-26 14:10:50 Mapped "{[/ucc.do/uc2],methods=[GET],params=[user=root],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.controller.UserController.testM2()
+12-26 14:10:50 Mapped "{[/ucc.do/uc44],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.HashMap<java.lang.String, java.lang.Object> com.controller.UserController.testM4(java.util.Date)
+12-26 14:10:50 Mapped "{[/ucc.do/uc6],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.HashMap<java.lang.String, java.lang.Object> com.controller.UserController.testM6(java.util.HashMap<java.lang.String, java.lang.Object>)
+12-26 14:10:50 Mapped "{[/ucc.do/uc3],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.HashMap<java.lang.String, java.lang.Object> com.controller.UserController.testM3(java.util.HashMap<java.lang.String, java.lang.Object>)
+12-26 14:10:50 Mapped "{[/ucc.do/uc],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.controller.UserController.testM()
+12-26 14:10:50 Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Tue Dec 26 14:10:42 CST 2017]; root of context hierarchy
+12-26 14:10:50 Root WebApplicationContext: initialization completed in 7870 ms
+12-26 14:10:50 FrameworkServlet 'DispatcherServlet': initialization started
+12-26 14:10:50 Refreshing WebApplicationContext for namespace 'DispatcherServlet-servlet': startup date [Tue Dec 26 14:10:50 CST 2017]; parent: Root WebApplicationContext
+12-26 14:10:50 Loading XML bean definitions from class path resource [Dispatcher-servlet.xml]
+12-26 14:10:51 Mapped "{[/ucc.do/uc2],methods=[GET],params=[user=root],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.controller.UserController.testM2()
+12-26 14:10:51 Mapped "{[/ucc.do/uc44],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.HashMap<java.lang.String, java.lang.Object> com.controller.UserController.testM4(java.util.Date)
+12-26 14:10:51 Mapped "{[/ucc.do/uc6],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.HashMap<java.lang.String, java.lang.Object> com.controller.UserController.testM6(java.util.HashMap<java.lang.String, java.lang.Object>)
+12-26 14:10:51 Mapped "{[/ucc.do/uc3],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.HashMap<java.lang.String, java.lang.Object> com.controller.UserController.testM3(java.util.HashMap<java.lang.String, java.lang.Object>)
+12-26 14:10:51 Mapped "{[/ucc.do/uc],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.controller.UserController.testM()
+12-26 14:10:51 Looking for @ControllerAdvice: WebApplicationContext for namespace 'DispatcherServlet-servlet': startup date [Tue Dec 26 14:10:50 CST 2017]; parent: Root WebApplicationContext
+12-26 14:10:51 Looking for @ControllerAdvice: WebApplicationContext for namespace 'DispatcherServlet-servlet': startup date [Tue Dec 26 14:10:50 CST 2017]; parent: Root WebApplicationContext
+12-26 14:10:51 Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+12-26 14:10:51 FrameworkServlet 'DispatcherServlet': initialization completed in 1272 ms
+12-26 14:24:33 Root WebApplicationContext: initialization started
+12-26 14:24:33 Refreshing Root WebApplicationContext: startup date [Tue Dec 26 14:24:33 CST 2017]; root of context hierarchy
+12-26 14:24:33 Loading XML bean definitions from class path resource [ApplicationContext.xml]
+12-26 14:24:38 Loading XML bean definitions from class path resource [jackson.xml]
+12-26 14:24:39 Loading properties file from class path resource [jdbc.properties]
+12-26 14:24:41 MLog clients using slf4j logging.
+12-26 14:24:41 Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+12-26 14:24:44 Mapped "{[/ucc.do/uc44],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.controller.UserController.testM4(java.util.Date)
+12-26 14:24:44 Mapped "{[/ucc.do/uc],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.controller.UserController.testM()
+12-26 14:24:44 Mapped "{[/ucc.do/uc2],methods=[GET],params=[user=root],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.controller.UserController.testM2()
+12-26 14:24:44 Mapped "{[/ucc.do/uc6],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.controller.UserController.testM6(java.util.Map<java.lang.String, java.lang.Object>)
+12-26 14:24:44 Mapped "{[/ucc.do/uc3],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.controller.UserController.testM3(java.util.Map<java.lang.String, java.lang.Object>)
+12-26 14:24:45 Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Tue Dec 26 14:24:33 CST 2017]; root of context hierarchy
+12-26 14:24:45 Root WebApplicationContext: initialization completed in 11836 ms
+12-26 14:24:45 FrameworkServlet 'DispatcherServlet': initialization started
+12-26 14:24:45 Refreshing WebApplicationContext for namespace 'DispatcherServlet-servlet': startup date [Tue Dec 26 14:24:45 CST 2017]; parent: Root WebApplicationContext
+12-26 14:24:45 Loading XML bean definitions from class path resource [Dispatcher-servlet.xml]
+12-26 14:24:45 Mapped "{[/ucc.do/uc44],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.controller.UserController.testM4(java.util.Date)
+12-26 14:24:45 Mapped "{[/ucc.do/uc],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.controller.UserController.testM()
+12-26 14:24:45 Mapped "{[/ucc.do/uc2],methods=[GET],params=[user=root],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.controller.UserController.testM2()
+12-26 14:24:45 Mapped "{[/ucc.do/uc6],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.controller.UserController.testM6(java.util.Map<java.lang.String, java.lang.Object>)
+12-26 14:24:45 Mapped "{[/ucc.do/uc3],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.controller.UserController.testM3(java.util.Map<java.lang.String, java.lang.Object>)
+12-26 14:24:45 Looking for @ControllerAdvice: WebApplicationContext for namespace 'DispatcherServlet-servlet': startup date [Tue Dec 26 14:24:45 CST 2017]; parent: Root WebApplicationContext
+12-26 14:24:45 Looking for @ControllerAdvice: WebApplicationContext for namespace 'DispatcherServlet-servlet': startup date [Tue Dec 26 14:24:45 CST 2017]; parent: Root WebApplicationContext
+12-26 14:24:45 Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+12-26 14:24:45 FrameworkServlet 'DispatcherServlet': initialization completed in 790 ms
+12-26 14:45:00 Root WebApplicationContext: initialization started
+12-26 14:45:01 Refreshing Root WebApplicationContext: startup date [Tue Dec 26 14:45:01 CST 2017]; root of context hierarchy
+12-26 14:45:01 Loading XML bean definitions from class path resource [ApplicationContext.xml]
+12-26 14:45:03 Loading XML bean definitions from class path resource [jackson.xml]
+12-26 14:45:03 Loading properties file from class path resource [jdbc.properties]
+12-26 14:45:04 MLog clients using slf4j logging.
+12-26 14:45:04 Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+12-26 14:45:06 Mapped "{[/ucc.do/uc3],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.controller.UserController.testM3(java.util.Map<java.lang.String, java.lang.Object>)
+12-26 14:45:06 Mapped "{[/ucc.do/uc],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.controller.UserController.testM()
+12-26 14:45:06 Mapped "{[/ucc.do/uc6],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.controller.UserController.testM6(java.util.Map<java.lang.String, java.lang.Object>)
+12-26 14:45:06 Mapped "{[/ucc.do/uc2],methods=[GET],params=[user=root],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.controller.UserController.testM2()
+12-26 14:45:06 Mapped "{[/ucc.do/uc44],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.controller.UserController.testM4(java.util.Date)
+12-26 14:45:06 Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Tue Dec 26 14:45:01 CST 2017]; root of context hierarchy
+12-26 14:45:06 Root WebApplicationContext: initialization completed in 6061 ms
+12-26 14:45:06 FrameworkServlet 'DispatcherServlet': initialization started
+12-26 14:45:06 Refreshing WebApplicationContext for namespace 'DispatcherServlet-servlet': startup date [Tue Dec 26 14:45:06 CST 2017]; parent: Root WebApplicationContext
+12-26 14:45:06 Loading XML bean definitions from class path resource [Dispatcher-servlet.xml]
+12-26 14:45:07 Mapped "{[/ucc.do/uc3],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.controller.UserController.testM3(java.util.Map<java.lang.String, java.lang.Object>)
+12-26 14:45:07 Mapped "{[/ucc.do/uc],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.controller.UserController.testM()
+12-26 14:45:07 Mapped "{[/ucc.do/uc6],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.controller.UserController.testM6(java.util.Map<java.lang.String, java.lang.Object>)
+12-26 14:45:07 Mapped "{[/ucc.do/uc2],methods=[GET],params=[user=root],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.controller.UserController.testM2()
+12-26 14:45:07 Mapped "{[/ucc.do/uc44],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.controller.UserController.testM4(java.util.Date)
+12-26 14:45:07 Looking for @ControllerAdvice: WebApplicationContext for namespace 'DispatcherServlet-servlet': startup date [Tue Dec 26 14:45:06 CST 2017]; parent: Root WebApplicationContext
+12-26 14:45:07 Looking for @ControllerAdvice: WebApplicationContext for namespace 'DispatcherServlet-servlet': startup date [Tue Dec 26 14:45:06 CST 2017]; parent: Root WebApplicationContext
+12-26 14:45:07 Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+12-26 14:45:07 FrameworkServlet 'DispatcherServlet': initialization completed in 687 ms
+12-26 14:58:52 Root WebApplicationContext: initialization started
+12-26 14:58:52 Refreshing Root WebApplicationContext: startup date [Tue Dec 26 14:58:52 CST 2017]; root of context hierarchy
+12-26 14:58:52 Loading XML bean definitions from class path resource [ApplicationContext.xml]
+12-26 14:58:55 Loading XML bean definitions from class path resource [jackson.xml]
+12-26 14:58:55 Loading properties file from class path resource [jdbc.properties]
+12-26 14:58:57 MLog clients using slf4j logging.
+12-26 14:58:57 Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+12-26 14:58:59 Mapped "{[/ucc.do/uc3],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.controller.UserController.testM3(java.util.Map<java.lang.String, java.lang.Object>)
+12-26 14:58:59 Mapped "{[/ucc.do/uc2],methods=[GET],params=[user=root],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.controller.UserController.testM2()
+12-26 14:58:59 Mapped "{[/ucc.do/uc44],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.controller.UserController.testM4(java.util.Date)
+12-26 14:58:59 Mapped "{[/ucc.do/uc],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.controller.UserController.testM()
+12-26 14:58:59 Mapped "{[/ucc.do/uc6],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.controller.UserController.testM6(java.util.Map<java.lang.String, java.lang.Object>)
+12-26 14:58:59 Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Tue Dec 26 14:58:52 CST 2017]; root of context hierarchy
+12-26 14:59:00 Root WebApplicationContext: initialization completed in 7315 ms
+12-26 14:59:00 FrameworkServlet 'DispatcherServlet': initialization started
+12-26 14:59:00 Refreshing WebApplicationContext for namespace 'DispatcherServlet-servlet': startup date [Tue Dec 26 14:59:00 CST 2017]; parent: Root WebApplicationContext
+12-26 14:59:00 Loading XML bean definitions from class path resource [Dispatcher-servlet.xml]
+12-26 14:59:00 Mapped "{[/ucc.do/uc3],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.controller.UserController.testM3(java.util.Map<java.lang.String, java.lang.Object>)
+12-26 14:59:00 Mapped "{[/ucc.do/uc2],methods=[GET],params=[user=root],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.controller.UserController.testM2()
+12-26 14:59:00 Mapped "{[/ucc.do/uc44],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.controller.UserController.testM4(java.util.Date)
+12-26 14:59:00 Mapped "{[/ucc.do/uc],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.controller.UserController.testM()
+12-26 14:59:00 Mapped "{[/ucc.do/uc6],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.controller.UserController.testM6(java.util.Map<java.lang.String, java.lang.Object>)
+12-26 14:59:00 Looking for @ControllerAdvice: WebApplicationContext for namespace 'DispatcherServlet-servlet': startup date [Tue Dec 26 14:59:00 CST 2017]; parent: Root WebApplicationContext
+12-26 14:59:00 Looking for @ControllerAdvice: WebApplicationContext for namespace 'DispatcherServlet-servlet': startup date [Tue Dec 26 14:59:00 CST 2017]; parent: Root WebApplicationContext
+12-26 14:59:00 Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+12-26 14:59:00 FrameworkServlet 'DispatcherServlet': initialization completed in 743 ms
+12-26 18:32:14 Root WebApplicationContext: initialization started
+12-26 18:32:14 Refreshing Root WebApplicationContext: startup date [Tue Dec 26 18:32:14 CST 2017]; root of context hierarchy
+12-26 18:32:14 Loading XML bean definitions from class path resource [ApplicationContext.xml]
+12-26 18:32:16 Loading XML bean definitions from class path resource [jackson.xml]
+12-26 18:32:16 Loading properties file from class path resource [jdbc.properties]
+12-26 18:32:18 MLog clients using slf4j logging.
+12-26 18:32:18 Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+12-26 18:32:19 Mapped "{[/ucc.do/uc6],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.controller.UserController.testM6(java.util.Map<java.lang.String, java.lang.Object>)
+12-26 18:32:19 Mapped "{[/ucc.do/uc],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.controller.UserController.testM(org.springframework.ui.Model)
+12-26 18:32:19 Mapped "{[/ucc.do/uc2],methods=[GET],params=[user=root],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.controller.UserController.testM2()
+12-26 18:32:19 Mapped "{[/ucc.do/uc44],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.controller.UserController.testM4(java.util.Date)
+12-26 18:32:20 Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Tue Dec 26 18:32:14 CST 2017]; root of context hierarchy
+12-26 18:32:20 Root WebApplicationContext: initialization completed in 5749 ms
+12-26 18:32:20 FrameworkServlet 'DispatcherServlet': initialization started
+12-26 18:32:20 Refreshing WebApplicationContext for namespace 'DispatcherServlet-servlet': startup date [Tue Dec 26 18:32:20 CST 2017]; parent: Root WebApplicationContext
+12-26 18:32:20 Loading XML bean definitions from class path resource [Dispatcher-servlet.xml]
+12-26 18:32:20 Looking for @ControllerAdvice: WebApplicationContext for namespace 'DispatcherServlet-servlet': startup date [Tue Dec 26 18:32:20 CST 2017]; parent: Root WebApplicationContext
+12-26 18:32:20 Looking for @ControllerAdvice: WebApplicationContext for namespace 'DispatcherServlet-servlet': startup date [Tue Dec 26 18:32:20 CST 2017]; parent: Root WebApplicationContext
+12-26 18:32:20 Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+12-26 18:32:20 FrameworkServlet 'DispatcherServlet': initialization completed in 408 ms
+12-26 18:38:15 Root WebApplicationContext: initialization started
+12-26 18:38:15 Refreshing Root WebApplicationContext: startup date [Tue Dec 26 18:38:15 CST 2017]; root of context hierarchy
+12-26 18:38:15 Loading XML bean definitions from ServletContext resource [/WEB-INF/applicationContext.xml]
+12-26 18:38:15 Context initialization failed
+org.springframework.beans.factory.BeanDefinitionStoreException: IOException parsing XML document from ServletContext resource [/WEB-INF/applicationContext.xml]; nested exception is java.io.FileNotFoundException: Could not open ServletContext resource [/WEB-INF/applicationContext.xml]
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:343)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:303)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:180)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:216)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:187)
+	at org.springframework.web.context.support.XmlWebApplicationContext.loadBeanDefinitions(XmlWebApplicationContext.java:125)
+	at org.springframework.web.context.support.XmlWebApplicationContext.loadBeanDefinitions(XmlWebApplicationContext.java:94)
+	at org.springframework.context.support.AbstractRefreshableApplicationContext.refreshBeanFactory(AbstractRefreshableApplicationContext.java:129)
+	at org.springframework.context.support.AbstractApplicationContext.obtainFreshBeanFactory(AbstractApplicationContext.java:537)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:452)
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:403)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:306)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:106)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4643)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5105)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:740)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:716)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:703)
+	at org.apache.catalina.startup.HostConfig.deployDirectory(HostConfig.java:1134)
+	at org.apache.catalina.startup.HostConfig$DeployDirectory.run(HostConfig.java:1868)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:112)
+	at org.apache.catalina.startup.HostConfig.deployDirectories(HostConfig.java:1045)
+	at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:433)
+	at org.apache.catalina.startup.HostConfig.start(HostConfig.java:1578)
+	at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:308)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:123)
+	at org.apache.catalina.util.LifecycleBase.setStateInternal(LifecycleBase.java:424)
+	at org.apache.catalina.util.LifecycleBase.setState(LifecycleBase.java:367)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:964)
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:839)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1425)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1415)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:134)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:941)
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:258)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:422)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:770)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:671)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:355)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:495)
+Caused by: java.io.FileNotFoundException: Could not open ServletContext resource [/WEB-INF/applicationContext.xml]
+	at org.springframework.web.context.support.ServletContextResource.getInputStream(ServletContextResource.java:141)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:329)
+	... 53 more
+12-26 18:38:15 Closing Root WebApplicationContext: startup date [Tue Dec 26 18:38:15 CST 2017]; root of context hierarchy
+12-26 18:38:15 Exception thrown from ApplicationListener handling ContextClosedEvent
+java.lang.IllegalStateException: ApplicationEventMulticaster not initialized - call 'refresh' before multicasting events via the context: Root WebApplicationContext: startup date [Tue Dec 26 18:38:15 CST 2017]; root of context hierarchy
+	at org.springframework.context.support.AbstractApplicationContext.getApplicationEventMulticaster(AbstractApplicationContext.java:344)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:331)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:869)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:836)
+	at org.springframework.web.context.ContextLoader.closeWebApplicationContext(ContextLoader.java:579)
+	at org.springframework.web.context.ContextLoaderListener.contextDestroyed(ContextLoaderListener.java:115)
+	at org.apache.catalina.core.StandardContext.listenerStop(StandardContext.java:4690)
+	at org.apache.catalina.core.StandardContext.stopInternal(StandardContext.java:5327)
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:187)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:740)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:716)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:703)
+	at org.apache.catalina.startup.HostConfig.deployDirectory(HostConfig.java:1134)
+	at org.apache.catalina.startup.HostConfig$DeployDirectory.run(HostConfig.java:1868)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:112)
+	at org.apache.catalina.startup.HostConfig.deployDirectories(HostConfig.java:1045)
+	at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:433)
+	at org.apache.catalina.startup.HostConfig.start(HostConfig.java:1578)
+	at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:308)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:123)
+	at org.apache.catalina.util.LifecycleBase.setStateInternal(LifecycleBase.java:424)
+	at org.apache.catalina.util.LifecycleBase.setState(LifecycleBase.java:367)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:964)
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:839)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1425)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1415)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:134)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:941)
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:258)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:422)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:770)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:671)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:355)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:495)
+12-26 18:38:15 Exception thrown from LifecycleProcessor on context close
+java.lang.IllegalStateException: LifecycleProcessor not initialized - call 'refresh' before invoking lifecycle methods via the context: Root WebApplicationContext: startup date [Tue Dec 26 18:38:15 CST 2017]; root of context hierarchy
+	at org.springframework.context.support.AbstractApplicationContext.getLifecycleProcessor(AbstractApplicationContext.java:357)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:877)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:836)
+	at org.springframework.web.context.ContextLoader.closeWebApplicationContext(ContextLoader.java:579)
+	at org.springframework.web.context.ContextLoaderListener.contextDestroyed(ContextLoaderListener.java:115)
+	at org.apache.catalina.core.StandardContext.listenerStop(StandardContext.java:4690)
+	at org.apache.catalina.core.StandardContext.stopInternal(StandardContext.java:5327)
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:187)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:740)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:716)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:703)
+	at org.apache.catalina.startup.HostConfig.deployDirectory(HostConfig.java:1134)
+	at org.apache.catalina.startup.HostConfig$DeployDirectory.run(HostConfig.java:1868)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:112)
+	at org.apache.catalina.startup.HostConfig.deployDirectories(HostConfig.java:1045)
+	at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:433)
+	at org.apache.catalina.startup.HostConfig.start(HostConfig.java:1578)
+	at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:308)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:123)
+	at org.apache.catalina.util.LifecycleBase.setStateInternal(LifecycleBase.java:424)
+	at org.apache.catalina.util.LifecycleBase.setState(LifecycleBase.java:367)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:964)
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:839)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1425)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1415)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:134)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:941)
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:258)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:422)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:770)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:671)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:355)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:495)
+12-26 18:40:17 FrameworkServlet 'DispatcherServlet': initialization started
+12-26 18:40:17 Refreshing WebApplicationContext for namespace 'DispatcherServlet-servlet': startup date [Tue Dec 26 18:40:17 CST 2017]; root of context hierarchy
+12-26 18:40:18 Loading XML bean definitions from class path resource [ApplicationContext.xml]
+12-26 18:40:19 Loading XML bean definitions from class path resource [jackson.xml]
+12-26 18:40:19 Loading XML bean definitions from class path resource [Dispatcher-servlet.xml]
+12-26 18:40:20 Loading properties file from class path resource [jdbc.properties]
+12-26 18:40:21 MLog clients using slf4j logging.
+12-26 18:40:21 Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+12-26 18:40:23 Mapped "{[/ucc.do/uc44],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.controller.UserController.testM4(java.util.Date)
+12-26 18:40:23 Mapped "{[/ucc.do/uc6],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.controller.UserController.testM6(java.util.Map<java.lang.String, java.lang.Object>)
+12-26 18:40:23 Mapped "{[/ucc.do/uc],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.controller.UserController.testM(org.springframework.ui.Model)
+12-26 18:40:23 Mapped "{[/ucc.do/uc2],methods=[GET],params=[user=root],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.controller.UserController.testM2()
+12-26 18:40:23 Looking for @ControllerAdvice: WebApplicationContext for namespace 'DispatcherServlet-servlet': startup date [Tue Dec 26 18:40:17 CST 2017]; root of context hierarchy
+12-26 18:40:23 Mapped "{[/ucc.do/uc44],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.controller.UserController.testM4(java.util.Date)
+12-26 18:40:23 Mapped "{[/ucc.do/uc6],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.controller.UserController.testM6(java.util.Map<java.lang.String, java.lang.Object>)
+12-26 18:40:23 Mapped "{[/ucc.do/uc],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.controller.UserController.testM(org.springframework.ui.Model)
+12-26 18:40:23 Mapped "{[/ucc.do/uc2],methods=[GET],params=[user=root],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.controller.UserController.testM2()
+12-26 18:40:23 Looking for @ControllerAdvice: WebApplicationContext for namespace 'DispatcherServlet-servlet': startup date [Tue Dec 26 18:40:17 CST 2017]; root of context hierarchy
+12-26 18:40:23 Looking for @ControllerAdvice: WebApplicationContext for namespace 'DispatcherServlet-servlet': startup date [Tue Dec 26 18:40:17 CST 2017]; root of context hierarchy
+12-26 18:40:23 Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+12-26 18:40:24 FrameworkServlet 'DispatcherServlet': initialization completed in 6165 ms
+12-26 18:44:55 Request method 'GET' not supported
+12-26 18:52:42 FrameworkServlet 'DispatcherServlet': initialization started
+12-26 18:52:42 Refreshing WebApplicationContext for namespace 'DispatcherServlet-servlet': startup date [Tue Dec 26 18:52:42 CST 2017]; root of context hierarchy
+12-26 18:52:42 Loading XML bean definitions from class path resource [ApplicationContext.xml]
+12-26 18:52:44 Loading XML bean definitions from class path resource [jackson.xml]
+12-26 18:52:45 Loading XML bean definitions from class path resource [Dispatcher-servlet.xml]
+12-26 18:52:45 Loading properties file from class path resource [jdbc.properties]
+12-26 18:52:46 MLog clients using slf4j logging.
+12-26 18:52:46 Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+12-26 18:52:48 Mapped "{[/ucc.do/uc2],methods=[GET],params=[user=root],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.controller.UserController.testM2()
+12-26 18:52:48 Mapped "{[/ucc.do/uc44],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.controller.UserController.testM4(java.util.Date)
+12-26 18:52:48 Mapped "{[/ucc.do/uc],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.controller.UserController.testM(org.springframework.ui.Model)
+12-26 18:52:48 Mapped "{[/ucc.do/uc6],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.controller.UserController.testM6(java.util.Map<java.lang.String, java.lang.Object>)
+12-26 18:52:48 Looking for @ControllerAdvice: WebApplicationContext for namespace 'DispatcherServlet-servlet': startup date [Tue Dec 26 18:52:42 CST 2017]; root of context hierarchy
+12-26 18:52:48 Mapped "{[/ucc.do/uc2],methods=[GET],params=[user=root],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.controller.UserController.testM2()
+12-26 18:52:48 Mapped "{[/ucc.do/uc44],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.controller.UserController.testM4(java.util.Date)
+12-26 18:52:48 Mapped "{[/ucc.do/uc],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.controller.UserController.testM(org.springframework.ui.Model)
+12-26 18:52:48 Mapped "{[/ucc.do/uc6],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.controller.UserController.testM6(java.util.Map<java.lang.String, java.lang.Object>)
+12-26 18:52:48 Looking for @ControllerAdvice: WebApplicationContext for namespace 'DispatcherServlet-servlet': startup date [Tue Dec 26 18:52:42 CST 2017]; root of context hierarchy
+12-26 18:52:48 Looking for @ControllerAdvice: WebApplicationContext for namespace 'DispatcherServlet-servlet': startup date [Tue Dec 26 18:52:42 CST 2017]; root of context hierarchy
+12-26 18:52:48 Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+12-26 18:52:48 FrameworkServlet 'DispatcherServlet': initialization completed in 6090 ms
+12-26 18:53:55 FrameworkServlet 'DispatcherServlet': initialization started
+12-26 18:53:55 Refreshing WebApplicationContext for namespace 'DispatcherServlet-servlet': startup date [Tue Dec 26 18:53:55 CST 2017]; parent: Root WebApplicationContext
+12-26 18:53:55 Loading XML bean definitions from class path resource [ApplicationContext.xml]
+12-26 18:53:56 Loading XML bean definitions from class path resource [jackson.xml]
+12-26 18:53:56 Loading XML bean definitions from class path resource [Dispatcher-servlet.xml]
+12-26 18:53:56 Loading properties file from class path resource [jdbc.properties]
+12-26 18:53:56 Mapped "{[/ucc.do/uc2],methods=[GET],params=[user=root],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.controller.UserController.testM2()
+12-26 18:53:56 Mapped "{[/ucc.do/uc44],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.controller.UserController.testM4(java.util.Date)
+12-26 18:53:56 Mapped "{[/ucc.do/uc6],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.controller.UserController.testM6(java.util.Map<java.lang.String, java.lang.Object>)
+12-26 18:53:56 Mapped "{[/ucc.do/uc],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.controller.UserController.testM(org.springframework.ui.Model)
+12-26 18:53:56 Looking for @ControllerAdvice: WebApplicationContext for namespace 'DispatcherServlet-servlet': startup date [Tue Dec 26 18:53:55 CST 2017]; parent: Root WebApplicationContext
+12-26 18:53:56 Mapped "{[/ucc.do/uc2],methods=[GET],params=[user=root],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.controller.UserController.testM2()
+12-26 18:53:56 Mapped "{[/ucc.do/uc44],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.controller.UserController.testM4(java.util.Date)
+12-26 18:53:56 Mapped "{[/ucc.do/uc6],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.controller.UserController.testM6(java.util.Map<java.lang.String, java.lang.Object>)
+12-26 18:53:56 Mapped "{[/ucc.do/uc],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.controller.UserController.testM(org.springframework.ui.Model)
+12-26 18:53:56 Looking for @ControllerAdvice: WebApplicationContext for namespace 'DispatcherServlet-servlet': startup date [Tue Dec 26 18:53:55 CST 2017]; parent: Root WebApplicationContext
+12-26 18:53:56 Looking for @ControllerAdvice: WebApplicationContext for namespace 'DispatcherServlet-servlet': startup date [Tue Dec 26 18:53:55 CST 2017]; parent: Root WebApplicationContext
+12-26 18:53:57 Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+12-26 18:53:57 FrameworkServlet 'DispatcherServlet': initialization completed in 1959 ms
+12-26 18:53:57 Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 1hgeby99s14mx4z2fhqhh0|3c3c0916, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> 1hgeby99s14mx4z2fhqhh0|3c3c0916, idleConnectionTestPeriod -> 0, initialPoolSize -> 5, jdbcUrl -> jdbc:mysql://localhost:3306/shop?characterEncoding=UTF-8, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 2, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 20, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+12-26 18:54:34 Root WebApplicationContext: initialization started
+12-26 18:54:34 Refreshing Root WebApplicationContext: startup date [Tue Dec 26 18:54:34 CST 2017]; root of context hierarchy
+12-26 18:54:34 Loading XML bean definitions from class path resource [ApplicationContext.xml]
+12-26 18:54:36 Loading XML bean definitions from class path resource [jackson.xml]
+12-26 18:54:36 Loading XML bean definitions from class path resource [Dispatcher-servlet.xml]
+12-26 18:54:36 Loading properties file from class path resource [jdbc.properties]
+12-26 18:54:38 MLog clients using slf4j logging.
+12-26 18:54:38 Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+12-26 18:54:39 Mapped "{[/ucc.do/uc],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.controller.UserController.testM(org.springframework.ui.Model)
+12-26 18:54:39 Mapped "{[/ucc.do/uc6],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.controller.UserController.testM6(java.util.Map<java.lang.String, java.lang.Object>)
+12-26 18:54:39 Mapped "{[/ucc.do/uc44],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.controller.UserController.testM4(java.util.Date)
+12-26 18:54:39 Mapped "{[/ucc.do/uc2],methods=[GET],params=[user=root],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.controller.UserController.testM2()
+12-26 18:54:39 Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Tue Dec 26 18:54:34 CST 2017]; root of context hierarchy
+12-26 18:54:39 Mapped "{[/ucc.do/uc],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.controller.UserController.testM(org.springframework.ui.Model)
+12-26 18:54:39 Mapped "{[/ucc.do/uc6],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.controller.UserController.testM6(java.util.Map<java.lang.String, java.lang.Object>)
+12-26 18:54:39 Mapped "{[/ucc.do/uc44],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.controller.UserController.testM4(java.util.Date)
+12-26 18:54:39 Mapped "{[/ucc.do/uc2],methods=[GET],params=[user=root],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.controller.UserController.testM2()
+12-26 18:54:40 Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Tue Dec 26 18:54:34 CST 2017]; root of context hierarchy
+12-26 18:54:40 Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Tue Dec 26 18:54:34 CST 2017]; root of context hierarchy
+12-26 18:54:40 Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+12-26 18:54:40 Root WebApplicationContext: initialization completed in 5961 ms
+12-26 18:54:40 FrameworkServlet 'DispatcherServlet': initialization started
+12-26 18:54:40 Refreshing WebApplicationContext for namespace 'DispatcherServlet-servlet': startup date [Tue Dec 26 18:54:40 CST 2017]; parent: Root WebApplicationContext
+12-26 18:54:40 Loading XML bean definitions from class path resource [ApplicationContext.xml]
+12-26 18:54:41 Loading XML bean definitions from class path resource [jackson.xml]
+12-26 18:54:41 Loading XML bean definitions from class path resource [Dispatcher-servlet.xml]
+12-26 18:54:41 Loading properties file from class path resource [jdbc.properties]
+12-26 18:54:42 Mapped "{[/ucc.do/uc],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.controller.UserController.testM(org.springframework.ui.Model)
+12-26 18:54:42 Mapped "{[/ucc.do/uc6],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.controller.UserController.testM6(java.util.Map<java.lang.String, java.lang.Object>)
+12-26 18:54:42 Mapped "{[/ucc.do/uc44],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.controller.UserController.testM4(java.util.Date)
+12-26 18:54:42 Mapped "{[/ucc.do/uc2],methods=[GET],params=[user=root],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.controller.UserController.testM2()
+12-26 18:54:42 Looking for @ControllerAdvice: WebApplicationContext for namespace 'DispatcherServlet-servlet': startup date [Tue Dec 26 18:54:40 CST 2017]; parent: Root WebApplicationContext
+12-26 18:54:42 Mapped "{[/ucc.do/uc],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.controller.UserController.testM(org.springframework.ui.Model)
+12-26 18:54:42 Mapped "{[/ucc.do/uc6],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.controller.UserController.testM6(java.util.Map<java.lang.String, java.lang.Object>)
+12-26 18:54:42 Mapped "{[/ucc.do/uc44],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.controller.UserController.testM4(java.util.Date)
+12-26 18:54:42 Mapped "{[/ucc.do/uc2],methods=[GET],params=[user=root],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.controller.UserController.testM2()
+12-26 18:54:42 Looking for @ControllerAdvice: WebApplicationContext for namespace 'DispatcherServlet-servlet': startup date [Tue Dec 26 18:54:40 CST 2017]; parent: Root WebApplicationContext
+12-26 18:54:42 Looking for @ControllerAdvice: WebApplicationContext for namespace 'DispatcherServlet-servlet': startup date [Tue Dec 26 18:54:40 CST 2017]; parent: Root WebApplicationContext
+12-26 18:54:42 Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+12-26 18:54:42 FrameworkServlet 'DispatcherServlet': initialization completed in 2086 ms
+12-26 18:54:42 Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 1hgeby99s14my3wl1h619ww|7856f5e7, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> 1hgeby99s14my3wl1h619ww|7856f5e7, idleConnectionTestPeriod -> 0, initialPoolSize -> 5, jdbcUrl -> jdbc:mysql://localhost:3306/shop?characterEncoding=UTF-8, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 2, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 20, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+12-26 18:54:52 Method <insertQrcheck> begin with ---> [com.mod.bean.Qrcheck@4d3d6de6]....
+12-26 18:54:52 Method <insertQrcheck> end!
+12-26 18:54:52 Method <insertQrcheck> end with --->true....
+12-26 19:11:03 Root WebApplicationContext: initialization started
+12-26 19:11:03 Refreshing Root WebApplicationContext: startup date [Tue Dec 26 19:11:03 CST 2017]; root of context hierarchy
+12-26 19:11:03 Loading XML bean definitions from class path resource [ApplicationContext.xml]
+12-26 19:11:05 Loading XML bean definitions from class path resource [jackson.xml]
+12-26 19:11:06 Loading properties file from class path resource [jdbc.properties]
+12-26 19:11:07 MLog clients using slf4j logging.
+12-26 19:11:07 Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+12-26 19:11:09 Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Tue Dec 26 19:11:03 CST 2017]; root of context hierarchy
+12-26 19:11:09 Root WebApplicationContext: initialization completed in 5813 ms
+12-26 19:11:09 FrameworkServlet 'DispatcherServlet': initialization started
+12-26 19:11:09 Refreshing WebApplicationContext for namespace 'DispatcherServlet-servlet': startup date [Tue Dec 26 19:11:09 CST 2017]; parent: Root WebApplicationContext
+12-26 19:11:09 Loading XML bean definitions from class path resource [Dispatcher-servlet.xml]
+12-26 19:11:10 Mapped "{[/ucc.do/uc],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.controller.UserController.testM(org.springframework.ui.Model)
+12-26 19:11:10 Mapped "{[/ucc.do/uc2],methods=[GET],params=[user=root],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.controller.UserController.testM2()
+12-26 19:11:10 Mapped "{[/ucc.do/uc6],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.controller.UserController.testM6(java.util.Map<java.lang.String, java.lang.Object>)
+12-26 19:11:10 Mapped "{[/ucc.do/uc44],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.controller.UserController.testM4(java.util.Date)
+12-26 19:11:10 Looking for @ControllerAdvice: WebApplicationContext for namespace 'DispatcherServlet-servlet': startup date [Tue Dec 26 19:11:09 CST 2017]; parent: Root WebApplicationContext
+12-26 19:11:10 Looking for @ControllerAdvice: WebApplicationContext for namespace 'DispatcherServlet-servlet': startup date [Tue Dec 26 19:11:09 CST 2017]; parent: Root WebApplicationContext
+12-26 19:11:10 Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+12-26 19:11:10 FrameworkServlet 'DispatcherServlet': initialization completed in 1492 ms
+12-26 19:11:11 Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 1hgeby99s14njbdb1iwl1zc|661d8946, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> 1hgeby99s14njbdb1iwl1zc|661d8946, idleConnectionTestPeriod -> 0, initialPoolSize -> 5, jdbcUrl -> jdbc:mysql://localhost:3306/shop?characterEncoding=UTF-8, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 2, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 20, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+12-26 19:13:53 Method <insertQrcheck> begin with ---> [com.mod.bean.Qrcheck@303ba3e8]....
+12-26 19:13:53 Method <insertQrcheck> end!
+12-26 19:13:53 Method <insertQrcheck> end with --->true....
+12-26 19:52:44 Method <findUser> begin with ---> [com.mod.bean.Users@67f3d17b]....
+12-26 19:52:44 Method <findUser> end!
+12-26 19:52:44 Method <findUser> end with --->com.mod.bean.Users@5cc891ea....
+12-26 19:52:44 Method <getCarNum> begin with ---> [2]....
+12-26 19:52:44 Method <getCarNum> end!
+12-26 19:52:44 Method <getCarNum> end with --->1....
+12-26 19:52:46 Method <getCarNum> begin with ---> [2]....
+12-26 19:52:46 Method <getCarNum> end!
+12-26 19:52:46 Method <getCarNum> end with --->1....
+12-26 19:52:46 Method <getGoods> begin with ---> [1]....
+12-26 19:52:46 Method <getGoods> end!
+12-26 19:52:46 Method <getGoods> end with --->Goods [gid=1, gname=Huawei/华为 P10全网通手机, tid=2, price=3488.0, descption=[ {
+  "网络类型" : "4G全网通",
+  "机身颜色" : "钻雕金,钻雕蓝,草木绿,曜石黑,玫瑰金",
+  "套餐类型" : "官方标配,套餐一,套餐二,套餐三,套餐四,套餐五",
+  "存储容量" : "64GB,128GB",
+  "购买方式" : "裸机",
+  "版本" : "Mate 10,Mate 10 62G+128G,麦芒6,P10,畅享7"
+} ], imgpath=goods/huawei_1/P10.jpg, filepath=goods/huawei_1/img/, stock=9567]....
+12-26 19:52:49 Method <getCarNum> begin with ---> [2]....
+12-26 19:52:49 Method <getCarNum> end!
+12-26 19:52:49 Method <getCarNum> end with --->1....
+12-26 19:52:49 Method <getGoods> begin with ---> [1]....
+12-26 19:52:49 Method <getGoods> end!
+12-26 19:52:49 Method <getGoods> end with --->Goods [gid=1, gname=Huawei/华为 P10全网通手机, tid=2, price=3488.0, descption=[ {
+  "网络类型" : "4G全网通",
+  "机身颜色" : "钻雕金,钻雕蓝,草木绿,曜石黑,玫瑰金",
+  "套餐类型" : "官方标配,套餐一,套餐二,套餐三,套餐四,套餐五",
+  "存储容量" : "64GB,128GB",
+  "购买方式" : "裸机",
+  "版本" : "Mate 10,Mate 10 62G+128G,麦芒6,P10,畅享7"
+} ], imgpath=goods/huawei_1/P10.jpg, filepath=goods/huawei_1/img/, stock=9567]....
+12-26 19:52:50 Method <getAdress> begin with ---> [2]....
+12-26 19:52:50 Method <getAdress> end!
+12-26 19:52:50 Method <getAdress> end with --->[com.mod.bean.Address@5ff0202e, com.mod.bean.Address@cb52cd8]....
+12-26 19:52:54 Method <getCarNum> begin with ---> [2]....
+12-26 19:52:54 Method <getCarNum> end!
+12-26 19:52:54 Method <getCarNum> end with --->1....
+12-26 19:52:54 Method <addOrders> begin with ---> [com.mod.bean.Orders@3cbf05a, com.mod.bean.OrderForm@61824ae9]....
+12-26 19:52:54 Method <getGoods> begin with ---> [1]....
+12-26 19:52:54 Method <getGoods> end!
+12-26 19:52:54 Method <getGoods> end with --->Goods [gid=1, gname=Huawei/华为 P10全网通手机, tid=2, price=3488.0, descption=[ {
+  "网络类型" : "4G全网通",
+  "机身颜色" : "钻雕金,钻雕蓝,草木绿,曜石黑,玫瑰金",
+  "套餐类型" : "官方标配,套餐一,套餐二,套餐三,套餐四,套餐五",
+  "存储容量" : "64GB,128GB",
+  "购买方式" : "裸机",
+  "版本" : "Mate 10,Mate 10 62G+128G,麦芒6,P10,畅享7"
+} ], imgpath=goods/huawei_1/P10.jpg, filepath=goods/huawei_1/img/, stock=9567]....
+12-26 19:52:55 Method <addOrders> end!
+12-26 19:52:55 Method <addOrders> end with --->true....
+12-26 19:52:56 Method <getCarNum> begin with ---> [2]....
+12-26 19:52:56 Method <getCarNum> end!
+12-26 19:52:56 Method <getCarNum> end with --->1....
+12-26 19:52:56 Method <getGoods> begin with ---> [1]....
+12-26 19:52:56 Method <getGoods> end!
+12-26 19:52:56 Method <getGoods> end with --->Goods [gid=1, gname=Huawei/华为 P10全网通手机, tid=2, price=3488.0, descption=[ {
+  "网络类型" : "4G全网通",
+  "机身颜色" : "钻雕金,钻雕蓝,草木绿,曜石黑,玫瑰金",
+  "套餐类型" : "官方标配,套餐一,套餐二,套餐三,套餐四,套餐五",
+  "存储容量" : "64GB,128GB",
+  "购买方式" : "裸机",
+  "版本" : "Mate 10,Mate 10 62G+128G,麦芒6,P10,畅享7"
+} ], imgpath=goods/huawei_1/P10.jpg, filepath=goods/huawei_1/img/, stock=9566]....
+12-26 19:52:59 Method <getCarNum> begin with ---> [2]....
+12-26 19:52:59 Method <getCarNum> end!
+12-26 19:52:59 Method <getCarNum> end with --->1....
+12-26 19:52:59 Method <addGoods> begin with ---> [com.mod.bean.ShoppingCar@7151cc0a]....
+12-26 19:52:59 Method <addGoods> end!
+12-26 19:52:59 Method <addGoods> end with --->true....
+12-26 19:52:59 Method <getCarNum> begin with ---> [2]....
+12-26 19:52:59 Method <getCarNum> end!
+12-26 19:52:59 Method <getCarNum> end with --->1....
+12-26 19:53:24 Method <getCarNum> begin with ---> [2]....
+12-26 19:53:24 Method <getCarNum> end!
+12-26 19:53:24 Method <getCarNum> end with --->1....
+12-26 19:53:24 Method <getAdress> begin with ---> [2]....
+12-26 19:53:25 Method <getAdress> end!
+12-26 19:53:25 Method <getAdress> end with --->[com.mod.bean.Address@795f9a1b, com.mod.bean.Address@d21b608]....
+12-26 19:53:25 Method <getCarView> begin with ---> [2]....
+12-26 19:53:25 Method <getCarView> end!
+12-26 19:53:25 Method <getCarView> end with --->[{uid=2, gid=1, addGoodsTime=2017-12-26 19:52:59.0, price=3488.0, imgPath=goods/huawei_1/P10.jpg, gname=Huawei/华为 P10全网通手机, stock=9566, descption=[{"颜色" : "钻雕金","套餐类型" : "官方标配"}], cid=122, gnum=2}]....
+12-26 19:53:32 Method <getCarNum> begin with ---> [2]....
+12-26 19:53:32 Method <getCarNum> end!
+12-26 19:53:32 Method <getCarNum> end with --->1....
+12-26 19:53:32 Method <getCarView> begin with ---> [2]....
+12-26 19:53:32 Method <getCarView> end!
+12-26 19:53:32 Method <getCarView> end with --->[{uid=2, gid=1, addGoodsTime=2017-12-26 19:52:59.0, price=3488.0, imgPath=goods/huawei_1/P10.jpg, gname=Huawei/华为 P10全网通手机, stock=9566, descption=[{"颜色" : "钻雕金","套餐类型" : "官方标配"}], cid=122, gnum=2}]....
+12-26 19:53:32 Method <addOrders> begin with ---> [com.mod.bean.Orders@784c560a, [com.mod.bean.OrderForm@60d5c014], [122]]....
+12-26 19:53:32 Method <getGoods> begin with ---> [1]....
+12-26 19:53:32 Method <getGoods> end!
+12-26 19:53:32 Method <getGoods> end with --->Goods [gid=1, gname=Huawei/华为 P10全网通手机, tid=2, price=3488.0, descption=[ {
+  "网络类型" : "4G全网通",
+  "机身颜色" : "钻雕金,钻雕蓝,草木绿,曜石黑,玫瑰金",
+  "套餐类型" : "官方标配,套餐一,套餐二,套餐三,套餐四,套餐五",
+  "存储容量" : "64GB,128GB",
+  "购买方式" : "裸机",
+  "版本" : "Mate 10,Mate 10 62G+128G,麦芒6,P10,畅享7"
+} ], imgpath=goods/huawei_1/P10.jpg, filepath=goods/huawei_1/img/, stock=9566]....
+12-26 19:53:32 添加新订单(20171226195332)：{
+  "oid" : "20171226195332",
+  "uid" : 2,
+  "state" : "待付款",
+  "sum" : 6976.0,
+  "address" : "陕西省西安市长安区丈八六路南段长里村"
+}
+12-26 19:53:32 订单详情(20171226195332)：[ {
+  "oid" : "20171226195332",
+  "gid" : 1,
+  "gnum" : 2,
+  "subtotal" : 6976.0,
+  "descption" : "[{\"颜色\" : \"钻雕金\",\"套餐类型\" : \"官方标配\"}]",
+  "uid" : 2
+} ]
+12-26 19:53:32 Method <addOrders> end!
+12-26 19:53:32 Method <addOrders> end with --->true....
+12-26 19:53:32 Method <getOrderList> begin with ---> [20171226195332, 2]....
+12-26 19:53:32 Method <getOrderList> end!
+12-26 19:53:32 Method <getOrderList> end with --->[{gid=1, address=陕西省西安市长安区丈八六路南段长里村, sum=6976.0, oid=20171226195332, gname=Huawei/华为 P10全网通手机, SubTotal=6976.0, tid=2, gnum=2, uid=2, price=3488.0, imgPath=goods/huawei_1/P10.jpg, state=待付款, stock=9564, descption=[{"颜色" : "钻雕金","套餐类型" : "官方标配"}]}]....
+12-26 19:53:37 Method <getCarNum> begin with ---> [2]....
+12-26 19:53:37 Method <getCarNum> end!
+12-26 19:53:37 Method <getCarNum> end with --->0....
+12-26 19:53:37 20171226195332--订单付款！
+12-26 19:53:37 Method <updateByOUid> begin with ---> [20171226195332, 2]....
+12-26 19:53:37 Method <updateByOUid> end!
+12-26 19:53:37 Method <updateByOUid> end with --->true....
+12-26 19:53:40 Method <getCarNum> begin with ---> [2]....
+12-26 19:53:40 Method <getCarNum> end!
+12-26 19:53:40 Method <getCarNum> end with --->0....
+12-26 19:53:40 Method <getOGViewGoupByOid> begin with ---> [2]....
+12-26 19:53:40 Method <getOGViewGoupByOid> end!
+12-26 19:53:40 Method <getOGViewGoupByOid> end with --->[{oid=20171207144719, uid=2, address=陕西省西安市超神学院, state=已付款, sum=10464.0, goods=[{gid=1, gname=Huawei/华为 P10全网通手机, tid=2, price=3488.0, gnum=3, subtotal=10464.0, descption=[{"颜色" : "钻雕金","套餐类型" : "官方标配"}], imgPath=goods/huawei_1/P10.jpg}]}, {oid=20171207144730, uid=2, address=陕西省西安市超神学院, state=已付款, sum=10464.0, goods=[{gid=1, gname=Huawei/华为 P10全网通手机, tid=2, price=3488.0, gnum=3, subtotal=10464.0, descption=[{"颜色" : "钻雕金","套餐类型" : "官方标配"}], imgPath=goods/huawei_1/P10.jpg}]}, {oid=20171207145553, uid=2, address=陕西省西安市超神学院, state=已付款, sum=6976.0, goods=[{gid=1, gname=Huawei/华为 P10全网通手机, tid=2, price=3488.0, gnum=2, subtotal=6976.0, descption=[{"颜色" : "钻雕金","套餐类型" : "官方标配"}], imgPath=goods/huawei_1/P10.jpg}]}, {oid=20171207145628, uid=2, address=陕西省西安市超神学院, state=已付款, sum=13464.0, goods=[{gid=1, gname=Huawei/华为 P10全网通手机, tid=2, price=3488.0, gnum=3, subtotal=10464.0, descption=[{"颜色" : "钻雕金","套餐类型" : "官方标配"}], imgPath=goods/huawei_1/P10.jpg}, {gid=2, gname=小米Max 2, tid=2, price=2000.0, gnum=3, subtotal=3000.0, descption=[{"颜色" : "钻雕金","套餐类型" : "官方标配"}], imgPath=goods/xiaomi_6/6.jpg}]}, {oid=20171207155450, uid=2, address=陕西省西安市超神学院, state=已付款, sum=3488.0, goods=[{gid=1, gname=Huawei/华为 P10全网通手机, tid=2, price=3488.0, gnum=1, subtotal=3488.0, descption=[{"颜色" : "钻雕金","套餐类型" : "官方标配"}], imgPath=goods/huawei_1/P10.jpg}]}, {oid=20171214220448, uid=2, address=陕西省西安市长安区丈八六路南段长里村, state=已付款, sum=17440.0, goods=[{gid=1, gname=Huawei/华为 P10全网通手机, tid=2, price=3488.0, gnum=5, subtotal=17440.0, descption=[{"颜色" : "钻雕金","套餐类型" : "官方标配"}], imgPath=goods/huawei_1/P10.jpg}]}, {oid=20171222001049, uid=2, address=陕西省西安市长安区丈八六路南段长里村, state=已付款, sum=3488.0, goods=[{gid=1, gname=Huawei/华为 P10全网通手机, tid=2, price=3488.0, gnum=1, subtotal=3488.0, descption=[{"颜色" : "钻雕金","套餐类型" : "官方标配"}], imgPath=goods/huawei_1/P10.jpg}]}, {oid=20171222142708, uid=2, address=??????????????????, state=???, sum=10464.0, goods=[{gid=1, gname=Huawei/华为 P10全网通手机, tid=2, price=3488.0, gnum=3, subtotal=10464.0, descption=[{"??" : "???","????" : "????"}], imgPath=goods/huawei_1/P10.jpg}]}, {oid=20171225132905, uid=2, address=??????????????????, state=???, sum=3488.0, goods=[{gid=1, gname=Huawei/华为 P10全网通手机, tid=2, price=3488.0, gnum=1, subtotal=3488.0, descption=[{"??" : "???","????" : "????"}], imgPath=goods/huawei_1/P10.jpg}]}, {oid=20171225134529, uid=2, address=??????????????????, state=???, sum=3488.0, goods=[{gid=1, gname=Huawei/华为 P10全网通手机, tid=2, price=3488.0, gnum=1, subtotal=3488.0, descption=[{"??" : "???","????" : "????"}], imgPath=goods/huawei_1/P10.jpg}]}, {oid=20171225140705, uid=2, address=??????????????????, state=???, sum=3488.0, goods=[{gid=1, gname=Huawei/华为 P10全网通手机, tid=2, price=3488.0, gnum=1, subtotal=3488.0, descption=[{"??" : "???","????" : "????"}], imgPath=goods/huawei_1/P10.jpg}]}, {oid=20171225141315, uid=2, address=??????????????????, state=???, sum=3488.0, goods=[{gid=1, gname=Huawei/华为 P10全网通手机, tid=2, price=3488.0, gnum=1, subtotal=3488.0, descption=[{"??" : "???","????" : "????"}], imgPath=goods/huawei_1/P10.jpg}]}, {oid=20171225141455, uid=2, address=陕西省西安市长安区丈八六路南段长里村, state=已付款, sum=3488.0, goods=[{gid=1, gname=Huawei/华为 P10全网通手机, tid=2, price=3488.0, gnum=1, subtotal=3488.0, descption=[{"颜色" : "钻雕金","套餐类型" : "官方标配"}], imgPath=goods/huawei_1/P10.jpg}]}, {oid=20171225141514, uid=2, address=陕西省西安市长安区丈八六路南段长里村, state=已付款, sum=3488.0, goods=[{gid=1, gname=Huawei/华为 P10全网通手机, tid=2, price=3488.0, gnum=1, subtotal=3488.0, descption=[{"颜色" : "钻雕金","套餐类型" : "官方标配"}], imgPath=goods/huawei_1/P10.jpg}]}, {oid=20171225142834, uid=2, address=陕西省西安市长安区丈八六路南段长里村, state=已付款, sum=3488.0, goods=[{gid=1, gname=Huawei/华为 P10全网通手机, tid=2, price=3488.0, gnum=1, subtotal=3488.0, descption=[{"颜色" : "钻雕金","套餐类型" : "官方标配"}], imgPath=goods/huawei_1/P10.jpg}]}, {oid=20171225153955, uid=2, address=陕西省西安市长安区丈八六路南段长里村, state=已付款, sum=69760.0, goods=[{gid=1, gname=Huawei/华为 P10全网通手机, tid=2, price=3488.0, gnum=20, subtotal=69760.0, descption=[{"颜色" : "钻雕金","套餐类型" : "官方标配"}], imgPath=goods/huawei_1/P10.jpg}]}, {oid=20171225164652, uid=2, address=陕西省西安市长安区丈八六路南段长里村, state=已付款, sum=41856.0, goods=[{gid=1, gname=Huawei/华为 P10全网通手机, tid=2, price=3488.0, gnum=12, subtotal=41856.0, descption=[{"颜色" : "钻雕金","套餐类型" : "官方标配"}], imgPath=goods/huawei_1/P10.jpg}]}, {oid=20171225164705, uid=2, address=陕西省西安市长安区丈八六路南段长里村, state=已付款, sum=3488.0, goods=[{gid=1, gname=Huawei/华为 P10全网通手机, tid=2, price=3488.0, gnum=1, subtotal=3488.0, descption=[{"颜色" : "钻雕金","套餐类型" : "官方标配"}], imgPath=goods/huawei_1/P10.jpg}]}, {oid=20171226195249, uid=2, address=陕西省西安市长安区丈八六路南段长里村, state=已付款, sum=3488.0, goods=[{gid=1, gname=Huawei/华为 P10全网通手机, tid=2, price=3488.0, gnum=1, subtotal=3488.0, descption=[{"颜色" : "钻雕金","套餐类型" : "官方标配"}], imgPath=goods/huawei_1/P10.jpg}]}, {oid=20171226195332, uid=2, address=陕西省西安市长安区丈八六路南段长里村, state=已付款, sum=6976.0, goods=[{gid=1, gname=Huawei/华为 P10全网通手机, tid=2, price=3488.0, gnum=2, subtotal=6976.0, descption=[{"颜色" : "钻雕金","套餐类型" : "官方标配"}], imgPath=goods/huawei_1/P10.jpg}]}]....
